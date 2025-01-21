@@ -1,0 +1,241 @@
+# 文档属性配置
+site_name: 数智教育开发文档 # 文档标题
+
+# 主题配置
+theme:
+  name: material # 主题
+  language: zh # 主题语言: 中文简体
+  custom_dir: overrides # 自定义文件夹
+  palette:
+    primary: blue # 主题色
+    accent: blue # 提示颜色
+  features:
+    - header.autohide # 顶部导航栏自动隐藏
+    - navigation.top # 回到顶部按钮
+    - navigation.tabs # 导航栏顶部tab化
+    - navigation.tabs.sticky # 顶部导航栏始终显示
+    - navigation.path # 路径导航支持
+    - content.tabs.link # 支持tab内容标题的锚点
+    - content.code.copy # 代码块支持拷贝
+    - content.tooltips # 工具提示
+    - navigation.indexes # 分组标题导航到index页面
+    - navigation.prune # 导航修剪
+    - navigation.instant # 即时加载
+
+# 插件
+plugins:
+  - search # 搜索支持
+  - mike # 支持文档版本化
+  - autorefs # 锚点跨md文档支持
+  - glightbox # 照片点击放大支持, 依赖Python包: mkdocs-glightbox
+  # - mkdocstrings: # 支持从项目中生成文档, 依赖python包: mkdocstrings , https://github.com/mkdocstrings/mkdocstrings
+  #           default_handler: python # 默认处理语言, 更多选项参考: https://mkdocstrings.github.io/usage/
+  #           handlers:
+  #                   python:
+  #                           paths: [..] # 查找的模块，在上一级目录
+  #                           options:
+  #                                   show_bases: true # 显示继承的类
+  #                                   show_root_heading: true # 显示顶级标题
+  #                                   show_root_members_full_path: true # 显示顶级下面成员的全路径
+  #                                   show_symbol_type_heading: true # 显示不同类标识符号
+  #                                   members_order: "source" # 按成员在源文件中出现的顺序排序成员。
+  #                                   merge_init_into_class: true # 是否将__init__方法合并到类的签名和文档字符串中
+  #                                   show_if_no_docstring: false # 显示对象标题，即使它没有文档字符串或带有文档字符串的子项。
+  #                                   show_signature: true # 显示方法和函数签名。
+  #                                   show_signature_annotations: True # 在方法和函数签名中显示类型注释。
+  #                                   separate_signature: True # 是否将整个签名放在标题下方的代码块中。
+  #                                   docstring_section_style: table # 显示文档注释时的样式, list, https://mkdocstrings.github.io/python/usage/configuration/docstrings/#docstring_section_style
+  #                                   docstring_style: google
+
+  # - tags: # 支持标签
+  #     tags_file: tags.md # 标签渲染页面文件
+  - git-revision-date-localized: # 支持文档创建时间显示， https://github.com/timvink/mkdocs-git-revision-date-localized-plugin
+      locale: zh
+      enable_creation_date: true
+      type: date
+
+# 监听文件变动的目录 https://mkdocstrings.github.io/usage/#watch-directories
+watch:
+  - . # 包含父级源码目录
+
+# 扩展
+extra:
+  version: # 支持文档版本化
+    provider: mike # mike 部署支持
+
+extra_css:
+  - stylesheets/extra.css
+
+# 扩展支持， 支持数学符号
+# extra_javascript:
+#   - https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# markdown内部扩展配置
+markdown_extensions:
+  - abbr # 工具提示 支持
+  - admonition # 忠告 支持
+  - codehilite
+  - def_list # 指定定义列表, 就是名称冒号内容的方式
+  - attr_list # 支持标签里面的 属性定义
+  - footnotes # 脚注支持
+  - md_in_html # html标签中支持markdown语法
+  - pymdownx.caret # 插入符支持
+  - pymdownx.mark # 标记支持
+  - pymdownx.tilde # 代字号支持
+  - pymdownx.details # 详情可折叠，支持, 依赖 admonition
+  - pymdownx.inlinehilite # 行内高亮显示
+  - pymdownx.snippets
+  - markdown.extensions.toc: # https://facelessuser.github.io/pymdown-extensions/faq/#function-references-in-yaml
+      slugify:
+        !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      permalink: true
+  - pymdownx.highlight: # 高亮显示代码块  https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
+      use_pygments: true
+      pygments_lang_class: true
+      noclasses: true
+      pygments_style: default
+  - pymdownx.superfences: # 一些扩展功能的基础定义
+      custom_fences: # 代码块自定义
+        - name: mermaid # mermaid图表支持
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist: # 任务列表支持
+      custom_checkbox: true
+  - pymdownx.tabbed: # 支持内容tab， 依赖 pymdownx.superfences
+      alternate_style: true
+  - pymdownx.critic: # 突出显示内容
+      mode: view
+  - pymdownx.keys # 键盘快捷键支持
+  - pymdownx.smartsymbols # 智能符号
+  - pymdownx.emoji: # emoji 表情支持  https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#emoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg # 页面导航
+
+
+  - pymdownx.arithmatex: # https://squidfunk.github.io/mkdocs-material/reference/math/#mathjax-mkdocsyml
+      generic: true
+
+nav:
+  - MS-OLEDS标准:
+      - ole/index.md
+      - ole/c1.md
+      - ole/c2.md
+      - ole/c3.md
+      - ole/c4.md
+      - ole/c5.md
+      - ole/c6.md
+      - ole/c7.md
+  - PDF标准:
+      - iso32000/1scope.md
+      - iso32000/2conformance.md
+      - iso32000/3norreferences.md
+      - iso32000/4termdef.md
+      - iso32000/5notation.md
+      - iso32000/6verdesig.md
+      - 7语法:
+          - iso32000/c7/index.md
+          - iso32000/c7/s1.md
+          - iso32000/c7/s2.md
+          - iso32000/c7/s3.md
+          - iso32000/c7/s4.md
+          - iso32000/c7/s5.md
+          - iso32000/c7/s6.md
+          - iso32000/c7/s7.md
+          - iso32000/c7/s8.md
+          - iso32000/c7/s9.md
+          - iso32000/c7/s10.md
+          - iso32000/c7/s11.md
+          - iso32000/c7/s12.md
+      - 8图形绘制:
+          - iso32000/c8/index.md
+          - iso32000/c8/s1.md
+          - iso32000/c8/s2.md
+          - iso32000/c8/s3.md
+          - iso32000/c8/s4.md
+          - iso32000/c8/s5.md
+          - iso32000/c8/s6.md
+          - iso32000/c8/s7.md
+          - iso32000/c8/s8.md
+          - iso32000/c8/s9.md
+          - iso32000/c8/s10.md
+          - iso32000/c8/s11.md
+      - 9文本:
+          - iso32000/c9/index.md
+          - iso32000/c9/s1.md
+          - iso32000/c9/s2.md
+          - iso32000/c9/s3.md
+          - iso32000/c9/s4.md
+          - iso32000/c9/s5.md
+          - iso32000/c9/s6.md
+          - iso32000/c9/s7.md
+          - iso32000/c9/s8.md
+          - iso32000/c9/s9.md
+          - iso32000/c9/s10.md
+      - 10渲染:
+          - iso32000/c10/index.md
+          - iso32000/c10/s1.md
+          - iso32000/c10/s2.md
+          - iso32000/c10/s3.md
+          - iso32000/c10/s4.md
+          - iso32000/c10/s5.md
+          - iso32000/c10/s6.md
+      - 11透明度:
+          - iso32000/c11/index.md
+          - iso32000/c11/s1.md
+          - iso32000/c11/s2.md
+          - iso32000/c11/s3.md
+          - iso32000/c11/s4.md
+          - iso32000/c11/s5.md
+          - iso32000/c11/s6.md
+          - iso32000/c11/s7.md
+      - 12互动功能:
+          - iso32000/c12/index.md
+          - iso32000/c12/s1.md
+          - iso32000/c12/s2.md
+          - iso32000/c12/s3.md
+          - iso32000/c12/s4.md
+          - iso32000/c12/s5.md
+          - iso32000/c12/s6.md
+          - iso32000/c12/s7.md
+          - iso32000/c12/s8.md
+          - iso32000/c12/s9.md
+          - iso32000/c12/s10.md
+      - 13多媒体功能:
+          - iso32000/c13/index.md
+          - iso32000/c13/s1.md
+          - iso32000/c13/s2.md
+          - iso32000/c13/s3.md
+          - iso32000/c13/s4.md
+          - iso32000/c13/s5.md
+          - iso32000/c13/s6.md
+      - 14文档交换:
+          - iso32000/c14/index.md
+          - iso32000/c14/s1.md
+          - iso32000/c14/s2.md
+          - iso32000/c14/s3.md
+          - iso32000/c14/s4.md
+          - iso32000/c14/s5.md
+          - iso32000/c14/s6.md
+          - iso32000/c14/s7.md
+          - iso32000/c14/s8.md
+          - iso32000/c14/s9.md
+          - iso32000/c14/s10.md
+          - iso32000/c14/s11.md
+      - 附录:
+          - iso32000/a1.md
+          - iso32000/a2.md
+          - iso32000/a3.md
+          - iso32000/a4.md
+          - iso32000/a5.md
+          - iso32000/a6.md
+          - iso32000/a7.md
+          - iso32000/a8.md
+          - iso32000/a9.md
+          - iso32000/a10.md
+          - iso32000/a11.md
+          - iso32000/a12.md
+  - 关于: about.md
