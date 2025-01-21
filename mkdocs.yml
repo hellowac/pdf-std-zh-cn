@@ -1,5 +1,5 @@
 # 文档属性配置
-site_name: 数智教育开发文档 # 文档标题
+site_name: PDF STD # 文档标题
 
 # 主题配置
 theme:
@@ -120,15 +120,6 @@ markdown_extensions:
       generic: true
 
 nav:
-  - MS-OLEDS标准:
-      - ole/index.md
-      - ole/c1.md
-      - ole/c2.md
-      - ole/c3.md
-      - ole/c4.md
-      - ole/c5.md
-      - ole/c6.md
-      - ole/c7.md
   - PDF标准:
       - iso32000/1scope.md
       - iso32000/2conformance.md
@@ -238,4 +229,3 @@ nav:
           - iso32000/a10.md
           - iso32000/a11.md
           - iso32000/a12.md
-  - 关于: about.md
