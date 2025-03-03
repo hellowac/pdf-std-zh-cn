@@ -25,8 +25,8 @@ theme:
 # 插件
 plugins:
   - search # 搜索支持
-  - mike # 支持文档版本化
-  - autorefs # 锚点跨md文档支持
+  - mike # 支持文档版本化  依赖: mike 包
+  - autorefs # 锚点跨md文档支持  依赖: mkdocs-autorefs 包
   - glightbox # 照片点击放大支持, 依赖Python包: mkdocs-glightbox
   # - mkdocstrings: # 支持从项目中生成文档, 依赖python包: mkdocstrings , https://github.com/mkdocstrings/mkdocstrings
   #           default_handler: python # 默认处理语言, 更多选项参考: https://mkdocstrings.github.io/usage/
@@ -91,7 +91,7 @@ markdown_extensions:
   - pymdownx.snippets
   - markdown.extensions.toc: # https://facelessuser.github.io/pymdown-extensions/faq/#function-references-in-yaml
       slugify:
-        !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+        !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
       permalink: true
   - pymdownx.highlight: # 高亮显示代码块  https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
       use_pygments: true

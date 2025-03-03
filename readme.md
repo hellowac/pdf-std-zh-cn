@@ -6,8 +6,6 @@
 
 ## 在线文档
 
-
-
 ## 本地运行
 
 1. 安装[python](http://python.org)
@@ -17,3 +15,14 @@
    `mkdocs serve`
 
    然后访问: `http://localhost:8000`
+
+## 依赖
+
+```txt
+mkdocs-material
+pymdown-extensions
+mike
+mkdocs-glightbox
+mkdocs-autorefs
+mkdocs-git-revision-date-localized-plugin
+```
