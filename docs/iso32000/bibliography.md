@@ -29,19 +29,17 @@
 - [25] Fairchild, M. D., Color Appearance Models, Addison-Wesley, Reading, MA, 1997. Covers color vision, basic colorimetry, color appearance models, cross-media color reproduction, and the current CIE standards activities. Updates, software, and color...
 - [26] Foley, J. D. et al., Computer Graphics: Principles and Practice, Addison-Wesley, Reading, MA, 1996. (First edition was Foley, J. D. and van Dam, A., Fundamentals of Interactive Computer Graphics, Addison-Wesley, Reading, MA, 1982.) Covers many g...
 - [27] Glassner, A. S. (ed.), Graphics Gems, Academic Press, 1993. The section “An Algorithm for Automatically Fitting Digitized Curves” by Philip J. Schneider describes an algorithm for determining the set of Bézier curves approximating an arbitr...
-- [28] Hewlett-Packard Corporation, PANOSE Classification Metrics Guide. Available on the Agfa Monotype Web site at < http://www.agfamonotype.com/printer/pan1.asp >.
+- [28] Hewlett-Packard Corporation, PANOSE Classification Metrics Guide. Available on the Agfa Monotype Web site at < <http://www.agfamonotype.com/printer/pan1.asp> >.
 - [29] HTML 4.01 Specification, <http://www.w3.org/TR/html401/>.
 - [30] Hunt, R. W. G., The Reproduction of Colour, 5th ed., Fisher Books, England, 1996. A comprehensive general reference on color reproduction; includes an introduction to the CIE system.
 - [31] Institute of Electrical and Electronics Engineers, IEEE Standard for Binary Floating-Point Arithmetic (IEEE 754-1985).
-- [32] International Cooperation for the Integration of Processes in Prepress, Press and Postpress (CIP4), JDF Specification, Version 1.2. Available through the CIP4 Web site at < http://www.cip4.org >.
+- [32] International Cooperation for the Integration of Processes in Prepress, Press and Postpress (CIP4), JDF Specification, Version 1.2. Available through the CIP4 Web site at < <http://www.cip4.org> >.
 - [33] Kirk, D. (ed.), Graphics Gems III, Academic Press, 1994. The section “Interpolation Using Bézier Curves” by Gershon Elber contains an algorithm for calculating a Bézier curve that passes through a user-specified set of points. The algorith...
 - [34] Lunde, K., CJKV Information Processing, O’Reilly & Associates, Sebastopol, CA, 1999. Excellent background material on CMaps, character sets, encodings, and the like.
-- [35] Microsoft Corporation, TrueType 1.0 Font Files Technical Specification. Available at < http:// www.microsoft.com/typography/tt/tt.htm >.
-- [36] Porter, T. and Duff, T., “Compositing Digital Images,” Computer Graphics, Vol. 18 No. 3, July 1984. Computer Graphics is the newsletter of the ACM’s special interest group SIGGRAPH; for more information, see < http://www.acm.org >.
-- [37] RSA Security, Inc. This document, among others related to encryption and digital signatures, is available at < http://www.rsasecurity.com >: PKCS #1 - RSA Cryptography Standard <http:// www.rsasecurity.com/rsalabs/node.asp?id=2125>.
+- [35] Microsoft Corporation, TrueType 1.0 Font Files Technical Specification. Available at < http:// <www.microsoft.com/typography/tt/tt.htm> >.
+- [36] Porter, T. and Duff, T., “Compositing Digital Images,” Computer Graphics, Vol. 18 No. 3, July 1984. Computer Graphics is the newsletter of the ACM’s special interest group SIGGRAPH; for more information, see < <http://www.acm.org> >.
+- [37] RSA Security, Inc. This document, among others related to encryption and digital signatures, is available at < <http://www.rsasecurity.com> >: PKCS #1 - RSA Cryptography Standard <http:// <www.rsasecurity.com/rsalabs/node.asp?id=2125>>.
 - [38] Scalable Vector Graphics (SVG) 1.0 Specification, <http://www.w3.org/TR/2001/REC-SVG-20010904/>.
 - [39] Synchronized Multimedia Integration Language (SMIL 2.0), <http//:www.w3.org/TR/smil20/>.
 - [40] Web Content Accessibility Guidelines 1.0, <http://www.w3.org/TR/WAI-WEBCONTENT/>.
 - [41] XHTML 1.0: The Extensible HyperText Markup Language, <http://www.w3.org/TR/xhtml1/>.
-
-
