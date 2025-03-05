@@ -18,6 +18,6 @@
     
     Token characters used to delimit objects and describe the structure of PDF files, as defined in [7.2](./c7/s2.md), "Lexical Conventions", may be identified by their ANSI X3.4-1986 (ASCII 7-bit USA codes) character name written in upper case in bold sans serif font followed by a parenthetic two digit hexadecimal character value with the suffix “h”.
     
-    Characters in text streams, as defined by [7.9.2]((./c7/s9.md#792-字符对象类型)), "String Object Types", may be identified by their ANSI X3.4- 1986 (ASCII 7-bit USA codes) character name written in uppercase in sans serif font followed by a parenthetic four digit hexadecimal character code value with the prefix “U+” as shown in EXAMPLE 1 in this clause.
+    Characters in text streams, as defined by [7.9.2](./c7/s9.md#792-字符对象类型), "String Object Types", may be identified by their ANSI X3.4- 1986 (ASCII 7-bit USA codes) character name written in uppercase in sans serif font followed by a parenthetic four digit hexadecimal character code value with the prefix “U+” as shown in EXAMPLE 1 in this clause.
     
     EXAMPLE 1 EN SPACE (U+2002).
