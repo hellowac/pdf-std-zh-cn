@@ -1,0 +1,3363 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../a5/">
+      
+      
+        <link rel="next" href="../a7/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>附录 F（规范性）线性化 PDF - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#附录-f规范性线性化-pdf" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              附录 F（规范性）线性化 PDF
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            附录
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 A（资料性）操作员摘要
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 B（规范性）Type 4 函数中的操作符
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 C（规范性）实现限制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 D（规范性）字符集和编码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 E（规范性）PDF 名称注册表
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    附录 F（规范性）线性化 PDF
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    附录 F（规范性）线性化 PDF
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#f1-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f2-背景和假设" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.2 背景和假设
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f3-线性化-pdf-文档结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3 线性化 PDF 文档结构
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F.3 线性化 PDF 文档结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f31-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f32-头部第一部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.2 头部（第一部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f33-线性化参数字典第二部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.3 线性化参数字典（第二部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f34-第一页交叉引用表和尾段第三部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.4 第一页交叉引用表和尾段（第三部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f35-文档目录和文档级对象第四部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.5 文档目录和文档级对象（第四部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f36-提示流第五部分和第十部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.6 提示流（第五部分和第十部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f37-第一页部分第六部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.7 第一页部分（第六部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f38-剩余页面第七部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.8 剩余页面（第七部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f39-共享对象第八部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.9 共享对象（第八部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f310-其他对象第九部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.10 其他对象（第九部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f311-主交叉引用和尾段第十一部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.11 主交叉引用和尾段（第十一部分）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f4-提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4 提示表
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F.4 提示表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f41-页面偏移量提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.1 页面偏移量提示表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f42-共享对象提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.2 共享对象提示表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f43-缩略图提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.3 缩略图提示表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f44-通用提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.4 通用提示表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f45-扩展通用提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.5 扩展通用提示表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f46-嵌入文件流提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.6 嵌入文件流提示表
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 G（资料性）线性化 PDF 访问策略
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 H（资料性）示例 PDF 文件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 I（规范性）PDF 版本和兼容性
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 J（资料性）FDF 重命名标志实现示例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 K（资料性）PostScript 兼容性 - 透明成像模型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 L（资料性）彩色图版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#f1-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f2-背景和假设" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.2 背景和假设
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f3-线性化-pdf-文档结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3 线性化 PDF 文档结构
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F.3 线性化 PDF 文档结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f31-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f32-头部第一部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.2 头部（第一部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f33-线性化参数字典第二部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.3 线性化参数字典（第二部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f34-第一页交叉引用表和尾段第三部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.4 第一页交叉引用表和尾段（第三部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f35-文档目录和文档级对象第四部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.5 文档目录和文档级对象（第四部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f36-提示流第五部分和第十部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.6 提示流（第五部分和第十部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f37-第一页部分第六部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.7 第一页部分（第六部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f38-剩余页面第七部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.8 剩余页面（第七部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f39-共享对象第八部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.9 共享对象（第八部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f310-其他对象第九部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.10 其他对象（第九部分）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f311-主交叉引用和尾段第十一部分" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.3.11 主交叉引用和尾段（第十一部分）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f4-提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4 提示表
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F.4 提示表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f41-页面偏移量提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.1 页面偏移量提示表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f42-共享对象提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.2 共享对象提示表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f43-缩略图提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.3 缩略图提示表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f44-通用提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.4 通用提示表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f45-扩展通用提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.5 扩展通用提示表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f46-嵌入文件流提示表" class="md-nav__link">
+    <span class="md-ellipsis">
+      F.4.6 嵌入文件流提示表
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="附录-f规范性线性化-pdf">附录 F（规范性）线性化 PDF<a class="headerlink" href="#附录-f规范性线性化-pdf" title="Permanent link">&para;</a></h1>
+<p><strong>Annex F (normative) Linearized PDF</strong></p>
+<h2 id="f1-概述">F.1 概述<a class="headerlink" href="#f1-概述" title="Permanent link">&para;</a></h2>
+<p><strong>F.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF线性化是从PDF 1.2版本开始提供的一项可选功能，它能够在网络环境中实现对文件的高效增量访问。不支持此可选功能的兼容阅读器仍然可以成功处理线性化文件，只是效率会有所降低。增强型的兼容阅读器能够识别PDF文件是否已线性化，并可利用这种组织方式（以及额外的提示信息）来提升查看性能。</p>
+<p>线性化PDF文件的主要目标是在处理任意大小的文档时，使文档的总页数对用户查看任意特定页面的性能影响极小或没有影响，从而实现以下行为：</p>
+<ul>
+<li>打开文档时，尽快显示第一页。要查看的第一页可以是文档的任意一页，不一定是第0页（尽管通常是从第0页开始打开）。</li>
+<li>当用户请求打开文档的另一页面时（例如，翻到下一页或通过链接跳转到任意页面），尽快显示该页面。</li>
+<li>当页面数据通过慢速信道传输时，在数据逐步到达的过程中逐步显示页面。尽可能先显示最有用的数据。</li>
+<li>在整个页面尚未完全接收并显示之前，允许用户进行交互操作，例如点击链接。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>线性化PDF主要针对只读PDF文档的查看进行了优化。线性化PDF应生成一次，多次读取。</p>
+</div>
+<p>仍然允许进行增量更新，但更新后的PDF文件将不再是线性化的，并且后续应将其作为普通PDF文件处理。再次对其进行线性化可能需要重新处理整个文件；有关详细信息，请参见<a href="../a7/#g7-访问更新后的文件">G.7</a>，“访问更新后的文件”。</p>
+<p>线性化PDF对PDF规范提出了两项补充要求：</p>
+<ul>
+<li>PDF文件中对象的排序规则</li>
+<li>额外的可选数据结构，即提示表，用于在文档内实现高效导航</li>
+</ul>
+<p>这两项补充要求相对容易描述；然而，要有效使用它们，则需要更深入地理解其目的。因此，本附录不仅简单地对这些PDF扩展进行了规范说明，还涵盖了背景知识、设计动机和策略等内容。</p>
+<ul>
+<li><a href="#f2-背景和假设">F.2</a>，“背景和假设”，提供了与线性化PDF设计相关的Web特性的背景信息。</li>
+<li><a href="#f3-线性化-pdf-文档结构">F.3</a>，“线性化PDF文档结构”，规定了线性化PDF的文件格式和对象排序要求。</li>
+<li><a href="#f4-提示表">F.4</a>，“提示表”，详细说明了提示表的表示方式。</li>
+<li><a href="../a7/">附录G</a>，概述了通过网络访问线性化PDF的策略，这反过来又决定了组织PDF文件的最佳方式。</li>
+</ul>
+<p>假定读者熟悉Web的基本架构，包括URL、HTTP和MIME等术语 。</p>
+</div>
+<div class="tabbed-block">
+<p>Linearization of PDF is an optional feature available beginning in PDF 1.2 that enables efficient incremental access of the file in a network environment. A conforming reader that does not support this optional feature can still successfully process linearized files although not as efficiently. Enhanced conforming readers can recognize that a PDF file has been linearized and may take advantage of that organization (as well as added hint information) to enhance viewing performance.</p>
+<p>The primary goal for a linearized PDF file is to achieve the following behaviour for documents of arbitrary size and so that the total number of pages in the document should have little or no effect on the user-perceived performance of viewing any particular page:</p>
+<ul>
+<li>When a document is opened, display the first page as quickly as possible. The first page to be viewed may be an arbitrary page of the document, not necessarily page 0 (though opening at page 0 is most common).</li>
+<li>When the user requests another page of an open document (for example, by going to the next page or by following a link to an arbitrary page), display that page as quickly as possible.</li>
+<li>When data for a page is delivered over a slow channel, display the page incrementally as it arrives. To the extent possible, display the most useful data first.</li>
+<li>Permit user interaction, such as following a link, to be performed even before the entire page has been received and displayed.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>A linearized PDF is optimized for viewing of read-only PDF documents. A linearized PDF should be generated once and read many times.</p>
+</div>
+<p>Incremental update shall still be permitted, but the resulting PDF is no longer linearized and subsequently shall be treated as ordinary PDF. Linearizing it again may require reprocessing the entire file; see <a href="../a7/#g7-访问更新后的文件">G.7</a>, "Accessing an Updated File" for details.</p>
+<p>Linearized PDF requires two additions to the PDF specification:</p>
+<ul>
+<li>Rules for the ordering of objects in the PDF file</li>
+<li>Additional optional data structures, called hint tables, that enable efficient navigation within the document</li>
+</ul>
+<p>Both of these additions are relatively simple to describe; however, using them effectively requires a deeper understanding of their purpose. Consequently, this annex goes considerably beyond a simple specification of these PDF extensions to include background, motivation, and strategies.</p>
+<ul>
+<li><a href="#f2-背景和假设">F.2</a>, "Background and Assumptions," provides background information about the properties of the Web that are relevant to the design of Linearized PDF.</li>
+<li><a href="#f3-线性化-pdf-文档结构">F.3</a>, "Linearized PDF Document Structure," specifies the file format and object-ordering requirements of Linearized PDF.</li>
+<li><a href="#f4-提示表">F.4</a>, "Hint Tables," specifies the detailed representation of the hint tables.</li>
+<li><a href="../a7/">Annex G</a>, outlines strategies for accessing Linearized PDF over a network, which in turn determine the optimal way to organize the PDF file.</li>
+</ul>
+<p>The reader is assumed to be familiar with the basic architecture of the Web, including terms such as URL, HTTP, and MIME.</p>
+</div>
+</div>
+</div>
+<h2 id="f2-背景和假设">F.2 背景和假设<a class="headerlink" href="#f2-背景和假设" title="Permanent link">&para;</a></h2>
+<p><strong>F.2 Background and Assumptions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">注1</p>
+<p>线性化PDF设计主要解决的问题是通过网络访问PDF文档。该环境具有以下重要特性：</p>
+<ul>
+<li>访问协议（HTTP）是一个由请求和响应组成的事务。兼容的阅读器以URL的形式发出请求，服务器则发送由一个或多个带有MIME标签的数据块组成的响应。</li>
+<li>事务完成后，若要获取更多数据，则需要发起新的请求 - 响应事务。兼容阅读器与服务器之间的连接通常在事务结束后不会持续保持，不过某些实现可能会尝试缓存打开的连接，以便加快与同一服务器的后续事务处理速度。</li>
+<li>往返延迟可能较大。一个请求 - 响应事务可能长达数秒，且与所请求的数据量无关。</li>
+<li>数据传输速率可能受限。一个典型的瓶颈是兼容阅读器与互联网服务提供商之间连接速度较慢。</li>
+</ul>
+<p>这些特性通常也是除网络之外的其他广域网架构所共有的。此外，光盘也具有其中一些特性，因为与磁性介质相比，光盘的寻道时间相对较长，数据传输速率也有限。本附录的其余部分将重点讨论网络环境。</p>
+<p>HTTP协议的一些其他特性与高效访问PDF文件这一问题相关。这些特性可能并非其他协议或网络环境所共有。</p>
+<ul>
+<li>当首次访问PDF文件（例如通过从其他文档中的URL超链接访问）时，兼容的阅读器一开始并不知道文件类型。因此，兼容的阅读器会发起一个事务来检索整个文档，然后在响应到达时检查其MIME标签。直到此时，才能确定该文档为PDF文件。另外，在服务器环境配置正确的情况下，此时也能知道文档的长度。</li>
+<li>在事务仍在进行过程中，如果兼容的阅读器判定剩余数据暂无立即使用的必要，它可以中止响应。在HTTP协议中，中止事务需要关闭连接，这会对缓存打开连接以加快后续事务处理速度的策略造成干扰。</li>
+<li>兼容的阅读器可以通过在HTTP请求头中指定一个或多个字节范围（通过偏移量和计数）来请求检索文档的部分内容。每个范围可以相对于文件的开头或结尾。兼容的阅读器在请求中可以指定任意多个范围，响应则由多个分别正确标记的数据块组成。</li>
+<li>兼容的阅读器可以发起多个并发事务，试图并行获取多个响应。例如，通常会这样做来检索HTML文档中引用的内联图像。不过这种策略并不总是可靠的，如果多个事务因争夺服务器或通信信道中的稀缺资源而相互干扰，可能会导致适得其反的效果。</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注2</p>
+<p>经过大量实验发现，在某些重要环境中，多个并发事务对于PDF文件的处理效果并不理想。因此，线性化PDF的设计目标是仅通过一次事务就能实现良好的性能。具体而言，这意味着兼容的阅读器需要有足够的信息来确定显示PDF文件某一页所需的所有对象的字节范围，以便能在单个请求中指定所有这些字节范围。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注3</p>
+<p>关于兼容的阅读器及其本地环境，还做出以下额外假设：</p>
+<ul>
+<li>兼容的阅读器有充足的本地临时存储空间。它很少需要从服务器多次获取PDF文档的同一部分。</li>
+<li>一旦接收到PDF数据，兼容的阅读器能够快速显示这些数据。性能瓶颈被认为在于传输系统（吞吐量或往返延迟），而非数据到达后的处理过程。</li>
+</ul>
+<p>基于这些假设，兼容的阅读器进行大量额外工作以减少通信延迟可能是有利的。</p>
+</div>
+<p>此类工作包括维护本地缓存，并根据所需数据的可用时间重新安排操作顺序 。</p>
+</div>
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>The principal problem addressed by the Linearized PDF design is the access of PDF documents through the Web. This environment has the following important properties:</p>
+<ul>
+<li>The access protocol (HTTP) is a transaction consisting of a request and a response. The conforming reader presents a request in the form of a URL, and the server sends a response consisting of one or more MIME-tagged data blocks.</li>
+<li>After a transaction has completed, obtaining more data requires a new request-response transaction. The connection between conforming reader and server does not ordinarily persist beyond the end of a transaction, although some implementations may attempt to cache the open connection to expedite subsequent transactions with the same server.</li>
+<li>Round-trip delay can be significant. A request-response transaction can take up to several seconds, independent of the amount of data requested.</li>
+<li>The data rate may be limited. A typical bottleneck is a slow link between the conforming reader and the Internet service provider.</li>
+</ul>
+<p>These properties are generally shared by other wide-area network architectures besides the Web. Also, CD-ROMs share some of these properties, since they have relatively slow seek times and lim- ited data rates compared to magnetic media. The remainder of this annex focuses on the Web.</p>
+<p>Some additional properties of the HTTP protocol are relevant to the problem of accessing PDF files efficiently. These properties may not all be shared by other protocols or network environments.</p>
+<ul>
+<li>When a PDF file is initially accessed (such as by following a URL hyperlink from some other document), the file type is not known to the conforming reader. Therefore, the conforming reader initiates a transaction to retrieve the entire document and then inspects the MIME tag of the response as it arrives. Only at that point is the document known to be PDF. Additionally, with a properly configured server environment, the length of the document becomes known at that time.</li>
+<li>The conforming reader may abort a response while the transaction is still in progress if it decides that the remainder of the data is not of immediate interest. In HTTP, aborting the transaction requires closing the connection, which interferes with the strategy of caching the open connection between transactions.</li>
+<li>The conforming reader may request retrieval of portions of a document by specifying one or more byte ranges (by offset and count) in the HTTP request headers. Each range can be relative to either the beginning or the end of the file. The conforming reader may specify as many ranges as it wants in the request, and the response consists of multiple blocks, each properly tagged.</li>
+<li>The conforming reader may initiate multiple concurrent transactions in an attempt to obtain multiple responses in parallel. This is commonly done, for instance, to retrieve inline images referenced from an HTML document. This strategy is not always reliable and may backfire if the transactions interfere with each other by competing for scarce resources in the server or the communication channel.</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Extensive experimentation has determined that having multiple concurrent transactions does not work very well for PDF in some important environments. Therefore, Linearized PDF is designed to enable good performance to be achieved using only one transaction at a time. In particular, this means that the conforming reader needs to have sufficient information to determine the byte ranges for all the objects required to display a given page of the PDF file so that it can specify all those byte ranges in a single request.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>The following additional assumptions are made about the conforming reader and its local environment:</p>
+<ul>
+<li>The conforming reader has plenty of local temporary storage available. It should rarely need to retrieve a given portion of a PDF document more than once from the server.</li>
+<li>The conforming reader is able to display PDF data quickly once it has been received. The performance bottleneck is assumed to be in the transport system (throughput or round-trip delay), not in the processing of data after it arrives.</li>
+</ul>
+<p>The consequence of these assumptions is that it may be advantageous for the conforming reader to do considerable extra work to minimize delays due to communications.</p>
+</div>
+<p>Such work includes maintaining local caches and reordering actions according to when the needed data becomes available.</p>
+</div>
+</div>
+</div>
+<h2 id="f3-线性化-pdf-文档结构">F.3 线性化 PDF 文档结构<a class="headerlink" href="#f3-线性化-pdf-文档结构" title="Permanent link">&para;</a></h2>
+<p><strong>F.3 Linearized PDF Document Structure</strong></p>
+<h3 id="f31-概述">F.3.1 概述<a class="headerlink" href="#f31-概述" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>除下文另有说明外，线性化PDF文件的所有元素应符合<a href="../c7/s5/">7.5</a>，“文件结构”中的规定，并且文件中的所有间接对象应分为两组。</p>
+<ul>
+<li>第一组应包含文档目录、其他文档级对象以及属于文档第一页的所有对象。这些对象应按顺序编号，从第二组最后一个编号之后的第一个对象编号开始。（包含提示表的流，称为提示流，其编号可能不按顺序；见<a href="#f36-提示流第五部分和第十部分">F.3.6</a>，“提示流（第5部分和第10部分）”。）</li>
+<li>第二组应包含文档中所有其余的对象，包括第一页之后的所有页面、所有共享对象（被多个页面引用的对象，不包括从第一页引用的对象）等。这些对象应从1开始按顺序编号。</li>
+</ul>
+<p>这两组对象应由恰好两个交叉引用表部分进行索引。出于教学目的，线性化PDF被认为是由11个部分按顺序组成的，这些组的组成将在后续章节中更详细地讨论。所有对象的生成号应为0。</p>
+<p>从PDF 1.5版本开始，PDF文件可以包含对象流（见<a href="../c7/s5/#757-对象流">7.5.7</a>，“对象流”）。在包含对象流的线性化文件中，应满足以下条件：</p>
+<ul>
+<li>以下对象不得包含在对象流中：线性化字典、文档目录和页面对象。</li>
+<li>存储在对象流中的对象应在主交叉引用部分和第一页交叉引用部分中被分配最高的对象编号范围。</li>
+<li>对于包含对象流的文件，提示数据只能指定对象流（或未压缩对象）的位置和大小，而不能指定单个压缩对象。同样，对共享对象的引用应指向包含压缩对象的对象流，而不是指向压缩对象本身。</li>
+<li>可以使用交叉引用流（7.5.8，“交叉引用流”）代替传统的交叉引用表。本小节描述的逻辑仍然适用，但需进行相应的语法更改 。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Except as noted below, all elements of a Linearized PDF file shall be as specified in <a href="../c7/s5/">7.5</a>, "File Structure", and all indirect objects in the file shall be shall be divided into two groups.</p>
+<ul>
+<li>The first group shall consist of the document catalogue, other document-level objects, and all objects belonging to the first page of the document. These objects shall be numbered sequentially, starting at the first object number after the last number of the second group. (The stream containing the hint tables, called a hint stream, may be numbered out of sequence; see <a href="#f36-提示流第五部分和第十部分">F.3.6</a>, "Hint Streams (Parts 5 and 10)".</li>
+<li>The second group shall consist of all remaining objects in the document, including all pages after the first, all shared objects (objects referenced from more than one page, not counting objects referenced from the first page), and so forth. These objects shall be numbered sequentially starting at 1.</li>
+</ul>
+<p>These groups of objects shall be indexed by exactly two cross-reference table sections. For pedagogical reasons the linearized PDF is considered to be composed from 11 parts, in order, and the composition of these groups is discussed in more detail in the sections that follow. All objects shall have a generation number of 0.</p>
+<p>Beginning with PDF 1.5, PDF files may contain object streams (see <a href="../c7/s5/#757-对象流">7.5.7</a>, "Object Streams"). In linearized files containing object streams, the following conditions shall apply:</p>
+<ul>
+<li>These additional objects may not be contained in an object stream: the linearization dictionary, the document catalogue, and page objects.</li>
+<li>Objects stored within object streams shall be given the highest range of object numbers within the main and first-page cross-reference sections.</li>
+<li>For files containing object streams, hint data may specify the location and size of the object streams only (or uncompressed objects), not the individual compressed objects. Similarly, shared object references shall be made to the object stream containing a compressed object, not to the compressed object itself.</li>
+<li>Cross-reference streams (7.5.8, "Cross-Reference Streams") may be used in place of traditional cross-reference tables. The logic described in this sub-clause shall still apply, with the appropriate syntactic changes.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 1: Header
+% PDF-1 . 1            % … Binary characters …
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 2: Linearization parameter dictionary
+43 0 obj
+    &lt;&lt; /Linearized 1.0                       % Version
+        /L 54567                             % File length
+        /H [ 475 598 ]                       % Primary hint stream offset and length (part 5)
+        /O 45                                % Object number of first page’s page object (part 6)
+        /E 5437                              % Offset of end of first page
+        /N 11                                % Number of pages in document
+        /T 52786                             % Offset of first entry in main cross-reference table (part 11)
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 3</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 3: First-page cross-reference table and trailer
+xref
+43 14
+0000000052 00000 n
+0000000392 00000 n
+0000001073 00000 n
+… Cross-reference entries for remaining objects in the first page …
+0000000475 00000 n
+trailer
+    &lt;&lt; /Size 57               % Total number of cross-reference table entries in document
+       /Prev 52776            % Offset of main cross-reference table (part 11)
+       /Root 44 0 R           % Indirect reference to catalogue (part 4)
+       … Any other entries, such as Info and Encrypt …    % (part 9)
+    &gt;&gt;
+% Dummy cross-reference table offset
+startxref
+0
+% % EOF
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 4</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 4: Document catalogue and other required document-level objects
+44 0 obj
+&lt;&lt; /Type /Catalog
+   /Pages 42 0 R
+&gt;&gt;
+endobj
+… Other objects …
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 5</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 5: Primary hint stream (may precede or follow part 6)
+56 0 obj
+&lt;&lt; /Length 457
+   … Possibly other stream attributes, such as Filter …
+   /S 221    % Position of shared object hint table
+   … Possibly entries for other hint tables …
+&gt;&gt;
+stream
+    … Page offset hint table …
+    … Shared object hint table …
+    … Possibly other hint tables …
+endstream
+endobj
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 6</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 6: First-page section (may precede or follow part 5)
+45 0 obj
+    &lt;&lt; /Type /Page
+       …
+    &gt;&gt;
+endobj
+… Outline hierarchy (if the PageMode value in the document catalog is UseOutlines) …
+… Objects for first page, including both shared and nonshared objects …
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 7</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 7: Remaining pages
+1 0 obj
+    &lt;&lt; /Type /Page
+       … Other page attributes, such as MediaBox, Parent, and Contents …
+    &gt;&gt;
+endobj
+… Nonshar ed objects for this page …
+… Each successive page followed by its nonshared objects …
+… Last page followed by its nonshared objects …
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 8</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 8: Shared objects for all pages except the first
+… Shared objects …
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 9</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 9: Objects not associated with pages, if any
+… Other objects …
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 10</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 10: Overflow hint stream (optional)
+… Overflow hint stream …
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 11</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Part 11: Main cross-reference table and trailer
+xref
+0 43
+0000000000 65535 f
+… Cross-reference entries for all except first page’s objects …
+trailer
+    &lt;&lt; /Size 43 &gt;&gt;        % Trailer need not contain other entries; in particular,
+% it should not have a Prev entry
+
+% Offset of first-page cross-reference table (part 3)
+startxref
+257
+%%EOF
+</code></pre></div>
+</div>
+<h3 id="f32-头部第一部分">F.3.2 头部（第一部分）<a class="headerlink" href="#f32-头部第一部分" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.2 Header (Part 1)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>线性化PDF文件应以标准文件头行开始（见<a href="../c7/s5/#752-文件头">7.5.2</a>，“文件头”）。线性化与PDF版本号无关，可应用于任何1.1版及更高版本的PDF文件。</p>
+<p>第二行百分号（25h）之后的二进制字符是代码为128或更高的字符，如<a href="../c7/s5/#752-文件头">7.5.2</a>，“文件头”中所建议的 。</p>
+</div>
+<div class="tabbed-block">
+<p>The Linearized PDF file shall begin with the standard header line (see <a href="../c7/s5/#752-文件头">7.5.2</a>, "File Header"). Linearization is independent of PDF version number and may be applied to any PDF file of version 1.1 or greater.</p>
+<p>The binary characters following the PERCENT SIGN (25h) on the second line are characters with codes 128 or greater, as recommended in <a href="../c7/s5/#752-文件头">7.5.2</a>, "File Header".</p>
+</div>
+</div>
+</div>
+<h3 id="f33-线性化参数字典第二部分">F.3.3 线性化参数字典（第二部分）<a class="headerlink" href="#f33-线性化参数字典第二部分" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.3 Linearization Parameter Dictionary (Part 2)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在文件头之后，文件主体（第2部分）中的第一个对象应该是一个间接字典对象，即<em>线性化参数字典</em>，该字典应包含<a href="#tableF1">表F.1</a>中列出的参数。此字典中的所有值都应为直接对象。文档中任何地方都不应引用此字典；不过，第一页交叉引用表（第3部分）应包含该字典的一个正常条目。</p>
+<p>线性化参数字典应完全包含在PDF文件的前1024字节内。这限制了兼容阅读器在判断文件是否为线性化文件之前必须读取的数据量。</p>
+<p><table id="tableF1" markdown="span">
+    <caption><strong>表F.1 – 线性化参数字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>参数</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Linearized</strong></td>
+            <td>数字</td>
+            <td>（必需）线性化格式的版本标识。</td>
+        </tr>
+        <tr>
+            <td><strong>L</strong></td>
+            <td>整数</td>
+            <td>（必需）整个文件的字节长度。它应与PDF文件的实际长度完全相等。不匹配表明该文件不是线性化的，应作为普通PDF处理，并忽略线性化信息。（如果不匹配是由于追加更新导致的，线性化信息可能仍然正确，但需要验证；有关详细信息，请参见<a href="../a7/#g7-访问更新后的文件">G.7</a>，“访问更新后的文件”。）</td>
+        </tr>
+        <tr>
+            <td><strong>H</strong></td>
+            <td>数组</td>
+            <td>（必需）一个包含两个或四个整数的数组，<span class="arithmatex">\([\text{偏移量}_1 \space \text{长度}_1]\)</span> 或 <span class="arithmatex">\([\text{偏移量}_1 \space \text{长度}_1 \space \text{偏移量}_2 \space \text{长度}_2]\)</span>。<span class="arithmatex">\(\text{offset}_1\)</span> 应是主提示流相对于文件开头的偏移量。（这是流对象的开头，而非流数据的开头。）<span class="arithmatex">\(\text{length}_1\)</span> 应是该流的长度，包括流对象的开销<br/><br/> 如果主提示流字典的 <strong>Length</strong> 条目的值是一个间接引用，其所引用的对象应紧跟在流对象之后，并且 <span class="arithmatex">\(\text{length}_1\)</span> 还应包括间接长度对象的长度，包括对象开销<br/><br/> 如果有溢出提示流，<span class="arithmatex">\(\text{offset}_2\)</span> 和 <span class="arithmatex">\(\text{length}_2\)</span> 应指定其偏移量和长度。</td>
+        </tr>
+        <tr>
+            <td><strong>O</strong></td>
+            <td>整数</td>
+            <td>（必需）第一页的页面对象的对象编号。</td>
+        </tr>
+        <tr>
+            <td><strong>E</strong></td>
+            <td>整数</td>
+            <td>（必需）第一页结尾（<a href="#f31-概述">F.3.1</a>，“概述”中的示例6的结尾）相对于文件开头的偏移量。</td>
+        </tr>
+        <tr>
+            <td><strong>N</strong></td>
+            <td>整数</td>
+            <td>（必需）文档中的页面数量。</td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>整数</td>
+            <td>（必需）在使用标准主交叉引用表的文档中（包括混合引用文件；见<a href="../c7/s5/#7584-与不支持压缩参考流的应用程序的兼容性">7.5.8.4</a>，“与不支持压缩参考流的应用程序的兼容性”），此条目应表示主交叉引用表第一个条目前面空白字符相对于文件开头的偏移量（对象编号为0的条目）。注意，这与第一页尾部的 <strong>Prev</strong> 条目不同，后者给出的是表之前的 <strong>xref</strong> 行的位置<br/><br/>（PDF 1.5）仅使用交叉引用流的文档（见<a href="../c7/s5/#758-交叉引用流">7.5.8</a>，“交叉引用流”），此条目应表示主交叉引用流对象的偏移量。</td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>整数</td>
+            <td>（可选）第一页的页码；见<a href="#f34-第一页交叉引用表和尾段第三部分">F.3.4</a>，“第一页交叉引用表和尾部（第3部分）”。默认值：0。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>Following the header, the first object in the body of the file (part 2) shall be an indirect dictionary object, the <em>linearization parameter dictionary</em>, which shall contain the parameters listed in <a href="#tableF1">Table F.1</a>. All values in this dictionary shall be direct objects. There shall be no references to this dictionary anywhere in the document; however, the first-page cross-reference table (part 3) shall contain a normal entry for it.</p>
+<p>The linearization parameter dictionary shall be entirely contained within the first 1024 bytes of the PDF file. This limits the amount of data a conforming reader must read before deciding whether the file is linearized.</p>
+<p><table id="tableF1" markdown="span">
+    <caption><strong>Table F.1 – Entries in the linearization parameter dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Parameter</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>Linearized</strong></td> <td>number </td> <td>(Required) A version identification for the linearized format.</td></tr>
+        <tr><td><strong>L</strong></td> <td>integer </td> <td>(Required) The length of the entire file in bytes. It shall be exactly equal to the actual length of the PDF file. A mismatch indicates that the file is not linearized and shall be treated as ordinary PDF, ignoring linearization information. (If the mismatch resulted from appending an update, the linearization information may still be correct but requires validation; see <a href="../a7/#g7-访问更新后的文件">G.7</a>, "Accessing an Updated File" for details.)</td></tr>
+        <tr><td><strong>H</strong></td> <td>array </td> <td>(Required) An array of two or four integers, <span class="arithmatex">\([\text{offset}_1 \space \text{length}_1]\)</span> or <span class="arithmatex">\([\text{offset}_1 \space \text{length}_1 \space \text{offset}_2 \space \text{length}_2]\)</span>. offset1 shall be the offset of the primary hint stream from the beginning of the file. (This is the beginning of the stream object, not the beginning of the stream data.) length<sub>1</sub> shall be the length of this stream, including stream object overhead. <br/><br/> If the value of the primary hint stream dictionary’s <strong>Length</strong> entry is an indirect reference, the object it refers to shall immediately follow the stream object, and length<sub>1</sub> also shall include the length of the indirect length object, including object overhead.<br/><br/> If there is an overflow hint stream, offset<sub>2</sub> and length<sub>2</sub> shall specify its offset and length.</td></tr>
+        <tr><td><strong>O</strong></td> <td>integer </td> <td>(Required) The object number of the first page’s page object.</td></tr>
+        <tr><td><strong>E</strong></td> <td>integer </td> <td>(Required) The offset of the end of the first page (the end of EXAMPLE 6 in <a href="#f31-概述">F.3.1</a>, "General"), relative to the beginning of the file.</td></tr>
+        <tr><td><strong>N</strong></td> <td>integer </td> <td>(Required) The number of pages in the document.</td></tr>
+        <tr><td><strong>T</strong></td> <td>integer </td> <td>(Required) In documents that use standard main cross-reference tables (including hybrid-reference files; see <a href="../c7/s5/#7584-与不支持压缩参考流的应用程序的兼容性">7.5.8.4</a>, "Compatibility with Applications That Do Not Support Compressed Reference Streams"), this entry shall represent the offset of the white-space character preceding the first entry of the main cross-reference table (the entry for object number 0), relative to the beginning of the file. Note that this differs from the <strong>Prev</strong> entry in the first-page trailer, which gives the location of the <strong>xref</strong> line that precedes the table. <br/><br/>
+        (PDF 1.5) Documents that use cross-reference streams exclusively (see <a href="../c7/s5/#758-交叉引用流">7.5.8</a>, "Cross-Reference Streams"), this entry shall represent the offset of the main cross-reference stream object.</td></tr>
+        <tr><td><strong>P</strong></td> <td>integer </td> <td>(Optional) The page number of the first page; see <a href="#f34-第一页交叉引用表和尾段第三部分">F.3.4</a>, "First-Page Cross-Reference Table and Trailer (Part 3)". Default value: 0.</td></tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="f34-第一页交叉引用表和尾段第三部分">F.3.4 第一页交叉引用表和尾段（第三部分）<a class="headerlink" href="#f34-第一页交叉引用表和尾段第三部分" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.4 First-Page Cross-Reference Table and Trailer (Part 3)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>第3部分应包含属于第一页的对象（在<a href="#f34-第一页交叉引用表和尾段第三部分">F.3.4</a>，“第一页交叉引用表和尾部（第3部分）”中讨论）、第一页之前的文档目录和文档级对象（在<a href="#f35-文档目录和文档级对象第四部分">F.3.5</a>，“文档目录和文档级对象（第4部分）”中讨论）的交叉引用表。此外，此交叉引用表应包含线性化参数字典（位于开头）和主提示流（位于结尾）的条目。该表应是如<a href="../c7/s5/#754-交叉引用表">7.5.4</a>，“交叉引用表”中所定义的有效交叉引用表，不过它在文件中的位置不应在文件末尾。它应包含一个没有空闲条目的单一交叉引用子部分。</p>
+<p>在PDF 1.5及更高版本中，线性化文件中可以使用交叉引用流（见<a href="../c7/s5/#758-交叉引用流">7.5.8</a>，“交叉引用流”）代替传统的交叉引用表。本节描述的逻辑以及针对交叉引用流的相应语法更改仍然适用。</p>
+<p>在该表下方是第一页的尾部信息。尾部的<strong>Prev</strong>条目应给出文件末尾附近主交叉引用表的偏移量。不支持线性化功能的兼容阅读器即使尾部链接顺序异常，也应能正确处理这一信息。它会将第一页交叉引用表解释为对由主交叉引用表索引的原始文档的一次更新。</p>
+<p>第一页的尾部应包含有效的<strong>Size</strong>和<strong>Root</strong>条目，以及显示文档所需的其他任何条目。<strong>Size</strong>的值应是第一页交叉引用表和主交叉引用表中条目数量之和。</p>
+<p>第一页的尾部可选择以<strong>startxref</strong>（一个整数）和%%EOF结尾，就像普通尾部一样。不过这些信息将被忽略 。</p>
+</div>
+<div class="tabbed-block">
+<p>Part 3 shall contain the cross-reference table for objects belonging to the first page (discussed in <a href="#f34-第一页交叉引用表和尾段第三部分">F.3.4</a>, "First-Page Cross-Reference Table and Trailer (Part 3)") as well as for the document catalogue and document-level objects appearing before the first page (discussed in <a href="#f35-文档目录和文档级对象第四部分">F.3.5</a>, "Document Catalogue and Document-Level Objects (Part 4)"). Additionally, this cross-reference table shall contain entries for the linearization parameter dictionary (at the beginning) and the primary hint stream (at the end). This table shall be a valid cross-reference table as defined in <a href="../c7/s5/#754-交叉引用表">7.5.4</a>, "Cross-Reference Table", although its position in the file shall not be at the end of the file. It shall consist of a single cross-reference subsection that has no free entries.</p>
+<p>In PDF 1.5 and later, cross-reference streams (see <a href="../c7/s5/#758-交叉引用流">7.5.8</a>, "Cross-Reference Streams") may be used in linearized files in place of traditional cross-reference tables. The logic described in this section, along with the appropriate syntactic changes for cross-reference streams shall still apply.</p>
+<p>Below the table shall be the first-page trailer. The trailer’s <strong>Prev</strong> entry shall give the offset of the main cross- reference table near the end of the file. A conforming reader that does not support the linearized feature shall process this correctly even though the trailers are linked in an unusual order. It interprets the first-page cross- reference table as an update to an original document that is indexed by the main cross-reference table.</p>
+<p>The first-page trailer shall contain valid <strong>Size</strong> and <strong>Root</strong> entries, as well as any other entries needed to display the document. The <strong>Size</strong> value shall be the combined number of entries in both the first-page cross-reference table and the main cross-reference table.</p>
+<p>The first-page trailer may optionally end with <strong>startxref</strong>, an integer, and %%EOF, just as in an ordinary trailer. This information shall be ignored.</p>
+</div>
+</div>
+</div>
+<h3 id="f35-文档目录和文档级对象第四部分">F.3.5 文档目录和文档级对象（第四部分）<a class="headerlink" href="#f35-文档目录和文档级对象第四部分" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.5 Document Catalogue and Document-Level Objects (Part 4)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在第一页交叉引用表和尾部信息之后，是文档打开时必须存在的目录字典和其他对象（构成第4部分）。如果这些附加对象（作为间接对象存在）的以下条目存在，则应包含这些条目的值：</p>
+<ul>
+<li>目录中的兼容阅读器<strong>Preferences</strong>条目。</li>
+<li>目录中的<strong>PageMode</strong>条目。请注意，如果<strong>PageMode</strong>的值为UseOutlines，则大纲层次结构应位于第6部分；否则，大纲层次结构（如果有）应位于第9部分。有关详细信息，请参见<a href="#f310-其他对象第九部分">F.3.10</a>，“其他对象（第9部分）”。</li>
+<li>目录中的<strong>Threads</strong>条目以及其所引用的所有线索字典。这不包括线索的信息字典或属于线索的单个珠子字典。</li>
+<li>目录中的<strong>OpenAction</strong>条目。</li>
+<li>目录中的<strong>AcroForm</strong>条目。此处仅应存在顶级交互式表单字典，而不包括其所引用的对象。</li>
+<li>第一页尾部字典中的<strong>Encrypt</strong>条目。加密字典中的所有值也应位于此处。</li>
+</ul>
+<p>所有其他对象不应位于此处，而应位于文件末尾；请参见<a href="#f310-其他对象第九部分">F.3.10</a>，“其他对象（第9部分）”。这包括页面树节点、文档信息字典以及命名目标定义等对象。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+</div>
+<p>位于此处的对象由第一页交叉引用表进行索引，尽管从逻辑上讲它们并非第一页的一部分 。</p>
+</div>
+<div class="tabbed-block">
+<p>Following the first-page cross-reference table and trailer are the catalogue dictionary and other objects that are required present when the document is opened. These additional objects (constituting part 4) shall include the values of the following entries if they are present and are indirect objects:</p>
+<ul>
+<li>The conforming reader <strong>Preferences</strong> entry in the catalogue.</li>
+<li>The <strong>PageMode</strong> entry in the catalogue. Note that if the value of <strong>PageMode</strong> is UseOutlines, the outline hierarchy shall be located in part 6; otherwise, the outline hierarchy, if any, shall be located in part 9. See <a href="#f310-其他对象第九部分">F.3.10</a>, "Other Objects (Part 9)" for details.</li>
+<li>The <strong>Threads</strong> entry in the catalogue, along with all thread dictionaries it refers to. This does not include the threads’ information dictionaries or the individual bead dictionaries belonging to the threads. </li>
+<li>The <strong>OpenAction</strong> entry in the catalogue.</li>
+<li>The <strong>AcroForm</strong> entry in the catalogue. Only the top-level interactive form dictionary shall be present, not the objects that it refers to.</li>
+<li>The <strong>Encrypt</strong> entry in the first-page trailer dictionary. All values in the encryption dictionary shall also be located here.</li>
+</ul>
+<p>All other objects shall not be located here but instead shall be at the end of the file; see <a href="#f310-其他对象第九部分">F.3.10</a>, "Other Objects (Part 9)". This includes objects such as page tree nodes, the document information dictionary, and the
+definitions for named destinations.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The objects located here are indexed by the first-page cross-reference table, even though they are not logically part of the first page.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="f36-提示流第五部分和第十部分">F.3.6 提示流（第五部分和第十部分）<a class="headerlink" href="#f36-提示流第五部分和第十部分" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.6 Hint Streams (Parts 5 and 10)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>线性化信息的核心应存储在称为提示表的数据结构中，其格式在<a href="#f4-提示表">F.4</a>，“提示表”中有详细描述。这些提示表应提供索引信息，使兼容的阅读器能够构建一个单一请求，以获取显示文档任意页面所需的所有对象，或高效地检索其他信息。提示表还可包含额外信息，以优化兼容的写入器扩展对应用程序特定数据的访问。</p>
+<p>提示表在逻辑上不属于文档的信息内容；它们应从文档中派生而来。任何更改文档的操作（例如，追加增量更新）都会使提示表失效。文档仍然是一个有效的PDF文件，但不再是线性化的；有关详细信息，请参见<a href="../a7/#g7-访问更新后的文件">G.7</a>，“访问更新后的文件”。</p>
+<p>提示表是应封装在流对象中的二进制数据结构。从语法上讲，此流应为PDF间接对象。不过，文档中任何地方都不应有对该流的引用。</p>
+<p>因此，它在逻辑上不属于文档的一部分，并且在重新生成文档的操作中可能会移除该流。</p>
+<p>通常，所有提示表应包含在一个称为主提示流的单一流中。可选地，可能还有一个包含更多提示的额外流，称为<em>溢出提示流</em>。两个提示流的内容应连接起来，并视为一个连续不间断的流。</p>
+<p>主提示流（必需）在示例5中显示为第5部分。此部分与第一页部分的顺序（显示为第6部分）可以颠倒；有关放置选择的考虑因素，请参见附录G。溢出提示流（第10部分）是可选的。</p>
+<p>文件开头线性化参数字典中应给出主提示流的位置和长度，以及（如果存在）溢出提示流的位置和长度。</p>
+<p>提示流应被分配文件中的最后一个对象编号——即，在第一页最后一个对象的对象编号之后。它们在交叉引用表中的条目应位于第一页交叉引用表的末尾。这种对象编号分配方式应独立于提示流在文件中的物理位置。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+</div>
+<p>这种约定可防止它们的对象编号与线性化对象的编号发生冲突。</p>
+<p>除一个例外外，提示流字典中所有条目的值应为直接对象，且不得包含间接对象引用。例外情况是流字典的<strong>Length</strong>条目（见<a href="#f41-页面偏移量提示表">F.4.1</a>中对<strong>H</strong>条目的讨论）。</p>
+<p>除了标准的流属性外，主提示流的字典应包含给出流中每个提示表起始位置的条目。这些位置应按字节计算，相对于流数据（应用解码过滤器后，如果有的话）的开头，并且在存在时连接溢出提示流。溢出提示流的字典不应包含这些条目。主提示流字典中指定标准提示表的键在<a href="#f42-共享对象提示表">F.4.2</a>，“共享对象提示表”中有列出；F.4，“提示表”记录了这些提示表的格式。此外，还有一个必需的页面偏移提示表，它应是流中的第一个表，并从偏移量0开始。</p>
+<p><table id="tableF2" markdown="span">
+    <caption><strong>表F.2 – 标准提示表</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>提示表</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>S</strong></td> <td>（必需）共享对象提示表（见<a href="#f42-共享对象提示表">F.4.2</a>，“共享对象提示表”）</td></tr>
+        <tr><td><strong>T</strong></td> <td>（仅在存在缩略图图像时出现）缩略图提示表（见<a href="#f43-缩略图提示表">F.4.3</a>，“缩略图提示表”）</td></tr>
+        <tr><td><strong>O</strong></td> <td>（仅在存在文档大纲时出现）大纲提示表（见<a href="#f44-通用提示表">F.4.4</a>，“通用提示表”）</td></tr>
+        <tr><td><strong>A</strong></td> <td>（仅在存在文章线索时出现）线索信息提示表（见<a href="#f44-通用提示表">F.4.4</a>，“通用提示表”）</td></tr>
+        <tr><td><strong>E</strong></td> <td>（仅在存在命名目标时出现）命名目标提示表（见<a href="#f44-通用提示表">F.4.4</a>，“通用提示表”）</td></tr>
+        <tr><td><strong>V</strong></td> <td>（仅在存在交互式表单字典时出现）交互式表单提示表（见<a href="#f45-扩展通用提示表">F.4.5</a>，“扩展通用提示表”）</td></tr>
+        <tr><td><strong>I</strong></td> <td>（仅在存在文档信息字典时出现）信息字典提示表（见<a href="#f44-通用提示表">F.4.4</a>，“通用提示表”）</td></tr>
+        <tr><td><strong>C</strong></td> <td>（仅在存在逻辑结构层次结构时出现；PDF 1.3）逻辑结构提示表（见<a href="#f45-扩展通用提示表">F.4.5</a>，“扩展通用提示表”）</td></tr>
+        <tr><td><strong>L</strong></td> <td>（PDF 1.3）页面标签提示表（见F.4.4，“通用提示表”）</td></tr>
+        <tr><td><strong>R</strong></td> <td>（仅在存在呈现名称树时出现；PDF 1.5）呈现名称树提示表（见<a href="#f45-扩展通用提示表">F.4.5</a>，“扩展通用提示表”）</td></tr>
+        <tr><td><strong>B</strong></td> <td>（仅在存在嵌入文件流时出现；PDF 1.5）嵌入文件流提示表（见<a href="#f46-嵌入文件流提示表">F.4.6</a>，“嵌入文件流提示表”）</td></tr>
+    </tbody>
+</table></p>
+<p>对于兼容的写入器扩展访问应用程序特定数据所需的额外提示表，可以注册新的键。有关更多信息，请参见<a href="../a5/">附录E</a>。</p>
+</div>
+<div class="tabbed-block">
+<p>The core of the linearization information shall be stored in data structures known as hint tables, whose format is described in <a href="#f4-提示表">F.4</a>, "Hint Tables." They shall provide indexing information that enables the conforming reader to construct a single request for all the objects that are needed to display any page of the document or to retrieve other information efficiently. The hint tables may contain additional information to optimize access by conforming writer extensions to application-specific data.</p>
+<p>The hint tables shall not be logically part of the information content of the document; they shall be derived from the document. Any action that changes the document—for instance, appending an incremental update—invalidates the hint tables. The document remains a valid PDF file but is no longer linearized; see <a href="../a7/#g7-访问更新后的文件">G.7</a>, "Accessing an Updated File" for details.</p>
+<p>The hint tables are binary data structures that shall be enclosed in a stream object. Syntactically, this stream shall be a PDF indirect object. However, there shall be no references to the stream anywhere in the document.</p>
+<p>Therefore, it is not logically part of the document, and an operation that regenerates the document may remove the stream.</p>
+<p>Usually, all the hint tables shall be contained in a single stream, known as the primary hint stream. Optionally, there may be an additional stream containing more hints, known as the <em>overflow hint stream</em>. The contents of the two hint streams shall be concatenated and treated as if they were a single unbroken stream.</p>
+<p>The primary hint stream, which shall be required, is shown as part 5 in Example 5. The order of this part and the first-page section, shown as part 6, may be reversed; see Annex G for considerations on the choice of placement. The overflow hint stream, part 10, is optional.</p>
+<p>The location and length of the primary hint stream, and of the overflow hint stream if present, shall be given in the linearization parameter dictionary at the beginning of the file.</p>
+<p>The hint streams shall be assigned the last object numbers in the file—that is, after the object number for the last object in the first page. Their cross-reference table entries shall be at the end of the first-page cross-reference table. This object number assignment shall be independent of the physical locations of the hint streams in the file.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>This convention keeps their object numbers from conflicting with the numbering of the linearized objects.</p>
+</div>
+<p>With one exception, the values of all entries in the hint streams’ dictionaries shall be direct objects and may contain no indirect object references. The exception is the stream dictionary’s <strong>Length</strong> entry (see the discussion of the <strong>H</strong> entry in <a href="#tableF1">Table F.1</a>).</p>
+<p>In addition to the standard stream attributes, the dictionary of the primary hint stream shall contain entries giving the position of the beginning of each hint table in the stream. These positions shall be counted in bytes relative to the beginning of the stream data (after decoding filters, if any, are applied) and with the overflow hint stream concatenated if present. The dictionary of the overflow hint stream shall not contain these entries. The keys designating the standard hint tables in the primary hint stream’s dictionary are listed in <a href="#tableF2">Table F.2</a>; F.4, "Hint Tables," documents the format of these hint tables. Additionally, there is a required page offset hint table, which shall be the first table in the stream and shall start at offset 0.</p>
+<p><table id="tableF2" markdown="span">
+    <caption><strong>Table F.2 – Standard hint tables</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Hint table</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>S</strong></td> <td>(Required) Shared object hint table (see <a href="#f42-共享对象提示表">F.4.2</a>, “Shared Object Hint Table”)</td></tr>
+        <tr><td><strong>T</strong></td> <td>(Present only if thumbnail images exist) Thumbnail hint table (see <a href="#f43-缩略图提示表">F.4.3</a>, "Thumbnail Hint Table")</td></tr>
+        <tr><td><strong>O</strong></td> <td>(Present only if a document outline exists) Outline hint table (see <a href="#f44-通用提示表">F.4.4</a>, “Generic Hint Tables”)</td></tr>
+        <tr><td><strong>A</strong></td> <td>(Present only if article threads exist) Thread information hint table (see <a href="#f44-通用提示表">F.4.4</a>, “Generic Hint Tables”)</td></tr>
+        <tr><td><strong>E</strong></td> <td>(Present only if named destinations exist) Named destination hint table (see <a href="#f44-通用提示表">F.4.4</a>, “Generic Hint Tables”)</td></tr>
+        <tr><td><strong>V</strong></td> <td>(Present only if an interactive form dictionary exists) Interactive form hint table (see <a href="#f45-扩展通用提示表">F.4.5</a>, “Extended Generic Hint Tables”)</td></tr>
+        <tr><td><strong>I</strong></td> <td>(Present only if a document information dictionary exists) Information dictionary hint table (see <a href="#f44-通用提示表">F.4.4</a>, “Generic Hint Tables”)</td></tr>
+        <tr><td><strong>C</strong></td> <td>(Present only if a logical structure hierarchy exists; PDF 1.3) Logical structure hint table (see <a href="#f45-扩展通用提示表">F.4.5</a>, “Extended Generic Hint Tables”)</td></tr>
+        <tr><td><strong>L</strong></td> <td>(PDF 1.3) Page label hint table (see F.4.4, “Generic Hint Tables”)</td></tr>
+        <tr><td><strong>R</strong></td> <td>(Present only if a renditions name tree exists; PDF 1.5) Renditions name tree hint table (see <a href="#f45-扩展通用提示表">F.4.5</a>, “Extended Generic Hint Tables”)</td></tr>
+        <tr><td><strong>B</strong></td> <td>(Present only if embedded file streams exist; PDF 1.5) Embedded file stream hint table (see <a href="#f46-嵌入文件流提示表">F.4.6</a>, “Embedded File Stream Hint Tables”)</td></tr>
+    </tbody>
+</table></p>
+<p>New keys may be registered for additional hint tables required application-specific data accessed by conforming writer extensions. See <a href="../a5/">Annex E</a> for further information.</p>
+</div>
+</div>
+</div>
+<h3 id="f37-第一页部分第六部分">F.3.7 第一页部分（第六部分）<a class="headerlink" href="#f37-第一页部分第六部分" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.7 First-Page Section (Part 6)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>文件的这一部分包含显示文档第一页所需的所有对象。通常情况下，第一页是页码为0的页面，即页面树中最左边的叶子页面节点。然而，如果文档目录中包含一个<strong>OpenAction</strong>条目，并且该条目指定从除第0页之外的其他页面开始打开，那么该页面应被视为第一页，并应位于此处。第一页的页码在直线化参数字典的<strong>P</strong>条目中给出。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>如前所述，属于文档第一页的对象部分可以位于主提示流之前或之后。可以从提示表中确定这一部分的起始文件偏移量和长度。此外，直线化参数字典中的<strong>E</strong>条目指定了第一页的结尾（作为相对于文件开头的偏移量），而<strong>O</strong>条目给出了第一页页面对象的对象编号。</p>
+</div>
+<p>第一页部分应包含以下对象：</p>
+<ul>
+<li>第一页的页面对象。此对象应是该文件部分的第一个对象。其对象编号在直线化参数字典中给出。此页面对象应明确指定所有必需的属性，如<strong>Resources</strong>和<strong>MediaBox</strong>；这些属性不得从祖先页面树节点继承。</li>
+<li>如果目录中<strong>PageMode</strong>条目的值为UseOutlines，则应包含整个大纲层次结构。如果<strong>PageMode</strong>条目被省略或具有其他值，并且文档具有大纲层次结构，则大纲层次结构应出现在第9部分；有关详细信息，请参见<a href="#f310-其他对象第九部分">F.3.10</a>，“其他对象（第9部分）”。</li>
+<li>页面对象引用的所有对象，深度不限，但页面树节点或其他页面对象除外。这应包括其<strong>Contents</strong>、<strong>Resources</strong>、<strong>Annots</strong>和<strong>B</strong>条目引用的对象，但不包括<strong>Thumb</strong>条目。</li>
+</ul>
+<p>从页面对象引用的对象的顺序应便于早期用户交互，并随着页面数据的到达逐步显示页面。应使用以下顺序：</p>
+<p>a) <strong>Annots</strong>数组及所有注释字典，深度足以激活这些注释。绘制注释所需的信息可以延迟到以后，因为注释总是绘制在内容之上（因此是在内容之后）。</p>
+<p>b) 如果此页面存在<strong>B</strong>（线索）数组及所有线索字典，则应包含这些内容。如果此页面存在任何线索，则页面字典中应存在<strong>B</strong>数组。此外，线索中的每个珠子（不仅仅是第一个珠子）都应包含一个<strong>T</strong>条目，指向相关的线索字典。</p>
+<p>c) 资源字典，但不包括字典中包含的资源对象。</p>
+<p>d) 资源对象（以下类型除外），按照它们首次从内容流中引用（直接或间接）的顺序排列。如果内容表示为流数组，则每个资源对象应在首次引用它的流之前。请注意，<strong>Font</strong>、<strong>FontDescriptor</strong>和<strong>Encoding</strong>资源应包含在此处，但从字体描述符引用的可替换字体文件除外（见下文第(g)项）。</p>
+<p>e) 页面内容（<strong>Contents</strong>）。如果内容较多，则应表示为对内容流的间接引用的数组，这些引用应与它们所需的资源交错排列。如果内容较少，则整个内容应为一个在资源之前的单一内容流。</p>
+<p>f) 图像XObjects，按照它们首次引用的顺序排列。可以假设图像较大且传输缓慢；因此，兼容的阅读器应在显示所有其他内容之后再渲染图像。</p>
+<p>g) <strong>FontFile</strong>流，其中包含嵌入字体的实际定义。可以假设这些字体文件较大且传输缓慢；因此，兼容的阅读器应在实际字体到达之前使用替代字体。只有那些可以替换的字体才可以以这种方式延迟加载。（目前，这包括任何具有设置了Nonsymbolic标志的字体描述符的Type 1或TrueType字体，该标志表示Adobe标准拉丁字符集）。</p>
+<p>有关对象顺序和增量绘制策略的更多讨论，请参见附录G 。</p>
+</div>
+<div class="tabbed-block">
+<p>This part of the file contains all the objects needed to display the first page of the document. Ordinarily, the first page is page 0—that is, the leftmost leaf page node in the page tree. However, if the document catalogue contains an <strong>OpenAction</strong> entry that specifies opening at some page other than page 0, that page shall be considered the first page and shall be located here. The page number of the first page is given in the <strong>P</strong> entry of the linearization parameter dictionary.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>As mentioned earlier, the section containing objects belonging to the first page of the document may either precede or follow the primary hint stream. The starting file offset and length of this section can be determined from the hint tables. In addition, the <strong>E</strong> entry in the linearization parameter dictionary specifies the end of the first page (as an offset relative to the beginning of the file), and the <strong>O</strong> entry gives the object number of the first page’s page object.</p>
+</div>
+<p>The following objects shall be contained in the first-page section:</p>
+<ul>
+<li>The page object for the first page. This object shall be the first one in this part of the file. Its object number is given in the linearization parameter dictionary. This page object shall explicitly specify all required attributes, such as <strong>Resources</strong> and <strong>MediaBox</strong>; the attributes may not be inherited from ancestor page tree nodes.</li>
+<li>The entire outline hierarchy, if the value of the <strong>PageMode</strong> entry in the catalogue is UseOutlines. If the <strong>PageMode</strong> entry is omitted or has some other value and the document has an outline hierarchy, the outline hierarchy shall appear in part 9; see <a href="#f310-其他对象第九部分">F.3.10</a>, "Other Objects (Part 9)" for details.</li>
+<li>All objects that the page object refers to, to an arbitrary depth, except page tree nodes or other page objects. This shall include objects referred to by its <strong>Contents</strong>, <strong>Resources</strong>, <strong>Annots</strong>, and <strong>B</strong> entries, but not the <strong>Thumb</strong> entry.</li>
+</ul>
+<p>The order of objects referenced from the page object should facilitate early user interaction and incremental display of the page data as it arrives. The following order should be used:</p>
+<p>a) The <strong>Annots</strong> array and all annotation dictionaries, to a depth sufficient for those annotations to be activated. Information required to draw the annotation may be deferred until later since annotations are always drawn on top of (hence after) the contents.</p>
+<p>b) The <strong>B</strong> (beads) array and all bead dictionaries, if any, for this page. If any beads exist for this page, the <strong>B</strong> array shall be present in the page dictionary. Additionally, each bead in the thread (not just the first bead) shall contain a <strong>T</strong> entry referring to the associated thread dictionary.</p>
+<p>c) The resource dictionary, but not the resource objects contained in the dictionary.</p>
+<p>d) Resource objects, other than the types listed below, in the order that they are first referenced (directly or indirectly) from the content stream. If the contents are represented as an array of streams, each resource object shall precede the stream in which it is first referenced. Note that <strong>Font</strong>, <strong>FontDescriptor</strong>, and <strong>Encoding</strong> resources shall be included here, but not substitutable font files referenced from font descriptors (see item (g) below).</p>
+<p>e) The page contents (<strong>Contents</strong>). If large, this should be represented as an array of indirect references to content streams, which in turn shall be interleaved with the resources they require. If small, the entire contents should be a single content stream preceding the resources.</p>
+<p>f) Image XObjects, in the order that they are first referenced. Images can be assumed to be large and slow to transfer; therefore, the conforming reader should defer rendering images until all the other contents have been displayed.</p>
+<p>g) <strong>FontFile</strong> streams, which contain the actual definitions of embedded fonts. These can be assumed to be large and slow to transfer; therefore, the conforming reader should use substitute fonts until the real ones have arrived. Only those fonts for which substitution is possible may be deferred in this way. (Currently, this includes any Type 1 or TrueType font that has a font descriptor with the Nonsymbolic flag set, indicating the Adobe standard Latin character set).</p>
+<p>See Annex G for additional discussion about object order and incremental drawing strategies.</p>
+</div>
+</div>
+</div>
+<h3 id="f38-剩余页面第七部分">F.3.8 剩余页面（第七部分）<a class="headerlink" href="#f38-剩余页面第七部分" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.8 Remaining Pages (Part 7)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>线性化PDF文件的第7部分应包含文件中所有其余页面的页面对象和非共享对象，并且每个页面的对象应分组在一起。这些页面应是连续的，并按页码顺序排列。如果文件的第一页不是第0页，则此部分应从第0页开始，并在到达第一页在序列中的位置时跳过第一页。</p>
+<p>对于每一页，显示该页面所需的对象应分组在一起，但与其他页面共享的资源和其他对象除外。共享对象应位于共享对象部分（第8部分）。可以从提示表中确定任何页面的起始文件偏移量和长度。页面内对象的推荐顺序基本上与第一页相同。特别是，页面对象应是每个部分中的第一个对象。</p>
+<p>在大多数情况下，与第一页不同，将内容与资源交错排列没有太大好处，因为除图像（特别是字体）之外的大多数资源在多个页面之间共享，因此位于共享对象部分。图像XObjects通常不共享，但它们应出现在文件中页面部分的末尾，因为图像的渲染是延迟的 。</p>
+</div>
+<div class="tabbed-block">
+<p>Part 7 of the Linearized PDF file shall contain the page objects and nonshared objects for all remaining pages of the file, with the objects for each page grouped together. The pages shall be contiguous and shall be ordered by page number. If the first page of the file is not page 0, this section shall start with page 0 and shall skip over the first page when its position in the sequence is reached.</p>
+<p>For each page, the objects required to display that page shall be grouped together, except for resources and other objects that are shared with other pages. Shared objects shall be located in the shared objects section (part 8). The starting file offset and length of any page can be determined from the hint tables. The recommended order of objects within a page is essentially the same as in the first page. In particular, the page object shall be the first object in each section.</p>
+<p>In most cases, unlike for the first page, little benefit is gained from interleaving contents with resources because most resources other than images—fonts in particular—are shared among multiple pages and therefore reside in the shared objects section. Image XObjects usually are not shared, but they should appear at the end of the page’s section of the file, since rendering of images is deferred.</p>
+</div>
+</div>
+</div>
+<h3 id="f39-共享对象第八部分">F.3.9 共享对象（第八部分）<a class="headerlink" href="#f39-共享对象第八部分" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.9 Shared Objects (Part 8)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">中文</label><label for="__tabbed_11_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>文件的第8部分包含对象（主要是命名资源），这些对象被多个页面引用，但未从第一页（直接或间接）引用。提示表包含这些对象的索引。有关命名资源的更多信息，请参见<a href="../c7/s8/#783-资源字典">7.8.3</a>，“资源字典”。</p>
+<p>这些对象的顺序可以是任意的。不过，只要资源由多级结构组成，该结构的所有组成部分都应分组在一起。如果只有顶级对象从组外部被引用，则整个组可以由共享对象提示表中的单个条目描述。这有助于减小共享对象提示表的大小以及页面偏移提示表条目中单独引用的数量 。</p>
+</div>
+<div class="tabbed-block">
+<p>Part 8 of the file contains objects, primarily named resources, that are referenced from more than one page but that are not referenced (directly or indirectly) from the first page. The hint tables contain an index of these objects. For more information on named resources, see <a href="../c7/s8/#783-资源字典">7.8.3</a>, "Resource Dictionaries".</p>
+<p>The order of these objects shall be arbitrary. However, wherever a resource consists of a multiple-level structure, all components of the structure shall be grouped together. If only the top-level object is referenced from outside the group, the entire group may be described by a single entry in the shared object hint table. This helps to minimize the size of the shared object hint table and the number of individual references from entries in the page offset hint table.</p>
+</div>
+</div>
+</div>
+<h3 id="f310-其他对象第九部分">F.3.10 其他对象（第九部分）<a class="headerlink" href="#f310-其他对象第九部分" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.10 Other Objects (Part 9)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">中文</label><label for="__tabbed_12_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在共享对象之后，是文档的其他对象，但这些对象对于显示页面并非必需。这些对象应按功能类别划分，每个类别内的对象应分组在一起；类别之间的相对顺序并不重要。</p>
+<ul>
+<li><strong>页面树</strong>：此对象可位于此部分，因为兼容的阅读器无需查阅它。请注意，页面对象的所有Resources属性和其他可继承属性都应下推并复制到每个叶页面对象中（但这些属性可能包含对共享对象的间接引用）。</li>
+<li><strong>缩略图图像</strong>：这些对象应按页码顺序排列。（即使文档的第一页不是第0页，第0页的缩略图图像也应排在第一位。）每个缩略图图像由一个或多个对象组成，这些对象可能引用缩略图共享对象部分中的对象（见下一项）。</li>
+<li><strong>缩略图共享对象</strong>：这些对象应在部分或所有缩略图图像之间共享，且不应从任何其他对象引用。</li>
+<li><strong>大纲层次结构</strong>（如果不位于第6部分）：对象的顺序应与兼容阅读器显示它们的顺序相同。这是大纲树的先序遍历，跳过任何关闭的子树（即其父节点的Count值为负的子树）。在此之后，是按原本全部打开时会出现的顺序排列的那些被跳过的子树。</li>
+<li><strong>线索信息字典</strong>：从线索字典的I条目引用的字典。请注意，线索字典本身应与文档目录放在一起，而珠子字典应与各个页面放在一起。</li>
+<li><strong>命名目标</strong>：这些对象包括文档目录中Dests或Names条目的值以及它所引用的所有目标对象；有关详细信息，请参见G.3，“在任意页面打开”。</li>
+<li><strong>文档信息字典</strong>及其包含的对象。</li>
+<li><strong>交互式表单字段层次结构</strong>：此组对象不应包括位于文档目录中的顶级交互式表单字典。</li>
+<li><strong>文档目录中未被任何页面引用的其他条目</strong>。</li>
+<li>（PDF 1.3）逻辑结构层次结构。</li>
+<li>（PDF 1.5）呈现名称树层次结构。</li>
+<li>（PDF 1.5）嵌入文件流 。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Following the shared objects are any other objects that are part of the document but are not required for displaying pages. These objects shall be divided into functional categories. Objects within each of these categories should be grouped together; the relative order of the categories is unimportant.</p>
+<ul>
+<li><em>The page tree</em>. This object can be located in this section because the conforming reader never needs to consult it. Note that all Resources attributes and other inheritable attributes of the page objects shall be pushed down and replicated in each of the leaf page objects (but they may contain indirect references to shared objects).</li>
+<li><em>Thumbnail images</em>. These objects shall simply be ordered by page number. (The thumbnail image for page 0 shall be first, even if the first page of the document is some page other than 0.) Each thumbnail image consists of one or more objects, which may refer to objects in the thumbnail shared objects section (see the next item).</li>
+<li><em>Thumbnail shared objects</em>. These are objects that shall be shared among some or all thumbnail images and shall not be referenced from any other objects.</li>
+<li><em>The outline hierarchy</em>, if not located in part 6. The order of objects shall be the same as the order in which they shall be displayed by the conforming reader. This is a preorder traversal of the outline tree, skipping over any subtree that is closed (that is, whose parent’s Count value is negative). Following that shall be the subtrees that were skipped over, in the order in which they would have appeared if they were all open.</li>
+<li><em>Thread information dictionaries</em>, referenced from the I entries of thread dictionaries. Note that the thread dictionaries themselves shall be located with the document catalogue and the bead dictionaries with the individual pages.</li>
+<li><em>Named destinations</em>. These objects include the value of the Dests or Names entry in the document catalogue and all the destination objects that it refers to; see G.3, "Opening at an Arbitrary Page".</li>
+<li><em>The document information dictionary</em> and the objects contained within it.</li>
+<li><em>The interactive form field hierarchy</em>. This group of objects shall not include the top-level interactive form dictionary, which is located with the document catalogue.</li>
+<li><em>Other entries</em> in the document catalogue that are not referenced from any page.</li>
+<li>(PDF 1.3) The logical structure hierarchy.</li>
+<li>(PDF 1.5) The renditions name tree hierarchy.</li>
+<li>(PDF 1.5) Embedded file streams.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="f311-主交叉引用和尾段第十一部分">F.3.11 主交叉引用和尾段（第十一部分）<a class="headerlink" href="#f311-主交叉引用和尾段第十一部分" title="Permanent link">&para;</a></h3>
+<p><strong>F.3.11 Main Cross-Reference and Trailer (Part 11)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">中文</label><label for="__tabbed_13_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>第11部分是PDF文件中除第一页交叉引用表（第3部分）所列对象之外的所有对象的交叉引用表。如前所述，此交叉引用表应充当文件（在追加任何更新之前）的原始交叉引用表，并应遵循以下规则：</p>
+<ul>
+<li>它由一个单一的交叉引用子部分组成，从对象编号0开始。</li>
+<li>第一个条目（针对对象编号0）应为一个空闲条目。</li>
+<li>其余条目用于正在使用的对象，这些对象应从1开始连续编号。</li>
+</ul>
+<p><strong>startxref</strong> 行应给出第一页交叉引用表的偏移量。第一页尾部的 <strong>Prev</strong> 条目应给出主交叉引用表的偏移量。主尾部没有 <strong>Prev</strong> 条目，并且除了 <strong>Size</strong> 条目外不应包含任何其他条目。</p>
+<p>在PDF 1.5及更高版本中，线性化文件中可以使用交叉引用流（见<a href="../c7/s5/#758-交叉引用流">7.5.8</a>，“交叉引用流”）代替传统的交叉引用表。本小节描述的逻辑以及针对交叉引用流的相应语法更改仍然适用 。</p>
+</div>
+<div class="tabbed-block">
+<p>Part 11 is the cross-reference table for all objects in the PDF file except those listed in the first-page cross- reference table (part 3). As indicated earlier, this cross-reference table shall play the role of the original cross- reference table for the file (before any updates are appended) and shall conform to the following rules:</p>
+<ul>
+<li>It consists of a single cross-reference subsection, beginning at object number 0.</li>
+<li>The first entry (for object number 0) shall be a free entry.</li>
+<li>The remaining entries are for in-use objects, which shall be numbered consecutively, starting at 1.</li>
+</ul>
+<p>The <strong>startxref</strong> line shall give the offset of the first-page cross-reference table. The <strong>Prev</strong> entry of the first-page trailer shall give the offset of the main cross-reference table. The main trailer has no <strong>Prev</strong> entry and shall not contain any entries other than <strong>Size</strong>.</p>
+<p>In PDF 1.5 and later, cross-reference streams (see <a href="../c7/s5/#758-交叉引用流">7.5.8</a>, "Cross-Reference Streams") may be used in linearized files in place of traditional cross-reference tables. The logic described in this sub-clause, along with the appropriate syntactic changes for cross-reference streams, still applies.</p>
+</div>
+</div>
+</div>
+<h2 id="f4-提示表">F.4 提示表<a class="headerlink" href="#f4-提示表" title="Permanent link">&para;</a></h2>
+<p><strong>F.4 Hint Tables</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">中文</label><label for="__tabbed_14_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>线性化信息的核心应存储在两个或更多提示表中，如主提示流的属性所示；见<a href="#f36-提示流第五部分和第十部分">F.3.6</a>，“提示流（第5部分和第10部分）”。标准提示表的格式在本节中描述。</p>
+<p>兼容的写入器可以添加额外的提示表用于兼容阅读器特定的数据。为这种提示表定义了一种通用格式；见<a href="#f44-通用提示表">F.4.4</a>，“通用提示表”。或者，提示表的格式可以是特定于兼容阅读器的；有关更多信息，请参见附录E。</p>
+<p>每个提示表应由流的一部分组成，从相应流属性指示的流中的位置开始。此外，兼容的写入器应包含一个页面偏移提示表，该表应是流中的第一个表，并从偏移量0开始。如果存在溢出提示流，则其内容应无缝追加到主提示流之后。</p>
+<div class="admonition note">
+<p class="admonition-title">注1</p>
+<p>提示表的位置相对于这个组合流的起始位置。</p>
+</div>
+<p>一般来说，这个字节流应被视为一个位流，高位在前，然后将其细分为任意宽度的字段，而不考虑字节边界。不过，每个提示表都应从字节边界开始。</p>
+<div class="admonition note">
+<p class="admonition-title">注2</p>
+<p>提示表旨在尽可能紧凑地编码所需信息。解读提示表需要按顺序读取；它们并非为随机访问而设计。</p>
+</div>
+<p>兼容的阅读器应在文档打开期间读取并解码这些表一次，并保留这些信息。</p>
+<div class="admonition note">
+<p class="admonition-title">注3</p>
+<p>提示表对文件中各种对象的位置进行编码。表示方式要么是显式的（相对于文件开头的偏移量），要么是隐式的（前面对象累积的长度）。</p>
+</div>
+<p>无论采用哪种表示方式，得到的位置都应理解为好像主提示流本身不存在一样。也就是说，如果某个位置大于提示流偏移量，则应加上提示流长度以确定相对于文件开头的实际偏移量。</p>
+<div class="admonition note">
+<p class="admonition-title">注4</p>
+<p>提示流偏移量和提示流长度是文件开头线性化参数字典中H数组里的offset1和length1的值。</p>
+<p>之所以有此规则，是因为主提示流的长度取决于提示表内包含的信息，而在生成提示表之前无法知道这些信息。提示表中包含的任何信息都不应依赖于事先知道主提示流的长度。</p>
+<p>请注意，此规则仅适用于提示表中给出的偏移量，而不适用于交叉引用表或线性化参数字典中给出的偏移量。此外，如果存在溢出提示流，则其偏移量和长度无需考虑，因为该对象位于文件中的所有其他对象之后。</p>
+<p>在使用对象流的线性化文件中（<a href="../c7/s5/#757-对象流">7.5.7</a>，“对象流”），提示表中指定的压缩对象的位置应被解释为可以找到该对象的字节范围，而不是精确的偏移量。兼容的阅读器应通过交叉引用流来定位对象，就像没有提示表一样 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The core of the linearization information shall be stored in two or more hint tables, as indicated by the attributes of the primary hint stream; see <a href="#f36-提示流第五部分和第十部分">F.3.6</a>, "Hint Streams (Parts 5 and 10)". The format of the standard hint tables is described in this section.</p>
+<p>A conforming writer may add additional hint tables for conforming reader-specific data. A generic format for such hint tables is defined; see <a href="#f44-通用提示表">F.4.4</a>, "Generic Hint Tables." Alternatively, the format of a hint table can be private to the conforming reader; see Annex E for further information.</p>
+<p>Each hint table shall consist of a portion of the stream, beginning at the position in the stream indicated by the corresponding stream attribute. Additionally, a conforming writer shall include a page offset hint table, which shall be the first table in the stream and shall start at offset 0. If there is an overflow hint stream, its contents shall be appended seamlessly to the primary hint stream.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Hint table positions are relative to the beginning of this combined stream.</p>
+</div>
+<p>In general, this byte stream shall be treated as a bit stream, high-order bit first, which shall then subdivided into fields of arbitrary width without regard to byte boundaries. However, each hint table shall begin at a byte boundary.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The hint tables are designed to encode the required information as compactly as possible. Interpreting the hint tables requires reading them sequentially; they are not designed for random access.</p>
+</div>
+<p>The conforming reader shall be expected to read and decode the tables once and retain the information for as long as the document remains open.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>A hint table encodes the positions of various objects in the file. The representation is either explicit (an offset from the beginning of the file) or implicit (accumulated lengths of preceding objects).</p>
+</div>
+<p>Regardless of the representation, the resulting positions shall be interpreted as if the primary hint stream itself were not present. That is, a position greater than the hint stream offset shall have the hint stream length added to it to determine the actual offset relative to the beginning of the file.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>The hint stream offset and hint stream length are the values offset1 and length1 in the H array in the linearization parameter dictionary at the beginning of the file.</p>
+<p>The reason for this rule is that the length of the primary hint stream depends on the information contained within the hint tables, which is not known until after they have been generated. Any information contained in the hint tables shall not depend on knowing the primary hint stream’s length in advance.</p>
+<p>Note that this rule applies only to offsets given in the hint tables and not to offsets given in the cross-reference tables or linearization parameter dictionary. Also, the offset and length of the overflow hint stream, if present, does not be taken into account, since this object follows all other objects in the file.</p>
+<p>In linearized files that use object streams (<a href="../c7/s5/#757-对象流">7.5.7</a>, "Object Streams"), the position specified in a hint table for a compressed object is to be interpreted as a byte range in which the object can be found, not as a precise offset. conforming readers should locate the object via a cross-reference stream, as it would if the hint table were not present.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="f41-页面偏移量提示表">F.4.1 页面偏移量提示表<a class="headerlink" href="#f41-页面偏移量提示表" title="Permanent link">&para;</a></h3>
+<p><strong>F.4.1 Page Offset Hint Table</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:2"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">中文</label><label for="__tabbed_15_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>页面偏移提示表提供定位每一页所需的信息。此外，对于除第一页之外的每一页，它还列举了该页直接或间接引用的所有共享对象。</p>
+<p>此表应以一个头部部分开始，如<a href="#tableF3">表F.3</a>所述，随后是一个或多个每页条目，如表<a href="#tableF4">F.4</a>所述。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>组成每个每页条目的项目并非连续排列；它们与其他页面条目的项目穿插在一起。</p>
+</div>
+<p>组成每页条目的项目的顺序如下：</p>
+<p>a) 所有页面的第1个项目，从第一页开始按页码顺序排列</p>
+<p>b) 所有页面的第2个项目，从第一页开始按页码顺序排列</p>
+<p>c) 所有页面的第3个项目，从第一页开始按页码顺序排列</p>
+<p>d) 第二页的所有共享对象的第4个项目，接着是第三页的所有共享对象的第4个项目，依此类推</p>
+<p>e) 第二页的所有共享对象的第5个项目，接着是第三页的所有共享对象的第5个项目，依此类推</p>
+<p>f) 所有页面的第6个项目，从第一页开始按页码顺序排列</p>
+<p>g) 所有页面的第7个项目，从第一页开始按页码顺序排列</p>
+<p>表F.3中规定所需位数的所有项目（如第3项），其值的范围是0到32。尽管该范围只需6位，但应使用16位数字。</p>
+<p><table id="tableF3" markdown="span">
+    <caption><strong>表F.3 – 页面偏移提示表，头部部分</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>项目</strong></th>
+            <th><strong>位数（bits）</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>页面（包括页面对象本身）中最少对象数量。</td></tr>
+        <tr><td>2</td> <td>32</td> <td>第一页的页面对象的位置。</td></tr>
+        <tr><td>3</td> <td>16</td> <td>表示页面中最少对象数量和最多对象数量之差所需的位数。</td></tr>
+        <tr><td>4</td> <td>32</td> <td>页面最少的字节长度。这应是从页面对象开头到该页面使用的最后一个对象的最后一个字节之间的最少长度。</td></tr>
+        <tr><td>5</td> <td>16</td> <td>表示页面最少字节长度和最多字节长度之差所需的位数。</td></tr>
+        <tr><td>6</td> <td>32</td> <td>相对于页面开头，任何内容流起始位置的最少偏移量。</td></tr>
+        <tr><td>7</td> <td>16</td> <td>表示内容流起始位置的最少偏移量和最多偏移量之差所需的位数。</td></tr>
+        <tr><td>8</td> <td>32</td> <td>最小的内容流长度。</td></tr>
+        <tr><td>9</td> <td>16</td> <td>表示内容流最少长度和最多长度之差所需的位数。</td></tr>
+        <tr><td>10</td> <td>16</td> <td>表示共享对象引用最大数量所需的位数。</td></tr>
+        <tr><td>11</td> <td>16</td> <td>表示页面使用的最大共享对象标识符所需的位数（在<a href="#tableF4">表F.4</a>，第4项中有进一步讨论）。</td></tr>
+        <tr><td>12</td> <td>16</td> <td>表示每个共享对象引用的分数位置的分子所需的位数。对于页面引用的每个共享对象，都应标明该对象在页面内容流中首次被引用的位置。该位置应以分数的分子形式给出，分母在整个文档中指定一次（在表中的下一个项目）。分数在<a href="#tableF4">表F.4</a>，第5项中有更详细的说明。</td></tr>
+        <tr><td>13</td> <td>16</td> <td>每个共享对象引用的分数位置的分母。</td></tr>
+    </tbody>
+</table></p>
+<p><table id="tableF3" markdown="span">
+    <caption><strong>表F.3 – 页面偏移提示表，头部部分</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>项目</strong></th>
+            <th><strong>位数（bits）</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>见<a href="#tableF3">表F.3</a>，第3项</td>
+            <td>一个数字，将其与页面中最少对象数量（表F.3，第1项）相加，可得到该页面中的对象数量。第一页的第一个对象的编号应为文件开头线性化参数字典中 <strong>O</strong> 条目的值。第二页的第一个对象的编号应为1。后续页面的对象编号通过累加所有前面页面的对象数量来确定。</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>见<a href="#tableF3">表F.3</a>，第5项</td>
+            <td>一个数字，将其与页面最少字节长度（表F.3，第4项）相加，可得到该页面的字节长度。第一页第一个对象的位置可通过其对象编号（线性化参数字典中的 <strong>O</strong> 条目）以及该对象的交叉引用表条目来确定；见F.3.4，“第一页交叉引用表和尾部（第3部分）”。后续页面的位置通过累加所有前面页面的长度来确定。兼容产品应跳过主提示流，无论其位于何处。</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>见<a href="#tableF3">表F.3</a>，第10项</td>
+            <td>页面引用的共享对象数量。对于第一页，此数字应为0；接下来的两个项目从第二页开始。</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>见<a href="#tableF3">表F.3</a>，第11项</td>
+            <td>（对于页面引用的每个共享对象都有一个项目）共享对象标识符，即共享对象提示表（在F.4.2“共享对象提示表”中有描述）中的索引。共享对象提示表中的一个条目可能指定一组共享对象，但只有一个对象可从组外引用。也就是说，共享对象标识符与对象编号没有直接关系。此标识符与第5项提供的分子相结合形成一个共享对象引用。</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>见<a href="#tableF3">表F.3</a>，第12项</td>
+            <td>（对于页面引用的每个共享对象都有一个项目）每个共享对象引用的分数位置的分子，其顺序与前面的项目相同。该分数应指示在页面内容流中首次引用共享对象的位置。此项目应解释为分数的分子，分母在整个文档中指定一次（表F.3，第13项）。<br/><br/> 示例<br/><br/> 如果分母为d，分子范围从0到d - 1表示页面内容流的相应部分。例如，如果分母为4，分子为0、1、2或3分别表示首次引用位于内容流的第一、二、三或四分之一处<br/><br/> 分子还有两个（或更多）其他可能的值，这些值表示共享对象不是从内容流中引用的，而是被注释或在内容之后绘制的其他对象所需要。值d表示在页面末尾的图像XObjects和其他非共享对象之前需要该共享对象。值d + 1或更大表示在这些对象之后需要该共享对象<br/><br/> 注意<br/><br/> 这种将页面划分为分数的方法只是近似的。确定共享对象的首次引用需要检查未编码的内容流。未编码流和编码流中位置之间的关系不一定是线性的。</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>见<a href="#tableF3">表F.3</a>，第7项</td>
+            <td>一个数字，将其与内容流起始位置的最少偏移量（表F.3，第6项）相加，可得到相对于页面开头，页面内容流起始位置（流对象，而非流数据）的字节偏移量。</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>见<a href="#tableF3">表F.3</a>，第9项</td>
+            <td>一个数字，将其与内容流最少长度（表F.3，第8项）相加，可得到页面内容流的字节长度。此长度应包括流数据前后的对象开销。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>The page offset hint table provides information required for locating each page. Additionally, for each page except the first, it also enumerates all shared objects that the page references, directly or indirectly.</p>
+<p>This table shall begin with a header section, described in <a href="#tableF3">Table F.3</a>, followed by one or more per-page entries, described in Table <a href="#tableF4">F.4</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The items making up each per-page entry are not contiguous; they are broken up with items from entries for other pages.</p>
+</div>
+<p>The order of items making up the per-page entries shall be as follows:</p>
+<p>a) Item 1 for all pages, in page order starting with the first page</p>
+<p>b) Item 2 for all pages, in page order starting with the first page</p>
+<p>c) Item 3 for all pages, in page order starting with the first page</p>
+<p>d) Item 4 for all shared objects in the second page, followed by item 4 for all shared objects in the third page, and so on</p>
+<p>e) Item 5 for all shared objects in the second page, followed by item 5 for all shared objects in the third page, and so on</p>
+<p>f) Item 6 for all pages, in page order starting with the first page</p>
+<p>g) Item 7 for all pages, in page order starting with the first page</p>
+<p>All the items in Table F.3 that specify a number of bits needed, such as item 3, have values in the range 0 through 32. Although that range requires only 6 bits, 16-bit numbers shall be used.</p>
+<p><table id="tableF3" markdown="span">
+    <caption><strong>Table F.3 – Page offset hint table, header section</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Size (bits)</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>The least number of objects in a page (including the page object itself).</td></tr>
+        <tr><td>2</td> <td>32</td> <td>The location of the first page’s page object.</td></tr>
+        <tr><td>3</td> <td>16</td> <td>The number of bits needed to represent the difference between the greatest and least number of objects in a page.</td></tr>
+        <tr><td>4</td> <td>32</td> <td>The least length of a page in bytes. This shall be the least length from the beginning of a page object to the last byte of the last object used by that page.</td></tr>
+        <tr><td>5</td> <td>16</td> <td>The number of bits needed to represent the difference between th greatest and least length of a page, in bytes.</td></tr>
+        <tr><td>6</td> <td>32</td> <td>The least offset of the start of any content stream, relative to the beginning of its page.</td></tr>
+        <tr><td>7</td> <td>16</td> <td>The number of bits needed to represent the difference between the greatest and least offset to the start of the content stream.</td></tr>
+        <tr><td>8</td> <td>32</td> <td>The least content stream length.</td></tr>
+        <tr><td>9</td> <td>16</td> <td>The number of bits needed to represent the difference between the reatest and least content stream length.</td></tr>
+        <tr><td>10</td> <td>16</td> <td>The number of bits needed to represent the greatest number of shared object references.</td></tr>
+        <tr><td>11</td> <td>16</td> <td>The number of bits needed to represent the numerically greatest shared object identifier used by the pages (discussed further in <a href="#tableF4">Table F.4</a>, item 4).</td></tr>
+        <tr><td>12</td> <td>16</td> <td>The number of bits needed to represent the numerator of the fractional position for each shared object reference. For each shared object referenced from a page, there shall be an indication of where in the page’s content stream the object is first referenced. That position shall be given as the numerator of a fraction, whose denominator is specified once for the entire document (in the next item in this table). The fraction is explained in more detail in <a href="#tableF4">Table F.4</a>, item 5.</td></tr>
+        <tr><td>13</td> <td>16</td> <td>The denominator of the fractional position for each shared object reference.</td></tr>
+    </tbody>
+</table></p>
+<p><table id="tableF4" markdown="span">
+    <caption><strong>Table F.4 – Page offset hint table, per-page entry</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Size (bits)</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>See <a href="#tableF3">Table F.3</a>, item 3</td> <td>A number that, when added to the least number of objects in a page (Table F.3, item 1), shall give the number of objects in the page. The first object of the first page shall have an object number that is the value of the <strong>O</strong> entry in the linearization parameter dictionary at the beginning of the file. The first object of the second page shall have an object number of 1. Object numbers for subsequent pages shall be determined by accumulating the number of objects in all previous pages.</td> </tr>
+        <tr><td>2</td> <td>See <a href="#tableF3">Table F.3</a>, item 5</td> <td>A number that, when added to the least page length (Table F.3, item 4), shall give the length of the page in bytes. The location of the first object of the first page may be determined from its object number (the <strong>O</strong> entry in the linearization parameter dictionary) and the cross- reference table entry for that object; see F.3.4, "First-Page Cross- Reference Table and Trailer (Part 3)". The locations of subsequent pages shall be determined by accumulating the lengths of all previous pages. A conforming product shall skip over the primary hint stream, wherever it is located.</td> </tr>
+        <tr><td>3</td> <td>See <a href="#tableF3">Table F.3</a>, item 10</td> <td>The number of shared objects referenced from the page. For the first page, this number shall be 0; the next two items start with the second page.</td> </tr>
+        <tr><td>4</td> <td>See <a href="#tableF3">Table F.3</a>, item 11</td> <td>(One item for each shared object referenced from the page) A shared object identifier—that is, an index into the shared object hint table (described in F.4.2, “Shared Object Hint Table”). A single entry in the shared object hint table may designate a group of shared objects, but only one of which shall be referenced from outside the group. That is, shared object identifiers shall not be directly related to object numbers. This identifier combines with the numerators provided in item 5 to form a shared object reference.</td> </tr>
+        <tr><td>5</td> <td>See <a href="#tableF3">Table F.3</a>, item 12</td> <td>(One item for each shared object referenced from the page) The numerator of the fractional position for each shared object reference, which shall be in the same order as the preceding item. The fraction shall indicate where in the page’s content stream the shared object is first referenced. This item shall be interpreted as the numerator of a fraction whose denominator is specified once for the entire document (Table F.3, item 13). <br/><br/>
+        EXAMPLE <br/><br/>
+        &emsp;If the denominator is d, a numerator ranging from 0 to d - 1 indicates the corresponding portion of the page’s content stream. For example, if the denominator is 4, a numerator of 0, 1, 2, or 3 indicates that the first reference lies in the first, second, third, or fourth quarter of the content stream, respectively.<br/><br/>
+        There are two (or more) other possible values for the numerator, which shall indicate that the shared object is not referenced from the content stream but instead is needed by annotations or other objects that are drawn after the contents. The value d shall indicate that the shared object is needed before image XObjects and other nonshared objects that are at the end of the page. A value of d + 1 or greater shall indicate that the shared object is needed after those objects.<br/><br/>
+        NOTE<br/><br/>
+        This method of dividing the page into fractions is only approximate. Determining the first reference to a shared object entails inspecting the unencoded content stream. The relationship between positions in the unencoded and encoded streams is not necessarily linear.</td> </tr>
+        <tr><td>6</td> <td>See <a href="#tableF3">Table F.3</a>, item 7</td> <td>A number that, when added to the least offset to the start of the content stream (<a href="#tableF3">Table F.3</a>, item 6), shall give the offset in bytes of the start of the page’s content stream (the stream object, not the stream data), relative to the beginning of the page.</td> </tr>
+        <tr><td>7</td> <td>See <a href="#tableF3">Table F.3</a>, item 9</td> <td>A number that, when added to the least content stream length (<a href="#tableF3">Table F.3</a>, item 8), shall give the length of the page’s content stream in bytes. This length shall include object overhead preceding and following the stream data.</td> </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="f42-共享对象提示表">F.4.2 共享对象提示表<a class="headerlink" href="#f42-共享对象提示表" title="Permanent link">&para;</a></h3>
+<p><strong>F.4.2 Shared Object Hint Table</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="16:2"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><input id="__tabbed_16_2" name="__tabbed_16" type="radio" /><div class="tabbed-labels"><label for="__tabbed_16_1">中文</label><label for="__tabbed_16_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>共享对象提示表提供了定位共享对象所需的信息；见<a href="#f39-共享对象第八部分">F.3.9</a>，“共享对象（第8部分）”。共享对象可能实际位于两个位置之一：从第一页引用的对象应位于第一页对象部分（第6部分）；所有其他共享对象应位于共享对象部分（第8部分）。</p>
+<p>共享对象提示表中的单个条目可以在以下条件下描述一组相邻对象：组内只有第一个对象从组外被引用；组内其余对象仅从同一组内的其他对象被引用。一组中的对象应具有相邻的对象编号。</p>
+<p>页面偏移提示表、交互式表单提示表和逻辑结构提示表应通过一个简单的索引引用共享对象提示表中的一个条目，该索引是从0开始计数的其在表中的顺序位置。</p>
+<p>共享对象提示表应由一个头部部分（表F.5）和一个或多个共享对象组条目（表F.6）组成。共享对象组条目有两个序列：位于第一页的对象的条目在前，位于共享对象部分的对象的条目在后。两种情况下的条目格式相同。请注意，组成每个共享对象组条目的项目不必连续；它们可能与其他共享对象组条目的项目穿插在一起。每个序列中的项目顺序如下：</p>
+<p>a) 第一组的第1个项目，第二组的第1个项目，依此类推</p>
+<p>b) 第一组的第2个项目，第二组的第2个项目，依此类推</p>
+<p>c) 第一组的第3个项目，第二组的第3个项目，依此类推</p>
+<p>d) 第一组的第4个项目，第二组的第4个项目，依此类推</p>
+<p>与第一页相关的所有对象（第6部分），无论是否实际共享，都应在共享对象提示表中有条目。第一个条目应指向第一页的开头，并且其对象计数和长度应涵盖所有初始的非共享对象。下一个条目应指向一组共享对象。后续条目应连续涵盖其他组共享对象或非共享对象，直到枚举完第一页中的所有共享对象。（不应有任何指向非共享对象的条目。）</p>
+<p><table id="tableF5" markdown="span">
+    <caption><strong>表F.5 – 共享对象提示表，头部部分</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>项目</strong></th>
+            <th><strong>位数（bits）</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>共享对象部分（第8部分）中第一个对象的对象编号。</td> </tr>
+        <tr><td>2</td> <td>32</td> <td>共享对象部分中第一个对象的位置。</td> </tr>
+        <tr><td>3</td> <td>32</td> <td>第一页的共享对象条目数量（包括上述的非共享对象）。</td> </tr>
+        <tr><td>4</td> <td>32</td> <td>共享对象部分的共享对象条目数量，包括第一页的共享对象条目数量（即项目3的值）。</td> </tr>
+        <tr><td>5</td> <td>16</td> <td>表示共享对象组中最多对象数量所需的位数。</td> </tr>
+        <tr><td>6</td> <td>32</td> <td>共享对象组最少的字节长度。</td> </tr>
+        <tr><td>7</td> <td>16</td> <td>表示共享对象组最少字节长度和最多字节长度之差所需的位数。</td> </tr>
+    </tbody>
+</table></p>
+<p><table id="tableF6" markdown="span">
+    <caption><strong>表F.6 – 共享对象提示表，共享对象组条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>项目</strong></th>
+            <th><strong>位数（bits）</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>见表F.5，第7项</td>
+            <td>一个数字，将其与共享对象组最少长度（表F.5，第6项）相加，可得到该对象组的字节长度。第一页第一个对象的位置应在页面偏移提示表的头部部分（表F.3，第4项）给出。后续对象组的位置可通过累加所有前面对象组的长度来确定，直至枚举完第一页中的所有共享对象。在此之后，共享对象部分中第一个对象的位置可从共享对象提示表的头部部分（表F.5，第2项）获取。</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1</td>
+            <td>一个标志，用于指示共享对象签名（第3项）是否存在；若签名存在，其值应为1；若签名不存在，其值应为0。</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>128</td>
+            <td>（仅当第2项为1时）共享对象签名，一个16字节的MD5哈希值，用于唯一标识该组对象所代表的资源<br/><br/> <strong>注</strong><br/><br/> 它使兼容的阅读器能够使用本地缓存的资源副本，而不是从PDF文件中读取该资源。请注意，此签名与交互式表单中的签名字段（见<a href="../c12/s7/#12745-签名字段">12.7.4.5</a>，“签名字段”）无关。</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>见表F.5，第5项</td>
+            <td>一个数字，等于该组对象数量减1。第一页的第一个对象应是文件开头的线性化参数字典中 <strong>O</strong> 条目所指定的对象编号的对象。后续条目的对象编号可通过累加所有前面条目中的对象数量来确定，直至枚举完第一页中的所有共享对象。在此之后，共享对象部分中第一个对象的对象编号可从共享对象提示表的头部部分（表F.5，第1项）获取。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>在仅包含一页的文档中，该页的所有对象都应视为共享对象；共享对象提示表反映了这一点 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The shared object hint table gives information required to locate shared objects; see <a href="#f39-共享对象第八部分">F.3.9</a>, "Shared Objects (Part 8)". Shared objects may be physically located in either of two places: objects that are referenced from the first page shall be located with the first-page objects (part 6); all other shared objects shall be located in the shared objects section (part 8).</p>
+<p>A single entry in the shared object hint table may describe a group of adjacent objects under the following condition: Only the first object in the group is referenced from outside the group; the remaining objects in the group are referenced only from other objects in the same group. The objects in a group shall have adjacent object numbers.</p>
+<p>The page offset hint table, interactive form hint table, and logical structure hint table shall refer to an entry in the shared object hint table by a simple index that is its sequential position in the table, counting from 0.</p>
+<p>The shared object hint table shall consist of a header section (Table F.5) followed by one or more shared object group entries (Table F.6). There shall be two sequences of shared object group entries: the ones for objects located in the first page, followed by the ones for objects located in the shared objects section. The entries shall have the same format in both cases. Note that the items making up each shared object group entry need not be contiguous; they may be broken up with items from entries for other shared object groups. The order of items in each sequence shall be as follows:</p>
+<p>a)Item 1 for the first group, item 1 for the second group, and so on</p>
+<p>b)Item 2 for the first group, item 2 for the second group, and so on</p>
+<p>c)Item 3 for the first group, item 3 for the second group, and so on</p>
+<p>d)Item 4 for the first group, item 4 for the second group, and so on</p>
+<p>All objects associated with the first page (part 6) shall have entries in the shared object hint table, regardless of whether they are actually shared. The first entry shall refer to the beginning of the first page and shall be have an object count and length that shall span all the initial nonshared objects. The next entry shall refer to a group of shared objects. Subsequent entries shall span additional groups of either shared or nonshared objects consecutively until all shared objects in the first page have been enumerated. (There shall not be any entries that refer to nonshared objects.)</p>
+<p><table id="tableF5" markdown="span">
+    <caption><strong>Table F.5 – Shared object hint table, header section</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Size (bits)</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>The object number of the first object in the shared objects section (part 8).</td> </tr>
+        <tr><td>2</td> <td>32</td> <td>The location of the first object in the shared objects section.</td> </tr>
+        <tr><td>3</td> <td>32</td> <td>The number of shared object entries for the first page (including nonshared objects, as noted above).</td> </tr>
+        <tr><td>4</td> <td>32</td> <td>The number of shared object entries for the shared objects section, including the number of shared object entries for the first page (that is, the value of item 3).</td> </tr>
+        <tr><td>5</td> <td>16</td> <td>The number of bits needed to represent the greatest number of objects in a shared object group.</td> </tr>
+        <tr><td>6</td> <td>32</td> <td>The least length of a shared object group in bytes.</td> </tr>
+        <tr><td>7</td> <td>16</td> <td>The number of bits needed to represent the difference between the greatest and least length of a shared object group, in bytes.</td> </tr>
+    </tbody>
+</table></p>
+<p><table id="tableF6" markdown="span">
+    <caption><strong>Table F.6 – Shared object hint table, shared object group entry</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Size (bits)</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>See Table F.5, item 7</td> <td>A number that, when added to the least shared object group length (Table F.5, item 6), gives the length of the object group in bytes. The location of the first object of the first page shall be given in the page offset hint table, header section (Table F.3, item 4). The locations of subsequent object groups can be determined by accumulating the lengths of all previous object groups until all shared objects in the first page have been enumerated. Following that, the location of the first object in the shared objects section can be obtained from the header section of the shared object hint table (Table F.5, item 2).</td> </tr>
+        <tr><td>2</td> <td>1</td> <td>A flag indicating whether the shared object signature (item 3) is present; its value shall be 1 if the signature is present and 0 if it is absent.</td> </tr>
+        <tr><td>3</td> <td>128</td> <td>(Only if item 2 is 1) The shared object signature, a 16-byte MD5 hash that uniquely identifies the resource that the group of objects represents. <br/><br/>
+        NOTE<br/><br/>
+        &emsp; It enables the conforming reader to substitute a locally cached copy of the resource instead of reading it from the PDF file. Note that this signature is unrelated to signature fields in interactive forms, as defined in <a href="../c12/s7/#12745-签名字段">12.7.4.5</a>, "Signature Fields".</td> </tr>
+        <tr><td>4</td> <td>See Table F.5, item 5</td> <td>A number equal to 1 less than the number of objects in the group. The first object of the first page shall be the one whose object number is given by the <strong>O</strong> entry in the linearization parameter dictionary at the beginning of the file. Object numbers for subsequent entries can be determined by accumulating the number of objects in all previous entries until all shared objects in the first page have been enumerated. Following that, the first object in the shared objects section has a number that can be obtained from the header section of the shared object hint table (Table F.5, item 1)..</td> </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>In a document consisting of only one page, all of that page’s objects shall be treated as if they were shared; the shared object hint table reflects this.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="f43-缩略图提示表">F.4.3 缩略图提示表<a class="headerlink" href="#f43-缩略图提示表" title="Permanent link">&para;</a></h3>
+<p><strong>F.4.3 Thumbnail Hint Table</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="17:2"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><input id="__tabbed_17_2" name="__tabbed_17" type="radio" /><div class="tabbed-labels"><label for="__tabbed_17_1">中文</label><label for="__tabbed_17_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>缩略图提示表应由一个头部部分（表F.7）和一个缩略图部分组成，缩略图部分应包含一个或多个每页条目（表F.8），每个条目描述单个页面的缩略图图像。这些条目应按页码顺序排列，从第0页开始，即使文档目录中包含一个<strong>OpenAction</strong>条目，指定从第0页以外的某个页面开始打开。某些页面可能存在缩略图图像，而其他页面可能不存在。</p>
+<p><table id="tableF7" markdown="span">
+    <caption><strong>表F.7 – 缩略图提示表，头部部分</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>项目</strong></th>
+            <th><strong>位数（bits）</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>第一个缩略图图像的对象编号（即缩略图部分中第一个条目所描述的缩略图图像）。</td> </tr>
+        <tr><td>2</td> <td>32</td> <td>第一个缩略图图像的位置。</td> </tr>
+        <tr><td>3</td> <td>32</td> <td>具有缩略图图像的页面数量。</td> </tr>
+        <tr><td>4</td> <td>16</td> <td>表示没有缩略图图像的连续页面的最大数量所需的位数。</td> </tr>
+        <tr><td>5</td> <td>32</td> <td>缩略图图像最少的字节长度。</td> </tr>
+        <tr><td>6</td> <td>16</td> <td>表示缩略图图像最少字节长度和最多字节长度之差所需的位数。</td> </tr>
+        <tr><td>7</td> <td>32</td> <td>缩略图图像中最少的对象数量。</td> </tr>
+        <tr><td>8</td> <td>16</td> <td>表示缩略图图像最少对象数量和最多对象数量之差所需的位数。</td> </tr>
+        <tr><td>9</td> <td>32</td> <td>缩略图共享对象部分（第9部分的一个子部分）中第一个对象的对象编号。该部分包含一些对象（例如颜色空间），这些对象应从某些或所有缩略图对象中引用，且不被任何其他对象引用。缩略图共享对象是不区分的；没有指明哪些共享对象会被某一页的缩略图图像引用。</td> </tr>
+        <tr><td>10</td> <td>32</td> <td>缩略图共享对象部分中第一个对象的位置。</td> </tr>
+        <tr><td>11</td> <td>32</td> <td>缩略图共享对象的数量。</td> </tr>
+        <tr><td>12</td> <td>32</td> <td>缩略图共享对象部分的字节长度。</td> </tr>
+    </tbody>
+</table></p>
+<p><table id="tableF8" markdown="span">
+    <caption><strong>表F.8 – 缩略图提示表，每页条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>项目</strong></th>
+            <th><strong>位数（bits）</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>见表F.7，第4项</td> <td>（可选）前面没有缩略图图像的页面数量。此数字表示上一个条目的页面与当前页面之间没有缩略图图像的页面数。</td> </tr>
+        <tr><td>2</td> <td>见表F.7，第8项</td> <td>一个数字，将其与缩略图图像最少对象数量（表F.7，第7项）相加，可得到当前页面缩略图图像的对象数量。</td> </tr>
+        <tr><td>3</td> <td>见表F.7，第6项</td> <td>一个数字，将其与缩略图图像最少字节长度（表F.7，第5项）相加，可得到当前页面缩略图图像的字节长度。</td> </tr>
+    </tbody>
+</table></p>
+<p>表F.8中项目的顺序如下：</p>
+<p>a) 所有页面的项目1，按从第一页开始的页码顺序排列。</p>
+<p>b) 所有页面的项目2，按从第一页开始的页码顺序排列。</p>
+<p>c) 所有页面的项目3，按从第一页开始的页码顺序排列 。</p>
+</div>
+<div class="tabbed-block">
+<p>The thumbnail hint table shall consist of a header section (Table F.7) followed by the thumbnails section, which shall include one or more per-page entries (Table F.8), each of which describes the thumbnail image for a single page. The entries shall be in page number order starting with page 0, even if the document catalogue contains an <strong>OpenAction</strong> entry that specifies opening at some page other than page 0. Thumbnail images may exist for some pages and not for others.</p>
+<p><table id="tableF7" markdown="span">
+    <caption><strong>Table F.7 – Thumbnail hint table, header section</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Size (bits)</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>The object number of the first thumbnail image (that is, the thumbnail image that is described by the first entry in the thumbnails section).</td> </tr>
+        <tr><td>2</td> <td>32</td> <td>The location of the first thumbnail image.</td> </tr>
+        <tr><td>3</td> <td>32</td> <td>The number of pages that have thumbnail images.</td> </tr>
+        <tr><td>4</td> <td>16</td> <td>The number of bits needed to represent the greatest number of consecutive pages that do not have a thumbnail image.</td> </tr>
+        <tr><td>5</td> <td>32</td> <td>The least length of a thumbnail image in bytes.</td> </tr>
+        <tr><td>6</td> <td>16</td> <td>The number of bits needed to represent the difference between the greatest and least length of a thumbnail image.</td> </tr>
+        <tr><td>7</td> <td>32</td> <td>The least number of objects in a thumbnail image.</td> </tr>
+        <tr><td>8</td> <td>16</td> <td>The number of bits needed to represent the difference between the greatest and least number of objects in a thumbnail image.</td> </tr>
+        <tr><td>9</td> <td>32</td> <td>The object number of the first object in the thumbnail shared objects section (a subsection of part 9). This section includes objects (colour spaces, for example) that shall be referenced from some or all thumbnail objects and are not referenced from any other objects. The thumbnail shared objects shall be undifferentiated; there is no indication of which shared objects shall be referenced from any given page’s thumbnail image.</td> </tr>
+        <tr><td>10</td> <td>32</td> <td>The location of the first object in the thumbnail shared objects section.</td> </tr>
+        <tr><td>11</td> <td>32</td> <td>The number of thumbnail shared objects.</td> </tr>
+        <tr><td>12</td> <td>32</td> <td>The length of the thumbnail shared objects section in bytes.</td> </tr>
+    </tbody>
+</table></p>
+<p><table id="tableF8" markdown="span">
+    <caption><strong>Table F.8 – Thumbnail hint table, per-page entry</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Size (bits)</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>See Table F.7, item 4</td> <td>(Optional) The number of preceding pages lacking a thumbnail image. This number indicates how many pages without a thumbnail image lie between the previous entry’s page and this page.</td> </tr>
+        <tr><td>2</td> <td>See Table F.7, item 8</td> <td>A number that, when added to the least number of objects in a thumbnail image (Table F.7, item 7), gives the number of objects in this page’s thumbnail image.</td> </tr>
+        <tr><td>3</td> <td>See Table F.7, item 6</td> <td>A number that, when added to the least length of a thumbnail image (Table F.7, item 5), gives the length of this page’s thumbnail image in bytes.</td> </tr>
+    </tbody>
+</table></p>
+<p>The order of items in Table F.8 is as follows:</p>
+<p>a) Item 1 for all pages, in page order starting with the first page</p>
+<p>b) Item 2 for all pages, in page order starting with the first page</p>
+<p>c) Item 3 for all pages, in page order starting with the first page</p>
+</div>
+</div>
+</div>
+<h3 id="f44-通用提示表">F.4.4 通用提示表<a class="headerlink" href="#f44-通用提示表" title="Permanent link">&para;</a></h3>
+<p><strong>F.4.4 Generic Hint Tables</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="18:2"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio" /><input id="__tabbed_18_2" name="__tabbed_18" type="radio" /><div class="tabbed-labels"><label for="__tabbed_18_1">中文</label><label for="__tabbed_18_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>对象类别与整个文档相关联，而非与单个页面相关联（见<a href="#f310-其他对象第九部分">F.3.10</a>，“其他对象（第9部分）”），并且应提供提示信息以便高效访问这些对象。对于每一类提示信息，在主提示流中都应有一个单独的条目，用于指明该表在流中的起始位置；见<a href="#f36-提示流第五部分和第十部分">F.3.6</a>，“提示流（第5部分和第10部分）”。</p>
+<p>此类提示信息应通过一个通用提示表来表示，该表描述了一组在PDF文件中位置相邻的对象。此表中的条目列于表F.9中。如果有需要，以下提示表应使用这种表示方式：</p>
+<ul>
+<li>大纲提示表</li>
+<li>线索信息提示表</li>
+<li>命名目标提示表</li>
+<li>信息字典提示表</li>
+<li>页面标签提示表</li>
+</ul>
+<p>通用提示表可用于兼容阅读器访问的特定于产品的对象。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>对于兼容阅读器而言，使用通用提示表示法要比指定自定义提示方便得多。</p>
+</div>
+<p><table id="tableF9" markdown="span">
+    <caption><strong>表F.9 – 通用提示表</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>项目</strong></th>
+            <th><strong>位数（bits）</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>组中第一个对象的对象编号。</td></tr>
+        <tr><td>2</td> <td>32</td> <td>组中第一个对象的位置。</td></tr>
+        <tr><td>3</td> <td>32</td> <td>组中的对象数量。</td></tr>
+        <tr><td>4</td> <td>32</td> <td>对象组的字节长度。</td></tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>Categories of objects are associated with the document as a whole rather than with individual pages (see <a href="#f310-其他对象第九部分">F.3.10</a>, "Other Objects (Part 9)"), and hints should be provided for accessing those objects efficiently. For each category of hints, there shall be a separate entry in the primary hint stream giving the starting position of the table within the stream; see <a href="#f36-提示流第五部分和第十部分">F.3.6</a>, "Hint Streams (Parts 5 and 10)".</p>
+<p>Such hints shall be represented by a generic hint table, which describes a single group of objects that are located together in the PDF file. The entries in this table are listed in Table F.9. This representation shall be used for the following hint tables, if needed:</p>
+<ul>
+<li>Outline hint table</li>
+<li>Thread information hint table</li>
+<li>Named destination hint table</li>
+<li>Information dictionary hint table</li>
+<li>Page label hint table</li>
+</ul>
+<p>Generic hint tables may be used for product-specific objects accessed by conforming readers.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>It is considerably more convenient for a conforming reader to use the generic hint representation than to specify custom hints.</p>
+</div>
+<p><table id="tableF9" markdown="span">
+    <caption><strong>Table F.9 – Generic hint table</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Size (bits)</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>The object number of the first object in the group.</td></tr>
+        <tr><td>2</td> <td>32</td> <td>The location of the first object in the group.</td></tr>
+        <tr><td>3</td> <td>32</td> <td>The number of objects in the group.</td></tr>
+        <tr><td>4</td> <td>32</td> <td>The length of the object group in bytes.</td></tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="f45-扩展通用提示表">F.4.5 扩展通用提示表<a class="headerlink" href="#f45-扩展通用提示表" title="Permanent link">&para;</a></h3>
+<p><strong>F.4.5 Extended Generic Hint Tables</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="19:2"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio" /><input id="__tabbed_19_2" name="__tabbed_19" type="radio" /><div class="tabbed-labels"><label for="__tabbed_19_1">中文</label><label for="__tabbed_19_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>扩展通用提示表应以与通用提示表相同的条目开始，随后是三个附加条目，如表F.10所示。此表为访问引用共享对象的那些对象提供提示信息。从PDF 1.5版本起，如果有需要，以下提示表应使用扩展通用格式：</p>
+<ul>
+<li>交互式表单提示表</li>
+<li>逻辑结构提示表</li>
+<li>呈现名称树提示表</li>
+</ul>
+<p>即使嵌入文件流可从呈现名称树的节点访问，也不应由该提示表引用；相反，它们应使用<a href="#f46-嵌入文件流提示表">F.4.6</a>，“嵌入文件流提示表”中描述的提示表。</p>
+<p><table id="tableF10" markdown="span">
+    <caption><strong>表F.10 – 扩展通用提示表</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>项目</strong></th>
+            <th><strong>位数（bits）</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>组中第一个对象的对象编号。</td></tr>
+        <tr><td>2</td> <td>32</td> <td>组中第一个对象的位置。</td></tr>
+        <tr><td>3</td> <td>32</td> <td>组中的对象数量。</td></tr>
+        <tr><td>4</td> <td>32</td> <td>对象组的字节长度。</td></tr>
+        <tr><td>5</td> <td>32</td> <td>共享对象引用的数量。</td></tr>
+        <tr><td>6</td> <td>16</td> <td>表示组内对象所使用的数值最大的共享对象标识符所需的位数。</td></tr>
+        <tr><td>7...</td> <td>见<a href="#tableF3">表F.3</a>，第11项</td> <td>从第7项开始，此表中的每个剩余条目都应为共享对象标识符，即共享对象提示表（见<a href="#f42-共享对象提示表">F.4.2</a>，“共享对象提示表”）中的一个索引。</td></tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>An extended generic hint table shall begin with the same entries as in a generic hint table, and shall be followed by three additional entries, as shown in Table F.10. This table provides hints for accessing objects that reference shared objects. As of PDF 1.5, the following hint tables, if needed, shall use the extended generic format:</p>
+<ul>
+<li>Interactive form hint table</li>
+<li>Logical structure hint table</li>
+<li>Renditions name tree hint table</li>
+</ul>
+<p>Embedded file streams shall not be referred to by this hint table, even if they are reachable from nodes in the renditions name tree; instead they shall use the hint table described in <a href="#f46-嵌入文件流提示表">F.4.6</a>, "Embedded File Stream Hint Tables."</p>
+<p><table id="tableF10" markdown="span">
+    <caption><strong>Table F.10 – Extended generic hint table</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Size (bits)</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>The object number of the first object in the group.</td></tr>
+        <tr><td>2</td> <td>32</td> <td>The location of the first object in the group.</td></tr>
+        <tr><td>3</td> <td>32</td> <td>The number of objects in the group.</td></tr>
+        <tr><td>4</td> <td>32</td> <td>The length of the object group in bytes.</td></tr>
+        <tr><td>5</td> <td>32</td> <td>The number of shared object references.</td></tr>
+        <tr><td>6</td> <td>16</td> <td>The number of bits needed to represent the numerically greatest shared object identifier used by the objects in the group.</td></tr>
+        <tr><td>7...</td> <td>See <a href="#tableF3">Table F.3</a>, item 11</td> <td>Starting with item 7, each of the remaining items in this table shall be a shared object identifier—that is, an index into the shared object hint table (described in <a href="#f42-共享对象提示表">F.4.2</a>, “Shared Object Hint Table”).</td></tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="f46-嵌入文件流提示表">F.4.6 嵌入文件流提示表<a class="headerlink" href="#f46-嵌入文件流提示表" title="Permanent link">&para;</a></h3>
+<p><strong>F.4.6 Embedded File Stream Hint Tables</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="20:2"><input checked="checked" id="__tabbed_20_1" name="__tabbed_20" type="radio" /><input id="__tabbed_20_2" name="__tabbed_20" type="radio" /><div class="tabbed-labels"><label for="__tabbed_20_1">中文</label><label for="__tabbed_20_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>嵌入文件流提示表允许兼容的阅读器定位访问其嵌入文件流所需的PDF文件的所有字节范围。嵌入文件流可能与其引用的其他对象分组在一起；此类组中的所有对象应具有相邻的对象编号。（如果组中包含共享对象引用，则该组不应包含任何对象。）</p>
+<p>此提示表应有一个头部部分（见<a href="#tableF11">表F.11</a>），其中包含有关嵌入文件流组的一般信息。头部部分之后应是表F.12中的条目。表F.12中的每个项目对于每个嵌入文件流组都应重复一次（组的数量由表F.11中的第3项表示）。也就是说，表F.12中项目的顺序应为：第一组的第1个项目，第二组的第1个项目，依此类推；第一组的第2个项目，第二组的第2个项目，依此类推；重复5个项目。</p>
+<p><table id="tableF11" markdown="span">
+    <caption><strong>表F.11 – 嵌入文件流提示表，头部部分</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>项目</strong></th>
+            <th><strong>位数（bits）</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>第一个嵌入文件流组中第一个对象的对象编号。</td></tr>
+        <tr><td>2</td> <td>32</td> <td>第一个嵌入文件流组中第一个对象的位置。</td></tr>
+        <tr><td>3</td> <td>32</td> <td>此提示表引用的嵌入文件流组的数量。</td></tr>
+        <tr><td>4</td> <td>16</td> <td>表示与嵌入文件流对象对应的最高对象编号所需的位数。</td></tr>
+        <tr><td>5</td> <td>16</td> <td>表示嵌入文件流组中最多对象数量所需的位数。</td></tr>
+        <tr><td>6</td> <td>16</td> <td>表示嵌入文件流组最大字节长度所需的位数。</td></tr>
+        <tr><td>7</td> <td>16</td> <td>表示任何嵌入文件流组中最多共享对象引用数量所需的位数。</td></tr>
+    </tbody>
+</table></p>
+<p><table id="tableF12" markdown="span">
+    <caption><strong>表F.12 – 嵌入文件流提示表，每个嵌入文件流组的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>项目</strong></th>
+            <th><strong>位数（bits）</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>见表F.11，第4项</td> <td>与此条目相关联的嵌入文件流的对象编号。</td></tr>
+        <tr><td>2</td> <td>见表F.11，第5项</td> <td>此嵌入文件流组中的对象数量。此项目可以为0，表示只有共享对象引用。在这种情况下，此组的第4项应大于0，且第2项应为0。</td></tr>
+        <tr><td>3</td> <td>见表F.11，第6项</td> <td>此嵌入文件流组的字节长度。此项目可以为0，表示只有共享对象引用。在这种情况下，此组的第4项应大于0，且第2项应为0。</td></tr>
+        <tr><td>4</td> <td>见表F.11，第7项</td> <td>此嵌入文件流组引用的共享对象数量。</td></tr>
+        <tr><td>5</td> <td>见表F.3，第11项</td> <td>共享对象标识符的位打包列表；即共享对象提示表（见F.4.2，“共享对象提示表”）中的索引。此组的第4项应指定与该组相关联的共享对象标识符的数量。</td></tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>The embedded file streams hint table allows a conforming reader to locate all byte ranges of a PDF file needed to access its embedded file streams. An embedded file stream may be grouped with other objects that it references; all objects in such a group shall have adjacent object numbers. (A group shall contain no objects at all if it contains shared object references.)</p>
+<p>This hint table shall have a header section (see <a href="#tableF11">Table F.11</a>), which shall have general information about the embedded file stream groups. The header section shall be followed by the entries in Table F.12. Each of the items in Table F.12 shall be repeated for each embedded file stream group (the number of groups being represented by item 3 in Table F.11). That is, the order of items in Table F.12 shall be item 1 for the first group, item 1 for the second group, and so on; item 2 for the first group, item 2 for the second group, and so on; repeated for the 5 items.</p>
+<p><table id="tableF11" markdown="span">
+    <caption><strong>Table F.11 – Embedded file stream hint table, header section</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Size (bits)</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>32</td> <td>The object number of the first object in the first embedded file stream group.</td></tr>
+        <tr><td>2</td> <td>32</td> <td>The location of the first object in the first embedded file stream group.</td></tr>
+        <tr><td>3</td> <td>32</td> <td>The number of embedded file stream groups referenced by this hint table.</td></tr>
+        <tr><td>4</td> <td>16</td> <td>The number of bits needed to represent the highest object number corresponding to an embedded file stream object.</td></tr>
+        <tr><td>5</td> <td>16</td> <td>The number of bits needed to represent the greatest number of objects in an embedded file stream group.</td></tr>
+        <tr><td>6</td> <td>16</td> <td>The number of bits needed to represent the greatest length of an embedded file stream group, in bytes.</td></tr>
+        <tr><td>7</td> <td>16</td> <td>The number of bits needed to represent the greatest number of shared object references in any embedded file stream group.</td></tr>
+    </tbody>
+</table></p>
+<p><table id="tableF12" markdown="span">
+    <caption><strong>Table F.12 – Embedded file stream hint table, per-embedded file stream group entries</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Item</strong></th>
+            <th><strong>Size (bits)</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td> <td>See Table F.11, item 4</td> <td>The object number of the embedded file stream that this entry is associated with.</td></tr>
+        <tr><td>2</td> <td>See Table F.11, item 5</td> <td>The number of objects in this embedded file streams group. This item may be 0, meaning that there are only shared object references. In this case, item 4 for this group shall be greater than zero and item 3 shall be zero.</td></tr>
+        <tr><td>3</td> <td>See Table F.11, item 6</td> <td>The length of this embedded file stream group, in bytes. This item may be 0, which shall mean that there are only shared object references. In this case, item 4 for this group shall be greater than zero and item 2 shall be zero.</td></tr>
+        <tr><td>4</td> <td>See Table F.11, item 7</td> <td>The number of shared objects referenced by this embedded file stream group.</td></tr>
+        <tr><td>5</td> <td>See Table F.3, item 11</td> <td>A bit-packed list of shared object identifiers; that is, indices into the shared object hint table (see F.4.2, “Shared Object Hint Table”). Item 4 for this group shall specify how many shared object identifiers shall be associated with the group.</td></tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月12日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

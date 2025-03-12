@@ -1,0 +1,2602 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s3/">
+      
+      
+        <link rel="next" href="../s5/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>12.4 页面级导航 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#124-页面级导航" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              12.4 页面级导航
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            12互动功能
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.2 查看器首选项
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.3 文档级导航
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    12.4 页面级导航
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    12.4 页面级导航
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1241-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1242-页面标签" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.2 页面标签
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1243-文章" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.3 文章
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1244-演示文稿" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.4 演示文稿
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12.4.4 演示文稿">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12441-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12442-子页面导航" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.4.2 子页面导航
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.5 注解
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.6 行为
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.7 交互式表格
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.8 数字签名
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.9 测量属性
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.10 文件要求
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1241-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1242-页面标签" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.2 页面标签
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1243-文章" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.3 文章
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1244-演示文稿" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.4 演示文稿
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12.4.4 演示文稿">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12441-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12442-子页面导航" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.4.4.2 子页面导航
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="124-页面级导航">12.4 页面级导航<a class="headerlink" href="#124-页面级导航" title="Permanent link">&para;</a></h1>
+<p><strong>12.4 Page-Level Navigation</strong></p>
+<h2 id="1241-概述">12.4.1 概述<a class="headerlink" href="#1241-概述" title="Permanent link">&para;</a></h2>
+<p><strong>12.4.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本小节介绍了一些PDF功能，这些功能使用户能够在文档内逐页导航：</p>
+<ul>
+<li>页面标签，用于对单个页面进行编号或其他方式的标识（见<a href="./#1242-页面标签">12.4.2</a>，“页面标签”）。</li>
+<li>文章线索，将文档中逻辑相关但物理顺序上不连续的内容项链接在一起（见<a href="./#1243-文章">12.4.3</a>，“文章”）。</li>
+<li>演示文稿，以幻灯片放映的形式显示文档，可以自动或由用户控制从一页切换到下一页（见<a href="./#1244-演示文稿">12.4.4</a>，“演示文稿”）。</li>
+</ul>
+<p>有关另一种重要的页面级导航形式，请参见<a href="../s5/#12565-链接注解">12.5.6.5</a>，“链接注释”。</p>
+</div>
+<div class="tabbed-block">
+<p>This sub-clause describes PDF facilities that enable the user to navigate from page to page within a document:</p>
+<ul>
+<li>Page labels for numbering or otherwise identifying individual pages (see <a href="./#1242-页面标签">12.4.2</a>, “Page Labels”).</li>
+<li>Article threads, which chain together items of content within the document that are logically connected but not physically sequential (see <a href="./#1243-文章">12.4.3</a>, “Articles”).</li>
+<li>Presentations that display the document in the form of a slide show, advancing from one page to the next either automatically or under user control (see <a href="./#1244-演示文稿">12.4.4</a>, “Presentations”).</li>
+</ul>
+<p>For another important form of page-level navigation, see <a href="../s5/#12565-链接注解">12.5.6.5</a>, “Link Annotations.”</p>
+</div>
+</div>
+</div>
+<h2 id="1242-页面标签">12.4.2 页面标签<a class="headerlink" href="#1242-页面标签" title="Permanent link">&para;</a></h2>
+<p><strong>12.4.2 Page Labels</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF文档中的每一页都应通过一个整数<em>页码索引</em>来标识，该索引表示页面在文档中的相对位置。此外，文档可以选择性地定义页面标签（PDF 1.3），以便在屏幕上或打印时直观地标识每一页。页面标签和页码索引不必一致：索引是固定的，从第一页的0开始在文档中连续编号，但标签可以用适合特定文档的任何方式指定。</p>
+<div class="admonition note">
+<p class="admonition-title">注1</p>
+<p>如果文档的前12页使用罗马数字编号的前言部分，其余部分使用阿拉伯数字编号，则第一页的页码索引为0，页面标签为i；第十二页的索引为11，标签为xii；第十三页的索引为12，标签为1。</p>
+</div>
+<p>为了进行页面标记，文档应被划分为标记范围，每个范围是一系列使用相同编号系统的连续页面。范围内的页面应按升序依次编号。页面的标签由其在其标记范围内的位置决定的数字部分组成，前面可选择性地加上<em>表示该范围的标签前缀</em>。</p>
+<div class="admonition note">
+<p class="admonition-title">注2</p>
+<p>附录中的页面可能用字符串A-作为前缀的十进制数字部分标记，生成的页面标签将是A-1、A-2等。</p>
+</div>
+<p>文档的标记范围应由文档目录中的<strong>PageLabels</strong>条目定义（见<a href="../../c7/s7/#772-文档目录">7.7.2</a>，“文档目录”）。此条目的值应为一个数字树（[7.9.7]，“数字树”），其每个键都是标记范围内第一页的页码索引。相应的值应为<em>页面标签字典</em>，定义该范围内页面的标记特性。树中应包含页码索引0的值。表159显示了页面标签字典的内容。</p>
+<p><table id="table159" markdown="span">
+    <caption><strong>表159 – 页面标签字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>名称</td>
+            <td>（可选）此字典描述的PDF对象的类型；如果存在，应为<strong>PageLabel</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称或数组</td>
+            <td>（可选）每页标签数字部分应使用的编号样式：<br/>
+            <dl>
+                <dt>D</dt>
+                <dd>十进制阿拉伯数字</dd>
+                <dt>R</dt>
+                <dd>大写罗马数字</dd>
+                <dt>r</dt>
+                <dd>小写罗马数字</dd>
+                <dt>A</dt>
+                <dd>大写字母（前26页为A到Z，接下来的26页为AA到ZZ，依此类推）</dd>
+                <dt>a</dt>
+                <dd>小写字母（前26页为a到z，接下来的26页为aa到zz，依此类推）</dd>
+            </dl>
+            没有默认的编号样式；如果没有<strong>S</strong>条目，页面标签将仅由标签前缀组成，没有数字部分。<br/>
+            注意 &emsp; 如果下一个P条目指定标签前缀为Contents，则每页仅标记为Contents，没有页码。（如果<strong>P</strong>条目也缺失或为空，则页面标签为空字符串。）
+            </td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>文本字符串</td>
+            <td>（可选）此范围内页面标签的标签前缀。</td>
+        </tr>
+        <tr>
+            <td><strong>St</strong></td>
+            <td>整数</td>
+            <td>（可选）范围内第一页标签的数字部分的值。后续页面应从此值开始依次编号，该值应大于或等于1。默认值：1。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<p>以下示例显示了一个文档，其页面标记为</p>
+<p>i, ii, iii, iv, 1, 2, 3, A-8, A-9, …</p>
+</div>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj
+    &lt;&lt; /Type /Catalog
+        /PageLabels &lt;&lt; /Nums [  0 &lt;&lt; /S /r &gt;&gt;   % A number tree containing
+                                4 &lt;&lt; /S /D &gt;&gt;   % three page label dictionaries
+                                7 &lt;&lt; /S /D
+                                     /P ( A- )
+                                     /St 8
+                                &gt;&gt;
+                             ]
+                    &gt;&gt; 
+        …
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Each page in a PDF document shall be identified by an integer <em>page index</em> that expresses the page’s relative position within the document. In addition, a document may optionally define page labels (PDF 1.3) to identify each page visually on the screen or in print. Page labels and page indices need not coincide: the indices shall be fixed, running consecutively through the document starting from 0 for the first page, but the labels may be specified in any way that is appropriate for the particular document.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>If the document begins with 12 pages of front matter numbered in roman numerals and the remainder of the document is numbered in arabic, the first page would have a page index of 0 and a page label of i, the twelfth page would have index 11 and label xii, and the thirteenth page would have index 12 and label 1.</p>
+</div>
+<p>For purposes of page labelling, a document shall be divided into labelling ranges, each of which is a series of consecutive pages using the same numbering system. Pages within a range shall be numbered sequentially in ascending order. A page’s label consists of a numeric portion based on its position within its labelling range, optionally preceded by a <em>label prefix denoting the range itself</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The pages in an appendix might be labeled with decimal numeric portions prefixed with the string A-; the resulting page labels would be A-1, A-2, and so on.</p>
+</div>
+<p>A document’s labelling ranges shall be defined by the <strong>PageLabels</strong> entry in the document catalogue (see <a href="../../c7/s7/#772-文档目录">7.7.2</a>, “Document Catalog”). The value of this entry shall be a number tree ([7.9.7], “Number Trees”), each of whose keys is the page index of the first page in a labelling range. The corresponding value shall be a <em>page label dictionary</em> defining the labelling characteristics for the pages in that range. The tree shall include a value for page index 0. Table 159 shows the contents of a page label dictionary.</p>
+<p><table id="table159" markdown="span">
+    <caption><strong>Table 159 – Entries in a page label dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(Optional) The type of PDF object that this dictionary describes; if present, shall be <strong>PageLabel</strong> for a page label dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name or array</td>
+            <td>(Optional) The numbering style that shall be used for the numeric portion of each page label:<br/>
+            <dl>
+                <dt>D</dt>
+                <dd>Decimal arabic numerals</dd>
+                <dt>R</dt>
+                <dd>Uppercase roman numerals</dd>
+                <dt>r</dt>
+                <dd>Lowercase roman numerals</dd>
+                <dt>A</dt>
+                <dd>Uppercase letters (A to Z for the first 26 pages, AA to ZZ for the next 26, and so on)</dd>
+                <dt>a</dt>
+                <dd>Lowercase letters (a to z for the first 26 pages, aa to zz for the next 26, and so on)</dd>
+            </dl>
+            There is no default numbering style; if no <strong>S</strong> entry is present, page labels shall consist solely of a label prefix with no numeric portion. <br/>
+            NOTE &emsp; If the P entry (next) specifies the label prefix Contents, each page is simply labeled Contents with no page number. (If the <strong>P</strong> entry is also missing or empty, the page label is an empty string.)
+            </td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>text string</td>
+            <td>(Optional) The label prefix for page labels in this range.</td>
+        </tr>
+        <tr>
+            <td><strong>St</strong></td>
+            <td>integer</td>
+            <td>(Optional) The value of the numeric portion for the first page label in the range. Subsequent pages shall be numbered sequentially from this value, which shall be greater than or equal to 1. Default value: 1.</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>The following example shows a document with pages labeled</p>
+<p>i, ii, iii, iv, 1, 2, 3, A-8, A-9, …</p>
+</div>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj
+    &lt;&lt; /Type /Catalog
+        /PageLabels &lt;&lt; /Nums [  0 &lt;&lt; /S /r &gt;&gt;   % A number tree containing
+                                4 &lt;&lt; /S /D &gt;&gt;   % three page label dictionaries
+                                7 &lt;&lt; /S /D
+                                     /P ( A- )
+                                     /St 8
+                                &gt;&gt;
+                             ]
+                    &gt;&gt; 
+        …
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="1243-文章">12.4.3 文章<a class="headerlink" href="#1243-文章" title="Permanent link">&para;</a></h2>
+<p><strong>12.4.3 Articles</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>某些类型的文档可能包含逻辑上相关但物理上不连续的内容项序列。</p>
+<div class="admonition info">
+<p class="admonition-title">示例1</p>
+<p>一则新闻报道可能从新闻通讯的第一页开始，然后延续到一个或多个不相邻的内页上。</p>
+</div>
+<p>为了表示这种物理上不连续但逻辑上相关的项序列，PDF文档可以定义一个或多个文章（PDF 1.1）。文章的顺序流由文章线索定义；组成文章的单个内容项称为线索上的珠子。符合规范的阅读器可以提供导航功能，允许用户从一个珠子沿着线索到下一个珠子。</p>
+<p>文档目录中的可选<strong>Threads</strong>条目（见<a href="../../c7/s7/#772-文档目录">7.7.2</a>，“文档目录”）包含一个线程字典数组（<a href="#table160">表160</a>），用于定义文档的文章。线索中的每个单独珠子都应由一个珠子字典表示（<a href="#table161">表161</a>）。线程字典的<strong>F</strong>条目应指向线索中的第一个珠子；珠子应通过它们的<strong>N</strong>（下一个）和<strong>V</strong>（上一个）条目在双向链表中依次链接在一起。此外，对于出现文章珠子的每一页，页面对象（见<a href="../../c7/s7/#773-page树">7.7.3</a>，“页面树”）应包含一个<strong>B</strong>条目，其值是该页上珠子的间接引用的数组，按绘制顺序排列。</p>
+<p><table id="table160" markdown="span">
+    <caption><strong>表160 – 线程字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>名称</td>
+            <td>（可选）此字典描述的PDF对象的类型；如果存在，对于线程字典应为<strong>Thread</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>字典</td>
+            <td>（必需；应为间接引用）线索中的第一个珠子。</td>
+        </tr>
+        <tr>
+            <td><strong>I</strong></td>
+            <td>字典</td>
+            <td>（可选）包含有关线索的信息（如其标题、作者和创建日期）的线程信息字典。此字典的内容应符合文档信息字典的语法（见<a href="../../c14/s3/#1433-文档信息字典">14.3.3</a>，“文档信息字典”）。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table161" markdown="span">
+    <caption><strong>表161 – 珠子字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>名称</td>
+            <td>（可选）此字典描述的PDF对象的类型；如果存在，对于珠子字典应为<strong>Bead</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>字典</td>
+            <td>（对于线索的第一个珠子必需；对于其他珠子可选；应为间接引用）此珠子所属的线索。<br/>（PDF 1.1）此条目仅允许用于线索的第一个珠子。<br/>（PDF 1.2）任何珠子都可以使用，但只有第一个需要。</td>
+        </tr>
+        <tr>
+            <td><strong>N</strong></td>
+            <td>字典</td>
+            <td>（必需；应为间接引用）线索中的下一个珠子。在最后一个珠子中，此条目应指向第一个珠子。</td>
+        </tr>
+        <tr>
+            <td><strong>V</strong></td>
+            <td>字典</td>
+            <td>（必需；应为间接引用）线索中的上一个珠子。在第一个珠子中，此条目应指向最后一个珠子。</td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>字典</td>
+            <td>（必需；应为间接引用）代表此珠子出现的页面的页面对象。</td>
+        </tr>
+        <tr>
+            <td><strong>R</strong></td>
+            <td>字典</td>
+            <td>（必需）一个矩形，指定此珠子在页面上的位置。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>下面的例子显示了一根带有三颗珠子的线。</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>22 0 obj
+    &lt;&lt; /F 23 0 R
+       /I &lt;&lt; /Title ( Man Bites Dog ) &gt;&gt;
+    &gt;&gt;
+endobj
+
+23 0 obj
+    &lt;&lt; /T 22 0 R
+       /N 24 0 R
+       /V 25 0 R
+       /P 8 0 R
+       /R [ 158 247 318 905 ]
+    &gt;&gt;
+endobj
+
+24 0 obj
+    &lt;&lt; /T 22 0 R
+       /N 25 0 R
+       /V 23 0 R
+       /P 8 0 R
+       /R [ 322 246 486 904 ]
+    &gt;&gt;
+endobj
+
+25 0 obj
+    &lt;&lt; /T 22 0 R
+       /N 23 0 R
+       /V 24 0 R
+       /P 10 0 R
+       /R [ 157 254 319 903 ]
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Some types of documents may contain sequences of content items that are logically connected but not physically sequential.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>A news story may begin on the first page of a newsletter and run over onto one or more nonconsecutive interior pages.</p>
+</div>
+<p>To represent such sequences of physically discontiguous but logically related items, a PDF document may define one or more articles (PDF 1.1). The sequential flow of an article shall be defined by an article thread; the individual content items that make up the article are called beads on the thread. Conforming readers may provide navigation facilities to allow the user to follow a thread from one bead to the next.</p>
+<p>The optional <strong>Threads</strong> entry in the document catalogue (see <a href="../../c7/s7/#772-文档目录">7.7.2</a>, “Document Catalog”) holds an array of thread dictionaries (<a href="#table160">Table 160</a>) defining the document’s articles. Each individual bead within a thread shall be represented by a bead dictionary (<a href="#table161">Table 161</a>). The thread dictionary’s <strong>F</strong> entry shall refer to the first bead in the thread; the beads shall be chained together sequentially in a doubly linked list through their <strong>N</strong> (next) and <strong>V</strong> (previous) entries. In addition, for each page on which article beads appear, the page object (see <a href="../../c7/s7/#773-page树">7.7.3</a>, “Page Tree”) shall contain a <strong>B</strong> entry whose value is an array of indirect references to the beads on the page, in drawing order.</p>
+<p><table id="table160" markdown="span">
+    <caption><strong>Table 160 – Entries in a thread dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(Optional) The type of PDF object that this dictionary describes; if present, shall be <strong>Thread</strong> for a thread dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>dictionary</td>
+            <td>(Required; shall be an indirect reference) The first bead in the thread.</td>
+        </tr>
+        <tr>
+            <td><strong>I</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) A thread information dictionary containing information about the thread, such as its title, author, and creation date. The contents of this dictionary shall conform to the syntax for the document information dictionary (see <a href="../../c14/s3/#1433-文档信息字典">14.3.3</a>, “Document Information Dictionary”).</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table161" markdown="span">
+    <caption><strong>Table 161 – Entries in a bead dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(Optional) The type of PDF object that this dictionary describes; if present, shall be <strong>Bead</strong> for a bead dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>dictionary</td>
+            <td>(Required for the first bead of a thread; optional for all others; shall be an indirect reference) The thread to which this bead belongs.<br/> (PDF 1.1) This entry shall be permitted only for the first bead of a thread. <br/> (PDF 1.2) It shall be permitted for any bead but required only for the first.</td>
+        </tr>
+        <tr>
+            <td><strong>N</strong></td>
+            <td>dictionary</td>
+            <td>(Required; shall be an indirect reference) The next bead in the thread. In the last bead, this entry shall refer to the first bead.</td>
+        </tr>
+        <tr>
+            <td><strong>V</strong></td>
+            <td>dictionary</td>
+            <td>(Required; shall be an indirect reference) The previous bead in the thread. In the first bead, this entry shall refer to the last bead.</td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>dictionary</td>
+            <td>(Required; shall be an indirect reference) The page object representing the page on which this bead appears.</td>
+        </tr>
+        <tr>
+            <td><strong>R</strong></td>
+            <td>dictionary</td>
+            <td>(Required) A rectangle specifying the location of this bead on the page.</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>The following example shows a thread with three beads.</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>22 0 obj
+    &lt;&lt; /F 23 0 R
+       /I &lt;&lt; /Title ( Man Bites Dog ) &gt;&gt;
+    &gt;&gt;
+endobj
+
+23 0 obj
+    &lt;&lt; /T 22 0 R
+       /N 24 0 R
+       /V 25 0 R
+       /P 8 0 R
+       /R [ 158 247 318 905 ]
+    &gt;&gt;
+endobj
+
+24 0 obj
+    &lt;&lt; /T 22 0 R
+       /N 25 0 R
+       /V 23 0 R
+       /P 8 0 R
+       /R [ 322 246 486 904 ]
+    &gt;&gt;
+endobj
+
+25 0 obj
+    &lt;&lt; /T 22 0 R
+       /N 23 0 R
+       /V 24 0 R
+       /P 10 0 R
+       /R [ 157 254 319 903 ]
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1244-演示文稿">12.4.4 演示文稿<a class="headerlink" href="#1244-演示文稿" title="Permanent link">&para;</a></h2>
+<p><strong>12.4.4 Presentations</strong></p>
+<h3 id="12441-概述">12.4.4.1 概述<a class="headerlink" href="#12441-概述" title="Permanent link">&para;</a></h3>
+<p><strong>12.4.4.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>一些符合标准的阅读器可能允许以演示文稿或幻灯片的形式显示文档，自动或在用户控制下从一页前进到下一页。此外，PDF 1.5 引入了在同一页的不同状态之间前进的功能（参见 <a href="./#12442-子页面导航">12.4.4.2</a>，“子页面导航”）。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>PDF 1.4 引入了一种不同的机制，称为替代演示，用于幻灯片显示，如<a href="../../c13/s5/">13.5</a>“替代演示”中所述。</p>
+</div>
+<p>页面对象（参见 <a href="../../c7/s7/#773-page树">7.7.3</a>，“页面树”）可能包含两个可选条目，<strong>Dur</strong> 和 <strong>Trans</strong> (PDF 1.1)，用于指定如何在演示模式下显示该页面。<strong>Trans</strong> 条目应包含一个过渡字典，描述在演示过程中从另一个页面移动到给定页面时使用的视觉过渡的样式和持续时间。<a href="#table162">表 162</a> 显示了过渡字典的内容。（如表中所示，显示的某些条目仅对某些过渡样式有用。）</p>
+<p>页面对象中的 <strong>Dur</strong> 条目指定页面的<em>显示持续时间</em>（也称为其前进时间）：演示文稿自动前进到下一页之前页面显示的最大时间长度（以秒为单位）。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>用户可以在指定时间到期之前手动推进页面。</p>
+</div>
+<p>如果页面对象中没有指定<strong>Dur</strong>条目，则页面将不会自动前进。</p>
+<p><table id="table162" markdown="span">
+    <caption><strong>表162 – 过渡字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>名称</td>
+            <td>（可选）此字典描述的PDF对象的类型；如果存在，对于过渡字典应为<strong>Trans</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需；应为间接引用）线索中的第一个珠子。（注：此处原文档描述可能有误，根据上下文推测可能是关于过渡效果相关内容的错误表述）</td>
+        </tr>
+        <tr>
+            <td><strong>I</strong></td>
+            <td>字典</td>
+            <td>（可选）在演示过程中从另一页转到此页时应使用的过渡样式。默认值：R。<br/>
+            <dl>
+                <dt>Split（分离）</dt>
+                <dd>两条线扫过屏幕，显示新页面。线条可以是水平的或垂直的，并且可以根据<strong>Dm</strong>和<strong>M</strong>条目的指定，从页面边缘向内移动或从中心向外移动。</dd>
+                <dt>Blinds（百叶窗）</dt>
+                <dd>多条线均匀分布在屏幕上，同步向同一方向扫动以显示新页面。线条可以是水平的或垂直的，根据<strong>Dm</strong>条目指定。水平线条向下移动；垂直线条向右移动。</dd>
+                <dt>Box（盒状）</dt>
+                <dd>一个矩形框根据<strong>M</strong>条目的指定，从页面边缘向内扫动或从中心向外扫动，显示新页面。</dd>
+                <dt>Wipe（擦除）</dt>
+                <dd>一条线按照<strong>Di</strong>条目指定的方向，从屏幕的一边扫到另一边，显示新页面。</dd>
+                <dt>Dissolve（溶解）</dt>
+                <dd>旧页面逐渐溶解以显示新页面。</dd>
+                <dt>Glitter（闪烁）</dt>
+                <dd>类似于溶解效果，但效果是以宽条带的形式从屏幕的一侧移动到另一侧，方向由<strong>Di</strong>条目指定。</dd>
+                <dt>R</dt>
+                <dd>新页面简单地替换旧页面，没有特殊的过渡效果；<strong>D</strong>条目将被忽略。</dd>
+                <dt>Fly（飞入飞出）</dt>
+                <dd>（PDF 1.5）更改内容根据<strong>M</strong>指定的方向飞入或飞出（在<strong>Di</strong>指定的方向上），从一个屏幕外的位置开始（当<strong>Di</strong>为None时除外）。</dd>
+                <dt>Push（推入推出）</dt>
+                <dd>（PDF 1.5）旧页面沿着<strong>Di</strong>指定的方向滑出屏幕，同时新页面滑入，将旧页面推开。</dd>
+                <dt>Cover（覆盖）</dt>
+                <dd>（PDF 1.5）新页面沿着<strong>Di</strong>指定的方向滑入屏幕，覆盖旧页面。</dd>
+                <dt>Uncover（揭开）</dt>
+                <dd>（PDF 1.5）旧页面沿着<strong>Di</strong>指定的方向滑出屏幕，从而在相同方向上显示新页面。</dd>
+                <dt>Fade（淡入）</dt>
+                <dd>（PDF 1.5）新页面逐渐透过旧页面变得可见。</dd>
+            </dl>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>数字</td>
+            <td>（可选）过渡效果的持续时间，以秒为单位。默认值：1。</td>
+        </tr>
+        <tr>
+            <td><strong>Dm</strong></td>
+            <td>名称</td>
+            <td>（可选；仅适用于Split和Blinds过渡样式）指定过渡效果发生的维度：<br/>
+            H &emsp; 水平 <br/>
+            V &emsp; 垂直 <br/>
+            默认值：H。</td>
+        </tr>
+        <tr>
+            <td><strong>M</strong></td>
+            <td>名称</td>
+            <td>（可选；仅适用于Split、Box和Fly过渡样式）指定过渡效果的运动方向：<br/> I &emsp; 从页面边缘向内 <br/> O &emsp; 从页面中心向外 <br/> 默认值：I。</td>
+        </tr>
+        <tr>
+            <td><strong>Di</strong></td>
+            <td>数字或名称</td>
+            <td>（可选；仅适用于Wipe、Glitter、Fly、Cover、Uncover和Push过渡样式）指定过渡效果移动的方向，以从左到右方向开始逆时针度量。（这与页面对象的<strong>Rotate</strong>条目不同，后者是从顶部开始顺时针度量的。）如果值是数字，则应为以下之一：<br/>
+            <dl>
+                <dt>0</dt>
+                <dd>从左到右</dd>
+                <dt>90</dt>
+                <dd>从下到上（仅适用于Wipe）</dd>
+                <dt>180</dt>
+                <dd>从右到左（仅适用于Wipe）</dd>
+                <dt>270</dt>
+                <dd>从上到下</dd>
+                <dt>315</dt>
+                <dd>从左上到右下（仅适用于Glitter）</dd>
+            </dl>
+            如果值是名称，则应为None，这仅在Fly过渡且SS的值不为1.0时相关。<br/>
+            默认值：0。</td>
+        </tr>
+        <tr>
+            <td><strong>SS</strong></td>
+            <td>数字</td>
+            <td>（可选；PDF 1.5；仅适用于Fly过渡样式）绘制更改内容时的起始或结束缩放比例。如果<strong>M</strong>指定向内过渡，则在过渡过程中绘制的更改内容的缩放比例将从SS过渡到1.0。如果<strong>M</strong>指定向外过渡，则在过渡过程中绘制的更改内容的缩放比例将从1.0过渡到<strong>SS</strong><br/> 默认值：1.0。</td>
+        </tr>
+        <tr>
+            <td><strong>B</strong></td>
+            <td>布尔值</td>
+            <td>（可选；PDF 1.5；仅适用于Fly过渡样式）如果为<strong>true</strong>，则飞入的区域将是矩形且不透明的。默认值：<strong>false</strong>。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>图 56 说明了过渡持续时间（过渡字典中的 <strong>D</strong>）和显示持续时间（页面对象中的 <strong>Dur</strong>）之间的关系。请注意，为页面（图中的页面 2）指定的过渡持续时间控制从另一页面到该页面的过渡；从该页面的过渡由下一页的过渡持续时间控制。</p>
+</div>
+<p><a class="glightbox" href="../imgs/f56.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f56.png" /></a></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>以下示例显示了显示 5 秒的页面的呈现参数。在显示页面之前，有一个 3.5 秒的过渡，其中两条垂直线从页面中心向外扫过到页面边缘。</p>
+</div>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>10 0 obj
+    &lt;&lt; /Type /Page
+       /Parent 4 0 R
+       /Contents 16 0 R
+       /Dur 5
+       /Trans &lt;&lt; /Type /Trans
+                 /D 3.5
+                 /S /Split
+                 /Dm /V
+                 /M /O
+              &gt;&gt;
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Some conforming readers may allow a document to be displayed in the form of a presentation or slide show, advancing from one page to the next either automatically or under user control. In addition, PDF 1.5 introduces the ability to advance between different states of the same page (see <a href="./#12442-子页面导航">12.4.4.2</a>, “Sub-page Navigation”).</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>PDF 1.4 introduces a different mechanism, known as alternate presentations, for slide show displays, described in <a href="../../c13/s5/">13.5</a>, “Alternate Presentations.”</p>
+</div>
+<p>A page object (see <a href="../../c7/s7/#773-page树">7.7.3</a>, “Page Tree”) may contain two optional entries, <strong>Dur</strong> and <strong>Trans</strong> (PDF 1.1), to specify how to display that page in presentation mode. The <strong>Trans</strong> entry shall contain a transition dictionary describing the style and duration of the visual transition to use when moving from another page to the given page during a presentation. <a href="#table162">Table 162</a> shows the contents of the transition dictionary. (Some of the entries shown are needed only for certain transition styles, as indicated in the table.)</p>
+<p>The <strong>Dur</strong> entry in the page object specifies the page’s <em>display duration</em> (also called its advance timing): the maximum length of time, in seconds, that the page shall be displayed before the presentation automatically advances to the next page.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The user can advance the page manually before the specified time has expired.</p>
+</div>
+<p>If no <strong>Dur</strong> entry is specified in the page object, the page shall not advance automatically.</p>
+<p><table id="table162" markdown="span">
+    <caption><strong>Table 162 – Entries in a transition dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(Optional) The type of PDF object that this dictionary describes; if present, shall be <strong>Trans</strong> for a transition dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required; shall be an indirect reference) The first bead in the thread.</td>
+        </tr>
+        <tr>
+            <td><strong>I</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) The transition style that shall be used when moving to this page from another during a presentation. Default value: R. <br/>
+            <dl>
+                <dt>Split</dt>
+                <dd>Two lines sweep across the screen, revealing the new page. The lines may be either horizontal or vertical and may move inward from the edges of the page or outward from the center, as specified by the <strong>Dm</strong> and <strong>M</strong> entries, respectively.</dd>
+                <dt>Blinds</dt>
+                <dd>Multiple lines, evenly spaced across the screen, synchronously sweep in the same direction to reveal the new page. The lines may be either horizontal or vertical, as specified by the <strong>Dm</strong> entry. Horizontal lines move downward; vertical lines move to the right.</dd>
+                <dt>Box</dt>
+                <dd>A rectangular box sweeps inward from the edges of the page or outward from the center, as specified by the <strong>M</strong> entry, revealing the new page.</dd>
+                <dt>Wipe</dt>
+                <dd>A single line sweeps across the screen from one edge to the other in the direction specified by the <strong>Di</strong> entry, revealing the new page.</dd>
+                <dt>Dissolve</dt>
+                <dd>The old page dissolves gradually to reveal the new one.</dd>
+                <dt>Glitter</dt>
+                <dd>Similar to Dissolve, except that the effect sweeps across the page in a wide band moving from one side of the screen to the other in the direction specified by the <strong>Di</strong> entry.</dd>
+                <dt>R</dt>
+                <dd>The new page simply replaces the old one with no special transition effect; the <strong>D</strong> entry shall be ignored.</dd>
+                <dt>Fly</dt>
+                <dd>(PDF 1.5) Changes are flown out or in (as specified by <strong>M</strong>), in the direction specified by <strong>Di</strong>, to or from a location that is offscreen except when <strong>Di</strong> is None.</dd>
+                <dt>Push</dt>
+                <dd>(PDF 1.5) The old page slides off the screen while the new page slides in, pushing the old page out in the direction specified by <strong>Di</strong>.</dd>
+                <dt>Cover</dt>
+                <dd>(PDF 1.5) The new page slides on to the screen in the direction specified by <strong>Di</strong>, covering the old page.</dd>
+                <dt>Uncover</dt>
+                <dd>(PDF 1.5) The old page slides off the screen in the direction specified by <strong>Di</strong>, uncovering the new page in the direction specified by <strong>Di</strong>.</dd>
+                <dt>Fade</dt>
+                <dd>(PDF 1.5) The new page gradually becomes visible through the old one.</dd>
+            </dl>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>number</td>
+            <td>(Optional) The duration of the transition effect, in seconds. Default value: 1.</td>
+        </tr>
+        <tr>
+            <td><strong>Dm</strong></td>
+            <td>name</td>
+            <td>(Optional; <strong>Split</strong> and <strong>Blinds</strong> transition styles only) The dimension in which the specified transition effect shall occur:<br/>
+            H &emsp; Horizontal <br/>
+            V &emsp; Vertical <br/>
+            Default value : H.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>M</strong></td>
+            <td>name</td>
+            <td>(Optional; Split, Box and Fly transition styles only) The direction of motion for the specified transition effect: <br/> I &emsp; Inward from the edges of the page <br/> O &emsp; Outward from the center of the page <br/> Default value: I.</td>
+        </tr>
+        <tr>
+            <td><strong>Di</strong></td>
+            <td>number or name</td>
+            <td>(Optional; Wipe, Glitter, <strong>Fly</strong>, <strong>Cover</strong>, <strong>Uncover</strong> and <strong>Push</strong> transition styles only) The direction in which the specified transition effect shall moves, expressed in degrees counterclockwise starting from a left-to-right direction. (This differs from the page object’s <strong>Rotate</strong> entry, which is measured clockwise from the top.) If the value is a number, it shall be one of: <br/>
+            <dl>
+                <dt>0</dt>
+                <dd>Left to right</dd>
+                <dt>90</dt>
+                <dd>Bottom to top (Wipe only)</dd>
+                <dt>180</dt>
+                <dd>Right to left (Wipe only)</dd>
+                <dt>270</dt>
+                <dd>Top to bottom</dd>
+                <dt>315</dt>
+                <dd>Top-left to bottom-right (Glitter only)</dd>
+            </dl>
+            If the value is a name, it shall be None, which is relevant only for the Fly transition when the value of SS is not 1.0.  <br/>
+            Default value: 0.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SS</strong></td>
+            <td>number</td>
+            <td>(Optional; PDF 1.5; Fly transition style only) The starting or ending scale at which the changes shall be drawn. If <strong>M</strong> specifies an inward transition, the scale of the changes drawn shall progress from SS to 1.0 over the course of the transition. If <strong>M</strong> specifies an outward transition, the scale of the changes drawn shall progress from 1.0 to <strong>SS</strong> over the course of the transition <br/> Default: 1.0.</td>
+        </tr>
+        <tr>
+            <td><strong>B</strong></td>
+            <td>boolean</td>
+            <td>(Optional; PDF 1.5; <strong>Fly</strong> transition style only) If <strong>true</strong>, the area that shall be flown in is rectangular and opaque. Default: <strong>false</strong>.</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>Figure 56 illustrates the relationship between transition duration (<strong>D</strong> in the transition dictionary) and display duration (<strong>Dur</strong> in the page object). Note that the transition duration specified for a page (page 2 in the figure) governs the transition to that page from another page; the transition from the page is governed by the next page’s transition duration.</p>
+</div>
+<p><a class="glightbox" href="../imgs/f56.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f56.png" /></a></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>The following example shows the presentation parameters for a page to be displayed for 5 seconds. Before the page is displayed, there is a 3.5-second transition in which two vertical lines sweep outward from the center to the edges of the page.</p>
+</div>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>10 0 obj
+    &lt;&lt; /Type /Page
+       /Parent 4 0 R
+       /Contents 16 0 R
+       /Dur 5
+       /Trans &lt;&lt; /Type /Trans
+                 /D 3.5
+                 /S /Split
+                 /Dm /V
+                 /M /O
+              &gt;&gt;
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="12442-子页面导航">12.4.4.2 子页面导航<a class="headerlink" href="#12442-子页面导航" title="Permanent link">&para;</a></h3>
+<p><strong>12.4.4.2 Sub-page Navigation</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>子页面导航（PDF 1.5）不仅能够在页面之间进行导航，还能在同一页面的不同状态之间进行导航。</p>
+<div class="admonition note">
+<p class="admonition-title">注1</p>
+<p>在PDF演示文稿中，单页上可能有一系列可单独开启和关闭的项目符号点。在此示例中，这些项目符号将由可选内容表示（见8.11.2，“可选内容组”），页面的每种状态都将表示为一个导航节点。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注2</p>
+<p>符合规范的阅读器应在用户进入演示模式时保存可选内容组的状态，并在演示模式结束时恢复该状态。例如，这可确保对项目符号所做的临时更改不会影响文档的打印。</p>
+</div>
+<p>导航节点字典（见表163）指定当用户发出导航请求时要执行的操作。</p>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<p>按下箭头键。</p>
+</div>
+<p>页面上的导航节点通过其Next（下一个）和Prev（上一个）条目形成一个双向链表。页面的主要节点由页面字典中的可选PresSteps条目确定（见表30）。</p>
+<div class="admonition note">
+<p class="admonition-title">注3</p>
+<p>符合规范的阅读器应仅在演示模式（见<a href="./#1244-演示文稿">12.4.4</a>，“演示文稿”）下尊重导航节点 。</p>
+</div>
+<p><table id="table163" markdown="span">
+    <caption><strong>表163 – 导航节点字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>名称</td>
+            <td>（可选）此字典描述的PDF对象的类型；对于导航节点字典，应为<strong>NavNode</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>NA</strong></td>
+            <td>字典</td>
+            <td>（可选）当用户向前导航时要执行的操作（可能是操作序列中的第一个）。 </td>
+        </tr>
+        <tr>
+            <td><strong>PA</strong></td>
+            <td>字典</td>
+            <td>（可选）当用户向后导航时要执行的操作（可能是操作序列中的第一个）。 </td>
+        </tr>
+        <tr>
+            <td><strong>Next</strong></td>
+            <td>字典</td>
+            <td>（可选）下一个导航节点（如果有）。 </td>
+        </tr>
+        <tr>
+            <td><strong>Prev</strong></td>
+            <td>字典</td>
+            <td>（可选）上一个导航节点（如果有）。 </td>
+        </tr>
+        <tr>
+            <td><strong>Dur</strong></td>
+            <td>数字</td>
+            <td>（可选）符合规范的阅读器应自动前进到下一个导航节点之前的最长时间（以秒为单位）。如果未指定此条目，则不会发生自动前进。 </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>符合规范的阅读器应维护一个当前导航节点。当用户导航到某页时，如果该页面字典有<strong>PresSteps</strong>条目，则该条目指定的节点应成为当前节点。（否则，没有当前节点。）如果用户请求向前导航（例如按下箭头键）且存在当前导航节点，则会发生以下情况：</p>
+<p><ol type="a" markdown="span">
+    <li>
+        <p>如果存在，将执行<strong>NA</strong>指定的操作序列。</p>
+        <p>如果<strong>NA</strong>指定了导航到另一页的操作，那么将执行导航到另一页的相关操作，并且不应存在<strong>Next</strong>。</p>
+    </li>
+    <li>
+        <p>如果存在，由<strong>Next</strong>指定的节点应成为新的当前导航节点。 </p>
+    </li>
+</ol></p>
+<p>类似地，如果用户请求向后导航且存在当前导航节点，则会发生以下情况：</p>
+<p><ol type="a" markdown="span">
+    <li>
+        <p>如果存在，将执行<strong>PA</strong>指定的操作序列。</p>
+        <p>如果<strong>PA</strong>指定了导航到另一页的操作，那么将执行导航到另一页的相关操作，并且不应存在<strong>Prev</strong>。</p>
+    </li>
+    <li>
+        <p>如果存在，由<strong>Prev</strong>指定的节点应成为新的当前导航节点。 </p>
+    </li>
+</ol></p>
+<p>可以指定与前面描述的页面过渡类似的过渡效果作为NA或PA序列一部分的过渡操作；见<a href="../s6/#126414-过渡行动">12.6.4.14</a>，“过渡操作”。</p>
+<p>如果用户请求导航到另一页（无论是否存在当前节点），并且该页面的字典包含<strong>PresSteps</strong>条目，则会发生以下情况：</p>
+<p><ol type="a" markdown="span">
+    <li>
+        <p>由PresSteps表示的导航节点应成为当前节点。 </p>
+    </li>
+    <li>
+        <p>如果导航请求是向前的，或者是随机访问（例如点击链接），则将执行<strong>NA</strong>指定的操作，并且如前所述，由Next指定的节点将成为新的当前节点。</p>
+        <p>如果导航请求是向后的，则将执行<strong>PA</strong>指定的操作，并且如前所述，由Prev指定的节点将成为新的当前节点。</p>
+    </li>
+    <li>
+        <p>符合规范的阅读器应将新页面设为当前页面并显示它。应执行页面字典的<strong>Trans</strong>条目指定的任何页面过渡效果。 </p>
+    </li>
+</ol></p>
+</div>
+<div class="tabbed-block">
+<p>Sub-page navigation (PDF 1.5) provides the ability to navigate not only between pages but also between different states of the same page.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>A single page in a PDF presentation could have a series of bullet points that could be individually turned on and off. In such an example, the bullets would be represented by optional content (see 8.11.2, “Optional Content Groups”), and each state of the page would be represented as a navigation node.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Conforming readers should save the state of optional content groups when a user enters presentation mode and restore it when presentation mode ends. This ensures, for example, that transient changes to bullets do not affect the printing of the document.</p>
+</div>
+<p>A navigation node dictionary (see Table 163) specifies actions to execute when the user makes a navigation request.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>Pressing an arrow key.</p>
+</div>
+<p>The navigation nodes on a page form a doubly linked list by means of their Next and Prev entries. The primary node on a page shall be determined by the optional PresSteps entry in a page dictionary (see Table 30).</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>A conforming reader should respect navigation nodes only when in presentation mode (see <a href="./#1244-演示文稿">12.4.4</a>, “Presentations”).</p>
+</div>
+<p><table id="table163" markdown="span">
+    <caption><strong>Table 163 – Entries in a navigation node dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(Optional) The type of PDF object that this dictionary describes; shall be <strong>NavNode</strong> for a navigation node dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>NA</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) An action (which may be the first in a sequence of actions) that shall be executed when a user navigates forward.</td>
+        </tr>
+        <tr>
+            <td><strong>PA</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) An action (which may be the first in a sequence of actions) that shall be executed when a user navigates backward.</td>
+        </tr>
+        <tr>
+            <td><strong>Next</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) The next navigation node, if any.</td>
+        </tr>
+        <tr>
+            <td><strong>Prev</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) The previous navigation node, if any.</td>
+        </tr>
+        <tr>
+            <td><strong>Dur</strong></td>
+            <td>number</td>
+            <td>(Optional) The maximum number of seconds before the conforming reader shall automatically advance forward to the next navigation node. If this entry is not specified, no automatic advance shall occur.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>A conforming reader shall maintain a current navigation node. When a user navigates to a page, if the page dictionary has a <strong>PresSteps</strong> entry, the node specified by that entry shall become the current node. (Otherwise, there is no current node.) If the user requests to navigate forward (such as an arrow key press) and there is a current navigation node, the following shall occur:</p>
+<p><ol type="a" markdown="span">
+    <li>
+        <p>The sequence of actions specified by <strong>NA</strong> (if present) shall be executed.</p>
+        <p>If <strong>NA</strong> specifies an action that navigates to another page, the following actions for navigating to another page take place, and <strong>Next</strong> should not be present.</p>
+    </li>
+    <li>
+        <p>The node specified by Next (if present) shall become the new current navigation node. </p>
+    </li>
+</ol></p>
+<p>Similarly, if the user requests to navigate backward and there is a current navigation node, the following shall occur:</p>
+<p><ol type="a" markdown="span">
+    <li>
+        <p>The sequence of actions specified by <strong>PA</strong> (if present) shall be executed.</p>
+        <p>If <strong>PA</strong> specifies an action that navigates to another page, the following actions for navigating to another page take place, and <strong>Prev</strong> should not be present.</p>
+    </li>
+    <li>
+        <p>The node specified by <strong>Prev</strong> (if present) shall become the new current navigation node. </p>
+    </li>
+</ol></p>
+<p>Transition effects, similar to the page transitions described earlier, may be specified as transition actions that are part of the NA or PA sequence; see <a href="../s6/#126414-过渡行动">12.6.4.14</a>, “Transition Actions.”</p>
+<p>If the user requests to navigate to another page (regardless of whether there is a current node) and that page’s
+dictionary contains a <strong>PresSteps</strong> entry, the following shall occur:</p>
+<p><ol type="a" markdown="span">
+    <li>
+        <p>The navigation node represented by PresSteps shall become the current node. </p>
+    </li>
+    <li>
+        <p>If the navigation request was forward, or if the navigation request was for random access (such as by clicking on a link), the actions specified by <strong>NA</strong> shall be executed and the node specified by Next shall become the new current node, as described previously.</p>
+        <p>If the navigation request was backward, the actions specified by <strong>PA</strong> shall be executed and the node specified by Prev shall become the new current node, as described previously.</p>
+    </li>
+    <li>
+        <p>The conforming reader shall make the new page the current page and shall display it. Any page transitions specified by the <strong>Trans</strong> entry of the page dictionary shall be performed. </p>
+    </li>
+</ol></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月6日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

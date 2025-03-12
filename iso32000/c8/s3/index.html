@@ -1,0 +1,2085 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s2/">
+      
+      
+        <link rel="next" href="../s4/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>8.3 坐标系统 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#83-坐标系统" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8.3 坐标系统
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            8图形绘制
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.2 图形对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    8.3 坐标系统
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    8.3 坐标系统
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#831-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#832-坐标空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2 坐标空间
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3.2 坐标空间">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8321-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8322-设备空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2.2 设备空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8323-用户空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2.3 用户空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8324-其他坐标空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2.4 其他坐标空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8325-坐标空间之间的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2.5 坐标空间之间的关系
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#833-常见变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.3 常见变换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#834-变换矩阵" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.4 变换矩阵
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.4 图形状态
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.5 路径构建与绘制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.6 色彩空间
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.7 图案
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.8 外部对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.9 图片
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.10 表单 XObjects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.11 可选内容
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#831-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#832-坐标空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2 坐标空间
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3.2 坐标空间">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8321-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8322-设备空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2.2 设备空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8323-用户空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2.3 用户空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8324-其他坐标空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2.4 其他坐标空间
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8325-坐标空间之间的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.2.5 坐标空间之间的关系
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#833-常见变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.3 常见变换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#834-变换矩阵" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.3.4 变换矩阵
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="83-坐标系统">8.3 坐标系统<a class="headerlink" href="#83-坐标系统" title="Permanent link">&para;</a></h1>
+<p><strong>8.3 Coordinate Systems</strong></p>
+<h2 id="831-概述">8.3.1 概述<a class="headerlink" href="#831-概述" title="Permanent link">&para;</a></h2>
+<p><strong>8.3.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>坐标系统定义了所有绘图发生的画布。它们决定了页面上文本、图形和图像的位置、方向和大小。本小节描述了PDF中使用的各种坐标系统，它们之间的关系，以及它们之间的转换是如何指定的。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>本小节讨论的坐标系统适用于二维图形。PDF 1.6引入了显示3D艺术作品的能力，在这种情况下，对象是在三维坐标系统中描述的，如<a href="../../c13/s6/#1365-3d坐标系统">13.6.5</a>中所述，"3D的坐标系统"。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Coordinate systems define the canvas on which all painting occurs. They determine the position, orientation, and size of the text, graphics, and images that appear on a page. This sub-clause describes each of the coordinate systems used in PDF, how they are related, and how transformations among them are specified.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The coordinate systems discussed in this sub-clause apply to two-dimensional graphics. PDF 1.6 introduced the ability to display 3D artwork, in which objects are described in a three-dimensional coordinate system, as described in <a href="../../c13/s6/#1365-3d坐标系统">13.6.5</a>, "Coordinate Systems for 3D".</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="832-坐标空间">8.3.2 坐标空间<a class="headerlink" href="#832-坐标空间" title="Permanent link">&para;</a></h2>
+<p><strong>8.3.2 Coordinate Spaces</strong></p>
+<h3 id="8321-概述">8.3.2.1 概述<a class="headerlink" href="#8321-概述" title="Permanent link">&para;</a></h3>
+<p><strong>8.3.2.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>路径和位置应以笛卡尔平面上的坐标对来定义。坐标对是实数x和y的一对，它们在二维坐标空间内水平和垂直地定位一个点。坐标空间由以下属性确定，与当前页面有关：</p>
+<ul>
+<li>原点的<em>位置</em></li>
+<li><em>x</em>轴和<em>y</em>轴的<em>方向</em></li>
+<li>每个轴上单位的长度</li>
+</ul>
+<p>PDF定义了几个坐标空间，在这些坐标空间中，指定图形对象的坐标将被解释。以下小节描述了这些空间以及它们之间的关系。</p>
+<p>坐标空间之间的转换应由<em>变换矩阵</em>定义，它可以指定任何二维坐标的线性映射，包括平移、缩放、旋转、反射和倾斜。变换矩阵在<a href="./#833-常见变换">8.3.3</a>，“常见变换”和<a href="./#834-变换矩阵">8.3.4</a>，“变换矩阵”中进行了讨论。</p>
+</div>
+<div class="tabbed-block">
+<p>Paths and positions shall be defined in terms of pairs of <em>coordinates</em> on the Cartesian plane. A coordinate pair is a pair of real numbers x and y that locate a point horizontally and vertically within a two-dimensional <em>coordinate space</em>. A coordinate space is determined by the following properties with respect to the current page:</p>
+<ul>
+<li>The <em>location</em> of the origin</li>
+<li>The orientation of the <em>x</em> and <em>y</em> axes</li>
+<li>The lengths of the units along each axis</li>
+</ul>
+<p>PDF defines several coordinate spaces in which the coordinates specifying graphics objects shall be interpreted. The following sub-clauses describe these spaces and the relationships among them.</p>
+<p>Transformations among coordinate spaces shall be defined by <em>transformation matrices</em>, which can specify any linear mapping of two-dimensional coordinates, including translation, scaling, rotation, reflection, and skewing. Transformation matrices are discussed in <a href="./#833-常见变换">8.3.3</a>, "Common Transformations" and <a href="./#834-变换矩阵">8.3.4</a>, "Transformation Matrices".</p>
+</div>
+</div>
+</div>
+<h3 id="8322-设备空间">8.3.2.2 设备空间<a class="headerlink" href="#8322-设备空间" title="Permanent link">&para;</a></h3>
+<p><strong>8.3.2.2 Device Space</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>页面的内容最终会出现在光栅输出设备上，比如显示器或打印机。这些设备在用于在可打印区域内定位像素的内置坐标系统上有很大的差异。特定设备的坐标系统被称为其设备空间。不同设备上的设备空间原点可能落在输出页面的不同位置；在显示器上，原点的位置可能会根据窗口系统而变化。由于纸张或其他输出介质在不同的打印机和成像设备中以不同的方向移动，它们的设备空间的轴可能有不同的方向。例如，在某些设备上，垂直（y）坐标可能从页面的顶部增加到底部，在其他设备上则从底部增加到顶部。最后，不同的设备有不同的分辨率；有些甚至在水平和垂直方向上的分辨率也不同。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>如果PDF文件中的坐标以设备空间指定，那么该文件将依赖于设备，并且在不同的设备上看起来会不同。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>在典型的设备空间中指定的图像，比如72像素每英寸的显示器和600点每英寸的打印机，大小会相差超过8倍；显示器上的8英寸线段在打印机上看起来会少于1英寸长。附录L中的图10展示了相同的图形对象，如果以设备空间指定，在不同的输出设备上渲染时可能会有截然不同的外观。</p>
+</div>
+<p><a class="glightbox" href="../imgs/f10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f10.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>The contents of a page ultimately appear on a raster output device such as a display or a printer. Such devices vary greatly in the built-in coordinate systems they use to address pixels within their imageable areas. A particular device’s coordinate system is called its device space. The origin of the device space on different devices can fall in different places on the output page; on displays, the origin can vary depending on the window system. Because the paper or other output medium moves through different printers and imagesetters in different directions, the axes of their device spaces may be oriented differently. For instance, vertical (y) coordinates may increase from the top of the page to the bottom on some devices and from bottom to top on others. Finally, different devices have different resolutions; some even have resolutions that differ in the horizontal and vertical directions.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>If coordinates in a PDF file were specified in device space, the file would be device-dependent and would appear differently on different devices.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>Images specified in the typical device spaces of a 72-pixel-per-inch display and a 600-dot-per-inch printer would differ in size by more than a factor of 8; an 8-inch line segment on the display would appear less than 1 inch long on the printer. Figure 10 in Annex L shows how the same graphics object, specified in device space, can appear drastically different when rendered on different output devices.</p>
+</div>
+<p><a class="glightbox" href="../imgs/f10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f10.png" /></a></p>
+</div>
+</div>
+</div>
+<h3 id="8323-用户空间">8.3.2.3 用户空间<a class="headerlink" href="#8323-用户空间" title="Permanent link">&para;</a></h3>
+<p><strong>8.3.2.3 User Space</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>为了避免在设备空间中指定对象时产生的设备依赖效应，PDF定义了一个与输出设备无关的坐标系统，该系统与当前页面始终具有相同的关系，无论打印或显示发生在哪种输出设备上。这个与设备无关的坐标系统称为用户空间。</p>
+<p>用户空间坐标系统应为文档的每一页初始化为默认状态。页面字典中的<strong>CropBox</strong>条目应指定与预期输出介质（显示窗口或打印页面）的可见区域相对应的用户空间矩形。正x轴水平向右延伸，正y轴垂直向上，如标准数学实践（但可能会被页面字典中的<strong>Rotate</strong>条目改变）。x轴和y轴上单位的长度由页面字典中的<strong>UserUnit</strong>条目（<em>PDF 1.6</em>）设置（见<a href="../../c7/s7/#table30">表30</a>）。如果该条目不存在或不受支持，则使用默认值1/72英寸。这个坐标系统称为默认用户空间。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>在PostScript中，默认用户空间的原点始终对应于输出介质的左下角。虽然这种惯例在PDF文档中也很常见，但并非必需；页面字典的<strong>CropBox</strong>条目可以指定任何默认用户空间矩形以在介质上可见。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>默认用户空间中单位的大小（1/72英寸）大约与印刷行业中广泛使用的点相同。然而，它们并不完全相同；点没有普遍的定义。</p>
+</div>
+<p>概念上，用户空间是一个无限的平面。这个平面的一小部分对应于输出设备的可打印区域：由页面字典中的<strong>CropBox</strong>条目定义的矩形区域。默认用户空间的查看或打印区域对于每一页可能不同，并在<a href="../../c14/s11/#14112-页面边界">14.11.2</a>中描述，"页面边界"。</p>
+<p>用户空间中的坐标（如任何其他坐标空间中的坐标）可以指定为整数或实数，并且默认用户空间中的单位大小不限制位置到任何任意网格。用户空间中坐标的分辨率与设备空间中像素的分辨率没有任何关系。</p>
+<p>从用户空间到设备空间的转换由<em>当前变换矩阵</em>（CTM）定义，这是PDF图形状态的一个元素（见<a href="../s4/">8.4</a>，"图形状态"）。符合标准的阅读器可以调整CTM以适应特定输出设备的原生分辨率，保持PDF页面描述的设备独立性。附录L中的图11展示了这如何允许在用户空间中指定的对象无论在哪种设备上渲染都看起来相同。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>默认用户空间为PDF页面描述提供了一个一致、可靠的起点，无论使用哪种输出设备。如果需要，PDF内容流可以通过应用<em>坐标变换操作符</em>，<strong>cm</strong>（见<a href="../s4/#844-图形状态操作符">8.4.4</a>，"图形状态操作符"）来修改用户空间，使其更适合其需求。因此，在内容流中看似绝对坐标的坐标并不是相对于当前页面的绝对坐标，因为它们是在一个可能会滑动、缩小或扩展的坐标系统中表达的。坐标系统变换不仅增强了设备独立性，而且本身就是一个有用的工具。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>最初设计为占据整个页面的内容流可以通过缩小其绘制的坐标系统而不做任何更改地作为另一个页面的元素被纳入。</p>
+</div>
+<p><a class="glightbox" href="../imgs/f11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f11.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>To avoid the device-dependent effects of specifying objects in device space, PDF defines a device-independent coordinate system that always bears the same relationship to the current page, regardless of the output device on which printing or displaying occurs. This device-independent coordinate system is called user space.</p>
+<p>The user space coordinate system shall be initialized to a default state for each page of a document. The <strong>CropBox</strong> entry in the page dictionary shall specify the rectangle of user space corresponding to the visible area of the intended output medium (display window or printed page). The positive x axis extends horizontally to the right and the positive y axis vertically upward, as in standard mathematical practice (subject to alteration by the <strong>Rotate</strong> entry in the page dictionary). The length of a unit along both the x and y axes is set by the <strong>UserUnit</strong> entry (<em>PDF 1.6</em>) in the page dictionary (see <a href="../../c7/s7/#table30">Table 30</a>). If that entry is not present or supported, the default value of 1 ⁄ 72 inch is used. This coordinate system is called default user space.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>In PostScript, the origin of default user space always corresponds to the lower-left corner of the output medium. While this convention is common in PDF documents as well, it is not required; the page dictionary’s <strong>CropBox</strong> entry can specify any rectangle of default user space to be made visible on the medium.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The default for the size of the unit in default user space (1 ⁄ 72 inch) is approximately the same as a point, a unit widely used in the printing industry. It is not exactly the same, however; there is no universal definition of a point.</p>
+</div>
+<p>Conceptually, user space is an infinite plane. Only a small portion of this plane corresponds to the imageable area of the output device: a rectangular region defined by the <strong>CropBox</strong> entry in the page dictionary. The region of default user space that is viewed or printed can be different for each page and is described in <a href="../../c14/s11/#14112-页面边界">14.11.2</a>, "Page Boundaries".</p>
+<p>Coordinates in user space (as in any other coordinate space) may be specified as either integers or real numbers, and the unit size in default user space does not constrain positions to any arbitrary grid. The resolution of coordinates in user space is not related in any way to the resolution of pixels in device space.</p>
+<p>The transformation from user space to device space is defined by the <em>current transformation matrix</em> (CTM), an element of the PDF graphics state (see <a href="../s4/">8.4</a>, "Graphics State"). A conforming reader can adjust the CTM for the native resolution of a particular output device, maintaining the device-independence of the PDF page description. Figure 11 in Annex L shows how this allows an object specified in user space to appear the same regardless of the device on which it is rendered.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>The default user space provides a consistent, dependable starting place for PDF page descriptions regardless of the output device used. If necessary, a PDF content stream may modify user space to be more suitable to its needs by applying the <em>coordinate transformation operator</em>, <strong>cm</strong> (see <a href="../s4/#844-图形状态操作符">8.4.4</a>, "Graphics State Operators"). Thus, what may appear to be absolute coordinates in a content stream are not absolute with respect to the current page because they are expressed in a coordinate system that may slide around and shrink or expand. Coordinate system transformation not only enhances device-independence but is a useful tool in its own right.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>A content stream originally composed to occupy an entire page can be incorporated without change as an element of another page by shrinking the coordinate system in which it is drawn.</p>
+</div>
+<p><a class="glightbox" href="../imgs/f11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f11.png" /></a></p>
+</div>
+</div>
+</div>
+<h3 id="8324-其他坐标空间">8.3.2.4 其他坐标空间<a class="headerlink" href="#8324-其他坐标空间" title="Permanent link">&para;</a></h3>
+<p><strong>8.3.2.4 Other Coordinate Spaces</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>除了设备空间和用户空间，PDF还使用其他各种坐标空间用于特殊目的：</p>
+<ul>
+<li>文本的坐标应以文本空间来指定。从文本空间到用户空间的转换应由图形状态中的<em>文本矩阵</em>以及几个与文本相关的参数来定义（见<a href="../../c9/s4/#942-文本位置操作">9.4.2</a>，"文本定位操作符"）。</li>
+<li>字体中的字符字形应以字形空间来定义（见<a href="../../c9/s2/#924-字形定位和规格">9.2.4</a>，"字形定位和度量"）。从字形空间到文本空间的转换应由<em>字体矩阵</em>来定义。对于大多数类型的字体，此矩阵应预设为将字形空间的1000个单位映射到文本空间的1个单位；对于Type 3字体，字体矩阵应在字体字典中明确给出（见<a href="../../c9/s6/#965-type-3-字体">9.6.5</a>，"Type 3 字体"）。</li>
+<li>所有采样图像应以<em>图像空间</em>来定义。从图像空间到用户空间的转换应是预设的，且不可更改。所有图像在用户空间中应为1单位宽和1单位高，无论图像中有多少样本。要绘制图像，应通过暂时改变CTM将其映射到页面的某个区域。</li>
+<li>表单XObject（在<a href="../s10/">8.10</a>中讨论，"表单XObject"）是一个自包含的内容流，可以作为另一个内容流中的图形元素。它定义的空间称为表单空间。从表单空间到用户空间的转换应由表单XObject中包含的表单矩阵来指定。</li>
+<li>PDF 1.2定义了一种称为模式的颜色类型，在<a href="../s7/">8.7</a>中讨论，"模式"。模式应通过一个内容流来定义，该内容流将被重复调用以平铺一个区域，或通过一个其颜色是位置函数的渐变。模式定义的空间称为模式空间。从模式空间到用户空间的转换应由模式中包含的模式矩阵来指定。</li>
+<li>PDF 1.6嵌入了3D艺术作品，其以三维坐标来描述（见<a href="../../c13/s6/#1365-3d坐标系统">13.6.5</a>，"3D的坐标系统"），这些坐标被投影到注释的目标坐标系统（见13.6.2，"3D注释"）。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>In addition to device space and user space, PDF uses a variety of other coordinate spaces for specialized purposes:</p>
+<ul>
+<li>The coordinates of text shall be specified in text space. The transformation from text space to user space shall be defined by a <em>text matrix</em> in combination with several text-related parameters in the graphics state (see <a href="../../c9/s4/#942-文本位置操作">9.4.2</a>, "Text-Positioning Operators").</li>
+<li>Character glyphs in a font shall be defined in glyph space (see <a href="../../c9/s2/#924-字形定位和规格">9.2.4</a>, "Glyph Positioning and Metrics"). The transformation from glyph space to text space shall be defined by the <em>font matrix</em>. For most types of fonts, this matrix shall be predefined to map 1000 units of glyph space to 1 unit of text space; for Type 3 fonts, the font matrix shall be given explicitly in the font dictionary (see <a href="../../c9/s6/#965-type-3-字体">9.6.5</a>, "Type 3 Fonts").</li>
+<li>All sampled images shall be defined in <em>image space</em>. The transformation from image space to user space shall be predefined and cannot be changed. All images shall be 1 unit wide by 1 unit high in user space,  regardless of the number of samples in the image. To be painted, an image shall be mapped to a region of the page by temporarily altering the CTM.</li>
+<li>A form XObject (discussed in <a href="../s10/">8.10</a>, "Form XObjects") is a self-contained content stream that can be treated as a graphical element within another content stream. The space in which it is defined is called form space. The transformation from form space to user space shall be specified by a form matrix contained in the form XObject.</li>
+<li>PDF 1.2 defined a type of colour known as a pattern, discussed in <a href="../s7/">8.7</a>, "Patterns". A pattern shall be defined either by a content stream that shall be invoked repeatedly to tile an area or by a shading whose colour is a function of position. The space in which a pattern is defined is called pattern space. The transformation from pattern space to user space shall be specified by a pattern matrix contained in the pattern.</li>
+<li>PDF 1.6 embedded 3D artwork, which is described in three-dimensional coordinates (see <a href="../../c13/s6/#1365-3d坐标系统">13.6.5</a>, "Coordinate Systems for 3D") that are projected into an annotation’s target coordinate system (see 13.6.2, "3D Annotations").</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="8325-坐标空间之间的关系">8.3.2.5 坐标空间之间的关系<a class="headerlink" href="#8325-坐标空间之间的关系" title="Permanent link">&para;</a></h3>
+<p><strong>8.3.2.5 Relationships among Coordinate Spaces</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>图12在<a href="../../a12/">附录L</a>中展示了上述坐标空间之间的关系。图中的每个箭头都表示从一个坐标空间到另一个坐标空间的转换。PDF允许对许多这些转换进行修改。</p>
+<p>由于PDF坐标空间是相互定义的，对一个转换所做的更改可能会影响在几个坐标空间中定义的对象的外观。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>CTM的变化，它定义了从用户空间到设备空间的转换，会影响表单、文本、图像和模式，因为它们都在用户空间的上游。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Figure 12 in <a href="../../a12/">Annex L</a> shows the relationships among the coordinate spaces described above. Each arrow in the figure represents a transformation from one coordinate space to another. PDF allows modifications to many of these transformations.</p>
+<p>Because PDF coordinate spaces are defined relative to one another, changes made to one transformation can affect the appearance of objects defined in several coordinate spaces.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>A change in the CTM, which defines the transformation from user space to device space, affects forms, text, images, and patterns, since they are all upstream from user space.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="833-常见变换">8.3.3 常见变换<a class="headerlink" href="#833-常见变换" title="Permanent link">&para;</a></h2>
+<p><strong>8.3.3 Common Transformations</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>变换矩阵指定了两个坐标空间之间的关系。通过修改变换矩阵，可以对对象进行缩放、旋转、平移或以其他方式进行变换。</p>
+<p><a class="glightbox" href="../imgs/f12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f12.png" /></a></p>
+<p>PDF中的变换矩阵应由六个数字指定，通常以包含六个元素的数组形式出现。在其最一般的形式中，此数组表示为 [a b c d e f]；它可以表示从一个坐标系到另一个坐标系的任何线性变换。本小节列出了指定最常见变换的数组；<a href="./#834-变换矩阵">8.3.4</a>，“变换矩阵”，讨论了变换的更多数学细节，包括指定这里列出的变换组合的信息：</p>
+<ul>
+<li>平移应指定为 <span class="arithmatex">\([1 \space 0 \space 0 \space 1 \space t_x \space t_y]\)</span>，其中 tx 和 ty 分别是沿水平和垂直维度平移坐标系原点的距离。</li>
+<li>缩放应通过 <span class="arithmatex">\([s_x \space 0 \space 0 \space s_y \space 0 \space 0]\)</span> 获得。这会缩放坐标，使得新坐标系的水平和垂直维度的1单位分别与前一个坐标系中的 <span class="arithmatex">\(s_x\)</span> 和 <span class="arithmatex">\(s_y\)</span> 单位大小相同。</li>
+<li>旋转应通过 <span class="arithmatex">\([ \cos q \space \sin q \space -\sin q \space \cos q \space 0 \space 0 ]\)</span> 产生，它的效果是将坐标系轴逆时针旋转角度 q。</li>
+<li>倾斜应通过 <span class="arithmatex">\([1 \space \tan a \space \tan b \space 1 \space 0 \space 0]\)</span> 指定，它将 x 轴倾斜角度 a，y 轴倾斜角度 b。</li>
+</ul>
+<p>附录L中的图13展示了每种变换的例子。图中显示的平移、旋转和倾斜的方向对应于数组元素的正值。</p>
+<p><a class="glightbox" href="../imgs/f13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f13.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>如果组合了几个变换，应用它们的顺序是重要的。例如，先缩放然后沿 x 轴平移与先沿 x 轴平移然后缩放不是同一回事。通常，为了获得预期的结果，应按以下顺序进行变换：平移、旋转、缩放或倾斜。</p>
+<p>附录L中的图14展示了应用变换顺序的效果。图中显示了两个变换序列应用于坐标系。每次连续变换后，都会绘制字母 n 的轮廓。</p>
+</div>
+<p><a class="glightbox" href="../imgs/f14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f14.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>图中显示了以下变换：沿 x 轴平移 10 单位，沿 y 轴平移 20 单位；旋转 30 度；沿 x 轴缩放 3 倍</p>
+<p>图中的轴以具有 2 单位虚线和 2 单位间隔的虚线模式显示。此外，为了参考，原始（未变换）轴以较浅的颜色显示。请注意，缩放-旋转-平移的顺序导致坐标系的扭曲，使得 x 和 y 轴不再垂直；推荐的平移-旋转-缩放的顺序不会导致扭曲。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A <em>transformation matrix</em> specifies the relationship between two coordinate spaces. By modifying a transformation matrix, objects can be scaled, rotated, translated, or transformed in other ways.</p>
+<p><a class="glightbox" href="../imgs/f12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f12.png" /></a></p>
+<p>A transformation matrix in PDF shall be specified by six numbers, usually in the form of an array containing six elements. In its most general form, this array is denoted [ a b c d e f ]; it can represent any linear transformation from one coordinate system to another. This sub-clause lists the arrays that specify the most common transformations; <a href="./#834-变换矩阵">8.3.4</a>, "Transformation Matrices", discusses more mathematical details of transformations, including information on specifying transformations that are combinations of those listed here:</p>
+<ul>
+<li>Translations shall be specified as <span class="arithmatex">\([1 \space 0 \space 0 \space 1 \space t_x \space t_y]\)</span>, where tx and ty shall be the distances to translate the origin of the coordinate system in the horizontal and vertical dimensions, respectively.</li>
+<li>Scaling shall be obtained by <span class="arithmatex">\([s_x \space 0 \space 0 \space s_y \space 0 \space 0]\)</span>. This scales the coordinates so that 1 unit in the horizonta and vertical dimensions of the new coordinate system is the same size as <span class="arithmatex">\(s_x\)</span> and <span class="arithmatex">\(s_y\)</span> units, respectively, i the previous coordinate system.</li>
+<li>Rotations shall be produced by <span class="arithmatex">\([ \cos q \space \sin q \space -\sin q \space \cos q \space 0 \space 0 ]\)</span>, which has the effect of rotating the coordinate system axes by an angle q counter clockwise.</li>
+<li>Skew shall be specified by <span class="arithmatex">\([1 \space \tan a \space \tan b \space 1 \space 0 \space 0]\)</span>, which skews the x axis by an angle a and the y axis by an angle b.</li>
+</ul>
+<p>Figure 13 in Annex L shows examples of each transformation. The directions of translation, rotation, and skew shown in the figure correspond to positive values of the array elements.</p>
+<p><a class="glightbox" href="../imgs/f13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f13.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>If several transformations are combined, the order in which they are applied is significant. For example, first scaling and then translating the <em>x</em> axis is not the same as first translating and then scaling it. In general, to obtain the expected results, transformations should be done in the following order: Translate, Rotate, Scale or skew.</p>
+<p>Figure 14 in <a href="../../a12/">Annex L</a> shows the effect of the order in which transformations are applied. The figure shows two sequences of transformations applied to a coordinate system. After each successive transformation, an outline of the letter n is drawn.</p>
+</div>
+<p><a class="glightbox" href="../imgs/f14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f14.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The following transformations are shown in the figure: a translation of 10 units in the x direction and 20 units in the y direction; a rotation of 30 degrees; a scaling by a factor of 3 in the x direction</p>
+<p>In the figure, the axes are shown with a dash pattern having a 2-unit dash and a 2-unit gap. In addition, the original (untransformed) axes are shown in a lighter colour for reference. Notice that the scale-rotate-translate ordering results in a distortion of the coordinate system, leaving the x and y axes no longer perpendicular; the recommended translate-rotate-scale ordering results in no distortion.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="834-变换矩阵">8.3.4 变换矩阵<a class="headerlink" href="#834-变换矩阵" title="Permanent link">&para;</a></h2>
+<p><strong>8.3.4 Transformation Matrices</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>要理解PDF中坐标变换的数学原理，重要的是要记住两点：</p>
+<ul>
+<li><strong>变换改变的是坐标系统，而不是图形对象</strong>。在应用变换之前绘制的所有对象都不会受到变换的影响。在变换应用后绘制的对象将在变换后的坐标系统中解释。</li>
+<li><strong>变换矩阵指定了从新的（变换后的）坐标系统到原始的（未变换的）坐标系统的变换</strong>。变换后使用的所有坐标都应以变换后的坐标系统来表示。PDF应用变换矩阵来找到未变换坐标系统中的等效坐标。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>许多计算机图形学教科书考虑的是图形对象的变换，而不是坐标系统的变换。尽管两种方法都是正确的并且是自洽的，但根据采取的观点，一些计算的细节会有所不同。</p>
+</div>
+<p>PDF在二维空间中表示坐标。这样的空间中的点（x，y）可以以向量形式表示为 [x y 1]。这个向量的常数第三个元素（1）是必需的，以便在下面的计算中使用3x3矩阵。</p>
+<p>两个坐标系统之间的变换可以通过如下所示的3x3变换矩阵来表示：</p>
+<div class="arithmatex">\[\begin{bmatrix}  a &amp; b &amp; 0 \\  c &amp; d &amp; 0 \\ e &amp; f &amp; 1 \end{bmatrix}\]</div>
+<p>因为变换矩阵只有六个可以改变的元素，所以在大多数PDF情况下，它应被指定为六个元素的数组 [a b c d e f]。</p>
+<p>坐标变换应表示为矩阵乘法：</p>
+<div class="arithmatex">\[[x' \space y' \space 1 ] = [x \space y \space 1 ] \times \begin{bmatrix}  a &amp; b &amp; 0 \\  c &amp; d &amp; 0 \\ e &amp; f &amp; 1 \end{bmatrix}\]</div>
+<p>由于PDF变换矩阵指定了从变换后的坐标系统到原始的（未变换的）坐标系统的转换，因此在该方程中，x' 和 y' 应是未变换坐标系统中的坐标，而 x 和 y 应是变换后的系统中的坐标。乘法如下执行：</p>
+<div class="arithmatex">\[\begin{align} x' = a \times x + c \times y + e \\ y' = b \times x + d \times y + f \end{align}\]</div>
+<p>如果进行一系列变换，代表每个单独变换的矩阵可以相乘，以产生一个单一的等效矩阵，代表复合变换。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>矩阵乘法不是交换的——矩阵相乘的顺序是重要的。考虑两个变换的序列：先对用户空间坐标系统应用缩放变换，然后从得到的缩放用户空间转换到设备空间。设 <span class="arithmatex">\(M_S\)</span> 是指定缩放的矩阵，<span class="arithmatex">\(M_C\)</span> 是当前变换矩阵，它将用户空间变换到设备空间。记住坐标总是在变换后的空间中指定，正确的变换顺序首先将缩放的坐标转换为默认用户空间，然后将默认用户空间的坐标转换为设备空间。这可以表示为：</p>
+<div class="arithmatex">\[X_D = X_U \times M_C = (X_S \times M_S) \times M_C = X_S \times (M_S \times M_C)\]</div>
+<p>其中</p>
+<ul>
+<li><span class="arithmatex">\(X_D\)</span> 表示设备空间中的坐标</li>
+<li><span class="arithmatex">\(X_U\)</span> 表示默认用户空间中的坐标</li>
+<li><span class="arithmatex">\(X_S\)</span> 表示缩放用户空间中的坐标</li>
+</ul>
+<p>这意味着，当你将缩放变换应用于用户空间时，你应该先应用缩放矩阵 <span class="arithmatex">\(M_S\)</span>，然后将结果与当前变换矩阵 <span class="arithmatex">\(M_C\)</span> 相乘，以得到设备空间中的坐标。这个过程强调了变换顺序对最终结果的影响。</p>
+</div>
+<p>这表明当一个新的变换与现有的变换连接时，表示它的矩阵应该在现有变换矩阵之前（<em>预乘(premultiplied)</em>）相乘。</p>
+<p>这个结果在PDF中通常是正确的：当执行一系列变换时，表示组合变换的矩阵（<span class="arithmatex">\(M¢\)</span>）是通过将表示额外变换的矩阵（<span class="arithmatex">\(M_T\)</span>）与表示所有先前存在的变换的矩阵（<em>M</em>）预乘来计算的：</p>
+<div class="arithmatex">\[M' = M_T \times M\]</div>
+<div class="admonition 注意">
+<p class="admonition-title">NOTE 3</p>
+<p>在渲染图形对象时，有时需要符合标准的阅读器执行变换的逆运算——即找到与给定设备空间坐标对相对应的用户空间坐标。然而，并非所有变换都是可逆的。例如，如果一个矩阵包含的a、b、c和d元素都为零，则所有用户坐标映射到相同的设备坐标，并且没有唯一的逆变换。这种不可逆的变换不是很有用，通常是由无意的操作引起的，比如通过0进行缩放。在使用非可逆矩阵绘制图形对象时可能会导致不可预测的行为。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>This sub-clause discusses the mathematics of transformation matrices.</p>
+<p>To understand the mathematics of coordinate transformations in PDF, it is vital to remember two points:</p>
+<ul>
+<li><em>Transformations alter coordinate systems, not graphics objects</em>. All objects painted before a transformation is applied shall be unaffected by the transformation. Objects painted after the transformation is applied shall be interpreted in the transformed coordinate system.</li>
+<li><em>Transformation matrices specify the transformation from the new (transformed) coordinate system to the original (untransformed) coordinate system</em>. All coordinates used after the transformation shall be expressed in the transformed coordinate system. PDF applies the transformation matrix to find the equivalent coordinates in the untransformed coordinate system.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Many computer graphics textbooks consider transformations of graphics objects rather than of coordinate systems. Although either approach is correct and self-consistent, some details of the calculations differ depending on which point of view is taken.</p>
+</div>
+<p>PDF represents coordinates in a two-dimensional space. The point (x, y) in such a space can be expressed in vector form as [x y 1]. The constant third element of this vector (1) is needed so that the vector can be used with 3-by-3 matrices in the calculations described below.</p>
+<p>The transformation between two coordinate systems can be represented by a 3-by-3 transformation matrix written as follows:</p>
+<div class="arithmatex">\[\begin{bmatrix}  a &amp; b &amp; 0 \\  c &amp; d &amp; 0 \\ e &amp; f &amp; 1 \end{bmatrix}\]</div>
+<p>Because a transformation matrix has only six elements that can be changed, in most cases in PDF it shall be specified as the six-element array [a b c d e f].</p>
+<p>Coordinate transformations shall be expressed as matrix multiplications:</p>
+<div class="arithmatex">\[[x' \space y' \space 1 ] = [x \space y \space 1 ] \times \begin{bmatrix}  a &amp; b &amp; 0 \\  c &amp; d &amp; 0 \\ e &amp; f &amp; 1 \end{bmatrix}\]</div>
+<p>Because PDF transformation matrices specify the conversion from the transformed coordinate system to the original (untransformed) coordinate system, x¢ and y¢ in this equation shall be the coordinates in the untransformed coordinate system, and x and y shall be the coordinates in the transformed system. The multiplication is carried out as follows:</p>
+<div class="arithmatex">\[\begin{align} x' = a \times x + c \times y + e \\ y' = b \times x + d \times y + f \end{align}\]</div>
+<p>If a series of transformations is carried out, the matrices representing each of the individual transformations can be multiplied together to produce a single equivalent matrix representing the composite transformation.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Matrix multiplication is not commutative—the order in which matrices are multiplied is significant. Consider a sequence of two transformations: a scaling transformation applied to the user space coordinate system, followed by a conversion from the resulting scaled user space to device space. Let <span class="arithmatex">\(M_S\)</span> be the matrix specifying the scaling and <span class="arithmatex">\(M_C\)</span> the current transformation matrix, which transforms user space to device space. Recalling that coordinates are always specified in the transformed space, the correct order of transformations first converts the scaled coordinates to default user space and then converts the default user space coordinates to device space. This can be expressed as</p>
+<div class="arithmatex">\[X_D = X_U \times M_C = (X_S \times M_S) \times M_C = X_S \times (M_S \times M_C)\]</div>
+<p>where</p>
+<p><span class="arithmatex">\(X_D\)</span> denotes the coordinates in device space</p>
+<p><span class="arithmatex">\(X_U\)</span> denotes the coordinates in default user space</p>
+<p><span class="arithmatex">\(X_S\)</span> denotes the coordinates in scaled user space</p>
+</div>
+<p>This shows that when a new transformation is concatenated with an existing one, the matrix representing it shall be multiplied before (<em>premultiplied</em> with) the existing transformation matrix.</p>
+<p>This result is true in general for PDF: when a sequence of transformations is carried out, the matrix representing the combined transformation (<span class="arithmatex">\(M¢\)</span>) is calculated by premultiplying the matrix representing the additional transformation (<span class="arithmatex">\(M_T\)</span>) with the one representing all previously existing transformations (<em>M</em>):</p>
+<div class="arithmatex">\[M' = M_T \times M\]</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>When rendering graphics objects, it is sometimes necessary for a conforming reader to perform the inverse of a transformation—that is, to find the user space coordinates that correspond to a given pair of device space coordinates. Not all transformations are invertible, however. For example, if a matrix contains a, b, c, and d elements that are all zero, all user coordinates map to the same device coordinates and there is no unique inverse transformation. Such noninvertible transformations are not very useful and generally arise from unintended operations, such as scaling by 0. Use of a noninvertible matrix when painting graphics objects can result in unpredictable behaviour.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

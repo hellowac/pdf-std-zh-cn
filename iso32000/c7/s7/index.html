@@ -1,0 +1,3017 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s6/">
+      
+      
+        <link rel="next" href="../s8/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>7.7 文档结构 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#77-文档结构" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7.7 文档结构
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            7语法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 词汇惯例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.4 过滤器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.5 文件结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.6 加密
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    7.7 文档结构
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    7.7 文档结构
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#771-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#772-文档目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.2 文档目录
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#773-page树" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.3 Page树
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.7.3 Page树">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7731-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7732-page树节点" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.3.2 Page树节点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7733-page对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.3.3 Page对象
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7734-page属性的继承" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.3.4 Page属性的继承
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#774-名称字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.4 名称字典
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.8 内容流和资源
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.9 公共数据结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.10 函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.11 文件规范
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.12 扩展字典
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#771-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#772-文档目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.2 文档目录
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#773-page树" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.3 Page树
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.7.3 Page树">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7731-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7732-page树节点" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.3.2 Page树节点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7733-page对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.3.3 Page对象
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7734-page属性的继承" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.3.4 Page属性的继承
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#774-名称字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7.4 名称字典
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="77-文档结构">7.7 文档结构<a class="headerlink" href="#77-文档结构" title="Permanent link">&para;</a></h1>
+<p><strong>Document Structure</strong></p>
+<h2 id="771-概述">7.7.1 概述<a class="headerlink" href="#771-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF文档可以被视为一个包含在PDF文件主体部分的对象层级结构。层级结构的根是文档的目录字典（参见<a href="./#772-文档目录">7.7.2</a>，“文档目录”）。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>大多数层级结构中的对象都是字典。图5展示了对象层级结构的形态。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Example</p>
+<p>文档的每一页都由一个页面对象表示——一个包含对页面内容和其他属性的引用的字典，例如它的缩略图（<a href="../../c12/s3/#1234-缩略图">12.3.4</a>，“缩略图”）以及与之关联的任何注释（<a href="../../c12/s5/">12.5</a>，“注释”）。各个页面对象被绑定在一个称为页面<em>树</em>的结构中（在<a href="./#773-page树">7.7.3</a>，“页面树”中描述），该结构又通过文档目录中的间接引用被指定。层级结构中的父级、子级和兄弟关系由字典条目定义，其值是对其他字典的间接引用。</p>
+</div>
+<p>本子条款中描述的数据结构，特别是<strong>目录</strong>和<strong>页面</strong>字典，结合了描述文档结构的条目和处理文档及页面详细语义的条目。所有条目都在这里列出，但许多条目的描述被推迟到后续子条款中。</p>
+</div>
+<div class="tabbed-block">
+<p>A PDF document can be regarded as a hierarchy of objects contained in the body section of a PDF file. At the root of the hierarchy is the document’s catalog dictionary (see <a href="./#772-文档目录">7.7.2</a>, "Document Catalog").</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most of the objects in the hierarchy are dictionaries. Figure 5 illustrates the structure of the object hierarchy.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Example</p>
+<p>Each page of the document is represented by a page object—a dictionary that includes references to the page’s contents and other attributes, such as its thumbnail image (<a href="../../c12/s3/#1234-缩略图">12.3.4</a>, "Thumbnail Images") and any annotations (<a href="../../c12/s5/">12.5</a>, "Annotations") associated with it. The individual page objects are tied together in a structure called the page <em>tree</em> (described in <a href="./#773-page树">7.7.3</a>, "Page Tree"), which in turn is specified by an indirect reference in the document catalog. Parent, child, and sibling relationships within the hierarchy are defined by dictionary entries whose values are indirect references to other dictionaries.</p>
+</div>
+<p>The data structures described in this sub-clause, particularly the <strong>Catalog</strong> and <strong>Page</strong> dictionaries, combine entries describing document structure with ones dealing with the detailed semantics of documents and pages. All entries are listed here, but many of their descriptions are deferred to subsequent sub-clauses.</p>
+</div>
+</div>
+</div>
+<h2 id="772-文档目录">7.7.2 文档目录<a class="headerlink" href="#772-文档目录" title="Permanent link">&para;</a></h2>
+<p><strong>Document Catalog</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>文档的对象层次结构的根是目录字典，它通过PDF文件尾部的<strong>Root</strong>条目定位（见<a href="../s5/#755-文件尾部">7.5.5</a>，“文件尾部”）。目录包含对其他定义文档内容、大纲、文章线索、命名目的地和其他属性的对象的引用。此外，它还包含有关文档在屏幕上如何显示的信息，例如是否自动显示其大纲和缩略图页面图像，以及在打开文档时是否显示第一页以外的某个位置。<a href="#table28">表28</a>显示了目录字典中的条目。</p>
+<p><a class="glightbox" href="../imgs/f5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f5.png" /></a></p>
+<p><table id="table28" markdown="span">
+    <caption><strong>Table 28 – 目录字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Required</em>) 这个字典描述的PDF对象的类型；对于<strong>目录(catalog)</strong>字典，应为Catalog。</td>
+        </tr>
+        <tr>
+            <td><strong>Version</strong></td>
+            <td>name</td>
+            <td>(<em>Optional; PDF 1.4</em>) 文档符合的PDF规范版本（例如1.4），如果比文件头部指定的版本（见<a href="../s5/#752-文件头">7.5.2</a>，“文件头部”）更新。如果头部指定了更新的版本，或者如果这个条目不存在，则文档应符合头部指定的版本。这个条目允许符合规范的编写器使用增量更新来更新版本；见<a href="../s5/#756-增量更新">7.5.6</a>，“增量更新”。这个条目的值应该是一个名称对象，而不是数字，因此在PDF文件中写入时应该在前面加上斜杠字符(SOLIDUS (2Fh))（例如，/1.4）。</td>
+        </tr>
+        <tr>
+            <td><strong>Extensions</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional; ISO 32000</em>) 一个扩展字典，包含开发者前缀识别和文档中出现的开发者扩展的版本号。<a href="../s12/">7.12</a>，“扩展字典”，描述了这个字典以及它的使用方法。</td>
+        </tr>
+        <tr>
+            <td><strong>Pages</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Required; 应该是间接引用。</em>) 页面树节点，应为文档页面树的根（见<a href="#773-page树">7.7.3</a>，“页面树”）。</td>
+        </tr>
+        <tr>
+            <td><strong>PageLabels</strong></td>
+            <td>number tree</td>
+            <td>(<em>Optional; PDF 1.3</em>) 一个数字树（见<a href="../s9/#797-number树">7.9.7</a>，“数字树”），定义了文档的页面标记。此树中的键应为页面索引；相应的值应为页面标签字典（见<a href="../../c12/s4/#1242-页面标签">12.4.2</a>，“页面标签”）。每个页面索引应表示一个标记范围中第一页，该范围应用了指定的页面标签字典。该树应包含页面索引0的值。</td>
+        </tr>
+        <tr>
+            <td><strong>Names</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional; PDF 1.2</em>) 文档的名称字典 (see <a href="#774-名称字典">7.7.4</a>, "Name Dictionary").</td>
+        </tr>
+        <tr>
+            <td><strong>Dests</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional; PDF 1.1; 应该是间接引用。</em>) 一个包含名称和相应目的地的字典。 (see <a href="../../c12/s3/#12323-命名目的地">12.3.2.3</a>, "Named Destinations").</td>
+        </tr>
+        <tr>
+            <td><strong>ViewerPreferences</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional; PDF 1.2</em>) 一个查看器首选项字典（见<a href="../../c12/s2/">12.2</a>，“查看器首选项”），指定了文档在屏幕上的显示方式。如果这个条目不存在，符合规范的阅读器将使用它们自己的当前用户首选项设置。</td>
+        </tr>
+        <tr>
+            <td><strong>PageLayout</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) 一个名称对象，指定了当文档打开时应该使用的页面布局：
+                <dl>
+                    <dt><strong>SinglePage</strong></dt>
+                    <dd>一次显示一页</dd>
+                    <dt><strong>OneColumn</strong></dt>
+                    <dd>以单列显示页面</dd>
+                    <dt><strong>TwoColumnLeft</strong></dt>
+                    <dd>以双列显示页面，奇数页在左侧</dd>
+                    <dt><strong>TwoColumnRight</strong></dt>
+                    <dd>以双列显示页面，奇数页在右侧</dd>
+                    <dt><strong>TwoPageLeft</strong></dt>
+                    <dd>（<em>PDF 1.5</em>）一次显示两页，奇数页在左侧</dd>
+                    <dt><strong>TwoPageRight</strong></dt>
+                    <dd>（<em>PDF 1.5</em>）一次显示两页，奇数页在右侧</dd>
+                </dl>
+            默认值: <strong>SinglePage</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>PageMode</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) 一个名称对象，指定了文档打开时应该如何显示。:
+                <dl>
+                    <dt><strong>UseNone</strong></dt>
+                    <dd>不显示文档大纲和缩略图图像</dd>
+                    <dt><strong>UseOutlines</strong></dt>
+                    <dd>显示文档大纲</dd>
+                    <dt><strong>UseThumbs</strong></dt>
+                    <dd>显示缩略图图像</dd>
+                    <dt><strong>FullScreen</strong></dt>
+                    <dd>全屏模式，不显示菜单栏、窗口控件或任何其他窗口</dd>
+                    <dt><strong>UseOC</strong></dt>
+                    <dd>（<em>PDF 1.5</em>）显示可选内容组面板</dd>
+                    <dt><strong>UseAttachments</strong></dt>
+                    <dd>（<em>PDF 1.5</em>）显示附件面板</dd>
+                </dl>
+                默认值: <strong>UseNone</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Outlines</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; 应该是间接引用。) 目录字典(outline dictionary)，应为文档大纲层次结构的根。 (see <a href="../../c12/s3/#1233-文档大纲">12.3.3</a>, "Document Outline").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Threads</strong></td>
+            <td>array</td>
+            <td>
+            (<em>Optional; PDF 1.1; 应该是间接引用。</em>) 一个线程字典数组，应代表文档的文章线索。 (see <a href="../../c12/s4/#1243-文章">12.4.3</a>, "Articles").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OpenAction</strong></td>
+            <td>array or dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.1</em>) 指定一个目的地的值，当文档打开时将显示该目的地，或执行一个操作。该值可以是一个定义目的地的数组（见<a href="../../c12/s3/#1232-目的地">12.3.2</a>，“目的地”），或是一个表示操作的动作字典(<a href="../../c12/s6/">12.6</a>，“动作”)。如果这个条目不存在，文档将在默认放大因子下打开到第一页的顶部。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>AA</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.4) 一个附加动作字典，定义了对影响整个文档的各种触发事件的响应应采取的动作。 (see <a href="../../c12/s6/#1263-触发事件">12.6.3</a>, "Trigger Events").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>URI</strong></td>
+            <td>dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.1</em>) 一个URI字典，包含用于URI（统一资源标识符）动作的文档级信息。 (see <a href="../../c12/s6/#12647-uri-操作">12.6.4.7</a>, "URI Actions").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>AcroForm</strong></td>
+            <td>dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.2</em>) 文档的交互式表单（AcroForm）字典。 (see <a href="../../c12/s7/#1272-交互式表格词典">12.7.2</a>, "Interactive Form Dictionary").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Metadata</strong></td>
+            <td>stream</td>
+            <td>
+            (<em>Optional; PDF 1.4; 应该是间接引用。</em>) 元数据流，包含文档的元数据。 (see <a href="../../c14/s3/#1432-元数据流">14.3.2</a>, "Metadata Streams").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>StructTreeRoot</strong></td>
+            <td>dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.3</em>) 文档的结构树根字典。 (see <a href="../../c14/s7/#1472-结构层次">14.7.2</a>, "Structure Hierarchy").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>MarkInfo</strong></td>
+            <td>dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.4</em>) 标记信息字典，包含有关文档使用标记PDF约定的信息。 (see <a href="../../c14/s7/">14.7</a>, "Logical Structure").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Lang</strong></td>
+            <td>text string</td>
+            <td>
+            (<em>Optional; PDF 1.4</em>) 一个语言标识符，应指定文档中所有文本的自然语言，除非结构元素或标记内容的语言规范另有指定（见<a href="../../c14/s9/#1492-自然语言规范">14.9.2</a>，“自然语言规范”）。如果这个条目缺失，则该语言应被视为未知。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SpiderInfo</strong></td>
+            <td>dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.3</em>) 一个Web捕获信息字典，其中应包含任何Web捕获扩展使用的州信息。 (see <a href="../../c14/s10/#14102-网页捕获信息字典">14.10.2</a>, "Web Capture Information Dictionary").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OutputIntents</strong></td>
+            <td>array</td>
+            <td>
+            (Optional; PDF 1.4) 一个输出意图数组，其中应指定文档可能呈现的输出设备的色域特性。 (see <a href="../../c14/s11/#14115-输出意图">14.11.5</a>, "Output Intents").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>PieceInfo</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.4) 一个与文档关联的页面片段字典。 (see <a href="../../c14/s5/">14.5</a>, "Page-Piece Dictionaries").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OCProperties</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.5; 如果文档包含可选内容，则必须提供) 文档的可选内容属性字典。 (see <a href="../../c8/s11/#8114-配置可选内容">8.11.4</a>, "Configuring Optional Content").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Perms</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.5) 一个权限字典，应指定用户对文档的访问权限。<a href="../../c12/s8/#1284-权限">12.8.4</a>，“权限”，描述了这个字典及其使用方法。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Legal</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.5) 一个字典，其中应包含有关PDF文档内容的证明，因为它与数字签名的合法性相关。 (see <a href="../../c12/s8/#1285-合法内容认证">12.8.5</a>, "Legal Content Attestations").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Requirements</strong></td>
+            <td>array</td>
+            <td>
+            (Optional; PDF 1.7) 一个需求数组，其中应表示文档的需求。<a href="../../c12/s10/">12.10</a>，“文档需求”，描述了这个字典及其使用方法。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Collection</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.7) 一个集合字典，符合规范的阅读器将使用它来增强PDF文档中存储的文件附件的呈现。 (see <a href="../../c12/s3/#1235-收藏">12.3.5</a>, "Collections").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>NeedsRendering</strong></td>
+            <td>boolean</td>
+            <td>
+            (Optional; PDF 1.7) 用于加速显示包含XFA表单的PDF文档的标志。它指定了在首次打开文档时是否应重新生成文档。 请参阅XML表单架构（XFA）规范（参考文献）。<br/> 默认值：<strong>false</strong>。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>以下展示了一个示例目录对象。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj
+    &lt;&lt; /Type /Catalog
+       /Pages 2 0 R
+       /PageMode /UseOutlines
+       /Outlines 3 0 R
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The root of a document’s object hierarchy is the catalog dictionary, located by means of the <strong>Root</strong> entry in the trailer of the PDF file (see <a href="../s5/#755-文件尾部">7.5.5</a>, "File Trailer"). The catalog contains references to other objects defining the document’s contents, outline, article threads, named destinations, and other attributes. In addition, it contains information about how the document shall be displayed on the screen, such as whether its outline and thumbnail page images shall be displayed automatically and whether some location other than the first page shall be shown when the document is opened. <a href="#table28">Table 28</a> shows the entries in the catalog dictionary.</p>
+<p><a class="glightbox" href="../imgs/f5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f5.png" /></a></p>
+<p><table id="table28" markdown="span">
+    <caption><strong>Table 28 – Entries in the catalog dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Required</em>) The type of PDF object that this dictionary describes; shall be Catalog for the <strong>catalog</strong> dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>Version</strong></td>
+            <td>name</td>
+            <td>(<em>Optional; PDF 1.4</em>) The version of the PDF specification to which the document conforms (for example, 1.4) if later than the version specified in the file’s header (see <a href="../s5/#752-文件头">7.5.2</a>, "File Header"). If the header specifies a later version, or if this entry is absent, the document shall conform to the version specified in the header. This entry enables a conforming writer to update the version using an incremental update; see <a href="../s5/#756-增量更新">7.5.6</a>, "Incremental Updates."<br/> The value of this entry shall be a name object, not a number, and therefore shall be preceded by a SOLIDUS (2Fh) character (/) when written in the PDF file (for example, /1.4).</td>
+        </tr>
+        <tr>
+            <td><strong>Extensions</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional; ISO 32000</em>) An extensions dictionary containing developer prefix identification and version numbers for developer extensions that occur in this document. <a href="../s12/">7.12</a>, “Extensions Dictionary”, describes this dictionary and how it shall be used.</td>
+        </tr>
+        <tr>
+            <td><strong>Pages</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Required; shall be an indirect reference</em>) The page tree node that shall be the root of the document’s page tree (see <a href="#773-page树">7.7.3</a>, "Page Tree").</td>
+        </tr>
+        <tr>
+            <td><strong>PageLabels</strong></td>
+            <td>number tree</td>
+            <td>(<em>Optional; PDF 1.3</em>) A number tree (see <a href="../s9/#797-number树">7.9.7</a>, "Number Trees") defining the page labelling for the document. The keys in this tree shall be page indices; the corresponding values shall be page label dictionaries (see <a href="../../c12/s4/#1242-页面标签">12.4.2</a>, "Page Labels"). Each page index shall denote the first page in a labelling range to which the specified page label dictionary applies. The tree shall include a value for page index 0.</td>
+        </tr>
+        <tr>
+            <td><strong>Names</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional; PDF 1.2</em>) The document’s name dictionary (see <a href="#774-名称字典">7.7.4</a>, "Name Dictionary").</td>
+        </tr>
+        <tr>
+            <td><strong>Dests</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional; PDF 1.1; shall be an indirect reference</em>) A dictionary of names and corresponding destinations (see <a href="../../c12/s3/#12323-命名目的地">12.3.2.3</a>, "Named Destinations").</td>
+        </tr>
+        <tr>
+            <td><strong>ViewerPreferences</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional; PDF 1.2</em>) A viewer preferences dictionary (see <a href="../../c12/s2/">12.2</a>, "Viewer Preferences") specifying the way the document shall be displayed on the screen. If this entry is absent, conforming readers shall use their own current user preference settings.</td>
+        </tr>
+        <tr>
+            <td><strong>PageLayout</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) A name object specifying the page layout shall be used when the document is opened:
+                <dl>
+                    <dt><strong>SinglePage</strong></dt>
+                    <dd>Display one page at a time</dd>
+                    <dt><strong>OneColumn</strong></dt>
+                    <dd>Display the pages in one column</dd>
+                    <dt><strong>TwoColumnLeft</strong></dt>
+                    <dd>Display the pages in two columns, with odd-numbered pages on the left</dd>
+                    <dt><strong>TwoColumnRight</strong></dt>
+                    <dd>Display the pages in two columns, with odd-numbered pages on the right</dd>
+                    <dt><strong>TwoPageLeft</strong></dt>
+                    <dd>(<em>PDF 1.5</em>) Display the pages two at a time, with odd-numbered pages on the left</dd>
+                    <dt><strong>TwoPageRight</strong></dt>
+                    <dd>(<em>PDF 1.5</em>) Display the pages two at a time, with odd-numbered pages on the right</dd>
+                </dl>
+            Default value: <strong>SinglePage</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>PageMode</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) A name object specifying how the document shall be displayed when opened:
+                <dl>
+                    <dt><strong>UseNone</strong></dt>
+                    <dd>Neither document outline nor thumbnail images visible</dd>
+                    <dt><strong>UseOutlines</strong></dt>
+                    <dd>Document outline visible</dd>
+                    <dt><strong>UseThumbs</strong></dt>
+                    <dd>Thumbnail images visible</dd>
+                    <dt><strong>FullScreen</strong></dt>
+                    <dd>Full-screen mode, with no menu bar, window controls, or any other window visible</dd>
+                    <dt><strong>UseOC</strong></dt>
+                    <dd>(<em>PDF 1.5</em>) Optional content group panel visible</dd>
+                    <dt><strong>UseAttachments</strong></dt>
+                    <dd>(<em>PDF 1.5</em>) Attachments panel visible</dd>
+                </dl>
+                Default value: <strong>UseNone</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Outlines</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; shall be an indirect reference) The outline dictionary that shall be the root of the document’s outline hierarchy (see <a href="../../c12/s3/#1233-文档大纲">12.3.3</a>, "Document Outline").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Threads</strong></td>
+            <td>array</td>
+            <td>
+            (<em>Optional; PDF 1.1; shall be an indirect reference</em>) An array of thread dictionaries that shall represent the document’s article threads (see <a href="../../c12/s4/#1243-文章">12.4.3</a>, "Articles").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OpenAction</strong></td>
+            <td>array or dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.1</em>) A value specifying a destination that shall be displayed or an action that shall be performed when the document is opened. The value shall be either an array defining a destination (see <a href="../../c12/s3/#1232-目的地">12.3.2</a>, "Destinations") or an action dictionary representing an action (<a href="../../c12/s6/">12.6</a>, "Actions"). If this entry is absent, the document shall be opened to the top of the first page at the default magnification factor.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>AA</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.4) An additional-actions dictionary defining the actions that shall be taken in response to various trigger events affecting the document as a whole (see <a href="../../c12/s6/#1263-触发事件">12.6.3</a>, "Trigger Events").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>URI</strong></td>
+            <td>dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.1</em>) A URI dictionary containing document-level information for URI (uniform resource identifier) actions (see <a href="../../c12/s6/#12647-uri-操作">12.6.4.7</a>, "URI Actions").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>AcroForm</strong></td>
+            <td>dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.2</em>) The document’s interactive form (AcroForm) dictionary (see <a href="../../c12/s7/#1272-交互式表格词典">12.7.2</a>, "Interactive Form Dictionary").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Metadata</strong></td>
+            <td>stream</td>
+            <td>
+            (<em>Optional; PDF 1.4; shall be an indirect reference</em>) A metadata stream that shall contain metadata for the document (see <a href="../../c14/s3/#1432-元数据流">14.3.2</a>, "Metadata Streams").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>StructTreeRoot</strong></td>
+            <td>dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.3</em>) The document’s structure tree root dictionary (see <a href="../../c14/s7/#1472-结构层次">14.7.2</a>, "Structure Hierarchy").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>MarkInfo</strong></td>
+            <td>dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.4</em>) A mark information dictionary that shall contain information about the document’s usage of Tagged PDF conventions (see <a href="../../c14/s7/">14.7</a>, "Logical Structure").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Lang</strong></td>
+            <td>text string</td>
+            <td>
+            (<em>Optional; PDF 1.4</em>) A language identifier that shall specify the natural language for all text in the document except where overridden by language specifications for structure elements or marked content (see <a href="../../c14/s9/#1492-自然语言规范">14.9.2</a>, "Natural Language Specification"). If this entry is absent, the language shall be considered unknown.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SpiderInfo</strong></td>
+            <td>dictionary</td>
+            <td>
+            (<em>Optional; PDF 1.3</em>) A Web Capture information dictionary that shall contain state information used by any Web Capture extension (see <a href="../../c14/s10/#14102-网页捕获信息字典">14.10.2</a>, "Web Capture Information Dictionary").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OutputIntents</strong></td>
+            <td>array</td>
+            <td>
+            (Optional; PDF 1.4) An array of output intent dictionaries that shall specify the colour characteristics of output devices on which the document might be rendered (see <a href="../../c14/s11/#14115-输出意图">14.11.5</a>, "Output Intents").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>PieceInfo</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.4) A page-piece dictionary associated with the document (see <a href="../../c14/s5/">14.5</a>, "Page-Piece Dictionaries").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OCProperties</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.5; required if a document contains optional content) The document’s optional content properties dictionary (see <a href="../../c8/s11/#8114-配置可选内容">8.11.4</a>, "Configuring Optional Content").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Perms</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.5) A permissions dictionary that shall specify user access permissions for the document. <a href="../../c12/s8/#1284-权限">12.8.4</a>, "Permissions", describes this dictionary and how it shall be used.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Legal</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.5) A dictionary that shall contain attestations regarding the content of a PDF document, as it relates to the legality of digital signatures (see <a href="../../c12/s8/#1285-合法内容认证">12.8.5</a>, "Legal Content Attestations").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Requirements</strong></td>
+            <td>array</td>
+            <td>
+            (Optional; PDF 1.7) An array of requirement dictionaries that shall represent requirements for the document. <a href="../../c12/s10/">12.10</a>, "Document Requirements", describes this dictionary and how it shall be used.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Collection</strong></td>
+            <td>dictionary</td>
+            <td>
+            (Optional; PDF 1.7) A collection dictionary that a conforming reader shall use to enhance the presentation of file attachments stored in the PDF document. (see <a href="../../c12/s3/#1235-收藏">12.3.5</a>, "Collections").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>NeedsRendering</strong></td>
+            <td>boolean</td>
+            <td>
+            (Optional; PDF 1.7) A flag used to expedite the display of PDF documents containing XFA forms. It specifies whether the document shall be regenerated when the document is first opened.<br/> See the XML Forms Architecture (XFA) Specification (Bibliography).<br/> Default value: <strong>false</strong>.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>The following shows a sample catalog object.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj
+    &lt;&lt; /Type /Catalog
+       /Pages 2 0 R
+       /PageMode /UseOutlines
+       /Outlines 3 0 R
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="773-page树">7.7.3 Page树<a class="headerlink" href="#773-page树" title="Permanent link">&para;</a></h2>
+<p><strong>Page Tree</strong></p>
+<h3 id="7731-概述">7.7.3.1 概述<a class="headerlink" href="#7731-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>文档的页面通过称为页面树的结构访问，该结构定义了文档中页面的顺序。使用树结构，即使内存有限，符合规范的阅读器也可以快速打开包含数千页的文档。树包含两种类型的节点——中间节点，称为页面树节点，以及叶节点，称为页面对象，其形式在后续子条款中描述。符合规范的产品应准备好处理由这些节点构建的任何树形结构。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>最简单的结构可以由一个页面树节点组成，该节点直接引用文档的所有页面对象。然而，为了优化应用程序性能，符合规范的编写器可以构建特定形式的树，称为平衡树。有关这种树的更多信息可以在《数据结构与算法》一书中找到，作者是Aho、Hopcroft和Ullman（见参考文献）。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The pages of a document are accessed through a structure known as the page tree, which defines the ordering of pages in the document. Using the tree structure, conforming readers using only limited memory, can quickly open a document containing thousands of pages. The tree contains nodes of two types—intermediate nodes, called page tree nodes, and leaf nodes, called page objects—whose form is described in the subsequent sub- clauses. Conforming products shall be prepared to handle any form of tree structure built of such nodes.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The simplest structure can consist of a single page tree node that references all of the document’s page objects directly. However, to optimize application performance, a conforming writer can construct trees of a particular form, known as balanced trees. Further information on this form of tree can be found in Data Structures and Algorithms, by Aho, Hopcroft, and Ullman (see the Bibliography).</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="7732-page树节点">7.7.3.2 Page树节点<a class="headerlink" href="#7732-page树节点" title="Permanent link">&para;</a></h3>
+<p><strong>Page Tree Nodes</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>表29展示了页面树节点中始终必须存在的条目（必需）。</p>
+<p><table id="table29" markdown="span">
+    <caption><strong>Table 29 – Required entries in a page tree node</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Required</em>) 此字典描述的PDF对象类型；对于页面树节点，应为<strong>Pages</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Parent</strong></td>
+            <td>dictionary</td>
+            <td>（除根节点外必需；在根节点中禁止；必须是间接引用）直接父级页面树节点。</td>
+        </tr>
+        <tr>
+            <td><strong>Kids</strong></td>
+            <td>array</td>
+            <td>(<em>Required</em>) 对本节点的直接子节点的间接引用数组。子节点只能是页面对象或其他页面树节点。</td>
+        </tr>
+        <tr>
+            <td><strong>Count</strong></td>
+            <td>integer</td>
+            <td>(<em>Required</em>) 作为本节点在页面树中的后代的叶节点（页面对象）的数量。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>页面树的结构不一定与文档的逻辑结构相关；也就是说，页面树节点并不代表章节、小节等。为此目的定义了其他数据结构；见<a href="../../c14/s7/">14.7</a>，“逻辑结构”。</p>
+</div>
+<p>符合规范的产品不必保留页面树的现有结构。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>以下展示了一个包含三页的文档的页面树。要查看各个页面对象的内容，请参见<a href="#7733-page对象">7.7.3.3</a>，“页面对象”，以及<a href="../../a8/#h5-页面树示例">H.5</a>，“页面树示例”，后者展示了更长文档的页面树的更详细示例。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>2 0 obj
+    &lt;&lt; /Type /Pages
+       /Kids [ 4 0 R
+               10 0 R
+               24 0 R
+             ]
+       /Count 3
+    &gt;&gt;
+endobj
+
+4 0 obj
+    &lt;&lt; /Type /Page
+       … 额外条目描述了此页面的属性。 …
+    &gt;&gt;
+endobj
+
+10 0 obj
+    &lt;&lt; /Type /Page
+       … 额外条目描述了此页面的属性。 …
+    &gt;&gt;
+endobj
+
+24 0 obj
+    &lt;&lt; /Type /Page
+       … 额外条目描述了此页面的属性。 …
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+<p>除了<a href="#table29">表29</a>中显示的条目外，页面树节点还可能包含其他条目，用于定义其后代页面对象的继承属性（见<a href="#7734-page属性的继承">7.7.3.4</a>，“页面属性的继承”）。</p>
+</div>
+<div class="tabbed-block">
+<p>Table 29 shows the entries in a page tree node that shall always be present (Required).</p>
+<p><table id="table29" markdown="span">
+    <caption><strong>Table 29 – Required entries in a page tree node</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Required</em>) The type of PDF object that this dictionary describes; shall be <strong>Pages</strong> for a page tree node.</td>
+        </tr>
+        <tr>
+            <td><strong>Parent</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Required except in root node; prohibited in the root node; shall be an indirect reference</em>) The page tree node that is the immediate parent of this one.</td>
+        </tr>
+        <tr>
+            <td><strong>Kids</strong></td>
+            <td>array</td>
+            <td>(<em>Required</em>) An array of indirect references to the immediate children of this node. The children shall only be page objects or other page tree nodes.</td>
+        </tr>
+        <tr>
+            <td><strong>Count</strong></td>
+            <td>integer</td>
+            <td>(<em>Required</em>) The number of leaf nodes (page objects) that are descendants of this node within the page tree.</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The structure of the page tree is not necessarily related to the logical structure of the document; that is, page tree nodes do not represent chapters, sections, and so forth. Other data structures are defined for this purpose; see <a href="../../c14/s7/">14.7</a>, "Logical Structure".</p>
+</div>
+<p>Conforming products shall not be required to preserve the existing structure of the page tree.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>The following illustrates the page tree for a document with three pages. See <a href="#7733-page对象">7.7.3.3</a>, "Page Objects," for the contents of the individual page objects, and <a href="../../a8/#h5-页面树示例">H.5</a>, "Page Tree Example", for a more extended example showing the page tree for a longer document.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>2 0 obj
+    &lt;&lt; /Type /Pages
+       /Kids [ 4 0 R
+               10 0 R
+               24 0 R
+             ]
+       /Count 3
+    &gt;&gt;
+endobj
+
+4 0 obj
+    &lt;&lt; /Type /Page
+       … Additional entries describing the attributes of this page …
+    &gt;&gt;
+endobj
+
+10 0 obj
+    &lt;&lt; /Type /Page
+       … Additional entries describing the attributes of this page …
+    &gt;&gt;
+endobj
+
+24 0 obj
+    &lt;&lt; /Type /Page
+       … Additional entries describing the attributes of this page …
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+<p>In addition to the entries shown in <a href="#table29">Table 29</a>, a page tree node may contain further entries defining inherited attributes for the page objects that are its descendants (see <a href="#7734-page属性的继承">7.7.3.4</a>, "Inheritance of Page Attributes").</p>
+</div>
+</div>
+</div>
+<h3 id="7733-page对象">7.7.3.3 Page对象<a class="headerlink" href="#7733-page对象" title="Permanent link">&para;</a></h3>
+<p><strong>Page Objects</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>页面树的叶子是页面对象，每个页面对象都是一个字典，指定了文档中单个页面的属性。表30显示了这个字典的内容。该表还识别了页面可以从页面树中的祖先节点继承哪些属性，如<a href="#7734-page属性的继承">7.7.3.4</a>节“页面属性的继承”中所述。表中未明确标识为可继承的属性不得被继承。</p>
+<p><table id="table30" markdown="span">
+    <caption><strong>Table 30 – Entries in a page object</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Required</em>) 这个字典描述的PDF对象的类型；对于页面对象，应该是"Page"。</td>
+        </tr>
+        <tr>
+            <td><strong>Parent</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Required; 这应是一个间接引用</em>)页面树节点，它是这个页面对象的直接父节点。</td>
+        </tr>
+        <tr>
+            <td><strong>LastModified</strong></td>
+            <td>date</td>
+            <td>（<em>如果存在</em><em>PieceInfo</em><em>，则为必需；否则为可选；PDF 1.3</em>）页面内容最近一次修改的日期和时间（见<a href="../s9/#794-日期">7.9.4</a>，“日期”）。如果存在页面片段字典（<strong>PieceInfo</strong>），修改日期将被用来确定它包含的应用程序数据字典中哪一个对应页面的当前内容（见<a href="../../c14/s5/">14.5</a>，“页面片段字典”）。</td>
+        </tr>
+        <tr>
+            <td><strong>Resources</strong></td>
+            <td>dictionary</td>
+            <td>（必需；可继承）一个字典，包含页面所需的所有资源（见<a href="../s8/#783-资源字典">7.8.3</a>，“资源字典”）。如果页面不需要任何资源，这个条目的值应该是一个空字典。完全省略这个条目表示资源应从页面树中的祖先节点继承。</td>
+        </tr>
+        <tr>
+            <td><strong>MediaBox</strong></td>
+            <td>rectangle</td>
+            <td>（必需；可继承）一个矩形（见<a href="../s9/#795-矩形">7.9.5</a>，“矩形”），以默认用户空间单位表示，它应定义页面显示或打印的物理介质的边界（见<a href="../../c14/s11/#14112-页面边界">14.11.2</a>，“页面边界”）。</td>
+        </tr>
+        <tr>
+            <td><strong>CropBox</strong></td>
+            <td>rectangle</td>
+            <td>（可选；可继承）一个矩形，以默认用户空间单位表示，它应定义默认用户空间的可见区域。当页面被显示或打印时，其内容将被裁剪到这个矩形，然后以某种实现定义的方式施加到输出介质上（见<a href="../../c14/s11/#14112-页面边界">14.11.2</a>，“页面边界”）。默认值：<strong>MediaBox</strong>的值。</td>
+        </tr>
+        <tr>
+            <td><strong>BleedBox</strong></td>
+            <td>rectangle</td>
+            <td>（可选；PDF 1.3）一个矩形，以默认用户空间单位表示，它应定义在生产环境中输出时页面内容应被裁剪的区域（见<a href="../../c14/s11/#14112-页面边界">14.11.2</a>，“页面边界”）。默认值：<strong>CropBox</strong>的值。</td>
+        </tr>
+        <tr>
+            <td><strong>TrimBox</strong></td>
+            <td>rectangle</td>
+            <td>（可选；PDF 1.3）一个矩形，以默认用户空间单位表示，它应定义修剪后完成页面的预期尺寸（见<a href="../../c14/s11/#14112-页面边界">14.11.2</a>，“页面边界”）。默认值：<strong>CropBox</strong>的值。</td>
+        </tr>
+        <tr>
+            <td><strong>ArtBox</strong></td>
+            <td>rectangle</td>
+            <td>（可选；PDF 1.3）一个矩形，以默认用户空间单位表示，它应定义页面的有意义内容（包括潜在的空白区域）的范围，正如页面创建者所预期的（见<a href="../../c14/s11/#14112-页面边界">14.11.2</a>，“页面边界”）。默认值：<strong>CropBox</strong>的值。</td>
+        </tr>
+        <tr>
+            <td><strong>BoxColorInfo</strong></td>
+            <td>dictionary</td>
+            <td>（可选；PDF 1.4）一个框颜色信息字典，应指定在屏幕上显示各种页面边界的指导线时应使用的的颜色和其他视觉特征（见<a href="../../c14/s11/#141122-页面边界的显示">14.11.2.2</a>，“页面边界的显示”）。如果这个条目不存在，应用程序应使用其自己的当前默认设置。</td>
+        </tr>
+        <tr>
+            <td><strong>Contents</strong></td>
+            <td>stream or array</td>
+            <td>（可选）一个内容流（见<a href="../s8/#782-内容流">7.8.2</a>，“内容流”），它应描述此页面的内容。如果这个条目不存在，页面将是空的。<br/> 值可以是单个流或流的数组。如果值是数组，效果应等同于将数组中的所有流按顺序连接起来形成一个单独的流。符合规范的编写器可以在内容流中断时创建图像对象和其他资源。流之间的划分只能发生在词法标记的边界上（见<a href="../s2/">7.2</a>，“词法约定”），但应与页面的逻辑内容或组织无关。消费或生成PDF文件的应用程序不需要保留<strong>Contents</strong>数组的现有结构。符合规范的编写器不应创建一个不包含任何元素的Contents数组。</td>
+        </tr>
+        <tr>
+            <td><strong>Rotate</strong></td>
+            <td>integer</td>
+            <td>（可选；可继承）页面在显示或打印时应顺时针旋转的度数。该值应为90的倍数。默认值：0。</td>
+        </tr>
+        <tr>
+            <td><strong>Group</strong></td>
+            <td>dictionary</td>
+            <td>（可选；PDF 1.4）一个组属性字典，应指定页面的页面组的属性，用于透明成像模型（见<a href="../../c11/s4/#1147-page组">11.4.7</a>，“页面组”和<a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>，“透明组 XObjects”）。</td>
+        </tr>
+        <tr>
+            <td><strong>Thumb</strong></td>
+            <td>stream</td>
+            <td>（可选）一个流对象，它应定义页面的缩略图（见<a href="../../c12/s3/#1234-缩略图">12.3.4</a>，“缩略图”）。</td>
+        </tr>
+        <tr>
+            <td><strong>B</strong></td>
+            <td>array</td>
+            <td>（可选；PDF 1.1；如果页面包含文章珠，建议使用）一个数组，应包含页面上所有文章珠的间接引用（见<a href="../../c12/s4/#1243-文章">12.4.3</a>，“文章”）。这些珠应在数组中按自然阅读顺序列出。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>这个条目中的信息可以从目录中的Threads键获得的信息中创建或重新创建。</td>
+    </tr>
+    <tr>
+        <td><strong>Dur</strong></td>
+        <td>number</td>
+        <td>(<em>Optional; PDF 1.1</em>) 页面的显示时长（也称为其推进时间）：在演示中页面被显示的最大时间长度，以秒为单位，在查看器应用程序自动进入下一页之前。默认情况下，查看器不会自动推进。（见<a href="../../c12/s4/#1244-演示文稿">12.4.4</a>，"演示"）。</td>
+    </tr>
+    <tr>
+        <td><strong>Trans</strong></td>
+        <td>dictionary</td>
+        <td>(<em>Optional; PDF 1.1</em>) 页面在演示期间的过渡效果：描述在演示中显示页面时应使用的过渡效果的过渡字典（见<a href="../../c12/s4/#1244-演示文稿">12.4.4</a>，"演示"）。</td>
+    </tr>
+    <tr>
+        <td><strong>Annots</strong></td>
+        <td>array</td>
+        <td>(<em>Optional</em>) 一个注释字典数组，其中应包含与页面相关联的所有注释的间接引用（见<a href="../../c12/s5/#125-注解">12.5</a>，"注释"）。</td>
+    </tr>
+    <tr>
+        <td><strong>AA</strong></td>
+        <td>dictionary</td>
+        <td>(<em>Optional; PDF 1.2</em>) 一个附加动作字典，它应该定义在打开或关闭页面时执行的动作（见<a href="../../c12/s6/#1263-触发事件">12.6.3</a>，"触发事件"）。<br/>（PDF 1.3）附加动作字典不可继承。</td>
+    </tr>
+    <tr>
+        <td><strong>Metadata</strong></td>
+        <td>stream</td>
+        <td>(<em>Optional; PDF 1.4</em>) 页面的元数据流，其中应包含页面的元数据。 (see <a href="../../c14/s3/#1432-元数据流">14.3.2</a>, "Metadata Streams").</td>
+    </tr>
+    <tr>
+        <td><strong>PieceInfo</strong></td>
+        <td>dictionary</td>
+        <td>(<em>Optional; PDF 1.3</em>) 与页面关联的页面片段字典。 (see <a href="../../c14/s5/">14.5</a>, "Page-Piece Dictionaries").</td>
+    </tr>
+    <tr>
+        <td><strong>StructParents</strong></td>
+        <td>integer</td>
+        <td>(如果页面包含结构化内容项则 Required；PDF 1.3) 页面在结构化父树中的条目整数键。 (see <a href="../../c14/s7/#14744-从内容项中查找结构元素">14.7.4.4</a>, "Finding Structure Elements from Content Items").</td>
+    </tr>
+    <tr>
+        <td><strong>ID</strong></td>
+        <td>byte string</td>
+        <td>(<em>可选；PDF 1.3；推荐使用间接引用</em>) 页面父Web捕获内容集的数字标识符。 (see <a href="../../c14/s10/#14106-与网页捕获相关的对象属性">14.10.6</a>, "Object Attributes Related to Web Capture").</td>
+    </tr>
+    <tr>
+        <td><strong>PZ</strong></td>
+        <td>number</td>
+        <td>(<em>Optional; PDF 1.3</em>) 页面的首选“缩放”（“放大”）因子：为了达到自然显示放大倍数，页面应该被缩放的比例。 (see <a href="../../c14/s10/#14106-与网页捕获相关的对象属性">14.10.6</a>, "Object Attributes Related to Web Capture").</td>
+    </tr>
+    <tr>
+        <td><strong>SeparationInfo</strong></td>
+        <td>dictionary</td>
+        <td>(Optional; PDF 1.3) 一个分离字典，其中应包含为页面生成颜色分离所需的信息。 (see <a href="../../c14/s11/#14114-分色字典">14.11.4</a>, "Separation Dictionaries").</td>
+    </tr>
+    <tr>
+        <td><strong>Tabs</strong></td>
+        <td>name</td>
+        <td>(Optional; PDF 1.5) 页面注释的选项卡顺序名称。可能的值包括 R（行顺序）、C（列顺序）和 S（结构顺序）。 See <a href="../../c12/s5/#125-注解">12.5</a>, "Annotations" for details.</td>
+    </tr>
+    <tr>
+        <td><strong>TemplateInstantiated</strong></td>
+        <td>name</td>
+        <td>(如果此页面是从命名页面对象创建的则Required；PDF 1.5) 原始页面对象的名称。 (see <a href="../../c12/s7/#1276-命名页面">12.7.6</a>, "Named Pages").</td>
+    </tr>
+    <tr>
+        <td><strong>PresSteps</strong></td>
+        <td>dictionary</td>
+        <td>(<em>Optional; PDF 1.5</em>) 一个“导航节点字典”，它应该表示页面上的第一个节点。 (see <a href="../../c12/s4/#12442-子页面导航">12.4.4.2</a>, "Sub-page Navigation").</td>
+    </tr>
+    <tr>
+        <td><strong>UserUnit</strong></td>
+        <td>number</td>
+        <td>(Optional; PDF 1.6) 一个正数，它应该给出默认用户空间单位的大小，以1/72英寸的倍数表示。支持的值范围应根据实现而定。<br/> 默认值：1.0（用户空间单位为1/72英寸）。</td>
+    </tr>
+    <tr>
+        <td><strong>VP</strong></td>
+        <td>dictionary</td>
+        <td>(Optional; PDF 1.6) 一个<em>视口字典数组(viewport dictionaries)</em>（见<a href="../../c12/s9/#table260">表260</a>），它应指定页面的矩形区域。</td>
+    </tr>
+</tbody></p>
+</div>
+</table>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>以下展示了一个带有缩略图图像和两个注释的页面对象的定义。媒体框指定页面应打印在信纸大小的纸张上。此外，资源字典被指定为直接对象，并显示页面使用了三个名为F3、F5和F7的字体。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>3 0 obj
+    &lt;&lt; /Type /Page
+        /Parent 4 0 R
+        /MediaBox [ 0 0 612 792 ]
+        /Resources &lt;&lt; /Font &lt;&lt; /F3 7 0 R
+                               /F5 9 0 R
+                               /F7 11 0 R
+                               &gt;&gt;
+                      /ProcSet [ /PDF ]
+                    &gt;&gt;
+        /Contents 12 0 R
+        /Thumb 14 0 R
+        /Annots [ 23 0 R
+                  24 0 R
+                ]
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The leaves of the page tree are page objects, each of which is a dictionary specifying the attributes of a single page of the document. Table 30 shows the contents of this dictionary. The table also identifies which attributes a page may inherit from its ancestor nodes in the page tree, as described under <a href="#7734-page属性的继承">7.7.3.4</a>, "Inheritance of Page Attributes." Attributes that are not explicitly identified in the table as inheritable shall not be inherited.</p>
+<p><table id="table30" markdown="span">
+    <caption><strong>Table 30 – Entries in a page object</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Required</em>) The type of PDF object that this dictionary describes; shall be Page for a page object.</td>
+        </tr>
+        <tr>
+            <td><strong>Parent</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Required; shall be an indirect reference</em>) The page tree node that is the immediate parent of this page object.</td>
+        </tr>
+        <tr>
+            <td><strong>LastModified</strong></td>
+            <td>date</td>
+            <td>(<em>Required if </em><em>PieceInfo</em><em> is present; optional otherwise; PDF 1.3</em>) The date and time (see <a href="../s9/#794-日期">7.9.4</a>, "Dates") when the page’s contents were most recently modified. If a page-piece dictionary (<strong>PieceInfo</strong>) is present, the modification date shall be used to ascertain which of the application data dictionaries that it contains correspond to the current content of the page (see <a href="../../c14/s5/">14.5</a>, "Page-Piece Dictionaries").</td>
+        </tr>
+        <tr>
+            <td><strong>Resources</strong></td>
+            <td>dictionary</td>
+            <td>(Required; inheritable) A dictionary containing any resources required by the page (see <a href="../s8/#783-资源字典">7.8.3</a>, "Resource Dictionaries"). If the page requires no resources, the value of this entry shall be an empty dictionary. Omitting the entry entirely indicates that the resources shall be inherited from an ancestor node in the page tree.</td>
+        </tr>
+        <tr>
+            <td><strong>MediaBox</strong></td>
+            <td>rectangle</td>
+            <td>(Required; inheritable) A rectangle (see <a href="../s9/#795-矩形">7.9.5</a>, "Rectangles"), expressed in default user space units, that shall define the boundaries of the physical medium on which the page shall be displayed or printed (see <a href="../../c14/s11/#14112-页面边界">14.11.2</a>, "Page Boundaries").</td>
+        </tr>
+        <tr>
+            <td><strong>CropBox</strong></td>
+            <td>rectangle</td>
+            <td>(<em>Optional; inheritable</em>) A rectangle, expressed in default user space units, that shall define the visible region of default user space. When the page is displayed or printed, its contents shall be clipped (cropped) to this rectangle and then shall be imposed on the output medium in some implementation-defined manner (see <a href="../../c14/s11/#14112-页面边界">14.11.2</a>, "Page Boundaries"). Default value: the value of <strong>MediaBox</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>BleedBox</strong></td>
+            <td>rectangle</td>
+            <td>(<em>Optional; PDF 1.3</em>) A rectangle, expressed in default user space units, that shall define the region to which the contents of the page shall be clipped when output in a production environment (see <a href="../../c14/s11/#14112-页面边界">14.11.2</a>, "Page Boundaries"). Default value: the value of <strong>CropBox</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>TrimBox</strong></td>
+            <td>rectangle</td>
+            <td>(<em>Optional; PDF 1.3</em>) A rectangle, expressed in default user space units, that shall define the intended dimensions of the finished page after trimming (see <a href="../../c14/s11/#14112-页面边界">14.11.2</a>, "Page Boundaries"). Default value: the value of <strong>CropBox</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>ArtBox</strong></td>
+            <td>rectangle</td>
+            <td>(<em>Optional; PDF 1.3</em>) A rectangle, expressed in default user space units, that shall define the extent of the page’s meaningful content (including potential white space) as intended by the page’s creator (see <a href="../../c14/s11/#14112-页面边界">14.11.2</a>, "Page Boundaries"). Default value: the value of <strong>CropBox</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>BoxColorInfo</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional; PDF 1.4</em>) A box colour information dictionary that shall specify the colours and other visual characteristics that should be used in displaying guidelines on the screen for the various page boundaries (see <a href="../../c14/s11/#141122-页面边界的显示">14.11.2.2</a>, "Display of Page Boundaries"). If this entry is absent, the application shall use its own current default settings.</td>
+        </tr>
+        <tr>
+            <td><strong>Contents</strong></td>
+            <td>stream or array</td>
+            <td>(<em>Optional</em>) A content stream (see <a href="../s8/#782-内容流">7.8.2</a>, "Content Streams") that shall describe the contents of this page. If this entry is absent, the page shall be empty.<br/> The value shall be either a single stream or an array of streams. If the value is an array, the effect shall be as if all of the streams in the array were concatenated, in order, to form a single stream. Conforming writers can create image objects and other resources as they occur, even though they interrupt the content stream. The division between streams may occur only at the boundaries between lexical tokens (see <a href="../s2/">7.2</a>, "Lexical Conventions") but shall be unrelated to the page’s logical content or organization. Applications that consume or produce PDF files need not preserve the existing structure of the <strong>Contents</strong> array. Conforming writers shall not create a Contents array containing no elements.</td>
+        </tr>
+        <tr>
+            <td><strong>Rotate</strong></td>
+            <td>integer</td>
+            <td>(<em>Optional; inheritable</em>) The number of degrees by which the page shall be rotated clockwise when displayed or printed. The value shall be a multiple of 90. Default value: 0.</td>
+        </tr>
+        <tr>
+            <td><strong>Group</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional; PDF 1.4</em>) A group attributes dictionary that shall specify the attributes of the page’s page group for use in the transparent imaging model (see <a href="../../c11/s4/#1147-page组">11.4.7</a>, "Page Group" and <a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>, "Transparency Group XObjects").</td>
+        </tr>
+        <tr>
+            <td><strong>Thumb</strong></td>
+            <td>stream</td>
+            <td>(<em>Optional</em>) A stream object that shall define the page’s thumbnail image (see <a href="../../c12/s3/#1234-缩略图">12.3.4</a>, "Thumbnail Images").</td>
+        </tr>
+        <tr>
+            <td><strong>B</strong></td>
+            <td>array</td>
+            <td>(<em>Optional; PDF 1.1; recommended if the page contains article beads</em>) An array that shall contain indirect references to all article beads appearing on the page (see <a href="../../c12/s4/#1243-文章">12.4.3</a>, "Articles"). The beads shall be listed in the array in natural reading order.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The information in this entry can be created or recreated from the information obtained from the Threads key in the Catalog.</td>
+    </tr>
+    <tr>
+        <td><strong>Dur</strong></td>
+        <td>number</td>
+        <td>(<em>Optional; PDF 1.1</em>) The page’s display duration (also called its advance timing): the maximum length of time, in seconds, that the page shall be displayed during presentations before the viewer application shall automatically advance to the next page (see <a href="../../c12/s4/#1244-演示文稿">12.4.4</a>, "Presentations"). By default, the viewer shall not advance automatically.</td>
+    </tr>
+    <tr>
+        <td><strong>Trans</strong></td>
+        <td>dictionary</td>
+        <td>(<em>Optional; PDF 1.1</em>) A transition dictionary describing the transition effect that shall be used when displaying the page during presentations (see <a href="../../c12/s4/#1244-演示文稿">12.4.4</a>, "Presentations").</td>
+    </tr>
+    <tr>
+        <td><strong>Annots</strong></td>
+        <td>array</td>
+        <td>(<em>Optional</em>) An array of annotation dictionaries that shall contain indirect references to all annotations associated with the page (see <a href="../../c12/s5/#125-注解">12.5</a>, "Annotations").</td>
+    </tr>
+    <tr>
+        <td><strong>AA</strong></td>
+        <td>dictionary</td>
+        <td>(<em>Optional; PDF 1.2</em>) An additional-actions dictionary that shall define actions to be performed when the page is opened or closed (see <a href="../../c12/s6/#1263-触发事件">12.6.3</a>, "Trigger Events").<br/> (PDF 1.3) additional-actions dictionaries are not inheritable.</td>
+    </tr>
+    <tr>
+        <td><strong>Metadata</strong></td>
+        <td>stream</td>
+        <td>(<em>Optional; PDF 1.4</em>) A metadata stream that shall contain metadata for the page (see <a href="../../c14/s3/#1432-元数据流">14.3.2</a>, "Metadata Streams").</td>
+    </tr>
+    <tr>
+        <td><strong>PieceInfo</strong></td>
+        <td>dictionary</td>
+        <td>(<em>Optional; PDF 1.3</em>) A page-piece dictionary associated with the page (see <a href="../../c14/s5/">14.5</a>, "Page-Piece Dictionaries").</td>
+    </tr>
+    <tr>
+        <td><strong>StructParents</strong></td>
+        <td>integer</td>
+        <td>(Required if the page contains structural content items; PDF 1.3) The integer key of the page’s entry in the structural parent tree (see <a href="../../c14/s7/#14744-从内容项中查找结构元素">14.7.4.4</a>, "Finding Structure Elements from Content Items").</td>
+    </tr>
+    <tr>
+        <td><strong>ID</strong></td>
+        <td>byte string</td>
+        <td>(<em>Optional; PDF 1.3; indirect reference preferred</em>) The digital identifier of the page’s parent Web Capture content set (see <a href="../../c14/s10/#14106-与网页捕获相关的对象属性">14.10.6</a>, "Object Attributes Related to Web Capture").</td>
+    </tr>
+    <tr>
+        <td><strong>PZ</strong></td>
+        <td>number</td>
+        <td>(<em>Optional; PDF 1.3</em>) The page’s preferred <em>zoom</em> (<em>magnification</em>) factor: the factor by which it shall be scaled to achieve the natural display magnification (see <a href="../../c14/s10/#14106-与网页捕获相关的对象属性">14.10.6</a>, "Object Attributes Related to Web Capture").</td>
+    </tr>
+    <tr>
+        <td><strong>SeparationInfo</strong></td>
+        <td>dictionary</td>
+        <td>(Optional; PDF 1.3) A separation dictionary that shall contain information needed to generate colour separations for the page (see <a href="../../c14/s11/#14114-分色字典">14.11.4</a>, "Separation Dictionaries").</td>
+    </tr>
+    <tr>
+        <td><strong>Tabs</strong></td>
+        <td>name</td>
+        <td>(Optional; PDF 1.5) A name specifying the tab order that shall be used for annotations on the page. The possible values shall be R (row order), C (column order), and S (structure order). See <a href="../../c12/s5/#125-注解">12.5</a>, "Annotations" for details.</td>
+    </tr>
+    <tr>
+        <td><strong>TemplateInstantiated</strong></td>
+        <td>name</td>
+        <td>(Required if this page was created from a named page object; PDF 1.5) The name of the originating page object (see <a href="../../c12/s7/#1276-命名页面">12.7.6</a>, "Named Pages").</td>
+    </tr>
+    <tr>
+        <td><strong>PresSteps</strong></td>
+        <td>dictionary</td>
+        <td>(<em>Optional; PDF 1.5</em>) A <em>navigation node dictionary</em> that shall represent the first node on the page (see <a href="../../c12/s4/#12442-子页面导航">12.4.4.2</a>, "Sub-page Navigation").</td>
+    </tr>
+    <tr>
+        <td><strong>UserUnit</strong></td>
+        <td>number</td>
+        <td>(Optional; PDF 1.6) A positive number that shall give the size of default user space units, in multiples of 1 ⁄ 72 inch. The range of supported values shall be implementation-dependent.<br/> Default value: 1.0 (user space unit is 1 ⁄ 72 inch).</td>
+    </tr>
+    <tr>
+        <td><strong>VP</strong></td>
+        <td>dictionary</td>
+        <td>(Optional; PDF 1.6) An array of <em>viewport dictionaries</em> (see <a href="../../c12/s9/#table260">Table 260</a>) that shall specify rectangular regions of the page.</td>
+    </tr>
+</tbody></p>
+</div>
+</table>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>The following shows the definition of a page object with a thumbnail image and two annotations. The media box specifies that the page is to be printed on letter-size paper. In addition, the resource dictionary is specified as a direct object and shows that the page makes use of three fonts named F3, F5, and F7.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>3 0 obj
+    &lt;&lt; /Type /Page
+        /Parent 4 0 R
+        /MediaBox [ 0 0 612 792 ]
+        /Resources &lt;&lt; /Font &lt;&lt; /F3 7 0 R
+                               /F5 9 0 R
+                               /F7 11 0 R
+                               &gt;&gt;
+                      /ProcSet [ /PDF ]
+                    &gt;&gt;
+        /Contents 12 0 R
+        /Thumb 14 0 R
+        /Annots [ 23 0 R
+                  24 0 R
+                ]
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="7734-page属性的继承">7.7.3.4 Page属性的继承<a class="headerlink" href="#7734-page属性的继承" title="Permanent link">&para;</a></h3>
+<p><strong>Inheritance of Page Attributes</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>表30中显示的一些页面属性被指定为可继承的。如果这样的属性从页面对象中省略，其值应从页面树中的祖先节点继承。如果属性是必需的，则应在祖先节点中提供值。如果属性是可选的，并且没有指定继承值，则应使用默认值。</p>
+<p>因此，可以通过在页面树的中间节点中指定属性，并安排共享该属性的页面作为该节点的后代，来为整组页面定义一次属性。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>一个文档可以通过在页面树的根节点中包含一个<strong>MediaBox</strong>条目来为所有页面指定相同的媒体框。如果需要，单个页面对象可以通过自己的<strong>MediaBox</strong>条目覆盖这个继承值。</p>
+</div>
+<p>在符合线性化PDF组织（见<a href="../../a6/">附录F</a>）的文档中，所有页面属性应明确指定为它们所适用的页面字典中的条目；它们不应从祖先节点继承。</p>
+<p>图6说明了属性的继承。在所示的页面树中，第1、2和4页顺时针旋转90度，第3页旋转270度，第6页旋转180度，第5和7页则不旋转（0度）。</p>
+<p><a class="glightbox" href="../imgs/f6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f6.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>Some of the page attributes shown in Table 30 are designated as inheritable. If such an attribute is omitted from a page object, its value shall be inherited from an ancestor node in the page tree. If the attribute is a required one, a value shall be supplied in an ancestor node. If the attribute is optional and no inherited value is specified, the default value shall be used.</p>
+<p>An attribute can thus be defined once for a whole set of pages by specifying it in an intermediate page tree node and arranging the pages that share the attribute as descendants of that node.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>A document may specify the same media box for all of its pages by including a <strong>MediaBox</strong> entry in the root node of the page tree. If necessary, an individual page object may override this inherited value with a <strong>MediaBox</strong> entry of its own.</p>
+</div>
+<p>In a document conforming to the Linearized PDF organization (see <a href="../../a6/">Annex F</a>), all page attributes shall be specified explicitly as entries in the page dictionaries to which they apply; they shall not be inherited from an ancestor node.</p>
+<p>Figure 6 illustrates the inheritance of attributes. In the page tree shown, pages 1, 2, and 4 are rotated clockwise by 90 degrees, page 3 by 270 degrees, page 6 by 180 degrees, and pages 5 and 7 not at all (0 degrees).</p>
+<p><a class="glightbox" href="../imgs/f6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f6.png" /></a></p>
+</div>
+</div>
+</div>
+<h2 id="774-名称字典">7.7.4 名称字典<a class="headerlink" href="#774-名称字典" title="Permanent link">&para;</a></h2>
+<p><strong>Name Dictionary</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在PDF文件中，某些类别的对象可以通过名称而不是对象引用来引用。名称和对象之间的对应关系由文档的“名称字典”（PDF 1.2）建立，通过文档目录中的<strong>Names</strong>条目来定位（见<a href="#772-文档目录">7.7.2</a>，“文档目录”）。这个字典中的每个条目都指定了一个名称树（见<a href="../s9/#796-名称树">7.9.6</a>，“名称树”）的根，该名称树定义了特定类别对象的名称。<a href="#table31">表31</a>显示了名称字典的内容。</p>
+<p><table id="table31" markdown="span">
+    <caption><strong>表31 - 名称字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Dests</strong></td>
+            <td>name tree</td>
+            <td>(<em>可选；PDF 1.2</em>) 一个名称树，将名称字符串映射到目标（见<a href="../../c12/s3/#12323-命名目的地">12.3.2.3</a>，"命名目标"）。</td>
+        </tr>
+        <tr>
+            <td><strong>AP</strong></td>
+            <td>name tree</td>
+            <td>(<em>可选；PDF 1.3</em>) 一个名称树，将名称字符串映射到注释外观流（见<a href="../../c12/s5/#1255-外观流">12.5.5</a>，"外观流"）。</td>
+        </tr>
+        <tr>
+            <td><strong>JavaScript</strong></td>
+            <td>name tree</td>
+            <td>(<em>可选；PDF 1.3</em>) 一个名称树，将名称字符串映射到文档级JavaScript动作（见<a href="../../c12/s6/#126416-javascript-动作">12.6.4.16</a>，"JavaScript动作"）。</td>
+        </tr>
+        <tr>
+            <td><strong>Pages</strong></td>
+            <td>name tree</td>
+            <td>(<em>可选；PDF 1.3</em>) 一个名称树，将名称字符串映射到用于交互表单的可见页面（见<a href="../../c12/s7/#1276-命名页面">12.7.6</a>，"命名页面"）。</td>
+        </tr>
+        <tr>
+            <td><strong>Templates</strong></td>
+            <td>name tree</td>
+            <td>(<em>可选；PDF 1.3</em>) 一个名称树，将名称字符串映射到用于交互表单的不可见（模板）页面（见<a href="../../c12/s7/#1276-命名页面">12.7.6</a>，"命名页面"）。</td>
+        </tr>
+        <tr>
+            <td><strong>IDS</strong></td>
+            <td>name tree</td>
+            <td>(<em>可选；PDF 1.3</em>) 一个名称树，将数字标识符映射到Web捕获内容集（见<a href="../../c14/s10/#14104-内容集">14.10.4</a>，"内容集"）。</td>
+        </tr>
+        <tr>
+            <td><strong>URLS</strong></td>
+            <td>name tree</td>
+            <td>(<em>可选；PDF 1.3</em>) 一个名称树，将统一资源定位符（URLs）映射到Web捕获内容集（见<a href="../../c14/s10/#14104-内容集">14.10.4</a>，"内容集"）。</td>
+        </tr>
+        <tr>
+            <td><strong>EmbeddedFiles</strong></td>
+            <td>name tree</td>
+            <td>(<em>可选；PDF 1.4</em>) 一个名称树，将名称字符串映射到嵌入文件流的文件规范（见<a href="../s11/#7114-嵌入式文件流">7.11.4</a>，"嵌入文件流"）。</td>
+        </tr>
+        <tr>
+            <td><strong>AlternatePresentations</strong></td>
+            <td>name tree</td>
+            <td>(<em>可选；PDF 1.4</em>) 一个名称树，将名称字符串映射到替代展示（见<a href="../../c13/s5/">13.5</a>，"替代展示"）。</td>
+        </tr>
+        <tr>
+            <td><strong>Renditions</strong></td>
+            <td>name tree</td>
+            <td>(<em>可选；PDF 1.5</em>) 一个名称树，将名称字符串（应具有Unicode编码）映射到呈现对象（见<a href="../../c13/s2/#1323-演绎版">13.2.3</a>，"呈现"）。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>Some categories of objects in a PDF file can be referred to by name rather than by object reference. The correspondence between names and objects is established by the document’s <em>name dictionary</em> (PDF 1.2), located by means of the <strong>Names</strong> entry in the document’s catalog (see <a href="#772-文档目录">7.7.2</a>, "Document Catalog"). Each entry in this dictionary designates the root of a name tree (see <a href="../s9/#796-名称树">7.9.6</a>, "Name Trees") defining names for a particular category of objects. <a href="#table31">Table 31</a> shows the contents of the name dictionary.</p>
+<p><table id="table31" markdown="span">
+    <caption><strong>Table 31 – Entries in the name dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Dests</strong></td>
+            <td>name tree</td>
+            <td>(<em>Optional; PDF 1.2</em>) A name tree mapping name strings to destinations (see <a href="../../c12/s3/#12323-命名目的地">12.3.2.3</a>, "Named Destinations").</td>
+        </tr>
+        <tr>
+            <td><strong>AP</strong></td>
+            <td>name tree</td>
+            <td>(<em>Optional; PDF 1.3</em>) A name tree mapping name strings to annotation appearance streams (see <a href="../../c12/s5/#1255-外观流">12.5.5</a>, "Appearance Streams").</td>
+        </tr>
+        <tr>
+            <td><strong>JavaScript</strong></td>
+            <td>name tree</td>
+            <td>(<em>Optional; PDF 1.3</em>) A name tree mapping name strings to document-level JavaScript actions (see <a href="../../c12/s6/#126416-javascript-动作">12.6.4.16</a>, "JavaScript Actions").</td>
+        </tr>
+        <tr>
+            <td><strong>Pages</strong></td>
+            <td>name tree</td>
+            <td>(<em>Optional; PDF 1.3</em>) A name tree mapping name strings to visible pages for use in interactive forms (see <a href="../../c12/s7/#1276-命名页面">12.7.6</a>, "Named Pages").</td>
+        </tr>
+        <tr>
+            <td><strong>Templates</strong></td>
+            <td>name tree</td>
+            <td>(<em>Optional; PDF 1.3</em>) A name tree mapping name strings to invisible (template) pages for use in interactive forms (see <a href="../../c12/s7/#1276-命名页面">12.7.6</a>, "Named Pages").</td>
+        </tr>
+        <tr>
+            <td><strong>IDS</strong></td>
+            <td>name tree</td>
+            <td>(<em>Optional; PDF 1.3</em>) A name tree mapping digital identifiers to Web Capture content sets (see <a href="../../c14/s10/#14104-内容集">14.10.4</a>, "Content Sets").</td>
+        </tr>
+        <tr>
+            <td><strong>URLS</strong></td>
+            <td>name tree</td>
+            <td>(<em>Optional; PDF 1.3</em>) A name tree mapping uniform resource locators (URLs) to Web Capture content sets (see <a href="../../c14/s10/#14104-内容集">14.10.4</a>, "Content Sets").</td>
+        </tr>
+        <tr>
+            <td><strong>EmbeddedFiles</strong></td>
+            <td>name tree</td>
+            <td>(<em>Optional; PDF 1.4</em>) A name tree mapping name strings to file specifications for embedded file streams (see <a href="../s11/#7114-嵌入式文件流">7.11.4</a>, "Embedded File Streams").</td>
+        </tr>
+        <tr>
+            <td><strong>AlternatePresentations</strong></td>
+            <td>name tree</td>
+            <td>(<em>Optional; PDF 1.4</em>) A name tree mapping name strings to alternate presentations (see <a href="../../c13/s5/">13.5</a>, "Alternate Presentations").</td>
+        </tr>
+        <tr>
+            <td><strong>Renditions</strong></td>
+            <td>name tree</td>
+            <td>(<em>Optional; PDF 1.5</em>) A name tree mapping name strings (which shall have Unicode encoding) to rendition objects (see <a href="../../c13/s2/#1323-演绎版">13.2.3</a>, "Renditions").</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月4日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

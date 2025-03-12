@@ -1,0 +1,2495 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s9/">
+      
+      
+        <link rel="next" href="../s11/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>7.10 函数 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#710-函数" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7.10 函数
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            7语法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 词汇惯例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.4 过滤器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.5 文件结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.6 加密
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.7 文档结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.8 内容流和资源
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.9 公共数据结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    7.10 函数
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    7.10 函数
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#7101-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7102-type-0-采样-函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.2 Type 0 (采样) 函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7103-type-2-指数插值-函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.3 Type 2 (指数插值) 函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7104-type-3-缝合-函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.4 Type 3 (缝合) 函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7105-type-4-postscript-计算器-函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.5 Type 4 (PostScript 计算器) 函数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.10.5 Type 4 (PostScript 计算器) 函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71051-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.5.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#71052-type-4-函数中的错误" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.5.2 Type 4 函数中的错误
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.11 文件规范
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.12 扩展字典
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#7101-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7102-type-0-采样-函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.2 Type 0 (采样) 函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7103-type-2-指数插值-函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.3 Type 2 (指数插值) 函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7104-type-3-缝合-函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.4 Type 3 (缝合) 函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7105-type-4-postscript-计算器-函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.5 Type 4 (PostScript 计算器) 函数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.10.5 Type 4 (PostScript 计算器) 函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71051-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.5.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#71052-type-4-函数中的错误" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10.5.2 Type 4 函数中的错误
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="710-函数">7.10 函数<a class="headerlink" href="#710-函数" title="Permanent link">&para;</a></h1>
+<p><strong>Functions</strong></p>
+<h2 id="7101-概述">7.10.1 概述<a class="headerlink" href="#7101-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF 不是一种编程语言，PDF 文件也不是程序。然而，PDF 提供了几种类型的 <em>函数对象(function objects)</em>（PDF 1.2），它们代表参数化的函数类别，包括数学公式和具有任意分辨率的采样表示。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>函数在 PDF 中有多种用途，包括用于高质量打印的设备依赖光栅化信息（半色调点函数和传输函数）、特定颜色空间的颜色转换函数，以及将颜色指定为位置的函数以实现平滑着色。</p>
+</div>
+<p>PDF 中的函数表示静态的、自包含的数值转换。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>一个用于加两个数字的函数有两个输入值和一个输出值：</p>
+<div class="arithmatex">\[f(x_0,x_1) = x_0 + x_1\]</div>
+<p>类似地，一个计算两个数字的算术平均数和几何平均数的函数可以被视为有两个输入值和两个输出值的函数：</p>
+<div class="arithmatex">\[f(x_0,x_1) = \frac{x_0 + x_1}{2}, \sqrt{x_0\times x_1}\]</div>
+</div>
+<p>一般来说，一个函数可以取任意数量（<em>m</em>）的输入值，并产生任意数量（<em>n</em>）的输出值：</p>
+<div class="arithmatex">\[f(x_0,\dots, x_{m-1}) = y_0, \dots,y_{n-1}\]</div>
+<p>在 PDF 函数中，所有的输入值和所有的输出值都应该是数字，并且函数不应当有副作用。</p>
+<p>每个函数定义都包括一个定义域，即输入的合法值集合。某些类型的函数还定义了一个值域，即输出的合法值集合。传递给函数的输入值应该被剪切到定义域内，函数产生的输出值应该被剪切到值域内。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>假设以下函数定义了定义域为 [-1 1]。如果函数被调用时输入值为 6，那么这个值将被替换为定义域中最接近的值 1，然后才计算函数；因此，产生的输出值为 3。</p>
+<div class="arithmatex">\[f(x)=x+2\]</div>
+<p>类似地，如果以下函数定义了值域为 [0 100]，并且输入值 -6 和 4 被传递给函数（并且在其定义域内），那么函数产生的输出值 -14 将被替换为 0，这是定义域中最接近的值。</p>
+<div class="arithmatex">\[f(x_0, x_1) = 3 \times x_0 + x_1\]</div>
+</div>
+<p>函数对象可能是字典或流，具体取决于函数类型。在本子句中，<em>函数字典(function dictionary)</em>一词通常用于指代字典对象或流对象的字典部分。函数字典指定了函数的表示形式、参数化该表示形式的属性集以及该表示形式所需的附加数据。根据字典的 <strong>FunctionType</strong> 条目，有四种类型的函数可用：</p>
+<ul>
+<li>（PDF 1.2）采样函数(sampled function)（类型 0）使用一组样本值来定义函数。使用各种技术在样本值之间插值；见 <a href="#7102-type-0-采样-函数">7.10.2</a>，“类型 0（采样）函数。”</li>
+<li>（PDF 1.3）指数插值函数(exponential interpolation function)（类型 2）定义了一个指数函数的系数集；见 <a href="#7103-type-2-指数插值-函数">7.10.3</a>，“类型 2（指数插值）函数。”</li>
+<li>（PDF 1.3）缝合函数(stitching function)（类型 3）是其他函数的组合，分布在一个定义域上；见 <a href="#7104-type-3-缝合-函数">7.10.4</a>，“类型 3（缝合）函数。”</li>
+<li>（PDF 1.3）PostScript 计算器函数(calculator function)（类型 4）使用 PostScript 语言中的运算符来描述一个算术表达式；见 <a href="#7105-type-4-postscript-计算器-函数">7.10.5</a>，“类型 4（PostScript 计算器）函数。”</li>
+</ul>
+<p>所有函数字典都应共享 <a href="#table38">表 38</a> 中列出的条目。    </p>
+<p><table id="table38">
+    <caption><strong>表38 – 所有函数字典通用条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>FunctionType</strong></td>
+            <td>整数</td>
+            <td>(<em>必需</em>) 函数类型：<br/>
+                0 采样函数<br/>
+                2 指数插值函数<br/>
+                3 拼接函数<br/>
+                4 PostScript 计算器函数</td>
+        </tr>
+        <tr>
+            <td><strong>Domain</strong></td>
+            <td>数组</td>
+            <td>(必需) 一个 <em>2 × m</em> 数组，其中 m 应为输入值的数量。对于每个 i 从 0 到 <em>m</em> − 1，<strong>Domain</strong><sub>2i</sub> 应小于或等于 <strong>Domain</strong><sub>2i+1</sub> ，且第 i 个输入值 x<sub>i</sub> 应位于区间 Domain<sub>2i</sub> ≤ x<sub>i</sub> ≤ Domain<sub>2i+1</sub> 内。超出声明域的输入值将被剪切到最近的边界值。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Range</strong></td>
+            <td>数组</td>
+            <td>(<em>对于类型 0 和类型 4 函数必需，否则可选；见下文</em>) 一个 <em>2 × n</em> 数组，其中 n 应为输出值的数量。对于每个 j 从 0 到 <em>n − 1</em>，<strong>Range</strong><sub>2j</sub> 应小于或等于 <strong>Range</strong><sub>2j+1</sub> ，且第 j 个输出值 y<sub>j</sub> 应位于区间 <strong>Range</strong><sub>2j</sub> ≤ y<sub>j</sub> ≤ <strong>Range</strong><sub>2j+1</sub> 内。超出声明范围的输出值将被剪切到最近的边界值。如果此条目不存在，则不进行剪切。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>此外，每种类型的函数字典都应包含适合特定函数类型的条目。输出值的数量通常可以从函数的其他属性中推断出来；如果没有（对于类型 0 和类型 4 函数总是这样），则需要 <strong>Range</strong> 条目。由 <strong>Domain</strong> 和 <strong>Range</strong> 条目暗示的函数的维度应与函数其他属性暗示的维度一致。</p>
+</div>
+<div class="tabbed-block">
+<p>PDF is not a programming language, and a PDF file is not a program. However, PDF provides several types of <em>function objects</em> (PDF 1.2) that represent parameterized classes of functions, including mathematical formulas and sampled representations with arbitrary resolution.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Functions may be used in various ways in PDF, including device-dependent rasterization information for high-quality printing (halftone spot functions and transfer functions), colour transform functions for certain colour spaces, and specification of colours as a function of position for smooth shadings.</p>
+</div>
+<p>Functions in PDF represent static, self-contained numerical transformations.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>A function to add two numbers has two input values and one output value:</p>
+<div class="arithmatex">\[f(x_0,x_1) = x_0 + x_1\]</div>
+<p>Similarly, a function that computes the arithmetic and geometric mean of two numbers can be viewed as a function of two input values and two output values:</p>
+<div class="arithmatex">\[f(x_0,x_1) = \frac{x_0 + x_1}{2}, \sqrt{x_0\times x_1}\]</div>
+</div>
+<p>In general, a function can take any number (<em>m</em>) of input values and produce any number (n) of output values:</p>
+<div class="arithmatex">\[f(x_0,\dots, x_{m-1}) = y_0, \dots,y_{n-1}\]</div>
+<p>In PDF functions, all the input values and all the output values shall be numbers, and functions shall have no side effects.</p>
+<p>Each function definition includes a domain, the set of legal values for the input. Some types of functions also define a range, the set of legal values for the output. Input values passed to the function shall be clipped to the domain, and output values produced by the function shall be clipped to the range.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>Suppose the following function is defined with a domain of [-1 1]. If the function is called with the input value 6, that value is replaced with the nearest value in the defined domain, 1, before the function is evaluated; the resulting output value is therefore 3.</p>
+<div class="arithmatex">\[f(x)=x+2\]</div>
+<p>Similarly, if the following function is defined with a range of [0 100], and if the input values -6 and 4 are passed to the function (and are within its domain), then the output value produced by the function, -14, is replaced with 0, the nearest value in the defined range.</p>
+<div class="arithmatex">\[f(x_0, x_1) = 3 \times x_0 + x_1\]</div>
+</div>
+<p>A function object may be a dictionary or a stream, depending on the type of function. The term <em>function dictionary</em> is used generically in this sub-clause to refer to either a dictionary object or the dictionary portion of a stream object. A function dictionary specifies the function’s representation, the set of attributes that parameterize that representation, and the additional data needed by that representation. Four types of functions are available, as indicated by the dictionary’s <strong>FunctionType</strong> entry:</p>
+<ul>
+<li>(PDF 1.2) A sampled function (type 0) uses a table of sample values to define the function. Various techniques are used to interpolate values between the sample values; see <a href="#7102-type-0-采样-函数">7.10.2</a>, "Type 0 (Sampled) Functions."</li>
+<li>(PDF 1.3) An exponential interpolation function (type 2) defines a set of coefficients for an exponential function; see <a href="#7103-type-2-指数插值-函数">7.10.3</a>, "Type 2 (Exponential Interpolation) Functions."</li>
+<li>(PDF 1.3) A stitching function (type 3) is a combination of other functions, partitioned across a domain; see <a href="#7104-type-3-缝合-函数">7.10.4</a>, "Type 3 (Stitching) Functions."</li>
+<li>(PDF 1.3) A PostScript calculator function (type 4) uses operators from the PostScript language to describe an arithmetic expression; see <a href="#7105-type-4-postscript-计算器-函数">7.10.5</a>, "Type 4 (PostScript Calculator) Functions."</li>
+</ul>
+<p>All function dictionaries shall share the entries listed in <a href="#table38">Table 38</a>.</p>
+<p><table id="table38" markdown="span">
+    <caption><strong>Table 38 – Entries common to all function dictionaries</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>FunctionType</strong></td>
+            <td>integer</td>
+            <td>(<em>Required</em>) The function type:<br/>
+                0 Sampled function<br/>
+                2 Exponential interpolation function<br/>
+                3 Stitching function<br/>
+                4 PostScript calculator function</td>
+        </tr>
+        <tr>
+            <td><strong>Domain</strong></td>
+            <td>array</td>
+            <td>(Required) An array of <em>2 × m numbers</em>, where m shall be the number of input values. For each i from 0 to <em>m</em> − 1, <strong>Domain</strong><sub>2i</sub> shall be less than or equal to <strong>Domain</strong><sub>2i+1</sub> , and the <em>i</em>th input value, x<sub>i</sub> , shall lie in the interval Domain<sub>2i</sub> ≤ x<sub>i</sub> ≤ Domain<sub>2i+1</sub> . Input values outside the declared domain shall be clipped to the nearest boundary value.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Range</strong></td>
+            <td>array</td>
+            <td>(<em>Required for type 0 and type 4 functions, optional otherwise; see below</em>) An array of <em>2 × n numbers</em>, where n shall be the number of output values. For each <em>j</em> from 0 to <em>n − 1</em>, <strong>Range</strong><sub>2j</sub> shall be less than or equal to <strong>Range</strong><sub>2j+1</sub> , and the jth output value, y<sub>j</sub> , shall lie in the interval <strong>Range</strong><sub>2j</sub> ≤ y<sub>j</sub> ≤ <strong>Range</strong><sub>2j+1</sub>. Output values outside the declared range shall be clipped to the nearest boundary value. If this entry is absent, no clipping shall be done.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>In addition, each type of function dictionary shall include entries appropriate to the particular function type. The number of output values can usually be inferred from other attributes of the function; if not (as is always the case for type 0 and type 4 functions), the <strong>Range</strong> entry is required. The dimensionality of the function implied by the <strong>Domain</strong> and <strong>Range</strong> entries shall be consistent with that implied by other attributes of the function.</p>
+</div>
+</div>
+</div>
+<h2 id="7102-type-0-采样-函数">7.10.2 Type 0 (采样) 函数<a class="headerlink" href="#7102-type-0-采样-函数" title="Permanent link">&para;</a></h2>
+<p><strong>Type 0 (Sampled) Functions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Type 0 函数利用包含在流中的一系列 <em>样本值</em> 来为其定义域和值域有界的函数提供近似。这些样本被组织为一个 m 维表格，其中每个条目有 n 个组件。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>采样函数非常通用，并以较低的成本提供任意解析函数的相当精确表示。例如，一个一维正弦函数可以在范围 [ 0 180 ] 内用仅十个样本和线性插值平均误差仅为 1% 表示。两个输入的函数需要更多的样本，但通常数量不会是禁止性的，如果函数没有高频变化。</p>
+</div>
+<p>对于采样函数，除了可能的实现限制外，没有维度限制。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>为了表示具有高维度的函数，所需的样本数量会迅速增加，除非采样分辨率非常低。此外，如果输入数量 <em>m</em> 大于2，则多线性插值的过程会变得计算密集。多维样条插值更加计算密集。</p>
+</div>
+<p>除了 <a href="#table38">表38</a> 中的条目外，类型 0 函数字典还包括 <a href="#table39">表39</a> 中显示的条目。</p>
+<p><strong>Domain</strong>、<strong>Encode</strong> 和 <strong>Size</strong> 条目确定了如何将函数的输入变量值映射到样本表中。例如，如果 <strong>Size</strong> 是 [21 31]，则默认的 <strong>Encode</strong> 数组应为 [ 0 20 0 30 ]，将整个域映射到完整的样本表条目集合中。也可以使用其他 <strong>Encode</strong> 的值。</p>
+<p>为了解释 <strong>Domain</strong>、<strong>Encode</strong>、<strong>Size</strong>、<strong>Decode</strong> 和 <strong>Range</strong> 之间的关系，我们使用以下符号：</p>
+<div class="arithmatex">\[y = Interpolate(x, x_{min}, x_{min}, y_{max}) \\  = y_{min} + \left ( (x - x_{min}) \times \frac{y_{max} - y_{min}}{x_{max} - x_{min}}  \right ) \]</div>
+<p>对于给定的 <em>x</em> 值，Interpolate 函数计算由两个点 <span class="arithmatex">\((x_{min} , y_{min})\)</span> 和 <span class="arithmatex">\((x_{max} , y_{max})\)</span> 所定义的直线上的 <em>y</em> 值。</p>
+<p><table id="table39">
+    <caption><strong>表39 – 类型 0 函数字典特定的额外条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Size</strong></td>
+            <td>数组</td>
+            <td>(<em>必需</em>) 一个包含 m 个正整数的数组，指定样本表中每个输入维度的样本数量。</td>
+        </tr>
+        <tr>
+            <td><strong>BitsPerSample</strong></td>
+            <td>整数</td>
+            <td>(必需) 每个样本值所需的位数。如果函数有多个输出值，则每个值应占据 <strong>BitsPerSample</strong> 位。有效值为 1、2、4、8、12、16、24 和 32。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Order</strong></td>
+            <td>整数</td>
+            <td>(<em>可选</em>) 样本之间插值的顺序。有效值为 1 和 3，分别指定线性和三次样条插值。默认值为：1。</td>
+        </tr>
+        <tr>
+            <td><strong>Encode</strong></td>
+            <td>数组</td>
+            <td>(<em>可选</em>) 一个包含 2 × m 个数字的数组，指定将输入值线性映射到函数样本表的域中。默认值为 [ 0 (<strong>Size0</strong> − 1) 0 (<strong>Size1</strong> − 1) … ]。</td>
+        </tr>
+        <tr>
+            <td><strong>Decode</strong></td>
+            <td>数组</td>
+            <td>(<em>可选</em>) 一个包含 <em>2 × n</em> 个数字的数组，指定将样本值线性映射到适合函数输出值的范围中。默认值与 <strong>Range</strong> 的值相同。</td>
+        </tr>
+        <tr>
+            <td>其他流属性</td>
+            <td>(各种)</td>
+            <td>(<em>可选</em>) 流的其他属性，适当时提供样本值（参见 <a href="../s3/#table5">表5</a>）。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>当调用采样函数时，每个输入值 xi，对于 0 ≤ i &lt; m，应被剪切到域内：</p>
+<div class="arithmatex">\[x_i' = min(max(x_i, Domain_{2i}), Domain_{2i+1})\]</div>
+<p>该值应被编码：</p>
+<div class="arithmatex">\[e_i = Interpolate(x_i', Domain_{2i}, Domain_{2i + 1}, Encode_{2i}, Encode_{2i+1})\]</div>
+<p>该值应被剪切到该维度的样本表的大小：</p>
+<div class="arithmatex">\[e_i' = min(max(e_i, 0), Size_{i} - 1)\]</div>
+<p>编码后的输入值应为实数，不限于整数。插值应用于从样本表中最接近的周围值确定输出值。然后，每个输出值 <span class="arithmatex">\(r_j\)</span>，对于 0 ≤ j &lt; n，应被解码：</p>
+<div class="arithmatex">\[r_j' = Interpolate(r_j, 0, 2^{BitsPerSample} - 1, Decode_{2j}, Decode_{2j + 1})\]</div>
+<p>最后，每个解码后的值应被剪切到范围内：</p>
+<div class="arithmatex">\[y_j = min(max(r_j', Range_{2j}), Range_{2j+1})\]</div>
+<p>样本数据应表示为字节流。字节应构成连续的位流，每个字节的高位先行。每个样本值应表示为一系列 <strong>BitsPerSample</strong> 位。连续的值应相邻在位流中；不应在字节边界填充。</p>
+<p>对于具有多维输入的函数（多于一个输入变量），第一维的样本值变化最快，最后一维的变化最慢。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>对于函数 <em>f(a, b, c)</em>，其中 <em>a</em>、<em>b</em> 和 <em>c</em> 变化范围为 0 到 9，步长为 1，样本值的顺序如下：<code>f(0, 0, 0), f(1, 0, 0), … , f(9, 0, 0), f(0, 1, 0), f(1, 1, 0), … , f(9, 1, 0), f(0, 2, 0), f(1, 2, 0), … , f(9, 9, 0), f(0, 0, 1), f(1, 0, 1)</code>，依此类推。</p>
+</div>
+<p>对于具有多维输出的函数（多于一个输出值），值应按照 <strong>Range</strong> 中的顺序存储。</p>
+<p>流数据应足够长以包含整个样本数组，如 <strong>Size</strong>、<strong>Range</strong> 和 <strong>BitsPerSample</strong> 所示；参见 <a href="../s3/#7382-流范围">7.3.8.2</a>, "Stream Extent."</p>
+<p>示例 2 展示了一个具有 4 位样本值的采样函数，包含 21 列和 31 行（651 个值）的数组。该函数以域 [-1.0 1.0] 中的两个参数 x 和 y 为输入，并在相同范围内返回一个值 z。x 参数通过编码线性转换到域 [ 0 20 ]，y 参数到域 [ 0 30 ]。使用双线性插值计算 z 的值，因为 <strong>BitsPerSample</strong> 为 4，所以 z 的范围为 [ 0 15 ]，解码将 z 转换为范围 [-1.0 1.0] 的数值。样本数组应存储在一个长度为 326 字节的字符串中，计算如下（向上取整）：</p>
+<div class="arithmatex">\[326 字节 = 31 行 × 21 每行的样本数 × 4 每个样本的位数 ÷ 8 每字节的位数\]</div>
+<p>第一个字节包含点 (-1.0, -1.0) 的高位 4 位的样本和点 (-0.9, -1.0) 的低位 4 位的样本。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>14 0 obj
+    &lt;&lt; /FunctionType 0
+        /Domain [-1.0 1.0 -1.0 1.0 ]
+        /Size [ 21 31 ]
+        /Encode [ 0 20 0 30 ]
+        /BitsPerSample 4
+        /Range [ -1.0 1.0 ]
+        /Decode [ -1.0 1.0 ]
+        /Length …
+        /Filter …
+    &gt;&gt;
+stream
+… 651 个样本值 …
+endstream
+endobj
+</code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p><strong>Decode</strong> 条目可以创造性地用于提高与范围中特定值对应的编码样本的精度。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 3</p>
+<p>如果函数的范围是 [-1.0 1.0]，且 <strong>BitsPerSample</strong> 为 4，则通常 <strong>Decode</strong> 的值应为 [-1.0 1.0]，样本值应为 [ 0 15 ] 中的整数（如图 8 所示）。但如果使用这些值，范围的中点 0.0 将不会由任何样本值准确表示，因为它位于 7 和 8 之间。然而，如果 <strong>Decode</strong> 数组是 [-1.0 +1.1429]（其中 1.1429 大约等于 16<sup>3</sup> 14），并且提供的样本值位于 [0 14] 的区间内，则可以实现有效的 [-1.0 1.0] 范围，并且范围值 0.0 由样本值 7 表示。</p>
+</div>
+<p>对于输入维度的 <strong>Size</strong> 值可以为 1，此时该维度中的所有输入值应映射到单个允许的值。如果 <strong>Size</strong> 小于 4，则不可能进行三次样条插值，并且如果指定了 <strong>Order</strong> 3，则应忽略。</p>
+<p><a class="glightbox" href="../imgs/f8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f8.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>Type 0 functions use a sequence of <em>sample values</em> (contained in a stream) to provide an approximation for functions whose domains and ranges are bounded. The samples are organized as an m-dimensional table in which each entry has <em>n</em> components.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Sampled functions are highly general and offer reasonably accurate representations of arbitrary analytic functions at low expense. For example, a 1-input sinusoidal function can be represented over the range [ 0 180 ] with an average error of only 1 percent, using just ten samples and linear interpolation. Two-input functions require significantly more samples but usually not a prohibitive number if the function does not have high frequency variations.</p>
+</div>
+<p>There shall be no dimensionality limit of a sampled function except for possible implementation limits.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The number of samples required to represent functions with high dimensionality multiplies rapidly unless the sampling resolution is very low. Also, the process of multilinear interpolation becomes computationally intensive if the number of inputs <em>m</em> is greater than 2. The multidimensional spline interpolation is even more computationally intensive.</p>
+</div>
+<p>In addition to the entries in <a href="#table38">Table 38</a>, a type 0 function dictionary includes those shown in <a href="#table39">Table 39</a>.</p>
+<p>The <strong>Domain</strong>, <strong>Encode</strong>, and <strong>Size</strong> entries determine how the function’s input variable values are mapped into the sample table. For example, if <strong>Size</strong> is [21 31], the default <strong>Encode</strong> array shall be [ 0 20 0 30 ], which maps the entire domain into the full set of sample table entries. Other values of <strong>Encode</strong> may be used.</p>
+<p>To explain the relationship between <strong>Domain</strong>, <strong>Encode</strong>, <strong>Size</strong>, <strong>Decode</strong>, and <strong>Range</strong>, we use the following notation:</p>
+<div class="arithmatex">\[y = Interpolate(x, x_{min}, x_{min}, y_{max}) \\  = y_{min} + \left ( (x - x_{min}) \times \frac{y_{max} - y_{min}}{x_{max} - x_{min}}  \right ) \]</div>
+<p>For a given value of <em>x</em>, Interpolate calculates the <em>y</em> value on the line defined by the two points <span class="arithmatex">\((x_{min} , y_{min})\)</span> and <span class="arithmatex">\((x_{max} , y_{max})\)</span>.</p>
+<p><table id="table39" markdown="span">
+    <caption><strong>Table 39 – Additional entries specific to a type 0 function dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Size</strong></td>
+            <td>array</td>
+            <td>(<em>Required</em>) An array of m positive integers that shall specify the number of samples in each input dimension of the sample table.</td>
+        </tr>
+        <tr>
+            <td><strong>BitsPerSample</strong></td>
+            <td>integer</td>
+            <td>(Required) The number of bits that shall represent each sample. (If the function has multiple output values, each one shall occupy <strong>BitsPerSample</strong> bits.) Valid values shall be 1, 2, 4, 8, 12, 16, 24, and 32.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Order</strong></td>
+            <td>integer</td>
+            <td>(<em>Optional</em>) The order of interpolation between samples. Valid values shall be 1 and 3, specifying linear and cubic spline interpolation, respectively. Default value: 1.</td>
+        </tr>
+        <tr>
+            <td><strong>Encode</strong></td>
+            <td>array</td>
+            <td>(<em>Optional</em>) An array of 2 × m numbers specifying the linear mapping of input values into the domain of the function’s sample table. Default value: [ 0 (<strong>Size0</strong> − 1) 0 (<strong>Size1</strong> − 1) … ].</td>
+        </tr>
+        <tr>
+            <td><strong>Decode</strong></td>
+            <td>array</td>
+            <td>(<em>Optional</em>) An array of <em>2 × n</em> numbers specifying the linear mapping of sample values into the range appropriate for the function’s output values. Default value: same as the value of <strong>Range</strong>.</td>
+        </tr>
+        <tr>
+            <td>other stream attributes</td>
+            <td>(various)</td>
+            <td>(Optional) Other attributes of the stream that shall provide the sample values, as appropriate (see <a href="../s3/#table5">Table 5</a>).</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>When a sampled function is called, each input value xi , for 0 £ i &lt; m, shall be clipped to the domain:</p>
+<div class="arithmatex">\[x_i' = min(max(x_i, Domain_{2i}), Domain_{2i+1})\]</div>
+<p>That value shall be encoded:</p>
+<div class="arithmatex">\[e_i = Interpolate(x_i', Domain_{2i}, Domain_{2i + 1}, Encode_{2i}, Encode_{2i+1})\]</div>
+<p>That value shall be clipped to the size of the sample table in that dimension:</p>
+<div class="arithmatex">\[e_i' = min(max(e_i, 0), Size_{i} - 1)\]</div>
+<p>The encoded input values shall be real numbers, not restricted to integers. Interpolation shall be used to determine output values from the nearest surrounding values in the sample table. Each output value <span class="arithmatex">\(r_j\)</span> , for 0 £ j &lt; n, shall then be decoded:</p>
+<div class="arithmatex">\[r_j' = Interpolate(r_j, 0, 2^{BitsPerSample} - 1, Decode_{2j}, Decode_{2j + 1})\]</div>
+<p>Finally, each decoded value shall be clipped to the range:</p>
+<div class="arithmatex">\[y_j = min(max(r_j', Range_{2j}), Range_{2j+1})\]</div>
+<p>Sample data shall be represented as a stream of bytes. The bytes shall constitute a continuous bit stream, with the high-order bit of each byte first. Each sample value shall be represented as a sequence of <strong>BitsPerSample</strong> bits. Successive values shall be adjacent in the bit stream; there shall be no padding at byte boundaries.</p>
+<p>For a function with multidimensional input (more than one input variable), the sample values in the first
+dimension vary fastest, and the values in the last dimension vary slowest.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>For a function <em>f(a, b, c)</em>, where <em>a</em>, <em>b</em>, and <em>c</em> vary from 0 to 9 in steps of 1, the sample values would appear in this order: <code>f(0, 0, 0), f(1, 0, 0), … , f(9, 0, 0), f(0, 1, 0), f(1, 1, 0), … , f(9, 1, 0), f(0, 2, 0), f(1, 2, 0), … , f(9, 9, 0), f(0, 0, 1), f(1, 0, 1)</code>, and so on.</p>
+</div>
+<p>For a function with multidimensional output (more than one output value), the values shall be stored in the same order as <strong>Range</strong>.</p>
+<p>The stream data shall be long enough to contain the entire sample array, as indicated by <strong>Size</strong>, <strong>Range</strong>, an <strong>BitsPerSample</strong>; see <a href="../s3/#7382-流范围">7.3.8.2</a>, "Stream Extent."</p>
+<p>Example 2 illustrates a sampled function with 4-bit samples in an array containing 21 columns and 31 rows (651 values). The function takes two arguments, x and y, in the domain [-1.0 1.0 ], and returns one value, z, in that same range. The x argument shall be linearly transformed by the encoding to the domain [ 0 20 ] and the y argument to the domain [ 0 30 ]. Using bilinear interpolation between sample points, the function computes a value for z, which (because <strong>BitsPerSample</strong> is 4) will be in the range [ 0 15 ], and the decoding transforms z to a number in the range [ -1.0 1.0 ] for the result. The sample array shall be stored in a string of 326 bytes, calculated as follows (rounded up):</p>
+<div class="arithmatex">\[326 bytes = 31 rows ¥ 21 samples / row ¥ 4 bits / sample^3 8 bits / byte\]</div>
+<p>The first byte contains the sample for the point (-1.0, -1.0) in the high-order 4 bits and the sample for the point (-0.9, -1.0) in the low-order 4 bits.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>14 0 obj
+    &lt;&lt; /FunctionType 0
+       /Domain [-1.0 1.0 -1.0 1.0 ]
+       /Size [ 21 31 ]
+       /Encode [ 0 20 0 30 ]
+       /BitsPerSample 4
+       /Range [ -1.0 1.0 ]
+       /Decode [ -1.0 1.0 ]
+       /Length …
+       /Filter …
+    &gt;&gt;
+stream
+… 651 sample values …
+endstream
+endobj
+</code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>The <strong>Decode</strong> entry can be used creatively to increase the accuracy of encoded samples corresponding to certain values in the range.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 3</p>
+<p>If the range of the function is [ -1.0 1.0 ] and <strong>BitsPerSample</strong> is 4, the usual value of <strong>Decode</strong> would be [ -1.0 1.0 ] and the sample values would be integers in the interval [ 0 15 ] (as shown in Figure 8). But if these values are used, the midpoint of the range, 0.0, is not represented exactly by any sample value, since it falls halfway between 7 and 8. However, if the <strong>Decode</strong> array is [ -1.0 +1.1429 ] (1.1429 being approximately equal to 16<sup>3</sup> 14) and the sample values supplied are in the interval [0 14], the effective range of [-1.0 1.0] is achieved, and the range value 0.0 is represented by the sample value 7.</p>
+</div>
+<p>The <strong>Size</strong> value for an input dimension can be 1, in which case all input values in that dimension shall be mapped to the single allowed value. If <strong>Size</strong> is less than 4, cubic spline interpolation is not possible and <strong>Order</strong> 3 shall be ignored if specified.</p>
+<p><a class="glightbox" href="../imgs/f8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f8.png" /></a></p>
+</div>
+</div>
+</div>
+<h2 id="7103-type-2-指数插值-函数">7.10.3 Type 2 (指数插值) 函数<a class="headerlink" href="#7103-type-2-指数插值-函数" title="Permanent link">&para;</a></h2>
+<p><strong>Type 2 (Exponential Interpolation) Functions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>类型 2 函数（PDF 1.3）包括一组参数，定义了一个输入值和 n 个输出值的指数插值：</p>
+<div class="arithmatex">\[f(x) = y_0, ..., y_{n-1}\]</div>
+<p>除了 <a href="#table38">表38</a> 中的条目外，类型 2 函数字典还应包括 <a href="#table40">表40</a> 中列出的条目。</p>
+<p><table id="table40">
+    <caption><strong>表40 – 类型 2 函数字典特定的额外条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>C0</strong></td>
+            <td>数组</td>
+            <td>(<em>可选</em>) 一个包含 <em>n</em> 个数字的数组，定义当 x = 0.0 时的函数结果。默认值为 [ 0.0 ]。</td>
+        </tr>
+        <tr>
+            <td><strong>C1</strong></td>
+            <td>数组</td>
+            <td>(<em>可选</em>) 一个包含 <em>n</em> 个数字的数组，定义当 x = 1.0 时的函数结果。默认值为 [ 1.0 ]。</td>
+        </tr>
+        <tr>
+            <td><strong>N</strong></td>
+            <td>数值</td>
+            <td>(<em>必需</em>) 插值指数。每个输入值 x 应返回由 <span class="arithmatex">\(y_j = \textbf{C0}_j + x^N × (\textbf{C1}_j − \textbf{C0}_j )\)</span> 给出的 <em>n</em> 个值，其中 <span class="arithmatex">\(0 ≤ j &lt; n\)</span>。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><strong>Domain</strong> 的值应限制 x 的范围，以确保当 <strong>N</strong> 不是整数时，所有 x 的值均为非负数；当 <strong>N</strong> 为负数时，x 的值不应为零。通常情况下，<strong>Domain</strong> 声明为 [ 0.0 1.0 ]，而 <strong>N</strong> 是正数。为了将输出裁剪到指定的范围，应使用 <strong>Range</strong> 属性。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>当 <strong>N</strong> 为 1 时，函数执行 <strong>C0</strong> 和 <strong>C1</strong> 之间的线性插值；因此，该函数也可以表示为一个采样函数（类型 0）。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Type 2 functions (PDF 1.3) include a set of parameters that define an <em>exponential interpolation</em> of one input value and n output values:</p>
+<div class="arithmatex">\[f(x) = y_0, ..., y_{n-1}\]</div>
+<p>In addition to the entries in <a href="#table38">Table 38</a>, a type 2 function dictionary shall include those listed in <a href="#table40">Table 40</a>.</p>
+<p><table id="table40" markdown="span">
+    <caption><strong>Table 40 – Additional entries specific to a type 2 function dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>C0</strong></td>
+            <td>array</td>
+            <td>(<em>Optional</em>) An array of <em>n</em> numbers that shall define the function result when x = 0.0. Default value: [ 0.0 ].</td>
+        </tr>
+        <tr>
+            <td><strong>C1</strong></td>
+            <td>array</td>
+            <td>(<em>Optional</em>) An array of <em>n</em> numbers that shall define the function result when x = 1.0. Default value: [ 1.0 ].
+            </td>
+        </tr>
+        <tr>
+            <td><strong>N</strong></td>
+            <td>number</td>
+            <td>(<em>Required</em>) The interpolation exponent. Each input value x shall return <em>n</em> values, given by <span class="arithmatex">\(y_j = \textbf{C0}_j + x^N × (\textbf{C1}_j − \textbf{C0}_j )\)</span>, for <span class="arithmatex">\(0 ≤ j &lt; n\)</span>. </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Values of <strong>Domain</strong> shall constrain x in such a way that if <strong>N</strong> is not an integer, all values of x shall be non-
+negative, and if <strong>N</strong> is negative, no value of x shall be zero. Typically, <strong>Domain</strong> is declared as [ 0.0 1.0 ], and <strong>N</strong> is
+a positive number. To clip the output to a specified range The <strong>Range</strong> attribute shall be used.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>When <strong>N</strong> is 1, the function performs a linear interpolation between <strong>C0</strong> and <strong>C1</strong>; therefore, the function can also be expressed as a sampled function (type 0).</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="7104-type-3-缝合-函数">7.10.4 Type 3 (缝合) 函数<a class="headerlink" href="#7104-type-3-缝合-函数" title="Permanent link">&para;</a></h2>
+<p><strong>Type 3 (Stitching) Functions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>类型 3 函数（<em>PDF 1.3</em>）定义了几个单输入函数的子域的拼接，以生成一个新的单输入函数。由于生成的拼接函数是一个单输入函数，其域由一个两元素数组 <span class="arithmatex">\([\textbf{Domain}_0 \space \textbf{Domain}_1]\)</span> 给出。</p>
+<p>除了 <a href="#table38">表38</a> 中的条目外，类型 3 函数字典还应包括 <a href="#table41">表41</a> 中列出的条目。</p>
+<p><table id="table41">
+    <caption><strong>表41 – 类型 3 函数字典特定的额外条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Functions</strong></td>
+            <td>数组</td>
+            <td>(<em>必需</em>) 一个包含 <em>k</em> 个单输入函数的数组，这些函数将构成拼接函数。所有函数的输出维度应相同，并且与 <strong>Range</strong> 的值兼容（如果 <strong>Range</strong> 存在）。</td>
+        </tr>
+        <tr>
+            <td><strong>Bounds</strong></td>
+            <td>数组</td>
+            <td>(<em>必需</em>) 一个包含 <em>k</em> - 1 个数字的数组，与 <strong>Domain</strong> 结合使用，定义了从 <strong>Functions</strong> 数组中的每个函数应用的区间。<strong>Bounds</strong> 元素应按增值顺序排列，并且每个值应在 <strong>Domain</strong> 定义的域内。</td>
+        </tr>
+        <tr>
+            <td><strong>Encode</strong></td>
+            <td>数组</td>
+            <td>(<em>必需</em>) 一个包含 2 × <em>k</em> 个数字的数组，成对地映射由 <strong>Domain</strong> 和 <strong>Bounds</strong> 数组定义的每个域子集到相应函数的域。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><strong>Domain</strong> 的大小应为 2（即，<em>m</em> = 1），并且 <strong>Domain</strong><sub>0</sub> 应严格小于 <strong>Domain</strong><sub>1</sub>，除非 <em>k</em> = 1。域应根据字典的 <strong>Bounds</strong> 条目分成 k 个子域，<strong>Bounds</strong> 应是一个 <em>k</em> - 1 的数组，遵守以下关系（有特定例外）：</p>
+<div class="codehilite"><pre><span></span><code><span class="p">$$</span><span class="nv">Domain_0</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nv">Bounds_0</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nv">Bounds_1</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nv">Bounds_</span><span class="p">{</span><span class="nv">k</span><span class="o">-</span><span class="mi">2</span><span class="p">}</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nv">Domain_1</span><span class="p">$$</span>
+</code></pre></div>
+
+<p><strong>Bounds</strong> 数组应描述一系列半开区间，左闭右开（最后一个区间也是右闭）。<strong>Functions</strong> 条目的值应为一个包含 <em>k</em> 个函数的数组。第一个函数应适用于第一个子域中的 x 值，即 <span class="arithmatex">\(\textbf{Domain}_0 ≤ x &lt; \textbf{Bounds}_0\)</span>；第二个函数应适用于第二个子域中的 x 值，即 <span class="arithmatex">\(\textbf{Bounds}_0 ≤ x &lt; \textbf{Bounds}_1\)</span>；依此类推。最后一个函数应适用于包含上界的最后一个子域中的 x 值：</p>
+<p><span class="arithmatex">\(\textbf{Bounds}_{k-2} ≤ x ≤ \textbf{Domain}_1\)</span>。如果 <em>k</em> 的值为 1，则 <strong>Bounds</strong> 数组应为空，<strong>Functions</strong> 数组中的单个条目应适用于所有 x 值，即 <span class="arithmatex">\(\textbf{Domain}_0 ≤ x ≤ \textbf{Domain}_1\)</span>。</p>
+<p><strong>Encode</strong> 数组包含 2 ¥ k 个数字。第 i 个子域中的 x 值应按以下方式编码：</p>
+<div class="arithmatex">\[x' = Interpolate(x, Bounds_{i-1}, Bounds_i, Encode_{2i}, Encode_{2i + 1})\]</div>
+<p>对于 <code>0 ≤ i &lt; k</code>。在此方程中，<strong>Bounds</strong><sub>-1</sub> 表示 <strong>Domain</strong><sub>0</sub>，而 <strong>Bounds</strong><sub>k-1</sub> 表示 <strong>Domain</strong><sub>1</sub>。如果最后一个边界 <strong>Bounds</strong><sub>k-2</sub> 等于 <strong>Domain</strong><sub>1</sub>，则 <em>x'</em> 的定义应为 <strong>Encode</strong><sub>2i</sub>。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>拼接函数的设计旨在方便地将多个函数组合在一个渐变的不同部分中使用。渐变模式的讨论见 <a href="../../c8/s7/#874-底纹图案">8.7.4</a>，“渐变模式”。可以通过为每个函数创建单独的渐变字典，并在相邻域中使用这些字典来实现相同的效果。然而，由于每个渐变都具有相似的参数，并且整体效果是一个渐变，因此将多个函数定义放入单个渐变中更为方便。此外，类型 3 函数提供了反转单输入函数域的通用机制。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>假设函数 <em>f</em> 的 <strong>Domain</strong> 为 [0.0 1.0]，拼接函数 <em>g</em> 的 <strong>Domain</strong> 也为 [0.0 1.0]，包含 <em>f</em> 的 <strong>Functions</strong> 数组，以及 <strong>Encode</strong> 数组为 [1.0 0.0]。实际上，g(x) = f(1 - x)。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Type 3 functions (<em>PDF 1.3</em>) define a stitching of the subdomains of several 1-input functions to produce a single new 1-input function. Since the resulting stitching function is a 1-input function, the domain is given by a two- element array, <span class="arithmatex">\([\textbf{Domain}_0 \space \textbf{Domain}_1]\)</span>.</p>
+<p>In addition to the entries in <a href="#table38">Table 38</a>, a type 3 function dictionary shall include those listed in <a href="#table41">Table 41</a>.</p>
+<p><table id="table41" markdown="span">
+    <caption><strong>Table 41 – Additional entries specific to a type 3 function dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Functions</strong></td>
+            <td>array</td>
+            <td>(<em>Required</em>) An array of <em>k</em> 1-input functions that shall make up the stitching function. The output dimensionality of all functions shall be the same, and compatible with the value of <strong>Range</strong> if <strong>Range</strong> is present.</td>
+        </tr>
+        <tr>
+            <td><strong>Bounds</strong></td>
+            <td>array</td>
+            <td>(<em>Required</em>) An array of <em>k</em> − 1 numbers that, in combination with <strong>Domain</strong>, shall define the intervals to which each function from the <strong>Functions</strong> array shall apply. <strong>Bounds</strong> elements shall be in order of increasing value, and each value shall be within the domain defined by <strong>Domain</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Encode</strong></td>
+            <td>array</td>
+            <td>(<em>Required</em>) An array of 2 × <em>k</em> numbers that, taken in pairs, shall map each subset of the domain defined by <strong>Domain</strong> and the <strong>Bounds</strong> array to the domain of the corresponding function.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Domain shall be of size 2 (that is, <em>m</em> = 1), and <strong>Domain</strong><sub>0</sub> shall be strictly less than <strong>Domain</strong><sub>1</sub> unless <em>k</em> = 1. The
+domain shall be partitioned into k subdomains, as indicated by the dictionary’s <strong>Bounds</strong> entry, which shall be an
+array of <em>k</em> - 1 numbers that obey the following relationships (with exceptions as noted below):</p>
+<div class="arithmatex">\[Domain_0 &lt; Bounds_0 &lt; Bounds_1 &lt; ... &lt; Bounds_{k-2} &lt; Domain_1\]</div>
+<p>The <strong>Bounds</strong> array shall describe a series of half-open intervals, closed on the left and open on the right (except the last, which is closed on the right as well). The value of the <strong>Functions</strong> entry shall be an array of k functions. The first function shall apply to x values in the first subdomain, <span class="arithmatex">\(\textbf{Domain}_0 £ x &lt; \textbf{Bounds}_0\)</span> ; the second function shall apply to x values in the second subdomain, <span class="arithmatex">\(\textbf{Bounds}_0 £ x &lt; \textbf{Bounds}_1\)</span> ; and so on. The last function shall apply to x values in the last subdomain, which includes the upper bound:</p>
+<p><span class="arithmatex">\(\textbf{Bounds}_{k-2} £ x £ \textbf{Domain}_1\)</span>. The value of <em>k</em> may be 1, in which case the <strong>Bounds</strong> array shall be empty and the single item in the <strong>Functions</strong> array shall apply to all x values, <span class="arithmatex">\(\textbf{Domain}_0 £ x £ \textbf{Domain}_1\)</span> .</p>
+<p>The <strong>Encode</strong> array contains 2 ¥ k numbers. A value x from the ith subdomain shall be encoded as follows:</p>
+<div class="arithmatex">\[x' = Interpolate(x, Bounds_{i-1}, Bounds_i, Encode_{2i}, Encode_{2i + 1})\]</div>
+<p>for <code>0 £ i &lt; k</code>. In this equation, <strong>Bounds</strong><sbu>-1</sub> means <strong>Domain</strong><sub>0</sub> , and <strong>Boundsk</strong><sub>-1</sub> means <strong>Domain</strong><sub>1</sub> . If the last bound, <strong>Bounds</strong><sub>k-2</sub>, is equal to <strong>Domain</strong><sub>1</sub> , then <em>x¢</em> shall be defined to be <strong>Encode</strong><sub>2i</sub> .</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The stitching function is designed to make it easy to combine several functions to be used within one shading pattern over different parts of the shading’s domain. Shading patterns are discussed in <a href="../../c8/s7/#874-底纹图案">8.7.4</a>, "Shading Patterns". The same effect could be achieved by creating a separate shading dictionary for each of the functions, with adjacent domains. However, since each shading would have similar parameters, and because the overall effect is one shading, it is more convenient to have a single shading with multiple function definitions. Also, type 3 functions provide a general mechanism for inverting the domains of 1-input functions.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>Consider a function <em>f</em> with a <strong>Domain</strong> of [0.0 1.0] and a stitching function g with a <strong>Domain</strong> of [0.0 1.0], a <strong>Functions</strong> array containing <em>f</em>, and an <strong>Encode</strong> array of [1.0 0.0]. In effect, g(x) = f(1 - x).</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="7105-type-4-postscript-计算器-函数">7.10.5 Type 4 (PostScript 计算器) 函数<a class="headerlink" href="#7105-type-4-postscript-计算器-函数" title="Permanent link">&para;</a></h2>
+<p><strong>Type 4 (PostScript Calculator) Functions</strong></p>
+<h3 id="71051-概述">7.10.5.1 概述<a class="headerlink" href="#71051-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>类型 4 函数（<em>PDF 1.3</em>），也称为 PostScript 计算器函数，应表示为一个包含用于小型 PostScript 语言子集的代码的流。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>尽管任何函数都可以被采样（在类型 0 PDF 函数中），其他函数可以用指数函数描述（PDF 中的类型 2 函数），但类型 4 函数提供了更大的灵活性和潜在的更高精度。例如，对于六分色（六分量）<strong>DeviceN</strong> 颜色空间的着色变换函数，其备用颜色空间为 <strong>DeviceCMYK</strong>（参见 <a href="../../c8/s6/#8665-devicen-色彩空间">8.6.6.5</a>，“DeviceN 颜色空间”），需要一个 6 入 4 出的函数。如果这样的函数对每个输入变量采样为 <em>m</em> 个值，则样本数为 4 ¥ m<sup>6</sup>，可能会非常大。在实践中，这种函数通常可以写成简短的、简单的 PostScript 函数。</p>
+<p>类型 4 函数还使得可以包含各种半色调斑点函数，而不会因为采样而失去精度，也不会增加预定义斑点函数列表（参见 <a href="../../c10/s5/#1053-spot-函数">10.5.3</a>，“斑点函数”）。所有预定义的斑点函数都可以编写为类型 4 函数。</p>
+</div>
+<p>类型 4 函数中使用的语言仅包含涉及整数、实数和布尔值的表达式。不应包含复合数据结构，如字符串或数组，也不应包含过程、变量或名称。<a href="#table42">Table 42</a> 列出了可以在此类函数中使用的运算符。（有关这些运算符的更多信息，请参阅第三版 PostScript 语言参考手册的附录 B。）尽管语义上是对应的 PostScript 运算符，但不需要完整的 PostScript 解释器。</p>
+<p><table id="table42" markdown="span">
+    <caption><strong>Table 42 – 类型 4 函数中的运算符</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>运算符类型</strong></th>
+            <th><strong>运算符</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>算术运算符</td>
+            <td><strong>abs</strong> <strong>cvi</strong> <strong>floor</strong> <strong>mod</strong> <strong>sin</strong> <br/>
+            <strong>add</strong> <strong>cvr</strong> <strong>idiv</strong> <strong>mul</strong> <strong>sqrt</strong> <br/>
+            <strong>atan</strong> <strong>div</strong> <strong>ln</strong> <strong>neg</strong> <strong>sub</strong> <br/>
+            <strong>ceiling</strong> <strong>exp</strong> <strong>log</strong> <strong>round</strong> <strong>truncate</strong> <br/>
+            <strong>cos</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>关系、布尔和位运算符</td>
+            <td><strong>and</strong> <strong>false</strong> <strong>le</strong> <strong>not</strong> <strong>true</strong> <br/>
+            <strong>bitshift</strong> <strong>ge</strong> <strong>lt</strong> <strong>or</strong> <strong>xor</strong> <br/>
+            <strong>eq</strong> <strong>gt</strong> <strong>ne</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>条件运算符</td>
+            <td><strong>if</strong> <strong>ifelse</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>堆栈操作符</td>
+            <td><strong>copy</strong> <strong>dup</strong> <strong>exch</strong> <br/>
+                <strong>index</strong> <strong>pop</strong> <strong>roll</strong>
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>类型 4 函数的操作数语法应遵循 PDF 惯例，而不是 PostScript 惯例。定义函数的整个代码流应使用大括号 { }（使用左大括号（7Bh）和右大括号（07hD））括起来。大括号还应限定由 <strong>if</strong> 和 <strong>ifelse</strong> 运算符有条件执行的表达式：</p>
+<ul>
+<li><em>boolean { expression }</em> if</li>
+<li><em>boolean { expression1 } { expression2 }</em> ifelse</li>
+</ul>
+<p>这个结构纯粹是语法上的；不像在 PostScript 中，不涉及“过程对象”。</p>
+<p>类型 4 函数字典应包括 <a href="#table38">表 38</a> 中的条目，以及其他适当的流属性（参见 <a href="../s3/#table5">表 5</a>）。以下示例显示了一个类型 4 函数，等效于预定义斑点函数 <strong>DoubleDot</strong>（参见 <a href="../../c10/s5/#1053-spot-函数">10.5.3</a>，“斑点函数”）。</p>
+<div class="admonition 信息">
+<p class="admonition-title">示例</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>10 0 obj
+    &lt;&lt; /FunctionType 4
+        /Domain [ -1.0 1.0 -1.0 1.0 ]
+        /Range [ -1.0 1.0 ]
+        /Length 71
+    &gt;&gt;
+stream
+    <span style="color: #008000">{</span> 360 mul sin
+        2 div
+        exch 360 mul sin
+        2 div
+        add
+    <span style="color: #008000">}</span>
+endstream
+endobj
+</code></pre></div>
+</div>
+<p><strong>Domain</strong> 和 <strong>Range</strong> 条目都是必需的。输入变量应构成初始操作数堆栈；执行函数后操作数堆栈中剩余的项目应为输出变量。如果剩余操作数的数量与 <strong>Range</strong> 指定的输出变量数量不同，或者它们中有任何一个不是数字对象，则应该是一个错误。</p>
+<p>类型 4 函数的实现应提供至少容纳 100 个条目的堆栈空间。不要求实现提供更大的堆栈空间，如果溢出堆栈则应报错。</p>
+<p>虽然流中出现的任何整数或实数都受到与其他上下文定义相同的实现限制（见 <a href="../../a3/">附录 C</a>），但类型 4 函数计算中的<em>中间</em>结果则不受限制。实现可以使用超出这些限制的表示。例如，对实数的操作可能使用单精度或双精度浮点数。</p>
+</div>
+<div class="tabbed-block">
+<p>A type 4 function (<em>PDF 1.3</em>), also called a PostScript calculator function, shall be represented as a stream containing code written in a small subset of the PostScript language.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Although any function can be sampled (in a type 0 PDF function) and others can be described with exponential functions (type 2 in PDF), type 4 functions offer greater flexibility and potentially greater accuracy. For example, a tint transformation function for a hexachrome (six-component) <strong>DeviceN</strong> colour space with an alternate colour space of <strong>DeviceCMYK</strong> (see <a href="../../c8/s6/#8665-devicen-色彩空间">8.6.6.5</a>, "DeviceN Colour Spaces") requires a 6-in, 4-out function. If such a function were sampled with <em>m</em> values for each input variable, the number of samples, 4 ¥ m<sup>6</sup>, could be prohibitively large. In practice, such functions can often be written as short, simple PostScript functions.</p>
+<p>Type 4 functions also make it possible to include a wide variety of halftone spot functions without the loss of accuracy that comes from sampling, and without adding to the list of predefined spot functions (see <a href="../../c10/s5/#1053-spot-函数">10.5.3</a>, "Spot Functions"). All of the predefined spot functions can be written as type 4 functions.</p>
+</div>
+<p>The language that shall be used in a type 4 function contains expressions involving integers, real numbers, and boolean values only. There shall be no composite data structures such as strings or arrays, no procedures, and no variables or names. <a href="#table42">Table 42</a> lists the operators that can be used in this type of function. (For more information on these operators, see <a href="../../a2/">Appendix B</a> of the PostScript Language Reference, Third Edition.) Although the semantics are those of the corresponding PostScript operators, a full PostScript interpreter is not required.</p>
+<p><table id="table42" markdown="span">
+    <caption><strong>Table 42 – Operators in type 4 functions</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operator Type</strong></th>
+            <th><strong>Operators</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Arithmetic operators</td>
+            <td><strong>abs</strong> <strong>cvi</strong> <strong>floor</strong> <strong>mod</strong> <strong>sin</strong> <br/>
+            <strong>add</strong> <strong>cvr</strong> <strong>idiv</strong> <strong>mul</strong> <strong>sqrt</strong> <br/>
+            <strong>atan</strong> <strong>div</strong> <strong>In</strong> <strong>neg</strong> <strong>sub</strong> <br/>
+            <strong>ceiling</strong> <strong>exp</strong> <strong>log</strong> <strong>round</strong> <strong>truncate</strong> <br/>
+            <strong>cos</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>Relational, boolean, and bitwise operators</td>
+            <td><strong>and</strong> <strong>false</strong> <strong>le</strong> <strong>not</strong> <strong>true</strong> <br/>
+            <strong>bitshift</strong> <strong>ge</strong> <strong>lt</strong> <strong>or</strong> <strong>xor</strong> <br/>
+            <strong>eq</strong> <strong>gt</strong> <strong>ne</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>Conditional operators</td>
+            <td><strong>if</strong> <strong>ifelse</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>Stack operators</td>
+            <td><strong>copy</strong> <strong>dup</strong> <strong>exch</strong> <br/>
+                <strong>index</strong> <strong>pop</strong> <strong>roll</strong>
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The operand syntax for type 4 functions shall follow PDF conventions rather than PostScript conventions. The entire code stream defining the function shall be enclosed in braces { } (using LEFT CURLY BRACE (7Bh) and RIGHT CURLY BRACE (07hD)). Braces also shall delimit expressions that are executed conditionally by the <strong>if</strong> and <strong>ifelse</strong> operators:</p>
+<ul>
+<li><em>boolean { expression }</em> if</li>
+<li><em>boolean { expression1 } { expression2 }</em> ifelse</li>
+</ul>
+<p>This construct is purely syntactic; unlike in PostScript, no “procedure objects” shall be involved.</p>
+<p>A type 4 function dictionary shall include the entries in Table 38, as well as other appropriate stream attributes (see <a href="../s3/#table5">Table 5</a>). The following example shows a type 4 function equivalent to the predefined spot function <strong>DoubleDot</strong> (see <a href="../../c10/s5/#1053-spot-函数">10.5.3</a>, "Spot Functions").</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>10 0 obj
+    &lt;&lt; /FunctionType 4
+       /Domain [ -1.0 1.0 -1.0 1.0 ]
+       /Range [ -1.0 1.0 ]
+       /Length 71
+    &gt;&gt;
+stream
+    <span style="color: #008000">{</span> 360 mul sin
+        2 div
+        exch 360 mul sin
+        2 div
+        add
+    <span style="color: #008000">}</span>
+endstream
+endobj
+</code></pre></div>
+</div>
+<p>The <strong>Domain</strong> and <strong>Range</strong> entries shall both be required. The input variables shall constitute the initial operand stack; the items remaining on the operand stack after execution of the function shall be the output variables. It shall be an error for the number of remaining operands to differ from the number of output variables specified by <strong>Range</strong> or for any of them to be objects other than numbers.</p>
+<p>Implementations of type 4 functions shall provide a stack with room for at least 100 entries. No implementation shall be required to provide a larger stack, and it shall be an error to overflow the stack.</p>
+<p>Although any integers or real numbers that may appear in the stream fall under the same implementation limits (defined in <a href="../../a3/">Annex C</a>) as in other contexts, the <em>intermediate</em> results in type 4 function computations shall not. An implementation may use a representation that exceeds those limits. Operations on real numbers, for example, might use single-precision or double-precision floating-point numbers.</p>
+</div>
+</div>
+</div>
+<h3 id="71052-type-4-函数中的错误">7.10.5.2 Type 4 函数中的错误<a class="headerlink" href="#71052-type-4-函数中的错误" title="Permanent link">&para;</a></h3>
+<p><strong>Errors in Type 4 Functions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>符合要求的阅读器中负责读取类型 4 函数（类似于 PostScript 的 <em>扫描器(scanner)</em>）的部分应检测并报告语法错误。由符合要求的阅读器检测到的任何错误都应视为 PDF 文件中的错误，并像文件中的其他错误一样处理。</p>
+<p>符合要求的阅读器中负责执行类型 4 函数（类似于 PostScript 的 <em>解释器(interpreter)</em>）的部分应检测并报告错误。本规范不定义错误的表示方式；这些细节应由处理 PDF 文件的符合要求的阅读器提供。可能发生的错误类型包括（但不限于）：</p>
+<ul>
+<li>堆栈溢出</li>
+<li>堆栈下溢</li>
+<li>类型错误（例如，对实数应用 <strong>not</strong>）</li>
+<li>范围错误（例如，对负数应用 <strong>sqrt</strong>）</li>
+<li>未定义的结果（例如，除以 0）</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>The part of a conforming reader that reads a type 4 function (analogous to the PostScript <em>scanner</em>) shall detect and report syntax errors. Any errors detected by the conforming reader shall be errors in the PDF file and shall be handled like other errors in the file.</p>
+<p>The part of a conforming reader that executes a type 4 function (analogous to the PostScript <em>interpreter</em>) shall detect and report errors. This specification does not define a representation for the errors; those details shall be provided by the conforming reader that processes the PDF file. The following types of errors can occur (among others):</p>
+<ul>
+<li>Stack overflow</li>
+<li>Stack underflow</li>
+<li>A type error (for example, applying <strong>not</strong> to a real number)</li>
+<li>A range error (for example, applying <strong>sqrt</strong> to a negative number)</li>
+<li>An undefined result (for example, dividing by 0)</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月5日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

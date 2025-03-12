@@ -1,0 +1,2839 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s8/">
+      
+      
+        <link rel="next" href="../s10/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>7.9 公共数据结构 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#79-公共数据结构" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7.9 公共数据结构
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            7语法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 词汇惯例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.4 过滤器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.5 文件结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.6 加密
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.7 文档结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.8 内容流和资源
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    7.9 公共数据结构
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    7.9 公共数据结构
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#791-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#792-字符对象类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.2 字符对象类型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.9.2 字符对象类型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7921-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.2.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7922-文本字符类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.2.2 文本字符类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7923-pdfdocencoded-字符串类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.2.3 PDFDocEncoded 字符串类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7924-字节串类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.2.4 字节串类型
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#793-文本流" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.3 文本流
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#794-日期" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.4 日期
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#795-矩形" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.5 矩形
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#796-名称树" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.6 名称树
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#797-number树" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.7 Number树
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.10 函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.11 文件规范
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.12 扩展字典
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#791-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#792-字符对象类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.2 字符对象类型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.9.2 字符对象类型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7921-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.2.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7922-文本字符类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.2.2 文本字符类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7923-pdfdocencoded-字符串类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.2.3 PDFDocEncoded 字符串类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7924-字节串类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.2.4 字节串类型
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#793-文本流" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.3 文本流
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#794-日期" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.4 日期
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#795-矩形" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.5 矩形
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#796-名称树" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.6 名称树
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#797-number树" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9.7 Number树
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="79-公共数据结构">7.9 公共数据结构<a class="headerlink" href="#79-公共数据结构" title="Permanent link">&para;</a></h1>
+<p><strong>Common Data Structures</strong></p>
+<h2 id="791-概述">7.9.1 概述<a class="headerlink" href="#791-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>正如本条款开头所述，有些通用数据结构是由<a href="../s3/">7.3</a>中描述的基本对象类型构建的，“对象”，并且在整个PDF中有许多用途。本子条款描述了用于文本字符串、日期、矩形、名称树和数字树的数据结构。更复杂的数据结构在<a href="../s10/">7.10</a>，“函数”，和<a href="../s11/">7.11</a>，“文件规格”中描述。</p>
+<p>所有这些数据结构仅作为文档层次结构的一部分才有意义；它们可能不会出现在内容流中。特别是，解释字符串对象值的特殊约定仅适用于内容流之外的字符串。在内容流中使用字符串选择要绘制在页面上的字形序列的完全不同的约定（见第9条款，“文本”）。[表34]总结了本标准中用于描述字典条目值和其他PDF数据值的基本和高级数据类型。</p>
+<p><table id="table34" markdown="span">
+    <caption>Table 34 – PDF data types</caption>
+    <thead>
+        <tr>
+            <th><strong>Type</strong></th>
+            <th><strong>Description</strong></th>
+            <th><strong>Sub-Clause</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>ASCII string</strong></td>
+            <td>包含ASCII字符的字节。</td>
+            <td>
+                <a href="./#792-字符对象类型">7.9.2</a><br/>
+                <a href="./#7924-字节串类型">7.9.2.4</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>array</strong></td>
+            <td>数组对象</td>
+            <td>
+                <a href="../s3/#736-数组对象">7.3.6</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>boolean</strong></td>
+            <td>布尔值</td>
+            <td>
+                <a href="../s3/#732-布尔对象">7.3.2</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>byte string</strong></td>
+            <td>一系列字节，应表示字符或其他二进制数据。如果这种类型表示字符，编码应由上下文确定。</td>
+            <td>
+                <a href="./#792-字符对象类型">7.9.2</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>date</strong></td>
+            <td>日期 (ASCII 字符串)</td>
+            <td>
+                <a href="./#794-日期">7.9.4</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>dictionary</strong></td>
+            <td>字典对象</td>
+            <td>
+                <a href="../s3/#737-字典对象">7.3.7</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>file specification</strong></td>
+            <td>文件规格（字符串或字典）。</td>
+            <td>
+                <a href="../s11/">7.11</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>function</strong></td>
+            <td>函数 (字典或流)</td>
+            <td>
+                <a href="../s10/">7.10</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>integer</strong></td>
+            <td>整数。</td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td><strong>name</strong></td>
+            <td>名称对象</td>
+            <td>
+                <a href="../s3/#735-名称对象">7.3.5</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>name tree</strong></td>
+            <td>名称树 (字典)</td>
+            <td>
+                <a href="./#796-名称树">7.9.6</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>null</strong></td>
+            <td>空对象</td>
+            <td>
+                <a href="../s3/#739-空对象">7.3.9</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>number</strong></td>
+            <td>数字（整数或实数）</td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td><strong>number tree</strong></td>
+            <td>数字树(字典)</td>
+            <td>
+                <a href="./#797-number树">7.9.7</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>PDFDocEncoded string</strong></td>
+            <td>包含字符串的字节，应使用 PDFDocEncoding 编码。</td>
+            <td>
+                <a href="./#792-字符对象类型">7.9.2</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>rectangle</strong></td>
+            <td>矩形 (数组)</td>
+            <td>
+                <a href="./#795-矩形">7.9.5</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>stream</strong></td>
+            <td>流对象</td>
+            <td>
+                <a href="../s3/#738-流对象">7.3.8</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>string</strong></td>
+            <td>任何不是文本字符串的字符串。 <br/>从PDF 1.7开始，这种类型进一步被限定为：PDFDocEncoded字符串、ASCII字符串和字节串。 </td>
+            <td>
+                <a href="./#792-字符对象类型">7.9.2</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>text string</strong></td>
+            <td>代表字符的字节，应使用PDFDocEncoding或带有前导字节顺序标记的UTF-16BE进行编码（如第86页“文本字符串类型”中定义）。</td>
+            <td>
+                <a href="./#7922-文本字符类型">7.9.2.2</a><br/>
+                <a href="./#792-字符对象类型">7.9.2</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>text stream</strong></td>
+            <td>文本流</td>
+            <td>
+                <a href="./#793-文本流">7.9.3</a>
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>As mentioned at the beginning of this clause, there are some general-purpose data structures that are built from the basic object types described in <a href="../s3/">7.3</a>, "Objects," and are used in many places throughout PDF. This sub- clause describes data structures for text strings, dates, rectangles, name trees, and number trees. More complex data structures are described in <a href="../s10/">7.10</a>, "Functions," and <a href="../s11/">7.11</a>, "File Specifications."</p>
+<p>All of these data structures are meaningful only as part of the document hierarchy; they may not appear within content streams. In particular, the special conventions for interpreting the values of string objects apply only to strings outside content streams. An entirely different convention is used within content streams for using strings to select sequences of glyphs to be painted on the page (see clause 9, "Text"). <a href="#table34">Table 34</a> summarizes the basic and higher-level data types that are used throughout this standard to describe the values of dictionary entries and other PDF data values.</p>
+<p><table id="table34" markdown="span">
+    <caption>Table 34 – PDF data types</caption>
+    <thead>
+        <tr>
+            <th><strong>Type</strong></th>
+            <th><strong>Description</strong></th>
+            <th><strong>Sub-Clause</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>ASCII string</strong></td>
+            <td>Bytes containing ASCII characters</td>
+            <td>
+                <a href="./#792-字符对象类型">7.9.2</a><br/>
+                <a href="./#7924-字节串类型">7.9.2.4</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>array</strong></td>
+            <td>Array object</td>
+            <td>
+                <a href="../s3/#736-数组对象">7.3.6</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>boolean</strong></td>
+            <td>Boolean value</td>
+            <td>
+                <a href="../s3/#732-布尔对象">7.3.2</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>byte string</strong></td>
+            <td>A series of bytes that shall represent characters or other binary data. If such a type represents characters, the encoding shall be determined by the context.</td>
+            <td>
+                <a href="./#792-字符对象类型">7.9.2</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>date</strong></td>
+            <td>Date (ASCII string)</td>
+            <td>
+                <a href="./#794-日期">7.9.4</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>dictionary</strong></td>
+            <td>Dictionary object</td>
+            <td>
+                <a href="../s3/#737-字典对象">7.3.7</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>file specification</strong></td>
+            <td>File specification (string or dictionary)</td>
+            <td>
+                <a href="../s11/">7.11</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>function</strong></td>
+            <td>Function (dictionary or stream)</td>
+            <td>
+                <a href="../s10/">7.10</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>integer</strong></td>
+            <td>Integer number</td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td><strong>name</strong></td>
+            <td>Name object</td>
+            <td>
+                <a href="../s3/#735-名称对象">7.3.5</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>name tree</strong></td>
+            <td>Name tree (dictionary)</td>
+            <td>
+                <a href="./#796-名称树">7.9.6</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>null</strong></td>
+            <td>Null object</td>
+            <td>
+                <a href="../s3/#739-空对象">7.3.9</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>number</strong></td>
+            <td>Number (integer or real)</td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td><strong>number tree</strong></td>
+            <td>Number tree (dictionary)</td>
+            <td>
+                <a href="./#797-number树">7.9.7</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>PDFDocEncoded string</strong></td>
+            <td>Bytes containing a string that shall be encoded using PDFDocEncoding</td>
+            <td>
+                <a href="./#792-字符对象类型">7.9.2</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>rectangle</strong></td>
+            <td>Rectangle (array)</td>
+            <td>
+                <a href="./#795-矩形">7.9.5</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>stream</strong></td>
+            <td>Stream object</td>
+            <td>
+                <a href="../s3/#738-流对象">7.3.8</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>string</strong></td>
+            <td>Any string that is not a text string.<br/> Beginning with PDF 1.7, this type is further qualified as the types: PDFDocEncoded string, ASCII string, and byte string.</td>
+            <td>
+                <a href="./#792-字符对象类型">7.9.2</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>text string</strong></td>
+            <td>Bytes that represent characters that shall be encoded using either PDFDocEncoding or UTF-16BE with a leading byte-order marker (as defined in “Text String Type” on page 86.)</td>
+            <td>
+                <a href="./#7922-文本字符类型">7.9.2.2</a><br/>
+                <a href="./#792-字符对象类型">7.9.2</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>text stream</strong></td>
+            <td>Text stream</td>
+            <td>
+                <a href="./#793-文本流">7.9.3</a>
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h2 id="792-字符对象类型">7.9.2 字符对象类型<a class="headerlink" href="#792-字符对象类型" title="Permanent link">&para;</a></h2>
+<p><strong>String Object Types</strong></p>
+<h3 id="7921-概述">7.9.2.1 概述<a class="headerlink" href="#7921-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF支持一种基本的字符串对象（见<a href="../s3/#734-字符串对象">7.3.4</a>，“字符串对象”）。字符串对象应进一步限定为文本字符串、PDFDocEncoded字符串、ASCII字符串或字节串。这种进一步的限定反映了用于表示字符串描述的字符或字形的编码。</p>
+<p>表35总结了使用特定约定编码数据的字符串对象类型。  </p>
+<p><table id="table35" markdown="span">
+    <caption>Table 35 – String Object Types</caption>
+    <thead>
+        <tr>
+            <th><strong>Type</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>text string</strong></td>
+            <td>应用于人类可读的文本，如文本注释、书签名称、文章名称和文档信息。这些字符串应使用 PDFDocEncoding 或带有字节顺序标记（BOM）的 UTF-16BE 编码。详见<a href="#7922-文本字符类型">7.9.2.2</a>，"Text String Type"。</td>
+        </tr>
+        <tr>
+            <td><strong>PDFDocEncoded string</strong></td>
+            <td>应用于使用 PDFDocEncoding 编码的单字节字符和字形。详见<a href="#7923-pdfdocencoded-字符串类型">7.9.2.3</a>，"PDFDocEncoded String Type"。</td>
+        </tr>
+        <tr>
+            <td><strong>ASCII string</strong></td>
+            <td>应用于使用 ASCII 编码的单字节字符。</td>
+        </tr>
+        <tr>
+            <td><strong>byte string</strong></td>
+            <td>应用于表示为一系列字节的二进制数据，其中每个字节可以是 8 位表示的任何值。字符串可能表示字符但编码未知，字符串中的字节不一定代表字符。此类型用于 MD5 哈希值、签名证书和 Web 捕获标识值等数据。详见<a href="#7924-字节串类型">7.9.2.4</a>，"Byte String Type"。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>表35中描述的字符串类型指定了越来越具体的编码方案，如图7所示。</p>
+<p><a class="glightbox" href="../imgs/f7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f7.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>PDF supports one fundamental string object (see <a href="../s3/#734-字符串对象">7.3.4</a>, "String Objects"). The string object shall be further qualified as a text string, a PDFDocEncoded string, ASCII string, or byte string. The further qualification reflects the encoding used to represent the characters or glyphs described by the string.</p>
+<p>Table 35 summarizes the string object types that represent data encoded using specific conventions.</p>
+<p><table id="table35" markdown="span">
+    <caption>Table 35 – String Object Types</caption>
+    <thead>
+        <tr>
+            <th><strong>Type</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>text string</strong></td>
+            <td>Shall be used for human-readable text, such as text annotations, bookmark names, article names, and document information. These strings shall be encoded using either PDFDocEncoding or UTF-16BE with a leading byte-order marker. <br/>
+            This type is described in <a href="./#7922-文本字符类型">7.9.2.2</a>, "Text String Type."</td>
+        </tr>
+        <tr>
+            <td><strong>PDFDocEncoded string</strong></td>
+            <td>Shall be used for characters and glyphs that are represented in a single byte, using PDFDocEncoding. This type is described in <a href="./#7923-pdfdocencoded-字符串类型">7.9.2.3</a>, "PDFDocEncoded String Type."</td>
+        </tr>
+        <tr>
+            <td><strong>ASCII string</strong></td>
+            <td>Shall be used for characters that are represented in a single byte using ASCII encoding.</td>
+        </tr>
+        <tr>
+            <td><strong>byte string</strong></td>
+            <td>Shall be used for binary data represented as a series of bytes, where each byte can be any value representable in 8 bits. The string may represent characters but the encoding is not known. The bytes of the string need not represent characters. This type shall be used for data such as MD5 hash values, signature certificates, and Web Capture identification values.<br/>
+            This type is described in <a href="./#7924-字节串类型">7.9.2.4</a>, "Byte String Type."</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The string types described in Table 35 specify increasingly specific encoding schemes, as shown in Figure 7.</p>
+<p><a class="glightbox" href="../imgs/f7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f7.png" /></a></p>
+</div>
+</div>
+</div>
+<h3 id="7922-文本字符类型">7.9.2.2 文本字符类型<a class="headerlink" href="#7922-文本字符类型" title="Permanent link">&para;</a></h3>
+<p><strong>Text String Type</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>文本字符串类型应适用于包含旨在供人类读取的信息的字符字符串，例如文本注释、书签名称、文章名称、文档信息等。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>文本字符串类型是字符串类型的子类型，表示使用特定约定编码的数据。</p>
+</div>
+<p>文本字符串类型应用于必须使用 <strong>PDFDocEncoding</strong> 或 UTF-16BE Unicode 字符编码方案编码的字符字符串。<strong>PDFDocEncoding</strong> 可以编码所有 ISO Latin 1 字符集，详见附录 D。UTF-16BE 可以编码所有 Unicode 字符。UTF-16BE 和 Unicode 字符编码由 Unicode 联盟在 <em>Unicode 标准</em> 中描述（参见<a href="../../bibliography/">参考书目</a>）。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p><strong>PDFDocEncoding</strong> 不支持所有 Unicode 字符，而 UTF-16BE 支持。</p>
+</div>
+<p>对于以 Unicode 编码的文本字符串，前两个字节应为 254 和 255。这两个字节表示 Unicode 字节顺序标记 U+FEFF，表示字符串按照 Unicode 标准中指定的 UTF-16BE（大端）编码方案进行编码。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>这种机制排除了使用 <strong>PDFDocEncoding</strong> 以两个字符 thorn ydieresis 开头的字符串的可能性，这不太可能是一个有意义的词语或短语的开头。</p>
+</div>
+<p>处理包含 Unicode 文本字符串的 PDF 文件的符合规范的读取器应准备处理补充字符；即需要超过两个字节表示的字符。</p>
+<p>在 Unicode 文本字符串中的任何位置都可以出现转义序列，以指示后续文本将要使用的语言。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>当无法从文本中使用的字符代码确定语言时，这非常有用。</p>
+</div>
+<p>转义序列应按顺序包括以下元素：</p>
+<p>a) Unicode 值 U+001B（即字节序列 0 和 27）。</p>
+<p>b) 2 字节的 ISO 639 语言代码。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>en 表示英语或 ja 表示日语，编码为 ASCII 字符。</p>
+</div>
+<p>c) （可选）2 字节的 ISO 3166 国家代码。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>US 表示美国或 JP 表示日本。</p>
+</div>
+<p>d) Unicode 值 U+001B。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 5</p>
+<p>ISO 639 和 ISO 3166 定义的完整代码列表可以从国际标准化组织获得（参见<a href="../../bibliography/">参考书目</a>）。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The text string type shall be used for character strings that contain information intended to be human-readable, such as text annotations, bookmark names, article names, document information, and so forth.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Text string type is a subtype of string type and represents data encoded using specific conventions.</p>
+</div>
+<p>The text string type shall be used for character strings that shall be encoded in either <strong>PDFDocEncoding</strong> or the UTF-16BE Unicode character encoding scheme. <strong>PDFDocEncoding</strong> can encode all of the ISO Latin 1 character set and is documented in Annex D. UTF-16BE can encode all Unicode characters. UTF-16BE and Unicode character encoding are described in the <em>Unicode Standard</em> by the Unicode Consortium (see the <a href="../../bibliography/">Bibliography</a>).</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p><strong>PDFDocEncoding</strong> does not support all Unicode characters whereas UTF-16BE does.</p>
+</div>
+<p>For text strings encoded in Unicode, the first two bytes shall be 254 followed by 255. These two bytes represent the Unicode byte order marker, U+FEFF, indicating that the string is encoded in the UTF-16BE (big-endian) encoding scheme specified in the Unicode standard.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>This mechanism precludes beginning a string using <strong>PDFDocEncoding</strong> with the two characters thorn ydieresis, which is unlikely to be a meaningful beginning of a word or phrase.</p>
+</div>
+<p>Conforming readers that process PDF files containing Unicode text strings shall be prepared to handle supplementary characters; that is, characters requiring more than two bytes to represent.</p>
+<p>An escape sequence may appear anywhere in a Unicode text string to indicate the language in which subsequent text shall be written.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>This is useful when the language cannot be determined from the character codes used in the text.</p>
+</div>
+<p>The escape sequence shall consist of the following elements, in order:</p>
+<p>a) The Unicode value U+001B (that is, the byte sequence 0 followed by 27).</p>
+<p>b) A 2- byte ISO 639 language code.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>en for English or ja for Japanese encoded as ASCII characters.</p>
+</div>
+<p>c) (Optional) A 2-byte ISO 3166 country code.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>US for the United States or JP for Japan.</p>
+</div>
+<p>d) The Unicode value U+001B.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 5</p>
+<p>The complete list of codes defined by ISO 639 and ISO 3166 can be obtained from the International Organization for Standardization (see the <a href="../../bibliography/">Bibliography</a>).</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="7923-pdfdocencoded-字符串类型">7.9.2.3 PDFDocEncoded 字符串类型<a class="headerlink" href="#7923-pdfdocencoded-字符串类型" title="Permanent link">&para;</a></h3>
+<p><strong>PDFDocEncoded String Type</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDFDocEncoded 字符串是一个字符字符串，其中字符应使用 PDFDocEncoding 在单个字节中表示。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p><strong>PDFDocEncoding</strong> 不支持所有 Unicode 字符，而 UTF-16BE 支持。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A PDFDocEncoded string is a character string in which the characters shall be represented in a single byte using PDFDocEncoding.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p><strong>PDFDocEncoding</strong> does not support all Unicode characters whereas UTF-16BE does.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="7924-字节串类型">7.9.2.4 字节串类型<a class="headerlink" href="#7924-字节串类型" title="Permanent link">&para;</a></h3>
+<p><strong>Byte String Type</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>字节串类型应用于表示为字节序列的二进制数据，其中每个字节可以是任何可表示为8位值的字节。字节串类型是字符串类型的一个子类型。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>该字符串可能表示字符，但编码未知。字符串的字节可能并不代表字符。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The byte string type shall be used for binary data that shall be represented as a series of bytes, where each byte may be any value representable in 8 bits. Byte string type is a subtype of string type.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The string may represent characters but the encoding is not known. The bytes of the string may not represent characters.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="793-文本流">7.9.3 文本流<a class="headerlink" href="#793-文本流" title="Permanent link">&para;</a></h2>
+<p><strong>Text Streams</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>一个<em>文本流</em>（PDF 1.5）是一个PDF流对象，其未编码的字节应满足与文本字符串相同的要求，这些要求涉及编码、字节顺序和前导字节。</p>
+</div>
+<div class="tabbed-block">
+<p>A <em>text stream</em> (PDF 1.5) shall be a PDF stream object (<a href="../s3/#738-流对象">7.3.8</a>, "Stream Objects") whose unencoded bytes shall meet the same requirements as a text string (<a href="./#7922-文本字符类型">7.9.2.2</a>, "Text String Type") with respect to encoding, byte order, and lead bytes.</p>
+</div>
+</div>
+</div>
+<h2 id="794-日期">7.9.4 日期<a class="headerlink" href="#794-日期" title="Permanent link">&para;</a></h2>
+<p><strong>Dates</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF 中使用的日期值应符合标准日期格式，该格式紧跟国际标准 ASN.1（抽象语法标记一），由 ISO/IEC 8824 定义。日期应为以下形式的文本字符串：</p>
+<mark class="critic block">
+<p><span class="arithmatex">\(D:YYYYMMDDHHmmSSOHH'mm\)</span></p>
+<p>其中：</p>
+<ul>
+<li><strong>YYYY</strong> 表示年份</li>
+<li><strong>MM</strong> 表示月份（01–12）</li>
+<li><strong>DD</strong> 表示日期（01–31）</li>
+<li><strong>HH</strong> 表示小时（00–23）</li>
+<li><strong>mm</strong> 表示分钟（00–59）</li>
+<li><strong>SS</strong> 表示秒（00–59）</li>
+<li><strong>O</strong> 表示当地时间与协调世界时（UT）的关系，用以下字符之一表示：加号（U+002B）(+)，减号（U+002D）(-)，或拉丁大写字母 Z（U+005A）(Z)（见下文）</li>
+<li><strong>HH</strong> 后跟撇号（U+0027）(') 表示与 UT 的时差（00–23）</li>
+<li><strong>mm</strong> 表示与 UT 的分钟差（00–59）</li>
+</ul>
+</mark>
+<p>前缀 <strong>D:</strong> 必须存在，年份字段（YYYY）必须存在，其他字段可以存在，但只有在其前面的所有字段也存在时才可以存在。只有在 <strong>HH</strong> 字段存在时，HH 字段后的撇号才会存在。只有在 HH 字段后的撇号存在时，分钟偏移字段（mm）才会存在。<strong>MM</strong> 和 <strong>DD</strong> 的默认值均为 01；所有其他数字字段的默认值均为零值。<strong>O</strong> 字段的值为加号表示当地时间晚于 UT，减号表示当地时间早于 UT，拉丁大写字母 Z 表示当地时间等于 UT。如果未指定 UT 信息，则认为指定的时间与 UT 之间的关系为 GMT。无论是否指定时区，日期的其余部分应以当地时间表示。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>例如，1998 年 12 月 23 日晚上 7:52，美国太平洋标准时间表示为字符串 D:199812231952-08'00</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Date values used in a PDF shall conform to a standard date format, which closely follows that of the international standard ASN.1 (Abstract Syntax Notation One), defined in ISO/IEC 8824. A date shall be a text string of the form</p>
+<p><mark class="critic"> </p>
+<p>( D : <em>YYYYMMDDHHmmSSOHH</em>' mm )</p>
+<p>where:</p>
+<p><em>YYYY</em> shall be the year</p>
+<p><em>MM</em> shall be the month (01–12)</p>
+<p><em>DD</em> shall be the day (01–31)</p>
+<p><em>HH</em> shall be the hour (00–23)</p>
+<p><em>mm</em> shall be the minute (00–59)</p>
+<p><em>SS</em> shall be the second (00–59)</p>
+<p><em>O</em> shall be the relationship of local time to Universal Time (UT), and shall be denoted by one of the characters PLUS SIGN (U+002B) (+), HYPHEN-MINUS (U+002D) (-), or LATIN CAPITAL LETTER Z (U+005A) (Z) (see below)</p>
+<p><em>HH</em> followed by APOSTROPHE (U+0027) (') shall be the absolute value of the offset from UT in hours (00–23)</p>
+<p><em>mm</em> shall be the absolute value of the offset from UT in minutes (00–59)</p>
+</mark>
+<p>The prefix D: shall be present, the year field (YYYY) shall be present and all other fields may be present but only if all of their preceding fields are also present. The APOSTROPHE following the hour offset field (HH) shall only be present if the HH field is present. The minute offset field (mm) shall only be present if the APOSTROPHE following the hour offset field (HH) is present. The default values for MM and DD shall be both 01; all other numerical fields shall default to zero values. A PLUS SIGN as the value of the O field signifies that local time is later than UT, a HYPHEN-MINUS signifies that local time is earlier than UT, and the LATIN CAPITAL LETTER Z signifies that local time is equal to UT. If no UT information is specified, the relationship of the specified time to UT shall be considered to be GMT. Regardless of whether the time zone is specified, the rest of the date shall be specified in local time.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>For example, December 23, 1998, at 7:52 PM, U.S. Pacific Standard Time, is represented by the string D:199812231952-08'00</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="795-矩形">7.9.5 矩形<a class="headerlink" href="#795-矩形" title="Permanent link">&para;</a></h2>
+<p><strong>Rectangles</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>矩形用于描述页面上的位置以及各种对象的边界框。矩形应写成一个由四个数字组成的数组，这些数字表示一对对角的坐标。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>尽管矩形通常由左下角和右上角指定，但指定任何一对对角是可以接受的。处理 PDF 的应用程序应在需要特定角时准备规范化这些矩形。</p>
+<p>通常，数组的形式为</p>
+<p>[ll<sub>x</sub> ll<sub>y</sub> ur<sub>x</sub> ur<sub>y</sub>]</p>
+<p>指定矩形的左下 x 坐标、左下 y 坐标、右上 x 坐标和右上 y 坐标，按此顺序排列。然后假设矩形的另两个角的坐标为 (ll<sub>x</sub> ur<sub>x</sub>) 和 (ur<sub>x</sub> ll<sub>y</sub>)。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Rectangles are used to describe locations on a page and bounding boxes for a variety of objects. A rectangle shall be written as an array of four numbers giving the coordinates of a pair of diagonally opposite corners.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Although rectangles are conventionally specified by their lower-left and upper-right corners, it is acceptable to specify any two diagonally opposite corners. Applications that process PDF should be prepared to normalize such rectangles in situations where specific corners are required.</p>
+<p>Typically, the array takes the form</p>
+<p>[ll<sub>x</sub> ll<sub>y</sub> ur<sub>x</sub> ur<sub>y</sub>]</p>
+<p>specifying the lower-left x, lower-left y, upper-right x, and upper-right y coordinates of the rectangle, in that order. The other two corners of the rectangle are then assumed to have coordinates (ll_x, ur_y) and (ur_x, ll_y).</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="796-名称树">7.9.6 名称树<a class="headerlink" href="#796-名称树" title="Permanent link">&para;</a></h2>
+<p><strong>Name Trees</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>名称树(name tree)</em>的用途与字典类似——关联键和值——但方式不同。名称树与字典有以下重要区别：</p>
+<ul>
+<li>名称树中的键是字符串，而字典中的键是名称对象。</li>
+<li>键是有序的。</li>
+<li>键关联的值可以是任何类型的对象。流对象应通过间接对象引用指定（见 <a href="../s3/#738-流对象">7.3.8</a>，"流对象"）。字典、数组和字符串对象应通过间接对象引用指定，而其他 PDF 对象（空值、数字、布尔值和名称）应指定为直接对象。</li>
+<li>数据结构可以表示任意大的键值对集合，可以高效查找，而无需从 PDF 文件中读取整个数据结构。（相对而言，字典可能受其能包含条目数量的实现限制。）</li>
+</ul>
+<p>名称树应由<em>节点</em>构成，每个节点应为一个字典对象。表 36 显示了节点字典中的条目。节点应有三种类型，取决于它们包含的特定条目。树始终应有且仅有一个<em>根节点</em>，该节点应包含一个条目：<strong>Kids</strong> 或 <strong>Names</strong>，但不能同时包含两者。如果根节点有一个 <strong>Names</strong> 条目，它应是树中的唯一节点。如果它有一个 <strong>Kids</strong> 条目，剩下的每个节点应是包含 <strong>Limits</strong> 条目和 <strong>Kids</strong> 条目的<em>中间节点</em>，或者是包含 <strong>Limits</strong> 条目和 <strong>Names</strong> 条目的<em>叶节点</em>。</p>
+<p><table id="table36" markdown="span">
+    <caption><strong>Table 36 – 名称树节点字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Kids</strong></td>
+            <td>array</td>
+            <td>(<em>仅根节点和中间节点；中间节点必需；根节点中仅在没有</em><em>Names</em><em>时存在</em>) 应为间接引用此节点的直接子节点的数组。子节点可以是中间节点或叶节点。</td>
+        </tr>
+        <tr>
+            <td><strong>Names</strong></td>
+            <td>array</td>
+            <td>(<em>仅根节点和叶节点；叶节点必需；根节点中仅在没有</em><em>Kids</em><em>时存在</em>) 应为形如 <br/>
+            [ key<sub>1</sub> value<sub>1</sub> key<sub>2</sub> value<sub>2</sub> … key<sub>n</sub> value<sub>n</sub>]<br/>
+                的数组，其中每个 key<sub>i</sub> 应为字符串，对应的 value<sub>i</sub> 应为与该键关联的对象。键应按字典顺序排列，如下所述。</td>
+        </tr>
+        <tr>
+            <td><strong>Limits</strong></td>
+            <td>array</td>
+            <td>(<em>仅中间节点和叶节点；必需</em>) 应为包含两个字符串的数组，这两个字符串应指定叶节点<strong>Names</strong>数组或中间节点任何子叶节点的<strong>Names</strong>数组中包含的（按字典顺序）最小和最大键。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>以下是一个名称树的简化大纲，显示了对象编号和节点，该名称树将从锕到锆的所有化学元素的名称映射到它们的原子序数。</p>
+<p>例子名称树</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1: Root node
+    2: Intermediate node: Actinium to Gold
+        5: Leaf node: Actinium = 25, … , Astatine = 31
+            25: Integer: 89
+            …
+            31: Integer: 85
+        …
+        11: Leaf node: Gadolinium = 56, … , Gold = 59
+            56: Integer: 64
+            …
+            59: Integer: 79
+    3: Intermediate node: Hafnium to Protactinium
+        12: Leaf node: Hafnium = 60, … , Hydrogen = 65
+            60: Integer: 72
+            …
+            65: Integer: 1
+        …
+        19: Leaf node: Palladium = 92, … , Protactinium = 100
+            92: Integer: 46
+            …
+            100:Integer: 91
+    4: Intermediate node: Radium to Zirconium
+        20: Leaf node: Radium = 101, … , Ruthenium = 107
+            101:Integer: 89
+            …
+            107:Integer: 85
+        …
+        24: Leaf node: Xenon = 129, … , Zirconium = 133
+            129:Integer: 54
+            …
+            133:Integer: 40
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>以下展示了这个树在PDF文件中的表示。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj
+    &lt;&lt; /Kids [ 2 0 R        <span style="color: #3D7B7B; font-style: italic">% Root node</span>
+               3 0 R
+               4 0 R
+             ]
+        &gt;&gt;
+endobj
+
+2 0 obj                    
+    &lt;&lt; /Limits [ ( Actinium ) ( Gold ) ]    <span style="color: #3D7B7B; font-style: italic">% Intermediate node</span>
+        /Kids [ 5 0 R
+                6 0 R
+                7 0 R
+                8 0 R
+                9 0 R
+                10 0 R
+                11 0 R
+              ]
+    &gt;&gt;
+endobj
+
+3 0 obj                    
+    &lt;&lt; /Limits [ ( Hafnium ) ( Protactinium ) ]   <span style="color: #3D7B7B; font-style: italic">% Intermediate node</span>
+        /Kids [ 12 0 R
+                13 0 R
+                14 0 R
+                15 0 R
+                16 0 R
+                17 0 R
+                18 0 R
+                19 0 R
+              ]
+    &gt;&gt;
+endobj
+
+4 0 obj                   
+    &lt;&lt; /Limits [ ( Radium ) ( Zirconium ) ]   <span style="color: #3D7B7B; font-style: italic">% Intermediate node</span>
+       /Kids [ 20 0 R
+               21 0 R
+               22 0 R
+               23 0 R
+               24 0 R
+             ]
+    &gt;&gt;
+endobj
+
+5 0 obj
+    &lt;&lt; /Limits [ ( Actinium ) ( Astatine ) ]    <span style="color: #3D7B7B; font-style: italic">% Leaf node</span>
+       /Names [ ( Actinium ) 25 0 R
+                ( Aluminum ) 26 0 R
+                ( Americium ) 27 0 R
+                ( Antimony ) 28 0 R
+                ( Argon ) 29 0 R
+                ( Arsenic ) 30 0 R
+                ( Astatine ) 31 0 R
+              ]
+    &gt;&gt;
+endobj
+…
+24 0 obj
+    &lt;&lt; /Limits [ ( Xenon ) ( Zirconium ) ]    <span style="color: #3D7B7B; font-style: italic">% Leaf node</span>
+       /Names [ ( Xenon ) 129 0 R
+                ( Ytterbium ) 130 0 R
+                ( Yttrium ) 131 0 R
+                ( Zinc ) 132 0 R
+                ( Zirconium ) 133 0 R
+              ]
+    &gt;&gt;
+endobj
+
+25 0 obj
+    89    <span style="color: #3D7B7B; font-style: italic">% Atomic number (Actinium)</span>
+endobj
+
+
+…
+
+133 0 obj
+    40    <span style="color: #3D7B7B; font-style: italic">% Atomic number (Zirconium)</span>
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A <em>name tree</em> serves a similar purpose to a dictionary—associating keys and values—but by different means. A name tree differs from a dictionary in the following important ways:</p>
+<ul>
+<li>Unlike the keys in a dictionary, which are name objects, those in a name tree are strings.</li>
+<li>The keys are ordered.</li>
+<li>The values associated with the keys may be objects of any type. Stream objects shall be specified by indirect object references (<a href="../s3/#738-流对象">7.3.8</a>, "Stream Objects"). The dictionary, array, and string objects should be specified by indirect object references, and other PDF objects (nulls, numbers, booleans, and names) should be specified as direct objects.</li>
+<li>The data structure can represent an arbitrarily large collection of key-value pairs, which can be looked up efficiently without requiring the entire data structure to be read from the PDF file. (In contrast, a dictionary can be subject to an implementation limit on the number of entries it can contain.)</li>
+</ul>
+<p>A name tree shall be constructed of <em>nodes</em>, each of which shall be a dictionary object. Table 36 shows the entries in a node dictionary. The nodes shall be of three kinds, depending on the specific entries they contain. The tree shall always have exactly one <em>root node</em>, which shall contain a single entry: either <strong>Kids</strong> or <strong>Names</strong> but not both. If the root node has a <strong>Names</strong> entry, it shall be the only node in the tree. If it has a <strong>Kids</strong> entry, each of the remaining nodes shall be either an <em>intermediate node</em>, that shall contain a <strong>Limits</strong> entry and a <strong>Kids</strong> entry, or a <em>leaf node</em>, that shall contain a <strong>Limits</strong> entry and a <strong>Names</strong> entry.</p>
+<p><table id="table36" markdown="span">
+    <caption><strong>Table 36 – Entries in a name tree node dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Kids</strong></td>
+            <td>array</td>
+            <td>(<em>Root and intermediate nodes only; required in intermediate nodes; present in the root node if and only if </em><em>Names</em><em> is not present</em>) Shall be an array of indirect references to the immediate children of this node. The children may be intermediate or leaf nodes.</td>
+        </tr>
+        <tr>
+            <td><strong>Names</strong></td>
+            <td>array</td>
+            <td>(Root and leaf nodes only; required in leaf nodes; present in the root node if and only if Kids is not present) Shall be an array of the form <br/>
+            [ key<sub>1</sub> value<sub>1</sub> key<sub>2</sub> value<sub>2</sub> … key<sub>n</sub> value<sub>n</sub>]<br/>
+                where each key<sub>i</sub> shall be a string and the corresponding valuei shall be the object associated with that key. The keys shall be sorted in lexical order, as described below.</td>
+        </tr>
+        <tr>
+            <td><strong>Limits</strong></td>
+            <td>array</td>
+            <td>(<em>Intermediate and leaf nodes only; required</em>) Shall be an array of two strings, that shall specify the (lexically) least and greatest keys included in the <strong>Names</strong> array of a leaf node or in the <strong>Names</strong> arrays of any leaf nodes that are descendants of an intermediate node.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The <strong>Kids</strong> entries in the root and intermediate nodes define the tree’s structure by identifying the immediate children of each node. The <strong>Names</strong> entries in the leaf (or root) nodes shall contain the tree’s keys and their associated values, arranged in key-value pairs and shall be sorted lexically in ascending order by key. Shorter keys shall appear before longer ones beginning with the same byte sequence. Any encoding of the keys may be used as long as it is self-consistent; keys shall be compared for equality on a simple byte-by-byte basis.</p>
+<p>The keys contained within the various nodes’ <strong>Names</strong> entries shall not overlap; each <strong>Names</strong> entry shall contain a single contiguous range of all the keys in the tree. In a leaf node, the <strong>Limits</strong> entry shall specify the least and greatest keys contained within the node’s <strong>Names</strong> entry. In an intermediate node, it shall specify the least and greatest keys contained within the <strong>Names</strong> entries of any of that node’s descendants. The value associated with a given key can thus be found by walking the tree in order, searching for the leaf node whose <strong>Names</strong> entry contains that key.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>The following is an abbreviated outline, showing object numbers and nodes, of a name tree that maps the names of all the chemical elements, from actinium to zirconium, to their atomic numbers. </p>
+<p>Example of a name tree</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1: Root node
+    2: Intermediate node: Actinium to Gold
+        5: Leaf node: Actinium = 25, … , Astatine = 31
+            25: Integer: 89
+            …
+            31: Integer: 85
+        …
+        11: Leaf node: Gadolinium = 56, … , Gold = 59
+            56: Integer: 64
+            …
+            59: Integer: 79
+    3: Intermediate node: Hafnium to Protactinium
+        12: Leaf node: Hafnium = 60, … , Hydrogen = 65
+            60: Integer: 72
+            …
+            65: Integer: 1
+        …
+        19: Leaf node: Palladium = 92, … , Protactinium = 100
+            92: Integer: 46
+            …
+            100:Integer: 91
+    4: Intermediate node: Radium to Zirconium
+        20: Leaf node: Radium = 101, … , Ruthenium = 107
+            101:Integer: 89
+            …
+            107:Integer: 85
+        …
+        24: Leaf node: Xenon = 129, … , Zirconium = 133
+            129:Integer: 54
+            …
+            133:Integer: 40
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>The following shows the representation of this tree in a PDF file</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj
+    &lt;&lt; /Kids [ 2 0 R        <span style="color: #3D7B7B; font-style: italic">% Root node</span>
+               3 0 R
+               4 0 R
+             ]
+        &gt;&gt;
+endobj
+
+2 0 obj                    
+    &lt;&lt; /Limits [ ( Actinium ) ( Gold ) ]    <span style="color: #3D7B7B; font-style: italic">% Intermediate node</span>
+        /Kids [ 5 0 R
+                6 0 R
+                7 0 R
+                8 0 R
+                9 0 R
+                10 0 R
+                11 0 R
+              ]
+    &gt;&gt;
+endobj
+
+3 0 obj                    
+    &lt;&lt; /Limits [ ( Hafnium ) ( Protactinium ) ]   <span style="color: #3D7B7B; font-style: italic">% Intermediate node</span>
+        /Kids [ 12 0 R
+                13 0 R
+                14 0 R
+                15 0 R
+                16 0 R
+                17 0 R
+                18 0 R
+                19 0 R
+              ]
+    &gt;&gt;
+endobj
+
+4 0 obj                   
+    &lt;&lt; /Limits [ ( Radium ) ( Zirconium ) ]   <span style="color: #3D7B7B; font-style: italic">% Intermediate node</span>
+       /Kids [ 20 0 R
+               21 0 R
+               22 0 R
+               23 0 R
+               24 0 R
+             ]
+    &gt;&gt;
+endobj
+
+5 0 obj
+    &lt;&lt; /Limits [ ( Actinium ) ( Astatine ) ]    <span style="color: #3D7B7B; font-style: italic">% Leaf node</span>
+       /Names [ ( Actinium ) 25 0 R
+                ( Aluminum ) 26 0 R
+                ( Americium ) 27 0 R
+                ( Antimony ) 28 0 R
+                ( Argon ) 29 0 R
+                ( Arsenic ) 30 0 R
+                ( Astatine ) 31 0 R
+              ]
+    &gt;&gt;
+endobj
+…
+24 0 obj
+    &lt;&lt; /Limits [ ( Xenon ) ( Zirconium ) ]    <span style="color: #3D7B7B; font-style: italic">% Leaf node</span>
+       /Names [ ( Xenon ) 129 0 R
+                ( Ytterbium ) 130 0 R
+                ( Yttrium ) 131 0 R
+                ( Zinc ) 132 0 R
+                ( Zirconium ) 133 0 R
+              ]
+    &gt;&gt;
+endobj
+
+25 0 obj
+    89    <span style="color: #3D7B7B; font-style: italic">% Atomic number (Actinium)</span>
+endobj
+
+
+…
+
+133 0 obj
+    40    <span style="color: #3D7B7B; font-style: italic">% Atomic number (Zirconium)</span>
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="797-number树">7.9.7 Number树<a class="headerlink" href="#797-number树" title="Permanent link">&para;</a></h2>
+<p><strong>Number Trees</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>一个<em>数字树(number tree)</em>类似于名称树（见<a href="./#796-名称树">7.9.6</a>，“名称树”），只不过它的键应该是整数而不是字符串，并且应该按升序数值顺序排序。在叶节点（或根节点）中包含键值对的条目应该命名为<strong>Nums</strong>，而不是名称树中的<strong>Names</strong>。<a href="#table37">表37</a>显示了数字树节点字典中的条目。</p>
+<p><table id="table37" markdown="span">
+    <caption><strong>Table 37 – 数字树节点字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Kids</strong></td>
+            <td>array</td>
+            <td>(<em>仅根节点和中间节点；中间节点必需；根节点中仅在没有 </em><em>Nums</em><em> 时存在</em>) 应为间接引用此节点的直接子节点的数组。子节点可以是中间节点或叶节点。</td>
+        </tr>
+        <tr>
+            <td><strong>Nums</strong></td>
+            <td>array</td>
+            <td>(<em>仅根节点和叶节点；叶节点必需；根节点中仅在没有 </em><em>Kids</em><em> 时存在</em>) 应为形如<br/>
+            [ key<sub>1</sub> value<sub>1</sub> key<sub>2</sub> value<sub>2</sub> … key<sub>n</sub> value<sub>n</sub>]<br/>
+            的数组，其中每个 key<sub>i</sub> 是整数，对应的 value<sub>i</sub> 应为与该键关联的对象。键应按数值顺序排序，类似于 <a href="./#796-名称树">7.9.6</a> "名称树" 中描述的名称树中键的排列方式。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Limits</strong></td>
+            <td>array</td>
+            <td>(<em>仅中间节点和叶节点必需</em>) 应为包含两个整数的数组，这两个整数应指定叶节点的 <strong>Nums</strong> 数组或中间节点的任何子叶节点的 <strong>Nums</strong> 数组中包含的（数值上）最小和最大键。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A <em>number tree</em> is similar to a name tree (see <a href="./#796-名称树">7.9.6</a>, "Name Trees"), except that its keys shall be integers instea of strings and shall be sorted in ascending numerical order. The entries in the leaf (or root) nodes containin the key-value pairs shall be named <strong>Nums</strong> instead of <strong>Names</strong> as in a name tree. <a href="#table37">Table 37</a> shows the entries in  number tree’s node dictionaries.</p>
+<p><table id="table37" markdown="span">
+    <caption><strong>Table 37 – Entries in a number tree node dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Kids</strong></td>
+            <td>array</td>
+            <td>(<em>Root and intermediate nodes only; required in intermediate nodes; present in the root node if and only if </em><em>Nums</em><em> is not present</em>) Shall be an array of indirect references to the immediate children of this node. The children may be intermediate or leaf nodes.</td>
+        </tr>
+        <tr>
+            <td><strong>Nums</strong></td>
+            <td>array</td>
+            <td>(<em>Root and leaf nodes only; shall be required in leaf nodes; present in the root node if and only if </em><em>Kids</em><em> is not present</em>) Shall be an array of the form<br/>
+            [ key<sub>1</sub> value<sub>1</sub> key<sub>2</sub> value<sub>2</sub> … key<sub>n</sub> value<sub>n</sub>]<br/>
+            where each <em>key</em><sub>i</sub> is an integer and the corresponding valuei shall be the object associated with that key. The keys shall be sorted in numerical order, analogously to the arrangement of keys in a name tree as described in <a href="./#796-名称树">7.9.6</a>, "Name Trees."
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Limits</strong></td>
+            <td>array</td>
+            <td>(<em>Shall be present in Intermediate and leaf nodes only</em>) Shall be an array of two integers, that shall specify the (numerically) least and greatest keys included in the <strong>Nums</strong> array of a leaf node or in the <strong>Nums</strong> arrays of any leaf nodes that are descendants of an intermediate node.</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月4日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

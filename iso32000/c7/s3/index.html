@@ -1,0 +1,2823 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s2/">
+      
+      
+        <link rel="next" href="../s4/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>7.3 对象 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#73-对象" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7.3 对象
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            7语法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 词汇惯例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    7.3 对象
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    7.3 对象
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#731-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#732-布尔对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.2 布尔对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#733-数字对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.3 数字对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#734-字符串对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.4 字符串对象
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3.4 字符串对象">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7341-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7342-文字字符串" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.4.2 文字字符串
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7343-十六进制字符串" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.4.3 十六进制字符串
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#735-名称对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.5 名称对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#736-数组对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.6 数组对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#737-字典对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.7 字典对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#738-流对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.8 流对象
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3.8 流对象">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7381-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.8.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7382-流范围" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.8.2 流范围
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#739-空对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.9 空对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7310-间接对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.10 间接对象
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.4 过滤器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.5 文件结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.6 加密
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.7 文档结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.8 内容流和资源
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.9 公共数据结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.10 函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.11 文件规范
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.12 扩展字典
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#731-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#732-布尔对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.2 布尔对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#733-数字对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.3 数字对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#734-字符串对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.4 字符串对象
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3.4 字符串对象">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7341-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7342-文字字符串" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.4.2 文字字符串
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7343-十六进制字符串" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.4.3 十六进制字符串
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#735-名称对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.5 名称对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#736-数组对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.6 数组对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#737-字典对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.7 字典对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#738-流对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.8 流对象
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3.8 流对象">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7381-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.8.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7382-流范围" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.8.2 流范围
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#739-空对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.9 空对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7310-间接对象" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3.10 间接对象
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="73-对象">7.3 对象<a class="headerlink" href="#73-对象" title="Permanent link">&para;</a></h1>
+<p><strong>Objects</strong></p>
+<h2 id="731-概述">7.3.1 概述<a class="headerlink" href="#731-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF包括八种基本类型的对象：布尔值、整数和实数、字符串、名称、数组、字典、流和空对象。</p>
+<p>对象可以被标记，以便它们可以被其他对象引用。一个被标记的对象称为间接对象（见<a href="#7310-间接对象">7.3.10</a>，“间接对象”）。</p>
+<p>每种对象类型的创建方法以及它们作为间接对象的正确引用方式在<a href="#732-布尔对象">7.3.2</a>，“布尔对象”到<a href="#7310-间接对象">7.3.10</a>，“间接对象”中有描述。</p>
+</div>
+<div class="tabbed-block">
+<p>PDF includes eight basic types of objects: Boolean values, Integer and Real numbers, Strings, Names, Arrays, Dictionaries, Streams, and the null object.</p>
+<p>Objects may be labelled so that they can be referred to by other objects. A labelled object is called an indirect object (see <a href="#7310-间接对象">7.3.10</a>, "Indirect Objects").</p>
+<p>Each object type, their method of creation and their proper referencing as indirect objects is described in <a href="#732-布尔对象">7.3.2</a>, "Boolean Objects" through <a href="#7310-间接对象">7.3.10</a>, "Indirect Objects."</p>
+</div>
+</div>
+</div>
+<h2 id="732-布尔对象">7.3.2 布尔对象<a class="headerlink" href="#732-布尔对象" title="Permanent link">&para;</a></h2>
+<p><strong>Boolean Objects</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>布尔对象表示逻辑值真（true）和假（false）。它们在PDF文件中分别使用关键词<strong>true</strong>和<strong>false</strong>来表示。</p>
+</div>
+<div class="tabbed-block">
+<p><em>Boolean</em> objects represent the logical values of true and false. They appear in PDF files using the keywords <strong>true</strong> and <strong>false</strong>.</p>
+</div>
+</div>
+</div>
+<h2 id="733-数字对象">7.3.3 数字对象<a class="headerlink" href="#733-数字对象" title="Permanent link">&para;</a></h2>
+<p><strong>Numeric Objects</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF提供了两种类型的数值对象：整数和实数。 <em>整数对象</em> 表示数学上的整数。<em>实数对象</em> 表示数学上的实数。数值的范围和精度可能会受到运行符合规范的阅读器的计算机内部表示形式的限制；附录C给出了典型实现的限制。</p>
+<p>一个整数应写成一个或多个十进制数字，前面可以有符号。该值应被解释为一个有符号的十进制整数，并应转换为一个整数对象。</p>
+<div class="admonition info">
+<p class="admonition-title">Example 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Integer objects
+123  43445  +17  -98  0
+</code></pre></div>
+</div>
+<p>一个实数值应写成一个或多个十进制数字，有一个可选的符号和一个前导、尾随或嵌入式的句点（2Eh）（小数点）。该值应被解释为一个实数，并应转换为一个实数对象。</p>
+<div class="admonition info">
+<p class="admonition-title">Example 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Real objects
+34.5  -3.62  +123.6  4.  -.002  0.0
+</code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>符合规范的写入器不应使用非十进制基数的PostScript语法（例如16#FFFE）或指数格式（例如6.02E23）的数字。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>在整个标准中，术语<em>数字</em>指的是类型可以是整数或实数的对象。在预期需要实数的地方，可以使用整数代替。例如，不必将数字1.0写成实数格式；整数1就足够了。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>PDF provides two types of numeric objects: integer and real. <em>Integer objects</em> represent mathematical integers. <em>Real objects</em> represent mathematical real numbers. The range and precision of numbers may be limited by the internal representations used in the computer on which the conforming reader is running; Annex C gives these limits for typical implementations.</p>
+<p>An integer shall be written as one or more decimal digits optionally preceded by a sign. The value shall be interpreted as a signed decimal integer and shall be converted to an integer object.</p>
+<div class="admonition info">
+<p class="admonition-title">Example 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Integer objects
+123  43445  +17  -98  0
+</code></pre></div>
+</div>
+<p>A real value shall be written as one or more decimal digits with an optional sign and a leading, trailing, or embedded PERIOD (2Eh) (decimal point). The value shall be interpreted as a real number and shall be converted to a real object.</p>
+<div class="admonition info">
+<p class="admonition-title">Example 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Real objects
+34.5  -3.62  +123.6  4.  -.002  0.0
+</code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>A conforming writer shall not use the PostScript syntax for numbers with non-decimal radices (such as 16#FFFE) or in exponential format (such as 6.02E23).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Throughout this standard, the term <em>number</em> refers to an object whose type may be either integer or real. Wherever a real number is expected, an integer may be used instead. For example, it is not necessary to write the number 1.0 in real format; the integer 1 is sufficient.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="734-字符串对象">7.3.4 字符串对象<a class="headerlink" href="#734-字符串对象" title="Permanent link">&para;</a></h2>
+<p><strong>String Objects</strong></p>
+<h3 id="7341-概述">7.3.4.1 概述<a class="headerlink" href="#7341-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>字符串对象应由零个或多个字节组成。字符串对象不是整数对象，而是以更紧凑的格式存储。字符串的长度可能受到实现限制；见附录C。</p>
+<p>字符串对象应以以下两种方式之一书写：</p>
+<ul>
+<li>作为用括号（ ）包围的一系列文字字符（使用左括号(28h)和右括号(29h)）；见<a href="#7342-文字字符串">7.3.4.2</a>，“文字字符串”。</li>
+<li>作为用尖括号<code>&lt;</code> <code>&gt;</code>包围的十六进制数据（使用小于号(3Ch)和大于号(3Eh)）；见<a href="#7343-十六进制字符串">7.3.4.3</a>，“十六进制字符串”。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>在许多上下文中，对字符串值内容的解释存在约定。本子条款仅定义了将字符串作为字节序列的基本语法；特定上下文中字符串内容的约定或规则在定义这些特定上下文时描述。</p>
+<p><a href="../s9/#792-字符对象类型">7.9.2</a>，“字符串对象类型”，描述了用于字符串对象内容的编码方案。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A <em>string</em> object shall consist of a series of zero or more bytes. String objects are not integer objects, but are stored in a more compact format. The length of a string may be subject to implementation limits; see Annex C.</p>
+<p>String objects shall be written in one of the following two ways:</p>
+<ul>
+<li>As a sequence of literal characters enclosed in parentheses ( ) (using LEFT PARENTHESIS (28h) and RIGHT PARENThESIS (29h)); see <a href="#7342-文字字符串">7.3.4.2</a>, "Literal Strings."</li>
+<li>As hexadecimal data enclosed in angle brackets <code>&lt;</code> <code>&gt;</code> (using LESS-THAN SIGN (3Ch) and GREATER- THAN SIGN (3Eh)); see <a href="#7343-十六进制字符串">7.3.4.3</a>, "Hexadecimal Strings."</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>In many contexts, conventions exist for the interpretation of the contents of a string value. This sub-clause defines only the basic syntax for writing a string as a sequence of bytes; conventions or rules governing the contents of strings in particular contexts are described with the definition of those particular contexts.</p>
+<p><a href="../s9/#792-字符对象类型">7.9.2</a>, "String Object Types," describes the encoding schemes used for the contents of string objects.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="7342-文字字符串">7.3.4.2 文字字符串<a class="headerlink" href="#7342-文字字符串" title="Permanent link">&para;</a></h3>
+<p><strong>Literal Strings</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在文字字符串中，反向固态字符（REVERSE SOLIDUS，5Ch）被用作转义字符。紧随反向固态字符之后的角色号决定了它的确切解释，如表3所示。如果紧随反向固态字符之后的角色号不是表3中显示的那些，那么将忽略反向固态字符。</p>
+<div class="admonition info">
+<p class="admonition-title">Example 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>The following are valid literal strings:
+( This is a string )
+( Strings may contain newlines
+and such . )
+( Strings may contain balanced parentheses ( ) and
+special characters ( * ! &amp; } ^ % and so on ) . )
+( The following is an empty string . )
+()
+( It has zero ( 0 ) length . )
+</code></pre></div>
+</div>
+<p>表3中列出了反向固态字符转义序列的解释。如果字符串中的某个字符需要表示其自身，或者需要表示表3中没有列出的转义序列，可以使用反向固态字符加上字符本身来实现。例如，要表示一个左括号，可以使用<code>\(</code>。如果反向固态字符后面的字符不是表3中的转义序列之一，那么反向固态字符将被忽略。</p>
+<p><table id="table3">
+    <caption>Table 3 – 文字字符串中的转义序列</caption>
+    <thead>
+        <tr>
+            <th><strong>序列</strong></th>
+            <th><strong>意义</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>\n</td>
+            <td>换行符 (0Ah) (LF)</td>
+        </tr>
+        <tr>
+            <td>\r</td>
+            <td>回车符 (0Dh) (CR)</td>
+        </tr>
+        <tr>
+            <td>\t</td>
+            <td>水平制表符 (09h) (HT)</td>
+        </tr>
+        <tr>
+            <td>\b</td>
+            <td>退格符 (08h) (BS)</td>
+        </tr>
+        <tr>
+            <td>\f</td>
+            <td>表单馈送 (FF)</td>
+        </tr>
+        <tr>
+            <td>&#92;(</td>
+            <td>左括号 (28h)</td>
+        </tr>
+        <tr>
+            <td>&#92;)</td>
+            <td>右括号 (29h)</td>
+        </tr>
+        <tr>
+            <td>&#92;&#92;</td>
+            <td>反斜杠 (5Ch) (Backslash)</td>
+        </tr>
+        <tr>
+            <td>\ddd</td>
+            <td>字符代码 ddd (八进制/octal)</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>符合规范的写入器可以将文字字符串分割到多行。行尾的反斜杠（REVERSE SOLIDUS，5Ch）用于表示字符串在下一行继续。符合规范的阅读器在读取字符串时将忽略反斜杠和随后的行结束标记；生成的字符串值应与未分割时读取的值相同。</p>
+<div class="admonition info">
+<p class="admonition-title">Example 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>( These \
+two strings \
+are the same . )
+( These two strings are the same . )
+</code></pre></div>
+</div>
+<p>如果行结束标记内出现在文字字符串中，并且没有前面的反斜杠，应被视为字节值(0Ah)，不管行结束标记是回车符(0Dh)、换行符(0Ah)，还是两者都有。</p>
+<div class="admonition info">
+<p class="admonition-title">Example 3</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>( This string has an end-of-line at the end of it .
+)
+( So does this one .\n )
+</code></pre></div>
+</div>
+<p>\ddd 转义序列提供了一种表示非打印ASCII字符集字符的方法。</p>
+<div class="admonition info">
+<p class="admonition-title">Example 4</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>( This string contains \245two octal characters\307 . )
+</code></pre></div>
+</div>
+<p>ddd数字可以由一个、两个或三个八进制数字组成；高阶溢出将被忽略。如果字符串的下一个字符也是一个数字，应使用三个八进制数字，并在需要时用前导零填充。</p>
+<div class="admonition info">
+<p class="admonition-title">Example 5</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>the literal
+( \0053 )
+denotes a string containing two characters, \005 (Control-E) followed by the digit 3, whereas both
+( \053 )
+and
+( \53 )
+denote strings containing the single character \053, a plus sign (+).
+</code></pre></div>
+</div>
+<p>由于任何8位值都可能出现在字符串中（对于反斜杠和不平衡的括号使用适当的转义），\ddd 符号提供了一种仅使用ASCII字符来指定ASCII字符集之外的字符的方法。然而，任何8位值都可能出现在字符串中，可以表示为它自己或使用 \ddd 符号描述。</p>
+<p>当文档被加密时（见<a href="../s6/">7.6</a>，“加密”），它的所有字符串都被加密；加密的字符串值包含任意的8位值。使用文字字符串形式写入加密字符串时，符合规范的写入器应遵循描述的规则。也就是说，反斜杠字符应用作转义，以指定不平衡的括号或反斜杠字符本身。反斜杠可能（但不是必须）用于指定其他任意的8位值。</p>
+</div>
+<div class="tabbed-block">
+<p>A <em>literal string</em> shall be written as an arbitrary number of characters enclosed in parentheses. Any characters may appear in a string except unbalanced parentheses (LEFT PARENHESIS (28h) and RIGHT PARENTHESIS (29h)) and the backslash (REVERSE SOLIDUS (5Ch)), which shall be treated specially as described in this sub-clause. Balanced pairs of parentheses within a string require no special treatment.</p>
+<div class="admonition info">
+<p class="admonition-title">Example 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>The following are valid literal strings:
+( This is a string )
+( Strings may contain newlines
+and such . )
+( Strings may contain balanced parentheses ( ) and
+special characters ( * ! &amp; } ^ % and so on ) . )
+( The following is an empty string . )
+()
+( It has zero ( 0 ) length . )
+</code></pre></div>
+</div>
+<p>Within a literal string, the REVERSE SOLIDUS is used as an escape character. The character immediately following the REVERSE SOLIDUS determines its precise interpretation as shown in Table 3. If the character following the REVERSE SOLIDUS is not one of those shown in Table 3, the REVERSE SOLIDUS shall be ignored.</p>
+<p><table id="table3">
+    <caption>Table 3 – Escape sequences in literal strings</caption>
+    <thead>
+        <tr>
+            <th><strong>Sequence</strong></th>
+            <th><strong>Meaning</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>\n</td>
+            <td>LINE FEED (0Ah) (LF)</td>
+        </tr>
+        <tr>
+            <td>\r</td>
+            <td>CARRIAGE RETURN (0Dh) (CR)</td>
+        </tr>
+        <tr>
+            <td>\t</td>
+            <td>HORIZONTAL TAB (09h) (HT)</td>
+        </tr>
+        <tr>
+            <td>\b</td>
+            <td>BACKSPACE (08h) (BS)</td>
+        </tr>
+        <tr>
+            <td>\f</td>
+            <td>FORM FEED (FF)</td>
+        </tr>
+        <tr>
+            <td>&#92;(</td>
+            <td>LEFT PARENTHESIS (28h)</td>
+        </tr>
+        <tr>
+            <td>&#92;)</td>
+            <td>RIGHT PARENTHESIS (29h)</td>
+        </tr>
+        <tr>
+            <td>&#92;&#92;</td>
+            <td>REVERSE SOLIDUS (5Ch) (Backslash)</td>
+        </tr>
+        <tr>
+            <td>\ddd</td>
+            <td>Character code ddd (octal)</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>A conforming writer may split a literal string across multiple lines. The REVERSE SOLIDUS (5Ch) (backslas character) at the end of a line shall be used to indicate that the string continues on the following line.  conforming reader shall disregard the REVERSE SOLIDUS and the end-of-line marker following it whe reading the string; the resulting string value shall be identical to that which would be read if the string were no split.</p>
+<div class="admonition info">
+<p class="admonition-title">Example 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>( These \
+two strings \
+are the same . )
+( These two strings are the same . )
+</code></pre></div>
+</div>
+<p>An end-of-line marker appearing within a literal string without a preceding REVERSE SOLIDUS shall be treated as a byte value of (0Ah), irrespective of whether the end-of-line marker was a CARRIAGE RETURN (0Dh), a LINE FEED (0Ah), or both.</p>
+<div class="admonition info">
+<p class="admonition-title">Example 3</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>( This string has an end-of-line at the end of it .
+)
+( So does this one .\n )
+</code></pre></div>
+</div>
+<p>The \ddd escape sequence provides a way to represent characters outside the printable ASCII character set.</p>
+<div class="admonition info">
+<p class="admonition-title">Example 4</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>( This string contains \245two octal characters\307 . )
+</code></pre></div>
+</div>
+<p>The number ddd may consist of one, two, or three octal digits; high-order overflow shall be ignored. Three octal digits shall be used, with leading zeros as needed, if the next character of the string is also a digit.</p>
+<div class="admonition info">
+<p class="admonition-title">Example 5</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>the literal
+( \0053 )
+denotes a string containing two characters, \005 (Control-E) followed by the digit 3, whereas both
+( \053 )
+and
+( \53 )
+denote strings containing the single character \053, a plus sign (+).
+</code></pre></div>
+</div>
+<p>Since any 8-bit value may appear in a string (with proper escaping for REVERSE SOLIDUS (backslash) and unbalanced PARENTHESES) this \ddd notation provides a way to specify characters outside the ASCII character set by using ASCII characters only. However, any 8-bit value may appear in a string, represented either as itself or with the \ddd notation described.</p>
+<p>When a document is encrypted (see <a href="../s6/">7.6</a>, “Encryption”), all of its strings are encrypted; the encrypted string values contain arbitrary 8-bit values. When writing encrypted strings using the literal string form, the conforming writer shall follow the rules described. That is, the REVERSE SOLIDUS character shall be used as an escape to specify unbalanced PARENTHESES or the REVERSE SOLIDUS character itself. The REVERSE SOLIDUS may, but is not required, to be used to specify other, arbitrary 8-bit values.</p>
+</div>
+</div>
+</div>
+<h3 id="7343-十六进制字符串">7.3.4.3 十六进制字符串<a class="headerlink" href="#7343-十六进制字符串" title="Permanent link">&para;</a></h3>
+<p><strong>Hexadecimal Strings</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>字符串也可以以十六进制形式书写，这对于在PDF文件中包含任意二进制数据非常有用。一个十六进制字符串应被书写为十六进制数字（0-9以及A-F或a-f）的序列，作为ASCII字符编码，并用尖括号（使用小于号(3Ch)和大于号(3Eh)）包围。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt; 4E6F762073686D6F7A206B6120706F702E &gt;
+</code></pre></div>
+</div>
+<p>每一对十六进制数字定义了字符串的一个字符。空白字符（例如空格(20h)、水平制表符(09h)、回车符(0Dh)、换行符(0Ah)和表单馈送(0Ch)）将被忽略。</p>
+<p>如果十六进制字符串的最后一个数字丢失了——也就是说，如果数字的数量是奇数——最终数字将被假定为0。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt; 901FA3 &gt;
+is a 3-byte string consisting of the characters whose hexadecimal codes are 90, 1F, and A3, but
+&lt; 901FA &gt;
+is a 3-byte string containing the characters whose hexadecimal codes are 90, 1F, and A0.
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Strings may also be written in hexadecimal form, which is useful for including arbitrary binary data in a PDF file. A hexadecimal string shall be written as a sequence of hexadecimal digits (0–9 and either A–F or a–f) encoded as ASCII characters and enclosed within angle brackets (using LESS-THAN SIGN (3Ch) and GREATER- THAN SIGN (3Eh)).</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt; 4E6F762073686D6F7A206B6120706F702E &gt;
+</code></pre></div>
+</div>
+<p>Each pair of hexadecimal digits defines one byte of the string. White-space characters (such as SPACE (20h), HORIZONTAL TAB (09h), CARRIAGE RETURN (0Dh), LINE FEED (0Ah), and FORM FEED (0Ch)) shall be ignored.</p>
+<p>If the final digit of a hexadecimal string is missing—that is, if there is an odd number of digits—the final digit shall be assumed to be 0.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt; 901FA3 &gt;
+is a 3-byte string consisting of the characters whose hexadecimal codes are 90, 1F, and A3, but
+&lt; 901FA &gt;
+is a 3-byte string containing the characters whose hexadecimal codes are 90, 1F, and A0.
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="735-名称对象">7.3.5 名称对象<a class="headerlink" href="#735-名称对象" title="Permanent link">&para;</a></h2>
+<p><strong>Name Objects</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF 1.2开始，名称对象是一个原子符号，由任意字符（8位值）序列唯一定义，除了空字符（字符代码0）。<em>唯一定义(Uniquely defined)</em>意味着任何两个由相同字符序列组成的名称对象表示同一个对象。<em>原子(Atomic)</em>意味着名称没有内部结构；尽管它由字符序列定义，但这些字符不被视为名称的元素。</p>
+<p>在PDF文件中写入名称时，应使用实线斜杠（SOLIDUS，2Fh）来引入名称。实线斜杠不是名称的一部分，而是一个前缀，表明随后的是代表PDF文件中名称的字符序列，并应遵循以下规则：</p>
+<p><strong>a)</strong> 名称中的数字符号（NUMBER SIGN，23h）应使用其两位数的十六进制代码（23），前面加上数字符号书写。</p>
+<p><strong>b)</strong> 名称中的任何普通字符（除了数字符号）应以其本身形式书写，或使用其两位数的十六进制代码，前面加上数字符号。</p>
+<p><strong>c)</strong> 名称中任何不是普通字符的字符应使用其两位数的十六进制代码，前面只加数字符号。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>名称编码到PDF文件中没有唯一的编码方式，因为普通字符可以以两种方式之一编码。</p>
+</div>
+<p>作为名称的一部分使用的空白应始终使用两位数的十六进制符号编码，实线斜杠和编码名称之间不得有空白插入。</p>
+<p>在范围感叹号（EXCLAMATION MARK，21h）(!) 到波浪号（TILDE，7Eh）(~) 之外的普通字符应使用十六进制符号书写。</p>
+<p>令牌实线斜杠（后面没有普通字符的斜杠）引入了一个由空字符序列唯一定义的有效名称。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>表4中显示的示例包含#的，在PDF 1.0或1.1中不是有效的文字名称。</p>
+</div>
+<p><table id="table4">
+    <caption>Table 4 – 文字名称的示例</caption>
+    <thead>
+        <tr>
+            <th><strong>语法名称</strong></th>
+            <th><strong>结果名称</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>/Name1</td>
+            <td>Name1</td>
+        </tr>
+        <tr>
+            <td>/ASomewhatLongerName</td>
+            <td>ASomewhatLongerName</td>
+        </tr>
+        <tr>
+            <td>/A;Name_With-Various<strong><em>Characters?</td>
+            <td>A;Name_With-Various</em></strong>Characters?</td>
+        </tr>
+        <tr>
+            <td>/1.2</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>/<span class="arithmatex">\(<span class="arithmatex">\(&lt;/td&gt;
+            &lt;td&gt;\)</span>\)</span></td>
+        </tr>
+        <tr>
+            <td>/@pattern</td>
+            <td>@pattern</td>
+        </tr>
+        <tr>
+            <td>/.notdef</td>
+            <td>.notdef</td>
+        </tr>
+        <tr>
+            <td>/lime#20Green</td>
+            <td>Lime Green</td>
+        </tr>
+        <tr>
+            <td>/paired#28#29parentheses</td>
+            <td>paired()parentheses</td>
+        </tr>
+        <tr>
+            <td>/The_Key_of_F#23_Minor</td>
+            <td>The_Key_of_F#_Minor</td>
+        </tr>
+        <tr>
+            <td>/A#42</td>
+            <td>AB</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>在PDF中，文字名称始终由实线斜杠字符（/）引入，与<strong>true</strong>、<strong>false</strong>和<strong>obj</strong>等关键词不同。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>本标准遵循一种排版约定，即当名称出现在连续文本和表格中时，不使用前导实线斜杠书写名称。例如，<strong>Type</strong>和<strong>FullScreen</strong>表示实际在PDF文件中（以及本标准中的代码示例）会写成<strong>/Type</strong>和<strong>/FullScreen</strong>。</p>
+</div>
+<p>名称的长度应受到实现限制；见<a href="../../a3/">附录C</a>。该限制适用于名称内部表示中的字符数。例如，名称/A#20B有三个字符（A、空格、B），而不是六个。</p>
+<p>如上所述，名称对象在PDF文件中应被视为原子。通常，构成名称的字节不会被当作文本呈现给最终用户或外部应用程序。然而，偶尔会出现需要将名称对象当作文本处理的情况，例如代表字体名称的名称（见表111中的<strong>BaseFont</strong>条目）、在分离或DeviceN颜色空间中的颜色名称，或结构类型（见<a href="../../c14/s7/#1473-结构类型">14.7.3</a>，“结构类型”）。</p>
+<p>在这种情况下，字节序列（如果有任何数字符号序列，则先展开）应根据UTF-8进行解释，UTF-8是一种可变长度的字节编码表示Unicode，其中可打印的ASCII字符与ASCII中的表示相同。这使得名称对象能够几乎表示任何自然语言的文本，但受到名称长度实现限制。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>PDF没有规定为将任何给定的外部指定文本表示为名称对象而选择哪种UTF-8序列。在某些情况下，多个UTF-8序列可能表示相同的逻辑文本。由不同字节序列定义的名称对象在PDF中构成不同的名称对象，即使UTF-8序列可能具有相同的外部解释。    </p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Beginning with PDF 1.2 a name object is an atomic symbol uniquely defined by a sequence of any characters (8-bit values) except null (character code 0). <em>Uniquely defined</em> means that any two name objects made up of the same sequence of characters denote the same object. <em>Atomic</em> means that a name has no internal structure; although it is defined by a sequence of characters, those characters are not considered elements of the name.</p>
+<p>When writing a name in a PDF file, a SOLIDUS (2Fh) (/) shall be used to introduce a name. The SOLIDUS is not part of the name but is a prefix indicating that what follows is a sequence of characters representing the name in the PDF file and shall follow these rules:</p>
+<p>a) A NUMBER SIGN (23h) (#) in a name shall be written by using its 2-digit hexadecimal code (23), precede by the NUMBER SIGN.</p>
+<p>b) Any character in a name that is a regular character (other than NUMBER SIGN) shall be written as itself or by using its 2-digit hexadecimal code, preceded by the NUMBER SIGN.</p>
+<p>c) Any character that is not a regular character shall be written using its 2-digit hexadecimal code, preceded by the NUMBER SIGN only.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>There is not a unique encoding of names into the PDF file because regular characters may be coded in either of two ways.</p>
+</div>
+<p>White space used as part of a name shall always be coded using the 2-digit hexadecimal notation and no white space may intervene between the SOLIDUS and the encoded name.</p>
+<p>Regular characters that are outside the range EXCLAMATION MARK(21h) (!) to TILDE (7Eh) (~) should be written using the hexadecimal notation.</p>
+<p>The token SOLIDUS (a slash followed by no regular characters) introduces a unique valid name defined by the empty sequence of characters.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The examples shown in Table 4 and containing # are not valid literal names in PDF 1.0 or 1.1.</p>
+</div>
+<p><table id="table4">
+    <caption>Table 3 – Examples of literal names</caption>
+    <thead>
+        <tr>
+            <th><strong>Syntax for Literal name</strong></th>
+            <th><strong>Resulting Name</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>/Name1</td>
+            <td>Name1</td>
+        </tr>
+        <tr>
+            <td>/ASomewhatLongerName</td>
+            <td>ASomewhatLongerName</td>
+        </tr>
+        <tr>
+            <td>/A;Name_With-Various<strong><em>Characters?</td>
+            <td>A;Name_With-Various</em></strong>Characters?</td>
+        </tr>
+        <tr>
+            <td>/1.2</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>/<span class="arithmatex">\(<span class="arithmatex">\(&lt;/td&gt;
+            &lt;td&gt;\)</span>\)</span></td>
+        </tr>
+        <tr>
+            <td>/@pattern</td>
+            <td>@pattern</td>
+        </tr>
+        <tr>
+            <td>/.notdef</td>
+            <td>.notdef</td>
+        </tr>
+        <tr>
+            <td>/lime#20Green</td>
+            <td>Lime Green</td>
+        </tr>
+        <tr>
+            <td>/paired#28#29parentheses</td>
+            <td>paired()parentheses</td>
+        </tr>
+        <tr>
+            <td>/The_Key_of_F#23_Minor</td>
+            <td>The_Key_of_F#_Minor</td>
+        </tr>
+        <tr>
+            <td>/A#42</td>
+            <td>AB</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>In PDF, literal names shall always be introduced by the SOLIDUS character (/), unlike keywords such as <strong>true</strong>, <strong>false</strong>, and <strong>obj</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>This standard follows a typographic convention of writing names without the leading SOLIDUS when they appear in running text and tables. For example, <strong>Type</strong> and <strong>FullScreen</strong> denote names that would actually be written in a PDF file (and in code examples in this standard) as <strong>/Type</strong> and <strong>/FullScreen</strong>.</p>
+</div>
+<p>The length of a name shall be subject to an implementation limit; see <a href="../../a3/">Annex C</a>. The limit applies to the number of characters in the name’s internal representation. For example, the name /A#20B has three characters (A, SPACE, B), not six.</p>
+<p>As stated above, name objects shall be treated as atomic within a PDF file. Ordinarily, the bytes making up the name are never treated as text to be presented to a human user or to an application external to a conforming reader. However, occasionally the need arises to treat a name object as text, such as one that represents a font name (see the <strong>BaseFont</strong> entry in Table 111), a colorant name in a separation or DeviceN colour space, or a structure type (see <a href="../../c14/s7/#1473-结构类型">14.7.3</a>, "Structure Types").</p>
+<p>In such situations, the sequence of bytes (after expansion of NUMBER SIGN sequences, if any) should beinterpreted according to UTF-8, a variable-length byte-encoded representation of Unicode in which theprintable ASCII characters have the same representations as in ASCII. This enables a name object torepresent text virtually in any natural language, subject to the implementation limit on the length of a name.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>PDF does not prescribe what UTF-8 sequence to choose for representing any given piece of externally specified text as a name object. In some cases, multiple UTF-8 sequences may represent the same logical text. Name objects defined by different sequences of bytes constitute distinct name objects in PDF, even though the UTF-8 sequences may have identical external interpretations.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="736-数组对象">7.3.6 数组对象<a class="headerlink" href="#736-数组对象" title="Permanent link">&para;</a></h2>
+<p><strong>Array Objects</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>数组对象是按顺序排列的对象的一维集合。与许多其他计算机语言中的数组不同，PDF数组可以是异构的；也就是说，数组的元素可以是数字、字符串、字典或任何其他对象的任何组合，包括其他数组。数组可能没有元素。</p>
+<p>数组应被写作为用方括号包围的对象序列（使用左方括号[5Bh]和右方括号[5Dh]）。</p>
+<div class="admonition info">
+<p class="admonition-title">Example</p>
+<p>[549 3.14 false ( Ralph ) /SomeName]</p>
+</div>
+<p>PDF直接支持的只有一维数组。可以通过使用数组作为数组的元素来构建更高维度的数组，可以嵌套到任意深度。</p>
+</div>
+<div class="tabbed-block">
+<p>An array object is a one-dimensional collection of objects arranged sequentially. Unlike arrays in many other computer languages, PDF arrays may be heterogeneous; that is, an array’s elements may be any combination of numbers, strings, dictionaries, or any other objects, including other arrays. An array may have zero elements.</p>
+<p>An array shall be written as a sequence of objects enclosed in SQUARE BRACKETS (using LEFT SQUARE BRACKET (5Bh) and RIGHT SQUARE BRACKET (5Dh)).</p>
+<div class="admonition info">
+<p class="admonition-title">Example</p>
+<p>[549 3.14 false ( Ralph ) /SomeName]</p>
+</div>
+<p>PDF directly supports only one-dimensional arrays. Arrays of higher dimension can be constructed by using arrays as elements of arrays, nested to any depth.</p>
+</div>
+</div>
+</div>
+<h2 id="737-字典对象">7.3.7 字典对象<a class="headerlink" href="#737-字典对象" title="Permanent link">&para;</a></h2>
+<p><strong>Dictionary Objects</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>字典对象(dictionary object)</em>是一个关联表，包含成对的对象，称为字典的条目。每个条目的第一个元素是键，第二个元素是<em>值</em>。键应该是一个名称（与PostScript中的字典键不同，后者可以是任何类型的对象）。值可以是任何种类的对象，包括另一个字典。如果字典条目的值是<strong>null</strong>（见<a href="#739-空对象">7.3.9</a>，“空对象”），则应将其视为该条目不存在。（这与PostScript不同，在PostScript中<strong>null</strong>像其他任何对象一样作为字典条目的值。）字典中条目的数量应受到实现限制；见<a href="../../a3/">附录C</a>。字典可以有零个条目。</p>
+<p>字典中的条目代表一个关联表，因此应该是无序的，即使在文件中写入时可能会强加任意顺序。该顺序将被忽略。</p>
+<p>同一个字典中不能有多个条目具有相同的键。</p>
+<p>字典应被写作为一系列用双尖括号(<code>&lt;&lt; … &gt;&gt;</code>)包围的键值对（使用小于号(3Ch)和大于号(3Eh)）。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt;&lt; /Type /Example
+   /Subtype /DictionaryExample
+   /Version 0 . 01
+   /IntegerItem 12
+   /StringItem ( a string )
+   /Subdictionary &lt;&lt; /Item1 0 . 4
+                     /Item2 true
+                     /LastItem ( not ! )
+                     /VeryLastItem ( OK )
+                  &gt;&gt;
+&gt;&gt;
+</code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>不要将双尖括号与单尖括号（<code>&lt;</code> 和 <code>&gt;</code>）（使用小于号(3Ch)和大于号(3Eh)）混淆，单尖括号用于定界十六进制字符串（见<a href="#7343-十六进制字符串">7.3.4.3</a>，“十六进制字符串”）。</p>
+</div>
+<p>字典对象是PDF文档的主要构建块。它们通常用于收集和关联复杂对象的属性，例如字体或文档的一页，其中字典中的每个条目指定一个属性的名称和值。按照约定，如果存在，此类字典的<strong>Type</strong>条目标识字典描述的对象类型。在某些情况下，可能会使用<strong>Subtype</strong>条目（有时缩写为<strong>S</strong>）来进一步识别通用类型的专门子类别。<strong>Type</strong>或<strong>Subtype</strong>条目的值始终是一个名称。例如，在字体字典中，<strong>Type</strong>条目的值始终是Font，而<strong>Subtype</strong>条目的值可能是<em>Type1</em>、<em>TrueType</em>或几种其他值之一。</p>
+<p><strong>Type</strong>条目的值几乎总能从上下文中推断出来。例如，页面字体资源字典中的一个条目的值将是一个字体对象；因此，字体字典中的<strong>Type</strong>条目主要作为文档记录和错误检查的信息。除非在描述中另有说明，否则不需要<strong>Type</strong>条目；然而，如果存在该条目，它应具有正确的值。此外，任何字典中的<strong>Type</strong>条目的值，即使是在私有数据中，必须是本标准中定义的名称或已注册的名称；见<a href="../../a5/">附录E</a>了解详细信息。</p>
+</div>
+<div class="tabbed-block">
+<p>A <em>dictionary object</em> is an associative table containing pairs of objects, known as the dictionary’s entries. The first element of each entry is the key and the second element is the <em>value</em>. The key shall be a name (unlike dictionary keys in PostScript, which may be objects of any type). The value may be any kind of object, including another dictionary. A dictionary entry whose value is <strong>null</strong> (see <a href="#739-空对象">7.3.9</a>, "Null Object") shall be treated the same as if the entry does not exist. (This differs from PostScript, where <strong>null</strong> behaves like any other object as the value of a dictionary entry.) The number of entries in a dictionary shall be subject to an implementation limit; see <a href="../../a3/">Annex C</a>. A dictionary may have zero entries.</p>
+<p>The entries in a dictionary represent an associative table and as such shall be unordered even though an arbitrary order may be imposed upon them when written in a file. That ordering shall be ignored.</p>
+<p>Multiple entries in the same dictionary shall not have the same key.</p>
+<p>A dictionary shall be written as a sequence of key-value pairs enclosed in double angle brackets (<code>&lt;&lt; … &gt;&gt;</code>) (using LESS-THAN SIGNs (3Ch) and GREATER-THAN SIGNs (3Eh)).</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+</div>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt;&lt; /Type /Example
+   /Subtype /DictionaryExample
+   /Version 0 . 01
+   /IntegerItem 12
+   /StringItem ( a string )
+   /Subdictionary &lt;&lt; /Item1 0 . 4
+                      /Item2 true
+                      /LastItem ( not ! )
+                      /VeryLastItem ( OK )
+                   &gt;&gt;
+&gt;&gt;
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Do not confuse the double angle brackets with single angle brackets (<code>&lt;</code> and <code>&gt;</code>) (using LESS-THAN SIGN (3Ch) and GREATER-THAN SIGN (3Eh)), which delimit a hexadecimal string (see <a href="#7343-十六进制字符串">7.3.4.3</a>, "Hexadecimal Strings").</p>
+</div>
+<p>Dictionary objects are the main building blocks of a PDF document. They are commonly used to collect and tie together the attributes of a complex object, such as a font or a page of the document, with each entry in the dictionary specifying the name and value of an attribute. By convention, the <strong>Type</strong> entry of such a dictionary, if present, identifies the type of object the dictionary describes. In some cases, a <strong>Subtype</strong> entry (sometimes abbreviated <strong>S</strong>) may be used to further identify a specialized subcategory of the general type. The value of the <strong>Type</strong> or <strong>Subtype</strong> entry shall always be a name. For example, in a font dictionary, the value of the <strong>Type</strong> entry shall always be Font, whereas that of the <strong>Subtype</strong> entry may be <em>Type1</em>, <em>TrueType</em>, or one of several other values.</p>
+<p>The value of the <strong>Type</strong> entry can almost always be inferred from context. The value of an entry in a page's font resource dictionary, for example, shall be a font object; therefore, the <strong>Type</strong> entry in a font dictionary serves primarily as documentation and as information for error checking. The <strong>Type</strong> entry shall not be required unless so stated in its description; however, if the entry is present, it shall have the correct value. In addition, the value of the <strong>Type</strong> entry in any dictionary, even in private data, shall be either a name defined in this standard or a registered name; see <a href="../../a5/">Annex E</a> for details.</p>
+</div>
+</div>
+</div>
+<h2 id="738-流对象">7.3.8 流对象<a class="headerlink" href="#738-流对象" title="Permanent link">&para;</a></h2>
+<p><strong>Stream Objects</strong></p>
+<h3 id="7381-概述">7.3.8.1 概述<a class="headerlink" href="#7381-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>流对象和字符串对象一样，是字节序列。此外，流可以是无限长度的，而字符串则受到实现限制。基于这个原因，具有潜在大量数据的对象，如图像和页面描述，应该表示为流。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>本子条款仅描述了将流作为字节序列的语法。流被引用的上下文决定了字节序列所表示的内容。</p>
+</div>
+<p>流应由一个字典后跟零个或多个字节组成，这些字节被括在关键词<code>stream</code>（后跟换行）和<code>endstream</code>之间：</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>dictionary
+stream
+… Zero or more bytes …
+endstream
+</code></pre></div>
+</div>
+<p>所有流都应是间接对象（见<a href="#7310-间接对象">7.3.10</a>，“间接对象”），流字典应是直接对象。跟随流字典后的关键词<code>stream</code>应后跟一个由回车符和换行符组成的行结束标记，或者仅一个换行符，而不是单独一个回车符。构成流的字节序列位于<code>stream</code>关键词后的行结束标记和<code>endstream</code>关键词之间；流字典指定了确切的字节数。数据后和<code>endstream</code>前的行结束标记应存在；这个标记不应包括在流长度中。在<code>endstream</code>和<code>endobj</code>之间，除了空白之外，不应有额外的字节。</p>
+<p>或者，从PDF 1.2开始，字节可以包含在外部文件中，在这种情况下，流字典指定了文件，并且<code>stream</code>和<code>endstream</code>之间的任何字节都将被符合规范的阅读器忽略。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>如果没有限制在关键词<code>stream</code>后不能单独跟一个回车符，那么使用回车符作为其行结束标记并且数据的第一个字节是换行符的流，将无法与使用回车符-换行符序列表示行结束的流区分开来。</p>
+</div>
+<p>表5列出了所有流字典共有的条目；某些类型的流可能有额外的字典条目，这在描述这些流的地方指出。关于流的过滤器的可选条目指示了在使用数据之前是否以及如何对流中的数据进行转换（解码）。过滤器在<a href="../s4/">7.4</a>，“过滤器”中有进一步的描述。</p>
+</div>
+<div class="tabbed-block">
+<p>A stream object, like a string object, is a sequence of bytes. Furthermore, a stream may be of unlimited length, whereas a string shall be subject to an implementation limit. For this reason, objects with potentially large amounts of data, such as images and page descriptions, shall be represented as streams.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>This sub-clause describes only the syntax for writing a stream as a sequence of bytes. The context in which a stream is referenced determines what the sequence of bytes represent.</p>
+</div>
+<p>A stream shall consist of a dictionary followed by zero or more bytes bracketed between the keywords stream (followed by newline) and <strong>endstream</strong>:</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>dictionary
+stream
+… Zero or more bytes …
+endstream
+</code></pre></div>
+</div>
+<p>All streams shall be indirect objects (see <a href="#7310-间接对象">7.3.10</a>, "Indirect Objects") and the stream dictionary shall be a direct object. The keyword <strong>stream</strong> that follows the stream dictionary shall be followed by an end-of-line marker consisting of either a CARRIAGE RETURN and a LINE FEED or just a LINE FEED, and not by a CARRIAGE RETURN alone. The sequence of bytes that make up a stream lie between the end-of-line marker following the <strong>stream</strong> keyword and the <strong>endstream</strong> keyword; the stream dictionary specifies the exact number of bytes. There should be an end-of-line marker after the data and before <strong>endstream</strong>; this marker shall not be included in the stream length. There shall not be any extra bytes, other than white space, between endstream and endobj.</p>
+<p>Alternatively, beginning with PDF 1.2, the bytes may be contained in an external file, in which case the stream dictionary specifies the file, and any bytes between <strong>stream</strong> and <strong>endstream</strong> shall be ignored by a conforming reader.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Without the restriction against following the keyword <strong>stream</strong> by a CARRIAGE RETURN alone, it would be impossible to differentiate a stream that uses CARRIAGE RETURN as its end-of-line marker and has a LINE FEED as its first byte of data from one that uses a CARRIAGE RETURN–LINE FEED sequence to denote end- of-line.</p>
+</div>
+<p>Table 5 lists the entries common to all stream dictionaries; certain types of streams may have additional dictionary entries, as indicated where those streams are described. The optional entries regarding filters for the stream indicate whether and how the data in the stream shall be transformed (decoded) before it is used. Filters are described further in <a href="../s4/">7.4</a>, "Filters."</p>
+</div>
+</div>
+</div>
+<h3 id="7382-流范围">7.3.8.2 流范围<a class="headerlink" href="#7382-流范围" title="Permanent link">&para;</a></h3>
+<p><strong>Stream Extent</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">中文</label><label for="__tabbed_11_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>每个流字典都应有一个<strong>Length</strong>条目，该条目指示PDF文件中用于流数据的字节数。（如果流有过滤器，<strong>Length</strong>应是编码数据的字节数。）此外，大多数过滤器的定义都是自限制的；也就是说，它们使用一种编码方案，在该方案中，明确的<em>数据结束</em>（EOD）标记限定了数据的范围。最后，流被用来表示许多对象，从这些对象的属性中可以推断出长度。所有这些限制应该是一致的。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>具有10行和20列、使用单一颜色分量和每个分量8位的图像，恰好需要200字节的图像数据。如果流使用过滤器，PDF文件中应有足够的编码数据字节来产生这200字节。如果<strong>Length</strong>太小，或者明确的EOD标记过早出现，或者解码数据不包含200字节，就会发生错误。</p>
+</div>
+<p>如果流包含过多的数据，也是一个错误，唯一的例外是在PDF文件中的<strong>endstream</strong>关键词之前的PDF文件中可能有额外的行结束标记。    </p>
+<p><table id="table5" markdown="span">
+    <caption><strong>Table 5 – 所有流字典共有的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td markdown="span"><strong>Length</strong></td>
+            <td>整数(integer)</td>
+            <td markdown="span">（必需）从<code>stream</code>关键词后的行开始到最后一个字节<code>endstream</code>之前的字节数。（可能有额外的行结束标记，在<code>endstream</code>前，不包括在计数内，逻辑上也不属于流数据的一部分。）见<a href="#7382-流范围">7.3.8.2</a>，“流范围”，以获取更多讨论。</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>Filter</strong></td>
+            <td>名称或数组(name or array)</td>
+            <td markdown="span">（可选）处理<code>stream</code>和<code>endstream</code>关键词之间发现的流数据的过滤器名称，或零个、一个或多个名称的数组。多个过滤器应按它们要应用的顺序指定。</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>DecodeParms</strong></td>
+            <td>字典或数组(dictionary or array)</td>
+            <td markdown="span">（可选）由<strong>Filter</strong>指定的过滤器使用的参数字典或此类字典的数组。如果只有一个过滤器并且该过滤器有参数，除非所有过滤器的参数都具有默认值，否则<strong>DecodeParms</strong>应设置为过滤器的参数字典，否则可以省略<strong>DecodeParms</strong>条目。如果有多个过滤器并且任何一个过滤器设置了非默认值的参数，<strong>DecodeParms</strong>应是一个数组，每个过滤器有一个条目：该过滤器的参数字典，或者如果该过滤器没有参数（或者如果它所有参数都具有默认值），则是空对象。如果没有任何过滤器有参数，或者如果它们所有参数都具有默认值，可以省略<strong>DecodeParms</strong>条目。</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>F</strong></td>
+            <td>文件规格(file specification)</td>
+            <td markdown="span">（可选；PDF 1.2）包含流数据的文件。如果存在此条目，则<code>stream</code>和<code>endstream</code>之间的字节将被忽略。然而，<strong>Length</strong>条目仍应指定这些字节的数量（通常没有字节，<strong>Length</strong>是0）。应用于文件数据的过滤器将由<strong>FFilter</strong>指定，过滤器参数将由<strong>FDecodeParms</strong>指定。</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>FFilter</strong></td>
+            <td>名称或数组(name or array)</td>
+            <td markdown="span">（可选；PDF 1.2）处理流的外部文件中发现的数据的过滤器名称，或零个、一个或多个此类名称的数组。与<strong>Filter</strong>适用相同的规则。</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>FDecodeParms</strong></td>
+            <td>字典或数组(dictionary or array)</td>
+            <td markdown="span">（可选；PDF 1.2）由<strong>FFilter</strong>指定的过滤器使用的参数字典，或此类字典的数组。与<strong>DecodeParms</strong>适用相同的规则。</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>DL</strong></td>
+            <td>整数(integer)</td>
+            <td markdown="span">（可选；PDF 1.5）表示解码（去过滤）流中的字节数的非负整数。它可以用来确定，例如，是否有足够的磁盘空间将流写入文件。<br/> 此值应被视为提示；对于一些流过滤器，可能无法精确确定此值。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>请注意，表中的"Key"、"Type"、"Value"列分别表示条目的键、类型和值。</p>
+</div>
+<div class="tabbed-block">
+<p>Every stream dictionary shall have a <strong>Length</strong> entry that indicates how many bytes of the PDF file are used for the stream’s data. (If the stream has a filter, <strong>Length</strong> shall be the number of bytes of encoded data.) In addition, most filters are defined so that the data shall be self-limiting; that is, they use an encoding scheme in which an explicit <em>end-of-data</em> (EOD) marker delimits the extent of the data. Finally, streams are used to represent many objects from whose attributes a length can be inferred. All of these constraints shall be consistent.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>An image with 10 rows and 20 columns, using a single colour component and 8 bits per component, requires exactly 200 bytes of image data. If the stream uses a filter, there shall be enough bytes of encoded data in the PDF file to produce those 200 bytes. An error occurs if <strong>Length</strong> is too small, if an explicit EOD marker occurs too soon, or if the decoded data does not contain 200 bytes.</p>
+</div>
+<p>It is also an error if the stream contains too much data, with the exception that there may be an extra end-of-line marker in the PDF file before the keyword <strong>endstream</strong>.</p>
+<p><table id="table5" markdown="span">
+    <caption><strong>Table 5 – Entries common to all stream dictionaries</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td markdown="span"><strong>Length</strong></td>
+            <td>integer</td>
+            <td markdown="span">(Required) The number of bytes from the beginning of the line following the keyword <strong>stream</strong> to the last byte just before the keyword <strong>endstream</strong>. (There may be an additional EOL marker, preceding <strong>endstream</strong>, that is not included in the count and is not logically part of the stream data.) See <a href="#7382-流范围">7.3.8.2</a>, "Stream Extent", for further discussion.</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>Filter</strong></td>
+            <td>name or array</td>
+            <td markdown="span">(<em>Optional</em>) The name of a filter that shall be applied in processing the stream data found between the keywords <strong>stream</strong> and <strong>endstream</strong>, or an array of zero, one or several names. Multiple filters shall be specified in the order in which they are to be applied.</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>DecodeParms</strong></td>
+            <td>dictionary or array</td>
+            <td markdown="span">(<em>Optional</em>) A parameter dictionary or an array of such dictionaries, used by the filters specified by <strong>Filter</strong>. If there is only one filter and that filter has parameters, <strong>DecodeParms</strong> shall be set to the filter’s parameter dictionary unless all the filter’s parameters have their default values, in which case the <strong>DecodeParms</strong> entry may be omitted. If there are multiple filters and any of the filters has parameters set to nondefault values, <strong>DecodeParms</strong> shall be an array with one entry for each filter: either the parameter dictionary for that filter, or the null object if that filter has no parameters (or if all of its parameters have their default values). If none of the filters have parameters, or if all their parameters have default values, the <strong>DecodeParms</strong> entry may be omitted.</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>F</strong></td>
+            <td>file specification</td>
+            <td markdown="span">(<em>Optional; PDF 1.2</em>) The file containing the stream data. If this entry is present, the bytes between <strong>stream</strong> and <strong>endstream</strong> shall be ignored. However, the <strong>Length</strong> entry should still specify the number of those bytes (usually, there are no bytes and <strong>Length</strong> is 0). The filters that are applied to the file data shall be specified by <strong>FFilter</strong> and the filter parameters shall be specified by <strong>FDecodeParms</strong>.</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>FFilter</strong></td>
+            <td>name or array</td>
+            <td markdown="span">(<em>Optional; PDF 1.2</em>) The name of a filter to be applied in processing the data found in the stream’s external file, or an array of zero, one or several such names. The same rules apply as for <strong>Filter</strong>.</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>FDecodeParms</strong></td>
+            <td>dictionary or array</td>
+            <td markdown="span">(<em>Optional; PDF 1.2</em>) A parameter dictionary, or an array of such dictionaries, used by the filters specified by <strong>FFilter</strong>. The same rules apply as for <strong>DecodeParms</strong>.</td>
+        </tr>
+        <tr>
+            <td markdown="span"><strong>DL</strong></td>
+            <td>integer</td>
+            <td markdown="span">(<em>Optional; PDF 1.5</em>) A non-negative integer representing the number of bytes in the decoded (defiltered) stream. It can be used to determine, for example, whether enough disk space is available to write a stream to a file.<br/>
+            This value shall be considered a hint only; for some stream filters, it may not be possible to determine this value precisely.</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h2 id="739-空对象">7.3.9 空对象<a class="headerlink" href="#739-空对象" title="Permanent link">&para;</a></h2>
+<p><strong>Null Object</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">中文</label><label for="__tabbed_12_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>空对象具有与其他任何对象都不相等的类型和值。只应存在一个空类型的对象，用关键词<strong>null</strong>表示。对不存在的对象的间接对象引用（见<a href="#7310-间接对象">7.3.10</a>，“间接对象”）应与空对象相同。将空对象指定为字典条目的值（<a href="#737-字典对象">7.3.7</a>，“字典对象”）应等同于完全省略该条目。</p>
+</div>
+<div class="tabbed-block">
+<p>The <em>null object</em> has a type and value that are unequal to those of any other object. There shall be only one object of type null, denoted by the keyword <strong>null</strong>. An indirect object reference (see <a href="#7310-间接对象">7.3.10</a>, "Indirect Objects") to a nonexistent object shall be treated the same as a null object. Specifying the null object as the value of a dictionary entry (<a href="#737-字典对象">7.3.7</a>, "Dictionary Objects") shall be equivalent to omitting the entry entirely.</p>
+</div>
+</div>
+</div>
+<h2 id="7310-间接对象">7.3.10 间接对象<a class="headerlink" href="#7310-间接对象" title="Permanent link">&para;</a></h2>
+<p><strong>Indirect Objects</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">中文</label><label for="__tabbed_13_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF文件中的任何对象都可以被标记为<em>间接对象</em>。这为对象提供了一个唯一的对象标识符，其他对象可以通过它引用该对象（例如，作为数组的元素或字典条目的值）。对象标识符由两部分组成：</p>
+<ul>
+<li>一个正整数<em>对象编号</em>。间接对象可能在PDF文件中顺序编号，但这不是必须的；对象编号可以任意顺序分配。</li>
+<li>一个非负整数<em>代数编号</em>。在新创建的文件中，所有间接对象的代数编号应为0。在文件后续更新时可能会引入非零的代数编号；见子条款<a href="../s5/#754-交叉引用表">7.5.4</a>，“交叉引用表”和<a href="../s5/#756-增量更新">7.5.6</a>，“增量更新”。</li>
+</ul>
+<p>对象编号和代数编号的组合应唯一标识一个间接对象。</p>
+<p>PDF文件中间接对象的定义应包括其对象编号和代数编号（由空白分隔），后跟对象值，这些值被括在关键词obj和endobj之间。</p>
+<div class="admonition info">
+<p class="admonition-title">Example 1</p>
+<p>间接对象定义</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>12 0 obj
+    (Brillig)
+endobj
+</code></pre></div>
+<p>定义了一个具有对象编号12、代数编号0和值Brillig的间接字符串对象。</p>
+</div>
+<p>对象可以从文件的其他位置通过间接引用来引用。这种间接引用应由对象编号、代数编号和关键词R组成（每个部分由空白分隔）：</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>12 0 R
+</code></pre></div>
+<p>从PDF 1.5开始，间接对象可能位于对象流中（见<a href="../s5/#757-对象流">7.5.7</a>，“对象流”）。它们以相同的方式被引用；然而，它们的定义不应包括关键词<strong>obj</strong>和<strong>endobj</strong>，它们的代数编号应为零。</p>
+<p>对未定义对象的间接引用不应被符合规范的阅读器视为错误；它应被视为对空对象的引用。</p>
+<div class="admonition info">
+<p class="admonition-title">Example 2</p>
+<p>如果文件包含间接引用17 0 R但不含相应的定义，则该间接引用被视为对空对象的引用。</p>
+</div>
+<p>除非另有文档记录相反，任何对象值可以是直接引用或间接引用；语义是等价的。</p>
+<div class="admonition info">
+<p class="admonition-title">Example 3</p>
+<p>下面展示了如何使用间接对象来指定流的长度。流的 Length 条目的值是一个整数对象，它在文件中的流之后。这允许在单次传递中生成PDF的应用在生成流的内容后才指定流的长度。</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>7 0 obj
+    &lt;&lt; /Length 8 0 R &gt;&gt;        % 对象8的间接引用
+stream
+    BT
+        /F1 12 Tf
+        72 712 Td
+        ( A stream with an indirect length ) Tj
+    ET
+endstream
+endobj
+
+8 0 obj
+77                             % 上一个流的长度
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Any object in a PDF file may be labelled as an <em>indirect object</em>. This gives the object a unique object identifier by which other objects can refer to it (for example, as an element of an array or as the value of a dictionary entry). The object identifier shall consist of two parts:</p>
+<ul>
+<li>A positive integer <em>object number</em>. Indirect objects may be numbered sequentially within a PDF file, but this is not required; object numbers may be assigned in any arbitrary order.</li>
+<li>A non-negative integer generation number. In a newly created file, all indirect objects shall have generation numbers of 0. Nonzero generation numbers may be introduced when the file is later updated; see sub-clauses <a href="../s5/#754-交叉引用表">7.5.4</a>, "Cross-Reference Table" and <a href="../s5/#756-增量更新">7.5.6</a>, "Incremental Updates."</li>
+</ul>
+<p>Together, the combination of an object number and a generation number shall uniquely identify an indirect object.</p>
+<p>The definition of an indirect object in a PDF file shall consist of its object number and generation number (separated by white space), followed by the value of the object bracketed between the keywords obj and endobj.</p>
+<div class="admonition info">
+<p class="admonition-title">Example 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Indirect object definition
+
+12 0 obj
+    (Brillig)
+endobj
+
+Defines an indirect string object with an object number of 12, a generation number of 0, and the value Brillig.
+</code></pre></div>
+</div>
+<p>The object may be referred to from elsewhere in the file by an indirect reference. Such indirect references shall consist of the object number, the generation number, and the keyword R (with white space separating each part):</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>12 0 R
+</code></pre></div>
+<p>Beginning with PDF 1.5, indirect objects may reside in object streams (see <a href="../s5/#757-对象流">7.5.7</a>, "Object Streams"). They are referred to in the same way; however, their definition shall not include the keywords <strong>obj</strong> and <strong>endobj</strong>, and their generation number shall be zero.</p>
+<p>An indirect reference to an undefined object shall not be considered an error by a conforming reader; it shall be treated as a reference to the null object.</p>
+<div class="admonition info">
+<p class="admonition-title">Example 2</p>
+<p>If a file contains the indirect reference 17 0 R but does not contain the corresponding definition then the indirect reference is considered to refer to the null object.</p>
+</div>
+<p>Except were documented to the contrary any object value may be a direct or an indirect reference; the semantics are equivalent.</p>
+<div class="admonition info">
+<p class="admonition-title">Example 3</p>
+<p>The following shows the use of an indirect object to specify the length of a stream. The value of the stream’s Length entry is an integer object that follows the stream in the file. This allows applications that generate PDF in a single pass to defer specifying the stream’s length until after its contents have been generated.</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>7 0 obj
+    &lt;&lt; /Length 8 0 R &gt;&gt;        % An indirect reference to object 8
+stream
+    BT
+        /F1 12 Tf
+        72 712 Td
+        ( A stream with an indirect length ) Tj
+    ET
+endstream
+endobj
+
+8 0 obj
+77                             % The length of the preceding stream
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

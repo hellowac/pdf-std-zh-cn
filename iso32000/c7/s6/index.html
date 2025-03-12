@@ -1,0 +1,3162 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s5/">
+      
+      
+        <link rel="next" href="../s7/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>7.6 加密 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#76-加密" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7.6 加密
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            7语法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 词汇惯例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.4 过滤器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.5 文件结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    7.6 加密
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    7.6 加密
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#761-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#762-常规加密算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.2 常规加密算法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#763-标准安全处理程序" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.3 标准安全处理程序
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.6.3 标准安全处理程序">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7631-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7632-标准加密字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.3.2 标准加密字典
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7633-加密密钥算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.3.3 加密密钥算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7634-密码算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.3.4 密码算法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#764-公钥安全处理器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.4 公钥安全处理器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.6.4 公钥安全处理器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7641-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7642-公钥加密字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.4.2 公钥加密字典
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7643-公钥加密算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.4.3 公钥加密算法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#765-加密过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.5 加密过滤器
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.7 文档结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.8 内容流和资源
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.9 公共数据结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.10 函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.11 文件规范
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.12 扩展字典
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#761-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#762-常规加密算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.2 常规加密算法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#763-标准安全处理程序" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.3 标准安全处理程序
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.6.3 标准安全处理程序">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7631-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7632-标准加密字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.3.2 标准加密字典
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7633-加密密钥算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.3.3 加密密钥算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7634-密码算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.3.4 密码算法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#764-公钥安全处理器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.4 公钥安全处理器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.6.4 公钥安全处理器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7641-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7642-公钥加密字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.4.2 公钥加密字典
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7643-公钥加密算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.4.3 公钥加密算法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#765-加密过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6.5 加密过滤器
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="76-加密">7.6 加密<a class="headerlink" href="#76-加密" title="Permanent link">&para;</a></h1>
+<p><strong>Encryption</strong></p>
+<h2 id="761-概述">7.6.1 概述<a class="headerlink" href="#761-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF文档可以进行<em>加密</em>（PDF 1.1），以防止未授权访问其内容。加密适用于文档PDF文件中的所有字符串和流，但以下情况除外：</p>
+<ul>
+<li>尾部中ID条目的值</li>
+<li>Encrypt字典中的任何字符串</li>
+<li>流中的任何字符串，例如内容流和压缩对象流，它们本身被加密</li>
+</ul>
+<p>加密不适用于其他对象类型，如整数和布尔值，它们主要用于传达有关文档结构而非内容的信息。保留这些值的未加密状态允许对文档内的对象进行随机访问，而加密字符串和流则保护了文档的内容。</p>
+<p>当PDF流对象（见<a href="../s3/#738-流对象">7.3.8</a>，“流对象”）引用外部文件时，流的内容不应被加密，因为它们不是PDF文件本身的一部分。然而，如果流的内容嵌入在PDF文件中（见<a href="../s11/#7114-嵌入式文件流">7.11.4</a>，“嵌入式文件流”），它们应像文件中的任何其他流一样被加密。从PDF 1.5开始，即使在未加密的文档中也可以加密嵌入的文件（见<a href="#765-加密过滤器">7.6.5</a>，“Crypt Filters”）。</p>
+<p>与加密相关的信息应存储在文档的加密字典中，该字典应为文档尾部字典中<strong>Encrypt</strong>条目的值（见表15）。如果尾部字典中没有这个条目，则符合规范的阅读器应认为文档未加密。表20中显示的条目适用于所有加密字典。</p>
+<p>加密字典的<strong>Filter</strong>条目标识文件的<em>安全处理器</em>，这是一个软件模块，实现了加密过程的各个方面，并控制对加密文档内容的访问。PDF规定了一个标准基于密码的安全处理器，所有符合规范的阅读器都应支持，但阅读器也可以选择提供自己的额外安全处理器。</p>
+<p><strong>SubFilter</strong>条目指定了加密字典内容的语法。它允许处理器之间的互操作性；即，如果它们都支持由<strong>SubFilter</strong>指定的格式，文档可以由首选处理器（<strong>Filter</strong>条目）之外的处理程序解密。</p>
+<p>V条目通过指定要使用的算法，确定了加密密钥的长度，PDF文件中数据的加密（和解密）将基于此。对于<strong>V</strong>值2和3，<strong>Length</strong>条目指定了加密密钥的确切长度。在PDF 1.5中，<strong>V</strong>的值4允许安全处理器使用自己的加密和解密算法，并指定在特定流上使用的<em>crypt</em>过滤器（见<a href="#765-加密过滤器">7.6.5</a>，“Crypt Filters”）。</p>
+<p>加密字典的其余内容由安全处理器确定，可能因处理器而异。标准安全处理器的条目在<a href="#763-标准安全处理程序">7.6.3</a>，“Standard Security Handler”中描述。公钥安全处理器的条目在<a href="#764-公钥安全处理器">7.6.4</a>，“Public-Key Security Handlers”中描述。</p>
+<p><table id="table20" markdown="span">
+    <caption>Table 20 – 所有加密字典的共同条目。</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Filter</strong></td>
+            <td>name</td>
+            <td>(<em>Required</em>) 此文档的首选安全处理器的名称。它应该是用来加密文档的安全处理器的名称。如果未出现<strong>SubFilter</strong>，则在打开文档时仅使用此安全处理器。如果存在，符合规范的阅读器可以使用任何实现了由<strong>SubFilter</strong>指定格式的安全处理器。<br/> <strong>Standard</strong> 应该是内置基于密码的安全处理器的名称。其他安全处理器的名称可以通过使用<a href="../../a5/">附录E</a>中描述的程序进行注册。</td>
+        </tr>
+        <tr>
+            <td><strong>SubFilter</strong></td>
+            <td>name</td>
+            <td>(<em>Optional; PDF 1.3</em>) 一个名称，完全指定了加密字典内容的格式和解释。它允许除了由<strong>Filter</strong>指定的安全处理器之外的其他安全处理器来解密文档。如果这个条目不存在，其他安全处理器将不解密文档。</p>
+<div class="admonition info">
+<p class="admonition-title">NOTE</p>
+<p>此条目在PDF 1.3中引入，以支持在PDF文件中使用公钥密码学（见<a href="#764-公钥安全处理器">7.6.4</a>，“公钥安全处理器”）；然而，它直到第四版（PDF 1.5）才被纳入<em>PDF参考手册</em>。</td>
+    </tr>
+    <tr>
+        <td><strong>V</strong></td>
+        <td>number</td>
+        <td>(<em>Optional</em>) 指定用于加密和解密文档的算法的代码：<br/>
+            0 一个未记录的算法。这个值不应用于加密。<br/>
+            1 <a href="#762-常规加密算法">7.6.2</a>中描述的“算法 1：使用 RC4 或 AES 算法加密数据”，使用 40 位的加密密钥长度；见下文。<br/>
+            2 （<em>PDF 1.4</em>）<a href="#762-常规加密算法">7.6.2</a>中描述的“算法 1：使用 RC4 或 AES 算法加密数据”，但允许使用超过 40 位的加密密钥长度。<br/>
+            3 （<em>PDF 1.4</em>）一个未公开的算法，允许 40 到 128 位的加密密钥长度范围。这个值不应用于符合规范的 PDF 文件中。<br/>
+            4 （<em>PDF 1.5</em>）安全处理器根据 <strong>CF</strong>、<strong>StmF</strong> 和 <strong>StrF</strong> 条目的规则定义在文档中使用加密和解密。<br/>
+            如果省略这个条目，默认值应为 0，但当存在时应该是 1 或更大的值。
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Length</strong></td>
+        <td>integer</td>
+        <td>(<em>Optional; PDF 1.4; only if V is 2 or 3</em>) 加密密钥的长度，以位为单位。该值应为8的倍数，范围在40到128之间。默认值：40。</td>
+    </tr>
+    <tr>
+        <td><strong>CF</strong></td>
+        <td>dictionary</td>
+        <td>(<em>Optional; 当V的值为4时才有意义。; PDF 1.5</em>) 一个字典，其键应为加密过滤器名称，值应为相应的加密过滤器字典（见<a href="#table25">表25</a>）。文档中使用的每个加密过滤器都应在该字典中有一个条目，标准加密过滤器名称除外（见<a href="#table26">表26</a>）。<br/> 符合规范的阅读器应忽略CF字典中与<a href="#table26">表26</a>中列出的键相同的条目，并使用相应标准加密过滤器的属性。</td>
+    </tr>
+    <tr>
+        <td><strong>StmF</strong></td>
+        <td>name</td>
+        <td>(<em>Optional; 当V的值为4时才有意义。; PDF 1.5</em>) 加密过滤器的名称，它将被默认用于解密流。名称应在<strong>CF</strong>字典中作为一个键，或在<a href="#table26">表26</a>中指定的标准加密过滤器名称。文档中的所有流，除了交叉引用流（见<a href="../s5/#758-交叉引用流">7.5.8</a>，“交叉引用流”）或在其<strong>Filter</strong>数组中有<strong>Crypt</strong>条目的流（见表6），都将由安全处理器使用此加密过滤器进行解密。<br/> 默认值：<strong>Identity</strong>。 </td>
+    </tr>
+    <tr>
+        <td><strong>StrF</strong></td>
+        <td>name</td>
+        <td>(<em>Optional; 当V的值为4时才有意义。; PDF 1.5</em>) 加密过滤器的名称，它将被用于解密文档中的所有字符串。名称应在<strong>CF</strong>字典中作为一个键，或在<a href="#table26">表26</a>中指定的标准加密过滤器名称。<br/> 默认值：<strong>Identity</strong>。 </td>
+    </tr>
+    <tr>
+        <td><strong>EFF</strong></td>
+        <td>name</td>
+        <td>(<em>Optional; 当V的值为4时才有意义。; PDF 1.6</em>) 加密过滤器的名称，它将被用于加密没有自己的加密过滤器指定器的嵌入式文件流；它应与<strong>CF</strong>字典中的一个键或<a href="#table26">表26</a>中指定的标准加密过滤器名称相对应。<br/> 此条目应由安全处理器提供。符合规范的编写器在加密嵌入式文件时应遵守这个值，除非嵌入式文件流有自己的加密过滤器指定器。如果这个条目不存在，并且嵌入式文件流没有包含加密过滤器指定器，则应使用<strong>StmF</strong>指定的默认流加密过滤器对流进行加密。</td>
+    </tr>
+</tbody></p>
+</div>
+</table>
+<p>在PDF文档主体中的字符串与加密字典中的字符串不同，加密字典中的字符串应为直接对象。加密字典的内容不应被加密（由<strong>V</strong>条目指定的算法）。安全处理器负责加密它们需要保护的加密字典中的任何数据。</p>
+<div class="admonition info">
+<p class="admonition-title">NOTE</p>
+<p>如果PDF提供的加密方法和语法不符合需求，符合规范的编写器有两个选择：他们可以提供替代的安全处理器，或者他们可以自己加密整个PDF文档，不使用PDF安全功能。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A PDF document can be <em>encrypted</em> (PDF 1.1) to protect its contents from unauthorized access. Encryption applies to all strings and streams in the document's PDF file, with the following exceptions:</p>
+<ul>
+<li>The values for the ID entry in the trailer</li>
+<li>Any strings in an Encrypt dictionary</li>
+<li>Any strings that are inside streams such as content streams and compressed object streams, which themselves are encrypted</li>
+</ul>
+<p>Encryption is not applied to other object types such as integers and boolean values, which are used primarily to convey information about the document's structure rather than its contents. Leaving these values unencrypted allows random access to the objects within a document, whereas encrypting the strings and streams protects the document's contents.</p>
+<p>When a PDF stream object (see <a href="../s3/#738-流对象">7.3.8</a>, "Stream Objects") refers to an external file, the stream’s contents shall not be encrypted, since they are not part of the PDF file itself. However, if the contents of the stream are embedded within the PDF file (see <a href="../s11/#7114-嵌入式文件流">7.11.4</a>, "Embedded File Streams"), they shall be encrypted like any other stream in the file. Beginning with PDF 1.5, embedded files can be encrypted in an otherwise unencrypted document (see <a href="#765-加密过滤器">7.6.5</a>, "Crypt Filters").</p>
+<p>Encryption-related information shall be stored in a document’s encryption dictionary, which shall be the value of the <strong>Encrypt</strong> entry in the document’s trailer dictionary (see Table 15). The absence of this entry from the trailer dictionary means that a conforming reader shall consider the document to be not encrypted. The entries shown in Table 20 are common to all encryption dictionaries.</p>
+<p>The encryption dictionary’s <strong>Filter</strong> entry identifies the file’s <em>security handler</em>, a software module that implements various aspects of the encryption process and controls access to the contents of the encrypted document. PDF specifies a standard password-based security handler that all conforming readers shall support, but conforming readers can optionally provide additional security handlers of their own.</p>
+<p>The <strong>SubFilter</strong> entry specifies the syntax of the encryption dictionary contents. It allows interoperability between handlers; that is, a document can be decrypted by a handler other than the preferred one (the <strong>Filter</strong> entry) if they both support the format specified by <strong>SubFilter</strong>.</p>
+<p>The V entry, in specifying which algorithm to use, determines the length of the encryption key, on which the encryption (and decryption) of data in a PDF file shall be based. For <strong>V</strong> values 2 and 3, the <strong>Length</strong> entry specifies the exact length of the encryption key. In PDF 1.5, a value of 4 for <strong>V</strong> permits the security handler to use its own encryption and decryption algorithms and to specify <em>crypt</em> filters to use on specific streams (see <a href="#765-加密过滤器">7.6.5</a>, "Crypt Filters").</p>
+<p>The remaining contents of the encryption dictionary shall be determined by the security handler and may vary from one handler to another. Entries for the standard security handler are described in <a href="#763-标准安全处理程序">7.6.3</a>, "Standard Security Handler." Entries for public-key security handlers are described in <a href="#764-公钥安全处理器">7.6.4</a>, "Public-Key Security Handlers."</p>
+<p><table id="table20" markdown="span">
+    <caption>Table 20 – Entries common to all encryption dictionaries</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Filter</strong></td>
+            <td>name</td>
+            <td>(<em>Required</em>) The name of the preferred security handler for this document. It shall be the name of the security handler that was used to encrypt the document. If <strong>SubFilter</strong> is not present, only this security handler shall be used when opening the document. If it is present, a conforming reader can use any security handler that implements the format specified by <strong>SubFilter</strong>.<br/> <strong>Standard</strong> shall be the name of the built-in password-based security handler. Names for other security handlers may be registered by using the procedure described in <a href="../../a5/">Annex E</a>.</td>
+        </tr>
+        <tr>
+            <td><strong>SubFilter</strong></td>
+            <td>name</td>
+            <td>(<em>Optional; PDF 1.3</em>) A name that completely specifies the format and interpretation of the contents of the encryption dictionary. It allows security handlers other than the one specified by <strong>Filter</strong> to decrypt the document. If this entry is absent, other security handlers shall not decrypt the document.</p>
+<div class="admonition info">
+<p class="admonition-title">NOTE</p>
+<p>This entry was introduced in PDF 1.3 to support the use of public-key cryptography in PDF files (see <a href="#764-公钥安全处理器">7.6.4</a>, "Public-Key Security Handlers"); however, it was not incorporated into the <em>PDF Reference</em> until the fourth edition (<em>PDF 1.5</em>).</td>
+    </tr>
+    <tr>
+        <td><strong>V</strong></td>
+        <td>number</td>
+        <td>(<em>Optional</em>) A code specifying the algorithm to be used in encrypting and decrypting the document:<br/>
+            0 An algorithm that is undocumented. This value shall not be used.<br/>
+            1 "Algorithm 1: Encryption of data using the RC4 or AES algorithms" in <a href="#762-常规加密算法">7.6.2</a>,
+            "General Encryption Algorithm," with an encryption key length of 40 bits; see
+            below.<br/>
+            2 (<em>PDF 1.4</em>) "Algorithm 1: Encryption of data using the RC4 or AES algorithms"
+            in <a href="#762-常规加密算法">7.6.2</a>, "General Encryption Algorithm," but permitting encryption key lengths
+            greater than 40 bits.<br/>
+            3 (<em>PDF 1.4</em>) An unpublished algorithm that permits encryption key lengths
+            ranging from 40 to 128 bits. This value shall not appear in a conforming PDF
+            file.<br/>
+            4 (<em>PDF 1.5</em>) The security handler defines the use of encryption and decryption
+            in the document, using the rules specified by the <strong>CF</strong>, <strong>StmF</strong>, and <strong>StrF</strong> entries.<br/>
+    The default value if this entry is omitted shall be 0, but when present should be a value of 1 or greater.</td>
+    </tr>
+    <tr>
+        <td><strong>Length</strong></td>
+        <td>integer</td>
+        <td>(<em>Optional; PDF 1.4; only if V is 2 or 3</em>) The length of the encryption key, in bits. The value shall be a multiple of 8, in the range 40 to 128. Default value: 40.</td>
+    </tr>
+    <tr>
+        <td><strong>CF</strong></td>
+        <td>dictionary</td>
+        <td>(<em>Optional; meaningful only when the value of V is 4; PDF 1.5</em>) A dictionary whose keys shall be crypt filter names and whose values shall be the corresponding crypt filter dictionaries (see <a href="#table25">Table 25</a>). Every crypt filter used in the document shall have an entry in this dictionary, except for the standard crypt filter names (see <a href="#table26">Table 26</a>).<br/> The conforming reader shall ignore entries in CF dictionary with the keys equal to those listed in <a href="#table26">Table 26</a> and use properties of the respective standard crypt filters.</td>
+    </tr>
+    <tr>
+        <td><strong>StmF</strong></td>
+        <td>name</td>
+        <td>(<em>Optional; meaningful only when the value of V is 4; PDF 1.5</em>) The name of the crypt filter that shall be used by default when decrypting streams. The name shall be a key in the <strong>CF</strong> dictionary or a standard crypt filter name specified in <a href="#table26">Table 26</a>. All streams in the document, except for cross-reference streams (see <a href="../s5/#758-交叉引用流">7.5.8</a>, "Cross-Reference Streams") or streams that have a <strong>Crypt</strong> entry in their <strong>Filter</strong> array (see Table 6), shall be decrypted by the security handler, using this crypt filter.<br/> Default value: <strong>Identity</strong>.</td>
+    </tr>
+    <tr>
+        <td><strong>StrF</strong></td>
+        <td>name</td>
+        <td>(<em>Optional; meaningful only when the value of V is 4; PDF 1.5</em>) The name of the crypt filter that shall be used when decrypting all strings in the document. The name shall be a key in the <strong>CF</strong> dictionary or a standard crypt filter name specified in <a href="#table26">Table 26</a>.<br/> Default value: <strong>Identity</strong>.</td>
+    </tr>
+    <tr>
+        <td><strong>EFF</strong></td>
+        <td>name</td>
+        <td>(<em>Optional; meaningful only when the value of V is 4; PDF 1.6</em>) The name of the crypt filter that shall be used when encrypting embedded file streams that do not have their own crypt filter specifier; it shall correspond to a key in the <strong>CF</strong> dictionary or a standard crypt filter name specified in <a href="#table26">Table 26</a>.<br/> This entry shall be provided by the security handler. Conforming writers shall respect this value when encrypting embedded files, except for embedded file streams that have their own crypt filter specifier. If this entry is not present, and the embedded file stream does not contain a crypt filter specifier, the stream shall be encrypted using the default stream crypt filter specified by <strong>StmF</strong>.</td>
+    </tr>
+</tbody></p>
+</div>
+</table>
+<p>Unlike strings within the body of the document, those in the encryption dictionary shall be direct objects. The contents of the encryption dictionary shall not be encrypted (the algorithm specified by the <strong>V</strong> entry). Security handlers shall be responsible for encrypting any data in the encryption dictionary that they need to protect.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Conforming writers have two choices if the encryption methods and syntax provided by PDF are not sufficient for their needs: they can provide an alternate security handler or they can encrypt whole PDF documents themselves, not making use of PDF security.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="762-常规加密算法">7.6.2 常规加密算法<a class="headerlink" href="#762-常规加密算法" title="Permanent link">&para;</a></h2>
+<p><strong>General Encryption Algorithm</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在加密 PDF 文件中的数据时，应使用以下算法之一：</p>
+<ul>
+<li>一种称为 RC4 的专有加密算法。RC4 是一种对称流密码：相同的算法应同时用于加密和解密，并且该算法不会改变数据的长度。RC4 是 RSA Security, Inc. 的版权专有算法。独立软件供应商可能需要获得 RC4 的许可，才能开发加密或解密 PDF 文档的软件。更多信息，请访问 RSA 网站 <a href="http://www.rsasecurity.com">http://www.rsasecurity.com</a> 或发送电子邮件至 <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#114;&#111;&#100;&#117;&#99;&#116;&#115;&#64;&#114;&#115;&#97;&#115;&#101;&#99;&#117;&#114;&#105;&#116;&#121;&#46;&#99;&#111;&#109;">&#112;&#114;&#111;&#100;&#117;&#99;&#116;&#115;&#64;&#114;&#115;&#97;&#115;&#101;&#99;&#117;&#114;&#105;&#116;&#121;&#46;&#99;&#111;&#109;</a>。</li>
+<li>AES（高级加密标准）算法（从 PDF 1.6 开始）。AES 是一种对称块密码：相同的算法应同时用于加密和解密，并且加密后的数据长度四舍五入为块大小的倍数，该块大小始终为 16 字节，如 FIPS 197 中所规定的那样，<em>高级加密标准 (AES)</em>；见<a href="../../bibliography/">参考文献</a>。</li>
+</ul>
+<p>使用 AES 加密的字符串和流应使用 Internet RFC 2898 中描述的填充方案，PKCS #5：基于密码的密码术规范版本 2.0；见<a href="../../bibliography/">参考文献</a>。对于长度为 M 的原始消息，填充应包括 16 - (M mod 16) 个字节，其值也应为 16 - (M mod 16)。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>一个 9 字节的消息有 7 个字节的填充，每个字节的值为 0x07。解密时可以明确地移除填充以确定原始消息长度。注意，当消息长度可以被 16 整除时，填充为 16 个字节，值为 0x10。</p>
+</div>
+<p>PDF 的标准加密方法还使用 MD5 消息摘要算法进行密钥生成（详见 Internet RFC 1321，<em>MD5 消息摘要算法</em>；见<a href="../../bibliography/">参考文献</a>）。</p>
+<p>PDF 文件中数据的加密应基于由安全处理器计算的<em>加密密钥</em>。不同的安全处理器使用自己的机制计算加密密钥。无论密钥如何计算，其在数据加密中的使用方式始终相同（参见"<a href="#algorithm1">算法 1：使用 RC4 或 AES 算法加密数据</a>"）。由于 RC4 算法和 AES 算法是对称的，因此同样的步骤应同时用于加密和解密数据。</p>
+<p>在<a href="#76-加密">7.6</a>“加密”中的算法在该条款内按唯一编号排列，以保持与以前文档的兼容性。</p>
+<p><strong id="algorithm1">算法 1：使用 RC4 或 AES 算法加密数据</strong></p>
+<p><ol style="list-style-type: lower-alpha" markdown="span">
+    <li>从要加密的字符串或流的对象标识符中获取对象号和生成号（参见<a href="../s3/#7310-间接对象">7.3.10</a>，“间接对象”）。如果字符串是直接对象，则使用包含该字符串的间接对象的标识符。</li>
+    <li>对于没有加密过滤器说明符的所有字符串和流，将对象号和生成号视为二进制整数，通过按顺序附加对象号的低 3 字节和生成号的低 2 字节（先附加低字节），将原始 n 字节加密密钥扩展为 n + 5 字节。(<em>n</em> 为 5，除非加密字典中的 V 值大于 1，在这种情况下，n 为 <strong>Length</strong> 的值除以 8。)<br/>
+    如果使用 AES 算法，通过添加值 “sAlT”（对应于十六进制值 0x73, 0x41, 0x6C, 0x54），将加密密钥额外扩展 4 个字节。（此添加是为了向后兼容，并不旨在提供额外的安全性。）
+    </li>
+    <li>初始化 MD5 哈希函数，并将步骤 (b) 的结果作为此函数的输入。</li>
+    <li>使用 MD5 哈希输出的前 (<em>n</em> + 5) 字节（最多 16 字节）作为 RC4 或 AES 对称密钥算法的密钥，同时使用要加密的字符串或流数据。<br/>
+    如果使用 AES 算法，则使用需要初始化向量的密码块链接（CBC）模式。块大小参数设置为 16 字节，初始化向量是一个 16 字节的随机数，存储为加密流或字符串的前 16 字节。<br/>
+    输出是要存储在 PDF 文件中的加密数据。
+    </li>
+</ol></p>
+<p>流数据应在应用所有流编码过滤器之后进行加密，并在应用任何流解码过滤器之前进行解密。要加密或解密的字节数应由流字典中的 <strong>Length</strong> 项给出。字符串（加密字典中的字符串除外）的解密应在按字符串表示描述的转义序列处理和十六进制解码之后进行（参见<a href="#7634-密码算法">7.3.4</a>，“字符串对象”）。</p>
+</div>
+<div class="tabbed-block">
+<p>One of the following algorithms shall be used when encrypting data in a PDF file:</p>
+<ul>
+<li>A proprietary encryption algorithm known as RC4. RC4 is a symmetric stream cipher: the same algorithm shall be used for both encryption and decryption, and the algorithm does not change the length of the data. RC4 is a copyrighted, proprietary algorithm of RSA Security, Inc. Independent software vendors may be required to license RC4 to develop software that encrypts or decrypts PDF documents. For further information, visit the RSA Web site at &lt;<a href="http://www.rsasecurity.com">http://www.rsasecurity.com</a>&gt; or send e-mail to &lt;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#114;&#111;&#100;&#117;&#99;&#116;&#115;&#64;&#114;&#115;&#97;&#115;&#101;&#99;&#117;&#114;&#105;&#116;&#121;&#46;&#99;&#111;&#109;">&#112;&#114;&#111;&#100;&#117;&#99;&#116;&#115;&#64;&#114;&#115;&#97;&#115;&#101;&#99;&#117;&#114;&#105;&#116;&#121;&#46;&#99;&#111;&#109;</a>&gt;.</li>
+<li>
+<p>The AES (Advanced Encryption Standard) algorithm (beginning with PDF 1.6). AES is a symmetric block
+cipher: the same algorithm shall be used for both encryption and decryption, and the length of the data
+when encrypted is rounded up to a multiple of the block size, which is fixed to always be 16 bytes, as</p>
+<p>specified in FIPS 197, <em>Advanced Encryption Standard (AES)</em>; see the <a href="../../bibliography/">Bibliography</a>). Strings and streams encrypted with AES shall use a padding scheme that is described in Internet RFC 2898, PKCS #5: Password-Based Cryptography Specification Version 2.0; see the <a href="../../bibliography/">Bibliography</a>. For an original message length of M, the pad shall consist of 16 - (M mod 16) bytes whose value shall also be 16 - (M mod 16).</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>A 9-byte message has a pad of 7 bytes, each with the value 0x07. The pad can be unambiguousl removed to determine the original message length when decrypting. Note that the pad is present when  is evenly divisible by 16; it contains 16 bytes of 0x10.</p>
+</div>
+<p>PDF’s standard encryption methods also make use of the MD5 message-digest algorithm for key generation purposes (described in Internet RFC 1321, The <em>MD5 Message-Digest Algorithm</em>; see the <a href="../../bibliography/">Bibliography</a>).</p>
+<p>The encryption of data in a PDF file shall be based on the use of an <em>encryption key</em> computed by the security handler. Different security handlers compute the encryption key using their own mechanisms. Regardless of how the key is computed, its use in the encryption of data shall always be the same (see "<a href="#algorithm1">Algorithm 1:Encryption</a> of data using the RC4 or AES algorithms"). Because the RC4 algorithm and AES algorithms are symmetric, this same sequence of steps shall be used both to encrypt and to decrypt data.</p>
+<p>Algorithms in <a href="#76-加密">7.6</a>, “Encryption” are uniquely numbered within that clause in a manner that maintains compatibility with previous documentation.</p>
+<p><strong id="algorithm1">Algorithm 1: Encryption of data using the RC4 or AES algorithms</strong></p>
+<p><ol style="list-style-type: lower-alpha" markdown="span">
+    <li>Obtain the object number and generation number from the object identifier of the string or stream to be encrypted (see <a href="../s3/#7310-间接对象">7.3.10</a>, "Indirect Objects"). If the string is a direct object, use the identifier of the indirect object containing it.</li>
+    <li>For all strings and streams without crypt filter specifier; treating the object number and generation number as binary integers, extend the original n-byte encryption key to n + 5 bytes by appending the low-order 3 bytes of the object number and the low-order 2 bytes of the generation number in that order, low-order byte first. (<em>n</em> is 5 unless the value of V in the encryption dictionary is greater than 1, in which case n is the value of <strong>Length</strong> divided by 8.)<br/>
+    If using the AES algorithm, extend the encryption key an additional 4 bytes by adding the value “sAlT”, which corresponds to the hexadecimal values 0x73, 0x41, 0x6C, 0x54. (This addition is done for backward compatibility and is not intended to provide additional security.)
+    </li>
+    <li>Initialize the MD5 hash function and pass the result of step (b) as input to this function.</li>
+    <li>Use the first (<em>n</em> + 5) bytes, up to a maximum of 16, of the output from the MD5 hash as the key for the RC4 or AES symmetric key algorithms, along with the string or stream data to be encrypted.<br/>
+    If using the AES algorithm, the Cipher Block Chaining (CBC) mode, which requires an initialization vector, is used. The block size parameter is set to 16 bytes, and the initialization vector is a 16-byte random number that is stored as the first 16 bytes of the encrypted stream or string.<br/>
+    The output is the encrypted data to be stored in the PDF file.
+    </li>
+</ol></p>
+<p>Stream data shall be encrypted after applying all stream encoding filters and shall be decrypted before applying any stream decoding filters. The number of bytes to be encrypted or decrypted shall be given by the <strong>Length</strong> entry in the stream dictionary. Decryption of strings (other than those in the encryption dictionary) shall be done after escape-sequence processing and hexadecimal decoding as appropriate to the string representation described in <a href="#7634-密码算法">7.3.4</a>, "String Objects."</p>
+</div>
+</div>
+</div>
+<h2 id="763-标准安全处理程序">7.6.3 标准安全处理程序<a class="headerlink" href="#763-标准安全处理程序" title="Permanent link">&para;</a></h2>
+<p><strong>Standard Security Handler</strong></p>
+<h3 id="7631-概述">7.6.3.1 概述<a class="headerlink" href="#7631-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF 的标准安全处理程序应允许为文档指定访问<em>权限</em>和最多两个密码：一个<em>所有者密码</em>和一个<em>用户密码</em>。应用程序是否对文档进行加密取决于创建文档的用户是否指定了任何密码或访问限制。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>一个符合标准的编写器可能在用户保存 PDF 文件之前提供一个安全设置对话框，供用户调用。</p>
+</div>
+<p>如果指定了密码或访问限制，文档应被加密，并且用于验证密码的权限和信息应存储在加密字典中。仅加密文件附件的文档应使用与<em>用户</em>和<em>所有者</em>密码相同的密码。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>如果符合标准的编写器拥有关于使用哪些密码和权限的其他信息，也可以在没有任何用户交互的情况下创建加密文档。</p>
+</div>
+<p>如果用户尝试打开有用户密码的加密文档，符合标准的阅读器应首先尝试使用在<a href="#7633-加密密钥算法">7.6.3.3</a>“加密密钥算法”中定义的填充字符串（默认用户密码）来认证加密文档：</p>
+<ul>
+<li>如果认证尝试成功，符合标准的阅读器可以打开、解密并在屏幕上显示该文档。</li>
+<li>如果认证尝试失败，应用程序应提示输入密码。正确提供任一密码（<em>所有者</em>或<em>用户</em>密码）应允许用户打开、解密并在屏幕上显示文档。</li>
+</ul>
+<p>对解密文档是否允许额外操作取决于打开文档时提供的密码（如果有的话）以及创建文档时指定的任何访问限制：</p>
+<ul>
+<li>使用正确的所有者密码打开文档应允许对文档进行完整的（所有者）访问。这种无限制访问包括更改文档密码和访问权限的能力。</li>
+<li>使用正确的<em>用户密码</em>（或使用默认密码）打开文档应允许根据文档加密字典中指定的用户访问权限执行其他操作。</li>
+</ul>
+<p>访问权限应以对应各种操作的标志形式指定，并且它们对应的操作集应取决于安全处理程序的修订号（也存储在加密字典中）。如果安全处理程序的修订号为2或更高，用户访问可以控制的操作如下：</p>
+<ul>
+<li>修改文档内容</li>
+<li>复制或以其他方式提取文档中的文本和图形，包括出于辅助功能的目的进行提取（即，使文档内容通过辅助技术如屏幕阅读器或盲文输出设备可以访问；参见 <a href="../../c14/s9/">14.9</a>，"辅助功能支持"）。</li>
+<li>添加或修改文本注解（参见 <a href="../../c12/s5/#12564-文本注解">12.5.6.4</a>，"文本注解"）和交互式表单域（参见 <a href="../../c12/s7/">12.7</a>，"交互式表单"）</li>
+<li>打印文档</li>
+</ul>
+<p>如果安全处理程序的修订号为3或更高，用户对以下操作的访问应得到更有选择性的控制：</p>
+<ul>
+<li>填写表单（即，填写现有的交互式表单域）和签署文档（相当于填写现有的签名域，这是一种交互式表单域）。</li>
+<li>组装文档：插入、旋转或删除页面并创建导航元素如书签或缩略图（参见 <a href="../../c12/s3/">12.3</a>，"文档级导航"）。</li>
+<li>打印生成可以忠实复制PDF内容的数字副本的表示。禁止这种打印可能会导致输出质量的下降。</li>
+</ul>
+<p>此外，修订3及以上的安全处理程序应能够分别控制文本和图形的提取（以支持残障用户的可访问性或其他目的）。</p>
+<p>如果指定了修订4的安全处理程序，标准安全处理程序应支持加密过滤器（参见 <a href="#765-加密过滤器">7.6.5</a>，"加密过滤器"）。支持应限于 <strong>Identity</strong> 加密过滤器（参见 <a href="#table26">表26</a>）和包含 <strong>CFM</strong> 值为 <strong>V2</strong> 或 <strong>AESV2</strong> 以及 AuthEvent 值为 <strong>DocOpen</strong> 的字典中的加密过滤器 <strong>StdCF</strong>。在这种情况下，公共密钥安全处理程序应在所有文档内容加密时使用名为 <strong>DefaultCryptFilter</strong> 的加密过滤器，并在仅加密文件附件时使用名为 <strong>DefEmbeddedFile</strong> 的加密过滤器替代 <strong>StdCF</strong> 名称。这种命名法不应被用作指示安全处理程序或加密类型的指示器。</p>
+<p>一旦文档成功打开并解密，符合标准的阅读器技术上可以访问文档的全部内容。在PDF加密中没有什么固有的机制能强制执行加密字典中指定的文档权限。符合标准的阅读器应尊重文档创建者的意图，根据文件中包含的权限限制用户对加密PDF文件的访问。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>PDF 1.5 引入了一套不需要文档加密的访问权限（参见 <a href="../../c12/s8/#1284-权限">12.8.4</a>，"权限"）。这使得在用户不能响应密码提示时对文档进行有限访问成为可能。例如，可能存在没有人员操作的符合标准的阅读器，如离线打印或在服务器上打印。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>PDF’s standard security handler shall allow access <em>permissions</em> and up to two passwords to be specified for a document: an <em>owner password</em> and a <em>user password</em>. An application’s decision to encrypt a document shall be based on whether the user creating the document specifies any passwords or access restrictions.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>A conforming writer may have a security settings dialog box that the user can invoke before saving the PDF file.</p>
+</div>
+<p>If passwords or access restrictions are specified, the document shall be encrypted, and the permissions and information required to validate the passwords shall be stored in the encryption dictionary. Documents in which only file attachments are encrypted shall use the same password as the <em>user</em> and <em>owner</em> password.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>A conforming writer may also create an encrypted document without any user interaction if it has some other source of information about what passwords and permissions to use.</p>
+</div>
+<p>If a user attempts to open an encrypted document that has a user password, the conforming reader shall first try to authenticate the encrypted document using the padding string defined in <a href="#7633-加密密钥算法">7.6.3.3</a>, "Encryption Key Algorithm" (default user password):</p>
+<ul>
+<li>If this authentication attempt is successful, the conforming reader may open, decrypt and display the document on the screen.</li>
+<li>If this authentication attempt fails, the application should prompt for a password. Correctly supplying either password (<em>owner</em> or user <em>password</em>) should enable the user to open the document, decrypt it, and display it on the screen.</li>
+</ul>
+<p>Whether additional operations shall be allowed on a decrypted document depends on which password (if any) was supplied when the document was opened and on any access restrictions that were specified when the document was created:</p>
+<ul>
+<li>Opening the document with the correct owner password should allow full (owner) access to the document. This unlimited access includes the ability to change the document’s passwords and access permissions.</li>
+<li>Opening the document with the correct <em>user password</em> (or opening a document with the default password) should allow additional operations to be performed according to the user access permissions specified in the document’s encryption dictionary.</li>
+</ul>
+<p>Access permissions shall be specified in the form of flags corresponding to the various operations, and the set of operations to which they correspond shall depend on the security handler’s revision number (also stored in the encryption dictionary). If the security handler’s revision number is 2 or greater, the operations to which user access can be controlled shall be as follows:</p>
+<ul>
+<li>Modifying the document’s contents</li>
+<li>Copying or otherwise extracting text and graphics from the document, including extraction for accessibility
+purposes (that is, to make the contents of the document accessible through assistive technologies such as screen readers or Braille output devices; see <a href="../../c14/s9/">14.9</a>, "Accessibility Support".</li>
+<li>Adding or modifying text annotations (see <a href="../../c12/s5/#12564-文本注解">12.5.6.4</a>, "Text Annotations") and interactive form fields (see <a href="../../c12/s7/">12.7</a>, "Interactive Forms")</li>
+<li>Printing the document</li>
+</ul>
+<p>If the security handler’s revision number is 3 or greater, user access to the following operations shall be controlled more selectively:</p>
+<ul>
+<li>Filling in forms (that is, filling in existing interactive form fields) and signing the document (which amount to filling in existing signature fields, a type of interactive form field).</li>
+<li>Assembling the document: inserting, rotating, or deleting pages and creating navigation elements such as bookmarks or thumbnail images (see <a href="../../c12/s3/">12.3</a>, "Document-Level Navigation").</li>
+<li>Printing to a representation from which a faithful digital copy of the PDF content could be generated. Disallowing such printing may result in degradation of output quality.</li>
+</ul>
+<p>In addition, security handlers of revisions 3 and greater shall enable the extraction of text and graphics (in support of accessibility to users with disabilities or for other purposes) to be controlled separately.</p>
+<p>If a security handler of revision 4 is specified, the standard security handler shall support crypt filters (see <a href="#765-加密过滤器">7.6.5</a>, "Crypt Filters"). The support shall be limited to the <strong>Identity</strong> crypt filter (see <a href="#table26">Table 26</a>) and crypt filters named <strong>StdCF</strong> whose dictionaries contain a <strong>CFM</strong> value of <strong>V2</strong> or <strong>AESV2</strong> and an AuthEvent value of <strong>DocOpen</strong>. Public-Key security handlers in this case shall use crypt filters named <strong>DefaultCryptFilter</strong> when all document content is encrypted, and shall use crypt filters named <strong>DefEmbeddedFile</strong> when file attachments only are encrypted in place of <strong>StdCF</strong> name. This nomenclature shall not be used as indicator of the type of the security handler or encryption.</p>
+<p>Once the document has been opened and decrypted successfully, a conforming reader technically has access to the entire contents of the document. There is nothing inherent in PDF encryption that enforces the document permissions specified in the encryption dictionary. Conforming readers shall respect the intent of the document creator by restricting user access to an encrypted PDF file according to the permissions contained in the file.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>PDF 1.5 introduces a set of access permissions that do not require the document to be encrypted (see <a href="../../c12/s8/#1284-权限">12.8.4</a>, "Permissions"). This enables limited access to a document when a user is not be able to respond to a prompt for a password. For example, there may be conforming readers that do not have a person running them such as printing off-line or on a server.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="7632-标准加密字典">7.6.3.2 标准加密字典<a class="headerlink" href="#7632-标准加密字典" title="Permanent link">&para;</a></h3>
+<p><strong>Standard Encryption Dictionary</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>表 21 显示了标准安全处理程序的加密字典条目（除了 <a href="#table20">表 20</a> 中的条目）。</p>
+<p><table id="table21" markdown="span">
+    <caption>表 21 – 标准安全处理程序的附加加密字典条目</caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>R</strong></td>
+            <td>number</td>
+            <td>(<em>必需</em>) 一个数字，指定用于解释此字典的标准安全处理程序的修订版本：<br/>
+            2 如果文档使用小于 2 的 <strong>V</strong> 值加密（参见表 20），并且没有任何访问权限设置为 0（通过下文中的 <strong>P</strong> 条目）在 <a href="#table22">表 22</a> 中指定的“修订版本为 3 或更高的安全处理程序”<br/>
+            3 如果文档使用 <strong>V</strong> 值为 2 或 3 加密，或有任何“修订版本为 3 或更高的安全处理程序”访问权限设置为 0<br/>
+            4 如果文档使用 <strong>V</strong> 值为 4 加密</td>
+        </tr>
+        <tr>
+            <td><strong>Length</strong></td>
+            <td>integer</td>
+            <td>(<em>可选；PDF 1.4；仅当 V 为 2 或 3 时</em>) 加密密钥的长度，以位为单位。该值应为 8 的倍数，范围为 40 到 128。默认值：40。</td>
+        </tr>
+        <tr>
+            <td><strong>O</strong></td>
+            <td>string</td>
+            <td>(<em>必需</em>) 一个 32 字节的字符串，基于所有者和用户密码，用于计算加密密钥并确定是否输入了有效的所有者密码。更多信息，参见 <a href="#7633-加密密钥算法">7.6.3.3</a>，"加密密钥算法"，和 <a href="#7634-密码算法">7.6.3.4</a>，"密码算法"。</td>
+        </tr>
+        <tr>
+            <td><strong>U</strong></td>
+            <td>string</td>
+            <td>(<em>必需</em>) 一个 32 字节的字符串，基于用户密码，用于确定是否提示用户输入密码，如果提示，是否输入了有效的用户或所有者密码。更多信息，参见 <a href="#7634-密码算法">7.6.3.4</a>，"密码算法"。</td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>integer</td>
+            <td>(<em>必需</em>) 一组标志，指定当文档以用户访问权限打开时允许进行的操作（参见 <a href="#table22">表 22</a>）。</td>
+        </tr>
+        <tr>
+            <td><strong>EncryptMetadata</strong></td>
+            <td>boolean</td>
+            <td>(<em>可选；仅当 </em><em>V</em><em> 的值为 4 时有意义；PDF 1.5</em>) 指示文档级元数据流（参见 <a href="../../c14/s3/#1432-元数据流">14.3.2</a>，"元数据流"）是否应加密。符合标准的产品应遵循此值。<br/> 默认值：true。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>此字典中 <strong>O</strong> 和 <strong>U</strong> 条目的值应用于确定在打开文档时输入的密码是正确的所有者密码、用户密码还是都不是。</p>
+<p><strong>P</strong> 条目的值应解释为一个无符号的 32 位数量，包含一组标志，指定当文档以用户访问权限打开时应授予的访问权限。<a href="#table22">表 22</a> 显示了这些标志的含义。标志字中的位位置应从 1（低位）到 32（高位）编号。任何位置上的 1 位应启用相应的访问权限。哪些位有意义，在某些情况下它们的解释方式应取决于加密字典的 <strong>R</strong> 条目中指定的安全处理程序的修订版本。</p>
+<p>符合标准的阅读器应忽略位位置为 3、4、5、6、9、10、11 和 12 之外的所有标志。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>PDF 整数对象可以解释为以签名二进制补码形式的二进制值。由于加密字典中 <strong>P</strong> 值中的所有保留高位标志位都必须为 1，因此整数值 <strong>P</strong> 应指定为负整数。例如，假设使用修订版 2 的安全处理程序，值 -44 允许打印和复制，但不允许修改内容和注释。</p>
+</div>
+<p><table id="table22" markdown="span">
+    <caption>表 22 – 用户访问权限</caption>
+    <thead>
+        <tr>
+            <th><strong>位位置</strong></th>
+            <th><strong>含义</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3</td>
+            <td>(<em>修订版 2 的安全处理程序</em>) 打印文档。<br/>
+            (<em>修订版 3 或更高的安全处理程序</em>) 打印文档（可能不是最高质量级别，具体取决于是否也设置了第 12 位）。</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>通过位 6、9 和 11 不控制的操作修改文档内容。</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>(<em>修订版 2 的安全处理程序</em>) 从文档中复制或以其他方式提取文本和图形，包括提取文本和图形（以支持残疾用户的无障碍访问或其他目的）。<br/> (<em>修订版 3 或更高的安全处理程序</em>) 通过位 10 不控制的操作从文档中复制或以其他方式提取文本和图形。</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>添加或修改文本注释，填写交互式表单字段，如果第 4 位也设置，则创建或修改交互式表单字段（包括签名字段）。</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>(<em>修订版 3 或更高的安全处理程序</em>) 填写现有的交互式表单字段（包括签名字段），即使第 6 位未设置。</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>(<em>修订版 3 或更高的安全处理程序</em>) 提取文本和图形（以支持残疾用户的无障碍访问或其他目的）。</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>(<em>修订版 3 或更高的安全处理程序</em>) 组装文档（插入、旋转或删除页面并创建书签或缩略图），即使第 4 位未设置。</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>(<em>修订版 3 或更高的安全处理程序</em>) 将文档打印为可以生成 PDF 内容的准确数字副本的表示形式。当该位未设置（且第 3 位设置）时，打印仅限于外观的低级表示形式，质量可能会下降。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>Table 21 shows the encryption dictionary entries for the standard security handler (in addition to those in <a href="#table20">Table 20</a>).</p>
+<p><table id="table21" markdown="span">
+    <caption>Table 21 – Additional encryption dictionary entries for the standard security handler</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>R</strong></td>
+            <td>number</td>
+            <td>(<em>Required</em>) A number specifying which revision of the standard security handler shall be used to interpret this dictionary:<br/>
+            2 if the document is encrypted with a <strong>V</strong> value less than 2 (see Table 20) and does not have any of the access permissions set to 0 (by means of the <strong>P</strong> entry, below) that are designated “Security handlers of revision 3 or greater” in <a href="#table22">Table 22</a><br/>
+            3 if the document is encrypted with a <strong>V</strong> value of 2 or 3, or has any “Security handlers of revision 3 or greater” access permissions set to 0<br/>
+            4 if the document is encrypted with a <strong>V</strong> value of 4</td>
+        </tr>
+        <tr>
+            <td><strong>Length</strong></td>
+            <td>integer</td>
+            <td>(<em>Optional; PDF 1.4; only if V is 2 or 3</em>) The length of the encryption key, in bits. The value shall be a multiple of 8, in the range 40 to 128. Default value: 40.</td>
+        </tr>
+        <tr>
+            <td><strong>O</strong></td>
+            <td>string</td>
+            <td>(Required) A 32-byte string, based on both the owner and user passwords, that shall be used in computing the encryption key and in determining whether a valid owner password was entered. For more information, see <a href="#7633-加密密钥算法">7.6.3.3</a>, "Encryption Key Algorithm," and <a href="#7634-密码算法">7.6.3.4</a>, "Password Algorithms."</td>
+        </tr>
+        <tr>
+            <td><strong>U</strong></td>
+            <td>string</td>
+            <td>(Required) A 32-byte string, based on the user password, that shall be used in determining whether to prompt the user for a password and, if so, whether a valid user or owner password was entered. For more information, see <a href="#7634-密码算法">7.6.3.4</a>, "Password Algorithms."</td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>integer</td>
+            <td>(Required) A set of flags specifying which operations shall be permitted when the document is opened with user access (see <a href="#table22">Table 22</a>).</td>
+        </tr>
+        <tr>
+            <td><strong>EncryptMetadata</strong></td>
+            <td>boolean</td>
+            <td>(<em>Optional; meaningful only when the value of </em><em>V</em><em> is 4; PDF 1.5</em>) Indicate whether the document-level metadata stream (see <a href="../../c14/s3/#1432-元数据流">14.3.2</a>, "Metadat Streams") shall be encrypted. Conforming products should respect thi value.<br/> Default value: true.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The values of the <strong>O</strong> and <strong>U</strong> entries in this dictionary shall be used to determine whether a password entered when the document is opened is the correct owner password, user password, or neither.</p>
+<p>The value of the <strong>P</strong> entry shall be interpreted as an unsigned 32-bit quantity containing a set of flags specifying which access permissions shall be granted when the document is opened with user access. <a href="#table22">Table 22</a> shows the meanings of these flags. Bit positions within the flag word shall be numbered from 1 (low-order) to 32 (high- order). A 1 bit in any position shall enable the corresponding access permission. Which bits shall be meaningful, and in some cases how they shall be interpreted, shall depend on the security handler’s revision number (specified in the encryption dictionary’s <strong>R</strong> entry).</p>
+<p>Conforming readers shall ignore all flags other than those at bit positions 3, 4, 5, 6, 9, 10, 11, and 12.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>PDF integer objects can be interpreted as binary values in a signed twos-complement form. Since all the reserved high-order flag bits in the encryption dictionary’s <strong>P</strong> value are required to be 1, the integer value <strong><em>P</em></strong> shall be specified as a negative integer. For example, assuming revision 2 of the security handler, the value - 44 permits printing and copying but disallows modifying the contents and annotations.</p>
+</div>
+<p><table id="table22" markdown="span">
+    <caption>Table 22 – User access permissions</caption>
+    <thead>
+        <tr>
+            <th><strong>Bit position</strong></th>
+            <th><strong>Meaning</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>3</td>
+            <td>(<em>Security handlers of revision 2</em>) Print the document.<br/>
+            (<em>Security handlers of revision 3 or greater</em>) Print the document (possibly not at the highest quality level, depending on whether bit 12 is also set).</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Modify the contents of the document by operations other than those controlled by bits 6, 9, and 11.</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>(<em>Security handlers of revision 2</em>) Copy or otherwise extract text and graphics from the document, including extracting text and graphics (in support of accessibility to users with disabilities or for other purposes).<br/> (<em>Security handlers of revision 3 or greater</em>) Copy or otherwise extract text and graphics from the document by operations other than that controlled by bit 10.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Add or modify text annotations, fill in interactive form fields, and, if bit 4 is also set, create or modify interactive form fields (including signature fields).</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>(<em>Security handlers of revision 3 or greater</em>) Fill in existing interactive form fields (including signature fields), even if bit 6 is clear.</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>(<em>Security handlers of revision 3 or greater</em>) Extract text and graphics (in support of accessibility to users with disabilities or for other purposes).</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>(<em>Security handlers of revision 3 or greater</em>) Assemble the document (insert, rotate, or delete pages and create bookmarks or thumbnail images), even if bit 4 is clear.</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>(<em>Security handlers of revision 3 or greater</em>) Print the document to a representation from which a faithful digital copy of the PDF content could be generated. When this bit is clear (and bit 3 is set), printing is limited to a low-level representation of the appearance, possibly of degraded quality.</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="7633-加密密钥算法">7.6.3.3 加密密钥算法<a class="headerlink" href="#7633-加密密钥算法" title="Permanent link">&para;</a></h3>
+<p><strong>Encryption Key Algorithm</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>正如前面提到的，安全处理程序的一个功能是生成用于加密和解密文档内容的加密密钥。给定一个密码字符串，标准安全处理程序按 "<a href="#algorithm2">算法 2</a>：计算加密密钥" 中所示计算加密密钥。</p>
+<p><strong id="algorithm2">算法 2：计算加密密钥</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>
+    将密码字符串填充或截断至恰好 32 个字节。如果密码字符串超过 32 个字节，仅使用其前 32 个字节；如果密码字符串少于 32 个字节，则通过附加所需数量的填充字符串开头的字节来填充它：<br/><br/>
+    <code>&lt; 28 BF 4E 5E 4E 75 8A 41 64 00 4E 56 FF FA 01 08 <br/>
+            2E 2E 00 B6 D0 68 3E 80 2F 0C A9 FE 64 53 69 7A &gt;</code><br/><br/>
+    也就是说，如果密码字符串的长度为 n 字节，则将填充字符串的前 32 - n 字节附加到密码字符串的末尾。如果密码字符串为空（零长度），意味着没有用户密码，则用整个填充字符串替代。
+</li>
+<li>初始化 MD5 哈希函数，并将步骤 (a) 的结果作为输入传递给该函数。</li>
+<li>将加密字典的 <strong>O</strong> 条目的值传递给 MD5 哈希函数。<strong>O</strong> 值的计算方式参见 "<a href="#algorithm3">算法 3</a>：计算加密字典的 O（所有者密码）值"。</li>
+<li>将 <strong>P</strong> 条目的整数值转换为 32 位无符号二进制数，并将这些字节传递给 MD5 哈希函数，低位字节优先。</li>
+<li>将文件标识符数组的第一个元素（文档拖尾字典中 <strong>ID</strong> 条目的值；参见 <a href="../s5/#table15">表 15</a>）传递给 MD5 哈希函数。<br/></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>对于给定的文档，ID 数组的第一个元素通常保持不变。然而，在某些情况下，如果创建了文档的新版本，符合标准的编写器可能会重新生成 ID 数组。建议安全处理程序在计算加密密钥时不要依赖于 ID。</p>
+</div>
+<p></li>
+<li>(<em>修订版 4 或更高版本的安全处理程序</em>) 如果文档元数据未被加密，则将值为 0xFFFFFFFF 的 4 个字节传递给 MD5 哈希函数。</li>
+<li>完成哈希计算。</li>
+<li>(<em>修订版 3 或更高版本的安全处理程序</em>) 重复 50 次：取前一次 MD5 哈希的输出，并将输出的前 n 字节作为新 MD5 哈希的输入，其中 n 是加密字典 <strong>Length</strong> 条目定义的加密密钥字节数。</li>
+<li>将最终 MD5 哈希输出的前 <em>n</em> 个字节设置为加密密钥，对于修订版 2 的安全处理程序，n 始终为 5，但对于修订版 3 或更高版本的安全处理程序，n 取决于加密字典 <strong>Length</strong> 条目的值。</li>
+</ul></p>
+<p>此算法应用于用户密码字符串时，生成用于根据 <a href="#762-常规加密算法">7.6.2</a> "常规加密算法" 中的 "<a href="#algorithm1">算法 1</a>：使用 RC4 或 AES 算法加密数据" 加密或解密字符串和流数据的加密密钥。此算法的部分内容也用于以下描述的算法中。</p>
+</div>
+<div class="tabbed-block">
+<p>As noted earlier, one function of a security handler is to generate an encryption key for use in encrypting and
+decrypting the contents of a document. Given a password string, the standard security handler computes an
+encryption key as shown in "Algorithm 2: Computing an encryption key".</p>
+<p><strong id="algorithm2">Algorithm 2: Computing an encryption key</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>
+    Pad or truncate the password string to exactly 32 bytes. If the password string is more than 32 bytes long, use only its first 32 bytes; if it is less than 32 bytes long, pad it by appending the required number of additional bytes from the beginning of the following padding string:<br/><br/>
+    <code>&lt; 28 BF 4E 5E 4E 75 8A 41 64 00 4E 56 FF FA 01 08 <br/>
+            2E 2E 00 B6 D0 68 3E 80 2F 0C A9 FE 64 53 69 7A &gt;</code><br/><br/>
+    That is, if the password string is n bytes long, append the first 32 - n bytes of the padding string to the end of the password string. If the password string is empty (zero-length), meaning there is no user password, substitute the entire padding string in its place.
+</li>
+<li>Initialize the MD5 hash function and pass the result of step (a) as input to this function.</li>
+<li>Pass the value of the encryption dictionary’s <strong>O</strong> entry to the MD5 hash function. ("<a href="#algorithm3">Algorithm 3</a>: Computing the encryption dictionary’s O (owner password) value" shows how the <strong>O</strong> value is computed.)</li>
+<li>Convert the integer value of the <strong>P</strong> entry to a 32-bit unsigned binary number and pass these bytes to the MD5 hash function, low-order byte first.</li>
+<li>Pass the first element of the file’s file identifier array (the value of the <strong>ID</strong> entry in the document’s trailer dictionary; see <a href="../s5/#table15">Table 15</a>) to the MD5 hash function.<br/></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The first element of the ID array generally remains the same for a given document. However, in some situations, conforming writers may regenerate the ID array if a new generation of a document is created. Security handlers are encouraged not to rely on the ID in the encryption key computation.</p>
+</div>
+<p></li>
+<li>(<em>Security handlers of revision 4 or greater</em>) If document metadata is not being encrypted, pass 4 bytes with the value 0xFFFFFFFF to the MD5 hash function.</li>
+<li>Finish the hash.</li>
+<li>(<em>Security handlers of revision 3 or greater</em>) Do the following 50 times: Take the output from the previous MD5 hash and pass the first n bytes of the output as input into a new MD5 hash, where n is the number of bytes of the encryption key as defined by the value of the encryption dictionary’s <strong>Length</strong> entry.</li>
+<li>Set the encryption key to the first <em>n</em> bytes of the output from the final MD5 hash, where n shall always be 5 for security handlers of revision 2 but, for security handlers of revision 3 or greater, shall depend on the value of the encryption dictionary’s <strong>Length</strong> entry.</li>
+</ul></p>
+<p>This algorithm, when applied to the user password string, produces the encryption key used to encrypt or decrypt string and stream data according to "<a href="#algorithm1">Algorithm 1</a>: Encryption of data using the RC4 or AES algorithms" in <a href="#762-常规加密算法">7.6.2</a>, "General Encryption Algorithm." Parts of this algorithm are also used in the algorithms described below.</p>
+</div>
+</div>
+</div>
+<h3 id="7634-密码算法">7.6.3.4 密码算法<a class="headerlink" href="#7634-密码算法" title="Permanent link">&para;</a></h3>
+<p><strong>Password Algorithms</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>除了加密密钥外，标准安全处理程序还应提供加密字典的内容（<a href="#table20">表 20</a> 和 <a href="#table21">表 21</a>）。<strong>Filter</strong>、<strong>V</strong>、<strong>Length</strong>、<strong>R</strong> 和 <strong>P</strong> 条目的值是直观的，但 <strong>O</strong>（所有者密码）和 <strong>U</strong>（用户密码）条目的计算需要进一步解释。以下算法 3 到 7 展示了如何计算所有者密码和用户密码条目的值（后者根据安全处理程序的修订版本有不同版本）。</p>
+<p><strong id="algorithm3">算法 3：计算加密字典的 O（所有者密码）值</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>按 "<a href="#algorithm2">算法 2</a>：计算加密密钥" 步骤 (a) 中描述的方式填充或截断所有者密码字符串。如果没有所有者密码，请使用用户密码。</li>
+<li>初始化 MD5 哈希函数，并将步骤 (a) 的结果作为输入传递给该函数。</li>
+<li>(<em>修订版 3 或更高版本的安全处理程序</em>) 重复 50 次：取前一次 MD5 哈希的输出，并将其作为新 MD5 哈希的输入。</li>
+<li>使用最终 MD5 哈希输出的前 <em>n</em> 字节创建 RC4 加密密钥，对于修订版 2 的安全处理程序，n 始终为 5，但对于修订版 3 或更高版本的安全处理程序，n 取决于加密字典 <strong>Length</strong> 条目的值。</li>
+<li>按 "<a href="#algorithm2">算法 2</a>：计算加密密钥" 步骤 (a) 中描述的方式填充或截断用户密码字符串。</li>
+<li>使用步骤 (d) 中获得的加密密钥，通过 RC4 加密函数加密步骤 (e) 的结果。</li>
+<li>(<em>修订版 3 或更高版本的安全处理程序</em>) 重复 19 次：取前一次 RC4 函数调用的输出，并将其作为新函数调用的输入；使用通过对步骤 (d) 中获得的加密密钥的每个字节与迭代计数器（从 1 到 19）的单字节值进行异或（XOR）操作生成的加密密钥。</li>
+<li>将 RC4 函数最终调用的输出存储为加密字典中 <strong>O</strong> 条目的值。</li>
+</ul></p>
+<p><strong id="algorithm4">算法 4：计算加密字典的 U（用户密码）值（修订版 2 的安全处理程序）</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>基于用户密码字符串创建加密密钥，如 "<a href="#algorithm2">算法 2</a>：计算加密密钥" 所述。</li>
+<li>使用前一步的加密密钥，通过 RC4 加密函数加密 "<a href="#algorithm2">算法 2</a>：计算加密密钥" 步骤 (a) 中显示的 32 字节填充字符串。</li>
+<li>将步骤 (b) 的结果存储为加密字典中的 <strong>U</strong> 条目的值。</li>
+</ul></p>
+<p><strong id="algorithm5">算法 5：计算加密字典的 U（用户密码）值（修订版 3 或更高版本的安全处理程序）</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>基于用户密码字符串创建加密密钥，如 "<a href="#algorithm2">算法 2</a>：计算加密密钥" 所述。</li>
+<li>初始化 MD5 哈希函数，并将 "<a href="#algorithm2">算法 2</a>：计算加密密钥" 步骤 (a) 中显示的 32 字节填充字符串作为输入传递给该函数。</li>
+<li>将文件文件标识符数组的第一个元素（文档的尾部字典中 <strong>ID</strong> 条目的值；见 <a href="../s5/#table15">表 15</a>）传递给哈希函数，并完成哈希计算。</li>
+<li>使用步骤 (a) 中的加密密钥，通过 RC4 加密函数加密哈希的 16 字节结果。</li>
+<li>重复以下操作 19 次：取前一次 RC4 函数调用的输出，并将其作为新函数调用的输入；使用通过对步骤 (a) 中获得的原始加密密钥的每个字节与迭代计数器（从 1 到 19）的单字节值进行异或（XOR）操作生成的加密密钥。</li>
+<li>将 RC4 函数最终调用的输出附加 16 字节的任意填充，并将 32 字节的结果存储为加密字典中的 <strong>U</strong> 条目的值。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>标准安全处理程序使用以下算法 6 和 7 来确定提供的密码字符串是否为正确的用户或所有者密码。还需注意，算法 6 可用于确定文档的用户密码是否为空字符串，因此在打开文档时是否抑制密码提示。</p>
+</div>
+<p></li>
+</ul></p>
+<p><strong id="algorithm6">算法 6：验证用户密码</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>使用提供的密码字符串执行 "<a href="#algorithm4">算法 4</a>：计算加密字典的 U（用户密码）值（修订版 2 的安全处理程序）" 或 "<a href="#algorithm5">算法 5</a>：计算加密字典的 U（用户密码）值（修订版 3 或更高版本的安全处理程序）" 的所有步骤，但最后一步除外。</li>
+<li>如果步骤 (a) 的结果与加密字典的 <strong>U</strong> 条目的值相等（在修订版 3 或更高版本的安全处理程序的情况下，仅比较前 16 字节），则提供的密码是正确的用户密码。步骤 (a) 中获得的密钥（即，在 "<a href="#algorithm4">算法 4</a>：计算加密字典的 U（用户密码）值（修订版 2 的安全处理程序）" 或 "<a href="#algorithm5">算法 5</a>：计算加密字典的 U（用户密码）值（修订版 3 或更高版本的安全处理程序）" 的第一步中获得的密钥）应用于解密文档。</li>
+</ul></p>
+<p><strong id="algorithm7">算法 7：验证所有者密码</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>从提供的密码字符串计算加密密钥，如 "<a href="#algorithm3">算法 3</a>：计算加密字典的 O（所有者密码）值" 的步骤 (a) 到 (d) 所述。</li>
+<li>(<em>仅适用于修订版 2 的安全处理程序</em>) 使用步骤 (a) 中计算的加密密钥，通过 RC4 加密函数解密加密字典的 <strong>O</strong> 条目的值。<br/><br/>
+(<em>修订版 3 或更高版本的安全处理程序</em>) 执行以下操作 20 次：解密加密字典的 <strong>O</strong> 条目（第一次迭代）或前一次迭代的输出（所有后续迭代），每次迭代使用不同的加密密钥。该密钥应通过获取原始密钥（在步骤 (a) 中获得）并对每个字节与迭代计数器（从 19 到 0）的单字节值进行异或（XOR）操作生成。
+</li>
+<li>步骤 (b) 的结果假定为用户密码。使用 "<a href="#algorithm6">算法 6</a>：验证用户密码" 验证此用户密码。如果正确，则提供的密码是正确的所有者密码。</li>
+</ul></p>
+</div>
+<div class="tabbed-block">
+<p>In addition to the encryption key, the standard security handler shall provide the contents of the encryption dictionary (<a href="#table20">Table 20</a> and <a href="#table21">Table 21</a>). The values of the <strong>Filter</strong>, <strong>V</strong>, <strong>Length</strong>, <strong>R</strong>, and <strong>P</strong> entries are straightforward, but the computation of the <strong>O</strong> (owner password) and U (user password) entries requires further explanation. The algorithms 3 through 7 that follow show how the values of the owner password and user password entries shall be computed (with separate versions of the latter depending on the revision of the security handler).</p>
+<p><strong id="algorithm3">Algorithm 3: Computing the encryption dictionary’s O (owner password) value</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>Pad or truncate the owner password string as described in step (a) of "<a href="#algorithm2">Algorithm 2</a>: Computing an encryption key". If there is no owner password, use the user password instead.</li>
+<li>Initialize the MD5 hash function and pass the result of step (a) as input to this function.</li>
+<li>(<em>Security handlers of revision 3 or greater</em>) Do the following 50 times: Take the output from the previous
+MD5 hash and pass it as input into a new MD5 hash.</li>
+<li>Create an RC4 encryption key using the first <em>n</em> bytes of the output from the final MD5 hash, where n shall always be 5 for security handlers of revision 2 but, for security handlers of revision 3 or greater, shall depend on the value of the encryption dictionary’s <strong>Length</strong> entry.</li>
+<li>Pad or truncate the user password string as described in step (a) of "<a href="#algorithm2">Algorithm 2</a>: Computing an encryption key".</li>
+<li>Encrypt the result of step (e), using an RC4 encryption function with the encryption key obtained in step (d).</li>
+<li>(<em>Security handlers of revision 3 or greater</em>) Do the following 19 times: Take the output from the previous invocation of the RC4 function and pass it as input to a new invocation of the function; use an encryption key generated by taking each byte of the encryption key obtained in step (d) and performing an XOR (exclusive or) operation between that byte and the single-byte value of the iteration counter (from 1 to 19).</li>
+<li>Store the output from the final invocation of the RC4 function as the value of the <strong>O</strong> entry in the encryption dictionary.</li>
+</ul></p>
+<p><strong id="algorithm4">Algorithm 4: Computing the encryption dictionary’s U (user password) value (Security handlers of revision 2)</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>Create an encryption key based on the user password string, as described in "<a href="#algorithm2">Algorithm 2</a>: Computing an encryption key".</li>
+<li>Encrypt the 32-byte padding string shown in step (a) of "<a href="#algorithm2">Algorithm 2</a>: Computing an encryption key", using an RC4 encryption function with the encryption key from the preceding step.</li>
+<li>Store the result of step (b) as the value of the <strong>U</strong> entry in the encryption dictionary.</li>
+</ul></p>
+<p><strong id="algorithm5">Algorithm 5: Computing the encryption dictionary’s U (user password) value (Security handlers of revision 3 or greater)</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>Create an encryption key based on the user password string, as described in "<a href="#algorithm2">Algorithm 2</a>: Computing an encryption key".</li>
+<li>Initialize the MD5 hash function and pass the 32-byte padding string shown in step (a) of "<a href="#algorithm2">Algorithm 2</a>: Computing an encryption key" as input to this function.</li>
+<li>Pass the first element of the file’s file identifier array (the value of the <strong>ID</strong> entry in the document’s trailer dictionary; see <a href="../s5/#table15">Table 15</a>) to the hash function and finish the hash.</li>
+<li>Encrypt the 16-byte result of the hash, using an RC4 encryption function with the encryption key from step (a).</li>
+<li>Do the following 19 times: Take the output from the previous invocation of the RC4 function and pass it as input to a new invocation of the function; use an encryption key generated by taking each byte of the original encryption key obtained in step (a) and performing an XOR (exclusive or) operation between that byte and the single-byte value of the iteration counter (from 1 to 19).</li>
+<li>Append 16 bytes of arbitrary padding to the output from the final invocation of the RC4 function and store the 32-byte result as the value of the <strong>U</strong> entry in the encryption dictionary.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The standard security handler uses the algorithms 6 and 7 that follow, to determine whether a supplied password string is the correct user or owner password. Note too that algorithm 6 can be used to determine whether a document’s user password is the empty string, and therefore whether to suppress prompting for a password when the document is opened.</p>
+</div>
+<p></li>
+</ul></p>
+<p><strong id="algorithm6">Algorithm 6: Authenticating the user password</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>Perform all but the last step of "<a href="#algorithm4">Algorithm 4</a>: Computing the encryption dictionary’s U (user password) value (Security handlers of revision 2)" or "Algorithm 5: Computing the encryption dictionary’s U (user password) value (Security handlers of revision 3 or greater)" using the supplied password string.</li>
+<li>If the result of step (a) is equal to the value of the encryption dictionary’s <strong>U</strong> entry (comparing on the first 16 bytes in the case of security handlers of revision 3 or greater), the password supplied is the correct user password. The key obtained in step (a) (that is, in the first step of "<a href="#algorithm4">Algorithm 4</a>: Computing the encryption dictionary’s U (user password) value (Security handlers of revision 2)" or "<a href="#algorithm5">Algorithm 5</a>: Computing the encryption dictionary’s U (user password) value (Security handlers of revision 3 or greater)") shall be used to decrypt the document.</li>
+</ul></p>
+<p><strong id="algorithm7">Algorithm 7: Authenticating the owner password</strong></p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>Compute an encryption key from the supplied password string, as described in steps (a) to (d) of "<a href="#algorithm3">Algorithm 3</a>: Computing the encryption dictionary’s O (owner password) value".</li>
+<li>(<em>Security handlers of revision 2 only</em>) Decrypt the value of the encryption dictionary’s <strong>O</strong> entry, using an RC4 encryption function with the encryption key computed in step (a).<br/><br/>
+(<em>Security handlers of revision 3 or greater</em>) Do the following 20 times: Decrypt the value of the encryption dictionary’s <strong>O</strong> entry (first iteration) or the output from the previous iteration (all subsequent iterations), using an RC4 encryption function with a different encryption key at each iteration. The key shall be generated by taking the original key (obtained in step (a)) and performing an XOR (exclusive or) operation between each byte of the key and the single-byte value of the iteration counter (from 19 to 0).
+</li>
+<li>The result of step (b) purports to be the user password. Authenticate this user password using "<a href="#algorithm6">Algorithm 6</a>: Authenticating the user password". If it is correct, the password supplied is the correct owner password.</li>
+</ul></p>
+</div>
+</div>
+</div>
+<h2 id="764-公钥安全处理器">7.6.4 公钥安全处理器<a class="headerlink" href="#764-公钥安全处理器" title="Permanent link">&para;</a></h2>
+<p><strong>Public-Key Security Handlers</strong></p>
+<h3 id="7641-概述">7.6.4.1 概述<a class="headerlink" href="#7641-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>安全处理程序可以使用<em>公钥</em>加密技术来加密文档（或文档中的字符串和流）。在这样做时，可以指定一个或多个接收者列表，每个列表具有自己独特的访问权限。与标准安全处理程序不同，公钥安全处理程序中只有指定的接收者可以打开加密文档或内容，而不是通过密码来决定访问权限。公钥安全处理程序定义的权限见于 <a href="#7642-公钥加密字典">7.6.4.2</a> 中的 <a href="#table24">表 24</a>，标题为“公钥加密字典”。</p>
+<p>公钥安全处理程序使用行业标准的公钥密码学标准第 7 号 (PKCS#7) 二进制编码语法来编码接收者列表、解密密钥和访问权限信息。PKCS#7 规范见于互联网 RFC 2315，标题为“PKCS #7: Cryptographic Message Syntax, Version 1.5”（参见<a href="../../bibliography/">参考书目</a>）。</p>
+<p>在加密数据时，每个接收者的 X.509 公钥证书（如 ITU-T 推荐 X.509 中所述；参见[参考书目](../bibliography.md）必须可用。在解密数据时，符合规范的读取器应扫描加密内容的接收者列表，并尝试找到与用户证书匹配的项。如果找到匹配项，用户需要访问对应的私钥，这可能需要认证，通常使用密码。一旦获得访问权限，就可以使用私钥来解密加密的数据。</p>
+</div>
+<div class="tabbed-block">
+<p>Security handlers may use <em>public-key</em> encryption technology to encrypt a document (or strings and streams within a document). When doing so, specifying one or more lists of recipients, where each list has its own unique access permissions may be done. Only specified recipients shall open the encrypted document or content, unlike the standard security handler, where a password determines access. The permissions defined for public-key security handlers are shown in <a href="#table24">Table 24</a> in <a href="#7642-公钥加密字典">7.6.4.2</a>, "Public-Key Encryption Dictionary".</p>
+<p>Public-key security handlers use the industry standard Public Key Cryptographic Standard Number 7 (PKCS#7) binary encoding syntax to encode recipient list, decryption key, and access permission information. The PKCS#7 specification is in Internet RFC 2315, PKCS #7: Cryptographic Message Syntax, Version 1.5 (see the Bibliography).</p>
+<p>When encrypting the data, each recipient’s X.509 public key certificate (as described in ITU-T Recommendation X.509; see the Bibliography) shall be available. When decrypting the data, the conforming reader shall scan the recipient list for which the content is encrypted and shall attempt to find a match with a certificate that belongs to the user. If a match is found, the user requires access to the corresponding private key, which may require authentication, possibly using a password. Once access is obtained, the private key shall be used to decrypt the encrypted data.</p>
+</div>
+</div>
+</div>
+<h3 id="7642-公钥加密字典">7.6.4.2 公钥加密字典<a class="headerlink" href="#7642-公钥加密字典" title="Permanent link">&para;</a></h3>
+<p><strong>Public-Key Encryption Dictionary</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>公钥安全处理程序的加密字典包含 <a href="#table20">表 20</a> 中显示的通用条目，其值如上所述。此外，它们还可以包含 <a href="#table23">表 23</a> 中显示的条目，如下所述。</p>
+<p><strong>Filter</strong> 条目应为公钥安全处理程序的名称。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>支持公钥加密的现有安全处理程序示例包括 Entrust.PPKEF、<strong>Adobe.PPKLite</strong> 和 <strong>Adobe.PubSec</strong>。在加密文档时，这些处理程序将是首选处理程序。</p>
+</div>
+<p>与符合规范的公钥安全处理程序一起使用的 <strong>SubFilter</strong> 条目允许的值包括 <strong>adbe.pkcs7.s3</strong>、<strong>adbe.pkcs7.s4</strong>，在不使用加密过滤器时应使用这些值（见 <a href="#765-加密过滤器">7.6.5</a>，标题为“加密过滤器”），以及 <strong>adbe.pkcs7.s5</strong>，在使用加密过滤器时应使用此值。</p>
+<p>当 <strong>SubFilter</strong> 为 <strong>adbe.pkcs7.s5</strong> 时，<strong>CF</strong>、<strong>StmF</strong> 和 <strong>StrF</strong> 条目可能存在。</p>
+<p><table id="table23" markdown="span">
+    <caption><strong>表 23 – 公钥安全处理程序的附加加密字典条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Recipients</strong></td>
+            <td>array</td>
+            <td>(<em>当 </em><em>SubFilter</em><em> 为 </em><em>adbe.pkcs7.s3</em><em> 或 </em><em>adbe.pkcs7.s4</em><em> 时必需；PDF 1.3</em>) 一个字节字符串数组，其中每个字符串是一个 PKCS#7 对象，列出已经被授予相同访问权限的接收者。PKCS#7 对象中包含的数据应包括用于解密加密数据的加密密钥以及适用于接收者列表的访问权限（见 <a href="#table24">表 24</a>）。每个唯一的访问权限集应只有一个 PKCS#7 对象；如果一个接收者出现在多个列表中，使用的权限应为第一个匹配列表中的权限。<br/> 当 <strong>SubFilter</strong> 为 <strong>adbe.pkcs7.s5</strong> 时，接收者列表应在加密过滤器字典中指定；见 <a href="#table27">表 27</a>。</td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>integer</td>
+            <td>(<em>必需</em>) 一组标志，指定在用户访问文档时允许哪些操作。如果位 2 设置为 1，则忽略所有其他位，允许所有操作。如果位 2 设置为 0，则操作权限基于 <a href="#table24">表 24</a> 中定义的其余标志的值。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><strong>P</strong> 条目的值应被解释为一个无符号的 32 位数量，包含一组标志，指定在用户访问文档时授予哪些访问权限。 <a href="#table24">表 24</a> 显示了这些标志的含义。标志字中的位位置应从 1（低位）到 32（高位）编号。任何位置上的 1 位都应启用相应的访问权限。</p>
+<p>符合规范的读取器应忽略除位位置 2、3、4、5、6、9、10、11 和 12 之外的所有标志。</p>
+<p><table id="table24" markdown="span">
+    <caption><strong>表 24 – 公钥安全处理程序用户访问权限</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>位(Bit)位置</strong></th>
+            <th><strong>含义</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2</td>
+            <td>当设置时，允许更改加密并启用所有其他权限。</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>打印文档（可能不是最高质量级别，具体取决于是否同时设置了位 12）。</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>通过除位 6、9 和 11 控制的操作之外的操作修改文档内容。</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>通过除位 10 控制的操作之外的操作复制或提取文档中的文本和图形。</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>添加或修改文本注释，填写交互式表单字段，并且如果位 4 也被设置，创建或修改交互式表单字段（包括签名字段）。</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>填写现有的交互式表单字段（包括签名字段），即使位 6 未设置。</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>提取文本和图形（支持残障用户访问或其他目的）。</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>组装文档（插入、旋转或删除页面并创建书签或缩略图），即使位 4 未设置。</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>打印文档到一个可以生成 PDF 内容的忠实数字副本的表示形式。当该位未设置（且位 3 设置）时，打印限制为外观的低级表示形式，可能质量较差。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>Encryption dictionaries for public-key security handlers contain the common entries shown in <a href="#table20">Table 20</a>, whose values are described above. In addition, they may contain the entry shown in <a href="#table23">Table 23</a> as described below.</p>
+<p>The <strong>Filter</strong> entry shall be the name of a public-key security handler.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Examples of existing security handlers that support public-key encryption are Entrust.PPKEF, <strong>Adobe.PPKLite</strong>, and <strong>Adobe.PubSec</strong>. This handler will be the preferred handler when encrypting the document.</p>
+</div>
+<p>Permitted values of the <strong>SubFilter</strong> entry for use with conforming public-key security handlers are <strong>adbe.pkcs7.s3</strong>, <strong>adbe.pkcs7.s4</strong>, which shall be used when not using crypt filters (see <a href="#765-加密过滤器">7.6.5</a>, "Crypt Filters") and <strong>adbe.pkcs7.s5</strong>, which shall be used when using crypt filters.</p>
+<p>The <strong>CF</strong>, <strong>StmF</strong>, and <strong>StrF</strong> entries may be present when <strong>SubFilter</strong> is <strong>adbe.pkcs7.s5</strong>.</p>
+<p><table id="table23" markdown="span">
+    <caption><strong>Table 23 – Additional encryption dictionary entries for public-key security handlers</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Recipients</strong></td>
+            <td>array</td>
+            <td>(<em>Required when </em><em>SubFilter</em><em> is </em><em>adbe.pkcs7.s3</em><em> or </em><em>adbe.pkcs7.s4</em><em>; PDF 1.3</em>) An array of byte-strings, where each string is a PKCS#7 object listing recipients who have been granted equal access rights to the document. The data contained in the PKCS#7 object shall include both a cryptographic key that shall be used to decrypt the encrypted data and the access permissions (see Table 24) that apply to the recipient list. There shall be only one PKCS#7 object per unique set of access permissions; if a recipient appears in more than one list, the permissions used shall be those in the first matching list.<br/> When <strong>SubFilter</strong> is <strong>adbe.pkcs7.s5</strong>, recipient lists shall be specified in the crypt filter dictionary; see <a href="#table27">Table 27</a>.</td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>integer</td>
+            <td>(<em>Required</em>) A set of flags specifying which operations shall be permitted when the document is opened with user access. If bit 2 is set to 1, all other bits are ignored and all operations are permitted. If bit 2 is set to 0, permission for operations are based on the values of the remaining flags defined in <a href="#table24">Table 24</a>.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The value of the <strong>P</strong> entry shall be interpreted as an unsigned 32-bit quantity containing a set of flags specifying which access permissions shall be granted when the document is opened with user access. <a href="#table24">Table 24</a> shows the meanings of these flags. Bit positions within the flag word shall be numbered from 1 (low-order) to 32 (high- order). A 1 bit in any position shall enable the corresponding access permission.</p>
+<p>Conforming readers shall ignore all flags other than those at bit positions 2, 3, 4, 5, 6, 9, 10, 11, and 12.</p>
+<p><table id="table24" markdown="span">
+    <caption><strong>Table 24 – Public-Key security handler user access permissions</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Bit position</strong></th>
+            <th><strong>Meaning</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2</td>
+            <td>When set permits change of encryption and enables all other permissions.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Print the document (possibly not at the highest quality level, depending on whether bit 12 is also set).</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Modify the contents of the document by operations other than those controlled by bits 6, 9, and 11.</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Copy or otherwise extract text and graphics from the document by operations other than that controlled by bit 10.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Add or modify text annotations, fill in interactive form fields, and, if bit 4 is also set, create or modify interactive form fields (including signature fields).</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Fill in existing interactive form fields (including signature fields), even if bit 6 is clear.</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Extract text and graphics (in support of accessibility to users with disabilities or for other purposes).</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Assemble the document (insert, rotate, or delete pages and create bookmarks or thumbnail images), even if bit 4 is clear.</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Print the document to a representation from which a faithful digital copy of the PDF content could be generated. When this bit is clear (and bit 3 is set), printing is limited to a low-level representation of the appearance, possibly of degraded quality.</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="7643-公钥加密算法">7.6.4.3 公钥加密算法<a class="headerlink" href="#7643-公钥加密算法" title="Permanent link">&para;</a></h3>
+<p><strong>Public-Key Encryption Algorithms</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>图 4 说明了在加密 PDF 文件时如何使用 PKCS#7 对象。</strong> PKCS#7 对象旨在封装和加密所谓的封装数据。</p>
+<p><a class="glightbox" href="../imgs/f4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f4.png" /></a></p>
+<p>PKCS#7 对象中的封装数据包含用于解密文档（或文档中的单个字符串或流，当使用加密过滤器时；见 <a href="#765-加密过滤器">7.6.5</a>，"加密过滤器"）的密钥材料。这个密钥（图 4 中的明文密钥）将为每个接收者使用该接收者的公钥进行加密，并存储在 PKCS#7 对象中（作为每个接收者的加密密钥）。要解密文档，该密钥必须使用接收者的私钥进行解密，从而得到一个解密的（明文）密钥。这个密钥反过来将用于解密 PKCS#7 对象中的封装数据，结果是一个字节数组，其中包括以下信息：</p>
+<ul>
+<li>一个 20 字节的种子，用于创建由 "<a href="#algorithm1">算法 1</a>：使用 RC4 或 AES 算法的数据加密" 规定的加密密钥。该种子应为加密文档的安全处理程序生成的唯一随机数。</li>
+<li>一个 4 字节的值定义权限，最低有效字节在前。请参见 <a href="#table24">表 24</a> 以了解可能的权限值。</li>
+<li>当 <strong>SubFilter</strong> 为 <strong>adbe.pkcs7.s3</strong> 时，相关权限应仅为标准安全处理程序修订版 2 中指定的权限。</li>
+<li>对于 <strong>adbe.pkcs7.s4</strong>，适用修订版 3 的安全处理程序权限。</li>
+<li>对于 <strong>adbe.pkcs7.s5</strong>，支持使用加密过滤器，当加密过滤器从加密字典的 <strong>StmF</strong> 或 <strong>StrF</strong> 条目引用时，权限应与 adbe.pkcs7.s4 相同。当从流对象的 <strong>Crypt</strong> 过滤器解码参数字典引用（见 <a href="../s4/#table14">表 14</a>）时，封装数据中应不存在 4 字节的权限。</li>
+</ul>
+<p>加密 PKCS#7 对象中的封装数据时使用的算法包括：RC4（密钥长度最高为 256 位）、DES、Triple DES、RC2（密钥长度最高为 128 位）、128 位 AES 的密码块链（CBC）模式、192 位 AES 的 CBC 模式、256 位 AES 的 CBC 模式。PKCS#7 规范在 Internet RFC 2315 中，PKCS #7: <em>Cryptographic Message Syntax</em>, Version 1.5（见参考文献）。</p>
+<p>用于 "<a href="#algorithm1">算法 1</a>：使用 RC4 或 AES 算法的数据加密" 的加密密钥应通过 SHA-1 消息摘要操作计算，该操作依次对以下数据进行摘要：</p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>20 字节的种子</li>
+<li>PKCS#7 对象 <strong>Recipients</strong> 数组中每个项目的字节，按数组中出现的顺序</li>
+<li>如果生成的密钥用于文档级别的加密且文档元数据保持为明文，则添加 4 字节的值 0xFF</li>
+</ul></p>
+<p>结果摘要的前 <em>n/8</em> 字节应作为加密密钥，其中 n 为加密密钥的位长度。</p>
+</div>
+<div class="tabbed-block">
+<p>Figure 4 illustrates how PKCS#7 objects shall be used when encrypting PDF files. A PKCS#7 object is designed to encapsulate and encrypt what is referred to as the enveloped data.</p>
+<p><a class="glightbox" href="../imgs/f4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f4.png" /></a></p>
+<p>The enveloped data in the PKCS#7 object contains keying material that shall be used to decrypt the document (or individual strings or streams in the document, when crypt filters are used; see <a href="#765-加密过滤器">7.6.5</a>, "Crypt Filters"). A key shall be used to encrypt (and decrypt) the enveloped data. This key (the plaintext key in Figure 4) shall be encrypted for each recipient, using that recipient’s public key, and shall be stored in the PKCS#7 object (as the encrypted key for each recipient). To decrypt the document, that key shall be decrypted using the recipient’s private key, which yields a decrypted (plaintext) key. That key, in turn, shall be used to decrypt the enveloped data in the PKCS#7 object, resulting in a byte array that includes the following information:</p>
+<ul>
+<li>A 20-byte seed that shall be used to create the encryption key that is used by "<a href="#algorithm1">Algorithm 1</a>: Encryption of data using the RC4 or AES algorithms". The seed shall be a unique random number generated by the security handler that encrypted the document.</li>
+<li>A 4-byte value defining the permissions, least significant byte first. See <a href="#table24">Table 24</a> for the possible permission values.</li>
+<li>When <strong>SubFilter</strong> is <strong>adbe.pkcs7.s3</strong>, the relevant permissions shall be only those specified for revision 2 of the standard security handler.</li>
+<li>For <strong>adbe.pkcs7.s4</strong>, security handlers of revision 3 permissions shall apply.</li>
+<li>For <strong>adbe.pkcs7.s5</strong>, which supports the use of crypt filters, the permissions shall be the same as adbe.pkcs7.s4 when the crypt filter is referenced from the <strong>StmF</strong> or <strong>StrF</strong> entries of the encryption dictionary. When referenced from the <strong>Crypt</strong> filter decode parameter dictionary of a stream object (see <a href="../s4/#table14">Table 14</a>), the 4 bytes of permissions shall be absent from the enveloped data.</li>
+</ul>
+<p>The algorithms that shall be used to encrypt the enveloped data in the PKCS#7 object are: RC4 with key lengths up to 256-bits, DES, Triple DES, RC2 with key lengths up to 128 bits, 128-bit AES in Cipher Block Chaining (CBC) mode, 192-bit AES in CBC mode, 256-bit AES in CBC mode. The PKCS#7 specification is in Internet RFC 2315, PKCS #7: <em>Cryptographic Message Syntax</em>, Version 1.5 (see the Bibliography).</p>
+<p>The encryption key used by "<a href="#algorithm1">Algorithm 1</a>: Encryption of data using the RC4 or AES algorithms" shall be calculated by means of an SHA-1 message digest operation that digests the following data, in order:</p>
+<p><ul style="list-style-type: lower-alpha" markdown="span">
+<li>The 20 bytes of seed</li>
+<li>The bytes of each item in the <strong>Recipients</strong> array of PKCS#7 objects in the order in which they appear in the array</li>
+<li>4 bytes with the value 0xFF if the key being generated is intended for use in document-level encryption and the document metadata is being left as plaintext</li>
+</ul></p>
+<p>The first <em>n/8</em> bytes of the resulting digest shall be used as the encryption key, where n is the bit length of the encryption key.</p>
+</div>
+</div>
+</div>
+<h2 id="765-加密过滤器">7.6.5 加密过滤器<a class="headerlink" href="#765-加密过滤器" title="Permanent link">&para;</a></h2>
+<p><strong>Crypt Filters</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF 1.5 引入了 <em>加密过滤器</em>，提供了在 PDF 文件内更细粒度的加密控制。加密过滤器的使用涉及以下结构：</p>
+<ul>
+<li>加密字典（见<a href="#table20">表 20</a>）包含枚举文档中的加密过滤器 (<strong>CF</strong>) 的条目，并指定默认用于解密文档中所有流 (<strong>StmF</strong>) 和字符串 (<strong>StrF</strong>) 的过滤器。此外，<strong>V</strong> 条目的值必须为 4 才能使用加密过滤器。</li>
+<li>加密字典的 <strong>CF</strong> 条目中指定的每个加密过滤器必须由加密过滤器字典表示，其条目如<a href="#table25">表 25</a> 所示。</li>
+<li>可以为文档中的任何流指定一种流过滤器类型，即 <strong>Crypt</strong> 过滤器（见<a href="../s4/#7410-crypt-过滤器">7.4.10</a>，“Crypt 过滤器”），以覆盖流的默认过滤器。符合标准的阅读器必须提供一个标准的 Identity 过滤器，该过滤器应保持数据不变（见<a href="#table26">表 26</a>），以允许在加密的文档中使特定流（如文档元数据）未加密。流的 <strong>DecodeParms</strong> 条目必须包含一个 <strong>Crypt</strong> 过滤器解码参数字典（见<a href="../s4/#table14">表 14</a>），其 <strong>Name</strong> 条目指定要使用的特定加密过滤器（如果缺失，则使用 <strong>Identity</strong>）。不同的流可以指定不同的加密过滤器。</li>
+</ul>
+<p>在访问流之前，必须始终获得解密流的授权。这通常在文档打开时发生，如加密过滤器字典中 <strong>AuthEvent</strong> 条目值为 <strong>DocOpen</strong> 所指定的那样。符合标准的阅读器和安全处理程序应将任何尝试访问授权失败的流的行为视为错误。<strong>AuthEvent</strong> 还可以是 <strong>EFOpen</strong>，这表示存在一个使用与文档中默认用于加密字符串和流的加密过滤器不同的加密过滤器加密的嵌入文件。</p>
+<p>在文件规范词典（见<a href="../s11/#7113-文件规范词典">7.11.3</a>，“文件规范词典”）中，相关文件 (<strong>RF</strong>) 应使用与嵌入文件 (<strong>EF</strong>) 相同的加密过滤器。</p>
+<p>加密过滤器字典中 <strong>CFM</strong> 条目的值为 <strong>None</strong> 允许安全处理程序自行解密。这允许处理程序严格控制密钥管理并使用任何首选的对称密钥加密算法。</p>
+<p><table id="table25" markdown="span">
+    <caption><strong>Table 25 – 所有加密过滤器字典的通用条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) 如果存在，应为 <strong>CryptFilter</strong> 表示一个加密过滤器字典。</td>
+        </tr>
+        <tr>
+            <td><strong>CFM</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) 符合标准的阅读器用来解密数据的方法。应支持以下值：: <br/>
+                <dl>
+                    <dt><strong>None</strong></dt>
+                    <dd>应用程序不解密数据，而是将输入流传递给安全处理程序进行解密。</dd>
+                    <dt><strong>V2</strong></dt>
+                    <dd>应用程序应向安全处理程序请求加密密钥，并使用"<a href="#algorithm1">算法1</a>: 使用RC4或AES算法加密数据"中的RC4算法隐式解密数据。</dd>
+                    <dt><strong>AESV2</strong></dt>
+                    <dd>(PDF 1.6) 应用程序应向安全处理程序请求加密密钥，并使用"<a href="#algorithm1">算法1</a>: 使用RC4或AES算法加密数据"中的AES算法隐式解密数据，采用密码块链接(CBC)模式，块大小为16字节，初始化向量应随机生成并作为前16字节放置在流或字符串中。</dd>
+                </dl>
+                当值为 <strong>V2</strong> 或 <strong>AESV2</strong> 时，应用程序可以一次性请求此加密密钥并缓存密钥，以便后续使用相同加密过滤器的流。因此，加密过滤器名称与相应的加密密钥之间应存在一对一关系<br/><br/>              <br />
+                仅支持此处列出的值。遇到其他值的应用程序应报告文件使用不支持的算法进行加密。<br/><br/>              <br />
+                默认值： <strong>None</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>AuthEvent</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) 用于触发访问此过滤器使用的加密密钥所需授权的事件。如果授权失败，则事件失败。有效值应为:
+                <dl>
+                    <dt><strong>DocOpen</strong></dt>
+                    <dd>在打开文档时需要授权。</dd>
+                    <dt><strong>EFOpen</strong></dt>
+                    <dd>在访问嵌入文件时需要授权.</dd>
+                </dl>
+            默认值: <strong>DocOpen</strong>. <br/><br/>
+            如果此过滤器用作加密字典中的 <strong>StrF</strong> 或 <strong>StmF</strong> 的值（见[表20](#table20），符合标准的阅读器应忽略此键，并按 <strong>DocOpen</strong> 的值行为。</td>
+        </tr>
+        <tr>
+            <td><strong>Length</strong></td>
+            <td>integer</td>
+            <td>(<em>Optional</em>) 加密密钥的位长度。应为 40 至 128 范围内的 8 的倍数。 <br/>
+                安全处理程序可以定义其自己的 <strong>Length</strong> 条目使用方法，并应使用它来定义加密密钥的位长度。标准安全处理程序以 8 的倍数表示长度（16 表示 128），而公钥安全处理程序按原样表示（128 表示 128）。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>安全处理程序可以向加密过滤器字典添加自己的私有数据。私有数据条目的名称应符合 PDF 名称注册表 (见 <a href="../../a5/">附录 E</a>).</p>
+<p><table id="table26" markdown="span">
+    <caption><strong>Table 26 – 标准加密过滤器名称</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Identity</strong></td>
+            <td>输入数据应不经任何处理直接传递。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>表 27 列出了公钥安全处理器使用的附加加密过滤器字典条目 (见 <a href="#764-公钥安全处理器">7.6.4</a>, "公钥安全处理器"). 当这些条目存在时，<strong>CFM</strong> 的值应为 <strong>V2</strong> 或 <strong>AESV2</strong>。</p>
+<p><table id="table27" markdown="span">
+    <caption><strong>Table 27 – 公钥安全处理器的附加加密过滤器字典条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Recipients</strong></td>
+            <td>array or string</td>
+            <td>(<em>Optional</em>) 如果存在，对于加密过滤器字典应为<strong>CryptFilter</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>CFM</strong></td>
+            <td>name</td>
+            <td>(Required) 如果加密过滤器从加密字典中的<strong>StmF</strong>或<strong>StrF</strong>引用，此条目应为一个字节串数组，每个字符串应为一个二进制编码的PKCS#7对象，该对象应列出被授予对文档同等访问权限的收件人。PKCS#7对象中包含的数据应包括一个用于计算加密密钥的20字节种子值（见<a href="#7643-公钥加密算法">7.6.4.3</a>，“公钥加密算法”），随后是适用于收件人列表的4字节权限设置（见表22）。每种独特的访问权限集只能有一个对象。如果一个收件人出现在多个列表中，使用的权限应为第一个匹配列表中的权限。<br/>
+            如果加密过滤器从<strong>Crypt</strong>过滤器解码参数字典（见表14）引用，此条目应为一个字符串，该字符串应为一个二进制编码的PKCS#7对象，包含被允许访问相应加密流的所有收件人的列表。PKCS#7对象中包含的数据应是一个20字节的种子值，该值将用于创建加密密钥，该密钥将被用于“<a href="#algorithm1">算法1</a>：使用RC4或AES算法加密数据”中的算法。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>EncryptMetadata</strong></td>
+            <td>boolean</td>
+            <td>（<em>可选；仅由加密字典中从</em><em>StmF</em><em>引用的加密过滤器使用</em>）表示是否应对文档级元数据流进行加密（见<a href="../../c14/s3/#1432-元数据流">14.3.2</a>，“元数据流”）。符合规范的阅读器在确定是否应对元数据进行加密时，应遵守此值。EncryptMetadata条目的值由安全处理器设置，而不是由符合规范的阅读器设置。<br/>
+            默认值: <strong>true</strong>.</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>以下展示了在包含明文文档级元数据流的加密文档中使用加密过滤器的方法。通过应用<strong>Identity</strong>加密过滤器，元数据流保持不变。其余的流和字符串使用默认过滤器进行解密。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #3D7B7B; font-style: italic">%PDF–1.5</span>
+1 0 obj                <span style="color: #3D7B7B; font-style: italic">% 文档目录</span>
+    &lt;&lt; /Type /Catalog
+       /Pages 2 0 R
+       /Metadata 6 0 R
+    &gt;&gt;
+endobj
+2 0 obj                <span style="color: #3D7B7B; font-style: italic">% 页面树</span>
+    &lt;&lt; /Type /Pages
+       /Kids [3 0 R]
+       /Count 1
+    &gt;&gt;
+endobj
+3 0 obj                <span style="color: #3D7B7B; font-style: italic">% 第一页</span>
+    &lt;&lt; /Type /Page
+       /Parent 2 0 R
+       /MediaBox [0 0 612 792]
+       /Contents 4 0 R
+    &gt;&gt;
+endobj
+4 0 obj                <span style="color: #3D7B7B; font-style: italic">% 页面内容</span>
+    &lt;&lt; /Length 35 &gt;&gt;
+    stream
+        *** 加密页面标记操作符 ***
+    endstream
+endobj
+5 0 obj
+    &lt;&lt; /Title (<span style="color: #BA2121">$</span><span style="color: #008000">#</span><span style="color: #666">*</span><span style="color: #008000">#</span><span style="color: #3D7B7B; font-style: italic">%*$#^&amp;##) &gt;&gt;     % 信息字典：加密的文本字符串。</span>
+<span style="color: #008000">endobj</span>
+<span style="color: #666">6</span><span style="color: #008000"> </span><span style="color: #666">0</span><span style="color: #008000"> obj</span>
+<span style="color: #008000">    &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">Type </span><span style="color: #666">/</span><span style="color: #008000">Metadata</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Subtype </span><span style="color: #666">/</span><span style="color: #008000">XML</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Length </span><span style="color: #666">15</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Filter </span><span style="color: #666">[/</span><span style="color: #008000">Crypt</span><span style="color: #666">]</span><span style="color: #008000">           </span><span style="color: #3D7B7B; font-style: italic">% 使用加密过滤器。</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">DecodeParms               </span><span style="color: #3D7B7B; font-style: italic">% 带有这些参数。</span>
+<span style="color: #008000">       &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">Type </span><span style="color: #666">/</span><span style="color: #008000">CryptFilterDecodeParms</span>
+<span style="color: #008000">          </span><span style="color: #666">/</span><span style="color: #008000">Name </span><span style="color: #666">/</span><span style="color: #008000">Identity          </span><span style="color: #3D7B7B; font-style: italic">% 表示没有加密。</span>
+<span style="color: #008000">       &gt;&gt;</span>
+<span style="color: #008000">    &gt;&gt;</span>
+<span style="color: #008000">    stream                        </span>
+<span style="color: #008000">        XML metadata                </span><span style="color: #3D7B7B; font-style: italic">% 未加密的元数据。</span>
+<span style="color: #008000">    endstream</span>
+<span style="color: #008000">endobj</span>
+<span style="color: #666">8</span><span style="color: #008000"> </span><span style="color: #666">0</span><span style="color: #008000"> obj                        </span><span style="color: #3D7B7B; font-style: italic">% 加密字典</span>
+<span style="color: #008000">    &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">Filter </span><span style="color: #666">/</span><span style="color: #008000">MySecurityHandlerName</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">V </span><span style="color: #666">4</span><span style="color: #008000">                   </span><span style="color: #3D7B7B; font-style: italic">% 版本4 4: 允许加密过滤器。</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">CF                     </span><span style="color: #3D7B7B; font-style: italic">% 加密过滤器列表</span>
+<span style="color: #008000">       &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">MyFilter</span><span style="color: #666">0</span>
+<span style="color: #008000">           &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">Type </span><span style="color: #666">/</span><span style="color: #008000">CryptFilter</span>
+<span style="color: #008000">              </span><span style="color: #666">/</span><span style="color: #008000">CFM V</span><span style="color: #666">2</span><span style="color: #008000"> &gt;&gt;               </span><span style="color: #3D7B7B; font-style: italic">% 使用标准算法</span>
+<span style="color: #008000">       &gt;&gt;</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">StrF </span><span style="color: #666">/</span><span style="color: #008000">MyFilter</span><span style="color: #666">0</span><span style="color: #008000">           </span><span style="color: #3D7B7B; font-style: italic">% 字符串使用 /MyFilter0 进行解密。</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">StmF </span><span style="color: #666">/</span><span style="color: #008000">MyFilter</span><span style="color: #666">0</span><span style="color: #008000">           </span><span style="color: #3D7B7B; font-style: italic">% 流使用 /MyFilter0 进行解密。</span>
+<span style="color: #008000">       ...                        </span><span style="color: #3D7B7B; font-style: italic">% /MySecurityHandlerName 的私有数据。</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">MyUnsecureKey </span><span style="color: #666">(12345678)</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">EncryptMetadata false</span>
+<span style="color: #008000">    &gt;&gt;</span>
+<span style="color: #008000">endobj</span>
+<span style="color: #008000">xref</span>
+<span style="color: #008000">    ....</span>
+<span style="color: #008000">trailer</span>
+<span style="color: #008000">    &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">Size </span><span style="color: #666">8</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Root </span><span style="color: #666">1</span><span style="color: #008000"> </span><span style="color: #666">0</span><span style="color: #008000"> R</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Info </span><span style="color: #666">5</span><span style="color: #008000"> </span><span style="color: #666">0</span><span style="color: #008000"> R</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Encrypt </span><span style="color: #666">8</span><span style="color: #008000"> </span><span style="color: #666">0</span><span style="color: #008000"> R</span>
+<span style="color: #008000">    &gt;&gt;</span>
+<span style="color: #008000">startxref</span>
+<span style="color: #666">495</span>
+<span style="color: #3D7B7B; font-style: italic">%%EOF</span>
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>PDF 1.5 introduces <em>crypt filters</em>, which provide finer granularity control of encryption within a PDF file. The use of crypt filters involves the following structures:</p>
+<ul>
+<li>The encryption dictionary (see <a href="#table20">Table 20</a>) contains entries that enumerate the crypt filters in the document (<strong>CF</strong>) and specify which ones are used by default to decrypt all the streams (<strong>StmF</strong>) and strings (<strong>StrF</strong>) in the document. In addition, the value of the <strong>V</strong> entry shall be 4 to use crypt filters.</li>
+<li>Each crypt filter specified in the <strong>CF</strong> entry of the encryption dictionary shall be represented by a crypt filter dictionary, whose entries are shown in <a href="#table25">Table 25</a>.</li>
+<li>A stream filter type, the <strong>Crypt</strong> filter (see <a href="../s4/#7410-crypt-过滤器">7.4.10</a>, "Crypt Filter") can be specified for any stream in the document to override the default filter for streams. A conforming reader shall provide a standard Identity filter which shall pass the data unchanged (see <a href="#table26">Table 26</a>) to allow specific streams, such as document metadata, to be unencrypted in an otherwise encrypted document. The stream’s <strong>DecodeParms</strong> entry shall contain a <strong>Crypt</strong> filter decode parameters dictionary (see <a href="../s4/#table14">Table 14</a>) whose <strong>Name</strong> entry specifies the particular crypt filter to be used (if missing, <strong>Identity</strong> is used). Different streams may specify different crypt filters.</li>
+</ul>
+<p>Authorization to decrypt a stream shall always be obtained before the stream can be accessed. This typically occurs when the document is opened, as specified by a value of <strong>DocOpen</strong> for the <strong>AuthEvent</strong> entry in the crypt filter dictionary. Conforming readers and security handlers shall treat any attempt to access a stream for which authorization has failed as an error. <strong>AuthEvent</strong> can also be <strong>EFOpen</strong>, which indicates the presence of an embedded file that is encrypted with a crypt filter that may be different from the crypt filters used by default to encrypt strings and streams in the document.</p>
+<p>In the file specification dictionary (see <a href="../s11/#7113-文件规范词典">7.11.3</a>, "File Specification Dictionaries"), related files (<strong>RF</strong>) shall use the same crypt filter as the embedded file (<strong>EF</strong>).</p>
+<p>A value of <strong>None</strong> for the <strong>CFM</strong> entry in the crypt filter dictionary allows the security handler to do its own decryption. This allows the handler to tightly control key management and use any preferred symmetric-key cryptographic algorithm.</p>
+<p><table id="table25" markdown="span">
+    <caption><strong>Table 25 – Entries common to all crypt filter dictionaries</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) If present, shall be <strong>CryptFilter</strong> for a crypt filter dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>CFM</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) The method used, if any, by the conforming reader to decrypt data. The following values shall be supported: <br/>
+                <dl>
+                    <dt><strong>None</strong></dt>
+                    <dd>The application shall not decrypt data but shall direct the input stream to the security handler for decryption.</dd>
+                    <dt><strong>V2</strong></dt>
+                    <dd>The application shall ask the security handler for the encryption key and shall implicitly decrypt data with "<a href="#algorithm1">Algorithm 1</a>: Encryption of data using the RC4 or AES algorithms", using the RC4 algorithm.</dd>
+                    <dt><strong>AESV2</strong></dt>
+                    <dd>(PDF 1.6) The application shall ask the security handler for the encryption key and shall implicitly decrypt data with "<a href="#algorithm1">Algorithm 1</a>: Encryption of data using the RC4 or AES algorithms", using the AES algorithm in Cipher Block Chaining (CBC) mode with a 16-byte block size and an initialization vector that shall be randomly generated and placed as the first 16 bytes in the stream or string.</dd>
+                </dl>
+                When the value is <strong>V2</strong> or <strong>AESV2</strong>, the application may ask once for this encryption key and cache the key for subsequent use for streams that use the same crypt filter. Therefore, there shall be a one-to-one relationship between a crypt filter name and the corresponding encryption key.<br/><br/>              <br />
+                Only the values listed here shall be supported. Applications that encounter other values shall report that the file is encrypted with an unsupported algorithm.<br/><br/>              <br />
+                Default value: <strong>None</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>AuthEvent</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) The event to be used to trigger the authorization that is required to access encryption keys used by this filter. If authorization fails, the event shall fail. Valid values shall be:
+                <dl>
+                    <dt><strong>DocOpen</strong></dt>
+                    <dd>Authorization shall be required when a document is opened.</dd>
+                    <dt><strong>EFOpen</strong></dt>
+                    <dd>Authorization shall be required when accessing embedded files.</dd>
+                </dl>
+            Default value: <strong>DocOpen</strong>. <br/><br/>
+            If this filter is used as the value of <strong>StrF</strong> or <strong>StmF</strong> in the encryption dictionary (see <a href="#table20">Table 20</a>), the conforming reader shall ignore this key and behave as if the value is <strong>DocOpen</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>Length</strong></td>
+            <td>integer</td>
+            <td>(<em>Optional</em>) The bit length of the encryption key. It shall be a multiple of 8 in the range of 40 to 128. <br/>
+                Security handlers may define their own use of the <strong>Length</strong> entry and should use it to define the bit length of the encryption key. Standard security handler expresses the length in multiples of 8 (16 means 128) and public-key security handler expresses it as is (128 means 128).</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Security handlers may add their own private data to crypt filter dictionaries. Names for private data entries shall conform to the PDF name registry (see <a href="../../a5/">Annex E</a>).</p>
+<p><table id="table26" markdown="span">
+    <caption><strong>Table 26 – Standard crypt filter names</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Identity</strong></td>
+            <td>Input data shall be passed through without any processing.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Table 27 lists the additional crypt filter dictionary entries used by public-key security handlers (see <a href="#764-公钥安全处理器">7.6.4</a>, "Public-Key Security Handlers"). When these entries are present, the value of <strong>CFM</strong> shall be <strong>V2</strong> or <strong>AESV2</strong>.</p>
+<p><table id="table27" markdown="span">
+    <caption><strong>Table 27 – Additional crypt filter dictionary entries for public-key security handlers</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Recipients</strong></td>
+            <td>array or string</td>
+            <td>(<em>Optional</em>) If present, shall be <strong>CryptFilter</strong> for a crypt filter dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>CFM</strong></td>
+            <td>name</td>
+            <td>(Required) If the crypt filter is referenced from <strong>StmF</strong> or <strong>StrF</strong> in the encryption dictionary, this entry shall be an array of byte strings, where each string shall be a binary-encoded PKCS#7 object that shall list recipients that have been granted equal access rights to the document. The enveloped data contained in the PKCS#7 object shall include both a 20-byte seed value that shall be used to compute the encryption key (see <a href="#7643-公钥加密算法">7.6.4.3</a>, "Public-Key Encryption Algorithms") followed by 4 bytes of permissions settings (see Table 22) that shall apply to the recipient list. There shall be only one object per unique set of access permissions. If a recipient appears in more than one list, the permissions used shall be those in the first matching list.<br/>
+            If the crypt filter is referenced from a <strong>Crypt</strong> filter decode parameter dictionary (see Table 14), this entry shall be a string that shall be a binary-encoded PKCS#7 object shall contain a list of all recipients who are permitted to access the corresponding encrypted stream. The enveloped data contained in the PKCS#7 object shall be a 20-byte seed value that shall be used to create the encryption key that shall be used by the algorithm in "<a href="#algorithm1">Algorithm 1</a>: Encryption of data using the RC4 or AES algorithms".</td>
+        </tr>
+        <tr>
+            <td><strong>EncryptMetadata</strong></td>
+            <td>boolean</td>
+            <td>(<em>Optional; used only by crypt filters that are referenced from </em><em>StmF</em><em> in an encryption dictionary</em>) Indicates whether the document-level metadata stream (see <a href="../../c14/s3/#1432-元数据流">14.3.2</a>, "Metadata Streams") shall be encrypted. Conforming readers shall respect this value when determining whether metadata shall be encrypted. The value of the EncryptMetadata entry is set by the security handler rather than the conforming reader. <br/>
+            Default value: <strong>true</strong>.</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>The following shows the use of crypt filters in an encrypted document containing a plaintext document- level metadata stream. The metadata stream is left as is by applying the <strong>Identity</strong> crypt filter. The remaining streams and strings are decrypted using the default filters.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code><span style="color: #3D7B7B; font-style: italic">%PDF–1.5</span>
+1 0 obj                <span style="color: #3D7B7B; font-style: italic">% Document catalog</span>
+    &lt;&lt; /Type /Catalog
+       /Pages 2 0 R
+       /Metadata 6 0 R
+    &gt;&gt;
+endobj
+2 0 obj                <span style="color: #3D7B7B; font-style: italic">% Page tree</span>
+    &lt;&lt; /Type /Pages
+       /Kids [3 0 R]
+       /Count 1
+    &gt;&gt;
+endobj
+3 0 obj                <span style="color: #3D7B7B; font-style: italic">% 1s t page</span>
+    &lt;&lt; /Type /Page
+       /Parent 2 0 R
+       /MediaBox [0 0 612 792]
+       /Contents 4 0 R
+    &gt;&gt;
+endobj
+4 0 obj                <span style="color: #3D7B7B; font-style: italic">% Page contents</span>
+    &lt;&lt; /Length 35 &gt;&gt;
+    stream
+        *** Encrypted Page-marking operators ***
+    endstream
+endobj
+5 0 obj
+    &lt;&lt; /Title (<span style="color: #BA2121">$</span><span style="color: #008000">#</span><span style="color: #666">*</span><span style="color: #008000">#</span><span style="color: #3D7B7B; font-style: italic">%*$#^&amp;##) &gt;&gt;     % Info dictionary: encrypted text string</span>
+<span style="color: #008000">endobj</span>
+<span style="color: #666">6</span><span style="color: #008000"> </span><span style="color: #666">0</span><span style="color: #008000"> obj</span>
+<span style="color: #008000">    &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">Type </span><span style="color: #666">/</span><span style="color: #008000">Metadata</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Subtype </span><span style="color: #666">/</span><span style="color: #008000">XML</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Length </span><span style="color: #666">15</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Filter </span><span style="color: #666">[/</span><span style="color: #008000">Crypt</span><span style="color: #666">]</span><span style="color: #008000">           </span><span style="color: #3D7B7B; font-style: italic">% Uses a crypt filter</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">DecodeParms               </span><span style="color: #3D7B7B; font-style: italic">% with these parameters</span>
+<span style="color: #008000">       &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">Type </span><span style="color: #666">/</span><span style="color: #008000">CryptFilterDecodeParms</span>
+<span style="color: #008000">          </span><span style="color: #666">/</span><span style="color: #008000">Name </span><span style="color: #666">/</span><span style="color: #008000">Identity          </span><span style="color: #3D7B7B; font-style: italic">% Indicates no encryption</span>
+<span style="color: #008000">       &gt;&gt;</span>
+<span style="color: #008000">    &gt;&gt;</span>
+<span style="color: #008000">    stream                        </span>
+<span style="color: #008000">        XML metadata                </span><span style="color: #3D7B7B; font-style: italic">% Unencrypted metadata</span>
+<span style="color: #008000">    endstream</span>
+<span style="color: #008000">endobj</span>
+<span style="color: #666">8</span><span style="color: #008000"> </span><span style="color: #666">0</span><span style="color: #008000"> obj                        </span><span style="color: #3D7B7B; font-style: italic">% Encryption dictionary</span>
+<span style="color: #008000">    &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">Filter </span><span style="color: #666">/</span><span style="color: #008000">MySecurityHandlerName</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">V </span><span style="color: #666">4</span><span style="color: #008000">                   </span><span style="color: #3D7B7B; font-style: italic">% Version 4: allow crypt filters</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">CF                     </span><span style="color: #3D7B7B; font-style: italic">% List of crypt filters</span>
+<span style="color: #008000">       &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">MyFilter</span><span style="color: #666">0</span>
+<span style="color: #008000">       &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">Type </span><span style="color: #666">/</span><span style="color: #008000">CryptFilter</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">CFM V</span><span style="color: #666">2</span><span style="color: #008000"> &gt;&gt;               </span><span style="color: #3D7B7B; font-style: italic">% Uses the standard algorithm</span>
+<span style="color: #008000">       &gt;&gt;</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">StrF </span><span style="color: #666">/</span><span style="color: #008000">MyFilter</span><span style="color: #666">0</span><span style="color: #008000">           </span><span style="color: #3D7B7B; font-style: italic">% Strings are decrypted using /MyFilter0</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">StmF </span><span style="color: #666">/</span><span style="color: #008000">MyFilter</span><span style="color: #666">0</span><span style="color: #008000">           </span><span style="color: #3D7B7B; font-style: italic">% Streams are decrypted using /MyFilter0</span>
+<span style="color: #008000">       ...                        </span><span style="color: #3D7B7B; font-style: italic">% Private data for /MySecurityHandlerName</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">MyUnsecureKey </span><span style="color: #666">(12345678)</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">EncryptMetadata false</span>
+<span style="color: #008000">    &gt;&gt;</span>
+<span style="color: #008000">endobj</span>
+<span style="color: #008000">xref</span>
+<span style="color: #008000">    ....</span>
+<span style="color: #008000">trailer</span>
+<span style="color: #008000">    &lt;&lt; </span><span style="color: #666">/</span><span style="color: #008000">Size </span><span style="color: #666">8</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Root </span><span style="color: #666">1</span><span style="color: #008000"> </span><span style="color: #666">0</span><span style="color: #008000"> R</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Info </span><span style="color: #666">5</span><span style="color: #008000"> </span><span style="color: #666">0</span><span style="color: #008000"> R</span>
+<span style="color: #008000">       </span><span style="color: #666">/</span><span style="color: #008000">Encrypt </span><span style="color: #666">8</span><span style="color: #008000"> </span><span style="color: #666">0</span><span style="color: #008000"> R</span>
+<span style="color: #008000">    &gt;&gt;</span>
+<span style="color: #008000">startxref</span>
+<span style="color: #666">495</span>
+<span style="color: #3D7B7B; font-style: italic">%%EOF</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月5日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

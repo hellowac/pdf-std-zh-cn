@@ -1,0 +1,4532 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s5/">
+      
+      
+        <link rel="next" href="../s7/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>12.6 行为 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#126-行为" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              12.6 行为
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            12互动功能
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.2 查看器首选项
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.3 文档级导航
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.4 页面级导航
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.5 注解
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    12.6 行为
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    12.6 行为
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1261-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1262-行为字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.2 行为字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1263-触发事件" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.3 触发事件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1264-操作类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4 操作类型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12.6.4 操作类型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12641-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12642-操作指南" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.2 操作指南
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12643-远程操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.3 远程操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12644-嵌入式操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.4 嵌入式操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12645-启动操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.5 启动操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12646-线索动作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.6 线索动作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12647-uri-操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.7 URI 操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12648-声音动作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.8 声音动作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12649-影片动作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.9 影片动作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126410-隐藏操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.10 隐藏操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126411-命名动作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.11 命名动作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126412-设置-ocg-状态操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.12 设置 OCG 状态操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126413-演绎行动" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.13 演绎行动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126414-过渡行动" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.14 过渡行动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126415-进入-3d-视图操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.15 进入 3D 视图操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126416-javascript-动作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.16 JavaScript 动作
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.7 交互式表格
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.8 数字签名
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.9 测量属性
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12.10 文件要求
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1261-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1262-行为字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.2 行为字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1263-触发事件" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.3 触发事件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1264-操作类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4 操作类型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12.6.4 操作类型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12641-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12642-操作指南" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.2 操作指南
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12643-远程操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.3 远程操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12644-嵌入式操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.4 嵌入式操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12645-启动操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.5 启动操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12646-线索动作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.6 线索动作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12647-uri-操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.7 URI 操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12648-声音动作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.8 声音动作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12649-影片动作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.9 影片动作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126410-隐藏操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.10 隐藏操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126411-命名动作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.11 命名动作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126412-设置-ocg-状态操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.12 设置 OCG 状态操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126413-演绎行动" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.13 演绎行动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126414-过渡行动" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.14 过渡行动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126415-进入-3d-视图操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.15 进入 3D 视图操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#126416-javascript-动作" class="md-nav__link">
+    <span class="md-ellipsis">
+      12.6.4.16 JavaScript 动作
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="126-行为">12.6 行为<a class="headerlink" href="#126-行为" title="Permanent link">&para;</a></h1>
+<p><strong>12.6 Actions</strong></p>
+<h2 id="1261-概述">12.6.1 概述<a class="headerlink" href="#1261-概述" title="Permanent link">&para;</a></h2>
+<p><strong>12.6.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>除了跳转到文档中的目标位置外，注释或大纲项还可以指定要执行的操作 (PDF 1.1)，例如启动应用程序、播放声音、更改注释的外观状态。注释或大纲项字典中的可选 <strong>A</strong> 条目（参见 <a href="../s5/#table168">表 168</a> 和 <a href="../s3/#table153">153</a>）指定激活注释或大纲项时执行的操作；在 PDF 1.2 中，各种其他情况也可能触发操作（参见 <a href="./#1263-触发事件">12.6.3</a>，“触发事件”）。此外，文档目录中的可选 OpenAction 条目（<a href="../../c7/s7/#772-文档目录">7.7.2</a>，“文档目录”）可以指定打开文档时应执行的操作。PDF 包含各种标准操作类型，在 <a href="./#1264-操作类型">12.6.4</a>，“操作类型”中有详细描述。</p>
+</div>
+<div class="tabbed-block">
+<p>In addition to jumping to a destination in the document, an annotation or outline item may specify an action (PDF 1.1) to perform, such as launching an application, playing a sound, changing an annotation’s appearance state. The optional <strong>A</strong> entry in the annotation or outline item dictionary (see <a href="../s5/#table168">Tables 168</a> and <a href="../s3/#table153">153</a>) specifies an action performed when the annotation or outline item is activated; in PDF 1.2, a variety of other circumstances may trigger an action as well (see <a href="./#1263-触发事件">12.6.3</a>, “Trigger Events”). In addition, the optional OpenAction entry in a document’s catalogue (<a href="../../c7/s7/#772-文档目录">7.7.2</a>, “Document Catalog”) may specify an action that shall be performed when the document is opened. PDF includes a wide variety of standard action types, described in detail in <a href="./#1264-操作类型">12.6.4</a>, “Action Types.”</p>
+</div>
+</div>
+</div>
+<h2 id="1262-行为字典">12.6.2 行为字典<a class="headerlink" href="#1262-行为字典" title="Permanent link">&para;</a></h2>
+<p><strong>12.6.2 Action Dictionaries</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>动作字典定义了动作的特性和行为。表193展示了所有动作字典共有的必需和可选条目。字典可能包含特定于某种动作类型的附加条目；有关详细信息，请参见<a href="./#1264-操作类型">12.6.4</a>，“动作类型”中对各个动作类型的描述。</p>
+<p><table id="table193" markdown="span">
+    <caption><strong>表193 – 所有动作字典共有的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>名称</td>
+            <td>（必需）应为<strong>FixedPrint</strong>。（注：此处根据上下文可能有误，正常动作字典的Type常见值不是FixedPrint ，可能是特定类型动作相关的内容，需结合具体场景确认）</td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；有关具体值，请参见<a href="#table194">表194</a>。</td>
+        </tr>
+        <tr>
+            <td><strong>Next</strong></td>
+            <td>字典或数组</td>
+            <td>（可选；PDF 1.2）在由本字典表示的动作之后应执行的下一动作或动作序列。该值可以是单个动作字典，也可以是要按顺序执行的动作字典数组；有关进一步讨论，请参见注释。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注1</p>
+<p>动作字典的<strong>Next</strong>条目（PDF 1.2）允许将动作序列链接在一起。例如，用鼠标点击链接注释的效果可能是播放声音、跳转到新页面并启动电影。请注意，<strong>Next</strong>条目不限于单个动作，它可以包含一个动作数组，而每个动作又可能有自己的<strong>Next</strong>条目。因此，这些动作可能形成一个树状结构，而不是简单的链表。每个<strong>Next</strong>数组中的动作将按顺序执行，每个动作执行后依次执行其<strong>Next</strong>条目中指定的任何动作，依此类推，递归执行。符合规范的阅读器应在异常情况下尝试提供合理的行为。例如，自引用动作不应执行多次，并且关闭文档或使下一个动作无法执行的动作应终止执行序列。应用程序还应提供某种机制，使用户能够中断并手动终止动作序列。</p>
+</div>
+<p>PDF 1.5引入了过渡动作，允许在动作序列期间控制绘制；见<a href="./#126414-过渡行动">12.6.4.14</a>，“过渡动作”。</p>
+<div class="admonition note">
+<p class="admonition-title">注2</p>
+<p>任何动作都不应修改其自身的动作字典或其所处动作树中的任何其他字典。这种修改对树中后续动作执行的影响是未定义的 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>An action dictionary defines the characteristics and behaviour of an action. Table 193 shows the required and optional entries that are common to all action dictionaries. The dictionary may contain additional entries specific to a particular action type; see the descriptions of individual action types in <a href="./#1264-操作类型">12.6.4</a>, “Action Types,” for details.</p>
+<p><table id="table193" markdown="span">
+    <caption><strong>Table 193 – Entries common to all action dictionaries</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(Required) Shall be <strong>FixedPrint</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; see <a href="#table194">Table 194</a> for specific values.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Next</strong></td>
+            <td>dictionary or array</td>
+            <td>(Optional; PDF 1.2) The next action or sequence of actions that shall be performed after the action represented by this dictionary. The value is either a single action dictionary or an array of action dictionaries that shall be performed in order; see the Note for further discussion.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>The action dictionary’s <strong>Next</strong> entry (PDF 1.2) allows sequences of actions to be chained together. For example, the effect of clicking a link annotation with the mouse might be to play a sound, jump to a new page, and start up a movie. Note that the <strong>Next</strong> entry is not restricted to a single action but may contain an array of actions, each of which in turn may have a <strong>Next</strong> entry of its own. The actions may thus form a tree instead of a simple linked list. Actions within each <strong>Next</strong> array are executed in order, each followed in turn by any actions specified in its <strong>Next</strong> entry, and so on recursively. Conforming readers should attempt to provide reasonable behavior in anomalous situations. For example, self-referential actions should not be executed more than once, and actions that close the document or otherwise render the next action impossible should terminate the execution sequence. Applications should also provide some mechanism for the user to interrupt and manually terminate a sequence of actions.</p>
+</div>
+<p>PDF 1.5 introduces transition actions, which allow the control of drawing during a sequence of actions; see <a href="./#126414-过渡行动">12.6.4.14</a>, “Transition Actions.”</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>No action should modify its own action dictionary or any other in the action tree in which it resides. The effect of such modification on subsequent execution of actions in the tree is undefined.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1263-触发事件">12.6.3 触发事件<a class="headerlink" href="#1263-触发事件" title="Permanent link">&para;</a></h2>
+<p><strong>12.6.3 Trigger Events</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>注释、页面对象或（从PDF 1.3开始）交互式表单字段可能包含一个名为AA的条目，该条目指定一个<em>附加动作字典</em>（PDF 1.2），用于扩展可触发动作执行的事件集。在PDF 1.4中，文档目录字典（见<a href="../../c7/s7/#772-文档目录">7.7.2</a>，“文档目录”）也可能包含一个<strong>AA</strong>条目，用于触发影响整个文档的事件。表194至197展示了此类字典的内容。</p>
+<p>PDF 1.5在注释的附加动作字典中引入了四个触发事件，以支持多媒体演示：</p>
+<ul>
+<li>PO和<strong>PC</strong>条目的功能与页面对象附加动作字典中的<strong>O</strong>和<strong>C</strong>条目（见<a href="#table194">表194</a>）类似。然而，将这些触发器与注释关联起来可以使注释对象具有自包含性。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+</div>
+<p>包含此类动作的注释可以在页面之间复制或移动，而无需更改页面打开/关闭动作。</p>
+<ul>
+<li><strong>PV</strong>和<strong>PI</strong>条目允许区分打开的页面和可见的页面。在任何时刻，根据页面布局，可能会有多个页面可见。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注1</p>
+</div>
+<p>对于这些触发事件，注释的<strong>F</strong>条目（见<a href="../s5/#1253-注解标志">12.5.3</a>，“注释标志”）指定的标志值不影响给定触发事件是否发生。</p>
+<p><table id="table194" markdown="span">
+    <caption><strong>表194 – 注释附加动作字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>E</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.2）当光标进入注释的活动区域时应执行的动作。</td>
+        </tr>
+        <tr>
+            <td><strong>X</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.2）当光标离开注释的活动区域时应执行的动作。</td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.2）当鼠标按钮在注释的活动区域内按下时应执行的动作。</td>
+        </tr>
+        <tr>
+            <td><strong>U</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.2）当鼠标按钮在注释的活动区域内释放时应执行的动作。<br/>
+            为了向后兼容，如果注释字典中存在<strong>A</strong>条目，则该条目优先于此条目（见<a href="../s5/#table168">表168</a>）。</td>
+        </tr>
+        <tr>
+            <td><strong>Fo</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.2；仅小部件注释）当注释获得输入焦点时应执行的动作。</td>
+        </tr>
+        <tr>
+            <td><strong>BI</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.2；仅小部件注释）（大写B，小写L）当注释失去输入焦点时应执行的动作。</td>
+        </tr>
+        <tr>
+            <td><strong>PO</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.5）当包含注释的页面被打开时应执行的动作。<br/>
+            示例1 &emsp; 当用户从下一页或上一页导航到该页面，或者通过链接注释或大纲项导航到该页面时。<br/>
+            如果存在页面附加动作字典中的<strong>O</strong>动作（见<a href="#table195">表195</a>）以及文档<strong>Catalog</strong>中的<strong>OpenAction</strong>条目（见<a href="../../c7/s7/#table28">表28</a>），则应在执行这些动作之后执行此动作。</td>
+        </tr>
+        <tr>
+            <td><strong>PC</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.5）当包含注释的页面被关闭时应执行的动作。<br/>
+            示例2 &emsp; 当用户导航到下一页或上一页，或者跟随链接注释或大纲项时。<br/>
+            如果存在页面附加动作字典中的<strong>C</strong>动作（见<a href="#table195">表195</a>），则应在执行该动作之前执行此动作。</td>
+        </tr>
+        <tr>
+            <td><strong>PV</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.5）当包含注释的页面变为可见时应执行的动作。</td>
+        </tr>
+        <tr>
+            <td><strong>PI</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.5）当包含注释的页面在符合规范的阅读器的用户界面中不再可见时应执行的动作。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table195" markdown="span">
+    <caption><strong>表195 – 页面对象附加动作字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>O</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.2）当页面打开时（例如，当用户从下一页或上一页导航到该页面，或者通过链接注释或大纲项导航到该页面时）应执行的动作。此动作独立于文档<strong>Catalog</strong>中的<strong>OpenAction</strong>条目（见<a href="../../c7/s7/#772-文档目录">7.7.2</a>，“文档目录”）可能定义的任何动作，并且应在执行此类动作之后执行。</td>
+        </tr>
+        <tr>
+            <td><strong>C</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.2）当页面关闭时（例如，当用户导航到下一页或上一页，或者跟随链接注释或大纲项时）应执行的动作。此动作适用于正在关闭的页面，并且应在打开任何其他页面之前执行。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table196" markdown="span">
+    <caption><strong>表196 – 表单字段附加动作字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>K</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.3）当用户在文本字段或组合框中修改字符，或者在可滚动列表框中修改选择时，应执行的JavaScript动作。此动作可以检查添加的文本的有效性，并拒绝或修改它。</td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.3）在字段格式化以显示其值之前应执行的JavaScript动作。此动作可以在格式化之前修改字段的值。</td>
+        </tr>
+        <tr>
+            <td><strong>V</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.3）当字段的值发生更改时应执行的JavaScript动作。此动作可以检查新值的有效性。（名称V代表“验证”。）</td>
+        </tr>
+        <tr>
+            <td><strong>C</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.3）当另一个字段的值发生更改时，应执行的JavaScript动作，用于重新计算此字段的值。（名称C代表“计算。”）文档中字段的重新计算顺序应由交互式表单字典中的<strong>CO</strong>条目定义（见<a href="../s7/#1272-交互式表格词典">12.7.2</a>，“交互式表单字典”）。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table197" markdown="span">
+    <caption><strong>表197 – 文档目录附加动作字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>WC</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.4）在关闭文档之前应执行的JavaScript动作。（名称<strong>WC</strong>代表“即将关闭”。）</td>
+        </tr>
+        <tr>
+            <td><strong>WS</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.4）在保存文档之前应执行的JavaScript动作。（名称<strong>WS</strong>代表“即将保存”。）</td>
+        </tr>
+        <tr>
+            <td><strong>DS</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.4）在保存文档之后应执行的JavaScript动作。（名称<strong>DS</strong>代表“已保存”。）</td>
+        </tr>
+        <tr>
+            <td><strong>WP</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.4）在打印文档之前应执行的JavaScript动作。（名称<strong>WP</strong>代表“即将打印”。）</td>
+        </tr>
+        <tr>
+            <td><strong>DP</strong></td>
+            <td>字典</td>
+            <td>（可选；PDF 1.4）在打印文档之后应执行的JavaScript动作。（名称<strong>DP</strong>代表“已打印”。）</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>符合规范的阅读器应确保存在此类设备或用于模拟该设备的等效控件，以便正确执行相应的动作。与鼠标相关的触发事件受以下约束：</p>
+<ul>
+<li><strong>E</strong>（进入）事件仅在鼠标按钮处于抬起状态时发生。</li>
+<li><strong>X</strong>（退出）事件不能在没有先前的<strong>E</strong>事件的情况下发生。</li>
+<li><strong>U</strong>（抬起）事件不能在没有先前的<strong>E</strong>和<strong>D</strong>事件的情况下发生。</li>
+<li>在重叠或嵌套注释的情况下，进入第二个注释的活动区域会导致第一个注释发生<strong>X</strong>事件。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注2</p>
+<p>与字段相关的触发事件<strong>K</strong>（按键）、<strong>F</strong>（格式化）、<strong>V</strong>（验证）和<strong>C</strong>（计算）未针对按钮字段定义（见<a href="../s7/#12742-按钮字段">12.7.4.2</a>，“按钮字段”）。由这些事件触发的动作的效果仅受动作本身限制，并且可以发生在所描述事件范围之外。例如，尽管<strong>F</strong>事件用于在显示之前触发格式化字段值的动作，但由该事件触发的动作可以执行计算或对文档进行任何其他修改。</p>
+<p>这些与字段相关的触发事件可以通过用户交互或编程方式发生，例如响应交互式表单字典中的<strong>NeedAppearances</strong>条目（见<a href="../s7/#1272-交互式表格词典">12.7.2</a>，“交互式表单字典”）、导入FDF数据（<a href="../s7/#1277-表单数据格式">12.7.7</a>，“表单数据格式”）或JavaScript动作（12.6.4.16，“JavaScript动作”）。例如，用户修改字段值可以触发一系列计算以及对文档中其他字段的进一步格式化和验证 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>An annotation, page object, or (beginning with PDF 1.3) interactive form field may include an entry named AA that specifies an <em>additional-actions dictionary</em> (PDF 1.2) that extends the set of events that can trigger the execution of an action. In PDF 1.4, the document catalogue dictionary (see <a href="../../c7/s7/#772-文档目录">7.7.2</a>, “Document Catalog”) may also contain an <strong>AA</strong> entry for trigger events affecting the document as a whole. Tables 194 to 197 show the contents of this type of dictionary.</p>
+<p>PDF 1.5 introduces four trigger events in annotation’s additional-actions dictionary to support multimedia presentations:</p>
+<ul>
+<li>The PO and <strong>PC</strong> entries have a similar function to the <strong>O</strong> and <strong>C</strong> entries in the page object’s additional-actions dictionary (see <a href="#table194">Table 194</a>). However, associating these triggers with annotations allows annotation objects to be self-contained.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+</div>
+<p>Annotations containing such actions can be copied or moved between pages without requiring page open/close actions to be changed.</p>
+<ul>
+<li>The <strong>PV</strong> and <strong>PI</strong> entries allow a distinction between pages that are open and pages that are visible. At any one time, while more than one page may be visible, depending on the page layout.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>For these trigger events, the values of the flags specified by the annotation’s <strong>F</strong> entry (see <a href="../s5/#1253-注解标志">12.5.3</a>, “Annotation Flags”) have no bearing on whether a given trigger event occurs.</p>
+</div>
+<p><table id="table194" markdown="span">
+    <caption><strong>Table 194 – Entries in an annotation’s additional-actions dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>E</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.2) An action that shall be performed when the cursor enters the annotation’s active area.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>X</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.2) An action that shall be performed when the cursor exits the annotation’s active area.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.2) An action that shall be performed when the mouse button is pressed inside the annotation’s active area.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>U</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.2) An action that shall be performed when the mouse button is released inside the annotation’s active area. <br/>
+                For backward compatibility, the <strong>A</strong> entry in an annotation dictionary, if present, takes precedence over this entry (see <a href="../s5/#table168">Table 168</a>).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Fo</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.2; widget annotations only) An action that shall be performed when the annotation receives the input focus.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>BI</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.2; widget annotations only) (Uppercase B, lowercase L) An action that shall be performed when the annotation loses the input focus.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>PO</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.5) An action that shall be performed when the page containing the annotation is opened. <br/>
+            EXAMPLE 1 &emsp; When the user navigates to it from the next or previous page or by means of a link annotation or outline item. <br/>
+            The action shall be executed after the <strong>O</strong> action in the page’s additional-actions dictionary (see <a href="#table195">Table 195</a>) and the <strong>OpenAction</strong> entry in the document <strong>Catalog</strong> (see <a href="../../c7/s7/#table28">Table 28</a>), if such actions are present.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>PC</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.5) An action that shall be performed when the page containing the annotation is closed. <br/>
+            EXAMPLE 2 &emsp; When the user navigates to the next or previous page, or follows a link annotation or outline item. <br/>
+            The action shall be executed before the <strong>C</strong> action in the page’s additional-actions dictionary (see <a href="#table195">Table 195</a>), if present.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>PV</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.5) An action that shall be performed when the page containing the annotation becomes visible.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>PI</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.5) An action that shall be performed when the page containing the annotation is no longer visible in the conforming reader’s user interface.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table195" markdown="span">
+    <caption><strong>Table 195 – Entries in a page object’s additional-actions dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>O</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.2) An action that shall be performed when the page is opened (for example, when the user navigates to it from the next or previous page or by means of a link annotation or outline item). This action is independent of any that may be defined by the <strong>OpenAction</strong> entry in the document <strong>Catalog</strong> (see <a href="../../c7/s7/#772-文档目录">7.7.2</a>, “Document Catalog”) and shall be executed after such an action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>C</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.2) An action that shall be performed when the page is closed (for example, when the user navigates to the next or previous page or follows a link annotation or an outline item). This action applies to the page being closed and shall be executed before any other page is opened.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table196" markdown="span">
+    <caption><strong>Table 196 – Entries in a form field’s additional-actions dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>K</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.3) A JavaScript action that shall be performed when the user modifies a character in a text field or combo box or modifies the selection in a scrollable list box. This action may check the added text for validity and reject or modify it.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.3) A JavaScript action that shall be performed before the field is formatted to display its value. This action may modify the field’s value before formatting.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>V</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.3) A JavaScript action that shall be performed when the field’s value is changed. This action may check the new value for validity. (The name V stands for “validate.”)
+            </td>
+        </tr>
+        <tr>
+            <td><strong>C</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.3) A JavaScript action that shall be performed to recalculate the value of this field when that of another field changes. (The name C stands for “calculate.”) The order in which the document’s fields are recalculated shall be defined by the <strong>CO</strong> entry in the interactive form dictionary (see <a href="../s7/#1272-交互式表格词典">12.7.2</a>, “Interactive Form Dictionary”).
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table197" markdown="span">
+    <caption><strong>Table 197 – Entries in the document catalog’s additional-actions dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>WC</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.4) A JavaScript action that shall be performed before closing a document. (The name <strong>WC</strong> stands for “will close.”)
+            </td>
+        </tr>
+        <tr>
+            <td><strong>WS</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.4) A JavaScript action that shall be performed before saving a document. (The name <strong>WS</strong> stands for “will save.”)
+            </td>
+        </tr>
+        <tr>
+            <td><strong>DS</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.4) A JavaScript action that shall be performed after saving a document. (The name <strong>DS</strong> stands for “did save.”)
+            </td>
+        </tr>
+        <tr>
+            <td><strong>WP</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.4) A JavaScript action that shall be performed before printing a document. (The name <strong>WP</strong> stands for “will print.”)
+            </td>
+        </tr>
+        <tr>
+            <td><strong>DP</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.4) A JavaScript action that shall be performed after printing a document. (The name <strong>DP</strong> stands for “did print.”)
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Conforming readers shall ensure the presence of such a device, or equivalent controls for simulating one, for the corresponding actions to be executed correctly. Mouse-related trigger events are subject to the following constraints:</p>
+<ul>
+<li>An <strong>E</strong> (enter) event may occur only when the mouse button is up.</li>
+<li>An <strong>X</strong> (exit) event may not occur without a preceding <strong>E</strong> event.</li>
+<li>A <strong>U</strong> (up) event may not occur without a preceding <strong>E</strong> and <strong>D</strong> event.</li>
+<li>In the case of overlapping or nested annotations, entering a second annotation’s active area causes an <strong>X</strong> event to occur for the first annotation.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The field-related trigger events <strong>K</strong> (keystroke), <strong>F</strong> (format), <strong>V</strong> (validate), and **  C<strong> (calculate) are not defined for button fields (see <a href="../s7/#12742-按钮字段">12.7.4.2</a>, “Button Fields”). The effects of an action triggered by one of these events are limited only by the action itself and can occur outside the described scope of the event. For example, even though the </strong>F** event is used to trigger actions that format field values prior to display, it is possible for an action triggered by this event to perform a calculation or make any other modification to the document.</p>
+<p>These field-related trigger events can occur either through user interaction or programmatically, such as in response to the <strong>NeedAppearances</strong> entry in the interactive form dictionary (see <a href="../s7/#1272-交互式表格词典">12.7.2</a>, “Interactive Form Dictionary”), importation of FDF data (<a href="../s7/#1277-表单数据格式">12.7.7</a>, “Forms Data Format”), or JavaScript actions (12.6.4.16, “JavaScript Actions”). For example, the user’s modifying a field value can trigger a cascade of calculations and further formatting and validation for other fields in the document.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1264-操作类型">12.6.4 操作类型<a class="headerlink" href="#1264-操作类型" title="Permanent link">&para;</a></h2>
+<p><strong>12.6.4 Action Types</strong></p>
+<h3 id="12641-概述">12.6.4.1 概述<a class="headerlink" href="#12641-概述" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF 支持表 198 中列出的标准动作类型。以下子条款详细描述了每种类型。</p>
+<p><table id="table198" markdown="span">
+    <caption><strong>表198 – 动作类型</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>动作类型</strong></th>
+            <th><strong>描述</strong></th>
+            <th><strong>在小节中讨论</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>GoTo</strong></td>
+            <td>跳转到当前文档中的一个目标位置。</td>
+            <td><a href="./#12642-操作指南">12.6.4.2</a>，“跳转动作”</td>
+        </tr>
+        <tr>
+            <td><strong>GoToR</strong></td>
+            <td>（“远程跳转”）跳转到另一个文档中的一个目标位置。</td>
+            <td><a href="./#12643-远程操作">12.6.4.3</a>，“远程跳转动作”</td>
+        </tr>
+        <tr>
+            <td><strong>GoToE</strong></td>
+            <td>（“嵌入文件跳转”；PDF 1.6）跳转到嵌入文件中的一个目标位置。</td>
+            <td><a href="./#12644-嵌入式操作">12.6.4.4</a>，“嵌入文件跳转动作”</td>
+        </tr>
+        <tr>
+            <td><strong>Launch</strong></td>
+            <td>启动一个应用程序，通常用于打开一个文件。</td>
+            <td><a href="./#12645-启动操作">12.6.4.5</a>，“启动动作”</td>
+        </tr>
+        <tr>
+            <td><strong>Thread</strong></td>
+            <td>开始阅读一个文章线索。</td>
+            <td><a href="./#12646-主题操作">12.6.4.6</a>，“线索动作”</td>
+        </tr>
+        <tr>
+            <td><strong>URI</strong></td>
+            <td>解析一个统一资源标识符。</td>
+            <td><a href="./#12647-uri-操作">12.6.4.7</a>，“URI动作”</td>
+        </tr>
+        <tr>
+            <td><strong>Sound</strong></td>
+            <td>（PDF 1.2）播放一个声音。</td>
+            <td><a href="./#12648-声音动作">12.6.4.8</a>，“声音动作”</td>
+        </tr>
+        <tr>
+            <td><strong>Movie</strong></td>
+            <td>（PDF 1.2）播放一个电影。</td>
+            <td><a href="./#12649-影片动作">12.6.4.9</a>，“电影动作”</td>
+        </tr>
+        <tr>
+            <td><strong>Hide</strong></td>
+            <td>（PDF 1.2）设置一个注释的隐藏标志。</td>
+            <td><a href="./#126410-隐藏操作">12.6.4.10</a>，“隐藏动作”</td>
+        </tr>
+        <tr>
+            <td><strong>Named</strong></td>
+            <td>（PDF 1.2）执行由符合规范的阅读器预定义的动作。</td>
+            <td><a href="./#126411-命名动作">12.6.4.11</a>，“命名动作”</td>
+        </tr>
+        <tr>
+            <td><strong>SubmitForm</strong></td>
+            <td>（PDF 1.2）将数据发送到一个统一资源定位符。</td>
+            <td><a href="../s7/#12752-提交表单操作">12.7.5.2</a>，“提交表单动作”</td>
+        </tr>
+        <tr>
+            <td><strong>ResetForm</strong>（PDF 1.2）</td>
+            <td>将字段设置为其默认值。</td>
+            <td><a href="../s7/#12753-重置表单操作">12.7.5.3</a>，“重置表单动作”</td>
+        </tr>
+        <tr>
+            <td><strong>ImportData</strong>（PDF 1.2）</td>
+            <td>从文件中导入字段值。</td>
+            <td><a href="../s7/#12754-导入数据操作">12.7.5.4</a>，“导入数据动作”</td>
+        </tr>
+        <tr>
+            <td><strong>JavaScript</strong>（PDF 1.3）</td>
+            <td>执行一个JavaScript脚本。</td>
+            <td><a href="./#126416-javascript-动作">12.6.4.16</a>，“JavaScript动作”</td>
+        </tr>
+        <tr>
+            <td><strong>SetOCGState</strong>（PDF 1.5）</td>
+            <td>设置可选内容组的状态。</td>
+            <td><a href="./#126412-设置-ocg-状态操作">12.6.4.12</a>，“设置OCG状态动作”</td>
+        </tr>
+        <tr>
+            <td><strong>Rendition</strong>（PDF 1.5）</td>
+            <td>控制多媒体内容的播放。</td>
+            <td><a href="./#126413-演绎行动">12.6.4.13</a>，“呈现动作”</td>
+        </tr>
+        <tr>
+            <td><strong>Trans</strong>（PDF 1.5）</td>
+            <td>使用过渡字典更新文档的显示。</td>
+            <td><a href="./#126414-过渡行动">12.6.4.14</a>，“过渡动作”</td>
+        </tr>
+        <tr>
+            <td><strong>GoTo3DView</strong>（PDF 1.6）</td>
+            <td>设置3D注释的当前视图。</td>
+            <td><a href="./#126415-进入-3d-视图操作">12.6.4.15</a>，“跳转到3D视图动作”</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>设置状态的动作被认为是过时的，不应再使用 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>PDF supports the standard action types listed in Table 198. The following sub-clauses describe each of these types in detail.</p>
+<p><table id="table198" markdown="span">
+    <caption><strong>Table 198 – Action types</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Action type</strong></th>
+            <th><strong>Description</strong></th>
+            <th><strong>Discussed in sub-clause</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>GoTo</strong></td>
+            <td>Go to a destination in the current document.</td>
+            <td><a href="./#12642-操作指南">12.6.4.2</a>, “Go-To Actions”
+            </td>
+        </tr>
+        <tr>
+            <td><strong>GoToR</strong></td>
+            <td>(“Go-to remote”) Go to a destination in another document.</td>
+            <td><a href="./#12643-远程操作">12.6.4.3</a>, “Remote Go-To Actions”
+            </td>
+        </tr>
+        <tr>
+            <td><strong>GoToE</strong></td>
+            <td>(“Go-to embedded”; PDF 1.6) Go to a destination in an embedded file.</td>
+            <td><a href="./#12644-嵌入式操作">12.6.4.4</a>, “Embedded Go-To Actions”
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Launch</strong></td>
+            <td>Launch an application, usually to open a file.</td>
+            <td><a href="./#12645-启动操作">12.6.4.5</a>, “Launch Actions”
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Thread</strong></td>
+            <td>Begin reading an article thread.</td>
+            <td><a href="./#12646-主题操作">12.6.4.6</a>, “Thread Actions”
+            </td>
+        </tr>
+        <tr>
+            <td><strong>URI</strong></td>
+            <td>Resolve a uniform resource identifier.</td>
+            <td><a href="./#12647-uri-操作">12.6.4.7</a>, “URI Actions”
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Sound</strong></td>
+            <td>(PDF 1.2) Play a sound.</td>
+            <td><a href="./#12648-声音动作">12.6.4.8</a>, “Sound Actions”
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Movie</strong></td>
+            <td>(PDF 1.2) Play a movie.</td>
+            <td><a href="./#12649-影片动作">12.6.4.9</a>, “Movie Actions”
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Hide</strong></td>
+            <td>(PDF 1.2) Set an annotation’s Hidden flag.</td>
+            <td><a href="./#126410-隐藏操作">12.6.4.10</a>, “Hide Actions”
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Named</strong></td>
+            <td>(PDF 1.2) Execute an action predefined by the conforming reader.</td>
+            <td><a href="./#126411-命名动作">12.6.4.11</a>, “Named Actions”
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SubmitForm</strong></td>
+            <td>(PDF 1.2) Send data to a uniform resource locator.</td>
+            <td><a href="../s7/#12752-提交表单操作">12.7.5.2</a>, “Submit-Form Action”
+            </td>
+        </tr>
+        <tr>
+            <td>ResetForm(PDF 1.2)</td>
+            <td>Set fields to their default values.</td>
+            <td><a href="../s7/#12753-重置表单操作">12.7.5.3</a>, “Reset-Form Action”</td>
+        </tr>
+        <tr>
+            <td>ImportData(PDF 1.2)</td>
+            <td>Import field values from a file.</td>
+            <td><a href="../s7/#12754-导入数据操作">12.7.5.4</a>, “Import-Data Action”</td>
+        </tr>
+        <tr>
+            <td>JavaScript(PDF 1.3)</td>
+            <td>Execute a JavaScript script.</td>
+            <td><a href="./#126416-javascript-动作">12.6.4.16</a>, “JavaScript Actions”</td>
+        </tr>
+        <tr>
+            <td>SetOCGState(PDF 1.5)</td>
+            <td>Set the states of optional content groups.</td>
+            <td><a href="./#126412-设置-ocg-状态操作">12.6.4.12</a>, “Set-OCG-State Actions”</td>
+        </tr>
+        <tr>
+            <td>Rendition(PDF 1.5)</td>
+            <td>Controls the playing of multimedia content.</td>
+            <td><a href="./#126413-演绎行动">12.6.4.13</a>, “Rendition Actions”</td>
+        </tr>
+        <tr>
+            <td>Trans(PDF 1.5)</td>
+            <td>Updates the display of a document, using a transition dictionary.</td>
+            <td><a href="./#126414-过渡行动">12.6.4.14</a>, “Transition Actions”</td>
+        </tr>
+        <tr>
+            <td>GoTo3DView(PDF 1.6)</td>
+            <td>Set the current view of a 3D annotation</td>
+            <td><a href="./#126415-进入-3d-视图操作">12.6.4.15</a>, “Go-To-3D-View Actions,”</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The set-state action is considered obsolete and should not be used.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="12642-操作指南">12.6.4.2 操作指南<a class="headerlink" href="#12642-操作指南" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.2 Go-To Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>跳转动作</em>会将视图更改为指定的目标位置（页面、位置和缩放因子）。<a href="#table199">表199</a>展示了专门针对这种类型动作的动作字典条目。</p>
+<p><table id="table199" markdown="span">
+    <caption><strong>表199 – 跳转动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动类型；对于跳转动作，应为<strong>GoTo</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>字典</td>
+            <td>（必需）要跳转的目标位置（见<a href="../s3/#1232-目的地">12.3.2</a>，“目标位置”）。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>在链接注释或大纲项的<strong>A</strong>条目中指定跳转动作（见<a href="../s5/#table173">表173</a>和<a href="../s3/#table153">表153</a>）与使用<strong>Dest</strong>条目直接指定目标位置的效果相同。例如，<a href="./#126412-设置-ocg-状态操作">12.6.4.12</a>，“设置OCG状态动作”中示例所示的使用跳转动作的链接注释，与下面直接指定目标位置的示例具有相同的效果。然而，跳转动作不够简洁，并且与PDF 1.0不兼容；因此，使用直接目标位置更为可取 。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>93 0 obj
+    &lt;&lt; /Type /Annot
+       /Subtype /Link
+       /Rect [ 71 717 190 734 ]
+       /Border [ 16 16 1 ]
+       /A &lt;&lt; /Type /Action
+             /S /GoTo
+             /D [ 3 0 R /FitR –4 399 199 533 ]
+          &gt;&gt;
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A <em>go-to action</em> changes the view to a specified destination (page, location, and magnification factor). <a href="#table199">Table 199</a> shows the action dictionary entries specific to this type of action.</p>
+<p><table id="table199" markdown="span">
+    <caption><strong>Table 199 – Additional entries specific to a go-to action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>GoTo</strong> for a go-to action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>dictionary</td>
+            <td>(Required) The destination to jump to (see <a href="../s3/#1232-目的地">12.3.2</a>, “Destinations”).
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Specifying a go-to action in the <strong>A</strong> entry of a link annotation or outline item (see <a href="../s5/#table173">Table 173</a> and <a href="../s3/#table153">Table 153</a>) has the same effect as specifying the destination directly with the <strong>Dest</strong> entry. For example, the link annotation shown in the Example in <a href="./#126412-设置-ocg-状态操作">12.6.4.12</a>, “Set-OCG-State Actions,” which uses a go-to action, has the same effect as the one in the following Example, which specifies the destination directly. However, the go-to action is less compact and is not compatible with PDF 1.0; therefore, using a direct destination is preferable.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>93 0 obj
+    &lt;&lt; /Type /Annot
+       /Subtype /Link
+       /Rect [ 71 717 190 734 ]
+       /Border [ 16 16 1 ]
+       /A &lt;&lt; /Type /Action
+             /S /GoTo
+             /D [ 3 0 R /FitR –4 399 199 533 ]
+          &gt;&gt;
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="12643-远程操作">12.6.4.3 远程操作<a class="headerlink" href="#12643-远程操作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.3 Remote Go-To Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>远程跳转动作</em>与普通的跳转动作类似，但它会跳转到另一个PDF文件中的目标位置，而不是当前文件。表200展示了专门针对这种类型动作的动作字典条目。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>远程跳转动作不能用于嵌入文件；见<a href="./#12644-嵌入式操作">12.6.4.4</a>，“嵌入文件跳转动作”。</p>
+</div>
+<p><table id="table200" markdown="span">
+    <caption><strong>表200 – 远程跳转动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动类型；对于远程跳转动作，应为<strong>GoToR</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>文件规范</td>
+            <td>（必需）目标位置所在的文件。</td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>名称、字节字符串或数组</td>
+            <td>（必需）要跳转的目标位置（见<a href="../s3/#1232-目的地">12.3.2</a>，“目标位置”）。如果该值是一个定义显式目标位置的数组（如<a href="../s3/#12322-明确目的地">12.3.2.2</a>，“显式目标位置”所述），其第一个元素应是远程文档内的页码，而不是对当前文档中页面对象的间接引用。第一页的编号为0。</td>
+        </tr>
+        <tr>
+            <td><strong>NewWindow</strong></td>
+            <td>布尔值</td>
+            <td>（可选；PDF 1.2）一个标志，用于指定是否在新窗口中打开目标文档。如果此标志为<strong>false</strong>，则目标文档将在同一窗口中替换当前文档。如果此条目不存在，符合规范的阅读器应按照其偏好进行处理。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A <em>remote go-to action</em> is similar to an ordinary go-to action but jumps to a destination in another PDF file instead of the current file. Table 200 shows the action dictionary entries specific to this type of action.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Remote go-to actions cannot be used with embedded files; see <a href="./#12644-嵌入式操作">12.6.4.4</a>, “Embedded Go-To Actions.”</p>
+</div>
+<p><table id="table200" markdown="span">
+    <caption><strong>Table 200 – Additional entries specific to a remote go-to action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>GoToR</strong> for a remote go-to action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>file specification</td>
+            <td>(Required) The file in which the destination shall be located.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>name, byte string, or array</td>
+            <td>(Required) The destination to jump to (see <a href="../s3/#1232-目的地">12.3.2</a>, “Destinations”). If the value is an array defining an explicit destination (as described under <a href="../s3/#12322-明确目的地">12.3.2.2</a>, “Explicit Destinations”), its first element shall be a page number within the remote document rather than an indirect reference to a page object in the current document. The first page shall be numbered 0.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>NewWindow</strong></td>
+            <td>boolean</td>
+            <td>(Optional; PDF 1.2) A flag specifying whether to open the destination document in a new window. If this flag is <strong>false</strong>, the destination document replaces the current document in the same window. If this entry is absent, the conforming reader should behave in accordance with its preference.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="12644-嵌入式操作">12.6.4.4 嵌入式操作<a class="headerlink" href="#12644-嵌入式操作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.4 Embedded Go-To Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>嵌入式跳转动作（PDF 1.6）与远程跳转动作类似，但它允许在嵌入到另一个PDF文件中的PDF文件之间进行跳转（见<a href="../../c7/s11/#7114-嵌入式文件流">7.11.4</a>，“嵌入文件流”）。嵌入文件可以与文件附件注释（见<a href="../s5/#125615-文件附件注解">12.5.6.15</a>，“文件附件注释”）或嵌入文件名称树中的条目（见<a href="../../c7/s7/#774-名称字典">7.7.4</a>，“名称字典”）相关联。嵌入文件反过来也可以包含嵌入文件。表201展示了专门针对嵌入式跳转动作的动作字典条目。</p>
+<p>嵌入式跳转动作提供了一个完整的机制，用于在嵌套嵌入文件的层次结构中的一个文件与同一或不同层次结构中的另一个文件之间建立链接。应使用以下术语：</p>
+<ul>
+<li><em>源文件</em>：包含嵌入式跳转动作的文档。</li>
+<li><em>目标文件</em>：目标位置所在的文档。</li>
+<li>动作字典中的<strong>T</strong>条目是一个目标字典，用于相对于源文件定位目标文件，其方式与相对路径描述文件系统中两个文件的物理关系类似。目标字典可以递归嵌套，以指定一个或多个中间目标，然后到达最终目标。在遍历层次结构时，每个中间目标都应被称为当前文档。最初，源文件是当前文档。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>如果目标字典存在无限循环（例如，一个目标字典引用自身），则这是一个错误。符合规范的阅读器应尝试检测此类情况，并在发现时拒绝执行该动作。</p>
+</div>
+<ul>
+<li><em>子文档</em>：嵌入在另一个PDF文件中的文档。</li>
+<li>包含嵌入文件的文档称为其<em>父文档</em>。</li>
+<li><em>根文档</em>：未嵌入到另一个PDF文件中的文档。目标和源可以位于根文档或嵌入文档中。</li>
+</ul>
+<p><table id="table201" markdown="span">
+    <caption><strong>表201 – 嵌入式跳转动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于嵌入式跳转动作，应为<strong>GoToE</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>文件规范</td>
+            <td>（可选）相对于源文件根文档的目标文件的根文档。如果此条目不存在，则源文件和目标文件共享相同的根文档。</td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>名称、字节字符串或数组</td>
+            <td>（必需）要跳转到目标文件中的目标位置（见<a href="../s3/#1232-目的地">12.3.2</a>，“目标位置”）。</td>
+        </tr>
+        <tr>
+            <td><strong>NewWindow</strong></td>
+            <td>布尔值</td>
+            <td>（可选）如果为<strong>true</strong>，则应在新的窗口中打开目标文档；如果为<strong>false</strong>，则目标文档应在同一窗口中替换当前文档。如果此条目不存在，符合规范的阅读器应根据其偏好进行处理。</td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>字典</td>
+            <td>（如果存在<strong>F</strong>条目则为可选；否则必需）一个目标字典（见<a href="#table202">表202</a>），用于指定到目标文档的路径信息。每个目标字典指定到目标的完整路径中的一个元素，并且可以嵌套其他目标字典来指定更多元素。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table202" markdown="span">
+    <caption><strong>表202 – 目标字典特定的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>R</strong></td>
+            <td>名称</td>
+            <td>（必需）指定当前文档与目标（可能是中间目标）之间的关系。有效值为 <strong>P</strong>（目标为当前文档的父文档）和 <strong>C</strong>（目标为当前文档的子文档）。</td>
+        </tr>
+        <tr>
+            <td><strong>N</strong></td>
+            <td>字节字符串</td>
+            <td>（如果 <strong>R</strong> 的值为 <strong>C</strong> 且目标位于 <strong>EmbeddedFiles</strong> 名称树中，则必需；否则应不存在）<strong>EmbeddedFiles</strong> 名称树中文件的名称。</td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>整数或字节字符串</td>
+            <td>（如果 <strong>R</strong> 的值为 <strong>C</strong> 且目标与文件附件注释相关联，则必需；否则应不存在）如果该值是整数，则指定当前文档中包含文件附件注释的页码（从零开始计数）。如果该值是字符串，则指定当前文档中提供文件附件注释页码的命名目标。</td>
+        </tr>
+        <tr>
+            <td><strong>A</strong></td>
+            <td>整数或文本字符串</td>
+            <td>（如果 <strong>R</strong> 的值为 <strong>C</strong> 且目标与文件附件注释相关联，则必需；否则应不存在）如果该值是整数，则指定由 <strong>P</strong> 指定的页面的 <strong>Annots</strong> 数组（见表30）中注释的索引（从零开始计数）。如果该值是文本字符串，则指定注释字典中的 <strong>NM</strong> 值（见<a href="../s5/#table164">表164</a>）。</td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>字典</td>
+            <td>（可选）一个目标字典，用于指定到目标文档的附加路径信息。如果此条目不存在，则当前文档是包含目标的文件。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<p>以下示例说明了源和目标之间的几种可能关系。所示的每个对象都是嵌入式跳转动作的动作字典 。</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj     % Link to a child
+    &lt;&lt; /Type /Action
+       /S /GoToE
+       /D (Chapter 1)
+       /T &lt;&lt; /R /C
+       /N (Embedded document) &gt;&gt;
+    &gt;&gt;
+endobj
+
+2 0 obj
+    &lt;&lt; /Type /Action    % Link to the parent
+       /S /GoToE
+       /D (Chapter 1)
+       /T &lt;&lt; /R /P &gt;&gt;
+    &gt;&gt;
+endobj
+
+
+3 0 obj                % Link to a sibling
+    &lt;&lt; /Type /Action
+        /S /GoToE
+        /D (Chapter 1)
+        /T &lt;&lt; /R /P
+              /T &lt;&lt; /R /C
+                    /N (Another embedded document) &gt;&gt;
+        &gt;&gt;
+    &gt;&gt;
+endobj
+
+4 0 obj            % Link to an embedded file in an external document
+    &lt;&lt; /Type /Action
+       /S /GoToE
+       /D (Chapter 1)
+       /F (someFile.pdf)
+       /T &lt;&lt; /R /C
+             /N (Embedded document) &gt;&gt;
+    &gt;&gt;
+endobj
+
+5 0 obj           % Link from an embedded file to a normal file
+    &lt;&lt; /Type /Action
+       /S /GoToE
+       /D (Chapter 1)
+       /F (someFile.pdf)
+    &gt;&gt;
+endobj
+
+6 0 obj           % Link to a grandchild
+    &lt;&lt; /Type /Action
+       /S /GoToE
+       /D (Chapter 1)
+       /T &lt;&lt; /R /C
+             /N (Embedded document)
+             /T &lt;&lt; /R /C
+                   /P (A destination name)
+                   /A (annotName)
+                &gt;&gt;
+          &gt;&gt;
+    &gt;&gt;
+endobj
+
+7 0 obj            % Link to a niece/nephew through the source’s parent
+    &lt;&lt; /Type /Action
+       /S /GoToE
+       /D (destination)
+       /T &lt;&lt; /R /P
+             /T &lt;&lt; /R /C
+                /N (Embedded document)
+                /T &lt;&lt; /R /C
+                      /P 3
+                      /A (annotName)
+                   &gt;&gt;
+             &gt;&gt;
+       &gt;&gt;
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>An embedded go-to action (PDF 1.6) is similar to a remote go-to action but allows jumping to or from a PDF file that is embedded in another PDF file (see <a href="../../c7/s11/#7114-嵌入式文件流">7.11.4</a>, “Embedded File Streams”). Embedded files may be associated with file attachment annotations (see <a href="../s5/#125615-文件附件注解">12.5.6.15</a>, “File Attachment Annotations”) or with entries in the EmbeddedFiles name tree (see <a href="../../c7/s7/#774-名称字典">7.7.4</a>, “Name Dictionary”). Embedded files may in turn contain embedded files. Table 201 shows the action dictionary entries specific to embedded go-to actions.</p>
+<p>Embedded go-to actions provide a complete facility for linking between a file in a hierarchy of nested embedded files and another file in the same or different hierarchy. The following terminology shall be used:</p>
+<ul>
+<li>The <em>source</em> is the document containing the embedded go-to action.</li>
+<li>The <em>target</em> is the document in which the destination lives.</li>
+<li>The <strong>T</strong> entry in the action dictionary is a target dictionary that locates the target in relation to the source, in much the same way that a relative path describes the physical relationship between two files in a file system. Target dictionaries may be nested recursively to specify one or more intermediate targets before reaching the final one. As the hierarchy is navigated, each intermediate target shall be referred to as the current document. Initially, the source is the current document.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>It is an error for a target dictionary to have an infinite cycle (for example, one where a target dictionary refers to itself). Conforming readers should attempt to detect such cases and refuse to execute the action if found.</p>
+</div>
+<ul>
+<li>A <em>child</em> document shall be one that is embedded within another PDF file.</li>
+<li>The document in which a file is embedded shall be its <em>parent</em>.</li>
+<li>A <em>root document</em> is one that is not embedded in another PDF file. The target and source may be contained in root documents or embedded documents.</li>
+</ul>
+<p><table id="table201" markdown="span">
+    <caption><strong>Table 201 – Additional entries specific to an embedded go-to action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>GoToE</strong> for an embedded go-to action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>file specification</td>
+            <td>(Optional) The root document of the target relative to the root document of the source. If this entry is absent, the source and target share the same root document.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>name, byte string, or array</td>
+            <td>(Required) The destination in the target to jump to (see <a href="../s3/#1232-目的地">12.3.2</a>, “Destinations”).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>NewWindow</strong></td>
+            <td>boolean</td>
+            <td>(Optional) If <strong>true</strong>, the destination document should be opened in a new window; if <strong>false</strong>, the destination document should replace the current document in the same window. If this entry is absent, the conforming reader should act according to its preference.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>dictionary</td>
+            <td>(Optional if <strong>F</strong> is present; otherwise required) A target dictionary (see <a href="#table202">Table 202</a>) specifying path information to the target document. Each target dictionary specifies one element in the full path to the target and may have nested target dictionaries specifying additional elements.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table202" markdown="span">
+    <caption><strong>Table 202 – Entries specific to a target dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>R</strong></td>
+            <td>name</td>
+            <td>(Required) Specifies the relationship between the current document and the target (which may be an intermediate target). Valid values are <strong>P</strong> (the target is the parent of the current document) and <strong>C</strong> (the target is a child of the current document).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>N</strong></td>
+            <td>byte string</td>
+            <td>(Required if the value of <strong>R</strong> is <strong>C</strong> and the target is located in the <strong>EmbeddedFiles</strong> name tree; otherwise, it shall be absent) The name of the file in the <strong>EmbeddedFiles</strong> name tree.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>integer or byte string</td>
+            <td>(Required if the value of <strong>R</strong> is <strong>C</strong> and the target is associated with a file attachment annotation; otherwise, it shall be absent) If the value is an integer, it specifies the page number (zero-based) in the current document containing the file attachment annotation. If the value is a string, it specifies a named destination in the current document that provides the page number of the file attachment annotation.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>A</strong></td>
+            <td>integer or text string</td>
+            <td>(Required if the value of <strong>R</strong> is <strong>C</strong> and the target is associated with a file attachment annotation; otherwise, it shall be absent) If the value is an integer, it specifies the index (zero-based) of the annotation in the <strong>Annots</strong> array (see Table 30) of the page specified by <strong>P</strong>. If the value is a text string, it specifies the value of <strong>NM</strong> in the annotation dictionary (see <a href="../s5/#table164">Table 164</a>).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) A target dictionary specifying additional path information to the target document. If this entry is absent, the current document is the target file containing the destination.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>The following example illustrates several possible relationships between source and target. Each object shown is an action dictionary for an embedded go-to action.</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj     % Link to a child
+    &lt;&lt; /Type /Action
+       /S /GoToE
+       /D (Chapter 1)
+       /T &lt;&lt; /R /C
+       /N (Embedded document) &gt;&gt;
+    &gt;&gt;
+endobj
+
+2 0 obj
+    &lt;&lt; /Type /Action    % Link to the parent
+       /S /GoToE
+       /D (Chapter 1)
+       /T &lt;&lt; /R /P &gt;&gt;
+    &gt;&gt;
+endobj
+
+
+3 0 obj                % Link to a sibling
+    &lt;&lt; /Type /Action
+        /S /GoToE
+        /D (Chapter 1)
+        /T &lt;&lt; /R /P
+              /T &lt;&lt; /R /C
+                    /N (Another embedded document) &gt;&gt;
+        &gt;&gt;
+    &gt;&gt;
+endobj
+
+4 0 obj            % Link to an embedded file in an external document
+    &lt;&lt; /Type /Action
+       /S /GoToE
+       /D (Chapter 1)
+       /F (someFile.pdf)
+       /T &lt;&lt; /R /C
+             /N (Embedded document) &gt;&gt;
+    &gt;&gt;
+endobj
+
+5 0 obj           % Link from an embedded file to a normal file
+    &lt;&lt; /Type /Action
+       /S /GoToE
+       /D (Chapter 1)
+       /F (someFile.pdf)
+    &gt;&gt;
+endobj
+
+6 0 obj           % Link to a grandchild
+    &lt;&lt; /Type /Action
+       /S /GoToE
+       /D (Chapter 1)
+       /T &lt;&lt; /R /C
+             /N (Embedded document)
+             /T &lt;&lt; /R /C
+                   /P (A destination name)
+                   /A (annotName)
+                &gt;&gt;
+          &gt;&gt;
+    &gt;&gt;
+endobj
+
+7 0 obj            % Link to a niece/nephew through the source’s parent
+    &lt;&lt; /Type /Action
+       /S /GoToE
+       /D (destination)
+       /T &lt;&lt; /R /P
+             /T &lt;&lt; /R /C
+                /N (Embedded document)
+                /T &lt;&lt; /R /C
+                      /P 3
+                      /A (annotName)
+                   &gt;&gt;
+             &gt;&gt;
+       &gt;&gt;
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="12645-启动操作">12.6.4.5 启动操作<a class="headerlink" href="#12645-启动操作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.5 Launch Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>启动动作</em>用于启动应用程序或打开/打印文档。表203展示了专门针对这种类型动作的动作字典条目。</p>
+<p>可选的<strong>Win</strong>、<strong>Mac</strong>和<strong>Unix</strong>条目允许动作字典包含用于启动指定应用程序的平台特定参数。如果给定平台不存在此类条目，则应使用<strong>F</strong>条目。表203展示了Windows平台的平台特定启动参数。在发布时，Mac OS和UNIX平台的参数尚未定义。</p>
+<p><table id="table203" markdown="span">
+    <caption><strong>表203 – 启动动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于启动动作，应为Launch。</td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>文件规范</td>
+            <td>（如果<strong>Win</strong>、<strong>Mac</strong>或<strong>Unix</strong>条目均不存在，则必需）要启动的应用程序或要打开/打印的文档。如果此条目不存在且符合规范的阅读器不理解任何其他替代条目，则不应执行任何操作。</td>
+        </tr>
+        <tr>
+            <td><strong>Win</strong></td>
+            <td>字典</td>
+            <td>（可选）包含参数的字典（见<a href="#table204">表204</a>）。</td>
+        </tr>
+        <tr>
+            <td><strong>Mac</strong></td>
+            <td>（未定义）</td>
+            <td>（可选）Mac OS特定的启动参数；尚未定义。</td>
+        </tr>
+        <tr>
+            <td><strong>Unix</strong></td>
+            <td>（未定义）</td>
+            <td>（可选）UNIX特定的启动参数；尚未定义。</td>
+        </tr>
+        <tr>
+            <td><strong>NewWindow</strong></td>
+            <td>布尔值</td>
+            <td>（可选；PDF 1.2）一个标志，用于指定是否在新窗口中打开目标文档。如果此标志为<strong>false</strong>，则目标文档将在同一窗口中替换当前文档。如果此条目不存在，符合规范的阅读器应根据其当前偏好进行处理。如果<strong>F</strong>条目指定的文件不是PDF文档，则应忽略此条目。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table204" markdown="span">
+    <caption><strong>表204 – Windows启动参数字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>字节字符串</td>
+            <td>（必需）要启动的应用程序文件名或要打开/打印的文档名称，采用标准的Windows路径名格式。如果名称字符串包含反斜杠字符()，则该反斜杠本身应前面再加一个反斜杠。<br/>
+            此值应为简单字符串；它不是文件规范。</td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>字节字符串</td>
+            <td>（可选）指定默认目录的字节字符串，采用标准的DOS语法。</td>
+        </tr>
+        <tr>
+            <td><strong>O</strong></td>
+            <td>ASCII字符串</td>
+            <td>（可选）指定要执行的操作的ASCII字符串：<br/>
+                open &emsp; 打开文档。<br/>
+                print &emsp; 打印文档。<br/>
+                如果<strong>F</strong>条目指定的是应用程序而不是文档，则应忽略此条目并启动该应用程序。默认值：open。</td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>字节字符串</td>
+            <td>（可选）应传递给由<strong>F</strong>条目指定的应用程序的参数字符串。如果<strong>F</strong>指定的是文档，则应省略此条目。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A <em>launch action</em> launches an application or opens or prints a document. Table 203 shows the action dictionary entries specific to this type of action.</p>
+<p>The optional <strong>Win</strong>, <strong>Mac</strong>, and <strong>Unix</strong> entries allow the action dictionary to include platform-specific parameters for launching the designated application. If no such entry is present for the given platform, the F entry shall be used instead. Table 203 shows the platform-specific launch parameters for the Windows platform. Parameters for the Mac OS and UNIX platforms are not yet defined at the time of publication.</p>
+<p><table id="table203" markdown="span">
+    <caption><strong>Table 203 – Additional entries specific to a launch action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be Launch for a launch action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>file specification</td>
+            <td>(Required if none of the entries <strong>Win</strong>, <strong>Mac</strong>, or <strong>Unix</strong> is present) The application that shall be launched or the document that shall be opened or printed. If this entry is absent and the conforming reader does not understand any of the alternative entries, it shall do nothing.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Win</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) A dictionary containing parameters (see <a href="#table204">Table 204</a>).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Mac</strong></td>
+            <td>(undefined)</td>
+            <td>(Optional) Mac OS–specific launch parameters; not yet defined.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Unix</strong></td>
+            <td>(undefined)</td>
+            <td>(Optional) UNIX-specific launch parameters; not yet defined.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>NewWindow</strong></td>
+            <td>boolean</td>
+            <td>(Optional; PDF 1.2) A flag specifying whether to open the destination document in a new window. If this flag is <strong>false</strong>, the destination document replaces the current document in the same window. If this entry is absent, the conforming reader should behave in accordance with its current preference. This entry shall be ignored if the file designated by the <strong>F</strong> entry is not a PDF document.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table204" markdown="span">
+    <caption><strong>Table 204 – Entries in a Windows launch parameter dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>byte string</td>
+            <td>(Required) The file name of the application that shall be launched or the document that shall be opened or printed, in standard Windows pathname format. If the name string includes a backslash character (), the backslash shall itself be preceded by a backslash. <br/>
+            This value shall be a simple string; it is not a file specification.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>byte string</td>
+            <td>(Optional) A bye string specifying the default directory in standard DOS syntax.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>O</strong></td>
+            <td>ASCII string</td>
+            <td>(Optional) An ASCII string specifying the operation to perform: <br/>
+                open &emsp; Open a document. <br/>
+                print &emsp; Print a document. <br/>
+                If the <strong>F</strong> entry designates an application instead of a document, this entry shall be ignored and the application shall be launched. Default value: open.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td>
+            <td>byte string</td>
+            <td>(Optional) A parameter string that shall be passed to the application designated by the <strong>F</strong> entry. This entry shall be omitted if <strong>F</strong> designates a document.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="12646-线索动作">12.6.4.6 线索动作<a class="headerlink" href="#12646-线索动作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.6 Thread Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>线程动作会跳转到文章线索（见<a href="../s4/#1243-文章">12.4.3</a>，“文章”）上指定的线索珠（bead），该线索可以在当前文档中，也可以在其他文档中。表205展示了专门针对这种类型动作的动作字典条目。</p>
+<p><table id="table205" markdown="span">
+    <caption><strong>表205 – 线程动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于线程动作，应为<strong>Thread</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>文件规范</td>
+            <td>（可选）包含线索的文件。如果此条目不存在，则线索在当前文件中。</td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>字典、整数或文本字符串</td>
+            <td>（必需）目标线索，以以下形式之一指定：<br/>
+                对线索字典的间接引用（见<a href="../s4/#1243-文章">12.4.3</a>，“文章”）。在这种情况下，线索应在当前文件中。<br/>
+                线索在其文档的<strong>Catalog</strong>的<strong>Threads</strong>数组中的索引（见<a href="../../c7/s7/#772-文档目录">7.7.2</a>，“文档目录”）。数组中的第一个线索索引为0。<br/>
+                线索信息字典中指定的线索标题（见表160）。如果两个或更多线索具有相同的标题，则应使用文档<strong>Catalog</strong>的<strong>Threads</strong>数组中第一个出现的线索。</td>
+        </tr>
+        <tr>
+            <td><strong>B</strong></td>
+            <td>字典或整数</td>
+            <td>（可选）目标线索中的线索珠，以以下形式之一指定：<br/>
+                对线索珠字典的间接引用（见<a href="../s4/#1243-文章">12.4.3</a>，“文章”）。在这种情况下，线索应在当前文件中。<br/>
+                线索珠在其线索中的索引。线索中的第一个线索珠索引为0。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A thread action jumps to a specified bead on an article thread (see <a href="../s4/#1243-文章">12.4.3</a>, “Articles”), in either the current document or a different one. Table 205 shows the action dictionary entries specific to this type of action.</p>
+<p><table id="table205" markdown="span">
+    <caption><strong>Table 205 – Additional entries specific to a thread action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>Thread</strong> for a thread action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>file specification</td>
+            <td>(Optional) The file containing the thread. If this entry is absent, the thread is in the current file.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>dictionary, integer, or text string</td>
+            <td>(Required) The destination thread, specified in one of the following forms: <br/>
+                An indirect reference to a thread dictionary (see <a href="../s4/#1243-文章">12.4.3</a>, “Articles”). In this case, the thread shall be in the current file. <br/>
+                The index of the thread within the <strong>Threads</strong> array of its document’s <strong>Catalog</strong> (see <a href="../../c7/s7/#772-文档目录">7.7.2</a>, “Document Catalog”). The first thread in the array has index 0. <br/>
+                The title of the thread as specified in its thread information dictionary (see Table 160). If two or more threads have the same title, the one appearing first in the document <strong>Catalog’s Threads</strong> array shall be used.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>B</strong></td>
+            <td>dictionary or integer</td>
+            <td>(Optional) The bead in the destination thread, specified in one of the following forms: <br/>
+                An indirect reference to a bead dictionary (see <a href="../s4/#1243-文章">12.4.3</a>, “Articles”). In this case, the thread shall be in the current file. <br/>
+                The index of the bead within its thread. The first bead in a thread has index 0.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="12647-uri-操作">12.6.4.7 URI 操作<a class="headerlink" href="#12647-uri-操作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.7 URI Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>统一资源标识符</em>（URI）是一个字符串，用于标识（解析为）互联网上的资源 —— 通常是超文本链接的目标文件，不过它也可能解析为一个查询或其他实体。（URI在互联网RFC 2396《统一资源标识符（URI）：通用语法》中有详细描述；见<a href="../../bibliography/">Bibliography</a>的参考文献。）</p>
+<p><em>URI动作</em>会导致解析一个URI。表206展示了专门针对这种类型动作的动作字典条目。</p>
+<p><table id="table206" markdown="span">
+    <caption><strong>表206 – URI动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于URI动作，应为<strong>URI</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>文件规范</td>
+            <td>（可选）包含线索的文件。如果此条目不存在，则线索在当前文件中。（注：此处关于“线索”的描述可能与URI动作本身关联不大，可能是文档中其他相关概念混淆在此处，原文如此）</td>
+        </tr>
+        <tr>
+            <td><strong>URI</strong></td>
+            <td>ASCII字符串</td>
+            <td>（必需）要解析的统一资源标识符，采用7位ASCII编码。</td>
+        </tr>
+        <tr>
+            <td><strong>IsMap</strong></td>
+            <td>布尔值</td>
+            <td>（可选）一个标志，用于指定在解析URI时是否跟踪鼠标位置（见本表后的讨论）。默认值：<strong>false</strong>。<br/>
+                此条目仅适用于由用户点击注释触发的动作；对于与大纲项或文档的<strong>OpenAction</strong>条目相关的动作，应忽略此条目。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>如果<strong>IsMap</strong>标志为<strong>true</strong>且用户通过点击注释触发了URI动作，则触发动作时鼠标位置的坐标应从设备空间转换为用户空间，然后相对于注释矩形左上角（即与该URI动作相关联的注释中<strong>Rect</strong>条目的值）进行偏移。</p>
+<div class="admonition info">
+<p class="admonition-title">示例1</p>
+<p>如果用户空间中的鼠标坐标为<span class="arithmatex">\((x_m, y_m)\)</span>，且注释矩形从左下角的<span class="arithmatex">\((ll_x, ll_y)\)</span>延伸到右上角的<span class="arithmatex">\((ur_x, ur_y)\)</span>，则最终坐标<span class="arithmatex">\((x_f, y_f)\)</span>如下：</p>
+</div>
+<div class="arithmatex">\[\begin{align}  &amp;(x_f = x_m - ll_x) \\ &amp;y_f = ur_y - y_m  \end{align}\]</div>
+<p>如果得到的坐标<span class="arithmatex">\((x_f, y_f)\)</span>是小数，则应将其四舍五入为最接近的整数值。然后，这些值将附加到要解析的URI中，用逗号（2Ch）分隔，并以问号（3Fh）开头，如本示例所示：</p>
+<div class="admonition info">
+<p class="admonition-title">示例2</p>
+<p>http://www.adobe.com/intro?100,200</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注1</p>
+<p>为了支持URI动作，PDF文档的<strong>Catalog</strong>（见<a href="../../c7/s7/#772-文档目录">7.7.2</a>，“文档目录”）可能包含一个<strong>URI</strong>条目，其值是一个URI字典。这样的字典只应定义一个条目（见表207）。</p>
+</div>
+<p><table id="table207" markdown="span">
+    <caption><strong>表207 – URI字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Base</strong></td>
+            <td>ASCII字符串</td>
+            <td>（可选）用于解析相对URI引用的基础URI。文档中的URI动作可以指定部分形式的URI，相对于此基础地址进行解释。如果未指定基础URI，则此类部分URI将相对于文档本身的位置进行解释。此条目的使用方式与HTML 4.01规范中描述的主体元素<BASE>的使用方式类似（见参考文献）。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注2</p>
+<p><strong>Base</strong>条目允许在文档可能脱离上下文被访问的情况下记录文档的URI。例如，如果文档已移动到新位置，但包含指向其他未移动文档的相对链接，则<strong>Base</strong>条目可用于将这些链接指向其他文档的真实位置，而不是移动后文档的位置 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A <em>uniform resource identifier</em> (URI) is a string that identifies (resolves to) a resource on the Internet—typically a file that is the destination of a hypertext link, although it may also resolve to a query or other entity. (URIs are described in Internet RFC 2396, Uniform Resource Identifiers (URI): Generic Syntax; see the <a href="../../bibliography/">Bibliography</a>.)</p>
+<p>A <em>URI action</em> causes a URI to be resolved. Table 206 shows the action dictionary entries specific to this type of action.</p>
+<p><table id="table206" markdown="span">
+    <caption><strong>Table 206 – Additional entries specific to a URI action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>URI</strong> for a URI action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>file specification</td>
+            <td>(Optional) The file containing the thread. If this entry is absent, the thread is in the current file.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>URI</strong></td>
+            <td>ASCII string</td>
+            <td>(Required) The uniform resource identifier to resolve, encoded in 7-bit ASCII.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>IsMap</strong></td>
+            <td>boolean</td>
+            <td>(Optional) A flag specifying whether to track the mouse position when the URI is resolved (see the discussion following this Table). Default value: <strong>false</strong>. <br/>
+                This entry applies only to actions triggered by the user’s clicking an annotation; it shall be ignored for actions associated with outline items or with a document’s <strong>OpenAction</strong> entry.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>If the <strong>IsMap</strong> flag is <strong>true</strong> and the user has triggered the URI action by clicking an annotation, the coordinates of the mouse position at the time the action has been triggered shall be transformed from device space to user space and then offset relative to the upper-left corner of the annotation rectangle (that is, the value of the <strong>Rect</strong> entry in the annotation with which the URI action is associated).</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>If the mouse coordinates in user space are <span class="arithmatex">\((x_m , y_m)\)</span> and the annotation rectangle extends from <span class="arithmatex">\((ll_x , ll_y)\)</span> at the lower-left to <span class="arithmatex">\((ur_x , ur_y)\)</span> at the upper-right, the final coordinates <span class="arithmatex">\((x_f, y_f)\)</span> are as follows:</p>
+</div>
+<div class="arithmatex">\[\begin{align}  &amp;(x_f = x_m - ll_m) \\ &amp;y_f = ur_y - y_m  \end{align}\]</div>
+<p>If the resulting coordinates <span class="arithmatex">\((x_f , y_f)\)</span> are fractional, they shall be rounded to the nearest integer values. They shall then be appended to the URI to be resolved, separated by COMMAS (2Ch) and preceded by a QUESTION MARK (3Fh), as shown in this example:</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>http://www.adobe.com/intro?100,200</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>To support URI actions, a PDF document’s <strong>Catalog</strong> (see <a href="../../c7/s7/#772-文档目录">7.7.2</a>, “Document Catalog”) may include a <strong>URI</strong> entry whose value is a URI dictionary. Only one entry shall be defined for such a dictionary (see Table 207).</p>
+</div>
+<p><table id="table207" markdown="span">
+    <caption><strong>Table 207 – Entry in a URI dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Base</strong></td>
+            <td>ASCII string</td>
+            <td>(Optional) The base URI that shall be used in resolving relative URI references. URI actions within the document may specify URIs in partial form, to be interpreted relative to this base address. If no base URI is specified, such partial URIs shall be interpreted relative to the location of the document itself. The use of this entry is parallel to that of the body element <BASE >, as described in the HTML 4.01 Specification (see the Bibliography).
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The <strong>Base</strong> entry allows the URI of the document to be recorded in situations in which the document may be accessed out of context. For example, if a document has been moved to a new location but contains relative links to other documents that have not been moved, the <strong>Base</strong> entry could be used to refer such links to the true location of the other documents, rather than that of the moved document.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="12648-声音动作">12.6.4.8 声音动作<a class="headerlink" href="#12648-声音动作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.8 Sound Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">中文</label><label for="__tabbed_11_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>声音动作</em>（PDF 1.2）通过计算机的扬声器播放声音。表208展示了专门针对这种类型动作的动作字典条目。声音相关内容见<a href="../../c13/s3/">13.3</a>，“声音”。</p>
+<p><table id="table208" markdown="span">
+    <caption><strong>表208 – 声音动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于声音动作，应为<strong>Sound</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Sound</strong></td>
+            <td>流</td>
+            <td>（必需）定义要播放声音的声音对象（见<a href="../../c13/s3/">13.3</a>，“声音”）。</td>
+        </tr>
+        <tr>
+            <td><strong>Volume</strong></td>
+            <td>数字</td>
+            <td>（可选）播放声音的音量，范围为−1.0到1.0。默认值：1.0。</td>
+        </tr>
+        <tr>
+            <td><strong>Synchronous</strong></td>
+            <td>布尔值</td>
+            <td>（可选）一个标志，用于指定是以同步方式还是异步方式播放声音。如果此标志为<strong>true</strong>，符合规范的阅读器将保持控制权，在声音完全播放完毕之前，除了取消声音外，不允许用户进行其他交互。默认值：<strong>false</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Repeat</strong></td>
+            <td>布尔值</td>
+            <td>（可选）一个标志，用于指定是否无限重复播放声音。如果存在此条目，则忽略<strong>Synchronous</strong>条目。默认值：<strong>false</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Mix</strong></td>
+            <td>布尔值</td>
+            <td>（可选）一个标志，用于指定是否将此声音与任何其他正在播放的声音混合。如果此标志为<strong>false</strong>，在开始播放此声音之前，将停止任何先前正在播放的声音；这可用于停止重复播放的声音（见<strong>Repeat</strong>）。默认值：<strong>false</strong>。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A <em>sound action</em> (PDF 1.2) plays a sound through the computer’s speakers. Table 208 shows the action dictionary entries specific to this type of action. Sounds are discussed in <a href="../../c13/s3/">13.3</a>, “Sounds.”</p>
+<p><table id="table208" markdown="span">
+    <caption><strong>Table 208 – Additional entries specific to a sound action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>Sound</strong> for a sound action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Sound</strong></td>
+            <td>stream</td>
+            <td>(Required) A sound object defining the sound that shall be played (see <a href="../../c13/s3/">13.3</a>, “Sounds”).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Volume</strong></td>
+            <td>number</td>
+            <td>(Optional) The volume at which to play the sound, in the range −1.0 to 1.0. Default value: 1.0.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Synchronous</strong></td>
+            <td>boolean</td>
+            <td>(Optional) A flag specifying whether to play the sound synchronously or asynchronously. If this flag is <strong>true</strong>, the conforming reader retains control, allowing no further user interaction other than canceling the sound, until the sound has been completely played. Default value: <strong>false</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Repeat</strong></td>
+            <td>boolean</td>
+            <td>(Optional) A flag specifying whether to repeat the sound indefinitely. If this entry is present, the <strong>Synchronous</strong> entry shall be ignored. Default value: <strong>false</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Mix</strong></td>
+            <td>boolean</td>
+            <td>(Optional) A flag specifying whether to mix this sound with any other sound already playing. If this flag is <strong>false</strong>, any previously playing sound shall be stopped before starting this sound; this can be used to stop a repeating sound (see <strong>Repeat</strong>). Default value: <strong>false</strong>.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="12649-影片动作">12.6.4.9 影片动作<a class="headerlink" href="#12649-影片动作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.9 Movie Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">中文</label><label for="__tabbed_12_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>电影动作（PDF 1.2）可用于在浮动窗口或电影注释的注释矩形内播放电影（见<a href="../s5/#125617-视频注解">12.5.6.17</a>，“电影注释”和<a href="../../c13/s4/">13.4</a>，“电影”）。电影注释应与包含电影动作的链接注释或大纲项的目标页面相关联，或者与动作相关联的页面对象相关联。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>电影动作本身并不保证在尝试播放电影之前会显示该电影所在的页面；此类页面切换动作应明确执行。</p>
+</div>
+<p>电影动作字典的内容与电影激活字典的内容相同（见<a href="../../c13/s4/#table296">表296</a>），另外还有<a href="#table209">表209</a>中显示的条目。与电影注释相关联的激活字典的内容提供默认值。电影动作字典中指定的任何信息都将覆盖这些默认值。</p>
+<p><table id="table209" markdown="span">
+    <caption><strong>表209 – 电影动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于电影动作，应为<strong>Movie</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Annotation</strong></td>
+            <td>字典</td>
+            <td>（可选）对电影注释的间接引用，用于标识要播放的电影。</td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>文本字符串</td>
+            <td>（可选）电影注释的标题，用于标识要播放的电影。<br/>字典中应包含<strong>Annotation</strong>或<strong>T</strong>条目之一，但不能同时包含两者。</td>
+        </tr>
+        <tr>
+            <td><strong>Operation</strong></td>
+            <td>名称</td>
+            <td>（可选）要对电影执行的操作：<br/>
+                Play &emsp; 开始播放电影，使用字典的<strong>Mode</strong>条目指定的播放模式（见表296）。如果电影当前处于暂停状态，在播放前应将其重新定位到开头（或者如果存在字典的<strong>Start</strong>条目，则定位到该条目指定的起始点）。<br/>
+                Stop &emsp; 停止播放电影。<br/>
+                Pause &emsp; 暂停正在播放的电影。<br/>
+                Resume &emsp; 继续播放暂停的电影。<br/>
+                默认值：Play。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A movie action (PDF 1.2) can be used to play a movie in a floating window or within the annotation rectangle of a movie annotation (see <a href="../s5/#125617-视频注解">12.5.6.17</a>, “Movie Annotations” and <a href="../../c13/s4/">13.4</a>, “Movies”). The movie annotation shall be associated with the page that is the destination of the link annotation or outline item containing the movie action, or with the page object with which the action is associated.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>A movie action by itself does not guarantee that the page the movie is on will be displayed before attempting to play the movie; such page change actions shall be done explicitly.</p>
+</div>
+<p>The contents of a movie action dictionary are identical to those of a movie activation dictionary (see <a href="../../c13/s4/#table296">Table 296</a>), with the additional entries shown in <a href="#table209">Table 209</a>. The contents of the activation dictionary associated with the movie annotation provide the default values. Any information specified in the movie action dictionary overrides these values.</p>
+<p><table id="table209" markdown="span">
+    <caption><strong>Table 209 – Additional entries specific to a movie action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>Movie</strong> for a movie action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Annotation</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) An indirect reference to a movie annotation identifying the movie that shall be played.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>text string</td>
+            <td>(Optional) The title of a movie annotation identifying the movie that shall be played. <br/>The dictionary shall include either an <strong>Annotation</strong> or a <strong>T</strong> entry but not both.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Operation</strong></td>
+            <td>name</td>
+            <td>(Optional) The operation that shall be performed on the movie: PlayStart playing the movie, using the play mode specified by the dictionary’s <strong>Mode</strong> entry (see Table 296). If the movie is currently paused, it shall be repositioned to the beginning before playing (or to the starting point specified by the dictionary’s <strong>Start</strong> entry, if present). <br/>
+            Stop &emsp; Stop playing the movie. <br/>
+            Pause &emsp; Pause a playing movie. <br/>
+            Resume &emsp; Resume a paused movie. <br/>
+            Default value: Play.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="126410-隐藏操作">12.6.4.10 隐藏操作<a class="headerlink" href="#126410-隐藏操作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.10 Hide Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">中文</label><label for="__tabbed_13_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>隐藏动作（PDF 1.2）通过设置或清除注释的隐藏标志（见<a href="../s5/#1253-注解标志">12.5.3</a>，“注释标志”）来隐藏或显示屏幕上的一个或多个注释。这种类型的动作可以与外观流和触发事件（第<a href="../s5/#1255-外观流">12.5.5</a>节“外观流”和第<a href="./#1263-触发事件">12.6.3</a>节“触发事件”）结合使用，以在屏幕上显示弹出帮助信息。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>注释的附加动作字典中的<strong>E</strong>（进入）和<strong>X</strong>（退出）触发事件可用于在用户将光标移入和移出页面上注释的活动区域时显示和隐藏该注释。这可用于弹出一个帮助标签或工具提示，描述在该页面位置点击的效果。</p>
+</div>
+<p>表210展示了专门针对这种类型动作的动作字典条目。</p>
+<p><table id="table210" markdown="span">
+    <caption><strong>表210 – 隐藏动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于隐藏动作，应为<strong>Hide</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>字典、文本字符串或数组</td>
+            <td>（必需）要隐藏或显示的注释，应以以下任何一种形式指定：<br/>
+                对注释字典的间接引用<br/>
+                一个文本字符串，给出受影响的交互式表单字段的关联小部件注释或注释的完全限定字段名（见<a href="../s7/#12732-字段名称">12.7.3.2</a>，“字段名”）<br/>
+                这样的字典或文本字符串的数组</td>
+        </tr>
+        <tr>
+            <td><strong>H</strong></td>
+            <td>布尔值</td>
+            <td>（可选）一个标志，指示是否隐藏注释（<strong>true</strong>）或显示它（<strong>false</strong>）。默认值：<strong>true</strong>。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A hide action (PDF 1.2) hides or shows one or more annotations on the screen by setting or clearing their Hidden flags (see <a href="../s5/#1253-注解标志">12.5.3</a>, “Annotation Flags”). This type of action can be used in combination with appearance streams and trigger events (Sections <a href="../s5/#1255-外观流">12.5.5</a>, “Appearance Streams,” and <a href="./#1263-触发事件">12.6.3</a>, “Trigger Events”) to display pop-up help information on the screen.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The <strong>E</strong> (enter) and <strong>X</strong> (exit) trigger events in an annotation’s additional-actions dictionary can be used to show and hide the annotation when the user rolls the cursor in and out of its active area on the page. This can be used to pop up a help label, or tool tip, describing the effect of clicking at that location on the page.</p>
+</div>
+<p>Table 210 shows the action dictionary entries specific to this type of action.</p>
+<p><table id="table210" markdown="span">
+    <caption><strong>Table 210 – Additional entries specific to a hide action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>Hide</strong> for a hide action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td>
+            <td>dictionary, text string, or array</td>
+            <td>(Required) The annotation or annotations to be hidden or shown, shall be
+                specified in any of the following forms: <br/>
+                An indirect reference to an annotation dictionary <br/>
+                A text string giving the fully qualified field name of an interactive form field whose associated widget annotation or annotations are to be affected (see <a href="../s7/#12732-字段名称">12.7.3.2</a>, “Field Names”) <br/>
+                An array of such dictionaries or text strings
+            </td>
+        </tr>
+        <tr>
+            <td><strong>H</strong></td>
+            <td>boolean</td>
+            <td>(Optional) A flag indicating whether to hide the annotation (<strong>true</strong>) or show it (<strong>false</strong>). Default value: <strong>true</strong>.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="126411-命名动作">12.6.4.11 命名动作<a class="headerlink" href="#126411-命名动作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.11 Named Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">中文</label><label for="__tabbed_14_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>表211列出了几种符合规范的阅读器应支持的<em>命名动作</em>（PDF 1.2）；未来可能会添加更多名称。</p>
+<p><table id="table211" markdown="span">
+    <caption><strong>表211 – 命名动作</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>名称</strong></th>
+            <th><strong>动作</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>NextPage</strong></td>
+            <td>转到文档的下一页。</td>
+        </tr>
+        <tr>
+            <td><strong>PrevPage</strong></td>
+            <td>转到文档的上一页。</td>
+        </tr>
+        <tr>
+            <td><strong>FirstPage</strong></td>
+            <td>转到文档的第一页。</td>
+        </tr>
+        <tr>
+            <td><strong>LastPage</strong></td>
+            <td>转到文档的最后一页。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>符合规范的阅读器可能支持其他非标准的命名动作，但使用这些动作的任何文档都不具有可移植性。如果查看器遇到一个不适合其查看平台的命名动作，或者如果查看器不识别该名称，它将不执行任何操作。</p>
+</div>
+<p>表212展示了专门针对命名动作的动作字典条目。</p>
+<p><table id="table212" markdown="span">
+    <caption><strong>表212 – 命名动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于命名动作，应为<strong>Named</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>N</strong></td>
+            <td>名称</td>
+            <td>（必需）要执行的动作的名称（见<a href="#table211">表211</a>）。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>Table 211 lists several <em>named actions</em> (PDF 1.2) that conforming readers shall support; further names may be added in the future.</p>
+<p><table id="table211" markdown="span">
+    <caption><strong>Table 211 – Named actions</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Action</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>NextPage</strong></td>
+            <td>Go to the next page of the document.</td>
+        </tr>
+        <tr>
+            <td><strong>PrevPage</strong></td>
+            <td>Go to the previous page of the document.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>FirstPage</strong></td>
+            <td>Go to the first page of the document.</td>
+        </tr>
+        <tr>
+            <td><strong>LastPage</strong></td>
+            <td>Go to the last page of the document..</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Conforming readers may support additional, nonstandard named actions, but any document using them is not portable. If the viewer encounters a named action that is inappropriate for a viewing platform, or if the viewer does not recognize the name, it shall take no action.</p>
+</div>
+<p>Table 212 shows the action dictionary entries specific to named actions.</p>
+<p><table id="table212" markdown="span">
+    <caption><strong>Table 212 – Additional entries specific to named actions</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>Named</strong> for a named action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>N</strong></td>
+            <td>name</td>
+            <td>(Required) The name of the action that shall be performed (see <a href="#table211">Table 211</a>).
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="126412-设置-ocg-状态操作">12.6.4.12 设置 OCG 状态操作<a class="headerlink" href="#126412-设置-ocg-状态操作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.12 Set-OCG-State Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:2"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">中文</label><label for="__tabbed_15_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>设置可选内容组状态动作（PDF 1.5）用于设置一个或多个可选内容组的状态（见<a href="../../c8/s11/">8.11</a>，“可选内容”）。表213展示了专门针对这种类型动作的动作字典条目。</p>
+<p><table id="table213" markdown="span">
+    <caption><strong>表213 – 设置可选内容组状态动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于设置可选内容组状态动作，应为<strong>SetOCGState</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>State</strong></td>
+            <td>数组</td>
+            <td>（必需）由任意数量的序列组成的数组，每个序列以名称对象（<strong>ON</strong>、<strong>OFF</strong>或<strong>Toggle</strong>）开头，后跟一个或多个可选内容组字典。数组元素应从左到右处理；每个名称将应用于后续组，直到遇到下一个名称：<br/>
+            ON &emsp; 将后续组的状态设置为开启<br/>
+            OFF &emsp; 将后续组的状态设置为关闭<br/>
+            Toggle &emsp; 切换后续组的状态。</td>
+        </tr>
+        <tr>
+            <td><strong>PreserveRB</strong></td>
+            <td>布尔值</td>
+            <td>（可选）如果为<strong>true</strong>，表示在应用<strong>State</strong>数组中的状态时，应保留可选内容组之间的单选按钮状态关系（由当前配置字典中的<strong>RBGroups</strong>条目指定；见表101）。也就是说，如果在处理<strong>State</strong>数组期间某个组被设置为<strong>ON</strong>（通过<strong>ON</strong>或<strong>Toggle</strong>），则属于同一单选按钮组的任何其他组都将被关闭。如果某个组被设置为<strong>OFF</strong>，则对其他组没有影响。<br/>
+            如果<strong>PreserveRB</strong>为<strong>false</strong>，则忽略任何单选按钮状态关系。<br/>
+            默认值：true。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>执行设置可选内容组状态动作时，<strong>State</strong>数组应从左到右处理。每个名称将应用于数组中遇到的后续组，直到遇到下一个名称，如下例所示。</p>
+<div class="admonition info">
+<p class="admonition-title">示例1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt;&lt; /S /SetOCGState
+    /State [/OFF 2 0 R 3 0 R /Toggle 16 0 R 19 0 R /ON 5 0 R]
+&gt;&gt;
+</code></pre></div>
+</div>
+<p>一个组可能在<strong>State</strong>数组中出现多次；每次遇到该组时，都将根据最近的名称设置其状态。<strong>ON</strong>、<strong>OFF</strong>和<strong>Toggle</strong>序列没有特定的顺序要求。数组中可以包含多个具有相同名称的序列。</p>
+<div class="admonition info">
+<p class="admonition-title">示例2</p>
+<p>如果数组包含<code>[/OFF 1 0 R /Toggle 1 0 R]</code>，执行动作后该组的状态将为<strong>ON</strong>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>虽然规范允许一个组在<strong><em>State</em></strong>数组中出现多次，但这并非用于实现动画或其他顺序绘制操作。PDF处理应用程序可以累积所有状态更改，并在重新绘制之前同时将净更改应用于所有受影响的组 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A set-OCG-state action (PDF 1.5) sets the state of one or more optional content groups (see <a href="../../c8/s11/">8.11</a>, “Optional Content”). Table 213 shows the action dictionary entries specific to this type of action.</p>
+<p><table id="table213" markdown="span">
+    <caption><strong>Table 213 – Additional entries specific to a set-OCG-state action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>SetOCGState</strong> for a set-OCG-state action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>State</strong></td>
+            <td>array</td>
+            <td>(Required) An array consisting of any number of sequences beginning with a name object (<strong>ON</strong>, <strong>OFF</strong>, or <strong>Toggle</strong>) followed by one or more optional content group dictionaries. The array elements shall be processed from left to right; each name shall be applied to the subsequent groups until the next name is encountered: <br/>
+            ON &emsp; sets the state of subsequent groups to ON <br/>
+            OFF &emsp; sets the state of subsequent groups to OFF <br/>
+            Toggle &emsp; reverses the state of subsequent groups.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>PreserveRB</strong></td>
+            <td>boolean</td>
+            <td>(Optional) If <strong>true</strong>, indicates that radio-button state relationships between optional content groups (as specified by the <strong>RBGroups</strong> entry in the current configuration dictionary; see Table 101) should be preserved when the states in the <strong>State</strong> array are applied. That is, if a group is set to <strong>ON</strong> (either by <strong>ON</strong> or <strong>Toggle</strong>) during processing of the <strong>State</strong> array, any other groups belonging to the same radio-button group shall be turned OFF. If a group is set to <strong>OFF</strong>, there is no effect on other groups. <br/>
+            If <strong>PreserveRB</strong> is <strong>false</strong>, radio-button state relationships, if any, shall be ignored. <br/>
+            Default value: true.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>When a set-OCG-state action is performed, the <strong>State</strong> array shall be processed from left to right. Each name
+shall be applied to subsequent groups in the array until the next name is encountered, as shown in the
+following example.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt;&lt; /S /SetOCGState
+   /State [/OFF 2 0 R 3 0 R /Toggle 16 0 R 19 0 R /ON 5 0 R]
+&gt;&gt;
+</code></pre></div>
+</div>
+<p>A group may appear more than once in the <strong>State</strong> array; its state shall be set each time it is encountered, based
+on the most recent name. <strong>ON</strong>, <strong>OFF</strong> and <strong>Toggle</strong> sequences have no required order. More than one sequence in
+the array may contain the same name.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>If the array contained <code>[/OFF 1 0 R /Toggle 1 0 R]</code>, the group’s state would be <strong>ON</strong> after the action was performed.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>While the specification allows a group to appear more than once in the <strong><em>State</em></strong> array, this is not intended to implement animation or any other sequential drawing operations. PDF processing applications are free to accumulate all state changes and apply only the net changes simultaneously to all affected groups before redrawing.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="126413-演绎行动">12.6.4.13 演绎行动<a class="headerlink" href="#126413-演绎行动" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.13 Rendition Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="16:2"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><input id="__tabbed_16_2" name="__tabbed_16" type="radio" /><div class="tabbed-labels"><label for="__tabbed_16_1">中文</label><label for="__tabbed_16_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>呈现动作</em>（PDF 1.5）用于控制多媒体内容的播放（见<a href="../../c13/s2/">13.2</a>，“多媒体”）。此动作可通过以下方式使用：</p>
+<ul>
+<li>开始播放呈现对象（见<a href="../../c13/s2/#1323-演绎版">13.2.3</a>，“呈现”），并将其与屏幕注释（见<a href="../s5/#125618-屏幕注解">12.5.6.18</a>，“屏幕注释”）相关联。除非另有指定，否则屏幕注释将指定呈现的播放位置。</li>
+<li>停止、暂停或继续播放正在播放的呈现。</li>
+<li>触发执行可能执行自定义操作的JavaScript脚本。表214列出了呈现动作字典中的条目。</li>
+</ul>
+<p><table id="table214" markdown="span">
+    <caption><strong>表214 – 呈现动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于呈现动作，应为Rendition。</td>
+        </tr>
+        <tr>
+            <td><strong>R</strong></td>
+            <td>字典</td>
+            <td>（当<strong>OP</strong>存在且值为0或4时必需；否则可选）一个呈现对象（见<a href="../../c13/s2/#1323-演绎版">13.2.3</a>，“呈现”）。</td>
+        </tr>
+        <tr>
+            <td><strong>AN</strong></td>
+            <td>字典</td>
+            <td>（如果<strong>OP</strong>存在且值为0、1、2、3或4，则必需；否则可选）对屏幕注释的间接引用（见<a href="../s5/#125618-屏幕注解">12.5.6.18</a>，“屏幕注释”）。</td>
+        </tr>
+        <tr>
+            <td><strong>OP</strong></td>
+            <td>整数</td>
+            <td>（如果不存在<strong>JS</strong>，则必需；否则可选）触发动作时要执行的操作。有效值应为：<br/>
+            <ul>
+                <li>0 &emsp;<p>如果<strong>AN</strong>指定的注释没有关联的呈现，则播放<strong>R</strong>指定的呈现，并将其与该注释关联。如果该注释已有关联的呈现，则停止当前呈现，并将新呈现与该注释关联。</p></li>
+                <li>1 &emsp;<p>停止与<strong>AN</strong>指定的注释相关联的任何正在播放的呈现，并移除该关联。如果没有正在播放的呈现，则无影响。</p></li>
+                <li>2 &emsp;<p>暂停与<strong>AN</strong>指定的注释相关联的任何正在播放的呈现。如果没有正在播放的呈现，则无影响。</p></li>
+                <li>3 &emsp;<p>继续播放与<strong>AN</strong>指定的注释相关联的任何正在播放的呈现。如果没有正在播放的呈现或呈现未暂停，则无影响。</p></li>
+                <li>4 &emsp;<p>播放<strong>R</strong>指定的呈现，并将其与<strong>AN</strong>指定的注释关联。如果该注释已有关联的呈现，则在呈现暂停时继续播放；否则，不执行任何操作。</p></li>
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>JS</strong></td>
+            <td>文本字符串或流</td>
+            <td>（如果不存在<strong>OP</strong>，则必需；否则可选）包含在触发动作时要执行的JavaScript脚本的文本字符串或流。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><strong>JS</strong>条目和<strong>OP</strong>条目必须有一个存在。如果两者都存在，<strong>OP</strong>被视为备用项，当符合规范的阅读器无法执行JavaScript时将执行<strong>OP</strong>。如果<strong>OP</strong>的值无法识别且没有<strong>JS</strong>条目，则该动作无效。</p>
+<p>在某些情况下，暂停（<strong>OP</strong>值为2）或继续（<strong>OP</strong>值为3）操作可能没有意义，或者播放器可能不支持这些操作。在这种情况下，应通知用户操作执行失败。</p>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<p>一个JPEG图像</p>
+</div>
+<p>在执行呈现动作之前，符合规范的阅读器应确保屏幕注释字典的<strong>P</strong>条目引用有效的页面对象，并且该注释存在于页面对象的<strong>Annots</strong>数组中（见<a href="../../c7/s7/#table30">表30</a>）。</p>
+<p>即使注释本身不可见（例如，其隐藏或无视图标志（见<a href="../s5/#table165">表165</a>）已设置），呈现也可能在屏幕注释占据的矩形区域内播放。如果屏幕注释由于其页面位置未由查看器显示而不可见，则呈现也不可见。但是，如果视图发生变化（例如通过滚动），则可能变得可见 。</p>
+</div>
+<div class="tabbed-block">
+<p>A <em>rendition action</em> (PDF 1.5) controls the playing of multimedia content (see <a href="../../c13/s2/">13.2</a>, “Multimedia”). This action may be used in the following ways:</p>
+<ul>
+<li>To begin the playing of a rendition object (see <a href="../../c13/s2/#1323-演绎版">13.2.3</a>, “Renditions”), associating it with a screen annotation (see <a href="../s5/#125618-屏幕注解">12.5.6.18</a>, “Screen Annotations”). The screen annotation specifies where the rendition shall be played unless otherwise specified.</li>
+<li>To stop, pause, or resume a playing rendition.</li>
+<li>To trigger the execution of a JavaScript script that may perform custom operations. Table 214 lists the entries in a rendition action dictionary.</li>
+</ul>
+<p><table id="table214" markdown="span">
+    <caption><strong>Table 214 – Additional entries specific to a rendition action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be Rendition for a rendition action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>R</strong></td>
+            <td>dictionary</td>
+            <td>(Required when <strong>OP</strong> is present with a value of 0 or 4; otherwise optional) A rendition object (see <a href="../../c13/s2/#1323-演绎版">13.2.3</a>, “Renditions”).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>AN</strong></td>
+            <td>dictionary</td>
+            <td>(Required if OP is present with a value of 0, 1, 2, 3 or 4; otherwise optional) An indirect reference to a screen annotation (see <a href="../s5/#125618-屏幕注解">12.5.6.18</a>, “Screen Annotations”).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OP</strong></td>
+            <td>integer</td>
+            <td>(Required if JS is not present; otherwise optional) The operation to perform when the action is triggered. Valid values shall be: <br/>
+            <ul>
+                <li>0 &emsp;<p>If no rendition is associated with the annotation specified by <strong>AN</strong>, play the rendition specified by <strong>R</strong>, associating it with the annotation. If a rendition is already associated with the annotation, it shall be stopped, and the new rendition shall be associated with the annotation.</p></li>
+                <li>1 &emsp;<p>Stop any rendition being played in association with the annotation specified by <strong>AN</strong>, and remove the association. If no rendition is being played, there is no effect.</p></li>
+                <li>2 &emsp;<p>Pause any rendition being played in association with the annotation specified by <strong>AN</strong>. If no rendition is being played, there is no effect.</p></li>
+                <li>3 &emsp;<p>Resume any rendition being played in association with the annotation specified by <strong>AN</strong>. If no rendition is being played or the rendition is not paused, there is no effect.</p></li>
+                <li>4 &emsp;<p>Play the rendition specified by <strong>R</strong>, associating it with the annotation specified by AN. If a rendition is already associated with the annotation, resume the rendition if it is paused; otherwise, do nothing.</p></li>
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>JS</strong></td>
+            <td>text string or stream</td>
+            <td>(Required if <strong>OP</strong> is not present; otherwise optional) A text string or stream containing a JavaScript script that shall be executed when the action is triggered.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Either the <strong>JS</strong> entry or the <strong>OP</strong> entry shall be present. If both are present, <strong>OP</strong> is considered a fallback that shall be executed if the conforming reader is unable to execute JavaScripts. If <strong>OP</strong> has an unrecognized value and there is no <strong>JS</strong> entry, the action is invalid.</p>
+<p>In some situations, a pause (<strong>OP</strong> value of 2) or resume (<strong>OP</strong> value of 3) operation may not make sense or the player may not support it. In such cases, the user should be notified of the failure to perform the operation.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>A JPEG image</p>
+</div>
+<p>Before a rendition action is executed, the conforming reader shall make sure that the <strong>P</strong> entry of the screen annotation dictionary references a valid page object and that the annotation is present in the page object’s <strong>Annots</strong> array (see <a href="../../c7/s7/#table30">Table 30</a>).</p>
+<p>A rendition may play in the rectangle occupied by a screen annotation, even if the annotation itself is not visible; for example, if its Hidden or NoView flags (see <a href="../s5/#table165">Table 165</a>) are set. If a screen annotation is not visible because its location on the page is not being displayed by the viewer, the rendition is not visible. However, it may become visible if the view changes, such as by scrolling.</p>
+</div>
+</div>
+</div>
+<h3 id="126414-过渡行动">12.6.4.14 过渡行动<a class="headerlink" href="#126414-过渡行动" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.14 Transition Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="17:2"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><input id="__tabbed_17_2" name="__tabbed_17" type="radio" /><div class="tabbed-labels"><label for="__tabbed_17_1">中文</label><label for="__tabbed_17_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>转换动作（PDF 1.5）可用于在一系列动作执行期间控制绘制操作。如<a href="./#1262-行为字典">12.6.2</a>，“动作字典”中所讨论的，动作字典中的<strong>Next</strong>条目可以指定一个动作序列。符合规范的阅读器通常应在该序列开始时暂停绘制，并在序列结束时恢复绘制。如果在动作序列中存在转换动作，符合规范的阅读器应渲染上一次动作完成后页面视图区域的状态，并使用动作字典中指定的转换效果来显示该状态（见表215）。一旦此转换完成，绘制操作将再次暂停。</p>
+<p><table id="table215" markdown="span">
+    <caption><strong>表215 – 转换动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于转换动作，应为<strong>Trans</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Trans</strong></td>
+            <td>字典</td>
+            <td>（必需）用于更新显示的转换效果（见<a href="../s4/#table162">表162</a>）。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A transition action (PDF 1.5) may be used to control drawing during a sequence of actions. As discussed in <a href="./#1262-行为字典">12.6.2</a>, “Action Dictionaries,” the <strong>Next</strong> entry in an action dictionary may specify a sequence of actions. Conforming readers shall normally suspend drawing when such a sequence begins and resume drawing when it ends. If a transition action is present during a sequence, the conforming reader shall render the state of the page viewing area as it exists after completion of the previous action and display it using a transition specified in the action dictionary (see Table 215). Once this transition completes, drawing shall be suspended again.</p>
+<p><table id="table215" markdown="span">
+    <caption><strong>Table 215 – Additional entries specific to a transition action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>Trans</strong> for a transition action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Trans</strong></td>
+            <td>dictionary</td>
+            <td>(Required) The transition to use for the update of the display (see <a href="../s4/#table162">Table 162</a>).
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="126415-进入-3d-视图操作">12.6.4.15 进入 3D 视图操作<a class="headerlink" href="#126415-进入-3d-视图操作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.15 Go-To-3D-View Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="18:2"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio" /><input id="__tabbed_18_2" name="__tabbed_18" type="radio" /><div class="tabbed-labels"><label for="__tabbed_18_1">中文</label><label for="__tabbed_18_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>跳转到3D视图动作（PDF 1.6）用于标识一个3D注释，并为该注释指定一个要使用的视图（见<a href="../../c13/s6/">13.6</a>，“3D艺术作品”）。表216展示了跳转到3D视图动作字典中的条目。</p>
+<p><table id="table216" markdown="span">
+    <caption><strong>表216 – 跳转到3D视图动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于跳转到3D视图动作，应为<strong>GoTo3DView</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>TA</strong></td>
+            <td>字典</td>
+            <td>（必需）要设置视图的目标注释。</td>
+        </tr>
+        <tr>
+            <td><strong>V</strong></td>
+            <td>（多种类型）</td>
+            <td>（必需）要使用的视图。它可以是以下类型之一：<br/>
+                一个3D视图字典（见[13.6.4]，“3D视图”）。<br/>
+                一个整数，指定3D流中<strong>VA</strong>数组的索引（见<a href="../../c13/s6/#table300">表300</a>）。<br/>
+                一个文本字符串，与<strong>VA</strong>数组中某个视图的<strong>IN</strong>条目匹配（见<a href="../../c13/s6/#table304">表304</a>）。<br/>
+                一个名称，用于指示<strong>VA</strong>数组中的第一个（<strong>F</strong>）、最后一个（<strong>L</strong>）、下一个（<strong>N</strong>）、上一个（<strong>P</strong>）或默认（<strong>D</strong>）条目；见本表后的讨论。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><strong>V</strong>条目选择要应用于<strong>TA</strong>指定的注释的视图。此视图可以是3D流的<strong>VA</strong>条目指定的预定义视图之一（见<a href="../../c13/s6/#table300">表300</a>），也可以是此处指定的唯一视图。</p>
+<p>如果预定义视图是通过名称<strong>N</strong>（下一个）或<strong>P</strong>（上一个）指定的，则应按以下方式解释：</p>
+<ul>
+<li>当上一个应用的视图是通过<strong>VA</strong>数组指定的时，<strong>N</strong>和<strong>P</strong>分别表示<strong>VA</strong>数组中的下一个和上一个条目（如有必要，会循环）。</li>
+<li>当上一个视图不是通过<strong>VA</strong>指定的时，使用<strong>N</strong>或<strong>P</strong>应恢复到默认视图 。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>A go-to-3D-view action (PDF 1.6) identifies a 3D annotation and specifies a view for the annotation to use (see <a href="../../c13/s6/">13.6</a>, “3D Artwork”). Table 216 shows the entries in a go-to-3D-view action dictionary.</p>
+<p><table id="table216" markdown="span">
+    <caption><strong>Table 216 – Additional entries specific to a go-to-3D-view action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be <strong>GoTo3DView</strong> for a transition action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>TA</strong></td>
+            <td>dictionary</td>
+            <td>(Required) The target annotation for which to set the view.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>V</strong></td>
+            <td>(various)</td>
+            <td>(Required) The view to use. It may be one of the following types: <br/>
+                A 3D view dictionary (see [13.6.4], “3D Views”). <br/>
+                An integer specifying an index into the <strong>VA</strong> array in the 3D stream (see <a href="../../c13/s6/#table300">Table 300</a>). <br/>
+                A text string matching the <strong>IN</strong> entry in one of the views in the <strong>VA</strong> array (see <a href="../../c13/s6/#table304">Table 304</a>). <br/>
+                A name that indicates the first (<strong>F</strong>), last (<strong>L</strong>), next (<strong>N</strong>), previous (<strong>P</strong>), or default (<strong>D</strong>) entries in the <strong>VA</strong> array; see discussion following this Table.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The <strong>V</strong> entry selects the view to apply to the annotation specified by <strong>TA</strong>. This view may be one of the predefined views specified by the <strong>VA</strong> entry of the 3D stream (see <a href="../../c13/s6/#table300">Table 300</a>) or a unique view specified here.</p>
+<p>If the predefined view is specified by the names <strong>N</strong> (next) or <strong>P</strong> (previous), it should be interpreted in the following way:</p>
+<ul>
+<li>When the last view applied was specified by means of the <strong>VA</strong> array, <strong>N</strong> and <strong>P</strong> indicate the next and previous entries, respectively, in the <strong>VA</strong> array (wrapping around if necessary).</li>
+<li>When the last view was not specified by means of <strong>VA</strong>, using <strong>N</strong> or <strong>P</strong> should result in reverting to the default view.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="126416-javascript-动作">12.6.4.16 JavaScript 动作<a class="headerlink" href="#126416-javascript-动作" title="Permanent link">&para;</a></h3>
+<p><strong>12.6.4.16 JavaScript Actions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="19:2"><input checked="checked" id="__tabbed_19_1" name="__tabbed_19" type="radio" /><input id="__tabbed_19_2" name="__tabbed_19" type="radio" /><div class="tabbed-labels"><label for="__tabbed_19_1">中文</label><label for="__tabbed_19_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>当调用JavaScript动作时，符合规范的处理器应执行用JavaScript编程语言编写的脚本。根据脚本的性质，文档中的各种交互式表单字段可能会更新其值或改变其视觉外观。Mozilla开发中心的客户端JavaScript参考和Adobe Acrobat JavaScript API参考（见参考文献）详细介绍了JavaScript脚本的内容和效果。表217展示了专门针对这种类型动作的动作字典条目。</p>
+<p><table id="table217" markdown="span">
+    <caption><strong>表217 – JavaScript动作特定的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）此字典描述的动作类型；对于JavaScript动作，应为JavaScript。</td>
+        </tr>
+        <tr>
+            <td><strong>JS</strong></td>
+            <td>文本字符串或文本流</td>
+            <td>（必需）包含要执行的JavaScript脚本的文本字符串或文本流。<br/>
+                字符串或流的内容应使用<strong>PDFDocEncoding</strong>或Unicode编码（后者通过Unicode前缀U+FEFF标识）进行编码。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>为了支持在JavaScript脚本中使用带参数的函数调用，PDF文档名称字典（见<a href="../../c7/s7/#774-名称字典">7.7.4</a>，“名称字典”）中的<strong>JavaScript</strong>条目可能包含一个名称树，该名称树将名称字符串映射到文档级JavaScript动作。当文档打开时，此名称树中的所有动作都将被执行，从而为文档中的其他脚本定义可用的JavaScript函数。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>名称字典中与各个JavaScript动作相关联的名称字符串仅作为组织和打包脚本的一种便捷方式。这些名称是任意的，无需与JavaScript命名空间有任何关联 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Upon invocation of a JavaScript action, a conforming processor shall execute a script that is written in the JavaScript programming language. Depending on the nature of the script, various interactive form fields in the document may update their values or change their visual appearances. Mozilla Development Center’s Client- Side JavaScript Reference and the Adobe JavaScript for Acrobat API Reference (see the Bibliography) give details on the contents and effects of JavaScript scripts. Table 217 shows the action dictionary entries specific to this type of action.</p>
+<p><table id="table217" markdown="span">
+    <caption><strong>Table 217 – Additional entries specific to a JavaScript action</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The type of action that this dictionary describes; shall be JavaScript for a JavaScript action.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>JS</strong></td>
+            <td>text string or text stream</td>
+            <td>(Required) A text string or text stream containing the JavaScript script to be executed. <br/>
+                <strong>PDFDocEncoding</strong> or Unicode encoding (the latter identified by the Unicode prefix U+ FEFF) shall be used to encode the contents of the string or stream.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>To support the use of parameterized function calls in JavaScript scripts, the <strong>JavaScript</strong> entry in a PDF document’s name dictionary (see <a href="../../c7/s7/#774-名称字典">7.7.4</a>, “Name Dictionary”) may contain a name tree that maps name strings to document-level JavaScript actions. When the document is opened, all of the actions in this name tree shall be executed, defining JavaScript functions for use by other scripts in the document.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The name strings associated with individual JavaScript actions in the name dictionary serve merely as a convenient means for organizing and packaging scripts. The names are arbitrary and need not bear any relation to the JavaScript name space.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月12日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

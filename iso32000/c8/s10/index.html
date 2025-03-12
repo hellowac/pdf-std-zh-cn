@@ -1,0 +1,2256 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s9/">
+      
+      
+        <link rel="next" href="../s11/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>8.10 表单 XObjects - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#810-表单-xobjects" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8.10 表单 XObjects
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            8图形绘制
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.2 图形对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.3 坐标系统
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.4 图形状态
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.5 路径构建与绘制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.6 色彩空间
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.7 图案
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.8 外部对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.9 图片
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    8.10 表单 XObjects
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    8.10 表单 XObjects
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#8101-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8102-表单字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.2 表单字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8103-xobject-组合" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.3 XObject 组合
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8104-xobjects-引用" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.4 XObjects 引用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.10.4 XObjects 引用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81041-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#81042-打印引用-xobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.4.2 打印引用 XObjects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#81043-特别注意事项" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.4.3 特别注意事项
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.11 可选内容
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#8101-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8102-表单字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.2 表单字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8103-xobject-组合" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.3 XObject 组合
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8104-xobjects-引用" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.4 XObjects 引用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.10.4 XObjects 引用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81041-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#81042-打印引用-xobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.4.2 打印引用 XObjects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#81043-特别注意事项" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.10.4.3 特别注意事项
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="810-表单-xobjects">8.10 表单 XObjects<a class="headerlink" href="#810-表单-xobjects" title="Permanent link">&para;</a></h1>
+<p><strong>Form XObjects</strong></p>
+<h2 id="8101-概述">8.10.1 概述<a class="headerlink" href="#8101-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>表单 XObject</strong> 是 PDF 内容流，它是对任意图形对象序列（包括路径对象、文本对象和采样图像）的自包含描述。一个表单 XObject 可以被多次绘制——无论是在多个页面上还是在同一页面的多个位置——每次都会产生相同的结果，只有在调用时的图形状态会有所不同。这种共享定义不仅在 PDF 文件中表示经济，而且在适当的情况下，合规的阅读器可以通过缓存表单 XObject 的渲染结果来优化执行，以便重复使用。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p><em>表单</em> 这个术语还指完全不同的对象，即 <em>交互式表单</em>（有时称为 <em>AcroForm</em>），在 <a href="../../c12/s7/">12.7</a>，"交互式表单" 中讨论。而这里描述的表单 XObject 对应于 PostScript 语言中的表单概念，交互式表单则是 PDF 版的常见纸质表单。任何未限定的 <em>表单</em> 一词应理解为指交互式表单；这里描述的表单类型总是明确称为表单 XObject。</p>
+</div>
+<p>表单 XObject 有多种用途：</p>
+<ul>
+<li>正如其名称所示，表单 XObject 可以用作整个页面的模板。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>一个打印填充税单的程序可以首先绘制固定模板作为表单 XObject，然后在其上绘制可变信息。</p>
+</div>
+<ul>
+<li>任何要重复使用的图形元素，如公司标志或计算机辅助设计系统输出中的标准组件，都可以定义为表单 XObject。</li>
+<li>某些不属于页面内容的文档元素，如注释外观（见 <a href="../../c12/s5/#1255-外观流">12.5.5</a>，"外观流"），应表示为表单 XObject。</li>
+<li>一种专门类型的表单 XObject，称为组 XObject（PDF 1.4），可以用来将图形元素作为一个单元进行分组，以实现各种目的（见 <a href="./#8103-xobject-组合">8.10.3</a>，"组 XObjects"）。特别是，组 XObject 应用于透明成像模型中定义透明组和软掩膜（见 <a href="../../c11/s6/#11652-软掩码词典">11.6.5.2</a>，"软掩膜字典" 和 <a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>，"透明组 XObjects"）。</li>
+<li>另一种专门类型的表单 XObject，称为引用 XObject（PDF 1.4），可以用来将一个 PDF 文档的内容导入另一个文档（见 <a href="./#8104-xobjects-引用">8.10.4</a>，"引用 XObjects"）。</li>
+</ul>
+<p>作者应执行以下两个具体操作来使用表单 XObject：</p>
+<p><strong>a)</strong> <em>定义表单 XObject 的外观</em>。表单 XObject 是一个 PDF 内容流。流的字典部分（称为表单字典）应包含有关表单 XObject 的描述信息；流的主体应描述产生其外观的图形对象。表单字典的内容描述见 <a href="./#8102-表单字典">8.10.2</a>，"表单字典"。</p>
+<p><strong>b)</strong> <em>绘制表单 XObject</em>。<strong>Do</strong> 操作符（见 <a href="../s8/">8.8</a>，"外部对象"）应绘制其名称作为操作数提供的表单 XObject。该名称应在当前资源字典的 <strong>XObject</strong> 子字典中定义。在调用此操作符之前，它出现的内容流应在图形状态中设置适当的参数。特别是，它应更改当前变换矩阵，以控制表单 XObject 在用户空间中的位置、大小和方向。</p>
+<p>每个表单 XObject 都在自己的坐标系统中定义，称为 <em>表单空间</em>。表单字典中的 <strong>BBox</strong> 条目应在表单空间中表示，如表单 XObject 的内容流中使用的任何坐标，如路径坐标。表单字典中的 <strong>Matrix</strong> 条目应指定从表单空间到当前用户空间的映射。每次 <strong>Do</strong> 操作符绘制表单 XObject 时，此矩阵应与当前变换矩阵连接，以定义从表单空间到设备空间的映射。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>这与模式字典中的 Matrix 条目不同，模式字典将模式空间映射到使用该模式的内容流的初始用户空间。</p>
+</div>
+<p>当 <strong>Do</strong> 操作符应用于表单 XObject 时，合规阅读器应执行以下任务：</p>
+<p><strong>a)</strong> 保存当前图形状态，如同调用 <strong>q</strong> 操作符（见 <a href="../s4/#844-图形状态操作符">8.4.4</a>，"图形状态操作符"）</p>
+<p><strong>b)</strong> 将表单字典的 <strong>Matrix</strong> 条目的矩阵与当前变换矩阵（CTM）连接</p>
+<p><strong>c)</strong> 根据表单字典的 <strong>BBox</strong> 条目剪切</p>
+<p><strong>d)</strong> 绘制表单内容流中指定的图形对象</p>
+<p><strong>e)</strong> 恢复保存的图形状态，如同调用 <strong>Q</strong> 操作符（见 <a href="../s4/#844-图形状态操作符">8.4.4</a>，"图形状态操作符"）</p>
+<p>除上述描述外，表单的初始图形状态应继承自调用 Do 时生效的图形状态。</p>
+</div>
+<div class="tabbed-block">
+<p>A <em>form XObject</em> is a PDF content stream that is a self-contained description of any sequence of graphics objects (including path objects, text objects, and sampled images). A form XObject may be painted multiple times—either on several pages or at several locations on the same page—and produces the same results each time, subject only to the graphics state at the time it is invoked. Not only is this shared definition economical to represent in the PDF file, but under suitable circumstances the conforming reader can optimize execution by caching the results of rendering the form XObject for repeated reuse.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>The term <em>form</em> also refers to a completely different kind of object, an <em>interactive form</em> (sometimes called an <em>AcroForm</em>), discussed in <a href="../../c12/s7/">12.7</a>, "Interactive Forms". Whereas the form XObjects described in this sub-clause correspond to the notion of forms in the PostScript language, interactive forms are the PDF equivalent of the familiar paper instrument. Any unqualified use of the word <em>form</em> is understood to refer to an interactive form; the type of form described here is always referred to explicitly as a form XObject.</p>
+</div>
+<p>Form XObjects have various uses:</p>
+<ul>
+<li>As its name suggests, a form XObject may serve as the template for an entire page.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>A program that prints filled-in tax forms can first paint the fixed template as a form XObject and then paint the variable information on top of it.</p>
+</div>
+<ul>
+<li>Any graphical element that is to be used repeatedly, such as a company logo or a standard component in the output from a computer-aided design system, may be defined as a form XObject.</li>
+<li>Certain document elements that are not part of a page’s contents, such as annotation appearances (see <a href="../../c12/s5/#1255-外观流">12.5.5</a>, "Appearance Streams"), shall be represented as form XObjects.</li>
+<li>A specialized type of form XObject, called a group XObject (PDF 1.4), can be used to group graphical elements together as a unit for various purposes (see <a href="./#8103-xobject-组合">8.10.3</a>, "Group XObjects"). In particular, group XObjects shall be used to define transparency groups and soft masks for use in the transparent imaging model (see <a href="../../c11/s6/#11652-软掩码词典">11.6.5.2</a>, "Soft-Mask Dictionaries" and <a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>, "Transparency Group XObjects").</li>
+<li>Another specialized type of form XObject, a reference XObject (PDF 1.4), may be used to import content from one PDF document into another (see <a href="./#8104-xobjects-引用">8.10.4</a>, "Reference XObjects").</li>
+</ul>
+<p>A writer shall perform the following two specific operations in order to use a form XObject:</p>
+<p><strong>a)</strong> <em>Define the appearance of the form XObject</em>. A form XObject is a PDF content stream. The dictionary portion of the stream (called the form dictionary) shall contain descriptive information about the form XObject; the body of the stream shall describe the graphics objects that produce its appearance. The contents of the form dictionary are described in <a href="./#8102-表单字典">8.10.2</a>, "Form Dictionaries".</p>
+<p><strong>b)</strong> <em>Paint the form XObject</em>. The <strong>Do</strong> operator (see <a href="../s8/">8.8</a>, "External Objects") shall paint a form XObject whose name is supplied as an operand. The name shall be defined in the <strong>XObject</strong> subdictionary of the current resource dictionary. Before invoking this operator, the content stream in which it appears should set appropriate parameters in the graphics state. In particular, it should alter the current transformation matrix to control the position, size, and orientation of the form XObject in user space.</p>
+<p>Each form XObject is defined in its own coordinate system, called <em>form space</em>. The <strong>BBox</strong> entry in the form dictionary shall be expressed in form space, as shall be any coordinates used in the form XObject’s content stream, such as path coordinates. The <strong>Matrix</strong> entry in the form dictionary shall specify the mapping from form space to the current user space. Each time the form XObject is painted by the <strong>Do</strong> operator, this matrix shall be concatenated with the current transformation matrix to define the mapping from form space to device space.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>This differs from the Matrix entry in a pattern dictionary, which maps pattern space to the initial user space of the content stream in which the pattern is used.</p>
+</div>
+<p>When the <strong>Do</strong> operator is applied to a form XObject, a conforming reader shall perform the following tasks:</p>
+<p><strong>a)</strong> Saves the current graphics state, as if by invoking the <strong>q</strong> operator (see <a href="../s4/#844-图形状态操作符">8.4.4</a>, "Graphics State Operators")</p>
+<p><strong>b)</strong> Concatenates the matrix from the form dictionary’s <strong>Matrix</strong> entry with the current transformation matrix (CTM)</p>
+<p><strong>c)</strong> Clips according to the form dictionary’s <strong>BBox</strong> entry</p>
+<p><strong>d)</strong> Paints the graphics objects specified in the form’s content stream</p>
+<p><strong>e)</strong> Restores the saved graphics state, as if by invoking the <strong>Q</strong> operator (see <a href="../s4/#844-图形状态操作符">8.4.4</a>, "Graphics State Operators")</p>
+<p>Except as described above, the initial graphics state for the form shall be inherited from the graphics state that is in effect at the time Do is invoked.</p>
+</div>
+</div>
+</div>
+<h2 id="8102-表单字典">8.10.2 表单字典<a class="headerlink" href="#8102-表单字典" title="Permanent link">&para;</a></h2>
+<p><strong>Form Dictionaries</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>每个表单 XObject 都应具有一个 <em>表单类型</em>，它决定了其表单字典中条目的格式和含义。此规范仅定义了一种表单类型，即类型 1。表单 XObject 字典除了所有流共有的常规条目（见 <a href="../../c7/s3/#table5">表 5</a>）之外，还可能包含 <a href="#table95">表 95</a> 中显示的条目。</p>
+<p><table id="table95" markdown="span">
+    <caption><strong>Table 95 – 特定于 Type 1 表单字典的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(可选) 此字典描述的 PDF 对象的类型；如果存在，对于表单 XObject 应为 <strong>XObject</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Subtype</strong></td>
+            <td>name</td>
+            <td>(必需) 此字典描述的 XObject 类型；对于表单 XObject 应为 <strong>Form</strong> 。</td>
+        </tr>
+        <tr>
+            <td><strong>FormType</strong></td>
+            <td>integer</td>
+            <td>(可选) 标识此字典描述的表单 XObject 类型的代码。唯一有效的值为 1。默认值：1。</td>
+        </tr>
+        <tr>
+            <td><strong>BBox</strong></td>
+            <td>rectangle</td>
+            <td>(必需) 以表单坐标系统（见上文）表示的四个数值数组，分别给出表单 XObject 的边界框的左、下、右和上边界。</td>
+        </tr>
+        <tr>
+            <td><strong>Matrix</strong></td>
+            <td>array</td>
+            <td>(可选) 一个包含六个数值的数组，指定将表单空间映射到用户空间的矩阵（见 <a href="../s3/#834-变换矩阵">8.3.4</a>，"变换矩阵"）。默认值：单位矩阵 [1 0 0 1 0 0]。</td>
+        </tr>
+        <tr>
+            <td><strong>Resources</strong></td>
+            <td>dictionary</td>
+            <td>(可选但强烈推荐；PDF 1.2) 一个字典，指定表单 XObject 所需的任何资源（如字体和图像）（见 <a href="../../c7/s8/">7.8</a>，"内容流和资源"）。<br/>
+                在PDF版本为1.1及更早版本中，表单XObject中使用的所有命名资源都应包含在每个页面对象的资源字典中，无论它们是否也出现在表单XObject的资源字典中。这些资源也应该在表单XObject的资源字典中指定，以确定表单XObject内部使用哪些资源。如果资源同时包含在两个字典中，它在两个位置的名称必须相同。<br/>
+                在PDF 1.2及更高版本中，表单XObject可以独立于它们出现的Content Streams，虽然不是必需的，但强烈推荐这样做。在独立表单XObject中，表单XObject的资源字典是必需的，并且应包含表单XObject使用的所有命名资源。这些资源不应提升到外部内容流的资源字典中，尽管该流的资源字典引用了表单XObject。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Group</strong></td>
+            <td>dictionary</td>
+            <td>(可选；PDF 1.4) 一个组属性字典，指示表单 XObject 的内容应作为一个组进行处理，并指定该组的属性（见 <a href="./#8103-xobject-组合">8.10.3</a>，"组 XObjects"）。<br/>如果存在 <strong>Ref</strong> 条目（见下文），组属性也应适用于通过该条目导入的外部页面，使得此类导入页面可以作为一个组处理，而无需进一步修改。</td>
+        </tr>
+        <tr>
+            <td><strong>Ref</strong></td>
+            <td>dictionary</td>
+            <td>(可选；PDF 1.4) 一个引用字典，标识要从另一个 PDF 文件导入的页面，表单 XObject 作为该页面的代理（见 <a href="./#8104-xobjects-引用">8.10.4</a>，"引用 XObjects"）。</td>
+        </tr>
+        <tr>
+            <td><strong>Metadata</strong></td>
+            <td>stream</td>
+            <td>(可选；PDF 1.4) 包含表单 XObject 元数据的元数据流（见 <a href="../../c14/s3/#1432-元数据流">14.3.2</a>，"元数据流"）。</td>
+        </tr>
+        <tr>
+            <td><strong>PieceInfo</strong></td>
+            <td>dictionary</td>
+            <td>(可选；PDF 1.3) 一个与表单 XObject 关联的页面片段字典（见 <a href="../../c14/s5/">14.5</a>，"页面片段字典"）。</td>
+        </tr>
+        <tr>
+            <td><strong>LastModified</strong></td>
+            <td>date</td>
+            <td>(<em>如果存在 </em><em>PieceInfo</em><em> 则为必需；否则为可选；PDF 1.3</em>) 表单 XObject 内容最近修改的日期和时间（见 <a href="../../c7/s9/#794-日期">7.9.4</a>，"日期"）。如果存在页面片段字典 (<strong>PieceInfo</strong>)，修改日期应用于确定其包含的应用程序数据字典对应于表单的当前内容（见 <a href="../../c14/s5/">14.5</a>，"页面片段字典"）。</td>
+        </tr>
+        <tr>
+            <td><strong>StructParent</strong></td>
+            <td>integer</td>
+            <td>(如果表单 XObject 是结构内容项则必需；PDF 1.3) 表单 XObject 在结构父树中的条目的整数键（见 <a href="../../c14/s7/#14744-从内容项中查找结构元素">14.7.4.4</a>，"从内容项查找结构元素"）。</td>
+        </tr>
+        <tr>
+            <td><strong>StructParents</strong></td>
+            <td>integer</td>
+            <td>(如果表单 XObject 包含作为结构内容项的标记内容序列则必需；PDF 1.3) 表单 XObject 在结构父树中的条目的整数键（见 <a href="../../c14/s7/#14744-从内容项中查找结构元素">14.7.4.4</a>，"从内容项查找结构元素"<strong>）。StructParent</strong> 或 <strong>StructParents</strong> 中最多只能有一个条目。一个表单 XObject 应该作为一个整体内容项，或作为包含标记内容序列的容器，但不能两者兼具。</td>
+        </tr>
+        <tr>
+            <td><strong>OPI</strong></td>
+            <td>dictionary</td>
+            <td>(可选；PDF 1.2) 表单 XObject 的 OPI 版本字典（见 <a href="../../c14/s11/#14117-开放印前接口-opi">14.11.7</a>，"开放印前接口 (OPI)"）。</td>
+        </tr>
+        <tr>
+            <td><strong>OC</strong></td>
+            <td>dictionary</td>
+            <td>(可选；PDF 1.5) 可选内容组或可选内容成员字典（见 <a href="../s11/">8.11</a>，"可选内容"），指定表单 XObject 的可选内容属性。在处理表单之前，应根据此条目确定其可见性。如果确定为不可见，应跳过整个表单，就像没有调用 <strong>Do</strong> 操作符一样。</td>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>name</td>
+            <td>(PDF 1.0 中必需；否则为可选) 在当前资源字典的 XObject 子字典中引用此表单 <strong>XObject</strong> 的名称（见 <a href="../../c7/s8/#783-资源字典">7.8.3</a>，"资源字典"）。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>此条目已过时，不再推荐使用。
+        </td>
+    </tr>
+</tbody></p>
+</div>
+<p></table>    </p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>以下是一个简单的表单XObject示例，绘制一个边长为1000单位的实心正方形.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>6 0 obj                     <span style="color: #3D7B7B; font-style: italic">% Form XObject</span>
+    &lt;&lt; /Type /XObject
+       /Subtype /Form
+       /FormType 1
+       /BBox [ 0 0 1000 1000 ]
+       /Matrix [ 1 0 0 1 0 0 ]
+       /Resources &lt;&lt; /ProcSet [ /PDF ] &gt;&gt;
+       Length 58
+    &gt;&gt;
+
+stream
+    0 0 m
+    0 1000 l
+    1000 1000 l
+    1000 0 l
+    f
+endstream
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Every form XObject shall have a <em>form type</em>, which determines the format and meaning of the entries in its form dictionary. This specification only defines one form type, Type 1. Form XObject dictionaries may contain the entries shown in <a href="#table95">Table 95</a>, in addition to the usual entries common to all streams (see <a href="../../c7/s3/#table5">Table 5</a>).</p>
+<p><table id="table95" markdown="span">
+    <caption><strong>Table 95 – Additional Entries Specific to a Type 1 Form Dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(Optional) The type of PDF object that this dictionary describes; if present, shall be <strong>XObject</strong> for a form XObject.</td>
+        </tr>
+        <tr>
+            <td><strong>Subtype</strong></td>
+            <td>name</td>
+            <td>(Required) The type of XObject that this dictionary describes; shall be <strong>Form</strong> for a form XObject.</td>
+        </tr>
+        <tr>
+            <td><strong>FormType</strong></td>
+            <td>integer</td>
+            <td>(Optional) A code identifying the type of form XObject that this dictionary describes. The only valid value is 1. Default value: 1.</td>
+        </tr>
+        <tr>
+            <td><strong>BBox</strong></td>
+            <td>rectangle</td>
+            <td>(Required) An array of four numbers in the form coordinate system (see above), giving the coordinates of the left, bottom, right, and top edges, respectively, of the form XObject’s bounding box. These boundaries shall be used to clip the form XObject and to determine its size for caching.</td>
+        </tr>
+        <tr>
+            <td><strong>Matrix</strong></td>
+            <td>array</td>
+            <td>(Optional) An array of six numbers specifying the form matrix, which maps form space into user space (see <a href="../s3/#834-变换矩阵">8.3.4</a>, "Transformation Matrices"). Default value: the identity matrix [1 0 0 1 0 0].</td>
+        </tr>
+        <tr>
+            <td><strong>Resources</strong></td>
+            <td>dictionary</td>
+            <td>(<em>Optional but strongly recommended; PDF 1.2</em>) A dictionary specifying any resources (such as fonts and images) required by the form XObject (see <a href="../../c7/s8/">7.8</a>, "Content Streams and Resources"). <br/>
+                In a PDF whose version is 1.1 and earlier, all named resources used in the form XObject shall be included in the resource dictionary of each page object on which the form XObject appears, regardless of whether they also appear in the resource dictionary of the form XObject. These resources should also be specified in the form XObject’s resource dictionary as well, to determine which resources are used inside the form XObject. If a resource is included in both dictionaries, it shall have the same name in both locations.<br/>
+                In PDF 1.2 and later versions, form XObjects may be independent of the content streams in which they appear, and this is strongly recommended although not required. In an independent form XObject, the resource dictionary of the form XObject is required and shall contain all named resources used by the form XObject. These resources shall not be promoted to the outer content stream’s resource dictionary, although that stream’s resource dictionary refers to the form XObject.</td>
+        </tr>
+        <tr>
+            <td><strong>Group</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.4) A group attributes dictionary indicating that th contents of the form XObject shall be treated as a group an specifying the attributes of that group (see <a href="./#8103-xobject-组合">8.10.3</a>, "Group XObjects").<br/>
+                If a <strong>Ref</strong> entry (see below) is present, the group attributes shall also apply to the external page imported by that entry, which allows such an imported page to be treated as a group without further modification.</td>
+        </tr>
+        <tr>
+            <td><strong>Ref</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.4) A reference dictionary identifying a page to be imported from another PDF file, and for which the form XObject serves as a proxy (see 8.10.4, "Reference XObjects").</td>
+        </tr>
+        <tr>
+            <td><strong>Metadata</strong></td>
+            <td>stream</td>
+            <td>(Optional; PDF 1.4) A metadata stream containing metadata for the form XObject (see <a href="../../c14/s3/#1432-元数据流">14.3.2</a>, "Metadata Streams").</td>
+        </tr>
+        <tr>
+            <td><strong>PieceInfo</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.3) A page-piece dictionary associated with the form XObject (see <a href="../../c14/s5/">14.5</a>, "Page-Piece Dictionaries").</td>
+        </tr>
+        <tr>
+            <td><strong>LastModified</strong></td>
+            <td>date</td>
+            <td>(<em>Required if </em><em>PieceInfo</em><em> is present; optional otherwise; PDF 1.3</em>) The date and time (see <a href="../../c7/s9/#794-日期">7.9.4</a>, "Dates") when the form XObject’s contents were most recently modified. If a page-piece dictionary (<strong>PieceInfo</strong>) is present, the modification date shall be used to ascertain which of the application data dictionaries it contains correspond to the current content of the form (see <a href="../../c14/s5/">14.5</a>, "Page-Piece Dictionaries").</td>
+        </tr>
+        <tr>
+            <td><strong>StructParent</strong></td>
+            <td>integer</td>
+            <td>(Required if the form XObject is a structural content item; PDF 1.3) The integer key of the form XObject’s entry in the structural parent tree (see <a href="../../c14/s7/#14744-从内容项中查找结构元素">14.7.4.4</a>, "Finding Structure Elements from Content Items").</td>
+        </tr>
+        <tr>
+            <td><strong>StructParents</strong></td>
+            <td>integer</td>
+            <td>(Required if the form XObject contains marked-content sequences that are structural content items; PDF 1.3) The integer key of the form XObject’s entry in the structural parent tree (see <a href="../../c14/s7/#14744-从内容项中查找结构元素">14.7.4.4</a>, "Finding Structure Elements from Content Items").
+                At most one of the entries <strong>StructParent</strong> or <strong>StructParents</strong> shall be present. A form XObject shall be either a content item in its entirety or a container for marked-content sequences that are content items, but not both.</td>
+        </tr>
+        <tr>
+            <td><strong>OPI</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.2) An OPI version dictionary for the form XObject (see <a href="../../c14/s11/#14117-开放印前接口-opi">14.11.7</a>, "Open Prepress Interface (OPI)").</td>
+        </tr>
+        <tr>
+            <td><strong>OC</strong></td>
+            <td>dictionary</td>
+            <td>(Optional; PDF 1.5) An optional content group or optional content membership dictionary (see <a href="../s11/">8.11</a>, "Optional Content") specifying the optional content properties for the form XObject. Before the form is processed, its visibility shall be determined based on this entry. If it is determined to be invisible, the entire form shall be skipped, as if there were no <strong>Do</strong> operator to invoke it.</td>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>name</td>
+            <td>(Required in PDF 1.0; optional otherwise) The name by which this form XObject is referenced in the <strong>XObject</strong> subdictionary of the current resource dictionary (see <a href="../../c7/s8/#783-资源字典">7.8.3</a>, "Resource Dictionaries").</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>This entry is obsolescent and its use is no longer recommended.</p>
+<div class="codehilite"><pre><span></span><code><span class="w">    </span><span class="nt">&lt;/td&gt;</span>
+<span class="nt">&lt;/tr&gt;</span>
+</code></pre></div>
+
+</tbody>
+</div>
+</table>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>The following shows a simple form XObject that paints a filled square 1000 units on each side.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>6 0 obj                     <span style="color: #3D7B7B; font-style: italic">% Form XObject</span>
+    &lt;&lt; /Type /XObject
+       /Subtype /Form
+       /FormType 1
+       /BBox [ 0 0 1000 1000 ]
+       /Matrix [ 1 0 0 1 0 0 ]
+       /Resources &lt;&lt; /ProcSet [ /PDF ] &gt;&gt;
+       Length 58
+    &gt;&gt;
+
+stream
+    0 0 m
+    0 1000 l
+    1000 1000 l
+    1000 0 l
+    f
+endstream
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="8103-xobject-组合">8.10.3 XObject 组合<a class="headerlink" href="#8103-xobject-组合" title="Permanent link">&para;</a></h2>
+<p><strong>Group XObjects</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>组 XObject（PDF 1.4）是一种特殊类型的表单 XObject，用于将图形元素作为一个单元进行组合，以实现各种目的。它应通过表单字典中的可选 <strong>Group</strong> 条目加以区分（见 <a href="./#8102-表单字典">8.10.2</a>，"表单字典"）。该条目的值应为描述组属性的子组 <em>属性字典</em>。</p>
+<p>如 <a href="#table96">表 96</a> 所示，每个组 XObject 应具有一个组子类型（由组属性字典中的 <strong>S</strong> 条目指定），该子类型决定字典剩余条目的格式和含义。本规范仅定义一种子类型，即用于透明成像模型的 <em>透明组 XObject</em>（子类型 <strong>Transparency</strong>）（见 <a href="../../c11/s4/">11.4</a>，"透明组"）。此类字典的剩余内容详见 <a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>，"透明组 XObjects"。</p>
+<p><table id="table96" markdown="span">
+    <caption><strong>Table 96 – 所有组属性字典的通用条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(可选) 此字典描述的 PDF 对象的类型；如果存在，对于组属性字典应为 <strong>Group</strong> 。</td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(必需) <em>组子类型</em>，标识此字典描述的组类型，并决定字典剩余条目的格式和含义。唯一定义的组子类型是 <strong>Transparency</strong> ；此类型字典的剩余内容详见 <a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>，"透明度组 XObjects"。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A <em>group XObject</em> (PDF 1.4) is a special type of form XObject that can be used to group graphical elements together as a unit for various purposes. It shall be distinguished by the presence of the optional <strong>Group</strong> entry in the form dictionary (see <a href="./#8102-表单字典">8.10.2</a>, "Form Dictionaries"). The value of this entry shall be a subsidiary group <em>attributes dictionary</em> describing the properties of the group.</p>
+<p>As shown in <a href="#table96">Table 96</a>, every group XObject shall have a group subtype (specified by the <strong>S</strong> entry in the group attributes dictionary) that determines the format and meaning of the dictionary’s remaining entries. This specification only defines one subtype, a <em>transparency group XObject</em> (subtype <strong>Transparency</strong>) representing a transparency group for use in the transparent imaging model (see <a href="../../c11/s4/">11.4</a>, "Transparency Groups"). The remaining contents of this type of dictionary are described in <a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>, "Transparency Group XObjects".</p>
+<p><table id="table96" markdown="span">
+    <caption><strong>Table 96 – Entries Common to all Group Attributes Dictionaries</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) The type of PDF object that this dictionary describes; if present, shall be <strong>Group</strong> for a group attributes dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The <em>group subtype</em>, which identifies the type of group whose attributes this dictionary describes and determines the format and meaning of the dictionary’s remaining entries. The only group subtype defined is <strong>Transparency</strong>; see <a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>, "Transparency Group XObjects", for the remaining contents of this type of dictionary.</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h2 id="8104-xobjects-引用">8.10.4 XObjects 引用<a class="headerlink" href="#8104-xobjects-引用" title="Permanent link">&para;</a></h2>
+<p><strong>Reference XObjects</strong></p>
+<h3 id="81041-概述">8.10.4.1 概述<a class="headerlink" href="#81041-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>引用 XObjects</em>（PDF 1.4）允许一个PDF文档从另一个文档导入内容。引用发生的文档称为 <em>包含文档</em>；被导入内容的文档称为 <em>目标文档</em>。目标文档可能位于包含文档之外的文件中，或者作为嵌入文件流包含在其中（见 <a href="../../c7/s11/#7114-嵌入式文件流">7.11.4</a>，"嵌入文件流"）。</p>
+<p>包含文档中的引用XObject应该是一个表单XObject，在其表单字典中包含 <strong>Ref</strong> 条目，如下所述。这个表单XObject应作为一个 <em>代理</em>，由符合规范的阅读器在导入内容的位置显示或打印。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>代理可能包括导入内容的低分辨率图像、引用它的描述性文本、在其位置显示的灰色盒子，或任何其他类似的占位符。</p>
+</div>
+<p>不认识 <strong>Ref</strong> 条目的符合规范的阅读器将简单地将代理显示或打印为一个普通的表单XObject。那些实现了引用XObject的阅读器将在导入内容不可用时使用代理代替它。符合规范的阅读器还可能提供用户界面，允许编辑和更新导入内容的链接。</p>
+<p>导入的内容应由目标文档中的一个单一、完整的PDF页面组成。它应由一个 <em>引用字典</em> 指定，该字典又是引用 XObject 表单字典中 <strong>Ref</strong> 条目的值（见 <a href="./#8102-表单字典">8.10.2</a>，"表单字典"）。 <strong>Ref</strong> 条目的存在将区分引用 XObjects 和其他类型的表单 XObjects。表 97 显示了引用字典的内容。</p>
+<p><table id="table97" markdown="span">
+    <caption><strong>Table 97 – 引用字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>file specification</td>
+            <td>(必需) 包含目标文档的文件。</td>
+        </tr>
+        <tr>
+            <td><strong>Page</strong></td>
+            <td>integer or text string</td>
+            <td>(必需) 页面索引或页面标签（见 <a href="../../c12/s4/#1242-页面标签">12.4.2</a>，"页面标签"）用于标识包含要导入内容的目标文档的页面。此引用是一个弱引用，如果在创建引用后，目标文档中的引用页面被更改或替换，则可能会无意中使其失效。</td>
+        </tr>
+        <tr>
+            <td><strong>ID</strong></td>
+            <td>array</td>
+            <td>(可选) 一个包含两个字节字符串的数组，构成包含目标文档的文件的文件标识符（见 <a href="../../c14/s4/">14.4</a>，"文件标识符"）。使用此条目可以提高阅读器找到目标文件的可能性，并在文件自创建引用以来发生变化时提醒用户。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>当导入的内容替换代理时，应根据代理对象的变换矩阵进行变换，并根据代理的表单字典中的 <strong>Matrix</strong> 和 <strong>BBox</strong> 条目（见 <a href="./#8102-表单字典">8.10.2</a>，"表单字典"）将其裁剪到边界框的边界内。代理对象的矩阵和边界框的组合隐式定义了导入页面的边界框。该边界框通常与导入页面的裁剪框或艺术框（见 <a href="../../c14/s11/#14112-页面边界">14.11.2</a>，"页面边界"）一致，但可能不对应于任何已定义的页面边界。如果代理对象的表单字典包含 <strong>Group</strong> 条目，则指定的组属性也应适用于导入的页面，从而允许导入的页面无需进一步修改即可作为一个组进行处理。</p>
+</div>
+<div class="tabbed-block">
+<p><em>Reference XObjects</em> (PDF 1.4) enable one PDF document to import content from another. The document in which the reference occurs is called the <em>containing document</em>; the one whose content is being imported is the <em>target document</em>. The target document may reside in a file external to the containing document or may be included within it as an embedded file stream (see <a href="../../c7/s11/#7114-嵌入式文件流">7.11.4</a>, "Embedded File Streams").</p>
+<p>The reference XObject in the containing document shall be a form XObject containing the <strong>Ref</strong> entry in its form dictionary, as described below. This form XObject shall serve as a <em>proxy</em> that shall be displayed or printed by a conforming reader in place of the imported content.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>The proxy might consist of a low-resolution image of the imported content, a piece of descriptive text referring to it, a gray box to be displayed in its place, or any other similar placeholder.</p>
+</div>
+<p>Conforming readers that do not recognize the <strong>Ref</strong> entry shall simply display or print the proxy as an ordinary form XObject. Those readers that do implement reference XObjects shall use the proxy in place of the imported content if the latter is unavailable. A conforming reader may also provide a user interface to allow editing and updating of imported content links.</p>
+<p>The imported content shall consist of a single, complete PDF page in the target document. It shall be designated by a <em>reference dictionary</em>, which in turn shall be the value of the <strong>Ref</strong> entry in the reference XObject’s form dictionary (see <a href="./#8102-表单字典">8.10.2</a>, "Form Dictionaries"). The presence of the <strong>Ref</strong> entry shall distinguish reference XObjects from other types of form XObjects. Table 97 shows the contents of the reference dictionary.</p>
+<p><table id="table97" markdown="span">
+    <caption><strong>Table 97 – Entries in a Reference Dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>F</strong></td>
+            <td>file specification</td>
+            <td>(<em>Required</em>) The file containing the target document.</td>
+        </tr>
+        <tr>
+            <td><strong>Page</strong></td>
+            <td>integer or text string</td>
+            <td>(<em>Required</em>) A page index or page label (see <a href="../../c12/s4/#1242-页面标签">12.4.2</a>, "Page Labels") identifying the page of the target document containing the content to be imported. This reference is a weak one and may be inadvertently invalidated if the referenced page is changed or replaced in the target document after the reference is created.</td>
+        </tr>
+        <tr>
+            <td><strong>ID</strong></td>
+            <td>array</td>
+            <td>(Optional) An array of two byte strings constituting a file identifier (see <a href="../../c14/s4/">14.4</a>, "File Identifiers") for the file containing the target document. The use of this entry improves an reader’s chances of finding the intended file and allows it to warn the user if the file has changed since the reference was created.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>When the imported content replaces the proxy, it shall be transformed according to the proxy object’s transformation matrix and clipped to the boundaries of its bounding box, as specified by the <strong>Matrix</strong> and <strong>BBox</strong> entries in the proxy’s form dictionary (see <a href="./#8102-表单字典">8.10.2</a>, "Form Dictionaries"). The combination of the proxy object’s matrix and bounding box thus implicitly defines the bounding box of the imported page. This bounding box typically coincides with the imported page’s crop box or art box (see <a href="../../c14/s11/#14112-页面边界">14.11.2</a>, "Page Boundaries"), but may not correspond to any of the defined page boundaries. If the proxy object’s form dictionary contains a <strong>Group</strong> entry, the specified group attributes shall apply to the imported page as well, which allows the imported page to be treated as a group without further modification.</p>
+</div>
+</div>
+</div>
+<h3 id="81042-打印引用-xobjects">8.10.4.2 打印引用 XObjects<a class="headerlink" href="#81042-打印引用-xobjects" title="Permanent link">&para;</a></h3>
+<p><strong>Printing Reference XObjects</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>当打印包含引用 XObjects 的页面时，应用程序可能会根据符合规范的阅读器的功能、用户的偏好以及打印作业的性质，发出以下任何一项：</p>
+<ul>
+<li>由引用 XObject 指定的导入内容</li>
+<li>作为导入内容代理的引用 XObject</li>
+<li>如果有的话，从引用 XObject 的 OPI 字典中取出的 OPI 代理或替代图像（见 <a href="../../c14/s11/#14117-开放印前接口-opi">14.11.7</a>，"开放预印刷接口 (OPI)"）</li>
+</ul>
+<p>符合规范的阅读器在生成 PostScript 输出流中的 OPI 注释时，也可能发出导入内容或引用 XObject 来代替 OPI 代理。</p>
+</div>
+<div class="tabbed-block">
+<p>When printing a page containing reference XObjects, an application may emit any of the following items, depending on the capabilities of the conforming reader, the user’s preferences, and the nature of the print job:</p>
+<ul>
+<li>The imported content designated by the reference XObject</li>
+<li>The reference XObject as a proxy for the imported content</li>
+<li>An OPI proxy or substitute image taken from the reference XObject’s OPI dictionary, if any (see <a href="../../c14/s11/#14117-开放印前接口-opi">14.11.7</a>, "Open Prepress Interface (OPI)")</li>
+</ul>
+<p>The imported content or the reference XObject may also be emitted, by a conforming reader, in place of an OPI proxy when generating OPI comments in a PostScript output stream.</p>
+</div>
+</div>
+</div>
+<h3 id="81043-特别注意事项">8.10.4.3 特别注意事项<a class="headerlink" href="#81043-特别注意事项" title="Permanent link">&para;</a></h3>
+<p><strong>Special Considerations</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>当引用 XObjects 与其他 PDF 功能交互时，会出现一些特别的考虑：</p>
+<ul>
+<li>当被引用 XObject 导入的页面包含注释（见 <a href="../../c12/s5/">12.5</a>，"注释"）时，所有包含可打印、未隐藏、可见的外观流的注释（<a href="../../c12/s5/#1255-外观流">12.5.5</a>，"外观流"）应包含在导入页面的渲染中。如果代理是导入页面的快照图像，它也应包括注释的外观。因此，这些外观应转换为代理内容流的一部分，无论是作为附属的表单 XObjects 还是直接平铺进内容流中。</li>
+<li>与页面相关联的逻辑结构信息（见 <a href="../../c14/s7/">14.7</a>，"逻辑结构"）在将页面导入另一个文档时可能会被忽略。在具有多个页面的目标文档中，出现在导入页面上的结构元素通常是整个文档较大结构的一部分；这样的元素无法有意义地并入包含文档的结构中。在一个单页目标文档或由独立、结构无关的页面组成的文档中，导入页面的逻辑结构可能是完全自包含的；在这种情况下，可能可以将此结构信息并入包含文档的结构中。然而，PDF 没有提供一种机制，使得一个文档的逻辑结构层次能够间接引用另一个文档的逻辑结构层次。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Certain special considerations arise when reference XObjects interact with other PDF features:</p>
+<ul>
+<li>When the page imported by a reference XObject contains annotations (see <a href="../../c12/s5/">12.5</a>, "Annotations"), all annotations that contain a printable, unhidden, visible appearance stream (<a href="../../c12/s5/#1255-外观流">12.5.5</a>, "Appearance Streams") shall be included in the rendering of the imported page. If the proxy is a snapshot image of the imported page, it shall also include the annotation appearances. These appearances shall therefore be converted into part of the proxy’s content stream, either as subsidiary form XObjects or by flattening them directly into the content stream.</li>
+<li>Logical structure information associated with a page (see <a href="../../c14/s7/">14.7</a>, "Logical Structure") may be ignored when importing the page into another document with a reference XObject. In a target document with multiple pages, structure elements occurring on the imported page are typically part of a larger structure pertaining to the document as a whole; such elements cannot meaningfully be incorporated into the structure of the containing document. In a one-page target document or one made up of independent, structurally unrelated pages, the logical structure for the imported page may be wholly self-contained; in this case, it may be possible to incorporate this structure information into that of the containing document. However, PDF provides no mechanism for the logical structure hierarchy of one document to refer indirectly to that of another.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

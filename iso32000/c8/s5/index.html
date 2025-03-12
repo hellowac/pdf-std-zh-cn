@@ -1,0 +1,2423 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s4/">
+      
+      
+        <link rel="next" href="../s6/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>8.5 路径构建与绘制 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#85-路径构建与绘制" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8.5 路径构建与绘制
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            8图形绘制
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.2 图形对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.3 坐标系统
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.4 图形状态
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    8.5 路径构建与绘制
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    8.5 路径构建与绘制
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#851-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#852-路径构造运算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.2 路径构造运算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5.2 路径构造运算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8521-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.2.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8522-三次贝塞尔曲线" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.2.2 三次贝塞尔曲线
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#853-路径绘制运算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3 路径绘制运算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5.3 路径绘制运算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8531-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8532-描边" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.2 描边
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8533-填充" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.3 填充
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5.3.3 填充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#85331-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85332-非零缠绕数规则" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.3.2 非零缠绕数规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85333-奇偶规则" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.3.3 奇偶规则
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#854-剪切路径操作符" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.4 剪切路径操作符
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.6 色彩空间
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.7 图案
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.8 外部对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.9 图片
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.10 表单 XObjects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.11 可选内容
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#851-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#852-路径构造运算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.2 路径构造运算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5.2 路径构造运算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8521-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.2.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8522-三次贝塞尔曲线" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.2.2 三次贝塞尔曲线
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#853-路径绘制运算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3 路径绘制运算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5.3 路径绘制运算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8531-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8532-描边" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.2 描边
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8533-填充" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.3 填充
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5.3.3 填充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#85331-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85332-非零缠绕数规则" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.3.2 非零缠绕数规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85333-奇偶规则" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.3.3.3 奇偶规则
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#854-剪切路径操作符" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5.4 剪切路径操作符
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="85-路径构建与绘制">8.5 路径构建与绘制<a class="headerlink" href="#85-路径构建与绘制" title="Permanent link">&para;</a></h1>
+<p><strong>Path Construction and Painting</strong></p>
+<h2 id="851-概述">8.5.1 概述<a class="headerlink" href="#851-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>路径定义了各种形状、轨迹和区域。它们被用来绘制线条、定义填充区域的形状，并指定裁剪其他图形的边界。图形状态应包括当前的剪贴路径，该路径定义了当前页面的剪贴边界。在每个页面开始时，剪贴路径将被初始化为包括整个页面。</p>
+<p>路径由直线段和曲线段组成，它们可以相互连接，也可以是断开的。只有当两个线段连续定义，第二个线段从第一个线段结束的地方开始时，我们才说它们是“连接”的。因此，定义路径中线段的顺序是重要的。非连续线段偶然相遇或相交，不应被视为连接。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>路径由一个或多个断开的子路径组成，每个子路径包括一系列连接的线段。路径的拓扑结构不受限制：它可以是凹形或凸形，可能包含多个表示不相连区域的子路径，并且可以任意方式自相交。</p>
+</div>
+<p><strong>h</strong> 操作符明确地将子路径的末端连接回其起始点；这样的子路径被称为“封闭”的。没有明确封闭的子路径被称为“开放”的。</p>
+<p>如<a href="../s2/">8.2</a>节“图形对象”中所讨论的，路径对象由一系列构造路径的操作符定义，后跟一个或多个绘制路径或将其用作剪贴边界的操作符。PDF路径操作符分为三类：</p>
+<ul>
+<li>路径构造操作符(<a href="./#852-路径构造运算符">8.5.2</a>，“路径构造操作符”)定义路径的几何形状。通过顺序应用一个或多个这些操作符来构建路径。</li>
+<li>路径绘制操作符(<a href="./#853-路径绘制运算符">8.5.3</a>，“路径绘制操作符”)结束路径对象，通常会导致对象以多种方式之一在当前页面上绘制。</li>
+<li>剪贴路径操作符(<a href="./#854-剪切路径操作符">8.5.4</a>，“剪贴路径操作符”)，在路径绘制操作符之前立即调用，导致路径对象也用于裁剪后续的图形对象。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><em>Paths</em> define shapes, trajectories, and regions of all sorts. They shall be used to draw lines, define the shapes of filled areas, and specify boundaries for clipping other graphics. The graphics state shall include a current <em>clipping path</em> that shall define the clipping boundary for the current page. At the beginning of each page, the clipping path shall be initialized to include the entire page.</p>
+<p>A path shall be composed of straight and curved line segments, which may connect to one another or may be disconnected. A pair of segments shall be said to <em>connect</em> only if they are defined consecutively, with the second segment starting where the first one ends. Thus, the order in which the segments of a path are defined shall be significant. Nonconsecutive segments that meet or intersect fortuitously shall not be considered to connect.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>A path is made up of one or more disconnected <em>subpaths</em>, each comprising a sequence of connected segments. The topology of the path is unrestricted: it may be concave or convex, may contain multiple subpaths representing disjoint areas, and may intersect itself in arbitrary ways.</p>
+</div>
+<p>The <strong>h</strong> operator explicitly shall connect the end of a subpath back to its starting point; such a subpath is said to
+be <em>closed</em>. A subpath that has not been explicitly closed is said to be <em>open</em>.</p>
+<p>As discussed in <a href="../s2/">8.2</a>, "Graphics Objects", a path object is defined by a sequence of operators to construct the path, followed by one or more operators to paint the path or to use it as a clipping boundary. PDF path operators fall into three categories:</p>
+<ul>
+<li><em>Path construction operators</em> (<a href="./#852-路径构造运算符">8.5.2</a>, "Path Construction Operators") define the geometry of a path. A path is constructed by sequentially applying one or more of these operators.</li>
+<li><em>Path-painting operators</em> (<a href="./#853-路径绘制运算符">8.5.3</a>, "Path-Painting Operators") end a path object, usually causing the object to be painted on the current page in any of a variety of ways.</li>
+<li><em>Clipping path operators</em> (<a href="./#854-剪切路径操作符">8.5.4</a>, "Clipping Path Operators"), invoked immediately before a path-painting operator, cause the path object also to be used for clipping of subsequent graphics objects.</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="852-路径构造运算符">8.5.2 路径构造运算符<a class="headerlink" href="#852-路径构造运算符" title="Permanent link">&para;</a></h2>
+<p><strong>Path Construction Operators</strong></p>
+<h3 id="8521-概述">8.5.2.1 概述<a class="headerlink" href="#8521-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>页面描述应以空路径开始，并通过调用一个或多个路径构造操作符来添加线段，从而构建其定义。路径构造操作符可以按任何顺序调用，但调用的第一个操作符应为 <strong>m</strong> 或 <strong>re</strong> 以开始一个新的子路径。路径定义可以通过应用路径绘制操作符如 <strong>S</strong>、<strong>f</strong> 或 <strong>b</strong>（见<a href="./#853-路径绘制运算符">8.5.3</a>，“路径绘制操作符”）来结束；这个操作符前面可以选择性地加上剪贴路径操作符 <strong>W</strong> 或 <strong>W</strong>（见<a href="./#854-剪切路径操作符">8.5.4</a>，“剪贴路径操作符”）。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>请注意，路径构造操作符不会在页面上放置任何标记；只有绘制操作符才会这样做。直到应用了路径绘制操作符，路径定义才算完成。</p>
+</div>
+<p>当前正在构建的路径称为<em>当前路径</em>。在PDF中（与PostScript不同），当前路径<em>不是</em>图形状态的一部分，也不会随着其他图形状态参数一起保存和恢复。PDF路径应是严格内部对象，没有显式表示。当前路径被绘制后，它就不再被定义了；直到使用 <strong>m</strong> 或 <strong>re</strong> 操作符开始一个新的路径之前，都没有当前路径。</p>
+<p>最近添加到当前路径的线段的尾端点称为当前点。如果当前路径为空，则当前点未定义。大多数添加线段到当前路径的操作符都从当前点开始；如果当前点未定义，将产生错误。</p>
+<p><a href="#table59">表59</a> 显示了路径构造操作符。所有操作数都应为表示用户空间中坐标的数字。</p>
+<p><table id="table59" markdown="span">
+    <caption><strong>Table 59 – 路径构造操作符</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><em>x y</em></td>
+            <td><strong>m</strong></td>
+            <td>通过将当前点移动到坐标<em>(x, y)</em>来开始一个新的子路径，不绘制任何连接线段。如果当前路径中的上一个路径构造操作符也是<strong>m</strong>，则新的<strong>m</strong>将覆盖它；先前的<strong>m</strong>操作在路径中不会留下任何痕迹。
+            </td>
+        </tr>
+        <tr>
+            <td><em>x y</em></td>
+            <td><strong>l</strong> (lowercase <strong>L</strong>)</td>
+            <td>从当前点到点(<em>x, y</em>)绘制一条直线段，并将其附加到当前路径。新的当前点将是(<em>x, y</em>)。
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(x_1 y_1 x_2 y_2 x_3 y_3\)</span></td>
+            <td><strong>c</strong></td>
+            <td>将一条三次贝塞尔曲线附加到当前路径。该曲线从当前点延伸到点<span class="arithmatex">\((x_3 , y_3)\)</span>，使用<span class="arithmatex">\((x_1 , y_1)\)</span>和<span class="arithmatex">\((x_2 , y_2)\)</span>作为贝塞尔控制点（见<a href="#8522-三次贝塞尔曲线">8.5.2.2</a>，“三次贝塞尔曲线”）。新的当前点将是<span class="arithmatex">\((x_3 , y_3)\)</span>。
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(x_2 y_2 x_3 y_3\)</span></td>
+            <td><strong>v</strong></td>
+            <td>将一条三次贝塞尔曲线附加到当前路径。该曲线从当前点延伸到点<span class="arithmatex">\((x_3 , y_3)\)</span>，使用当前点和<span class="arithmatex">\((x_2 , y_2)\)</span>作为贝塞尔控制点（见<a href="#8522-三次贝塞尔曲线">8.5.2.2</a>，“三次贝塞尔曲线”）。新的当前点将是<span class="arithmatex">\((x_3 , y_3)\)</span>。
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(x_1 y_1 x_3 y_3\)</span></td>
+            <td><strong>y</strong></td>
+            <td>将一条三次贝塞尔曲线附加到当前路径。该曲线从当前点延伸到点<span class="arithmatex">\((x_3 , y_3)\)</span>，使用<span class="arithmatex">\((x_1 , y_1)\)</span>和<span class="arithmatex">\((x_3 , y_3)\)</span>作为贝塞尔控制点（见<a href="#8522-三次贝塞尔曲线">8.5.2.2</a>，“三次贝塞尔曲线”）。新的当前点将是<span class="arithmatex">\((x_3 , y_3)\)</span>。
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>h</strong></td>
+            <td>通过从当前点到子路径起始点绘制一条直线段来关闭当前子路径。如果当前子路径已经关闭，<strong>h</strong>将不执行任何操作。<br/> 此操作符终止当前子路径。向当前路径附加另一个线段将开始一个新的子路径，即使新线段从<strong>h</strong>操作达到的端点开始。
+            </td>
+        </tr>
+        <tr>
+            <td><em>x y width height</em></td>
+            <td><em>re</em></td>
+            <td>将一个矩形作为完整的子路径附加到当前路径，其左下角为(x, y)，尺寸为用户空间中的宽度和<em>height</em>。操作 <br/><br/>
+            <em>x y width height re</em> <br/><br/>
+            等同于 <br/><br/>
+            <em>x y m</em><br/>
+            <em>( x + width ) y |</em> <br/>
+            <em>( x + width ) ( y + height ) |</em> <br/>
+            <em>x ( y + height ) |</em> <br/>
+            <em>h</em>
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A page description shall begin with an empty path and shall build up its definition by invoking one or more path construction operators to add segments to it. The path construction operators may be invoked in any sequence, but the first one invoked shall be <strong>m</strong> or <strong>re</strong> to begin a new subpath. The path definition may conclude with the application of a path-painting operator such as <strong>S</strong>, <strong>f</strong>, or <strong>b</strong> (see <a href="./#853-路径绘制运算符">8.5.3</a>, "Path-Painting Operators"); this operator may optionally be preceded by one of the clipping path operators <strong>W</strong> or <strong>W*</strong> (<a href="./#854-剪切路径操作符">8.5.4</a>, "Clipping Path Operators").</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Note that the path construction operators do not place any marks on the page; only the painting operators do that. A path definition is not complete until a path-painting operator has been applied to it.</p>
+</div>
+<p>The path currently under construction is called the <em>current path</em>. In PDF (unlike PostScript), the current path is <em>not</em> part of the graphics state and is not saved and restored along with the other graphics state parameters. PDF paths shall be strictly internal objects with no explicit representation. After the current path has been painted, it shall become no longer defined; there is then no current path until a new one is begun with the <strong>m</strong> or <strong>re</strong> operator.</p>
+<p>The trailing endpoint of the segment most recently added to the current path is referred to as the current point. If the current path is empty, the current point shall be undefined. Most operators that add a segment to the current path start at the current point; if the current point is undefined, an error shall be generated.</p>
+<p><a href="#table59">Table 59</a> shows the path construction operators. All operands shall be numbers denoting coordinates in user space.</p>
+<p><table id="table59" markdown="span">
+    <caption><strong>Table 59 – Path Construction Operators</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><em>x y</em></td>
+            <td><strong>m</strong></td>
+            <td>Begin a new subpath by moving the current point to coordinates <em>(x, y)</em>, omitting any connecting line segment. If the previous path construction operator in the current path was also <strong>m</strong>, the new <strong>m</strong> overrides it; no vestige of the previous <strong>m</strong> operation remains in the path.
+            </td>
+        </tr>
+        <tr>
+            <td><em>x y</em></td>
+            <td><strong>l</strong> (lowercase <strong>L</strong>)</td>
+            <td>Append a straight line segment from the current point to the point (<em>x, y</em>). The new current point shall be (<em>x, y</em>).
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(x_1 y_1 x_2 y_2 x_3 y_3\)</span></td>
+            <td><strong>c</strong></td>
+            <td>Append a cubic Bézier curve to the current path. The curve shall extend from the current point to the point <span class="arithmatex">\((x_3 , y_3)\)</span>, using <span class="arithmatex">\((x_1 , y_1)\)</span> and <span class="arithmatex">\((x_2 , y_2)\)</span> as the Bézier control points (see <a href="#8522-三次贝塞尔曲线">8.5.2.2</a>, "Cubic Bézier Curves"). The new current point shall be <span class="arithmatex">\((x_3 , y_3)\)</span>.
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(x_2 y_2 x_3 y_3\)</span></td>
+            <td><strong>v</strong></td>
+            <td>Append a cubic Bézier curve to the current path. The curve shall extend from the current point to the point <span class="arithmatex">\((x_3 , y_3)\)</span>, using the current point and <span class="arithmatex">\((x_2 , y_2)\)</span> as the Bézier control points (see <a href="#8522-三次贝塞尔曲线">8.5.2.2</a>, "Cubic Bézier Curves"). The new current point shall be <span class="arithmatex">\((x_3 , y_3)\)</span>.
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(x_1 y_1 x_3 y_3\)</span></td>
+            <td><strong>y</strong></td>
+            <td>Append a cubic Bézier curve to the current path. The curve shall extend from the current point to the point <span class="arithmatex">\((x_3 , y_3)\)</span>, using <span class="arithmatex">\((x_1 , y_1)\)</span> and <span class="arithmatex">\((x_3 , y_3)\)</span> as the Bézier control points (see <a href="#8522-三次贝塞尔曲线">8.5.2.2</a>, "Cubic Bézier Curves"). The new current point shall be <span class="arithmatex">\((x_3 , y_3)\)</span>.
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>h</strong></td>
+            <td>Close the current subpath by appending a straight line segment from the current point to the starting point of the subpath. If the current subpath is already closed, <strong>h</strong> shall do nothing.<br/> 
+                This operator terminates the current subpath. Appending another segment to the current path shall begin a new subpath, even if the new segment begins at the endpoint reached by the <strong>h</strong> operation.
+            </td>
+        </tr>
+        <tr>
+            <td><em>x y width height</em></td>
+            <td><em>re</em></td>
+            <td>Append a rectangle to the current path as a complete subpath, with lower-left corner (x, y) and dimensions width and <em>height</em> in user space. The operation <br/><br/>
+            <em>x y width height re</em> <br/><br/>
+            is equivalent to <br/><br/>
+            <em>x y m</em><br/>
+            <em>( x + width ) y |</em> <br/>
+            <em>( x + width ) ( y + height ) |</em> <br/>
+            <em>x ( y + height ) |</em> <br/>
+            <em>h</em>
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="8522-三次贝塞尔曲线">8.5.2.2 三次贝塞尔曲线<a class="headerlink" href="#8522-三次贝塞尔曲线" title="Permanent link">&para;</a></h3>
+<p><strong>8.5.2.2 Cubic Bézier Curves</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>曲线路径段应被指定为三次贝塞尔曲线。这些曲线由四个点定义：两个端点（当前点 <span class="arithmatex">\(P_0\)</span> 和最终点 <span class="arithmatex">\(P_3\)</span>）以及两个控制点 <span class="arithmatex">\(P_1\)</span> 和 <span class="arithmatex">\(P_2\)</span>。给定这四个点的坐标，曲线将通过在以下方程中变化参数 <em>t</em> 从 0.0 到 1.0 来生成：</p>
+<div class="arithmatex">\[R(t) = (1 - t )^3P_0 + 3t(1-t)^2P_1 + 3t^2(1-t)P_2 + t^3P_3\]</div>
+<p>当 t = 0.0 时，函数 R(t) 的值与当前点 <span class="arithmatex">\(P_0\)</span> 重合；当 <span class="arithmatex">\(t = 1.0\)</span> 时，R(t) 与最终点 <span class="arithmatex">\(P_3\)</span> 重合。中间值的 t 沿着曲线生成中间点。曲线通常不通过两个控制点 <span class="arithmatex">\(P_1\)</span> 和 <span class="arithmatex">\(P_2\)</span>。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>三次贝塞尔曲线有两个有用的属性：</p>
+<ul>
+<li>曲线可以非常快速地分割成较小的片段以进行快速渲染。</li>
+<li>曲线被包含在定义曲线的四个点的凸包内，最容易被想象为通过拉伸橡皮筋围绕在四个点的外侧得到的多边形。这个属性允许快速测试曲线是否完全位于可见区域之外，因此不需要渲染。</li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>参考文献列出了多本更深入描述三次贝塞尔曲线的书籍。</p>
+</div>
+<p>最通用的 PDF 操作符用于构建曲线路径段是 <strong>c</strong> 操作符，它明确指定了点 <span class="arithmatex">\(P_1\)</span> , <span class="arithmatex">\(P_2\)</span> 和 <span class="arithmatex">\(P_3\)</span> 的坐标，如图 16 在 <a href="../../a12/">附录 L</a> 中所示。（起始点 <span class="arithmatex">\(P_0\)</span> 由当前点隐式定义。）</p>
+<p><a class="glightbox" href="../imgs/f16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="曲线示例" src="../imgs/f16.png" /></a></p>
+<p>还有两个操作符 <strong>v</strong> 和 <strong>y</strong>，每个都隐式地指定了一个控制点（见图 17 在 <a href="../../a12/">附录 L</a>）。在这两种情况下，应该提供曲线的一个控制点和最终点作为操作数；另一个控制点将被隐含：</p>
+<ul>
+<li>对于 <strong>v</strong> 操作符，第一个控制点将与曲线的初始点重合。</li>
+<li>对于 <strong>y</strong> 操作符，第二个控制点将与曲线的最终点重合。</li>
+</ul>
+<p><a class="glightbox" href="../imgs/f17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="隐式控制点示例" src="../imgs/f17.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>Curved path segments shall be specified as cubic Bézier curves. Such curves shall be defined by four points: the two endpoints (the current point <span class="arithmatex">\(P_0\)</span> and the final point <span class="arithmatex">\(P_3\)</span> ) and two <em>control points</em> <span class="arithmatex">\(P_1\)</span> and <span class="arithmatex">\(P_2\)</span> . Given the coordinates of the four points, the curve shall be generated by varying the parameter <em>t</em> from 0.0 to 1.0 in the following equation:</p>
+<div class="arithmatex">\[R(t) = (1 - t )^3P_0 + 3t(1-t)^2P_1 + 3t^2(1-t)P_2 + t^3P_3\]</div>
+<p>When t = 0.0, the value of the function R (t) coincides with the current point <span class="arithmatex">\(P_0\)</span> ; when <em>t</em> = 1.0, R(<em>t</em>) coincides with the final point <span class="arithmatex">\(P_3\)</span> . Intermediate values of <em>t</em> generate intermediate points along the curve. The curve does not, in general, pass through the two control points <span class="arithmatex">\(P_1\)</span> and <span class="arithmatex">\(P_2\)</span> .</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Cubic Bézier curves have two useful properties:</p>
+<p>The curve can be very quickly split into smaller pieces for rapid rendering.</p>
+<p>The curve is contained within the convex hull of the four points defining the curve, most easily visualized as the polygon obtained by stretching a rubber band around the outside of the four points. This property allows rapid testing of whether the curve lies completely outside the visible region, and hence does not have to be rendered.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The Bibliography lists several books that describe cubic Bézier curves in more depth.</p>
+</div>
+<p>The most general PDF operator for constructing curved path segments is the <strong>c</strong> operator, which specifies the coordinates of points <span class="arithmatex">\(P_1\)</span> , <span class="arithmatex">\(P_2\)</span> , and <span class="arithmatex">\(P_3\)</span> explicitly, as shown in Figure 16 in <a href="../../a12/">Annex L</a>. (The starting point, <span class="arithmatex">\(P_0\)</span> , is defined implicitly by the current point.)</p>
+<p><a class="glightbox" href="../imgs/f16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f16.png" /></a></p>
+<p>Two more operators, <strong>v</strong> and <strong>y</strong>, each specify one of the two control points implicitly (see Figure 17 in <a href="../../a12/">Annex L</a>). In both of these cases, one control point and the final point of the curve shall be supplied as operands; the other control point shall be implied:</p>
+<ul>
+<li>For the v operator, the first control point shall coincide with initial point of the curve.</li>
+<li>For the y operator, the second control point shall coincide with final point of the curve.</li>
+</ul>
+<p><a class="glightbox" href="../imgs/f17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f17.png" /></a></p>
+</div>
+</div>
+</div>
+<h2 id="853-路径绘制运算符">8.5.3 路径绘制运算符<a class="headerlink" href="#853-路径绘制运算符" title="Permanent link">&para;</a></h2>
+<p><strong>8.5.3 Path-Painting Operators</strong></p>
+<h3 id="8531-概述">8.5.3.1 概述<a class="headerlink" href="#8531-概述" title="Permanent link">&para;</a></h3>
+<p><strong>8.5.3.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>路径绘制操作符结束了一个路径对象，并按照操作符指定的方式在当前页面上进行绘制。主要的路径绘制操作符是 <strong>S</strong>（描边）和 <strong>f</strong>（填充）。这些操作符的变体将描边和填充结合在单一操作中，或应用不同的规则来确定要填充的区域。表60列出了所有的路径绘制操作符。    </p>
+<p><table id="table60" markdown="span">
+    <caption><strong>Table 60 – 路径绘制操作符</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>—</td>
+            <td><strong>s</strong></td>
+            <td>关闭并描边路径。此操作符应与序列 h S 具有相同效果。
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>f</strong></td>
+            <td>使用非零绕组数规则填充路径（见<a href="#85332-非零缠绕数规则">8.5.3.3.2</a>，“非零绕组数规则”）。所有开放的子路径将在填充前隐式关闭。
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>F</strong></td>
+            <td>与<strong>f</strong>等效；仅包含兼容性。尽管PDF阅读器应用程序应能够接受此操作符，但PDF编写器应用程序应使用<strong>f</strong>。
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>f*</strong></td>
+            <td>使用偶数-奇数规则填充路径（见<a href="#85333-奇偶规则">8.5.3.3.3</a>，“偶数-奇数规则”）。 
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>B</strong></td>
+            <td>使用非零绕组数规则确定要填充的区域，填充并描边路径。此操作符应产生与构造两个相同的路径对象，第一个用<strong>f</strong>绘制，第二个用<strong>S</strong>绘制相同的结果。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>操作的填充和描边部分参考了几个图形状态参数的不同值，例如当前颜色。另见<a href="../../c11/s7/#11744-特殊路径绘制注意事项">11.7.4.4</a>，“特殊路径绘制考虑”。
+        </td>
+    </tr>
+    <tr>
+        <td>—</td>
+        <td><strong>B*</strong></td>
+        <td>使用偶数-奇数规则确定要填充的区域，填充并描边路径。此操作符应产生与<strong>B</strong>相同的结果，除了路径是用<strong>f</strong><em>代替</em><em>f</em><em>填充的。另见<a href="../../c11/s7/#11744-特殊路径绘制注意事项">11.7.4.4</a>，“特殊路径绘制考虑”。
+        </td>
+    </tr>
+    <tr>
+        <td>—</td>
+        <td></em><em>b</em><em></td>
+        <td>使用非零绕组数规则确定要填充的区域，关闭、填充并描边路径。此操作符应与序列h B具有相同效果。另见<a href="../../c11/s7/#11744-特殊路径绘制注意事项">11.7.4.4</a>，“特殊路径绘制考虑”。
+        </td>
+    </tr>
+    <tr>
+        <td>—</td>
+        <td></em><em>b*</em><em></td>
+        <td>使用偶数-奇数规则确定要填充的区域，关闭、填充并描边路径。此操作符应与序列 h B</em> 具有相同效果。另见<a href="../../c11/s7/#11744-特殊路径绘制注意事项">11.7.4.4</a>，“特殊路径绘制考虑”。
+        </td>
+    </tr>
+    <tr>
+        <td>—</td>
+        <td><strong>n</strong></td>
+        <td>结束路径对象，不填充也不描边。此操作符应是路径绘制无操作，主要用于更改当前剪贴路径的副作用（见<a href="./#854-剪切路径操作符">8.5.4</a>，“剪贴路径操作符”）。
+        </td>
+    </tr>
+</tbody></p>
+</div>
+</table>
+</div>
+<div class="tabbed-block">
+<p>The path-painting operators end a path object, causing it to be painted on the current page in the manner that the operator specifies. The principal path-painting operators shall be <strong>S</strong> (<em>for stroking</em>) and <strong>f</strong> (<em>for filling</em>). Variants of these operators combine stroking and filling in a single operation or apply different rules for determining the area to be filled. Table 60 lists all the path-painting operators.</p>
+<p><table id="table60" markdown="span">
+    <caption><strong>Table 60 – Path-Painting Operators</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>—</td>
+            <td><strong>s</strong></td>
+            <td>Close and stroke the path. This operator shall have the same effect as the sequence h S.
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>f</strong></td>
+            <td>Fill the path, using the nonzero winding number rule to determine the region to fill (see <a href="#85332-非零缠绕数规则">8.5.3.3.2</a>, "Nonzero Winding Number Rule"). Any subpaths that are open shall be implicitly closed before being filled.
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>F</strong></td>
+            <td>Equivalent to <strong>f</strong>; included only for compatibility. Although PDF reader applications shall be able to accept this operator, PDF writer applications should use <strong>f</strong> instead.
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>f*</strong></td>
+            <td>Fill the path, using the even-odd rule to determine the region to fill (see <a href="#85333-奇偶规则">8.5.3.3.3</a>, "Even-Odd Rule").
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>B</strong></td>
+            <td>Fill and then stroke the path, using the nonzero winding number rule to determine the region to fill. This operator shall produce the same result as constructing two identical path objects, painting the first with <strong>f</strong> and the second with <strong>S</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The filling and stroking portions of the operation consult different values of several graphics state parameters, such as the current colour. See also <a href="../../c11/s7/#11744-特殊路径绘制注意事项">11.7.4.4</a>, "Special Path-Painting Considerations".
+        </td>
+    </tr>
+    <tr>
+        <td>—</td>
+        <td><strong>B*</strong></td>
+        <td>Fill and then stroke the path, using the even-odd rule to determine the region to fill. This operator shall produce the same result as <strong>B</strong>, except that the path is filled as if with <strong>f*</strong> instead of <strong>f</strong>. See also <a href="../../c11/s7/#11744-特殊路径绘制注意事项">11.7.4.4</a>, "Special Path-Painting Considerations".
+        </td>
+    </tr>
+    <tr>
+        <td>—</td>
+        <td><strong>b</strong></td>
+        <td>Close, fill, and then stroke the path, using the nonzero winding number rule to determine the region to fill. This operator shall have the same effect as the sequence h B. See also <a href="../../c11/s7/#11744-特殊路径绘制注意事项">11.7.4.4</a>, "Special Path-Painting Considerations".
+        </td>
+    </tr>
+    <tr>
+        <td>—</td>
+        <td><strong>b*</strong></td>
+        <td>Close, fill, and then stroke the path, using the even-odd rule to determine the region to fill. This operator shall have the same effect as the sequence h B<em>. See also <a href="../../c11/s7/#11744-特殊路径绘制注意事项">11.7.4.4</a>, "Special Path-Painting Considerations".
+        </td>
+    </tr>
+    <tr>
+        <td>—</td>
+        <td></em><em>n</em>*</td>
+        <td>End the path object without filling or stroking it. This operator shall be a path- painting no-op, used primarily for the side effect of changing the current clipping path (see <a href="./#854-剪切路径操作符">8.5.4</a>, "Clipping Path Operators").
+        </td>
+    </tr>
+</tbody></p>
+</div>
+</table>
+</div>
+</div>
+</div>
+<h3 id="8532-描边">8.5.3.2 描边<a class="headerlink" href="#8532-描边" title="Permanent link">&para;</a></h3>
+<p><strong>8.5.3.2 Stroking</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>S</strong> 操作符将沿着当前路径绘制线条。描边的线条将跟随路径中的每条直线或曲线段，在段的中心，两侧与之平行。路径的每个子路径都将被单独处理。</p>
+<p><strong>S</strong> 操作符的结果将取决于图形状态中各种参数的当前设置（有关这些参数的更多信息，请参见<a href="../s4/">8.4</a>，“图形状态”）：</p>
+<ul>
+<li>描边线条的宽度由当前线宽参数确定（<a href="../s4/#8432-线宽">8.4.3.2</a>，“线宽”）。</li>
+<li>线条的颜色或图案由当前描边操作的颜色和颜色空间决定。</li>
+<li>线条可以实心绘制，也可以按照当前虚线模式绘制，该模式可以是点状、短划线或虚线（见<a href="../s4/#8436-虚线样式">8.4.3.6</a>，“虚线模式”）。</li>
+<li>如果子路径是开放的，未连接的端点将根据当前线帽样式进行处理，该样式可以是平头、圆头或方头（见<a href="../s4/#8433-线帽样式">8.4.3.3</a>，“线帽样式”）。</li>
+<li>每当两个连续的线段连接在一起时，它们之间的连接处将根据当前线连接样式进行处理，该样式可以是斜接、圆接或斜切（见<a href="../s4/#8434-线连接样式">8.4.3.4</a>，“线连接样式”）。斜接将受到当前斜接限制的约束（见<a href="../s4/#8435-斜接限制">8.4.3.5</a>，“斜接限制”）。</li>
+</ul>
+<p>未连接的线段在相遇或相交的点上不会接受特殊处理。特别是，使用显式的l操作符来呈现关闭子路径的外观，而不是使用<strong>h</strong>，可能会导致一个凌乱的角落，因为应用了线帽而不是线连接。</p>
+<ul>
+<li>“描边调整”参数（PDF 1.2）指定坐标和线宽应自动调整，以产生均匀厚度的描边，尽管存在光栅化效果（见<a href="../../c10/s6/#1065-自动描边调整">10.6.5</a>，“自动描边调整”）。</li>
+</ul>
+<p>如果子路径是退化的（由单个点的闭路径或两个或多个坐标相同的点组成），则只有当指定了圆线帽时，<strong>S</strong> 操作符才会绘制它，产生一个以单点为中心的实心圆。如果指定了平头或伸出方头线帽，<strong>S</strong> 将不产生输出，因为线帽的方向将是不确定的。这条规则仅适用于正在描边的路径中的零长度子路径，不适用于虚线模式中的零长度虚线。在后一种情况下，线帽总是被绘制，因为它们的方向由底层路径的方向决定。由尾随<strong>m</strong>操作符指定的单点开放子路径将不产生输出。</p>
+</div>
+<div class="tabbed-block">
+<p>The <strong>S</strong> operator shall paint a line along the current path. The stroked line shall follow each straight or curved segment in the path, centred on the segment with sides parallel to it. Each of the path’s subpaths shall be treated separately.</p>
+<p>The results of the <strong>S</strong> operator shall depend on the current settings of various parameters in the graphics state (see <a href="../s4/">8.4</a>, "Graphics State", for further information on these parameters):</p>
+<ul>
+<li>The width of the stroked line shall be determined by the current line width parameter (<a href="../s4/#8432-线宽">8.4.3.2</a>, "Line Width").</li>
+<li>The colour or pattern of the line shall be determined by the current colour and colour space for stroking operations.</li>
+<li>The line may be painted either solid or with a dash pattern, as specified by the current line dash pattern (see <a href="../s4/#8436-虚线样式">8.4.3.6</a>, "Line Dash Pattern").</li>
+<li>If a subpath is open, the unconnected ends shall be treated according to the current line cap style, which may be butt, rounded, or square (see <a href="../s4/#8433-线帽样式">8.4.3.3</a>, "Line Cap Style").</li>
+<li>Wherever two consecutive segments are connected, the joint between them shall be treated according to the current line join style, which may be mitered, rounded, or beveled (see <a href="../s4/#8434-线连接样式">8.4.3.4</a>, "Line Join Style"). Mitered joins shall be subject to the current miter limit (see <a href="../s4/#8435-斜接限制">8.4.3.5</a>, "Miter Limit").</li>
+</ul>
+<p>Points at which unconnected segments happen to meet or intersect receive no special treatment. In particular, using an explicit l operator to give the appearance of closing a subpath, rather than using <strong>h</strong>, may result in a messy corner, because line caps are applied instead of a line join.</p>
+<ul>
+<li>The <em>stroke adjustment</em> parameter (PDF 1.2) specifies that coordinates and line widths be adjusted automatically to produce strokes of uniform thickness despite rasterization effects (see <a href="../../c10/s6/#1065-自动描边调整">10.6.5</a>, "Automatic Stroke Adjustment").</li>
+</ul>
+<p>If a subpath is degenerate (consists of a single-point closed path or of two or more points at the same coordinates), the <strong>S</strong> operator shall paint it only if round line caps have been specified, producing a filled circle centered at the single point. If butt or projecting square line caps have been specified, <strong>S</strong> shall produce no output, because the orientation of the caps would be indeterminate. This rule shall apply only to zero-length subpaths of the path being stroked, and not to zero-length dashes in a dash pattern. In the latter case, the line caps shall always be painted, since their orientation is determined by the direction of the underlying path. A single-point open subpath (specified by a trailing <strong>m</strong> operator) shall produce no output.</p>
+</div>
+</div>
+</div>
+<h3 id="8533-填充">8.5.3.3 填充<a class="headerlink" href="#8533-填充" title="Permanent link">&para;</a></h3>
+<p><strong>8.5.3.3 Filling</strong></p>
+<h4 id="85331-概述">8.5.3.3.1 概述<a class="headerlink" href="#85331-概述" title="Permanent link">&para;</a></h4>
+<p><strong>8.5.3.3.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The <strong>f</strong> operator shall use the current nonstroking colour to paint the entire region enclosed by the current path. If the path consists of several disconnected subpaths, <strong>f</strong> shall paint the insides of all subpaths, considered together. Any subpaths that are open shall be implicitly closed before being filled.</p>
+<p>If a subpath is degenerate (consists of a single-point closed path or of two or more points at the same coordinates), <strong>f</strong> shall paint the single device pixel lying under that point; the result is device-dependent and not generally useful. A single-point open subpath (specified by a trailing m operator) shall produce no output.</p>
+<p>For a simple path, it is intuitively clear what region lies inside. However, for a more complex path, it is not always obvious which points lie inside the path. For more detailed information, see <a href="../../c10/s6/#1064-扫描转换规则">10.6.4</a>, “Scan Conversion Rules“.</p>
+<p>!!! info <strong>EXAMPLE</strong></p>
+<div class="codehilite"><pre><span></span><code>A path that intersects itself or has one subpath that encloses another.
+</code></pre></div>
+
+<p>The path machinery shall use one of two rules for determining which points lie inside a path: the nonzero winding number rule and the even-odd rule, both discussed in detail below. The nonzero winding number rule is more versatile than the even-odd rule and shall be the standard rule the <strong>f</strong> operator uses. Similarly, the <strong>W</strong> operator shall use this rule to determine the inside of the current clipping path. The even-odd rule is occasionally useful for special effects or for compatibility with other graphics systems; the <strong>f*</strong> and <strong>W*</strong> operators invoke this rule.</p>
+</div>
+<div class="tabbed-block">
+<p>The <strong>f</strong> operator shall use the current nonstroking colour to paint the entire region enclosed by the current path. If the path consists of several disconnected subpaths, <strong>f</strong> shall paint the insides of all subpaths, considered together. Any subpaths that are open shall be implicitly closed before being filled.</p>
+<p>If a subpath is degenerate (consists of a single-point closed path or of two or more points at the same coordinates), <strong>f</strong> shall paint the single device pixel lying under that point; the result is device-dependent and not generally useful. A single-point open subpath (specified by a trailing m operator) shall produce no output.</p>
+<p>For a simple path, it is intuitively clear what region lies inside. However, for a more complex path, it is not always obvious which points lie inside the path. For more detailed information, see <a href="../../c10/s6/#1064-扫描转换规则">10.6.4</a>, “Scan Conversion Rules“.</p>
+<p>!!! info <strong>EXAMPLE</strong></p>
+<div class="codehilite"><pre><span></span><code>A path that intersects itself or has one subpath that encloses another.
+</code></pre></div>
+
+<p>The path machinery shall use one of two rules for determining which points lie inside a path: the nonzero winding number rule and the even-odd rule, both discussed in detail below. The nonzero winding number rule is more versatile than the even-odd rule and shall be the standard rule the <strong>f</strong> operator uses. Similarly, the <strong>W</strong> operator shall use this rule to determine the inside of the current clipping path. The even-odd rule is occasionally useful for special effects or for compatibility with other graphics systems; the <strong>f*</strong> and <strong>W*</strong> operators invoke this rule.</p>
+</div>
+</div>
+</div>
+<h4 id="85332-非零缠绕数规则">8.5.3.3.2 非零缠绕数规则<a class="headerlink" href="#85332-非零缠绕数规则" title="Permanent link">&para;</a></h4>
+<p><strong>8.5.3.3.2 Nonzero Winding Number Rule</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The <em>nonzero winding number rule</em> determines whether a given point is inside a path by conceptually drawing a ray from that point to infinity in any direction and then examining the places where a segment of the path crosses the ray. Starting with a count of 0, the rule adds 1 each time a path segment crosses the ray from left to right and subtracts 1 each time a segment crosses from right to left. After counting all the crossings, if the result is 0, the point is outside the path; otherwise, it is inside.</p>
+<p>The method just described does not specify what to do if a path segment coincides with or is tangent to th chosen ray. Since the direction of the ray is arbitrary, the rule simply chooses a ray that does not encounte such problem intersections.</p>
+<p>For simple convex paths, the nonzero winding number rule defines the inside and outside as one would intuitively expect. The more interesting cases are those involving complex or self-intersecting paths like the ones shown in Figure 18 in <a href="../../a12/">Annex L</a>. For a path consisting of a five-pointed star, drawn with five connected straight line segments intersecting each other, the rule considers the inside to be the entire area enclosed by the star, including the pentagon in the centre. For a path composed of two concentric circles, the areas enclosed by both circles are considered to be inside, provided that both are drawn in the same direction. If the circles are drawn in opposite directions, only the doughnut shape between them is inside, according to the rule; the doughnut hole is outside.</p>
+<p><a class="glightbox" href="../imgs/f18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f18.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>The <em>nonzero winding number rule</em> determines whether a given point is inside a path by conceptually drawing a ray from that point to infinity in any direction and then examining the places where a segment of the path crosses the ray. Starting with a count of 0, the rule adds 1 each time a path segment crosses the ray from left to right and subtracts 1 each time a segment crosses from right to left. After counting all the crossings, if the result is 0, the point is outside the path; otherwise, it is inside.</p>
+<p>The method just described does not specify what to do if a path segment coincides with or is tangent to th chosen ray. Since the direction of the ray is arbitrary, the rule simply chooses a ray that does not encounte such problem intersections.</p>
+<p>For simple convex paths, the nonzero winding number rule defines the inside and outside as one would intuitively expect. The more interesting cases are those involving complex or self-intersecting paths like the ones shown in Figure 18 in <a href="../../a12/">Annex L</a>. For a path consisting of a five-pointed star, drawn with five connected straight line segments intersecting each other, the rule considers the inside to be the entire area enclosed by the star, including the pentagon in the centre. For a path composed of two concentric circles, the areas enclosed by both circles are considered to be inside, provided that both are drawn in the same direction. If the circles are drawn in opposite directions, only the doughnut shape between them is inside, according to the rule; the doughnut hole is outside.</p>
+<p><a class="glightbox" href="../imgs/f18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f18.png" /></a></p>
+</div>
+</div>
+</div>
+<h4 id="85333-奇偶规则">8.5.3.3.3 奇偶规则<a class="headerlink" href="#85333-奇偶规则" title="Permanent link">&para;</a></h4>
+<p><strong>8.5.3.3.3 Even-Odd Rule</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>An alternative to the nonzero winding number rule is the <em>even-odd rule</em>. This rule determines whether a point is inside a path by drawing a ray from that point in any direction and simply counting the number of path segments that cross the ray, regardless of direction. If this number is odd, the point is inside; if even, the point is outside. This yields the same results as the nonzero winding number rule for paths with simple shapes, but produces different results for more complex shapes.</p>
+<p>Figure 19 shows the effects of applying the even-odd rule to complex paths. For the five-pointed star, the rule considers the triangular points to be inside the path, but not the pentagon in the centre. For the two concentric circles, only the doughnut shape between the two circles is considered inside, regardless of the directions in which the circles are drawn.</p>
+<p><a class="glightbox" href="../imgs/f19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f19.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>An alternative to the nonzero winding number rule is the <em>even-odd rule</em>. This rule determines whether a point is inside a path by drawing a ray from that point in any direction and simply counting the number of path segments that cross the ray, regardless of direction. If this number is odd, the point is inside; if even, the point is outside. This yields the same results as the nonzero winding number rule for paths with simple shapes, but produces different results for more complex shapes.</p>
+<p>Figure 19 shows the effects of applying the even-odd rule to complex paths. For the five-pointed star, the rule considers the triangular points to be inside the path, but not the pentagon in the centre. For the two concentric circles, only the doughnut shape between the two circles is considered inside, regardless of the directions in which the circles are drawn.</p>
+<p><a class="glightbox" href="../imgs/f19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f19.png" /></a></p>
+</div>
+</div>
+</div>
+<h2 id="854-剪切路径操作符">8.5.4 剪切路径操作符<a class="headerlink" href="#854-剪切路径操作符" title="Permanent link">&para;</a></h2>
+<p><strong>8.5.4 Clipping Path Operators</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>图形状态应包含一个“当前剪贴路径”，它限制了绘画操作符影响页面的区域。这条路径的封闭子路径定义了可以绘制的区域。落在这个区域内的标记将被应用到页面上；落在区域外的则不会。子条款[8.5.3.3]，“填充”详细讨论了什么被认为是路径内部。</p>
+<p>在透明成像模型（PDF 1.4）的上下文中，当前剪贴路径限制了对象的形状（见<a href="../../c11/s2/">11.2</a>，“透明度概述”）。有效形状是对象固有形状与剪贴路径的交集；源形状值在此交外界线之外应为0.0。同样，透明度组的形状（定义为其组成对象形状的联合）将受到在绘制每个对象时生效的剪贴路径的影响，以及在组的结果被绘制到其背景上时生效的剪贴路径的影响。</p>
+<p>初始剪贴路径应包括整个页面。剪贴路径操作符（<strong>W</strong> 或 <strong>W</strong>，在<a href="#table61">表61</a>中显示）可能出现在最后一个路径构造操作符之后和终止路径对象的路径绘制操作符之前。尽管剪贴路径操作符出现在绘制操作符之前，但它在出现的地方不会改变剪贴路径。相反，它将修改后续绘制操作符的效果。在路径被绘制之后，图形状态中的剪贴路径应设置为当前剪贴路径与新构建路径的交集。</p>
+<p><table id="table61" markdown="span">
+    <caption><strong>Table 61 – 剪贴路径操作符</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>操作数</strong></th>
+            <th><strong>操作符</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>—</td>
+            <td><strong>W</strong></td>
+            <td>通过使用非零绕组数规则确定哪些区域位于剪贴路径内，将当前剪贴路径与当前路径相交，从而修改当前剪贴路径。
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>W*</strong></td>
+            <td>通过使用偶数-奇数规则确定哪些区域位于剪贴路径内，将当前剪贴路径与当前路径相交，从而修改当前剪贴路径。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>除了路径对象外，文本对象也可以用于剪贴；见<a href="../../c9/s3/#936-文本渲染模式">9.3.6</a>，“文本渲染模式”。</p>
+</div>
+<p><strong>n</strong> 操作符（见<a href="#table60">表60</a>）是一个无效的路径绘制操作符；它不会导致在页面上放置任何标记，但可以与剪贴路径操作符一起使用来建立一个新的剪贴路径。也就是说，在构建路径之后，W n序列将该路径与当前剪贴路径相交，并建立一个新的剪贴路径。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>没有办法扩大当前剪贴路径或设置一个不参考当前剪贴路径的新剪贴路径。然而，由于剪贴路径是图形状态的一部分，其效果可以通过在一对<strong>q</strong>和<strong>Q</strong>操作符（见<a href="../s4/#842-图形状态栈">8.4.2</a>，“图形状态栈”）之间包围剪贴路径的修改和这些对象的绘制来限定到特定的图形对象。执行<strong>Q</strong>操作符会导致剪贴路径恢复到在剪贴路径被修改之前由<strong>q</strong>操作符保存的值。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The graphics state shall contain a <em>current clipping path</em> that limits the regions of the page affected by painting operators. The closed subpaths of this path shall define the area that can be painted. Marks falling inside this area shall be applied to the page; those falling outside it shall not be. Sub-clause [8.5.3.3], "Filling" discusses precisely what shall be considered to be inside a path.</p>
+<p>In the context of the transparent imaging model (PDF 1.4), the current clipping path constrains an object’s shape (see <a href="../../c11/s2/">11.2</a>, "Overview of Transparency"). The effective shape is the intersection of the object’s intrinsic shape with the clipping path; the source shape value shall be 0.0 outside this intersection. Similarly, the shape of a transparency group (defined as the union of the shapes of its constituent objects) shall be influenced both by the clipping path in effect when each of the objects is painted and by the one in effect at the time the group’s results are painted onto its backdrop.</p>
+<p>The initial clipping path shall include the entire page. A clipping path operator (<strong>W</strong> or <strong>W*</strong>, shown in <a href="#table61">Table 61</a>) may appear after the last path construction operator and before the path-painting operator that terminates a path object. Although the clipping path operator appears before the painting operator, it shall not alter the clipping path at the point where it appears. Rather, it shall modify the effect of the succeeding painting operator. <em>After</em> the path has been painted, the clipping path in the graphics state shall be set to the intersection of the current clipping path and the newly constructed path.</p>
+<p><table id="table61" markdown="span">
+    <caption><strong>Table 61 – Clipping Path Operators</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>—</td>
+            <td><strong>W</strong></td>
+            <td>Modify the current clipping path by intersecting it with the current path, using the nonzero winding number rule to determine which regions lie inside the clipping path.
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>W*</strong></td>
+            <td>Modify the current clipping path by intersecting it with the current path, using the even-odd rule to determine which regions lie inside the clipping path.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>In addition to path objects, text objects may also be used for clipping; see <a href="../../c9/s3/#936-文本渲染模式">9.3.6</a>, "Text Rendering Mode".</p>
+</div>
+<p>The <strong>n</strong> operator (see <a href="#table60">Table 60</a>) is a no-op path-painting operator; it shall cause no marks to be placed on the page, but can be used with a clipping path operator to establish a new clipping path. That is, after a path has been constructed, the sequence W n shall intersect that path with the current clipping path and shall establish a new clipping path.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>There is no way to enlarge the current clipping path or to set a new clipping path without reference to the current one. However, since the clipping path is part of the graphics state, its effect can be localized to specific graphics objects by enclosing the modification of the clipping path and the painting of those objects between a pair of <strong>q</strong> and <strong>Q</strong> operators (see <a href="../s4/#842-图形状态栈">8.4.2</a>, "Graphics State Stack"). Execution of the <strong>Q</strong> operator causes the clipping path to revert to the value that was saved by the <strong>q</strong> operator before the clipping path was modified.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

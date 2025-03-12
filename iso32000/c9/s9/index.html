@@ -1,0 +1,1805 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s8/">
+      
+      
+        <link rel="next" href="../s10/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>9.9 嵌入式字体程序 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#99-嵌入式字体程序" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9.9 嵌入式字体程序
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            9文本
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.2 字体的组织和使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.3 文本状态参数和操作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.4 文本对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.5 字体数据结构简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.6 简单字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.7 组合字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.8 字体描述符
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    9.9 嵌入式字体程序
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.10 文本内容提取
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="99-嵌入式字体程序">9.9 嵌入式字体程序<a class="headerlink" href="#99-嵌入式字体程序" title="Permanent link">&para;</a></h1>
+<p><strong>9.9 Embedded Font Programs</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>字体程序可以作为数据嵌入到PDF文件中的PDF流对象中。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>这种流对象也称为<em>字体文件</em>，这是为了类比与来自符合规范的写入者之外的外部源的字体程序。</p>
+</div>
+<p>字体程序受版权保护，版权持有者可以对字体程序的使用施加条件。这些权限要么记录在字体程序中，要么作为单独许可证的一部分。一个条件可能是禁止嵌入字体程序，在这种情况下，它不应被纳入PDF文件。字体程序可能允许仅用于查看和打印文档，但不能用于创建使用该字体的新文本或修改文本（无论是在同一文档还是其他文档中）。后者的操作需要执行操作的用户拥有该字体程序的许可副本，而不是从PDF文件中提取的副本。如果没有明确的相反信息，嵌入的字体程序应仅用于查看和打印文档，不得用于任何其他用途。</p>
+<p><a href="#table126">表格126</a>总结了字体程序应如何嵌入PDF文件，具体取决于字体程序的表示形式。键应是字体描述符中用于引用字体文件流的名称；如果存在，子类型应是字体文件流字典中<strong>Subtype</strong>键的值。具体字体程序表示形式的更多细节见下文。</p>
+<p><table id="table126" markdown="span">
+    <caption><strong>表格126 – 不同字体类型的嵌入字体组织</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>子类型</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>FontFile</strong></td>
+            <td>—</td>
+            <td>Type 1字体程序，以<em>Adobe Type 1字体格式</em>中描述的原始（非紧凑）格式表示。此条目可能出现在<strong>Type1</strong>或<strong>MMType1</strong>字体字典的字体描述符中。</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile2</strong></td>
+            <td>—</td>
+            <td>（PDF 1.1）TrueType字体程序，按照TrueType参考手册中的描述。此条目可能出现在<strong>TrueType</strong>字体字典或（PDF 1.3）<strong>CIDFontType2</strong> CIDFont字典的字体描述符中。</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile3</strong></td>
+            <td><strong>Type1C</strong></td>
+            <td>（PDF 1.2）Type 1等效字体程序，采用紧凑字体格式（CFF）表示，按照Adobe技术笔记#5176，<em>紧凑字体格式规范</em>中的描述。此条目可能出现在<strong>Type1</strong>或<strong>MMType1</strong>字体字典的字体描述符中。</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile3</strong></td>
+            <td><strong>CIDFontType0C</strong></td>
+            <td>（PDF 1.3）Type 0 CIDFont程序，以紧凑字体格式（CFF）表示，按照Adobe技术笔记#5176，<em>紧凑字体格式规范</em>中的描述。此条目可能出现在<strong>CIDFontType0</strong> CIDFont字典的字体描述符中。</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile3</strong></td>
+            <td><strong>OpenType</strong></td>
+            <td>
+            （PDF 1.6）OpenType®字体程序，按照<em>OpenType规范v.1.4</em>（见参考书目）中的描述。OpenType是TrueType的扩展，允许包含使用紧凑字体格式（CFF）的字体程序。<br/>
+            一个具有<strong>OpenType</strong>子类型的<strong>FontFile3</strong>条目可能出现在以下类型的字体字典的字体描述符中：<br/></p>
+<ul>
+<li><strong>TrueType</strong>字体字典或<strong>CIDFontType2</strong> CIDFont字典，如果嵌入的字体程序包含“glyf”表。除了“glyf”表外，字体程序还必须包含以下表： “head”、 “hhea”、 “hmtx”、 “loca”和“maxp”。如果字体指令要求，还必须包括“cvt ”（注意尾部空格）、 “fpgm”和“prep”表。</li>
+<li><strong>CIDFontType0</strong> CIDFont字典，如果嵌入的字体程序包含一个“CFF ”表（注意尾部空格），且其Top DICT使用CIDFont操作符（这等同于子类型<strong>CIDFontType0C</strong>）。除了“CFF ”表外，字体程序还必须包含“cmap”表。</li>
+<li><strong>Type1</strong>字体字典或<strong>CIDFontType0</strong> CIDFont字典，如果嵌入的字体程序包含没有CIDFont操作符的“CFF ”表。除了“CFF ”表外，字体程序还必须包含“cmap”表。<br/></li>
+</ul>
+<p><em>OpenType规范</em>描述了一组必需的表格；然而，并非所有表格都在字体文件中是必需的，如每种字体字典中可以包含此条目的情况所描述。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>某些可选表格（如用于高级行布局的表格）的缺失可能会阻止编辑包含该字体的文本。
+        </td>
+    </tr>
+</tbody></p>
+</div>
+</table>
+<p>字体文件的流字典应包含流的正常条目，如<strong>Length</strong>和<strong>Filter</strong>（见<a href="../../c7/s3/#table5">表格5</a>），以及表127中列出的附加条目。</p>
+<p><table id="table127" markdown="span">
+    <caption><strong>表格127 – 嵌入字体流字典中的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Length1</strong></td>
+            <td>整数</td>
+            <td>(<em>适用于Type 1和TrueType字体</em>) Type 1字体程序的明文部分的字节长度，或整个TrueType字体程序的字节长度，前提是它已使用流的<strong>Filter</strong>条目（如果有）指定的过滤器解码。</td>
+        </tr>
+        <tr>
+            <td><strong>Length2</strong></td>
+            <td>整数</td>
+            <td>(<em>适用于Type 1字体</em>) Type 1字体程序的加密部分的字节长度，前提是它已使用流的<strong>Filter</strong>条目指定的过滤器解码。</td>
+        </tr>
+        <tr>
+            <td><strong>Length3</strong></td>
+            <td>整数</td>
+            <td>(<em>适用于Type 1字体</em>) Type 1字体程序的固定内容部分的字节长度，前提是它已使用流的<strong>Filter</strong>条目指定的过滤器解码。如果<strong>Length3</strong>为0，则表示<strong>FontFile</strong>字体程序中未包含512个零和<strong>cleartomark</strong>操作符，这些内容应由符合规范的读取器添加。</td>
+        </tr>
+        <tr>
+            <td><strong>Subtype</strong></td>
+            <td>名称</td>
+            <td>(<em>如果引用自</em><em>FontFile3</em><em>，则为必需；PDF 1.2</em>) 一个名称，指定嵌入字体程序的格式。该名称应为<strong>Type1C</strong>（表示Type 1紧凑字体）、<strong>CIDFontType0C</strong>（表示Type 0紧凑CIDFont），或<strong>OpenType</strong>（表示OpenType字体）。</td>
+        </tr>
+        <tr>
+            <td><strong>Metadata</strong></td>
+            <td>流</td>
+            <td>(<em>可选；PDF 1.4</em>) 一个元数据流，包含嵌入字体程序的元数据（见<a href="../../c14/s3/#1432-元数据流">14.3.2</a>，“元数据流”）。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>标准的Type 1字体程序，按照<em>Adobe Type 1字体格式</em>规范的描述，包含三个部分：明文部分（使用PostScript语法编写）、加密部分和固定内容部分。固定内容部分包含512个ASCII零，后面是<strong>cleartomark</strong>操作符，可能还会跟随其他数据。尽管标准Type 1字体的加密部分可以是二进制格式或ASCII十六进制格式，PDF仅支持二进制格式。然而，整个字体程序可以使用任何过滤器进行编码。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<p>下面的代码展示了一个嵌入的标准Type 1字体的结构。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>12 0 obj
+    &lt;&lt;  /Filter /ASCII85Decode
+        /Length 41116
+        /Length1 2526
+        /Length2 32393
+        /Length3 570
+    &gt;&gt;
+stream
+,p&gt;`rDKJj&#39;E+LaU0eP.@+AH9dBOu<span style="color: #BA2121">$</span><span style="color: #008000">hFD</span><span style="color: #666">55</span><span style="color: #008000">nC</span>
+<span style="color: #008000">… 省略数据 …</span>
+<span style="color: #008000">JJQ&amp;Nt&#39;</span><span style="color: #666">)</span><span style="color: #008000">&lt;</span><span style="color: #666">=</span><span style="color: #008000">^p&amp;mGf</span><span style="color: #666">(</span><span style="color: #3D7B7B; font-style: italic">%:%h1%9c//K(/*o=.C&gt;UXkbVGTrr~&gt;</span>
+<span style="color: #008000">endstream</span>
+<span style="color: #008000">endobj</span>
+</code></pre></div>
+</div>
+<p>正如在<a href="#table126">表格126</a>中所述，Type 1等效字体程序或Type 0 CIDFont程序可以采用紧凑字体格式（CFF）表示。在这种情况下，<strong>Length1</strong>、<strong>Length2</strong>和<strong>Length3</strong>条目不需要，并且不得存在。尽管CFF允许将多个字体或CIDFont程序打包成一个文件，但PDF中的嵌入式CFF字体文件应只包含一个字体或CIDFont（根据关联的字体字典适用）。</p>
+<p>根据Adobe Type 1字体格式规范，Type 1字体程序可能包含一个<strong><em>PaintType</em></strong>条目，指定字形轮廓是填充还是描边。对于嵌入PDF文件的字体，必须忽略此条目；填充或描边字形轮廓的决定完全由PDF文本渲染模式参数决定（见<a href="../s3/#936-文本渲染模式">9.3.6</a>，“文本渲染模式”）。这也适用于Type 1紧凑字体和Type 0紧凑CIDFonts。</p>
+<p>TrueType字体程序可以作为字体或CIDFont的一部分使用。尽管两种情况的基本字体文件格式相同，但对于字体程序中应包含哪些信息，有不同的要求。以下TrueType表格如果在原始TrueType字体程序中存在，则必须始终存在：“head”、“hhea”、“loca”、“maxp”、“cvt”、“prep”、“glyf”、“hmtx”和“fpgm”。如果与简单字体字典一起使用，字体程序还必须包含一个cmap表，定义一个或多个编码，详见<a href="../s6/#9664-truetype-字体的编码">9.6.6.4</a>，“TrueType字体的编码”。如果与CIDFont字典一起使用，则不需要cmap表，并且不得存在，因为字符代码到字形描述的映射是单独提供的。</p>
+<p>“vhea”和“vmtx”表格指定的垂直度量永远不能被符合规范的读取器使用。指定垂直度量的唯一方法应通过CIDFont字典中的<strong>DW2</strong>和<strong>W2</strong>条目。</p>
+<div class="admonition note">
+<p class="admonition-title">注 3</p>
+<p>从PDF 1.6开始，字体程序可以使用OpenType格式嵌入，这是TrueType格式的扩展，允许包含使用紧凑字体格式（CFF）的字体程序。它还允许包含描述字形替换、字距调整和基线调整的数据。除了渲染字形外，符合规范的读取器还可以使用OpenType字体中的数据进行高级行布局，自动替换连字，为用户提供替代字形的选择，并处理复杂的书写脚本。</p>
+</div>
+<p>符合规范的读取器查找OpenType字体中的字形描述的过程应如下：</p>
+<ul>
+<li>对于使用“CFF”表的Type 1字体，过程应如<a href="../s6/#9662-type-1-字体的编码">9.6.6.2</a>中所述，“Type 1字体的编码”。</li>
+<li>对于使用“glyf”表的TrueType字体，过程应如<a href="../s6/#9664-truetype-字体的编码">9.6.6.4</a>中所述，“TrueType字体的编码”。由于此过程有时会产生模糊结果，符合规范的写入器应使用Type 0字体，并使用Identity-H编码，将字形索引作为字符代码，而不是使用简单字体，详见<a href="../s7/#table118">表格118</a>之后的内容。</li>
+<li>对于使用“CFF”表的<strong>CIDFontType0</strong>字体，过程应如<a href="../s7/#9742-cidfonts-中的字形选择">9.7.4.2</a>中关于嵌入式Type 0 CIDFonts的讨论所述，“CIDFonts中的字形选择”。</li>
+<li>对于使用“glyf”表的<strong>CIDFontType2</strong>字体，过程应如<a href="../s7/#9742-cidfonts-中的字形选择">9.7.4.2</a>中关于嵌入式Type 2 CIDFonts的讨论所述，“CIDFonts中的字形选择”。</li>
+</ul>
+<p>如<a href="../s6/#964-字体子集">9.6.4</a>中所述，“字体子集”，嵌入的字体程序可以仅包含PDF文档中使用的字形子集。这可以通过字体描述符中的<strong>CharSet</strong>或<strong>CIDSet</strong>条目的存在来指示，该条目引用字体文件。</p>
+</div>
+<div class="tabbed-block">
+<p>A font program may be embedded in a PDF file as data contained in a PDF stream object.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Such a stream object is also called a <em>font file</em> by analogy with font programs that are available from sources external to the conforming writer.</p>
+</div>
+<p>Font programs are subject to copyright, and the copyright owner may impose conditions under which a font program may be used. These permissions are recorded either in the font program or as part of a separate license. One of the conditions may be that the font program cannot be embedded, in which case it should not be incorporated into a PDF file. A font program may allow embedding for the sole purpose of viewing and printing the document but not for creating new or modified text that uses the font (in either the same document or other documents). The latter operation would require the user performing the operation to have a licensed copy of the font program, not a copy extracted from the PDF file. In the absence of explicit information to the contrary, embedded font programs shall be used only to view and print the document and not for any other purposes.</p>
+<p><a href="#table126">Table 126</a> summarizes the ways in which font programs shall be embedded in a PDF file, depending on the representation of the font program. The key shall be the name used in the font descriptor to refer to the font file stream; the subtype shall be the value of the <strong>Subtype</strong> key, if present, in the font file stream dictionary. Further details of specific font program representations are given below.</p>
+<p><table id="table126" markdown="span">
+    <caption><strong>Table 126 – Embedded font organization for various font types</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Subtype</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>FontFile</strong></td>
+            <td>—</td>
+            <td>Type 1 font program, in the original (noncompact) format described in <em>Adobe Type 1 Font Format</em>. This entry may appear in the font descriptor for a <strong>Type1</strong> or <strong>MMType1</strong> font dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile2</strong></td>
+            <td>—</td>
+            <td>(PDF 1.1) TrueType font program, as described in the TrueType Reference Manual. This entry may appear in the font descriptor for a <strong>TrueType</strong> font dictionary or (PDF 1.3) for a <strong>CIDFontType2</strong> CIDFont dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile3</strong></td>
+            <td><strong>Type1C</strong></td>
+            <td>(PDF 1.2) Type 1–equivalent font program represented in the Compact Font Format (CFF), as described in Adobe Technical Note #5176, The Compact Font Format Specification. This entry may appear in the font descriptor for a <strong>Type1</strong> or <strong>MMType1</strong> font dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile3</strong></td>
+            <td><strong>CIDFontType0C</strong></td>
+            <td>(PDF 1.3) Type 0 CIDFont program represented in the Compact Font Format (CFF), as described in Adobe Technical Note #5176, <em>The Compact Font Format Specification</em>. This entry may appear in the font descriptor for a <strong>CIDFontType0</strong> CIDFont dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile3</strong></td>
+            <td><strong>OpenType</strong></td>
+            <td>
+            (PDF 1.6) OpenType® font program, as described in the <em>OpenType Specification v.1.4</em> (see the Bibliography). OpenType is an extension of TrueType that allows inclusion of font programs that use the Compact Font Format (CFF).<br/>
+A <strong>FontFile3</strong> entry with an <strong>OpenType</strong> subtype may appear in the font descriptor for these types of font dictionaries:<br/>
+- A <strong>TrueType</strong> font dictionary or a <strong>CIDFontType2</strong> CIDFont dictionary, if the embedded font program contains a “glyf” table. In addition to the “glyf” table, the font program must include these tables: “head”, “hhea”, “hmtx”, “loca”, and “maxp”. The “cvt ” (notice the trailing SPACE), “fpgm”, and “prep” tables must also be included if they are required by the font instructions.
+- A <strong>CIDFontType0</strong> CIDFont dictionary, if the embedded font program contains a “CFF ” table (notice the trailing SPACE) with a Top DICT that uses CIDFont operators (this is equivalent to subtype <strong>CIDFontType0C</strong>). In addition to the “CFF ” table, the font program must include the “cmap” table.
+- A <strong>Type1</strong> font dictionary or <strong>CIDFontType0</strong> CIDFont dictionary, if the embedded font program contains a “CFF ” table without CIDFont operators. In addition to the “CFF ” table, the font program must include the “cmap” table.</p>
+<p>The <em>OpenType Specification</em> describes a set of required tables; however, not all tables are required in the font file, as described for each type of font dictionary that can include this entry.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The absence of some optional tables (such as those used for advanced line layout) may prevent editing of text containing the font.</p>
+</div>
+<p></td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The stream dictionary for a font file shall contain the normal entries for a stream, such as <strong>Length</strong> and <strong>Filter</strong>
+(listed in <a href="../../c7/s3/#table5">Table 5</a>), plus the additional entries listed in Table 127.</p>
+<p><table id="table127" markdown="span">
+    <caption><strong>Table 127 – Additional entries in an embedded font stream dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Length1</strong></td>
+            <td>integer</td>
+            <td>(<em>Required for Type 1 and TrueType fonts</em>) The length in bytes of the clear-text portion of the Type 1 font program, or the entire TrueType font program, after it has been decoded using the filters specified by the stream’s <strong>Filter</strong> entry, if any.</td>
+        </tr>
+        <tr>
+            <td><strong>Length2</strong></td>
+            <td>integer</td>
+            <td>(<em>Required for Type 1 fonts</em>) The length in bytes of the encrypted portion of the Type 1 font program after it has been decoded using the filters specified by the stream’s <strong>Filter</strong> entry.</td>
+        </tr>
+        <tr>
+            <td><strong>Length3</strong></td>
+            <td>integer</td>
+            <td>(<em>Required for Type 1 fonts</em>) The length in bytes of the fixed-content portion of the Type 1 font program after it has been decoded using the filters specified by the stream’s <strong>Filter</strong> entry. If <strong>Length3</strong> is 0, it indicates that the 512 zeros and <strong>cleartomark</strong> have not been included in the <strong>FontFile</strong> font program and shall be added by the conforming reader.</td>
+        </tr>
+        <tr>
+            <td><strong>Subtype</strong></td>
+            <td>name</td>
+            <td>(<em>Required if referenced from </em><em>FontFile3</em><em>; PDF 1.2</em>) A name specifying the format of the embedded font program. The name shall be <strong>Type1C</strong> for Type 1 compact fonts, <strong>CIDFontType0C</strong> for Type 0 compact CIDFonts, or <strong>OpenType</strong> for OpenType fonts.</td>
+        </tr>
+        <tr>
+            <td><strong>Metadata</strong></td>
+            <td>stream</td>
+            <td>(<em>Optional; PDF 1.4</em>) A metadata stream containing metadata for the embedded font program (see <a href="../../c14/s3/#1432-元数据流">14.3.2</a>, "Metadata Streams").</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>A standard Type 1 font program, as described in the <em>Adobe Type 1 Font Format</em> specification, consists of three parts: a clear-text portion (written using PostScript syntax), an encrypted portion, and a fixed-content portion. The fixed-content portion contains 512 ASCII zeros followed by a <strong>cleartomark</strong> operator, and perhaps followed by additional data. Although the encrypted portion of a standard Type 1 font may be in binary or ASCII hexadecimal format, PDF supports only the binary format. However, the entire font program may be encoded using any filters.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>This code shows the structure of an embedded standard Type 1 font.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>12 0 obj
+    &lt;&lt;  /Filter /ASCII85Decode
+        /Length 41116
+        /Length1 2526
+        /Length2 32393
+        /Length3 570
+    &gt;&gt;
+stream
+,p&gt;`rDKJj&#39;E+LaU0eP.@+AH9dBOu<span style="color: #BA2121">$</span><span style="color: #008000">hFD</span><span style="color: #666">55</span><span style="color: #008000">nC</span>
+<span style="color: #008000">… Omitted data …</span>
+<span style="color: #008000">JJQ&amp;Nt&#39;</span><span style="color: #666">)</span><span style="color: #008000">&lt;</span><span style="color: #666">=</span><span style="color: #008000">^p&amp;mGf</span><span style="color: #666">(</span><span style="color: #3D7B7B; font-style: italic">%:%h1%9c//K(/*o=.C&gt;UXkbVGTrr~&gt;</span>
+<span style="color: #008000">endstream</span>
+<span style="color: #008000">endobj</span>
+</code></pre></div>
+</div>
+<p>As noted in <a href="#table126">Table 126</a>, a Type 1–equivalent font program or a Type 0 CIDFont program may be represented in the Compact Font Format (CFF). The <strong>Length1</strong>, <strong>Length2</strong>, and <strong>Length3</strong> entries are not needed in that case and shall not be present. Although CFF enables multiple font or CIDFont programs to be bundled together in a single file, an embedded CFF font file in PDF shall consist of exactly one font or CIDFont (as appropriate for the associated font dictionary).</p>
+<p>According to the Adobe Type 1 Font Format specification, a Type 1 font program may contain a <strong><em>PaintType</em></strong> entry specifying whether the glyphs’ outlines are to be filled or stroked. For fonts embedded in a PDF file, this entry shall be ignored; the decision whether to fill or stroke glyph outlines is entirely determined by the PDF text rendering mode parameter (see <a href="../s3/#936-文本渲染模式">9.3.6</a>, "Text Rendering Mode"). This shall also applies to Type 1 compact fonts and Type 0 compact CIDFonts.</p>
+<p>A TrueType font program may be used as part of either a font or a CIDFont. Although the basic font file format is the same in both cases, there are different requirements for what information shall be present in the font program. These TrueType tables shall always be present if present in the original TrueType font program: “head”, “hhea”, “loca”, “maxp”, “cvt”, “prep”, “glyf”, “hmtx”, and “fpgm”. If used with a simple font dictionary, the font program shall additionally contain a cmap table defining one or more encodings, as discussed in <a href="../s6/#9664-truetype-字体的编码">9.6.6.4</a>, "Encodings for TrueType Fonts". If used with a CIDFont dictionary, the cmap table is not needed and shall not be present, since the mapping from character codes to glyph descriptions is provided separately.</p>
+<p>The “vhea” and “vmtx” tables that specify vertical metrics shall never be used by a conforming reader. The only way to specify vertical metrics in PDF shall be by means of the <strong>DW2</strong> and <strong>W2</strong> entries in a CIDFont dictionary.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>Beginning with PDF 1.6, font programs may be embedded using the OpenType format, which is an extension of the TrueType format that allows inclusion of font programs using the Compact Font Format (CFF). It also allows inclusion of data to describe glyph substitutions, kerning, and baseline adjustments. In addition to rendering glyphs, conforming readers may use the data in OpenType fonts to do advanced line layout, automatically substitute ligatures, provide selections of alternate glyphs to users, and handle complex writing scripts.</p>
+</div>
+<p>The process of finding glyph descriptions in OpenType fonts by a conforming reader shall be the following:</p>
+<ul>
+<li>For Type 1 fonts using “CFF” tables, the process shall be as described in <a href="../s6/#9662-type-1-字体的编码">9.6.6.2</a>, "Encodings for Type 1 Fonts".</li>
+<li>For TrueType fonts using “glyf” tables, the process shall be as described in <a href="../s6/#9664-truetype-字体的编码">9.6.6.4</a>, "Encodings for TrueType Fonts". Since this process sometimes produces ambiguous results, conforming writers, instead of using a simple font, shall use a Type 0 font with an Identity-H encoding and use the glyph indices as character codes, as described following <a href="../s7/#table118">Table 118</a>.</li>
+<li>For <strong>CIDFontType0</strong> fonts using “CFF” tables, the process shall be as described in the discussion of embedded Type 0 CIDFonts in <a href="../s7/#9742-cidfonts-中的字形选择">9.7.4.2</a>, "Glyph Selection in CIDFonts".</li>
+<li>For <strong>CIDFontType2</strong> fonts using “glyf” tables, the process shall be as described in the discussion of embedded Type 2 CIDFonts in <a href="../s7/#9742-cidfonts-中的字形选择">9.7.4.2</a>, "Glyph Selection in CIDFonts".</li>
+</ul>
+<p>As discussed in <a href="../s6/#964-字体子集">9.6.4</a>, "Font Subsets", an embedded font program may contain only the subset of glyphs that are used in the PDF document. This may be indicated by the presence of a <strong>CharSet</strong> or <strong>CIDSet</strong> entry in the font descriptor that refers to the font file.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月5日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

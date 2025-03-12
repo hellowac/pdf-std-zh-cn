@@ -1,0 +1,2950 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s10/">
+      
+      
+        <link rel="next" href="../../a1/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>14.11 印前支持 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1411-印前支持" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              14.11 印前支持
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            14文档交换
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.2 程序集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.3 元数据
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.4 文件标识符
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.5 页面-片段字典
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.6 标记内容
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.7 逻辑结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.8 标签化 PDF
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.9 无障碍支持
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.10 网页捕获
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    14.11 印前支持
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    14.11 印前支持
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#14111-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14112-页面边界" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.2 页面边界
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.11.2 页面边界">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141121-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.2.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#141122-页面边界的显示" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.2.2 页面边界的显示
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14113-印刷标记" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.3 印刷标记
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14114-分色字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.4 分色字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14115-输出意图" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.5 输出意图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14116-陷印支持" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.6 陷印支持
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.11.6 陷印支持">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141161-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.6.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#141162-陷印网络注释" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.6.2 陷印网络注释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#141163-陷印网络外观" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.6.3 陷印网络外观
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14117-开放印前接口-opi" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.7 开放印前接口 (OPI)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#14111-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14112-页面边界" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.2 页面边界
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.11.2 页面边界">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141121-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.2.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#141122-页面边界的显示" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.2.2 页面边界的显示
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14113-印刷标记" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.3 印刷标记
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14114-分色字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.4 分色字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14115-输出意图" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.5 输出意图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14116-陷印支持" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.6 陷印支持
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.11.6 陷印支持">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141161-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.6.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#141162-陷印网络注释" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.6.2 陷印网络注释
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#141163-陷印网络外观" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.6.3 陷印网络外观
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14117-开放印前接口-opi" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.11.7 开放印前接口 (OPI)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="1411-印前支持">14.11 印前支持<a class="headerlink" href="#1411-印前支持" title="Permanent link">&para;</a></h1>
+<p><strong>14.11 Prepress Support</strong></p>
+<h2 id="14111-概述">14.11.1 概述<a class="headerlink" href="#14111-概述" title="Permanent link">&para;</a></h2>
+<p><strong>14.11.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本子条款描述了支持印前生产工作流程的 PDF 特性：</p>
+<ul>
+<li>页面 <em>边界</em> 的指定，涉及印前过程中的各个方面，如裁剪、出血和修剪（<a href="#14112-页面边界">14.11.2</a>，"页面边界"）</li>
+<li>包含 <em>打印标记</em> 的设施，如注册目标、灰度渐变、色条和切割标记，帮助生产过程（<a href="#14113-印刷标记">14.11.3</a>，"打印标记"）</li>
+<li>为文档中的页面生成 <em>颜色</em> 分色信息（<a href="#14114-分色字典">14.11.4</a>，"分色字典"）</li>
+<li>用于匹配文档的颜色特征与目标输出设备或生产环境的 <em>输出意图</em>（<a href="#14115-输出意图">14.11.5</a>，"输出意图"）</li>
+<li>支持生成 <em>色彩陷阱</em>，以最小化多个色彩之间错位的视觉效果（<a href="#14116-陷印支持">14.11.6</a>，"色彩陷阱支持"）</li>
+<li>开放印前接口（OPI），用于为高分辨率图像创建低分辨率代理（<a href="#14117-开放印前接口-opi">14.11.7</a>，"开放印前接口（OPI）"）</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>This sub-clause describes features of PDF that support prepress production workflows:</p>
+<ul>
+<li>The specification of page <em>boundaries</em> governing various aspects of the prepress process, such as cropping, bleed, and trimming (<a href="#14112-页面边界">14.11.2</a>, “Page Boundaries”)</li>
+<li>Facilities for including <em>printer’s marks</em>, such as registration targets, gray ramps, colour bars, and cut marks to assist in the production process (<a href="#14113-印刷标记">14.11.3</a>, “Printer’s Marks”)</li>
+<li>Information for generating <em>colour</em> separations for pages in a document (<a href="#14114-分色字典">14.11.4</a>, “Separation Dictionaries”)</li>
+<li><em>Output intents</em> for matching the colour characteristics of a document with those of a target output device or production environment in which it will be printed (<a href="#14115-输出意图">14.11.5</a>, “Output Intents”)</li>
+<li>Support for the generation of traps to minimize the visual effects of misregistration between multiple colorants (<a href="#14116-陷印支持">14.11.6</a>, “Trapping Support”)</li>
+<li>The Open Prepress Interface (OPI) for creating low-resolution proxies for high-resolution images (<a href="#14117-开放印前接口-opi">14.11.7</a>, “Open Prepress Interface (OPI)”)</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="14112-页面边界">14.11.2 页面边界<a class="headerlink" href="#14112-页面边界" title="Permanent link">&para;</a></h2>
+<p><strong>14.11.2 Page Boundaries</strong></p>
+<h3 id="141121-概述">14.11.2.1 概述<a class="headerlink" href="#141121-概述" title="Permanent link">&para;</a></h3>
+<p><strong>14.11.2.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF 页面可以为成品介质（如纸张）或作为印前过程的一部分进行准备，其中页面的内容被放置在中介介质上（如胶片或加版复制板）。在后一种情况下，区分中介页面和成品页面非常重要。中介页面通常包含额外的与生产相关的内容，如出血或打印标记，这些内容超出了成品页面的边界。为处理此类情况，PDF 页面可以定义多达五个独立的边界，以控制成像过程的各个方面：</p>
+<ul>
+<li><em>媒体框</em> 定义了页面要打印的物理介质的边界。它可能包括围绕成品页面的任何扩展区域，如出血、打印标记或其他类似的用途。它还可能包括接近介质边缘的区域，这些区域由于输出设备的物理限制不能被标记。落在此边界之外的内容可以安全地丢弃，而不影响 PDF 文件的含义。</li>
+<li><em>裁剪框</em> 定义了页面内容在显示或打印时应被裁剪的区域。与其他框不同，裁剪框没有定义的物理页面几何形状或预期用途；它仅仅对页面内容进行裁剪。然而，在没有附加信息（如 JDF 或 PJTF 作业票证中指定的排版指令）的情况下，裁剪框决定了页面内容如何在输出介质上定位。默认值为页面的媒体框。</li>
+<li><em>出血框</em>（PDF 1.3）定义了页面内容在生产环境中输出时应被裁剪的区域。这可能包括为适应切割、折叠和修剪设备的物理限制而需要的额外出血区域。实际打印的页面可能包括落在出血框之外的打印标记。默认值为页面的裁剪框。</li>
+<li><em>修剪框</em>（PDF 1.3）定义了成品页面修剪后的预期尺寸。它可能比媒体框小，以便容纳与生产相关的内容，如打印指令、切割标记或色条。默认值为页面的裁剪框。</li>
+<li><em>艺术框</em>（PDF 1.3）定义了页面的有意义内容的范围（包括潜在的空白区域），这是页面创建者预期的。默认值为页面的裁剪框。</li>
+</ul>
+<p>页面对象字典在 <strong>MediaBox</strong>、<strong>CropBox</strong>、<strong>BleedBox</strong>、<strong>TrimBox</strong> 和 <strong>ArtBox</strong> 条目中分别指定这些边界（见 <a href="../../c7/s7/#table30">Table 30</a>）。它们都是以默认用户空间单位表示的矩形。裁剪框、出血框、修剪框和艺术框通常不应超出媒体框的边界。如果它们超出，实际上它们将被缩减到与媒体框的交集。图 86 说明了这些边界之间的关系。（图中未显示裁剪框，因为它与其他边界没有定义的关系。）</p>
+<div class="admonition note">
+<p class="admonition-title">注意 1</p>
+<p>各种边界的使用方式取决于页面的用途。以下是典型的用途：</p>
+</div>
+<p><em>将页面内容放置在另一个应用程序中</em>：艺术框决定了要放置在应用程序中的内容边界。根据适用的使用惯例，放置的内容可能会被裁剪到艺术框或出血框。例如，要放置在杂志页面上的四分之一页面广告，可能会在广告面对页面中间的两侧裁剪到艺术框，而在两侧超出页面边缘的部分裁剪到出血框。媒体框和修剪框被忽略。</p>
+<p><em>打印成品页面</em>：这种情况典型地适用于桌面或共享页面打印机，其中页面内容直接定位在最终的输出介质上。艺术框和出血框被忽略。媒体框可用作选择适当尺寸介质的建议。裁剪框和修剪框（如果存在）应与媒体框相同。</p>
+<p><em>打印用于印前过程的中介页面</em>：艺术框被忽略。出血框定义了要成像的内容边界。修剪框指定了内容在介质上的定位；它也可以用于生成出血框之外的切割或折叠标记。位于媒体框内但超出出血框的内容，可能会或可能不会被成像，具体取决于所使用的生产过程。</p>
+<p><em>在印刷版纸上构建多页面排版</em>：艺术框被忽略。出血框定义了要成像的内容的裁剪边界；超出出血框的内容被忽略。修剪框指定了页面内容在排版中的定位。通常会为整个排版生成切割和折叠标记。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 2</p>
+<p>在上述场景中，解释出血框、修剪框和艺术框的应用程序通常会修改裁剪框，以强加这些框规定的裁剪。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A PDF page may be prepared either for a finished medium, such as a sheet of paper, or as part of a prepress process in which the content of the page is placed on an intermediate medium, such as film or an imposed reproduction plate. In the latter case, it is important to distinguish between the intermediate page and the finished page. The intermediate page may often include additional production-related content, such as bleeds or printer marks, that falls outside the boundaries of the finished page. To handle such cases, a PDF page may define as many as five separate boundaries to control various aspects of the imaging process:</p>
+<ul>
+<li>The <em>media box</em> defines the boundaries of the physical medium on which the page is to be printed. It may include any extended area surrounding the finished page for bleed, printing marks, or other such purposes. It may also include areas close to the edges of the medium that cannot be marked because of physical limitations of the output device. Content falling outside this boundary may safely be discarded without affecting the meaning of the PDF file.</li>
+<li>The <em>crop box</em> defines the region to which the contents of the page shall be clipped (cropped) when displayed or printed. Unlike the other boxes, the crop box has no defined meaning in terms of physical page geometry or intended use; it merely imposes clipping on the page contents. However, in the absence of additional information (such as imposition instructions specified in a JDF or PJTF job ticket), the crop box determines how the page’s contents shall be positioned on the output medium. The default value is the page’s media box.</li>
+<li>The <em>bleed box</em> (PDF 1.3) defines the region to which the contents of the page shall be clipped when output in a production environment. This may include any extra bleed area needed to accommodate the physical limitations of cutting, folding, and trimming equipment. The actual printed page may include printing marks that fall outside the bleed box. The default value is the page’s crop box.</li>
+<li>The <em>trim box</em> (PDF 1.3) defines the intended dimensions of the finished page after trimming. It may be smaller than the media box to allow for production-related content, such as printing instructions, cut marks, or colour bars. The default value is the page’s crop box.</li>
+<li>The <em>art box</em> (PDF 1.3) defines the extent of the page’s meaningful content (including potential white space) as intended by the page’s creator. The default value is the page’s crop box.</li>
+</ul>
+<p>The page object dictionary specifies these boundaries in the <strong>MediaBox</strong>, <strong>CropBox</strong>, <strong>BleedBox</strong>, <strong>TrimBox</strong>, and <strong>ArtBox</strong> entries, respectively (see <a href="../../c7/s7/#table30">Table 30</a>). All of them are rectangles expressed in default user space units. The crop, bleed, trim, and art boxes shall not ordinarily extend beyond the boundaries of the media box. If they do, they are effectively reduced to their intersection with the media box. Figure 86 illustrates the relationships among these boundaries. (The crop box is not shown in the figure because it has no defined relationship with any of the other boundaries.)</p>
+<p><a class="glightbox" href="../imgs/f86.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="imag" src="../imgs/f86.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>How the various boundaries are used depends on the purpose to which the page is being put. The following are typical purposes:</p>
+</div>
+<p><em>Placing the content of a page in another application</em>. The art box determines the boundary of the content that is to be placed in the application. Depending on the applicable usage conventions, the placed content may be clipped to either the art box or the bleed box. For example, a quarter-page advertisement to be placed on a magazine page might be clipped to the art box on the two sides of the ad that face into the middle of the page and to the bleed box on the two sides that bleed over the edge of the page. The media box and trim box are ignored.</p>
+<p><em>Printing a finished page</em>. This case is typical of desktop or shared page printers, in which the page content is positioned directly on the final output medium. The art box and bleed box are ignored. The media box may be used as advice for selecting media of the appropriate size. The crop box and trim box, if present, should be the same as the media box.</p>
+<p><em>Printing an intermediate page for use in a prepress process</em>. The art box is ignored. The bleed box defines the boundary of the content to be imaged. The trim box specifies the positioning of the content on the medium; it may also be used to generate cut or fold marks outside the bleed box. Content falling within the media box but outside the bleed box may or may not be imaged, depending on the specific production process being used.</p>
+<p><em>Building an imposition of multiple pages on a press sheet</em>. The art box is ignored. The bleed box defines the clipping boundary of the content to be imaged; content outside the bleed box is ignored. The trim box specifies the positioning of the page’s content within the imposition. Cut and fold marks are typically generated for the imposition as a whole.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>In the preceding scenarios, an application that interprets the bleed, trim, and art boxes for some purpose typically alters the crop box so as to impose the clipping that those boxes prescribe.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="141122-页面边界的显示">14.11.2.2 页面边界的显示<a class="headerlink" href="#141122-页面边界的显示" title="Permanent link">&para;</a></h3>
+<p><strong>14.11.2.2 Display of Page Boundaries</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>符合规范的阅读器可能提供在屏幕上显示各种页面边界的指南的功能。页面对象中的可选 <strong>BoxColorInfo</strong> 条目（见 <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>，"页面对象"）包含一个 <em>框颜色信息字典</em>（PDF 1.4），该字典指定用于显示这些边界的颜色和其他视觉特性。符合规范的阅读器通常提供用户界面，允许用户交互式地设置这些特性。</p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>这些信息是页面特定的，可能在不同的页面之间有所不同。</p>
+</div>
+<p>如<a href="#table360">表 360</a>所示，框颜色信息字典包含除媒体框外的每个可能页面边界的可选条目。每个条目的值是一个框样式字典，其内容如<a href="#table361">表 361</a>所示。如果某个条目缺失，符合规范的阅读器应使用其当前的默认设置。</p>
+</div>
+<div class="tabbed-block">
+<p>Conforming readers may offer the ability to display guidelines on the screen for the various page boundaries. The optional <strong>BoxColorInfo</strong> entry in a page object (see <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>, “Page Objects”) holds a <em>box colour information dictionary</em> (PDF 1.4) specifying the colours and other visual characteristics to be used for such display. Conforming readers typically provide a user interface to allow the user to set these characteristics interactively.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>This information is page-specific and may vary from one page to another.</p>
+</div>
+<p>As shown in <a href="#table360">Table 360</a>, the box colour information dictionary contains an optional entry for each of the possible page boundaries other than the media box. The value of each entry is a box style dictionary, whose contents are shown in <a href="#table361">Table 361</a>. If a given entry is absent, the conforming reader shall use its own current default settings instead.</p>
+</div>
+</div>
+</div>
+<h2 id="14113-印刷标记">14.11.3 印刷标记<a class="headerlink" href="#14113-印刷标记" title="Permanent link">&para;</a></h2>
+<p><strong>14.11.3 Printer’s Marks</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>打印标记</em> 是添加到页面上的图形符号或文本，帮助生产人员识别多板作业的组成部分，并保持生产过程中输出的一致性。印刷行业常用的示例如下：</p>
+<ul>
+<li>用于对准版面的注册目标</li>
+<li>用于测量颜色和油墨密度的灰度渐变和色条</li>
+<li>显示输出介质修剪位置的切割标记</li>
+</ul>
+<p>尽管符合标准的写作人员传统上将这些标记包含在文档的内容流中，但它们在逻辑上与页面的实际内容是分开的，通常出现在定义页面内容范围的边界（裁剪框、修剪框和艺术框）之外（见<a href="#14112-页面边界">14.11.2</a>，“页面边界”）。</p>
+<p><em>打印标记注释</em>（PDF 1.4）提供了一种将打印标记合并到PDF页面表示中的机制，同时将它们与实际页面内容分开。在PDF文档的每一页中，可以包含任意数量的此类注释，每个注释代表一个单独的打印标记。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 1</p>
+<p>由于打印标记通常位于页面内容边界之外，因此每个标记都表示为单独的注释。否则——例如，如果页面四个角的切割标记在单个注释中定义——注释矩形将涵盖页面的全部内容，并可能干扰用户选择内容或与页面上的其他注释交互。将打印标记定义为单独的注释还便于实现一个拖放用户界面来指定它们。</p>
+</div>
+<p><table id="table360" markdown="span">
+    <caption><strong>表 360 – 框颜色信息字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>CropBox</td> <td>字典 </td> <td>（可选）框样式字典（见<a href="#table361">表 361</a>），指定显示页面裁剪框的指南线的视觉特征。如果页面对象未定义裁剪框，则忽略此条目。</td></tr>
+        <tr><td>BleedBox</td> <td>字典 </td> <td>（可选）框样式字典（见<a href="#table361">表 361</a>），指定显示页面出血框的指南线的视觉特征。如果页面对象未定义出血框，则忽略此条目。</td></tr>
+        <tr><td>TrimBox</td> <td>字典 </td> <td>（可选）框样式字典（见<a href="#table361">表 361</a>），指定显示页面修剪框的指南线的视觉特征。如果页面对象未定义修剪框，则忽略此条目。</td></tr>
+        <tr><td>ArtBox</td> <td>字典 </td> <td>（可选）框样式字典（见<a href="#table361">表 361</a>），指定显示页面艺术框的指南线的视觉特征。如果页面对象未定义艺术框，则忽略此条目。</td></tr>
+    </tbody>
+</table></p>
+<p><table id="table361" markdown="span">
+    <caption><strong>表 361 – 框样式字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>C</td> <td>数组 </td> <td>（可选）一个由三个数字组成的数组，范围为0.0到1.0，表示用于显示指南线的颜色，采用<strong>DeviceRGB</strong>颜色空间。默认值：[0.0 0.0 0.0]。</td></tr>
+        <tr><td>W</td> <td>数字 </td> <td>（可选）指南线的宽度，单位为默认用户空间单位。默认值：1。</td></tr>
+        <tr><td>S</td> <td>名称 </td> <td>（可选）指南线样式：<br/><br/>
+            S &emsp;（实线）一个实心矩形。 <br/>
+            D &emsp;（虚线）一个虚线矩形，虚线模式由<strong>D</strong>条目指定。 <br/>
+            其他指南线样式可能将来会被定义。默认值：S。</td></tr>
+        <tr><td>D</td> <td>数组 </td> <td>（可选）一个虚线数组，定义虚线指南线的虚线和空隙模式（虚线样式D）。虚线数组应采用默认用户空间单位，格式与图形状态中的线段虚线模式参数相同（见<a href="../../c8/s4/#8436-虚线样式">8.4.3.6</a>，“线段虚线模式”）。虚线的阶段不应指定，默认为0。<br/> <br/>
+        示例 &emsp; D条目为[ 3 2 ]指定了带有3点虚线和2点间隙的指南线。<br/>
+        默认值：[ 3 ]。</td></tr>
+    </tbody>
+</table></p>
+<p>打印标记的视觉呈现应通过一个表单XObject定义，该对象指定为打印标记注释的外观字典中的<strong>N</strong>（正常）条目（见<a href="../../c12/s5/#1255-外观流">12.5.5</a>，“外观流”）。同一个打印标记可以定义多个外观，以满足不同区域或生产设施的要求。在这种情况下，外观字典的<strong>N</strong>条目包含一个子字典，其中包含备用外观，每个外观都有一个任意的键。注释字典中的<strong>AS</strong>（外观状态）条目指定一个外观进行显示或打印。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 2</p>
+<p>打印标记注释的外观字典可能包含<strong>R</strong>（悬停）或<strong>D</strong>（点击）条目，但在这些条目中定义的外观永远不会显示或打印。</p>
+</div>
+<p>像所有注释一样，打印标记注释应通过注释字典定义（见<a href="../../c12/s5/#1252-注解字典">12.5.2</a>，“注释字典”）；其注释类型为<strong>PrinterMark</strong>。如果外观字典<strong>AP</strong>包含多个外观流，则<strong>AP</strong>（外观）和<strong>F</strong>（标志）条目（通常是可选的）必须存在，并且如果有多个外观流，<strong>AS</strong>（外观状态）条目也必须存在。<strong>F</strong>条目中的打印和只读标志应被设置，其他标志应清除（见<a href="../../c12/s5/#1253-注解标志">12.5.3</a>，“注释标志”）。表362显示了此类注释特有的附加条目。</p>
+<p><table id="table362" markdown="span">
+    <caption><strong>表 362 – 打印标记注释特有的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Subtype</td> <td>名称 </td> <td>（必需）此字典描述的注释类型；对于打印标记注释，应为<strong>PrinterMark</strong>。</td></tr>
+        <tr><td>MN</td> <td>名称 </td> <td>（可选）标识打印标记类型的任意名称，如ColorBar或RegistrationTarget。</td></tr>
+    </tbody>
+</table></p>
+<p>定义打印标记的表单字典可能包含[表 363]中显示的可选条目，以及所有表单字典通用的标准条目（见<a href="../../c8/s10/#8102-表单字典">8.10.2</a>，“表单字典”）。</p>
+<p><table id="table363" markdown="span">
+    <caption><strong>表 363 – 打印标记表单字典特有的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>MarkStyle</td> <td>文本字符串 </td> <td>（可选；PDF 1.4）表示打印标记的文本字符串，适合向用户呈现。</td></tr>
+        <tr><td>Colorants</td> <td>字典 </td> <td>（可选；PDF 1.4）一个字典，标识与打印标记相关联的各个颜色剂，如色条。字典中的每个条目的键是颜色剂名称，值是一个数组，定义该颜色剂的<strong>Separation</strong>颜色空间（见<a href="../../c8/s6/#8664-分离色彩空间">8.6.6.4</a>，“Separation颜色空间”）。键应与该颜色空间中给出的颜色剂名称匹配。</td></tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p><em>Printer’s marks</em> are graphic symbols or text added to a page to assist production personnel in identifying components of a multiple-plate job and maintaining consistent output during production. Examples commonly used in the printing industry include:</p>
+<ul>
+<li>Registration targets for aligning plates</li>
+<li>Gray ramps and colour bars for measuring colours and ink densities</li>
+<li>Cut marks showing where the output medium is to be trimmed</li>
+</ul>
+<p>Although conforming writers traditionally include such marks in the content stream of a document, they are logically separate from the content of the page itself and typically appear outside the boundaries (the crop box, trim box, and art box) defining the extent of that content (see <a href="#14112-页面边界">14.11.2</a>, “Page Boundaries”).</p>
+<p><em>Printer’s mark annotations</em> (PDF 1.4) provide a mechanism for incorporating printer’s marks into the PDF representation of a page, while keeping them separate from the actual page content. Each page in a PDF document may contain any number of such annotations, each of which represents a single printer’s mark.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Because printer’s marks typically fall outside the page’s content boundaries, each mark is represented as a separate annotation. Otherwise—if, for example, the cut marks at the four corners of the page were defined in a single annotation—the annotation rectangle would encompass the entire contents of the page and could interfere with the user’s ability to select content or interact with other annotations on the page. Defining printer’s marks in separate annotations also facilitates the implementation of a drag-and-drop user interface for specifying them.</p>
+</div>
+<p><table id="table360" markdown="span">
+    <caption><strong>Table 360 – Entries in a box colour information dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>CropBox</td> <td>dictionary </td> <td>(Optional) A box style dictionary (see <a href="#table361">Table 361</a>) specifying the visual characteristics for displaying guidelines for the page’s crop box. This entry shall be ignored if no crop box is defined in the page object.</td></tr>
+        <tr><td>BleedBox</td> <td>dictionary </td> <td>(Optional) A box style dictionary (see <a href="#table361">Table 361</a>) specifying the visual characteristics for displaying guidelines for the page’s bleed box. This entry shall be ignored if no bleed box is defined in the page object.</td></tr>
+        <tr><td>TrimBox</td> <td>dictionary </td> <td>(Optional) A box style dictionary (see <a href="#table361">Table 361</a>) specifying the visual characteristics for displaying guidelines for the page’s trim box. This entry shall be ignored if no trim box is defined in the page object.</td></tr>
+        <tr><td>ArtBox</td> <td>dictionary </td> <td>(Optional) A box style dictionary (see <a href="#table361">Table 361</a>) specifying the visual characteristics for displaying guidelines for the page’s art box. This entry shall be ignored if no art box is defined in the page object.</td></tr>
+    </tbody>
+</table></p>
+<p><table id="table361" markdown="span">
+    <caption><strong>Table 361 – Entries in a box style dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>C</td> <td>array </td> <td>(Optional) An array of three numbers in the range 0.0 to 1.0, representing the components in the <strong>DeviceRGB</strong> colour space of the colour to be used for displaying the guidelines. Default value: [0.0 0.0 0.0].</td></tr>
+        <tr><td>W</td> <td>number </td> <td>(Optional) The guideline width in default user space units. Default value: 1.</td></tr>
+        <tr><td>S</td> <td>name </td> <td>(Optional) The guideline style: <br/><br/>
+            S &emsp; (Solid) A solid rectangle. <br/>
+            D &emsp; (Dashed) A dashed rectangle. The dash pattern shall be specified by the <strong>D</strong> entry. <br/>
+            Other guideline styles may be defined in the future. Default value: S.</td></tr>
+        <tr><td>D</td> <td>array </td> <td>(Optional) A dash array defining a pattern of dashes and gaps to be used in drawing dashed guidelines (guideline style D). The dash array shall be specified in default user space units, in the same format as in the line dash pattern parameter of the graphics state (see <a href="../../c8/s4/#8436-虚线样式">8.4.3.6</a>, “Line Dash Pattern”). The dash phase shall not be specified and shall be assumed to be 0. <br/> <br/>
+        EXAMPLE &emsp; A D entry of [ 3 2 ] specifies guidelines drawn with 3-point dashes alternating with 2-point gaps. <br/>
+        Default value: [ 3 ].</td></tr>
+    </tbody>
+</table></p>
+<p>The visual presentation of a printer’s mark shall be defined by a form XObject specified as an appearance stream in the <strong>N</strong> (normal) entry of the printer’s mark annotation’s appearance dictionary (see <a href="../../c12/s5/#1255-外观流">12.5.5</a>, “Appearance Streams”). More than one appearance may be defined for the same printer’s mark to meet the requirements of different regions or production facilities. In this case, the appearance dictionary’s <strong>N</strong> entry holds a subdictionary containing the alternate appearances, each identified by an arbitrary key. The <strong>AS</strong> (appearance state) entry in the annotation dictionary designates one of them to be displayed or printed.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The printer’s mark annotation’s appearance dictionary may include <strong>R</strong> (rollover) or <strong>D</strong> (down) entries, but appearances defined in either of these entries are never displayed or printed.</p>
+</div>
+<p>Like all annotations, a printer’s mark annotation shall be defined by an annotation dictionary (see <a href="../../c12/s5/#1252-注解字典">12.5.2</a>, “Annotation Dictionaries”); its annotation type is <strong>PrinterMark</strong>. The <strong>AP</strong> (appearances) and <strong>F</strong> (flags) entries (which ordinarily are optional) shall be present, as shall the <strong>AS</strong> (appearance state) entry if the appearance dictionary <strong>AP</strong> contains more than one appearance stream. The Print and ReadOnly flags in the <strong>F</strong> entry shall be set and all others clear (see <a href="../../c12/s5/#1253-注解标志">12.5.3</a>, “Annotation Flags”). Table 362 shows an additional annotation dictionary entry specific to this type of annotation.</p>
+<p><table id="table362" markdown="span">
+    <caption><strong>Table 362 – Additional entries specific to a printer’s mark annotation</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Subtype</td> <td>name </td> <td>(Required) The type of annotation that this dictionary describes; shall be <strong>PrinterMark</strong> for a printer’s mark annotation.</td></tr>
+        <tr><td>MN</td> <td>name </td> <td>(Optional) An arbitrary name identifying the type of printer’s mark, such as ColorBar or RegistrationTarget.</td></tr>
+    </tbody>
+</table></p>
+<p>The form dictionary defining a printer’s mark may contain the optional entries shown in Table 363 in addition to the standard ones common to all form dictionaries (see <a href="../../c8/s10/#8102-表单字典">8.10.2</a>, “Form Dictionaries”).</p>
+<p><table id="table363" markdown="span">
+    <caption><strong>Table 363 – Additional entries specific to a printer’s mark form dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>MarkStyle</td> <td>text string </td> <td>(Optional; PDF 1.4) A text string representing the printer’s mark in human-readable form and suitable for presentation to the user.</td></tr>
+        <tr><td>Colorants</td> <td>dictionary </td> <td>(Optional; PDF 1.4) A dictionary identifying the individual colorants associated with a printer’s mark, such as a colour bar. For each entry in this dictionary, the key is a colorant name and the value is an array defining a <strong>Separation</strong> colour space for that colorant (see <a href="../../c8/s6/#8664-分离色彩空间">8.6.6.4</a>, “Separation Colour Spaces”). The key shall match the colorant name given in that colour space.</td></tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h2 id="14114-分色字典">14.11.4 分色字典<a class="headerlink" href="#14114-分色字典" title="Permanent link">&para;</a></h2>
+<p><strong>14.11.4 Separation Dictionaries</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在高端印刷工作流中，页面最终会作为一组分色进行生产，每个分色对应一个颜色成分（参见 <a href="../../c8/s6/#8664-分离色彩空间">8.6.6.4</a>，“分色颜色空间”）。通常，PDF 文件中的每一页都应作为复合页面来处理，页面上绘制的图形对象使用所有的过程颜色成分，可能还包括一些专色。换句话说，页面的所有分色都应从该页的单一 PDF 描述中生成。</p>
+<p>然而，在某些工作流中，页面在生成 PDF 文件之前就已预先分色。在预分色的 PDF 文件中，页面的分色应作为单独的页面对象进行描述，每个页面对象仅绘制一个颜色成分（通常指定在 <strong>DeviceGray</strong> 颜色空间中）。在这种情况下，需要额外的信息来识别与每个分色相关的实际颜色成分，并将表示给定页面的所有分色的页面对象分组在一起。这些信息应包含在每个页面对象的分色字典（PDF 1.3）中的 <strong>SeparationInfo</strong> 条目里（参见 <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>，“页面对象”）。表格 364 显示了这种类型字典的内容。</p>
+<p><table id="table364" markdown="span">
+    <caption><strong>表格 364 – 分色字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Pages</td> <td>数组 </td> <td>(必需) 一个数组，包含表示相同文档页面分色的页面对象的间接引用。数组中的一个页面对象应与该分色字典相关联，所有页面对象的分色字典（<strong>SeparationInfo</strong> 条目）都应包含相同的 <strong>Pages</strong> 数组。</td></tr>
+        <tr><td>DeviceColorant</td> <td>名称或字符串 </td> <td>(必需) 用于渲染此分色的设备颜色成分的名称，如青色或 PANTONE 35 CV。</td></tr>
+        <tr><td>ColorSpace</td> <td>数组 </td> <td>(可选) 一个数组，定义一个 <strong>Separation</strong> 或 <strong>DeviceN</strong> 颜色空间（参见 <a href="../../c8/s6/#8664-分离色彩空间">8.6.6.4</a>，“分色颜色空间”和 <a href="../../c8/s6/#8665-devicen-色彩空间">8.6.6.5</a>，“DeviceN 颜色空间”）。它提供了有关 <strong>DeviceColorant</strong> 所指定颜色的额外信息——特别是，用于将颜色成分表示为过程颜色的替代颜色空间和色调变换函数。这些信息使符合标准的阅读器能够预览近似设备颜色成分的分色。<br/><br/> <strong>DeviceColorant</strong> 的值应与颜色空间中的颜色成分名称匹配（如果是 <strong>Separation</strong> 空间），或是该颜色空间中颜色成分名称之一（如果是 <strong>DeviceN</strong> 空间）。</td></tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>In high-end printing workflows, pages are ultimately produced as sets of separations, one per colorant (see <a href="../../c8/s6/#8664-分离色彩空间">8.6.6.4</a>, “Separation Colour Spaces”). Ordinarily, each page in a PDF file shall be treated as a composite page that paints graphics objects using all the process colorants and perhaps some spot colorants as well. In other words, all separations for a page shall be generated from a single PDF description of that page.</p>
+<p>In some workflows, however, pages are preseparated before generating the PDF file. In a preseparated PDF file, the separations for a page shall be described as separate page objects, each painting only a single colorant (usually specified in the <strong>DeviceGray</strong> colour space). In this case, additional information is needed to identify the actual colorant associated with each separation and to group together the page objects representing all the separations for a given page. This information shall be contained in a separation dictionary (PDF 1.3) in the <strong>SeparationInfo</strong> entry of each page object (see <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>, “Page Objects”). Table 364 shows the contents of this type of dictionary.</p>
+<p><table id="table364" markdown="span">
+    <caption><strong>Table 364 – Entries in a separation dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Pages</td> <td>array </td> <td>(Required) An array of indirect references to page objects representing separations of the same document page. One of the page objects in the array shall be the one with which this separation dictionary is associated, and all of them shall have separation dictionaries (<strong>SeparationInfo</strong> entries) containing <strong>Pages</strong> arrays identical to this one.</td></tr>
+        <tr><td>DeviceColorant</td> <td>name or string </td> <td>(Required) The name of the device colorant to be used in rendering this separation, such as Cyan or PANTONE 35 CV.</td></tr>
+        <tr><td>ColorSpace</td> <td>array </td> <td>(Optional) An array defining a <strong>Separation</strong> or <strong>DeviceN</strong> colour space (see <a href="../../c8/s6/#8664-分离色彩空间">8.6.6.4</a>, “Separation Colour Spaces” and <a href="../../c8/s6/#8665-devicen-色彩空间">8.6.6.5</a>, “DeviceN Colour Spaces”). It provides additional information about the colour specified by <strong>DeviceColorant</strong>—in particular, the alternate colour space and tint transformation function that shall be used to represent the colorant as a process colour. This information enables a conforming reader to preview the separation in a colour that approximates the device colorant.<br/><br/> The value of <strong>DeviceColorant</strong> shall match the space’s colorant name (if it is a <strong>Separation</strong> space) or be one of the space’s colorant names (if it is a <strong>DeviceN</strong> space).</td></tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h2 id="14115-输出意图">14.11.5 输出意图<a class="headerlink" href="#14115-输出意图" title="Permanent link">&para;</a></h2>
+<p><strong>14.11.5 Output Intents</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>输出目标</em>（PDF 1.4）提供了一种将 PDF 文档的颜色特性与目标输出设备或生产环境（即文档将被打印的环境）匹配的方法。文档目录中的可选 <strong>OutputIntents</strong> 条目（参见 <a href="../../c7/s7/#772-文档目录">7.7.2</a>，“文档目录”）包含一个 <em>输出目标</em> 字典数组，每个字典描述了一个可能的输出设备或生产条件的颜色再现特性。这些字典的内容可能因设备和条件的不同而有所变化。字典中的 S 条目指定了一个 <em>输出目标子类型</em>，它决定了剩余条目的格式和含义。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 1</p>
+<p>使用多个输出目标允许生产过程根据预期工作流和可用的具体工具进行定制。例如，一个生产设施可能会处理符合已识别标准（如 PDF/X-1）的文件，而另一个则使用 PDF/A 标准来生成用于文档在 Web 上分发的 RGB 输出。这些工作流中的每个都需要不同的输出目标信息集。多个输出目标还允许同一个 PDF 文件在不修改的情况下分发到多个生产设施。选择在给定生产环境中使用哪个输出目标是购买方与生产服务提供方之间的协议问题。PDF 有意不包括从 PDF 文件中选择特定输出目标的选择器。</p>
+</div>
+<p>发布时，已定义了三种输出目标子类型：<strong>GTS_PDFX</strong>，对应于 ISO 15930 中指定的 PDF/X 格式标准；<strong>GTS_PDFA1</strong>，对应于 ISO 19005 定义的 PDF/A 标准；<strong>ISO_PDFE1</strong>，对应于 ISO 24517 定义的 PDF/E 标准。表格 365 显示了这种类型的输出目标字典的内容。将来可能会添加其他子类型；任何此类附加子类型的名称应符合 <a href="../../a5/">附录 E</a> 中描述的命名指南。</p>
+<p><table id="table365" markdown="span">
+    <caption><strong>表格 365 – 输出目标字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>Type</strong></td> <td>名称</td> <td>(可选) 该字典描述的 PDF 对象类型；如果存在，应为 <strong>OutputIntent</strong>，表示输出目标字典。</td></tr>
+        <tr><td><strong>S</strong></td> <td>名称</td> <td>(必需) 输出目标子类型；应为 GTS_PDFX、GTS_PDFA1、ISO_PDFE1 或由 ISO 32000 扩展定义的键之一。</td></tr>
+        <tr><td><strong>OutputCondition</strong></td> <td>文本字符串</td> <td>(可选) 简洁地标识预期输出设备或生产条件的人类可读的文本字符串。这是定义该字符串并呈现给用户的首选方法。</td></tr>
+        <tr><td><strong>OutputConditionIdentifier</strong></td> <td>文本字符串 </td> <td>(必需) 以人类或机器可读的形式标识预期输出设备或生产条件的文本字符串。如果为人类可读，这个字符串可用于代替 <strong>OutputCondition</strong> 字符串呈现给用户。<br/><br/> 该条目的典型值可能是行业标准注册表（如 ICC Characterization Data Registry）中维护的生产条件的名称（参见参考文献）。如果指定的条件与生产时生效的条件匹配，生产软件应负责提供注册表中定义的相应 ICC 配置文件。<br/><br/> 如果预期的生产条件不是公认的标准，则此条目的值可以是 Custom 或应用程序特定的机器可读名称。<strong>DestOutputProfile</strong> 条目定义了 ICC 配置文件，<strong>Info</strong> 条目则用于进一步的人类可读标识。</td></tr>
+        <tr><td><strong>RegistryName</strong></td> <td>文本字符串 </td> <td>(可选) 标识定义 <strong>OutputConditionIdentifier</strong> 中条件的注册表的文本字符串（通常是统一资源标识符 URI）。</td></tr>
+        <tr><td><strong>Info</strong></td> <td>文本字符串 </td> <td>(如果 <strong>OutputConditionIdentifier</strong> 未指定标准生产条件，则必需；否则可选) 包含有关预期目标设备或生产条件的附加信息或注释的人类可读文本字符串。</td></tr>
+        <tr><td><strong>DestOutputProfile</strong></td> <td>流</td> <td>(如果 <strong>OutputConditionIdentifier</strong> 未指定标准生产条件，则必需；否则可选) 定义从 PDF 文档的源颜色到输出设备颜色成分的变换的 ICC 配置文件流。<br/><br/> 配置文件流的格式与指定 <strong>ICCBased</strong> 颜色空间时使用的格式相同（参见 <a href="../../c8/s6/#8655-基于-icc-的色彩空间">8.6.5.5</a>，“ICCBased 颜色空间”）。输出变换使用配置文件的“从 CIE”（BToA，在 ICC 术语中）信息；可以选择性地使用“到 CIE”（AToB）信息来将源颜色值重新映射到另一个目标颜色空间，例如用于屏幕预览或硬拷贝校样。</td></tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注意 2</p>
+<p>PDF/X 实际上是一系列代表不同符合级别的标准。给定符合级别的标准可能会对输出目标字典中的条目的使用和含义施加进一步的限制。任何此类限制优先于 <a href="#table364">表格 364</a> 中给出的描述。</p>
+</div>
+<p>输出目标字典中的 ICC 配置文件信息是补充而非替代 <strong>ICCBased</strong> 或默认颜色空间中的信息（参见 <a href="../../c8/s6/#8655-基于-icc-的色彩空间">8.6.5.5</a>，“ICCBased 颜色空间”和 <a href="../../c8/s6/#8656-默认颜色空间">8.6.5.6</a>，“默认颜色空间”）。这些机制专门用于描述源颜色组件值的特性。输出目标可以与它们一起使用，将源颜色转换为特定生产条件所需的颜色，或启用预览或校样所需的目标输出。</p>
+<p>输出目标字典中的数据仅供参考，符合标准的阅读器可以自由忽略它。特别地，PDF 生产工具不会自动将表达在相同源颜色空间中的颜色转换为指定的目标空间后再生成输出。（在某些工作流中，这种转换实际上可能是不希望的）。</p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>当使用仅用于特征描述的源 ICC 配置文件标记 CMYK 源颜色时，将这些颜色从四个成分转换为三个并再转换回去是没有必要的，这会导致黑色成分值的精度损失；请参见 8.6.5.7，“基于 CIE 的颜色空间的隐式转换”以获取进一步讨论。）另一方面，当源颜色表示为不同的基本颜色空间时——例如，当将分别生成的图像组合到同一 PDF 页面时——可以（但不要求）使用输出目标字典中指定的目标配置文件将源颜色转换为相同的目标颜色空间。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">示例 1</p>
+<p>此示例显示了一个基于行业标准生产条件（<em>ICC Characterization Data Registry</em> 中的 CGATS TR 001）的 PDF/X 输出目标字典。示例 2 显示了一个自定义生产条件的字典。</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt;&lt; /Type /OutputIntent        % 输出目标字典
+    /S /GTS_PDFX
+    /OutputCondition ( CGATS TR 001 ( SWOP ) )
+    /OutputConditionIdentifier ( CGATS TR 001 )
+    /RegistryName ( http : / / www . color . org )
+    /DestOutputProfile 100 0 R
+&gt;&gt;
+
+100 0 obj            % ICC 配置文件流
+&lt;&lt; /N 4
+    /Length 1605
+    /Filter /ASCIIHexDecode
+&gt;&gt;
+
+stream
+00 00 02 0C 61 70 … &gt;
+endstream
+endobj
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">示例 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt;&lt;  /Type /OutputIntent                        % 输出目标字典
+    /S /GTS_PDFX
+    /OutputCondition ( Coated )
+    /OutputConditionIdentifier ( Custom )
+    /Info ( Coated 150lpi )
+    /DestOutputProfile 100 0 R
+&gt;&gt;
+
+100 0 obj                % ICC 配置文件流
+&lt;&lt;  /N 4
+    /Length 1605
+    /Filter /ASCIIHexDecode
+&gt;&gt;
+
+stream
+00 00 02 0C 61 70 … &gt;
+endstream
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p><em>Output intents</em> (PDF 1.4) provide a means for matching the colour characteristics of a PDF document with those of a target output device or production environment in which the document will be printed. The optional <strong>OutputIntents</strong> entry in the document catalogue (see <a href="../../c7/s7/#772-文档目录">7.7.2</a>, “Document Catalog”) holds an array of <em>output intent</em> <em>dictionaries</em>, each describing the colour reproduction characteristics of a possible output device or production condition. The contents of these dictionaries may vary for different devices and conditions. The dictionary’s S entry specifies an <em>output intent subtype</em> that determines the format and meaning of the remaining entries.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>This use of multiple output intents allows the production process to be customized to the expected workflow and the specific tools available. For example, one production facility might process files conforming to a recognized standard such as PDF/X-1, while another uses the PDF/A standard to produce RGB output for document distribution on the Web. Each of these workflows would require different sets of output intent information. Multiple output intents also allow the same PDF file to be distributed unmodified to multiple production facilities. The choice of which output intent to use in a given production environment is a matter for agreement between the purchaser and provider of production services. PDF intentionally does not include a selector for choosing a particular output intent from within the PDF file.</p>
+</div>
+<p>At the time of publication, three output intent subtypes have been defined: <strong>GTS_PDFX</strong> corresponding to the PDF/X format standard specified in ISO 15930, <strong>GTS_PDFA1</strong> corresponding to the PDF/A standard as defined by ISO 19005, and ISO_PDFE1 corresponding to the PDF/E standard as defined by ISO 24517. Table 365 shows the contents of this type of output intent dictionary. Other subtypes may be added in the future; the names of any such additional subtypes shall conform to the naming guidelines described in <a href="../../a5/">Annex E</a>.</p>
+<p><table id="table365" markdown="span">
+    <caption><strong>Table 365 – Entries in an output intent dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>Type</strong></td> <td>name</td> <td>(Optional) The type of PDF object that this dictionary describes; if present, shall be <strong>OutputIntent</strong> for an output intent dictionary.</td></tr>
+        <tr><td><strong>S</strong></td> <td>name</td> <td>(Required) The output intent subtype; shall be either one
+        of GTS_PDFX, GTS_PDFA1, ISO_PDFE1 or a key
+        defined by an ISO 32000 extension.</td></tr>
+        <tr><td><strong>OutputCondition</strong></td> <td>text string</td> <td> (Optional) A text string concisely identifying the intended output device or production condition in human-readable form. This is the preferred method of defining such a string for presentation to the user.</td></tr>
+        <tr><td><strong>OutputConditionIdentifier</strong></td> <td>text string </td> <td>(Required) A text string identifying the intended output device or production condition in human- or machine- readable form. If human-readable, this string may be used in lieu of an <strong>OutputCondition</strong> string for presentation to the user. <br/><br/> A typical value for this entry may be the name of a production condition maintained in an industry-standard registry such as the ICC Characterization Data Registry (see the Bibliography). If the designated condition matches that in effect at production time, the production software is responsible for providing the corresponding ICC profile as defined in the registry.<br/><br/> If the intended production condition is not a recognized standard, the value of this entry may be Custom or an application-specific, machine-readable name. The <strong>DestOutputProfile</strong> entry defines the ICC profile, and the <strong>Info</strong> entry shall be used for further human-readable identification.</td></tr>
+        <tr><td><strong>RegistryName</strong></td> <td>textstring </td> <td>(Optional) An text string (conventionally a uniform resource identifier, or URI) identifying the registry in which the condition designated by <strong>OutputConditionIdentifier</strong> is defined.</td></tr>
+        <tr><td><strong>Info</strong></td> <td>text string </td> <td>(Required if <strong>OutputConditionIdentifier</strong> does not specify a standard production condition; optional otherwise) A human-readable text string containing additional information or comments about the intended target device or production condition.</td></tr>
+        <tr><td><strong>DestOutputProfile</strong></td> <td>stream</td> <td>(Required if OutputConditionIdentifier does not specify a standard production condition; optional otherwise) An ICC profile stream defining the transformation from the PDF document’s source colours to output device colorants.<br/><br/> The format of the profile stream is the same as that used in specifying an <strong>ICCBased</strong> colour space (see <a href="../../c8/s6/#8655-基于-icc-的色彩空间">8.6.5.5</a>, “ICCBased Colour Spaces”). The output transformation uses the profile’s “from CIE” information (BToA in ICC terminology); the “to CIE” (AToB) information may optionally be used to remap source colour values to some other destination colour space, such as for screen preview or hardcopy proofing.</td></tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>PDF/X is actually a family of standards representing varying levels of conformance. The standard for a given conformance level may prescribe further restrictions on the usage and meaning of entries in the output intent dictionary. Any such restrictions take precedence over the descriptions given in <a href="#table364">Table 364</a>.</p>
+</div>
+<p>The ICC profile information in an output intent dictionary supplements rather than replaces that in an ICCBased or default colour space (see <a href="../../c8/s6/#8655-基于-icc-的色彩空间">8.6.5.5</a>, “ICCBased Colour Spaces,” and <a href="../../c8/s6/#8656-默认颜色空间">8.6.5.6</a>, “Default Colour Spaces”). Those mechanisms are specifically intended for describing the characteristics of source colour component values. An output intent can be used in conjunction with them to convert source colours to those required for a specific production condition or to enable the display or proofing of the intended output.</p>
+<p>The data in an output intent dictionary shall be provided for informational purposes only, and conforming readers are free to disregard it. In particular, there is no expectation that PDF production tools automatically convert colours expressed in the same source colour space to the specified target space before generating output. (In some workflows, such conversion may, in fact, be undesirable).</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>When working with CMYK source colours tagged with a source ICC profile solely for purposes of characterization, converting such colours from four components to three and back is unnecessary and will result in a loss of fidelity in the values of the black component; see 8.6.5.7, “Implicit Conversion of CIE-Based Colour Spaces” for further discussion.) On the other hand, when source colours are expressed in different base colour spaces—for example, when combining separately generated images on the same PDF page—it is possible (though not required) to use the destination profile specified in the output intent dictionary to convert source colours to the same target colour space.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>This Example shows a PDF/X output intent dictionary based on an industry-standard production condition (CGATS TR 001) from the <em>ICC Characterization Data Registry</em>. Example 2 shows one for a custom production condition.</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt;&lt; /Type /OutputIntent        % Output intent dictionary
+    /S /GTS_PDFX
+    /OutputCondition ( CGATS TR 001 ( SWOP ) )
+    /OutputConditionIdentifier ( CGATS TR 001 )
+    /RegistryName ( http : / / www . color . org )
+    /DestOutputProfile 100 0 R
+&gt;&gt;
+
+100 0 obj            % ICC profile stream
+&lt;&lt; /N 4
+    /Length 1605
+    /Filter /ASCIIHexDecode
+&gt;&gt;
+
+stream
+00 00 02 0C 61 70 … &gt;
+endstream
+endobj
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt;&lt;  /Type /OutputIntent                        % Output intent dictionary
+    /S /GTS_PDFX
+    /OutputCondition ( Coated )
+    /OutputConditionIdentifier ( Custom )
+    /Info ( Coated 150lpi )
+    /DestOutputProfile 100 0 R
+&gt;&gt;
+
+100 0 obj                % ICC profile stream
+&lt;&lt;  /N 4
+    /Length 1605
+    /Filter /ASCIIHexDecode
+&gt;&gt;
+
+stream
+00 00 02 0C 61 70 … &gt;
+endstream
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="14116-陷印支持">14.11.6 陷印支持<a class="headerlink" href="#14116-陷印支持" title="Permanent link">&para;</a></h2>
+<p><strong>14.11.6 Trapping Support</strong></p>
+<h3 id="141161-概述">14.11.6.1 概述<a class="headerlink" href="#141161-概述" title="Permanent link">&para;</a></h3>
+<p><strong>14.11.6.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在像胶印机这样的设备上，这些设备会在单张物理介质上标记多个色料，由于设备的机械限制，色料之间可能会出现不精确的对齐，或称为色彩错位（misregistration）。这种错位可能会产生不希望看到的视觉伪影，如印刷物体边缘处的明亮间隙或条纹。在高质量的彩色文档复制中，通常通过在相邻颜色区域之间创建重叠，称为 <em>陷印</em>（trap），来避免这些伪影。</p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>图 87 显示了陷印的一个例子。浅灰色和中灰色代表两种不同的色料，它们用于绘制背景和表示字母 A 的字形。第一幅图显示了预期的结果，两个色料正确对齐。第二幅图显示了色料错位时的情况。在第三幅图中，沿边界处进行了陷印，遮盖了由于错位造成的伪影。（为了强调，陷印在此图中显示为深灰色；在实际应用中，它们的颜色将与相邻颜色相似。）</p>
+</div>
+<p><a class="glightbox" href="../imgs/f87.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f87.png" /></a></p>
+<p>陷印可以由生成 PDF 文件的应用程序、某些中间应用程序（添加陷印到 PDF 文档中）或产生最终输出的光栅图像处理器（RIP）来实现。在后两种情况下，陷印过程由一组陷印指令控制，这些指令定义了两类信息：</p>
+<ul>
+<li><em>陷印区域</em>，即应该创建陷印的区域</li>
+<li><em>陷印参数</em>，即在每个区域内定义的陷印性质</li>
+</ul>
+<p>陷印区域和陷印参数分别在《PostScript 语言参考》第三版的 6.3.2 和 6.3.3 节中进行了详细讨论。陷印指令不会直接在 PDF 文件中指定（就像在 PostScript 文件中那样）。相反，它们应在伴随 PDF 文件的工作票中指定，或者嵌入其中。关于工作票格式的标准有很多；其中两个标准，JDF（作业定义格式）和 PJTF（便携式作业票格式），分别在 CIP4 文件《JDF 规范》和 Adobe 技术说明 #5620《便携式作业票格式》中描述（参见 <a href="../../bibliography/">参考文献</a>）。</p>
+<p>当在最终输出之前执行陷印时，生成的陷印应被放入 PDF 文件中，以供后续使用。陷印本身应作为陷印网络注释中的内容流进行描述（参见 <a href="#141162-陷印网络注释">14.11.6.2</a>，“陷印网络注释”）。流字典可能包括额外条目，描述用于生成陷印的方法以及有关它们外观的其他信息。</p>
+</div>
+<div class="tabbed-block">
+<p>On devices such as offset printing presses, which mark multiple colorants on a single sheet of physical medium, mechanical limitations of the device can cause imprecise alignment, or misregistration, between colorants. This can produce unwanted visual artifacts such as brightly coloured gaps or bands around the edges of printed objects. In high-quality reproduction of colour documents, such artifacts are commonly avoided by creating an overlap, called a <em>trap</em>, between areas of adjacent colour.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Figure 87 shows an example of trapping. The light and medium grays represent two different colorants, which are used to paint the background and the glyph denoting the letter A. The first figure shows the intended result, with the two colorants properly registered. The second figure shows what happens when the colorants are misregistered. In the third figure, traps have been overprinted along the boundaries, obscuring the artifacts caused by the misregistration. (For emphasis, the traps are shown here in dark gray; in actual practice, their colour will be similar to one of the adjoining colours.)</p>
+</div>
+<p><a class="glightbox" href="../imgs/f87.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f87.png" /></a></p>
+<p>Trapping may be implemented by the application generating a PDF file, by some intermediate application that adds traps to a PDF document, or by the raster image processor (RIP) that produces final output. In the last two cases, the trapping process is controlled by a set of trapping instructions, which define two kinds of information:</p>
+<ul>
+<li><em>Trapping zones</em> within which traps should be created</li>
+<li><em>Trapping parameters</em> specifying the nature of the traps within each zone</li>
+</ul>
+<p>Trapping zones and trapping parameters are discussed fully in Sections 6.3.2 and 6.3.3, respectively, of the PostScript Language Reference, Third Edition. Trapping instructions are not directly specified in a PDF file (as they are in a PostScript file). Instead, they shall be specified in a job ticket that accompanies the PDF file or is embedded within it. Various standards exist for the format of job tickets; two of them, JDF (Job Definition Format) and PJTF (Portable Job Ticket Format), are described in the CIP4 document JDF Specification and in Adobe Technical Note #5620, Portable Job Ticket Format (see the <a href="../../bibliography/">Bibliography</a>).</p>
+<p>When trapping is performed before the production of final output, the resulting traps shall be placed in the PDF file for subsequent use. The traps themselves shall be described as a content stream in a trap network annotation (see <a href="#141162-陷印网络注释">14.11.6.2</a>, “Trap Network Annotations”). The stream dictionary may include additional entries describing the method that was used to produce the traps and other information about their appearance.</p>
+</div>
+</div>
+</div>
+<h3 id="141162-陷印网络注释">14.11.6.2 陷印网络注释<a class="headerlink" href="#141162-陷印网络注释" title="Permanent link">&para;</a></h3>
+<p><strong>14.11.6.2 Trap Network Annotations</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>为给定页面根据指定的陷印指令生成的完整陷印集称为 <em>陷印网络</em>（PDF 1.3）。它是一个形式 XObject，包含绘制所需陷印的图形对象。一个页面可以有多个陷印网络，基于不同的陷印指令，通常是为不同的输出设备设计的。给定页面的所有陷印网络应包含在单个 <em>陷印网络注释</em> 中（参见 <a href="../../c12/s5/">12.5</a>，“注释”）。每个页面最多只能有一个陷印网络注释，并且它应是页面 <strong>Annots</strong> 数组中的最后一个元素（参见 <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>，“页面对象”）。这确保陷印网络将在页面的其他内容之后打印。</p>
+<p>定义陷印网络的形式 XObject 应该作为陷印网络注释外观字典中的 <strong>N</strong>（正常）条目中的外观流（参见 <a href="../../c12/s5/#1255-外观流">12.5.5</a>，“外观流”）。如果为同一页面定义了多个陷印网络，<strong>N</strong> 条目包含一个子字典，里面包含备用的陷印网络，每个都由一个任意的键标识。注释字典中的 <strong>AS</strong>（外观状态）条目指定其中一个为 <em>当前陷印网络</em>，以供显示或打印。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 1</p>
+<p>陷印网络注释的外观字典可能包括 <strong>R</strong>（鼠标悬停）或 <strong>D</strong>（按下）条目，但这两个条目中定义的外观永远不会打印。</p>
+</div>
+<p>像所有注释一样，陷印网络注释应由注释字典定义（参见 <a href="../../c12/s5/#1252-注解字典">12.5.2</a>，“注释字典”）；其注释类型为 <strong>TrapNet</strong>。<strong>AP</strong>（外观）、<strong>AS</strong>（外观状态）和 <strong>F</strong>（标志）条目（通常是可选的）应当存在，并且设置为 Print 和 ReadOnly 标志，其他标志应清除（参见 <a href="../../c12/s5/#1253-注解标志">12.5.3</a>，“注释标志”）。[表 366] 显示了这个类型的注释特有的附加注释字典条目。</p>
+<p><strong>Version</strong> 和 <strong>AnnotStates</strong> 条目（如果存在）应用于检测页面内容的变化，这些变化可能需要重新生成其陷印网络。<strong>Version</strong> 数组标识在生成陷印网络时页面描述中可能会被编辑应用程序更改的元素，从而使其陷印网络失效。因为每个陷印网络注释最多只有一个 <strong>Version</strong> 数组（因此每个页面只有一个），任何符合规范的写入程序在生成新陷印网络时，应通过枚举数组中标识的对象，并验证这些对象的当前内容是否与数组的内容完全匹配，来验证现有陷印网络的有效性。任何被发现无效的陷印网络应当重新生成。</p>
+<p><strong>LastModified</strong> 条目可用于替代 <strong>Version</strong> 数组来跟踪页面的陷印网络更改。（陷印网络注释应包含 <strong>LastModified</strong> 条目或 <strong>Version</strong> 和 <strong>AnnotStates</strong> 的组合，但不能同时包含这三者。）如果页面对象中的 <strong>LastModified</strong> 条目（参见 <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>，“页面对象”）的修改日期比陷印网络注释字典中的修改日期更新，则页面的陷印网络无效，应重新生成。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 2</p>
+<p>不是所有编辑应用程序都能正确维护这些修改日期。</p>
+</div>
+<p>这种跟踪陷印网络修改的方法只有在修改日期的完整性得到保证的受控工作流环境中才能可靠使用。</p>
+<p><table id="table366" markdown="span">
+    <caption><strong>表 366 – 陷印网络注释特有的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>Subtype</strong></td> <td> name</td> <td> (必需) 描述此字典的注释类型；对于陷印网络注释，应为 <strong>TrapNet</strong>。</td></tr>
+        <tr><td><strong>LastModified</strong></td> <td>date</td> <td>(如果 <strong>Version</strong> 和 <strong>AnnotStates</strong> 不存在，则为必需；如果 <strong>Version</strong> 和 <strong>AnnotStates</strong> 存在，则为不可用；PDF 1.4) 陷印网络最近修改的日期和时间（参见 <a href="../../c7/s9/#794-日期">7.9.4</a>，“日期”）。</td></tr>
+        <tr><td><strong>Version</strong></td> <td>array</td> <td>(如果 <strong>AnnotStates</strong> 存在，则为必需；如果 <strong>LastModified</strong> 存在，则为不可用) 一个无序的数组，包含生成陷印网络时页面描述中存在的所有对象，并且如果这些对象发生更改，可能会影响页面的外观。如果存在，该数组应包括以下对象： <br/><br/>
+        • &emsp; 页面对象的 <strong>Contents</strong> 条目中标识的所有内容流（参见 <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>，“页面对象”） <br/>
+        • &emsp; 页面资源字典中所有资源对象（不包括过程集）（参见 <a href="../../c7/s8/#783-资源字典">7.8.3</a>，“资源字典”） <br/>
+        • &emsp; 页面上任何形式 XObject 的资源字典中的所有资源对象（不包括过程集）（参见 8.10，“形式 XObject”）<br/>
+        • &emsp; 与页面上 XObject 相关的所有 OPI 字典（参见 <a href="#14117-开放印前接口-opi">14.11.7</a>，“开放前处理接口（OPI）”）<br/></td></tr>
+        <tr><td><strong>AnnotStates</strong></td> <td>array</td> <td>(如果 <strong>Version</strong> 存在，则为必需；如果 <strong>LastModified</strong> 存在，则为不可用) 一个名称对象的数组，表示与页面相关的注释的外观状态（<strong>AS</strong> 条目的值）。外观状态应按页面的 <strong>Annots</strong> 数组中的注释顺序列出（参见 <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>，“页面对象”）。对于没有 <strong>AS</strong> 条目的注释，相应的数组元素应为 <strong>null</strong>。不应为陷印网络注释本身包含外观状态。</td></tr>
+        <tr><td><strong>FontFauxing</strong></td> <td>array</td> <td>(可选) 一个字体字典的数组，表示在生成页面的陷印网络时，哪些字体被模拟（被替换为替代字体）。</td></tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>A complete set of traps generated for a given page under a specified set of trapping instructions is called a <em>trap network</em> (PDF 1.3). It is a form XObject containing graphics objects for painting the required traps on the page. A page may have more than one trap network based on different trapping instructions, presumably intended for different output devices. All of the trap networks for a given page shall be contained in a single <em>trap network annotation</em> (see <a href="../../c12/s5/">12.5</a>, “Annotations”). There may be at most one trap network annotation per page, which shall be the last element in the page’s <strong>Annots</strong> array (see <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>, “Page Objects”). This ensures that the trap network shall be printed after all of the page’s other contents.</p>
+<p>The form XObject defining a trap network shall be specified as an appearance stream in the <strong>N</strong> (normal) entry of the trap network annotation’s appearance dictionary (see <a href="../../c12/s5/#1255-外观流">12.5.5</a>, “Appearance Streams”). If more than one trap network is defined for the same page, the <strong>N</strong> entry holds a subdictionary containing the alternate trap networks, each identified by an arbitrary key. The <strong>AS</strong> (appearance state) entry in the annotation dictionary designates one of them as the <em>current trap network</em> to be displayed or printed.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>The trap network annotation’s appearance dictionary may include <strong>R</strong> (rollover) or <strong>D</strong> (down) entries, but appearances defined in either of these entries are never printed.</p>
+</div>
+<p>Like all annotations, a trap network annotation shall be defined by an annotation dictionary (see <a href="../../c12/s5/#1252-注解字典">12.5.2</a>, “Annotation Dictionaries”); its annotation type is <strong>TrapNet</strong>. The <strong>AP</strong> (appearances), <strong>AS</strong> (appearance state), and <strong>F</strong> (flags) entries (which ordinarily are optional) shall be present, with the Print and ReadOnly flags set and all others clear (see <a href="../../c12/s5/#1253-注解标志">12.5.3</a>, “Annotation Flags”). [Table 366] shows the additional annotation dictionary entries specific to this type of annotation.</p>
+<p>The <strong>Version</strong> and <strong>AnnotStates</strong> entries, if present, shall be used to detect changes in the content of a page that might require regenerating its trap networks. The <strong>Version</strong> array identifies elements of the page’s content that might be changed by an editing application and thus invalidate its trap networks. Because there is at most one <strong>Version</strong> array per trap network annotation (and thus per page), any conforming writer that generates a new trap network shall also verify the validity of existing trap networks by enumerating the objects identified in the array and verifying that the results exactly match the array’s current contents. Any trap networks found to be invalid shall be regenerated.</p>
+<p>The <strong>LastModified</strong> entry may be used in place of the <strong>Version</strong> array to track changes to a page’s trap network. (The trap network annotation shall include either a <strong>LastModified</strong> entry or the combination of <strong>Version</strong> and AnnotStates, but not all three.) If the modification date in the <strong>LastModified</strong> entry of the page object (see <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>, “Page Objects”) is more recent than the one in the trap network annotation dictionary, the page’s trap networks are invalid and shall be regenerated.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Not all editing applications correctly maintain these modification dates.</p>
+</div>
+<p>This method of tracking trap network modifications may be used reliably only in a controlled workflow environment where the integrity of the modification dates is assured.</p>
+<p><table id="table366" markdown="span">
+    <caption><strong>Table 366 – Additional entries specific to a trap network annotation</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>Subtype</strong></td> <td> name</td> <td> (Required) The type of annotation that this dictionary describes; shall be <strong>TrapNet</strong> for a trap network annotation.</td></tr>
+        <tr><td><strong>LastModified</strong></td> <td>date</td> <td>(Required if <strong>Version</strong> and <strong>AnnotStates</strong> are absent; shall be absent if <strong>Version</strong> and <strong>AnnotStates</strong> are present; PDF 1.4) The date and time (see <a href="../../c7/s9/#794-日期">7.9.4</a>, “Dates”) when the trap network was most recently modified.</td></tr>
+        <tr><td><strong>Version</strong></td> <td>array</td> <td>(Required if <strong>AnnotStates</strong> is present; shall be absent if <strong>LastModified</strong> is present) An unordered array of all objects present in the page description at the time the trap networks were generated and that, if changed, could affect the appearance of the page. If present, the array shall include the following objects: <br/><br/>
+        • &emsp; All content streams identified in the page object’s <strong>Contents</strong> entry (see <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>, “Page Objects”) <br/>
+        • &emsp; All resource objects (other than procedure sets) in the page’s resource dictionary (see <a href="../../c7/s8/#783-资源字典">7.8.3</a>, “Resource Dictionaries”) <br/>
+        • &emsp; All resource objects (other than procedure sets) in the resource dictionaries of any form XObjects on the page (see 8.10, “Form XObjects”)<br/>
+        • &emsp; All OPI dictionaries associated with XObjects on the page (see <a href="#14117-开放印前接口-opi">14.11.7</a>, “Open Prepress Interface (OPI)”)<br/></td></tr>
+        <tr><td><strong>AnnotStates</strong></td> <td>array</td> <td>(Required if <strong>Version</strong> is present; shall be absent if <strong>LastModified</strong> is present) An array of name objects representing the appearance states (value of the <strong>AS</strong> entry) for annotations associated with the page. The appearance states shall be listed in the same order as the annotations in the page’s <strong>Annots</strong> array (see <a href="../../c7/s7/#7733-page对象">7.7.3.3</a>, “Page Objects”). For an annotation with no <strong>AS</strong> entry, the corresponding array element should be <strong>null</strong>. No appearance state shall be included for the trap network annotation itself.</td></tr>
+        <tr><td><strong>FontFauxing</strong></td> <td>array</td> <td>(Optional) An array of font dictionaries representing fonts that were fauxed (replaced by substitute fonts) during the generation of trap networks for the page.</td></tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="141163-陷印网络外观">14.11.6.3 陷印网络外观<a class="headerlink" href="#141163-陷印网络外观" title="Permanent link">&para;</a></h3>
+<p><strong>14.11.6.3 Trap Network Appearances</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>陷印网络注释外观字典中的 <strong>N</strong>（正常）子字典的每个条目都包含一个外观流，定义了与给定页面相关联的陷印网络。像所有外观一样，陷印网络是一个流对象，定义了一个形式 XObject（参见 <a href="../../c8/s10/">8.10</a>，“形式 XObject”）。流的主体包含绘制构成陷印网络的陷印所需的图形对象。除了形式字典的标准条目外，其字典条目还包括 <a href="#table367">表 367</a> 中显示的附加条目。</p>
+<p><table id="table367" markdown="span">
+    <caption><strong>表 367 – 陷印网络外观流特有的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>PCM</td> <td>name </td> <td>(必需) 创建此陷印网络时假定的过程颜色模型的名称；等同于 PostScript 页面设备参数 <strong>ProcessColorModel</strong>（参见 PostScript 语言参考手册第三版的第 6.2.5 节）。有效值为 <strong>DeviceGray</strong>、<strong>DeviceRGB</strong>、<strong>DeviceCMYK</strong>、<strong>DeviceCMY</strong>、<strong>DeviceRGBK</strong> 和 <strong>DeviceN</strong>。</td></tr>
+        <tr><td>SeparationColorNames</td> <td>array </td> <td>(可选) 一个名称数组，标识创建此网络时假定的色彩原料；等同于 PostScript 页面设备参数同名的条目（参见 PostScript 语言参考手册第三版的第 6.2.5 节）。由过程颜色模型 <strong>PCM</strong> 隐含的色彩原料自动可用，无需显式声明。如果此条目不存在，则假定使用 <strong>PCM</strong> 隐含的色彩原料。</td></tr>
+        <tr><td>TrapRegions</td> <td>array </td> <td>(可选) 一个间接引用的 <strong>TrapRegion</strong> 对象数组，定义页面的陷印区域和关联的陷印参数，如 Adobe 技术说明 #5620 中所述的便携式作业票格式。这些引用指向构成 PJTF 作业票部分的对象，这些部分应嵌入在 PDF 文件中。当陷印区域和参数由外部作业票（或其他方式，如 JDF）定义时，此条目应缺省。</td></tr>
+        <tr><td>TrapStyles</td> <td>text string </td> <td>(可选) 应用程序可以用来描述此陷印网络给用户的易读文本字符串。<br/><br/> 示例 &emsp; 用于在陷印网络之间切换。</td></tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>预分色 PDF 文件（参见 <a href="#14114-分色字典">14.11.4</a>，“分色字典”）可能无法进行陷印，因为陷印是在不同颜色之间的边界上定义的，而预分色文件只使用一种颜色。因此，预分色应在陷印之后进行，而不是之前进行。符合规范的写入程序在对陷印 PDF 文件进行预分色时，负责为分色后的陷印网络计算新的 <strong>Version</strong> 数组。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Each entry in the <strong>N</strong> (normal) subdictionary of a trap network annotation’s appearance dictionary holds an appearance stream defining a trap network associated with the given page. Like all appearances, a trap network is a stream object defining a form XObject (see <a href="../../c8/s10/">8.10</a>, “Form XObjects”). The body of the stream contains the graphics objects needed to paint the traps making up the trap network. Its dictionary entries include, besides the standard entries for a form dictionary, the additional entries shown in <a href="#table367">Table 367</a>.</p>
+<p><table id="table367" markdown="span">
+    <caption><strong>Table 367 – Additional entries specific to a trap network appearance stream</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>PCM</td> <td>name </td> <td>(Required) The name of the process colour model that was assumed when this trap network was created; equivalent to the PostScript page device parameter <strong>ProcessColorModel</strong> (see Section 6.2.5 of the PostScript Language Reference, Third Edition). Valid values are <strong>DeviceGray</strong>, <strong>DeviceRGB</strong>, <strong>DeviceCMYK</strong>, <strong>DeviceCMY</strong>, <strong>DeviceRGBK</strong>, and <strong>DeviceN</strong>.</td></tr>
+        <tr><td>SeparationColorNames</td> <td>array </td> <td>(Optional) An array of names identifying the colorants that were assumed when this network was created; equivalent to the PostScript page device parameter of the same name (see Section 6.2.5 of the PostScript Language Reference, Third Edition). Colourants implied by the process colour model <strong>PCM</strong> are available automatically and need not be explicitly declared. If this entry is absent, the colorants implied by <strong>PCM</strong> shall be assumed.</td></tr>
+        <tr><td>TrapRegions</td> <td>array </td> <td>(Optional) An array of indirect references to <strong>TrapRegion</strong> objects defining the page’s trapping zones and the associated trapping parameters, as described in Adobe Technical Note #5620, Portable Job Ticket Format. These references refer to objects comprising portions of a PJTF job ticket that shall be embedded in the PDF file. When the trapping zones and parameters are defined by an external job ticket (or by some other means, such as JDF), this entry shall be absent.</td></tr>
+        <tr><td>TrapStyles</td> <td>text string </td> <td>(Optional) A human-readable text string that applications may use to describe this trap network to the user.<br/><br/> EXAMPLE &emsp; To allow switching between trap networks).</td></tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Preseparated PDF files (see <a href="#14114-分色字典">14.11.4</a>, “Separation Dictionaries”) may not be trapped because traps are defined along the borders between different colours and a preseparated file uses only one colour. Therefore, preseparation shall occur after trapping, not before. An conforming writer that preseparates a trapped PDF file is responsible for calculating new <strong>Version</strong> arrays for the separated trap networks.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="14117-开放印前接口-opi">14.11.7 开放印前接口 (OPI)<a class="headerlink" href="#14117-开放印前接口-opi" title="Permanent link">&para;</a></h2>
+<p><strong>14.11.7 Open Prepress Interface (OPI)</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在印前环境中的工作流程通常涉及多个应用程序，涵盖了图形设计、页面排版、文字处理、照片处理和文档构建等领域。当文档的各个部分从一个应用程序传输到另一个应用程序时，将高分辨率图像的数据与文档本身的数据分开是非常有用的，因为这些图像可能非常大——在某些情况下，可能是文档其余部分大小的多倍。<em>开放印前接口</em>（OPI）是一种机制，最初由 Aldus 公司开发，用于为此类高分辨率图像创建低分辨率的占位符或代理。代理通常由一个下采样版本的完整分辨率图像组成，用于屏幕显示和校样。在文档打印之前，它会经过一个称为 OPI 服务器的过滤器，该过滤器将代理替换为原始的完整分辨率图像。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 1</p>
+<p>在 PostScript 程序中，OPI 代理通过 PostScript 代码定义，这些代码被特殊的 OPI 注释包围，指定了图像的放置、裁剪、大小、旋转、颜色和其他属性的调整信息。</p>
+</div>
+<p>在 PDF 中，代理应作为图像或形式 XObject 嵌入文档，并附有一个 OPI 字典（PDF 1.2）。该字典包含与 PostScript 中的 OPI 注释传递相同的信息。OPI 支持两个版本，分别为版本 1.3 和 2.0。在 OPI 1.3 中，由单个图像构成的代理（没有图形状态的更改）可以表示为图像 XObject；否则，它应表示为形式 XObject。在 OPI 2.0 中，代理总是涉及图形状态的更改，因此应表示为形式 XObject。</p>
+<p>表示 OPI 代理的 XObject 应在其图像或形式字典中包含一个 <strong>OPI</strong> 条目（参见表 89 和表 95）。此条目的值是一个 OPI 版本字典（表 368），该字典标识代理所对应的 OPI 版本。该字典由一个条目组成，该条目的键为 <strong>1.3</strong> 或 <strong>2.0</strong>，其值为定义代理 OPI 属性的 OPI 字典。</p>
+<p><table id="table368" markdown="span">
+    <caption><strong>表 368 – OPI 版本字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>版本号</td> <td>字典 </td> <td>(必需；PDF 1.2) 一个 OPI 字典，指定此代理的属性（参见 <a href="#table369">表 369</a> 和 <a href="#table370">表 370</a>）。此条目的键应为 <strong>1.3</strong> 或 <strong>2.0</strong>，标识代理所对应的 OPI 版本。</td></tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注意 2</p>
+<p>与其他任何 PDF 字典一样，OPI 版本字典中的键是一个名称对象。因此，OPI 版本字典将在 PDF 文件中写成如下形式：</p>
+<p><code>&lt;&lt; /1.3 d 0 R &gt;&gt;% OPI 1.3 字典</code></p>
+<p>或者</p>
+<p><code>&lt;&lt; /2.0 d 0 R &gt;&gt;% OPI 2.0 字典</code></p>
+<p>其中 <em>d</em> 是对应 OPI 字典的对象编号。</p>
+</div>
+<p><a href="#table369">表 369</a> 和 <a href="#table370">表 370</a> 分别描述了 OPI 1.3 和 OPI 2.0 的 OPI 字典的内容，以及相应的 PostScript OPI 注释。字典条目应按照相应 PostScript 程序中 OPI 注释出现的顺序列出。有关这些条目的含义及其对 OPI 服务器的影响的完整详细信息，请参见《OPI：开放印前接口规范 1.3》和 Adobe 技术说明 #5660，《开放印前接口（OPI）规范，第 2.0 版》。</p>
+<p><table id="table369" markdown="span">
+    <caption><strong>表 369 – 版本 1.3 OPI 字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>OPI 注释</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Type</td> <td>name </td> <td></td> <td>(可选) 该字典所描述的 PDF 对象的类型；如果存在，应为 <strong>OPI</strong>，表示 OPI 字典。</td></tr>
+        <tr><td>Version</td> <td>number </td> <td></td> <td>(必需) 该字典所指的 OPI 版本；应为数字 1.3（而非名称 1.3，如在 OPI 版本字典中）。</td></tr>
+        <tr><td>F</td> <td>file specification </td> <td>%ALDImageFilename</td> <td>(必需) 包含与此代理对应的图像的外部文件。</td></tr>
+        <tr>
+            <td>ID</td> 
+            <td>byte string </td> 
+            <td>%ALDImageID</td> 
+            <td>(可选) 标识图像的字符串。</td>
+        </tr>
+        <tr>
+            <td>Comments</td> 
+            <td>text string </td> 
+            <td>%ALDObjectComments</td> 
+            <td>(可选) 可供人类阅读的注释，通常包含对 OPI 服务器操作员的说明或建议，关于如何处理图像。</td>
+        </tr>
+        <tr>
+            <td>Size</td> 
+            <td>array </td> 
+            <td>%ALDImageDimensions</td> 
+            <td>(必需) 一个包含两个整数的数组，形式为 [像素宽度 像素高度]，指定图像的像素尺寸。</td>
+        </tr>
+        <tr>
+            <td>CropRect</td> 
+            <td>rectangle </td> 
+            <td>%ALDImageCropRect</td> 
+            <td>(必需) 一个包含四个整数的数组，形式为 [左 上 右 下]，指定将使用的图像部分。</td>
+        </tr>
+        <tr>
+            <td>CropFixed</td> 
+            <td>array </td> 
+            <td>%ALDImageCropFixed</td> 
+            <td>(可选) 一个与 <strong>CropRect</strong> 具有相同形式和含义的数组，但用实数表示而非整数。默认值：<strong>CropRect</strong> 的值。</td>
+        </tr>
+        <tr>
+            <td>Position</td> 
+            <td>array </td> 
+            <td>%ALDImagePosition</td> 
+            <td>(必需) 一个包含八个数字的数组，形式为 <span class="arithmatex">\([ll_x ll_y ul_x ul_y ur_x ur_y lr_x lr_y]\)</span>，指定裁剪后图像在页面上的位置，其中 <span class="arithmatex">\((ll_x, ll_y)\)</span> 是左下角的用户空间坐标，<span class="arithmatex">\((ul_x, ul_y)\)</span> 是左上角的坐标，<span class="arithmatex">\((ur_x , ur_y)\)</span> 是右上角的坐标，<span class="arithmatex">\((lr_x , lr_y)\)</span> 是右下角的坐标。指定的坐标应定义一个平行四边形；即，它们应满足条件 <span class="arithmatex">\(ul_x - ll_x = ur_x - lr_x\)</span> 和 <span class="arithmatex">\(ul_y - ll_y = ur_y - lr_y\)</span>。<strong>Position</strong> 和 <strong>CropRect</strong> 的组合决定了图像的缩放、旋转、反射和倾斜。</td>
+        </tr>
+        <tr>
+            <td>Resolution</td> 
+            <td>array </td> 
+            <td>%ALDImageResolution</td> 
+            <td>(可选) 一个包含两个数字的数组，形式为 [ 水平分辨率 垂直分辨率 ]，指定图像的分辨率，以每英寸采样数表示。</td>
+        </tr>
+        <tr>
+            <td>ColorType</td> 
+            <td>name </td> 
+            <td>%ALDImageColorType</td> 
+            <td>(可选) <strong>Color</strong> 条目指定的颜色类型。有效值为 Process、Spot 和 Separation。默认值：Spot。</td>
+        </tr>
+        <tr>
+            <td>Color</td> 
+            <td>array </td> 
+            <td>%ALDImageColor</td> 
+            <td>(可选) 一个包含四个数字和一个字节字符串的数组，形式为 [ C M Y K 颜色名称 ]，指定图像呈现时使用的颜色的值和名称。C、M、Y 和 K 的值应在 0.0 到 1.0 范围内。默认值：[ 0.0 0.0 0.0 1.0 (黑色) ]。</td>
+        </tr>
+        <tr>
+            <td>Tint</td> 
+            <td>number </td> 
+            <td>%ALDImageTint</td> 
+            <td>(可选) 一个在 0.0 到 1.0 范围内的数字，指定图像呈现时 <strong>Color</strong> 中颜色的浓度。默认值：1.0。</td>
+        </tr>
+        <tr>
+            <td>Overprint</td> 
+            <td>boolean </td> 
+            <td>%ALDImageOverprint</td> 
+            <td>(可选) 一个标志，指定图像是否应覆盖（<strong>true</strong>）或去除（<strong>false</strong>）其他分色上的底层标记。默认值：<strong>false</strong>。</td>
+        </tr>
+        <tr>
+            <td>ImageType</td> 
+            <td>array </td> 
+            <td>%ALDImageType</td> 
+            <td>(可选) 一个包含两个整数的数组，形式为 [ 每像素样本数 每样本位数 ]，指定图像的每像素样本数和每样本的位数。</td>
+        </tr>
+        <tr>
+            <td>GrayMap</td> 
+            <td>array </td> 
+            <td>%ALDImageGrayMap</td> 
+            <td>(可选) 一个包含 2n 个整数的数组，范围为 0 到 65,535（其中 n 是每样本的位数），记录对图像亮度或对比度所做的更改。</td>
+        </tr>
+        <tr>
+            <td>Transparency</td> 
+            <td>boolean </td> 
+            <td>%ALDImageTransparency</td> 
+            <td>(可选) 一个标志，指定图像中的白色像素是否应视为透明。默认值：<strong>true</strong>。</td>
+        </tr>
+        <tr>
+            <td>Tags</td> 
+            <td>array </td> 
+            <td>%ALDImageAsciiTag&lt; NNN &gt;</td> 
+            <td>(可选) 一个数组，包含形式为 [ tagNum1 tagText1 … tagNumn tagTextn ] 的对，其中每个 tagNum 是一个整数，表示 TIFF 标签号，每个 tagText 是一个 ASCII 字符串，表示对应的 ASCII 标签值。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table370" markdown="span">
+    <caption><strong>表 370 – 版本 2.0 OPI 字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>OPI 注释</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td> 
+            <td>name </td> 
+            <td></td> 
+            <td>(可选) 该字典所描述的 PDF 对象的类型；如果存在，应为 <strong>OPI</strong>，表示 OPI 字典。</td>
+        </tr>
+        <tr>
+            <td><strong>Version</strong></td> 
+            <td>number </td> 
+            <td></td> 
+            <td>(必需) 该字典所指的 OPI 版本；应为数字 2 或 2.0（而非名称 2.0，如在 OPI 版本字典中）。</td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td> 
+            <td>file specification </td> 
+            <td>%%ImageFilename</td> 
+            <td>(必需) 包含低分辨率代理图像的外部文件。</td>
+        </tr>
+        <tr>
+            <td><strong>MainImage</strong></td> 
+            <td>byte string </td> 
+            <td>%%MainImage</td> 
+            <td>(可选) 包含对应此代理的高分辨率图像的文件路径，或任何其他唯一标识高分辨率图像的字符串。</td>
+        </tr>
+        <tr>
+            <td><strong>Tags</strong></td> 
+            <td>array </td> 
+            <td>%%TIFFASCIITag</td> 
+            <td>(可选) 形式为 [ tagNum1 tagText1 … tagNumn tagTextn ] 的数组，其中每个 tagNum 是一个整数，表示 TIFF 标签号，每个 tagText 是一个 ASCII 字符串或 ASCII 字符串数组，表示相应的 ASCII 标签值。</td>
+        </tr>
+        <tr>
+            <td><strong>Size</strong></td> 
+            <td>array </td> 
+            <td>%%ImageDimensions</td> 
+            <td>(可选) 形式为 [ 宽度 高度 ] 的数组，指定图像的像素尺寸。</td>
+        </tr>
+        <tr>
+            <td><strong>CropRect</strong></td> 
+            <td>rectangle </td> 
+            <td>%%ImageCropRect</td> 
+            <td>(可选) 形式为 [ 左 上 右 下 ] 的四个数字的数组，指定将使用的图像部分。<strong>Size</strong> 和 <strong>CropRect</strong> 条目要么都存在，要么都不存在。如果存在，它们应满足条件 0 ≤ left &lt; right ≤ width 和 0 ≤ top &lt; bottom ≤ height。在此坐标空间中，正的 y 轴垂直向下延伸；因此，要求 top &lt; bottom。</td>
+        </tr>
+        <tr>
+            <td><strong>Overprint</strong></td> 
+            <td>boolean </td> 
+            <td>%%ImageOverprint</td> 
+            <td>(可选) 一个标志，指定图像是否应覆盖（<strong>true</strong>）或去除（<strong>false</strong>）其他分色上的底层标记。默认值：<strong>false</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Inks</strong></td> 
+            <td>name or array </td> 
+            <td>%%ImageInks</td> 
+            <td>(可选) 一个名称对象或数组，指定应用于图像的颜料。该值可以是名称 full_color 或 registration，或者是形式为 [ /monochrome name1 tint1 … namen tintn ] 的数组，其中每个 name 是表示颜料名称的字符串，每个 tint 是一个实数，范围为 0.0 到 1.0，指定应用该颜料的浓度。</td>
+        </tr>
+        <tr>
+            <td><strong>IncludedImageDimensions</strong></td> 
+            <td>array </td> 
+            <td>%%IncludedImageDimensions</td> 
+            <td>(可选) 形式为 [ pixelsWide pixelsHigh ] 的两个整数的数组，指定包含图像的像素尺寸。</td>
+        </tr>
+        <tr>
+            <td><strong>IncludedImageQuality</strong></td> 
+            <td>number </td> 
+            <td>%%IncludedImageQuality</td> 
+            <td>(可选) 一个数字，指示包含图像的质量。有效值为 1、2 和 3。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>The workflow in a prepress environment often involves multiple applications in areas such as graphic design, page layout, word processing, photo manipulation, and document construction. As pieces of the final document are moved from one application to another, it is useful to separate the data of high-resolution images, which can be quite large—in some cases, many times the size of the rest of the document combined—from that of the document itself. The <em>Open Prepress Interface</em> (OPI) is a mechanism, originally developed by Aldus Corporation, for creating low-resolution placeholders, or proxies, for such high-resolution images. The proxy typically consists of a downsampled version of the full-resolution image, to be used for screen display and proofing. Before the document is printed, it passes through a filter known as an OPI server, which replaces the proxies with the original full-resolution images.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>In PostScript programs, OPI proxies are defined by PostScript code surrounded by special OPI comments,</p>
+</div>
+<p>which specify such information as the placement and cropping of the image and adjustments to its size,
+rotation, colour, and other attributes.</p>
+<p>In PDF, proxies shall be embedded in a document as image or form XObjects with an associated OPI dictionary
+(PDF 1.2). This dictionary contains the same information that the OPI comments convey in PostScript. Two
+versions of OPI shall be supported, versions 1.3 and 2.0. In OPI 1.3, a proxy consisting of a single image, with
+no changes in the graphics state, may be represented as an image XObject; otherwise it shall be a form
+XObject. In OPI 2.0, the proxy always entails changes in the graphics state and hence shall be represented as
+a form XObject.</p>
+<p>An XObject representing an OPI proxy shall contain an <strong>OPI</strong> entry in its image or form dictionary (see Table 89
+and Table 95). The value of this entry is an OPI version dictionary (Table 368) identifying the version of OPI to
+which the proxy corresponds. This dictionary consists of a single entry, whose key is the name <strong>1.3</strong> or <strong>2.0</strong> and
+whose value is the OPI dictionary defining the proxy’s OPI attributes.</p>
+<p><table id="table368" markdown="span">
+    <caption><strong>Table 368 – Entry in an OPI version dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>version number</td> <td>dictionary </td> <td>(Required; PDF 1.2) An OPI dictionary specifying the attributes of this proxy (see <a href="#table369">Tables 369</a> and <a href="#table370">370</a>). The key for this entry shall be the name <strong>1.3</strong> or <strong>2.0</strong>, identifying the version of OPI to which the proxy corresponds.</td></tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>As in any other PDF dictionary, the key in an OPI version dictionary is a name object. The OPI version dictionary would thus be written in the PDF file in either the form</p>
+<p><code>&lt;&lt; /1.3 d 0 R &gt;&gt;% OPI 1.3 dictionary</code></p>
+<p>or </p>
+<p><code>&lt;&lt; /2.0 d 0 R &gt;&gt;% OPI 2.0 dictionary</code></p>
+<p>where <em>d</em> is the object number of the corresponding OPI dictionary.</p>
+</div>
+<p><a href="#table369">Table 369</a> and <a href="#table370">Table 370</a> describe the contents of the OPI dictionaries for OPI 1.3 and OPI 2.0, respectively, along with the corresponding PostScript OPI comments. The dictionary entries shall be listed in the order in which the corresponding OPI comments appear in a PostScript program. Complete details on the meanings of these entries and their effects on OPI servers can be found in OPI: Open Prepress Interface Specification 1.3 and Adobe Technical Note #5660, Open Prepress Interface (OPI) Specification, Version 2.0.</p>
+<p><table id="table369" markdown="span">
+    <caption><strong>Table 369 – Entries in a version 1.3 OPI dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>OPI Comment</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Type</td> <td>name </td> <td></td> <td>(Optional) The type of PDF object that this dictionary describes; if present, shall be <strong>OPI</strong> for an OPI dictionary.</td></tr>
+        <tr><td>Version</td> <td>number </td> <td></td> <td>(Required) The version of OPI to which this dictionary refers; shall be the number 1.3 (not the name 1.3, as in an OPI version dictionary).</td></tr>
+        <tr><td>F</td> <td>file specification </td> <td>%ALDImageFilename</td> <td>(Required) The external file containing the image corresponding to this proxy.</td></tr>
+        <tr>
+            <td>ID</td> 
+            <td>byte string </td> 
+            <td>%ALDImageID</td> 
+            <td>(Optional) An identifying string denoting the image.</td>
+        </tr>
+        <tr>
+            <td>Comments</td> 
+            <td>text string </td> 
+            <td>%ALDObjectComments</td> 
+            <td>(Optional) A human-readable comment, typically containing instructions or suggestions to the operator of the OPI server on how to handle the image.</td>
+        </tr>
+        <tr>
+            <td>Size</td> 
+            <td>array </td> 
+            <td>%ALDImageDimensions</td> 
+            <td>(Required) An array of two integers of the form [pixelsWide pixelsHigh] specifying the dimensions of the image in pixels.</td>
+        </tr>
+        <tr>
+            <td>CropRect</td> 
+            <td>rectangle </td> 
+            <td>%ALDImageCropRect</td> 
+            <td>(Required) An array of four integers of the form [left top right bottom] specifying the portion of the image to be used.</td>
+        </tr>
+        <tr>
+            <td>CropFixed</td> 
+            <td>array </td> 
+            <td>%ALDImageCropFixed</td> 
+            <td>(Optional) An array with the same form and meaning as <strong>CropRect</strong>, but expressed in real numbers instead of integers. Default value: the value of <strong>CropRect</strong>.</td>
+        </tr>
+        <tr>
+            <td>Position</td> 
+            <td>array </td> 
+            <td>%ALDImagePosition</td> 
+            <td>(Required) An array of eight numbers of the form <span class="arithmatex">\([ll_x ll_y ul_x ul_y ur_x ur_y lr_x lr_y]\)</span> specifying the location on the page of the cropped image, where <span class="arithmatex">\((ll_x, ll_y)\)</span> are the user space coordinates of the lower-left corner, <span class="arithmatex">\((ul_x, ul_y)\)</span> are those of the upper-left corner, <span class="arithmatex">\((ur_x , ur_y)\)</span> are those of the upper-right corner, and <span class="arithmatex">\((lr_x , lr_y)\)</span> are those of the lower-right corner. The specified coordinates shall define a parallelogram; that is, they shall satisfy the conditions <span class="arithmatex">\(ul_x - ll_x = ur_x - lr_x\)</span> and <span class="arithmatex">\(ul_y - ll_y = ur_y - lr_y\)</span> The combination of <strong>Position</strong> and <strong>CropRect</strong> determines the image’s scaling, rotation, reflection, and skew.</td>
+        </tr>
+        <tr>
+            <td>Resolution</td> 
+            <td>array </td> 
+            <td>%ALDImageResolution</td> 
+            <td>(Optional) An array of two numbers of the form [ horizRes vertRes ] specifying the resolution of the image in samples per inch.</td>
+        </tr>
+        <tr>
+            <td>ColorType</td> 
+            <td>name </td> 
+            <td>%ALDImageColorType</td> 
+            <td>(Optional) The type of colour specified by the <strong>Color</strong> entry. Valid values are Process, Spot, and Separation. Default value: Spot.</td>
+        </tr>
+        <tr>
+            <td>Color</td> 
+            <td>array </td> 
+            <td>%ALDImageColor</td> 
+            <td>(Optional) An array of four numbers and a byte string of the form [ C M Y K colorName ] specifying the value and name of the colour in which the image is to be rendered. The values of C, M, Y, and K shall all be in the range 0.0 to 1.0. Default value: [ 0.0 0.0 0.0 1.0 ( Black )].</td>
+        </tr>
+        <tr>
+            <td>Tint</td> 
+            <td>number </td> 
+            <td>%ALDImageTint</td> 
+            <td>(Optional) A number in the range 0.0 to 1.0 specifying the concentration of the colour specified by <strong>Color</strong> in which the image is to be rendered. Default value: 1.0.</td>
+        </tr>
+        <tr>
+            <td>Overprint</td> 
+            <td>boolean </td> 
+            <td>%ALDImageOverprint</td> 
+            <td>(Optional) A flag specifying whether the image is to overprint (<strong>true</strong>) or knock out (<strong>false</strong>) underlying marks on other separations. Default value: <strong>false</strong>.</td>
+        </tr>
+        <tr>
+            <td>ImageType</td> 
+            <td>array </td> 
+            <td>%ALDImageType</td> 
+            <td>(Optional) An array of two integers of the form [ samples bits ] specifying the number of samples per pixel and bits per sample in the image.</td>
+        </tr>
+        <tr>
+            <td>GrayMap</td> 
+            <td>array </td> 
+            <td>%ALDImageGrayMap</td> 
+            <td>(Optional) An array of 2n integers in the range 0 to 65,535 (where n is the number of bits per sample) recording changes made to the brightness or contrast of the image.</td>
+        </tr>
+        <tr>
+            <td>Transparency</td> 
+            <td>boolean </td> 
+            <td>%ALDImageTransparency</td> 
+            <td>(Optional) A flag specifying whether white pixels in the image shall be treated as transparent. Default value: <strong>true</strong>.</td>
+        </tr>
+        <tr>
+            <td>Tags</td> 
+            <td>array </td> 
+            <td>%ALDImageAsciiTag&lt; NNN &gt;</td> 
+            <td>(Optional) An array of pairs of the form [ tagNum1 tagText1 … tagNumn tagTextn ] where each tagNum is an integer representing a TIFF tag number and each tagText is an ASCII string representing the corresponding ASCII tag value.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table368" markdown="span">
+    <caption><strong>Table 368 – Entry in an OPI version dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>OPI Comment</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td> 
+            <td>name </td> 
+            <td></td> 
+            <td>(Optional) The type of PDF object that this dictionary describes; if present, shall be <strong>OPI</strong> for an OPI dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>Version</strong></td> 
+            <td>number </td> 
+            <td></td> 
+            <td>(Required) The version of OPI to which this dictionary refers; shall be the number 2 or 2.0 (not the name 2.0, as in an OPI version dictionary).</td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td> 
+            <td>file specification </td> 
+            <td>%%ImageFilename</td> 
+            <td>(Required) The external file containing the low-resolution proxy image.</td>
+        </tr>
+        <tr>
+            <td><strong>MainImage</strong></td> 
+            <td>byte string </td> 
+            <td>%%MainImage</td> 
+            <td>(Optional) The pathname of the file containing the full-resolution image corresponding to this proxy, or any other identifying string that uniquely identifies the full-resolution image.</td>
+        </tr>
+        <tr>
+            <td><strong>Tags</strong></td> 
+            <td>array </td> 
+            <td>%%TIFFASCIITag</td> 
+            <td>(Optional) An array of pairs of the form [ tagNum1 tagText1 … tagNumn tagTextn ] where each tagNum is an integer representing a TIFF tag number and each tagText is an ASCII string or an array of ASCII strings representing the corresponding ASCII tag value.</td>
+        </tr>
+        <tr>
+            <td><strong>Size</strong></td> 
+            <td>array </td> 
+            <td>%%ImageDimensions</td> 
+            <td>(Optional) An array of two numbers of the form [ width height ] specifying the dimensions of the image in pixels.</td>
+        </tr>
+        <tr>
+            <td><strong>CropRect</strong></td> 
+            <td>rectangle </td> 
+            <td>%%ImageCropRect</td> 
+            <td>(Optional) An array of four numbers of the form [ left top right bottom ] specifying the portion of the image to be used. The <strong>Size</strong> and <strong>CropRect</strong> entries shall either both be present or both be absent. If present, they shall satisfy the conditions 0 ≤ left &lt; right ≤ width and 0 ≤ top &lt; bottom ≤ height In this coordinate space, the positive y axis extends vertically downward; hence, the requirement that top &lt; bottom.</td>
+        </tr>
+        <tr>
+            <td><strong>Overprint</strong></td> 
+            <td>boolean </td> 
+            <td>%%ImageOverprint</td> 
+            <td>(Optional) A flag specifying whether the image is to overprint (<strong>true</strong>) or knock out (<strong>false</strong>) underlying marks on other separations. Default value: <strong>false</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>Inks</strong></td> 
+            <td>name or array </td> 
+            <td>%%ImageInks</td> 
+            <td>(Optional) A name object or array specifying the colorants to be applied to the image. The value may be the name full_color or registration or an array of the form [ /monochrome name1 tint1 … namen tintn ] where each name is a string representing the name of a colorant and each tint is a real number in the range 0.0 to 1.0 specifying the concentration of that colorant to be applied.</td>
+        </tr>
+        <tr>
+            <td><strong>IncludedImageDimensions</strong></td> 
+            <td>array </td> 
+            <td>%%IncludedImageDimensions</td> 
+            <td>(Optional) An array of two integers of the form [ pixelsWide pixelsHigh ] specifying the dimensions of the included image in pixels.</td>
+        </tr>
+        <tr>
+            <td><strong>IncludedImageQuality</strong></td> 
+            <td>number </td> 
+            <td>%%IncludedImageQuality</td> 
+            <td>(Optional) A number indicating the quality of the included image. Valid values are 1, 2, and 3.</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月12日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

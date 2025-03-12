@@ -1,0 +1,2205 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s2/">
+      
+      
+        <link rel="next" href="../s4/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>9.3 文本状态参数和操作 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#93-文本状态参数和操作" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9.3 文本状态参数和操作
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            9文本
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.2 字体的组织和使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    9.3 文本状态参数和操作
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    9.3 文本状态参数和操作
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#931-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#932-字符间距" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.2 字符间距
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#933-字间距" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.3 字间距
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#934-水平扩展" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.4 水平扩展
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#935-引导" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.5 引导
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#936-文本渲染模式" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.6 文本渲染模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#937-文本升降" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.7 文本升降
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#938-文本镂空切割" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.8 文本镂空(切割)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.4 文本对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.5 字体数据结构简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.6 简单字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.7 组合字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.8 字体描述符
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.9 嵌入式字体程序
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.10 文本内容提取
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#931-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#932-字符间距" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.2 字符间距
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#933-字间距" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.3 字间距
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#934-水平扩展" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.4 水平扩展
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#935-引导" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.5 引导
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#936-文本渲染模式" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.6 文本渲染模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#937-文本升降" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.7 文本升降
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#938-文本镂空切割" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.3.8 文本镂空(切割)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="93-文本状态参数和操作">9.3 文本状态参数和操作<a class="headerlink" href="#93-文本状态参数和操作" title="Permanent link">&para;</a></h1>
+<p><strong>Text State Parameters and Operators</strong></p>
+<h2 id="931-概述">9.3.1 概述<a class="headerlink" href="#931-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>文本状态(text state)</em> 包括那些只影响文本的图形状态参数。文本状态中有九个参数（见表104）。</p>
+<p><table id="table104" markdown="span">
+    <caption><strong>Table 104 – 文本状态参数</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>参数</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="arithmatex">\(T_c\)</span></td>
+            <td>字符间距(Character spacing)
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_w\)</span></td>
+            <td>字间距(Word spacing)
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_h\)</span></td>
+            <td>水平缩放(Horizontal scaling)
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_l\)</span></td>
+            <td>行距(Leading)
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_f\)</span></td>
+            <td>字体(Text font)
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_{fs}\)</span></td>
+            <td>字体大小(Text font size)
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_{mode}\)</span></td>
+            <td>渲染模式(Text rendering mode)
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_{rise}\)</span></td>
+            <td>文本提升(Text rise)
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_k\)</span></td>
+            <td>文本击穿(Text knockout)
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>除了前面描述的<span class="arithmatex">\(T_f\)</span>和<span class="arithmatex">\(T_{fs}\)</span>，这些参数将在后续子条款中进一步讨论。（如<a href="../s4/">9.4</a>节“文本对象”中所述，还有三个与文本相关的额外参数只能在文本对象内使用：<span class="arithmatex">\(T_m\)</span>，文本矩阵；<span class="arithmatex">\(T_{lm}\)</span>，文本行矩阵；以及<span class="arithmatex">\(T_{rm}\)</span>，文本渲染矩阵。）在定位和显示文本时（使用<a href="../s4/#942-文本位置操作">9.4.2</a>节“文本定位操作符”和<a href="../s4/#943-文本显示操作符">9.4.3</a>节“文本显示操作符”中描述的操作符），应咨询文本状态参数的值。特别是，间距和缩放参数应在<a href="../s4/#944-文本空间与坐标变换">9.4.4</a>节“文本空间细节”中描述的计算中使用。可以使用<a href="#table105">表105</a>中列出的操作符设置文本状态参数的值。</p>
+<p>文本击穿参数<span class="arithmatex">\(T_k\)</span>应通过使用<strong>gs</strong>操作符（见<a href="../../c8/s4/#845-图形状态参数字典">8.4.5</a>节“图形状态参数字典”）在图形状态参数字典中的<strong><em>TK</em></strong>条目来设置。没有专门设置此参数的操作符。</p>
+<p>文本状态操作符可能出现在文本对象之外，它们设置的值在单个内容流中的文本对象之间保留。像其他图形状态参数一样，这些参数应在每页开始时初始化为其默认值。</p>
+<p><table id="table105" markdown="span">
+    <caption><strong>Table 105 – 文本状态操作符</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>charSpace</td>
+            <td><strong>Tc</strong></td>
+            <td>设置字符间距 <span class="arithmatex">\(T_c\)</span> 为 charSpace，它应该是一个未缩放文本空间单位的数字。字符间距将由 <strong>Tj</strong>、<strong>TJ</strong> 和 <strong>'</strong> 操作符使用。初始值：0。
+            </td>
+        </tr>
+        <tr>
+            <td>wordSpace</td>
+            <td><strong>Tw</strong></td>
+            <td>设置单词间距 <span class="arithmatex">\(T_w\)</span> 为 wordSpace，它应该是一个未缩放文本空间单位的数字。单词间距将由 <strong>Tj</strong>、<strong>TJ</strong> 和 <strong>'</strong> 操作符使用。初始值：0。
+            </td>
+        </tr>
+        <tr>
+            <td>scale</td>
+            <td><strong>Tz</strong></td>
+            <td>设置水平缩放 <span class="arithmatex">\(T_h\)</span> 为 (<em>scale</em> ÷ 100)。<em>scale</em> 应该是一个数字，指定正常宽度的百分比。初始值：100（正常宽度）。
+            </td>
+        </tr>
+        <tr>
+            <td>leading</td>
+            <td><strong>TL</strong></td>
+            <td>设置文本行距 <span class="arithmatex">\(T_l\)</span> 为 <em>leading</em> ，它应该是一个未缩放文本空间单位的数字。文本行距仅由 <strong>T*</strong>, <strong>'</strong>, 和 <strong>"</strong> 操作符使用。初始值：0。
+            </td>
+        </tr>
+        <tr>
+            <td>font size</td>
+            <td><strong>Tf</strong></td>
+            <td>设置文本字体 <span class="arithmatex">\(T_f\)</span> 为 font，文本字体大小 <span class="arithmatex">\(T_{fs}\)</span> 为 <em>size</em> 。font 应该是当前资源字典的 <strong>Font</strong> 子字典中字体资源的名称；size 应该是一个数字，代表一个缩放因子。对于 font 或 size，没有初始值；在使用 <strong>Tf</strong> 之前，它们必须明确指定，以便显示任何文本。
+            </td>
+        </tr>
+        <tr>
+            <td>render</td>
+            <td><strong>Tr</strong></td>
+            <td>设置文本渲染模式 <span class="arithmatex">\(T_{mode}\)</span> 为 <em>render</em> ，它应该是一个整数。初始值：0。
+            </td>
+        </tr>
+        <tr>
+            <td>rise</td>
+            <td><strong>Ts</strong></td>
+            <td>设置文本提升 <span class="arithmatex">\(T_{rise}\)</span> 为 <em>rise</em> ，它应该是一个未缩放文本空间单位的数字。初始值：0。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>这些参数中的一些是用<em>未缩放(unscaled)</em>的文本空间单位来表示的。这意味着它们应该在一个坐标系中指定，这个坐标系由文本矩阵 <span class="arithmatex">\(T_m\)</span> 定义，但不应通过字体大小参数 <span class="arithmatex">\(T_{fs}\)</span> 进行缩放。</p>
+</div>
+<div class="tabbed-block">
+<p>The <em>text state</em> comprises those graphics state parameters that only affect text. There are nine parameters in the text state (see Table 104).</p>
+<p><table id="table104" markdown="span">
+    <caption><strong>Table 104 – Text state parameters</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Parameter</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="arithmatex">\(T_c\)</span></td>
+            <td>Character spacing
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_w\)</span></td>
+            <td>Word spacing
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_h\)</span></td>
+            <td>Horizontal scaling
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_l\)</span></td>
+            <td>Leading
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_f\)</span></td>
+            <td>Text font
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_{fs}\)</span></td>
+            <td>Text font size
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_{mode}\)</span></td>
+            <td>Text rendering mode
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_{rise}\)</span></td>
+            <td>Text rise
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(T_k\)</span></td>
+            <td>Text knockout
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Except for the previously described <span class="arithmatex">\(T_f\)</span> and <span class="arithmatex">\(T_{fs}\)</span> , these parameters are discussed further in subsequent sub- clauses. (As described in <a href="../s4/">9.4</a>, "Text Objects", three additional text-related parameters may occur only within a text object: <span class="arithmatex">\(T_m\)</span> , the text matrix; <span class="arithmatex">\(T_{lm}\)</span> , the text line matrix; and <span class="arithmatex">\(T_{rm}\)</span> , the text rendering matrix.) The values of the text state parameters shall be consulted when text is positioned and shown (using the operators described in <a href="../s4/#942-文本位置操作">9.4.2</a>, "Text-Positioning Operators" and <a href="../s4/#943-文本显示操作符">9.4.3</a>, "Text-Showing Operators"). In particular, the spacing and scaling parameters shall be used in a computation described in <a href="../s4/#944-文本空间与坐标变换">9.4.4</a>, "Text Space Details". The text state parameters may be set using the operators listed in <a href="#table105">Table 105</a>.</p>
+<p>The text knockout parameter, <span class="arithmatex">\(T_k\)</span> , shall be set through the <strong><em>TK</em></strong> entry in a graphics state parameter dictionary by using the <strong>gs</strong> operator (see <a href="../../c8/s4/#845-图形状态参数字典">8.4.5</a>, "Graphics State Parameter Dictionaries"). There is no specific operator for setting this parameter.</p>
+<p>The text state operators may appear outside text objects, and the values they set are retained across text objects in a single content stream. Like other graphics state parameters, these parameters shall be initialized to their default values at the beginning of each page.</p>
+<p><table id="table105" markdown="span">
+    <caption><strong>Table 105 – Text state operators</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>charSpace</td>
+            <td><strong>Tc</strong></td>
+            <td>Set the character spacing, <span class="arithmatex">\(T_c\)</span> , to <em>charSpace</em>, which shall be a number expressed in unscaled text space units. Character spacing shall be used by the <strong>Tj</strong>, <strong>TJ</strong>, and <strong>'</strong> operators. Initial value: 0.
+            </td>
+        </tr>
+        <tr>
+            <td>wordSpace</td>
+            <td><strong>Tw</strong></td>
+            <td>Set the word spacing, <span class="arithmatex">\(T_w\)</span>, to <em>wordSpace</em>, which shall be a number expressed in unscaled text space units. Word spacing shall be used by the <strong>Tj</strong>, <strong>TJ</strong>, and <strong>'</strong> operators. Initial value: 0.
+            </td>
+        </tr>
+        <tr>
+            <td>scale</td>
+            <td><strong>Tz</strong></td>
+            <td>Set the horizontal scaling, <span class="arithmatex">\(T_h\)</span> , to (<em>scale</em> ÷ 100). <em>scale</em> shall be a number specifying the percentage of the normal width. Initial value: 100 (normal width).
+            </td>
+        </tr>
+        <tr>
+            <td>leading</td>
+            <td><strong>TL</strong></td>
+            <td>Set the text leading, <span class="arithmatex">\(T_l\)</span> , to <em>leading</em>, which shall be a number expressed in unscaled text space units. Text leading shall be used only by the <strong>T*</strong>, <strong>'</strong>, and <strong>"</strong> operators. Initial value: 0.
+            </td>
+        </tr>
+        <tr>
+            <td>font size</td>
+            <td><strong>Tf</strong></td>
+            <td>Set the text font, <span class="arithmatex">\(T_f\)</span> , to font and the text font size, <span class="arithmatex">\(T_{fs}\)</span> , to <em>size</em>. font shall be the name of a font resource in the <strong>Font</strong> subdictionary of the current resource dictionary; size shall be a number representing a scale factor. There is no initial value for either font or size; they shall be specified explicitly by using <strong>Tf</strong> before any text is shown.
+            </td>
+        </tr>
+        <tr>
+            <td>render</td>
+            <td><strong>Tr</strong></td>
+            <td>Set the text rendering mode, <span class="arithmatex">\(T_{mode}\)</span> , to <em>render</em>, which shall be an integer. Initial value: 0.
+            </td>
+        </tr>
+        <tr>
+            <td>rise</td>
+            <td><strong>Ts</strong></td>
+            <td>Set the text rise, <span class="arithmatex">\(T_{rise}\)</span> , to <em>rise</em>, which shall be a number expressed in unscaled text space units. Initial value: 0.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Some of these parameters are expressed in <em>unscaled</em> text space units. This means that they shall be specified in a coordinate system that shall be defined by the text matrix, <span class="arithmatex">\(T_m\)</span> but shall not be scaled by the font size parameter, <span class="arithmatex">\(T_{fs}\)</span> .</p>
+</div>
+</div>
+</div>
+<h2 id="932-字符间距">9.3.2 字符间距<a class="headerlink" href="#932-字符间距" title="Permanent link">&para;</a></h2>
+<p><strong>Character Spacing</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>字符间距参数 <span class="arithmatex">\(T_c\)</span> 应该是一个用未缩放文本空间单位指定的数字（尽管如果书写模式是水平的，它将受到 <span class="arithmatex">\(T_h\)</span> 参数的缩放影响）。当字符串中每个字符的字形被渲染时，根据书写模式，<span class="arithmatex">\(T_c\)</span> 将被加到字形的水平或垂直偏移分量上。字形偏移的讨论请参见<a href="../s2/#924-字形定位和规格">9.2.4</a>节，“字形定位和度量”。在默认坐标系统中，水平坐标从左到右增加，垂直坐标从下到上增加。因此，对于水平书写，<span class="arithmatex">\(T_c\)</span> 的正值会扩大字形之间的距离（见图41），而对于垂直书写，<span class="arithmatex">\(T_c\)</span> 的负值则有此效果。</p>
+<p><a class="glightbox" href="../imgs/f41.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f41.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>The character-spacing parameter, <span class="arithmatex">\(T_c\)</span> , shall be a number specified in unscaled text space units (although it shall be subject to scaling by the <span class="arithmatex">\(T_h\)</span> parameter if the writing mode is horizontal). When the glyph for each character in the string is rendered, <span class="arithmatex">\(T_c\)</span> shall be added to the horizontal or vertical component of the glyph’s displacement, depending on the writing mode. See <a href="../s2/#924-字形定位和规格">9.2.4</a>, "Glyph Positioning and Metrics", for a discussion of glyph displacements. In the default coordinate system, horizontal coordinates increase from left to right and vertical coordinates from bottom to top. Therefore, for horizontal writing, a positive value of <span class="arithmatex">\(T_c\)</span> has the effect of expanding the distance between glyphs (see Figure 41), whereas for vertical writing, a negative value of <span class="arithmatex">\(T_c\)</span> has this effect.</p>
+<p><a class="glightbox" href="../imgs/f41.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f41.png" /></a></p>
+</div>
+</div>
+</div>
+<h2 id="933-字间距">9.3.3 字间距<a class="headerlink" href="#933-字间距" title="Permanent link">&para;</a></h2>
+<p><strong>Word Spacing</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>单词间距的工作原理与字符间距相同，但仅适用于ASCII空格字符（20h）。单词间距参数 <span class="arithmatex">\(T_w\)</span> 将被加到字形的水平或垂直偏移上（取决于书写模式）。对于水平书写，<span class="arithmatex">\(T_w\)</span> 的正值会增加单词之间的间距。对于垂直书写，<span class="arithmatex">\(T_w\)</span> 的正值会减少单词之间的间距（负值则会增加它），因为垂直坐标是从下到上增加的。图42展示了水平书写中单词间距的效果。</p>
+<p><a class="glightbox" href="../imgs/f42.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f42.png" /></a></p>
+<p>单词间距应用于字符串中每个单字节字符代码32（即空格字符）的实例，当使用简单字体或复合字体且该字体将代码32定义为单字节代码时。它不应用于多字节代码中字节值32的出现。</p>
+</div>
+<div class="tabbed-block">
+<p>Word spacing works the same way as character spacing but shall apply only to the ASCII SPACE character (20h). The word-spacing parameter, <span class="arithmatex">\(T_w\)</span>, shall be added to the glyph’s horizontal or vertical displacement (depending on the writing mode). For horizontal writing, a positive value for <span class="arithmatex">\(T_w\)</span> has the effect of increasing the spacing between words. For vertical writing, a positive value for <span class="arithmatex">\(T_w\)</span> decreases the spacing between words (and a negative value increases it), since vertical coordinates increase from bottom to top. Figure 42 illustrates the effect of word spacing in horizontal writing.</p>
+<p><a class="glightbox" href="../imgs/f42.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f42.png" /></a></p>
+<p>Word spacing shall be applied to every occurrence of the single-byte character code 32 in a string when using a simple font or a composite font that defines code 32 as a single-byte code. It shall not apply to occurrences of the byte value 32 in multiple-byte codes.</p>
+</div>
+</div>
+</div>
+<h2 id="934-水平扩展">9.3.4 水平扩展<a class="headerlink" href="#934-水平扩展" title="Permanent link">&para;</a></h2>
+<p><strong>Horizontal Scaling</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>水平缩放参数 <span class="arithmatex">\(T_h\)</span> 通过在水平方向拉伸或压缩字形来调整字形的宽度。它的值应该以百分比的形式指定，表示字形正常宽度的百分比，其中100代表正常宽度。缩放应用于文本空间中的水平坐标，与书写模式无关。它将影响字形的形状以及其水平偏移量（即，它的偏移向量）。如果书写模式是水平的，它还会影响间距参数 <span class="arithmatex">\(T_c\)</span> 和 <span class="arithmatex">\(T_w\)</span>，以及由 <strong>TJ</strong> 操作符执行的任何定位调整。图43显示了水平缩放的效果。</p>
+<p><a class="glightbox" href="../imgs/f43.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f43.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>The horizontal scaling parameter, <span class="arithmatex">\(T_h\)</span> , adjusts the width of glyphs by stretching or compressing them in the horizontal direction. Its value shall be specified as a percentage of the normal width of the glyphs, with 100 being the normal width. The scaling shall apply to the horizontal coordinate in text space, independently of the writing mode. It shall affect both the glyph’s shape and its horizontal displacement (that is, its displacement vector). If the writing mode is horizontal, it shall also effect the spacing parameters <span class="arithmatex">\(T_c\)</span> and <span class="arithmatex">\(T_w\)</span> , as well as any positioning adjustments performed by the <strong>TJ</strong> operator. Figure 43 shows the effect of horizontal scaling.</p>
+<p><a class="glightbox" href="../imgs/f43.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f43.png" /></a></p>
+</div>
+</div>
+</div>
+<h2 id="935-引导">9.3.5 引导<a class="headerlink" href="#935-引导" title="Permanent link">&para;</a></h2>
+<p><strong>Leading</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>行距参数 <span class="arithmatex">\(T_l\)</span> 应该用未缩放的文本空间单位来指定。它指定了相邻文本行基线之间的垂直距离，如图44所示。</p>
+<p><a class="glightbox" href="../imgs/f44.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f44.png" /></a></p>
+<p>行距参数由 <strong>TD</strong>, <strong>T*</strong>, <strong>'</strong>, 和 <strong>"</strong> 操作符使用；其效果的精确描述请见<a href="../s4/#table108">表108</a>。此参数应用于文本空间中的垂直坐标，与书写模式无关。</p>
+</div>
+<div class="tabbed-block">
+<p>The leading parameter, <span class="arithmatex">\(T_l\)</span> , shall be specified in unscaled text space units . It specifies the vertical distance between the baselines of adjacent lines of text, as shown in Figure 44.</p>
+<p><a class="glightbox" href="../imgs/f44.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f44.png" /></a></p>
+<p>The leading parameter shall be used by the <strong>TD</strong>, <strong>T*</strong>, <strong>'</strong>, and <strong>"</strong> operators; see <a href="../s4/#table108">Table 108</a> for a precise description of its effects. This parameter shall apply to the vertical coordinate in text space, independently of the writing mode.</p>
+</div>
+</div>
+</div>
+<h2 id="936-文本渲染模式">9.3.6 文本渲染模式<a class="headerlink" href="#936-文本渲染模式" title="Permanent link">&para;</a></h2>
+<p><strong>Text Rendering Mode</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>文本渲染模式 <span class="arithmatex">\( T_{\text{mode}} \)</span> 确定了显示文本时字形轮廓是被描边、填充、用作裁剪边界，还是上述操作的组合。对于文本对象，描边、填充和裁剪的效果与路径对象相同（参见 <a href="../../c8/s5/#853-路径绘制运算符">8.5.3</a>，“路径绘制操作符” 和 <a href="../../c8/s5/#854-剪切路径操作符">8.5.4</a>，“裁剪路径操作符”），尽管它们的指定方式完全不同。影响这些操作的图形状态参数（如线宽）应在<strong>用户空间</strong>中解释，而不是在<strong>文本空间</strong>中。</p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>文本渲染模式见<a href="#table106">表 106</a>。在示例中，描边颜色为黑色，填充颜色为浅灰色。对于裁剪模式（4 到 7），在字形上绘制了一系列线条，以显示裁剪发生的位置。</p>
+</div>
+<p>对于 Type 3 字体中显示的文本，仅当文本渲染模式的值为 3 时才会产生影响（参见 <a href="../s6/#965-type-3-字体">9.6.5</a>，“Type 3 字体”）。</p>
+<p>如果文本渲染模式要求填充，则应使用图形状态中的当前非描边颜色；如果要求描边，则应使用当前描边颜色。在既进行填充又进行描边的模式下，其效果应当如同每个字形轮廓先填充再描边，各自独立执行。如果某些字形重叠，效果应等同于逐个填充和描边，呈现为堆叠的不透明字形，而不是所有字形先填充后再整体描边。在透明成像模型中，这些填充和描边的组合模式还需要进一步考虑，详见 <a href="../../c11/s7/#11744-特殊路径绘制注意事项">11.7.4.4</a>，“特殊路径绘制注意事项”。</p>
+<p>裁剪模式的行为需要进一步说明。如果在文本渲染模式设置为裁剪模式的情况下执行 <strong>BT</strong> 操作符，或在文本对象内将其设置为裁剪模式，则字形轮廓将开始累积。字形会一直累积，直到文本对象由 <strong>ET</strong> 操作符结束；在此之前，不得将文本渲染模式更改回非裁剪模式。</p>
+<p><table id="table106" markdown="span">
+    <caption><strong><em>*表 106 – 文本渲染模式</em></strong>*</caption>
+    <thead>
+        <tr>
+            <th>模式</th>
+            <th>示例</th>
+            <th>描述</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td><a class="glightbox" href="../imgs/t106-0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-0.png" /></a></td>
+            <td>填充文本。</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a class="glightbox" href="../imgs/t106-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-1.png" /></a></td>
+            <td>描边文本。</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a class="glightbox" href="../imgs/t106-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-2.png" /></a></td>
+            <td>先填充，再描边文本。</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>&nbsp;</td>
+            <td>既不填充也不描边文本（不可见）。</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a class="glightbox" href="../imgs/t106-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-4.png" /></a></td>
+            <td>填充文本并添加到路径进行裁剪（参见 <a href="./#936-文本渲染模式">9.3.6</a>，“文本渲染模式”）。</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a class="glightbox" href="../imgs/t106-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-5.png" /></a></td>
+            <td>描边文本并添加到路径进行裁剪。</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a class="glightbox" href="../imgs/t106-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-6.png" /></a></td>
+            <td>先填充，再描边文本，并添加到路径进行裁剪。</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a class="glightbox" href="../imgs/t106-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-7.png" /></a></td>
+            <td>将文本添加到路径进行裁剪。</td>
+        </tr>
+    </tbody>
+</table></p>
+<hr />
+<p>在文本对象结束时，所有累积的字形轮廓（如果有）应合并为<strong>单一路径</strong>，将各个字形轮廓视为该路径的子路径，并应用<strong>非零环绕数规则</strong>（参见 <a href="../../c8/s5/#85332-非零缠绕数规则">8.5.3.3.2</a>，“非零环绕数规则”）。图形状态中的当前裁剪路径应设置为该路径与先前裁剪路径的交集。与路径对象类似，此裁剪操作应在文本对象的所有填充和描边操作完成之后执行，并保持有效，直到通过 <strong>Q</strong> 操作符恢复先前的裁剪路径。</p>
+<p>如果未显示任何字形，或显示的唯一字形没有轮廓（例如 ASCII 空格字符（20h）），则不会发生裁剪。</p>
+</div>
+<div class="tabbed-block">
+<p>The text rendering mode, <span class="arithmatex">\(T_{mode}\)</span> , determines whether showing text shall cause glyph outlines to be stroked, filled, used as a clipping boundary, or some combination of the three. Stroking, filling, and clipping shall have the same effects for a text object as they do for a path object (see <a href="../../c8/s5/#853-路径绘制运算符">8.5.3</a>, "Path-Painting Operators" and <a href="../../c8/s5/#854-剪切路径操作符">8.5.4</a>, "Clipping Path Operators"), although they are specified in an entirely different way. The graphics state parameters affecting those operations, such as line width, shall be interpreted in user space rather than in text space.</p>
+<p>!!!  note "NOTE"</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">The</span><span class="w"> </span><span class="nv">text</span><span class="w"> </span><span class="nv">rendering</span><span class="w"> </span><span class="nv">modes</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">shown</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span>[<span class="nv">Table</span><span class="w"> </span><span class="mi">106</span>]<span class="ss">(</span>#<span class="nv">table106</span><span class="ss">)</span>.<span class="w"> </span><span class="nv">In</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">examples</span>,<span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">stroke</span><span class="w"> </span><span class="nv">colour</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">black</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">fill</span><span class="w"> </span><span class="nv">colour</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">light</span><span class="w"> </span><span class="nv">gray</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">used</span>.<span class="w"> </span><span class="k">For</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">clipping</span><span class="w"> </span><span class="nv">modes</span><span class="w"> </span><span class="ss">(</span><span class="mi">4</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="mi">7</span><span class="ss">)</span>,<span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">series</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">lines</span><span class="w"> </span><span class="nv">has</span><span class="w"> </span><span class="nv">been</span><span class="w"> </span><span class="nv">drawn</span><span class="w"> </span><span class="nv">through</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">glyphs</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="k">show</span><span class="w"> </span><span class="nv">where</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">clipping</span><span class="w"> </span><span class="nv">occurs</span>.
+</code></pre></div>
+
+<p>Only a value of 3 for text rendering mode shall have any effect on text displayed in a Type 3 font (see <a href="../s6/#965-type-3-字体">9.6.5</a>, "Type 3 Fonts").</p>
+<p>If the text rendering mode calls for filling, the current nonstroking colour in the graphics state shall be used; if it calls for stroking, the current stroking colour shall be used. In modes that perform both filling and stroking, the effect shall be as if each glyph outline were filled and then stroked in separate operations. If any of the glyphs overlap, the result shall be equivalent to filling and stroking them one at a time, producing the appearance of stacked opaque glyphs, rather than first filling and then stroking them all at once. In the transparent imaging model, these combined filling and stroking modes shall be subject to further considerations; see <a href="../../c11/s7/#11744-特殊路径绘制注意事项">11.7.4.4</a>, "Special Path-Painting Considerations".</p>
+<p>The behaviour of the clipping modes requires further explanation. Glyph outlines shall begin accumulating if a <strong>BT</strong> operator is executed while the text rendering mode is set to a clipping mode or if it is set to a clipping mode within a text object. Glyphs shall accumulate until the text object is ended by an <strong>ET</strong> operator; the text rendering mode shall not be changed back to a nonclipping mode before that point.</p>
+<p><table id="table106" markdown="span">
+    <caption><strong>Table 106 – Text rendering modes</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Mode</strong></th>
+            <th><strong>Example</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td><a class="glightbox" href="../imgs/t106-0.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-0.png" /></a></td>
+            <td>Fill text.
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a class="glightbox" href="../imgs/t106-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-1.png" /></a></td>
+            <td>Stroke text.
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a class="glightbox" href="../imgs/t106-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-2.png" /></a></td>
+            <td>Fill, then stroke text.
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>&nbsp;</td>
+            <td>Neither fill nor stroke text (invisible).
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a class="glightbox" href="../imgs/t106-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-4.png" /></a></td>
+            <td>Fill text and add to path for clipping (see <a href="./#936-文本渲染模式">9.3.6</a>, "Text Rendering Mode,").
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a class="glightbox" href="../imgs/t106-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-5.png" /></a></td>
+            <td>Stroke text and add to path for clipping.
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a class="glightbox" href="../imgs/t106-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-6.png" /></a></td>
+            <td>Fill, then stroke text and add to path for clipping.
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a class="glightbox" href="../imgs/t106-7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t106-7.png" /></a></td>
+            <td>Add text to path for clipping.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>At the end of the text object, the accumulated glyph outlines, if any, shall be combined into a single path, treating the individual outlines as subpaths of that path and applying the nonzero winding number rule (see <a href="../../c8/s5/#85332-非零缠绕数规则">8.5.3.3.2</a>, "Nonzero Winding Number Rule"). The current clipping path in the graphics state shall be set to the intersection of this path with the previous clipping path. As is the case for path objects, this clipping shall occur after all filling and stroking operations for the text object have occurred. It remains in effect until a previous clipping path is restored by an invocation of the <strong>Q</strong> operator.</p>
+<p>If no glyphs are shown or if the only glyphs shown have no outlines (for example, if they are ASCII SPACE characters (20h)), no clipping shall occur.</p>
+</div>
+</div>
+</div>
+<h2 id="937-文本升降">9.3.7 文本升降<a class="headerlink" href="#937-文本升降" title="Permanent link">&para;</a></h2>
+<p><strong>Text Rise</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>文本升降 <span class="arithmatex">\( T_{\text{rise}} \)</span> 指定基线相对于默认位置<strong>上下移动</strong>的距离，单位为<strong>未缩放的文本空间单位</strong>。正值的文本升降会<strong>上移</strong>基线。图 45 说明了文本升降的效果。无论书写模式如何，文本升降始终作用于<strong>文本空间的垂直坐标</strong>。</p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>调整基线位置对于绘制<strong>上标</strong>或<strong>下标</strong>非常有用。将文本升降设为 <strong>0</strong> 可恢复基线的默认位置。</p>
+</div>
+<p><a class="glightbox" href="../imgs/f45.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f45.png" /></a></p>
+</div>
+<div class="tabbed-block">
+<p>Text rise, <span class="arithmatex">\(T_{rise}\)</span> , shall specify the distance, in unscaled text space units, to move the baseline up or down from its default location. Positive values of text rise shall move the baseline up. Figure 45 illustrates the effect of the text rise. Text rise shall apply to the vertical coordinate in text space, regardless of the writing mode.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Adjustments to the baseline are useful for drawing superscripts or subscripts. The default location of the baseline can be restored by setting the text rise to 0.</p>
+</div>
+<p><a class="glightbox" href="../imgs/f45.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f45.png" /></a></p>
+</div>
+</div>
+</div>
+<h2 id="938-文本镂空切割">9.3.8 文本镂空(切割)<a class="headerlink" href="#938-文本镂空切割" title="Permanent link">&para;</a></h2>
+<p><strong>Text Knockout</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>文本敲除参数</strong>  </p>
+<p>文本敲除参数 ( <span class="arithmatex">\(T_k\)</span> )（PDF 1.4）是一个<strong>布尔值</strong>，用于确定在透明成像模型的颜色合成过程中，哪些文本元素应被视为<strong>基本对象</strong>。与其他文本状态参数不同，此参数没有专门的操作符进行设置，而只能通过<strong>图形状态参数字典</strong>中的 <strong>TK</strong> 条目，并使用 <strong>gs</strong> 操作符进行设置（参见 <a href="../../c8/s4/#845-图形状态参数字典">8.4.5</a>，“图形状态参数字典”）。文本敲除参数仅适用于<strong>整个文本对象</strong>，不能在定义文本对象的 <strong>BT</strong> 和 <strong>ET</strong> 操作符之间进行设置。其初始值为 <strong>true</strong>。  </p>
+<p>如果该参数为 <strong>false</strong>，则文本对象中的每个字形都会被视为<strong>独立的基本对象</strong>；当字形重叠时，它们会相互<strong>混合</strong>。 </p>
+<p>如果该参数为 <strong>true</strong>，则文本对象中的所有字形会被<strong>整体</strong>视为一个<strong>单一的基本对象</strong>；当字形重叠时，后面的字形会<strong>覆盖</strong>（“敲除”）前面的字形。此行为等效于将整个文本对象视为<strong>非隔离敲除透明组</strong>（参见 <a href="../../c11/s4/#1146-knockout-组">11.4.6</a>，“敲除组”）。透明度参数将<strong>单独应用</strong>于每个字形，而不是应用于整个隐式透明组：  </p>
+<ul>
+<li><strong>图形状态参数</strong>（包括透明度参数）将继承自文本对象所在的上下文，且不会被<strong>保存和恢复</strong>。透明度参数不会在透明组的开始处被重置（如同显式调用透明组 XObject 时那样）。在文本对象内部修改的图形状态参数将在文本对象结束后<strong>继续生效</strong>。  </li>
+<li>在文本对象的<strong>隐式透明组</strong>完全计算完毕后，该组的最终结果将使用<strong>Normal</strong> 混合模式，并采用 <strong>1.0</strong> 的 Alpha 和软蒙版值，与背景进行合成。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>The text knockout parameter, <span class="arithmatex">\(T_k\)</span> (PDF 1.4), shall be a boolean value that determines what text elements shall be considered elementary objects for purposes of colour compositing in the transparent imaging model. Unlike other text state parameters, there is no specific operator for setting this parameter; it may be set only through the <strong>TK</strong> entry in a graphics state parameter dictionary by using the <strong>gs</strong> operator (see <a href="../../c8/s4/#845-图形状态参数字典">8.4.5</a>, "Graphics State Parameter Dictionaries"). The text knockout parameter shall apply only to entire text objects; it shall not be set between the <strong>BT</strong> and <strong>ET</strong> operators delimiting a text object. Its initial value shall be <strong>true</strong>.</p>
+<p>If the parameter is <strong>false</strong>, each glyph in a text object shall be treated as a separate elementary object; when glyphs overlap, they shall composite with one another.</p>
+<p>If the parameter is <strong>true</strong>, all glyphs in the text object shall be treated together as a single elementary object; when glyphs overlap, later glyphs shall overwrite (“knock out”) earlier ones in the area of overlap. This behaviour is equivalent to treating the entire text object as if it were a non-isolated knockout transparency group; see <a href="../../c11/s4/#1146-knockout-组">11.4.6</a>, "Knockout Groups". Transparency parameters shall be applied to the glyphs individually rather than to the implicit transparency group as a whole:</p>
+<ul>
+<li>Graphics state parameters, including transparency parameters, shall be inherited from the context in which the text object appears. They shall not be saved and restored. The transparency parameters shall not be reset at the beginning of the transparency group (as they are when a transparency group XObject is explicitly invoked). Changes made to graphics state parameters within the text object shall persist beyond the end of the text object.</li>
+<li>After the implicit transparency group for the text object has been completely evaluated, the group results shall be composited with the backdrop, using the Normal blend mode and alpha and soft mask values of 1.0.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月4日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

@@ -1,0 +1,1845 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s2/">
+      
+      
+        <link rel="next" href="../s4/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>10.3 设备颜色空间之间的转换 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#103-设备颜色空间之间的转换" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              10.3 设备颜色空间之间的转换
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            10渲染
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.2 基于 CIE 的颜色到设备颜色
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    10.3 设备颜色空间之间的转换
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    10.3 设备颜色空间之间的转换
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1031-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1032-devicegray-与-devicergb-之间的转换" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3.2 DeviceGray 与 DeviceRGB 之间的转换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1033-devicegray-与-devicecmyk-之间的转换" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3.3 DeviceGray 与 DeviceCMYK 之间的转换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1034-从-devicergb-到-devicecmyk-的转换" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3.4 从 DeviceRGB 到 DeviceCMYK 的转换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1035-从-devicecmyk-到-devicergb-的转换" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3.5 从 DeviceCMYK 到 DeviceRGB 的转换
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.4 传递函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.5 半色调
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10.6 扫描转换详细信息
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1031-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1032-devicegray-与-devicergb-之间的转换" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3.2 DeviceGray 与 DeviceRGB 之间的转换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1033-devicegray-与-devicecmyk-之间的转换" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3.3 DeviceGray 与 DeviceCMYK 之间的转换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1034-从-devicergb-到-devicecmyk-的转换" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3.4 从 DeviceRGB 到 DeviceCMYK 的转换
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1035-从-devicecmyk-到-devicergb-的转换" class="md-nav__link">
+    <span class="md-ellipsis">
+      10.3.5 从 DeviceCMYK 到 DeviceRGB 的转换
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="103-设备颜色空间之间的转换">10.3 设备颜色空间之间的转换<a class="headerlink" href="#103-设备颜色空间之间的转换" title="Permanent link">&para;</a></h1>
+<p><strong>Conversions among Device Colour Spaces</strong></p>
+<h2 id="1031-概述">10.3.1 概述<a class="headerlink" href="#1031-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>每种光栅输出设备都有一个<em>本机颜色空间</em>，通常是标准设备颜色空间之一（<strong>DeviceGray</strong>、<strong>DeviceRGB</strong>或<strong>DeviceCMYK</strong>）。换句话说，大多数设备支持按照灰度（单色）、<em>RGB</em>（红-绿-蓝）或<em>CMYK</em>（青-品红-黄-黑）模型进行颜色再现。如果设备支持连续色调输出，则应直接进行再现。否则，应通过半色调（halftoning）实现。</p>
+<p>设备的本机颜色空间也称为其工艺颜色模型（process colour model）。工艺颜色是通过一种或多种标准工艺着色剂（process colorants）组合生成的颜色。任何设备颜色空间或基于CIE的颜色空间中指定的颜色都应以工艺颜色的形式进行渲染。某些设备还可能支持额外的专色着色剂（spot colorants），但它们只能通过<strong>Separation</strong>或<strong>DeviceN</strong>颜色空间进行绘制。这些专色着色剂不应参与设备或基于CIE的颜色空间的渲染，也不应受到注释中描述的转换过程的影响。</p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>一些设备提供的本机颜色空间不同于前述三种颜色空间，而是由不同的着色剂组合构成。在这种情况下，符合标准的阅读器可自行决定如何将标准设备颜色空间转换为设备的本机颜色空间。</p>
+</div>
+<p>在了解设备的本机颜色空间及其他输出能力后，符合标准的阅读器应自动将文件中指定的颜色值转换为适合设备本机颜色空间的颜色值。如果文件直接在设备的本机颜色空间中指定颜色，则不应执行转换。</p>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<p>如果文件在<strong>DeviceRGB</strong>颜色空间中指定了颜色，但设备仅支持灰度（如单色显示器）或<em>CMYK</em>（如彩色打印机），符合标准的阅读器应执行必要的转换。</p>
+</div>
+<p>用于设备颜色空间之间转换的算法非常简单。从人类观察者的角度来看，这些转换只能粗略地逼近原始颜色。要实现更精细的颜色转换控制，可以使用基于CIE的颜色规范和渲染。此外，设备颜色空间还可以重新映射到基于CIE的颜色空间（参见<a href="../../c8/s6/#8656-默认颜色空间">8.6.5.6</a>“默认颜色空间”）。</p>
+</div>
+<div class="tabbed-block">
+<p>Each raster output device has a <em>native colour space</em>, which typically is one of the standard device colour spaces (<strong>DeviceGray</strong>, <strong>DeviceRGB</strong>, or <strong>DeviceCMYK</strong>). In other words, most devices support reproduction of colours according to a grayscale (monochrome), <em>RGB</em> (red-green-blue), or <em>CMYK</em> (cyan-magenta-yellow-black) model. If the device supports continuous-tone output, reproduction shall occur directly. Otherwise, it shall be accomplished by means of halftoning.</p>
+<p>A device’s native colour space is also called its process colour model. Process colours are ones that are produced by combinations of one or more standard process colorants. Colours specified in any device or CIE- based colour space shall be rendered as process colours. A device may also support additional spot colorants, which shall be painted only by means of <strong>Separation</strong> or <strong>DeviceN</strong> colour spaces. They shall not be involved in the rendering of device or CIE-based colour spaces, nor shall they be subject to the conversions described in the Note.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Some devices provide a native colour space that is not one of the three named previously but consists of a different combination of colorants. In that case, conversion from the standard device colour spaces to the device’s native colour space may be performed by the conforming reader in a manner of its own choosing.</p>
+</div>
+<p>Knowing the native colour space and other output capabilities of the device, the conforming reader shall automatically convert the colour values specified in a file to those appropriate for the device’s native colour space. If the file specifies colours directly in the device’s native colour space, no conversions shall be performed.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>If a file specifies colours in the <strong>DeviceRGB</strong> colour space but the device supports grayscale (such as a monochrome display) or <em>CMYK</em> (such as a colour printer), the conforming reader shall perform the necessary conversions.</p>
+</div>
+<p>The algorithms used to convert among device colour spaces are very simple. As perceived by a human viewer, these conversions produce only crude approximations of the original colours. More sophisticated control over colour conversion may be achieved by means of CIE-based colour specification and rendering. Additionally, device colour spaces may be remapped into CIE-based colour spaces (see <a href="../../c8/s6/#8656-默认颜色空间">8.6.5.6</a>, "Default Colour Spaces").</p>
+</div>
+</div>
+</div>
+<h2 id="1032-devicegray-与-devicergb-之间的转换">10.3.2 DeviceGray 与 DeviceRGB 之间的转换<a class="headerlink" href="#1032-devicegray-与-devicergb-之间的转换" title="Permanent link">&para;</a></h2>
+<p><strong>Conversion between DeviceGray and DeviceRGB</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>黑色、白色和介于两者之间的灰色可以视为RGB颜色的特殊情况。灰度值应由单个数值描述：0.0 表示黑色，1.0 表示白色，中间值表示不同的灰度级别。</p>
+<p>灰度级应等同于所有三个分量相同的RGB值。换句话说，与特定灰度值等效的RGB颜色值应为：</p>
+<div class="arithmatex">\[
+\begin{align} 
+    red  &amp;= gray \\
+    green &amp;= gray \\
+    blue &amp;= gray 
+\end{align}
+\]</div>
+<p>对于给定的RGB值，灰度值应按照NTSC视频标准计算，该标准确定了彩色电视信号在黑白电视机上的渲染方式：</p>
+<div class="arithmatex">\[
+gray = 0.3 × red + 0.59 × green + 0.11 × blue
+\]</div>
+</div>
+<div class="tabbed-block">
+<p>Black, white, and intermediate shades of gray can be considered special cases of RGB colour. A grayscale value shall be described by a single number: 0.0 corresponds to black, 1.0 to white, and intermediate values to different gray levels.</p>
+<p>A gray level shall be equivalent to an RGB value with all three components the same. In other words, the RGB colour value equivalent to a specific gray value shall be</p>
+<div class="arithmatex">\[
+\begin{align} 
+  red  &amp;= gray \\
+  green &amp;= gray \\
+  blue &amp;= gray 
+\end{align}
+\]</div>
+<p>The gray value for a given RGB value shall be computed according to the NTSC video standard, which
+determines how a colour television signal is rendered on a black-and-white television set:</p>
+<div class="arithmatex">\[
+gray = 0.3 × red + 0.59 × green + 0.11 × blu
+\]</div>
+</div>
+</div>
+</div>
+<h2 id="1033-devicegray-与-devicecmyk-之间的转换">10.3.3 DeviceGray 与 DeviceCMYK 之间的转换<a class="headerlink" href="#1033-devicegray-与-devicecmyk-之间的转换" title="Permanent link">&para;</a></h2>
+<p><strong>Conversion between DeviceGray and DeviceCMYK</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在名义上，灰度级是 <em>CMYK</em> 颜色模型中黑色分量的补数。因此，与特定灰度级等效的 <em>CMYK</em> 颜色值应为：</p>
+<div class="arithmatex">\[
+\begin{align} 
+    cyan &amp;= 0.0 \\
+    magenta &amp;= 0.0 \\
+    yellow &amp;= 0.0 \\
+    black &amp;= 1.0 - gray
+\end{align}
+\]</div>
+<p>要获取给定 <em>CMYK</em> 值的等效灰度级，应考虑所有分量的贡献：</p>
+<div class="arithmatex">\[
+gray = 1.0 – \min(1.0, 0.3 \times cyan + 0.59 \times magenta + 0.11 \times yellow + black)
+\]</div>
+<p>黑色分量与其他三个分量之间的相互作用在 <a href="#1034-从-devicergb-到-devicecmyk-的转换">10.3.4</a> 中有更详细的说明。</p>
+</div>
+<div class="tabbed-block">
+<p>Nominally, a gray level is the complement of the black component of <em>CMYK</em>. Therefore, the <em>CMYK</em> colour value equivalent to a specific gray level shall be</p>
+<div class="arithmatex">\[
+\begin{align} 
+  cyan &amp;= 0.0 \\
+  magenta &amp;= 0.0 \\
+  yellow &amp;= 0.0 \\
+  black &amp;= 1.0 - gray
+\end{align}
+\]</div>
+<p>To obtain the equivalent gray level for a given CMYK value, the contributions of all components shall be taken into account:</p>
+<div class="arithmatex">\[
+gray = 1.0 – min(1.0, 0.3 \times cyan + 0.59 \times magenta + 0.11 \times yellow + black)
+\]</div>
+<p>The interactions between the black component and the other three are elaborated in <a href="#1034-从-devicergb-到-devicecmyk-的转换">10.3.4</a>.</p>
+</div>
+</div>
+</div>
+<h2 id="1034-从-devicergb-到-devicecmyk-的转换">10.3.4 从 DeviceRGB 到 DeviceCMYK 的转换<a class="headerlink" href="#1034-从-devicergb-到-devicecmyk-的转换" title="Permanent link">&para;</a></h2>
+<p><strong>Conversion from DeviceRGB to DeviceCMYK</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>颜色值从 <em>RGB</em> 转换为 <em>CMYK</em> 是一个两步过程。第一步是将红-绿-蓝 (<em>RGB</em>) 颜色值转换为对应的青色 (<em>cyan</em>)、品红 (<em>magenta</em>) 和黄色 (<em>yellow</em>) 分量。第二步是生成黑色 (<em>black</em>) 分量，并调整其他分量，以更好地逼近原始颜色。</p>
+<div class="admonition note">
+<p class="admonition-title">注释 1</p>
+<p>减色法的基本颜色青色 (<em>cyan</em>)、品红 (<em>magenta</em>) 和黄色 (<em>yellow</em>) 是加色法基本颜色红色 (<em>red</em>)、绿色 (<em>green</em>) 和蓝色 (<em>blue</em>) 的补色。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<p>青色油墨会吸收白光中的红色分量。理论上，转换过程非常简单：</p>
+<div class="arithmatex">\[
+\begin{align} 
+    cyan &amp;= 1.0 – red \\
+    magenta &amp;= 1.0 – green \\
+    yellow &amp;= 1.0 – blue
+\end{align}
+\]</div>
+<p>例如，颜色值 (0.2, 0.7, 0.4)（红、绿、蓝）可转换为：</p>
+<div class="arithmatex">\[
+\begin{align} 
+    cyan &amp;= 1.0 - 0.2 = 0.8 \\
+    magenta &amp;= 1.0 - 0.7 = 0.3 \\
+    yellow &amp;= 1.0 - 0.4 = 0.6
+\end{align}
+\]</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注释 2</p>
+<p>从逻辑上讲，仅使用青色、品红和黄色即可生成印刷颜色。当青色、品红和黄色的比例相同时，理论上应产生等量的黑色。然而，在实际应用中，彩色印刷油墨的混合并不完美，这些组合通常会形成深棕色，而非纯黑色。为了在打印机上获得更准确的颜色再现，通常使用真正的黑色油墨替代部分混合黑色。大多数彩色打印机支持黑色分量（即 <em>CMYK</em> 颜色模型中的 <em>K</em> 分量）。计算该分量的数量需要额外的步骤：</p>
+<ul>
+<li><em>黑色生成</em>（Black Generation, BG）：计算在再现特定颜色时应使用的黑色量。</li>
+<li><em>底色去除</em>（Undercolor Removal, UCR）：减少青色、品红和黄色分量的量，以补偿黑色生成所增加的黑色量。</li>
+</ul>
+</div>
+<p>从 <em>RGB</em> 到 <em>CMYK</em> 的完整转换过程如下，其中 <em>BG(k)</em> 和 <em>UCR(k)</em> 分别表示黑色生成和底色去除函数的调用：</p>
+<div class="arithmatex">\[
+\begin{align} 
+c &amp;= 1.0 – red \\
+m &amp;= 1.0 – green \\
+y &amp;= 1.0 – blue \\
+k &amp;= \min (c, m, y) 
+\end{align}
+\]</div>
+<div class="arithmatex">\[
+\begin{align} 
+cyan &amp;= \min (1.0 , \max ( 0.0 , c – UCR (k) ) ) \\
+magenta &amp;= \min (1.0 , \max ( 0.0 , m – UCR (k) ) ) \\
+yellow &amp;= \min (1.0 , \max ( 0.0 , y – UCR (k) ) ) \\
+black &amp;= \min (1.0 , \max ( 0.0 , BG (k) ) ) 
+\end{align}
+\]</div>
+<p>黑色生成和底色去除函数应定义为 PDF 函数字典（参见 <a href="../../c7/s10/">7.10</a>，"函数"），并作为图形状态中的参数。它们应作为图形状态参数字典中 <strong>BG</strong> 和 <strong>UCR</strong>（或 <strong>BG2</strong> 和 <strong>UCR2</strong>）条目的值进行指定（参见 [表 58]）。每个函数应使用单个数值作为输入，并返回单个数值作为结果。</p>
+<p>黑色生成和底色去除函数的输入应为 <em>k</em>，即通过从 1.0 中减去原始 <em>RGB</em> 颜色值后计算出的中间 <em>c</em>、<em>m</em> 和 <em>y</em> 值的最小值。</p>
+<div class="admonition note">
+<p class="admonition-title">注释 3</p>
+<p>在名义上，<em>k</em> 代表可以从青色、品红和黄色分量中去除，并替换为独立黑色分量的量。</p>
+</div>
+<p>黑色生成函数应根据 <em>k</em> 计算黑色分量。它可以直接返回 <em>k</em>，也可以返回比 <em>k</em> 更大的值（增加黑色量）、更小的值（减少黑色量）或 0.0（不使用黑色）。</p>
+<p>底色去除函数应计算从中间 <em>c</em>、<em>m</em> 和 <em>y</em> 分量中去除的量，以生成最终的青色、品红和黄色分量。它可以直接返回 <em>k</em>，也可以返回 0.0（不去除颜色）、黑色量的某个比例，甚至一个负值，从而增加总色料量。</p>
+<p>应用黑色生成和底色去除后得到的最终颜色分量值应在 0.0 到 1.0 之间。如果某个值超出该范围，应自动替换为最接近的有效值，而不会产生错误提示。</p>
+<div class="admonition note">
+<p class="admonition-title">注释 4</p>
+<p>这种替换在上述公式中通过 <em>min</em> 和 <em>max</em> 操作显式表示。</p>
+</div>
+<p>正确选择黑色生成和底色去除函数取决于输出设备的特性。每个设备应配置适用于其自身的默认值。</p>
+<div class="admonition note">
+<p class="admonition-title">注释 5</p>
+<p>有关黑色生成和底色去除函数在透明成像模型中的作用，详见 <a href="../../c11/s7/#1175-渲染参数和透明度">11.7.5</a>，"渲染参数和透明度"，尤其是 <a href="../../c11/s7/#11753-渲染意图和颜色转换">11.7.5.3</a>，"渲染意图和颜色转换"。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Conversion of a colour value from <em>RGB</em> to <em>CMYK</em> is a two-step process. The first step shall be to convert the red-green-blue value to equivalent cyan, magenta, and yellow components. The second step shall be to generate a black component and alter the other components to produce a better approximation of the original colour.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>The subtractive colour primaries cyan, magenta, and yellow are the complements of the additive primaries red, green, and blue.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>A cyan ink subtracts the red component of white light. In theory, the conversion is very simple:</p>
+<div class="arithmatex">\[
+\begin{align} 
+  cyan &amp;= 1.0 – red \\
+  magenta &amp;= 1.0 – green \\
+  yellow &amp;= 1.0 – blue
+\end{align}
+\]</div>
+<p>A colour that is 0.2 red, 0.7 green, and 0.4 blue can also be expressed as 1.0 − 0.2 = 0.8 cyan, 1.0 − 0.7 = 0.3 magenta, and 1.0 − 0.4 = 0.6 yellow.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Logically, only cyan, magenta, and yellow are needed to generate a printing colour. An equal level of cyan, magenta, and yellow should create the equivalent level of black. In practice, however, coloured printing inks do not mix perfectly; such combinations often form dark brown shades instead of true black. To obtain a truer colour rendition on a printer, true black ink is often substituted for the mixed-black portion of a colour. Most colour printers support a black component (the <em>K</em> component of <em>CMYK</em>). Computing the quantity of this component requires some additional steps:</p>
+<p><em>Black generation</em> calculates the amount of black to be used when trying to reproduce a particular colour.</p>
+<p><em>Undercolor removal</em> reduces the amounts of the cyan, magenta, and yellow components to compensate for the amount of black that was added by black generation.</p>
+</div>
+<p>The complete conversion from RGB to CMYK shall be as follows, where BG (k) and UCR (k) are invocations of the black-generation and undercolor-removal functions, respectively:</p>
+<div class="arithmatex">\[
+\begin{align} 
+c &amp;= 1.0 – red \\
+m &amp;= 1.0 – green \\
+y &amp;= 1.0 – blue \\
+k &amp;= min (c, m, y) 
+\end{align}
+\]</div>
+<div class="arithmatex">\[
+\begin{align} 
+cyan &amp;= min (1.0 , max ( 0.0 , c – UCR (k) ) ) \\
+magenta &amp;= min (1.0 , max ( 0.0 , m – UCR (k) ) ) \\
+yellow &amp;= min (1.0 , max ( 0.0 , y – UCR (k) ) ) \\
+black &amp;= min (1.0 , max ( 0.0 , BG (k) ) ) 
+\end{align}
+\]</div>
+<p>The black-generation and undercolor-removal functions shall be defined as PDF function dictionaries (see <a href="../../c7/s10/">7.10</a>, "Functions") that are parameters in the graphics state. They shall be specified as the values of the <strong>BG</strong> and <strong>UCR</strong> (or <strong>BG2</strong> and <strong>UCR2</strong>) entries in a graphics state parameter dictionary (see <a href="../../c8/s4/#table58">Table 58</a>). Each function shall be called with a single numeric operand and shall return a single numeric result.</p>
+<p>The input of both the black-generation and undercolor-removal functions shall be k, the minimum of the intermediate <em>c</em>, <em>m</em>, and <em>y</em> values that have been computed by subtracting the original red, green, and blue components from 1.0.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>Nominally, k is the amount of black that can be removed from the cyan, magenta, and yellow components and substituted as a separate black component.</p>
+</div>
+<p>The black-generation function shall compute the black component as a function of the nominal k value. It may simply return its k operand unchanged, or it may return a larger value for extra black, a smaller value for less black, or 0.0 for no black at all.</p>
+<p>The undercolor-removal function shall compute the amount to subtract from each of the intermediate c, m, and y values to produce the final cyan, magenta, and yellow components. It may simply return its k operand unchanged, or it may return 0.0 (so that no colour is removed), some fraction of the black amount, or even a negative amount, thereby adding to the total amount of colorant.</p>
+<p>The final component values that result after applying black generation and undercolor removal should be in the range 0.0 to 1.0. If a value falls outside this range, the nearest valid value shall be substituted automatically without error indication.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>This substitution is indicated explicitly by the <em>min</em> and <em>max</em> operations in the preceding formulas.</p>
+</div>
+<p>The correct choice of black-generation and undercolor-removal functions depends on the characteristics of the output device. Each device shall be configured with default values that are appropriate for that device.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 5</p>
+<p>See <a href="../../c11/s7/#1175-渲染参数和透明度">11.7.5</a>, "Rendering Parameters and Transparency" and, in particular, <a href="../../c11/s7/#11753-渲染意图和颜色转换">11.7.5.3</a>, "Rendering Intent and Colour Conversions" for further discussion of the role of black-generation and undercolor-removal functions in the transparent imaging model.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1035-从-devicecmyk-到-devicergb-的转换">10.3.5 从 DeviceCMYK 到 DeviceRGB 的转换<a class="headerlink" href="#1035-从-devicecmyk-到-devicergb-的转换" title="Permanent link">&para;</a></h2>
+<p><strong>Conversion from DeviceCMYK to DeviceRGB</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>从 <em>CMYK</em> 到 <em>RGB</em> 的颜色值转换是一个简单的操作，不涉及黑色生成或底色去除：</p>
+<div class="arithmatex">\[
+\begin{align} 
+    red &amp;= 1.0 – \min (1.0, cyan + black) \\
+    green &amp;= 1.0 – \min (1.0, magenta + black) \\
+    blue &amp;= 1.0 – \min (1.0, yellow + black) 
+\end{align}
+\]</div>
+<p>黑色分量应添加到每个其他颜色分量中，然后通过从 1.0 中减去它们来转换为相应的补色。</p>
+</div>
+<div class="tabbed-block">
+<p>Conversion of a colour value from <em>CMYK</em> to <em>RGB</em> is a simple operation that does not involve black generation or undercolour removal:</p>
+<div class="arithmatex">\[
+\begin{align} 
+  red &amp;= 1.0 – min (1.0, cyan + black) \\
+green &amp;= 1.0 – min (1.0, magenta + black) \\
+blue &amp;= 1.0 – min (1.0, yellow + black) 
+\end{align}
+\]</div>
+<p>The black component shall be added to each of the other components, which shall then be converted to their complementary colours by subtracting them each from 1.0.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月5日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

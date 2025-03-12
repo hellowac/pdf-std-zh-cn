@@ -1,0 +1,2713 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s2/">
+      
+      
+        <link rel="next" href="../s4/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>11.3 基本合成计算 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#113-基本合成计算" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              11.3 基本合成计算
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            11透明度
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.2 透明度概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    11.3 基本合成计算
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    11.3 基本合成计算
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1131-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1132-合成计算的基本符号" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.2 合成计算的基本符号
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1133-基本合成公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.3 基本合成公式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1134-混合色彩空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.4 混合色彩空间
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1135-混合模式" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.5 混合模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1136-alpha-的解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.6 Alpha 的解释
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1137-形状和不透明度计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.7 形状和不透明度计算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.3.7 形状和不透明度计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11371-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.7.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11372-源形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.7.2 源形状和不透明度
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11373-结果形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.7.3 结果形状和不透明度
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1138-基本合成计算总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.8 基本合成计算总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.4 透明度组
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.5 软面罩
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.6 指定 PDF 中的透明度
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.7 色彩空间和渲染问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1131-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1132-合成计算的基本符号" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.2 合成计算的基本符号
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1133-基本合成公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.3 基本合成公式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1134-混合色彩空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.4 混合色彩空间
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1135-混合模式" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.5 混合模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1136-alpha-的解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.6 Alpha 的解释
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1137-形状和不透明度计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.7 形状和不透明度计算
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.3.7 形状和不透明度计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11371-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.7.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11372-源形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.7.2 源形状和不透明度
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11373-结果形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.7.3 结果形状和不透明度
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1138-基本合成计算总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.3.8 基本合成计算总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="113-基本合成计算">11.3 基本合成计算<a class="headerlink" href="#113-基本合成计算" title="Permanent link">&para;</a></h1>
+<p><strong>11.3 Basic Compositing Computations</strong></p>
+<h2 id="1131-概述">11.3.1 概述<a class="headerlink" href="#1131-概述" title="Permanent link">&para;</a></h2>
+<p><strong>11.3.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本小节描述了将单个对象与其背景进行合成的基本计算。这些计算将在 <a href="../s4/">11.4</a> “透明度组” 中扩展，以涵盖由多个对象组成的组。</p>
+</div>
+<div class="tabbed-block">
+<p>This sub-clause describes the basic computations for compositing a single object with its backdrop. These computations are extended in <a href="../s4/">11.4</a>, "Transparency Groups," to cover groups consisting of multiple objects.</p>
+</div>
+</div>
+</div>
+<h2 id="1132-合成计算的基本符号">11.3.2 合成计算的基本符号<a class="headerlink" href="#1132-合成计算的基本符号" title="Permanent link">&para;</a></h2>
+<p><strong>11.3.2 Basic Notation for Compositing Computations</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>通常，本节中的变量名称由小写字母表示标量量，例如不透明度。大写字母表示具有多个标量分量的值，例如颜色。在基本颜色合成计算的描述中，颜色值通常用字母 C 表示，并带有助记下标，以指示所引用的具体颜色值；例如，C<sub>s</sub> 代表“源颜色”。形状和不透明度值分别用字母 f（表示“形状因子”）和 q（表示“不透明度”）表示，同样带有助记下标，例如 q<sub>s</sub> 代表“源不透明度”。符号 α（alpha）表示形状和不透明度值的乘积。  </p>
+<p>在某些计算中，一个或多个变量可能具有未定义的值；例如，当不透明度为零时，相应的颜色是未定义的。如果一个量是由零除法计算得到的，它也可能是未定义的。在任何使用此类未定义量的公式中，该量不会影响最终结果，因为它随后会被乘以零或以其他方式抵消。重要的是，虽然可以为这种未定义量选择任意值，但计算不得因溢出或除零等异常情况而发生故障。此外，还应遵循 0 ÷ 0 = 0 的惯例。</p>
+</div>
+<div class="tabbed-block">
+<p>In general, variable names in this clause consisting of a lowercase letter denote a scalar quantity, such as an opacity. Uppercase letters denote a value with multiple scalar components, such as a colour. In the descriptions of the basic colour compositing computations, colour values are generally denoted by the letter C, with a mnemonic subscript indicating which of several colour values is being referred to; for instance, C<sub>s</sub> stands for “source colour.” Shape and opacity values are denoted respectively by the letters f (for “form factor”) and q (for “opaqueness”)—again with a mnemonic subscript, such as q<sub>s</sub> for “source opacity.” The symbol α (alpha) stands for a product of shape and opacity values.</p>
+<p>In certain computations, one or more variables may have undefined values; for instance, when opacity is equal to zero, the corresponding colour is undefined. A quantity can also be undefined if it results from division by zero. In any formula that uses such an undefined quantity, the quantity has no effect on the ultimate result because it is subsequently multiplied by zero or otherwise cancelled out. It is significant that while any arbitrary value may be chosen for such an undefined quantity, the computation shall not malfunction because of exceptions caused by overflow or division by zero. The further convention that 0 ÷ 0 = 0 should also be adopted.</p>
+</div>
+</div>
+</div>
+<h2 id="1133-基本合成公式">11.3.3 基本合成公式<a class="headerlink" href="#1133-基本合成公式" title="Permanent link">&para;</a></h2>
+<p><strong>11.3.3 Basic Compositing Formula</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>为了适应透明度，图像模型的主要变化体现在颜色的绘制方式上。在透明模型中，绘制的结果颜色（<em>result colour</em>）是正在绘制的颜色（<em>source colour</em>）与其覆盖的颜色（<em>backdrop colour</em>）的函数。这两种颜色都可能随页面上的位置变化而变化；然而，本小节关注页面上的某个固定点，并假设背景色和源颜色是固定的。  </p>
+<p>此计算涉及两个额外参数：α（alpha），用于控制背景色与源颜色的相对贡献；以及混合函数（blend function），用于指定它们在绘制操作中如何组合。最终的基本颜色合成公式（简称 <em>基本合成公式</em>）用于确定绘制操作产生的结果颜色：  </p>
+<div class="arithmatex">\[
+C_r = \left ( 1- \frac{\alpha_s}{\alpha_r} \right ) \times C_b +  \frac{\alpha_s}{\alpha_r} \times [(1 - \alpha _b) \times C_s + \alpha _b \times B(C_b, C_s)]
+\]</div>
+<p>其中，各变量的含义见 <strong>表 135</strong>。  </p>
+<p><table id="table135" markdown="span">
+    <caption><strong>表 135 – 基本合成公式中使用的变量</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>变量</strong></th>
+            <th><strong>含义</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="arithmatex">\(C_b\)</span></td>
+            <td>背景色</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(C_s\)</span></td>
+            <td>源颜色</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(C_r\)</span></td>
+            <td>结果颜色</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(\alpha_b\)</span></td>
+            <td>背景 alpha 值</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(\alpha_s\)</span></td>
+            <td>源 alpha 值</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(\alpha_r\)</span></td>
+            <td>结果 alpha 值</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(B(C_b , C_s)\)</span></td>
+            <td>混合函数</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>该公式是合成公式的一种简化形式，其中形状和不透明度值被合并并表示为单个 alpha 值；更一般的形式将在后续介绍。此函数基于 <strong>Porter 和 Duff 在文章《Compositing Digital Images》中定义的 <em>over</em> 操作（详见参考文献）</strong>，并扩展以在重叠区域包含混合模式。接下来的小节将进一步阐述该公式的含义及其影响。</p>
+</div>
+<div class="tabbed-block">
+<p>The primary change in the imaging model to accommodate transparency is in how colours are painted. In the transparent model, the result of painting (the <em>result colour</em>) is a function of both the colour being painted (the <em>source colour</em>) and the colour it is painted over (the <em>backdrop colour</em>). Both of these colours may vary as a function of position on the page; however, this sub-clause focuses on some fixed point on the page and assumes a fixed backdrop and source colour.</p>
+<p>This computation uses two other parameters: alpha, which controls the relative contributions of the backdrop and source colours, and the blend function, which specifies how they shall be combined in the painting operation. The resulting basic colour compositing formula (or just <em>basic compositing formula</em> for short) shall determine the result colour produced by the painting operation:</p>
+<p><span class="arithmatex">\(C_r = \left ( 1- \frac{\alpha_s}{\alpha_r} \right ) \times C_b +  \frac{\alpha_s}{\alpha_r} \times [(1 - \alpha _b) \times C_s + \alpha _b \times B(C_b, C_s)]\)</span></p>
+<p>where the variables have the meanings shown in Table 135.</p>
+<p><table id="table135" markdown="span">
+    <caption><strong>Table 135 – Variables used in the basic compositing formula</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Variable</strong></th>
+            <th><strong>Meaning</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="arithmatex">\(C_b\)</span></td>
+            <td>Backdrop colour</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(C_s\)</span></td>
+            <td>Source colour</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(C_r\)</span></td>
+            <td>Result colour</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(\alpha_b\)</span></td>
+            <td>Backdrop alpha</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(\alpha_s\)</span></td>
+            <td>Source alpha</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(\alpha_r\)</span></td>
+            <td>Result alpha</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(B(C_b , C_s)\)</span></td>
+            <td>Blend function</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>This formula represents a simplified form of the compositing formula in which the shape and opacity values are combined and represented as a single alpha value; the more general form is presented later. This function is based on the <strong>over</strong> operation <strong>defined in the article “Compositing Digital Images,” by Porter and Duff (see the Bibliography)</strong>, extended to include a blend mode in the region of overlapping coverage. The following sub- clauses elaborate on the meaning and implications of this formula.</p>
+</div>
+</div>
+</div>
+<h2 id="1134-混合色彩空间">11.3.4 混合色彩空间<a class="headerlink" href="#1134-混合色彩空间" title="Permanent link">&para;</a></h2>
+<p><strong>11.3.4 Blending Colour Space</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a href="#1133-基本合成公式">11.3.3</a>“基本合成公式”中展示的合成公式表示一个矢量函数：其操作的颜色以 <em>n</em> 元向量的形式表示，其中 <em>n</em> 表示合成过程中使用的颜色空间所需的分量数量。结果颜色 <span class="arithmatex">\(C_r\)</span> 的第 <em>i</em> 个分量应通过将合成公式应用于组成颜色 <span class="arithmatex">\(C_b\)</span>、<span class="arithmatex">\(C_s\)</span> 和 <span class="arithmatex">\(B(C_b, C_s)\)</span> 的第 <em>i</em> 个分量来获得。因此，计算结果取决于颜色的表示空间。基于此，合成时使用的颜色空间（称为混合颜色空间，<em>blending colour space</em>）被明确地纳入透明图像模型。当需要时，背景色和源颜色应在进行合成计算之前转换为混合颜色空间。  </p>
+<p>在 PDF 规范的 8.6 节所描述的颜色空间中，下列颜色空间应当支持作为混合颜色空间：  </p>
+<ul>
+<li><strong>DeviceGray</strong>  </li>
+<li><strong>DeviceRGB</strong>  </li>
+<li><strong>DeviceCMYK</strong>  </li>
+<li><strong>CalGray</strong>  </li>
+<li><strong>CalRGB</strong>  </li>
+<li><strong>ICCBased</strong> 颜色空间（等效于上述颜色空间，包括校准 CMYK）  </li>
+</ul>
+<p><strong>Lab</strong> 颜色空间及表示亮度和色度分离的 <strong>ICCBased</strong> 颜色空间（例如 <em>L*a*b*</em>、<em>L*u*v*</em> 和 <em>HSV</em>）不得用作混合颜色空间，因为在这些空间中，分别对每个颜色分量进行合成计算无法得到有意义的结果。此外，用作混合颜色空间的 <strong>ICCBased</strong> 空间必须是双向的，即其 ICC 配置文件必须包含 <strong>AToB</strong> 和 <strong>BToA</strong> 变换。  </p>
+<p>混合颜色空间仅适用于过程颜色（process colours）。尽管可以在 <strong>Separation</strong> 或 <strong>DeviceN</strong> 颜色空间中指定的专色（spot colours）上进行混合，但这些颜色不得转换为混合颜色空间（除非它们首先回退到其备用颜色空间，如 <a href="../../c8/s6/#8664-分离色彩空间">8.6.6.4</a> 和“DeviceN 颜色空间”中所述）。相反，应分别对指定的颜色分量与背景的相应分量进行混合。  </p>
+<p>各种混合模式的混合函数定义如下：每个颜色分量的取值范围应为 0.0 到 1.0，并且颜色空间应为加性颜色空间。在执行减色混合（subtractive blending）时（即 <strong>DeviceCMYK</strong>、<strong>Separation</strong> 和 <strong>DeviceN</strong> 颜色空间），颜色分量值在应用混合函数之前应先取补（从 1.0 减去），然后再对混合函数的结果取补，以恢复原始颜色空间的表示。  </p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>此调整确保各种混合模式在所有颜色空间中的数值计算保持一致。然而，给定混合模式的实际视觉效果仍然取决于颜色空间。在设备颜色空间（device colour space）中进行混合会产生设备相关的结果，而在基于 CIE 的颜色空间中进行混合，则可以保证结果在所有设备间保持一致。有关颜色空间的更多详细信息，请参阅 <a href="../s7/">11.7</a>“颜色空间与渲染问题”。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The compositing formula shown in <a href="#1133-基本合成公式">11.3.3</a>, "Basic Compositing Formula," represents a vector function: the colours it operates on are represented in the form of n-element vectors, where n denotes the number of components required by the colour space in used in the compositing process. The <em>i</em>th component of the result colour <span class="arithmatex">\(C_r\)</span> shall be obtained by applying the compositing formula to the ith components of the constituent colours <span class="arithmatex">\(C_b\)</span> , <span class="arithmatex">\(C_s\)</span> , and <span class="arithmatex">\(B(C_b, C_s)\)</span>. The result of the computation thus depends on the colour space in which the colours are represented. For this reason, the colour space used for compositing, called the blending colour space, is explicitly made part of the transparent imaging model. When necessary, backdrop and source colours shall be converted to the blending colour space before the compositing computation.</p>
+<p>Of the PDF colour spaces described in Section 8.6, the following shall be supported as blending colour spaces:</p>
+<ul>
+<li><strong>DeviceGray</strong></li>
+<li><strong>DeviceRGB</strong></li>
+<li><strong>DeviceCMYK</strong></li>
+<li><strong>CalGray</strong></li>
+<li><strong>CalRGB</strong></li>
+<li><strong>ICCBased</strong> colour spaces equivalent to the preceding (including calibrated CMYK)</li>
+</ul>
+<p>The <strong>Lab</strong> space and <strong>ICCBased</strong> spaces that represent lightness and chromaticity separately (such as <em>L*a*b*</em>, <em>L*u*v*</em>, and <em>HSV</em>) shall not be used as blending colour spaces because the compositing computations in such spaces do not give meaningful results when applied separately to each component. In addition, an <strong>ICCBased</strong> space used as a blending colour space shall be bidirectional; that is, the ICC profile shall contain both AToB and <em>BToA</em> transformations.</p>
+<p>The blending colour space shall be consulted only for process colours. Although blending may also be done on individual spot colours specified in a <strong>Separation</strong> or <strong>DeviceN</strong> colour space, such colours shall not be converted to a blending colour space (except in the case where they first revert to their alternate colour space, as described under Section <a href="../../c8/s6/#8664-分离色彩空间">8.6.6.4</a> and “DeviceN Colour Spaces”). Instead, the specified colour components shall be blended individually with the corresponding components of the backdrop.</p>
+<p>The blend functions for the various blend modes are defined such that the range for each colour component shall be 0.0 to 1.0 and that the colour space shall be additive. When performing blending operations in subtractive colour spaces (<strong>DeviceCMYK</strong>, <strong>Separation</strong>, and <strong>DeviceN</strong>), the colour component values shall be complemented (subtracted from 1.0) before the blend function is applied and the results of the function shall then be complemented back before being used.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>This adjustment makes the effects of the various blend modes numerically consistent across all colour spaces. However, the actual visual effect produced by a given blend mode still depends on the colour space. Blending in a device colour space produces device-dependent results, whereas in a CIE-based space it produces results that are consistent across all devices. See <a href="../s7/">11.7</a>, "Colour Space and Rendering Issues," for additional details concerning colour spaces.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1135-混合模式">11.3.5 混合模式<a class="headerlink" href="#1135-混合模式" title="Permanent link">&para;</a></h2>
+<p><strong>11.3.5 Blend Mode</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>原则上，任何能生成另一种颜色 <span class="arithmatex">\(C_r\)</span> 作为结果的背景色与源色的函数，都可以用作混合函数 <span class="arithmatex">\(B(C_b , C_s)\)</span>，并用于合成公式中以自定义混合操作。PDF 定义了一组标准的命名混合函数，或称 <em>混合模式</em>，如表 136 和表 137 所示。[附录 L] 的图 L.18 和 L.19 分别展示了 <em>RGB</em> 和 <em>CMYK</em> 颜色的视觉效果。</p>
+<p>如果混合模式是 <em>可分离</em> 的，那么结果颜色的每个分量完全由其对应的背景色和源色分量决定，即混合模式函数 <span class="arithmatex">\(B\)</span> 分别应用于每一组对应的颜色分量：</p>
+<div class="arithmatex">\[
+c_r = B(c_b, c_s)
+\]</div>
+<p>其中，小写变量 <span class="arithmatex">\(c_r, c_b, c_s\)</span> 分别表示颜色 <span class="arithmatex">\(C_r, C_b, C_s\)</span> 的对应分量，以加色形式表示。可分离混合模式可用于任何颜色空间，因为它可独立应用于任意数量的分量。仅可分离混合模式可用于专色混合。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>从理论上讲，混合模式可以对每个颜色分量使用不同的函数，仍然是可分离的；然而，PDF 标准混合模式中没有这种情况。</p>
+</div>
+<p>表 136 列出了 PDF 中的标准可分离混合模式及其用于计算混合颜色的算法/公式。</p>
+<p><table id="table136" markdown="span">
+    <caption><strong>表 136 – 标准可分离混合模式</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>名称</strong></th>
+            <th><strong>结果</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>正常（Normal）</strong></td>
+            <td><span class="arithmatex">\(B ( c_b , c_s ) = c_s\)</span><br/><br/>
+                注 选择源颜色，忽略背景色。
+            </tr>
+        </tr>
+        <tr>
+            <td><strong>兼容模式（Compatible）</strong></td>
+            <td>与「正常」相同。此模式仅用于兼容性，不应使用。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>正片叠底（Multiply）</strong></td>
+            <td><span class="arithmatex">\(B ( c_b , c_s ) = c_b \times c_s\)</span><br/><br/>
+                注1 将背景色与源色值相乘。<br/>
+                注2 结果颜色始终不比任一组成颜色更亮。黑色与任何颜色相乘得黑；白色与任何颜色相乘不改变原色。连续绘制非黑白重叠物体会逐渐变暗。
+            </tr>
+        </tr>
+        <tr>
+            <td><strong>滤色（Screen）</strong></td>
+            <td><span class="arithmatex">\(\begin{align} B(c_b,c_s) &amp;= 1-[(1-c_b)\times (1-c_s)]\\   &amp;= c_b + c_s -(c_b \times c_s) \end{align}\)</span><br/><br/>
+                注3 取背景色与源色的补数相乘后再取补数。<br/>
+                注4 结果颜色始终不比任一组成颜色更暗。白色与任何颜色叠加仍为白；黑色叠加不改变原色。效果类似多张幻灯片同时投影。
+            </tr>
+        </tr>
+        <tr>
+            <td><strong>叠加（Overlay）</strong></td>
+            <td><span class="arithmatex">\(B(c_b, c_s) = \text{HardLight}(c_s, c_b)\)</span><br/><br/>
+                注5 根据背景色值选择正片叠底或滤色。源色覆盖背景色但保留其高光与阴影，背景色未被替换而是与源色混合反映明暗变化。
+            </tr>
+        </tr>
+        <tr>
+            <td><strong>变暗（Darken）</strong></td>
+            <td><span class="arithmatex">\(B ( c_b , c_s ) = \text{min}(c_b, c_s)\)</span><br/><br/>
+                注6 选择背景色与源色中较暗者。<br/>
+                注7 当源色更暗时替换背景色，否则保持不变。
+            </tr>
+        </tr>
+        <tr>
+            <td><strong>变亮（Lighten）</strong></td>
+            <td><span class="arithmatex">\(B ( c_b , c_s ) = \text{max}(c_b, c_s)\)</span><br/><br/>
+                注8 选择背景色与源色中较亮者。<br/>
+                注9 当源色更亮时替换背景色，否则保持不变。
+            </tr>
+        <tr>
+            <td><strong>颜色减淡（ColorDodge）</strong></td>
+            <td><span class="arithmatex">\(B(c_b, c_s) = \begin{cases}  \text{min}(1, c_b/(1-c_s))  &amp; \text{若} \space c_s \lt 1 \\  1 &amp; \text{若} \space c_s = \end{cases}\)</span><br/><br/>
+                注10 通过源色提亮背景色。黑色叠加无变化。
+            </tr>
+        </tr>
+        <tr>
+            <td><strong>颜色加深（ColorBurn）</strong></td>
+            <td><span class="arithmatex">\(B(c_b, c_s) = \begin{cases}  1 - \text{min}(1, (1-c_b)/c_s)  &amp; \text{若} \space c_s \gt 0 \\  0 &amp; \text{若} \space c_s = \end{cases}\)</span><br/><br/>
+                注11 通过源色加深背景色。白色叠加无变化。
+            </tr>
+        <tr>
+            <td><strong>强光（HardLight）</strong></td>
+            <td><span class="arithmatex">\(B(c_b, c_s) = \begin{cases}  \text{Multiply}(c_b, 2 \times c_s) &amp; \text{若} \space c_s \le 0.5 \\  \text{Screen}(c_b, 2\times c_s - 1) &amp; \text{若} \space c_s \gt 0.5 \end{cases}\)</span><br/><br/>
+                注12 根据源色值选择正片叠底或滤色。效果类似强光照射背景。
+            </tr>
+        </tr>
+        <tr>
+            <td><strong>柔光（SoftLight）</strong></td>
+            <td><span class="arithmatex">\(B(c_b, c_s) = \begin{cases}  c_b - (1-2\times c_s) \times c_b \times (1-c_b)  &amp; \text{若} \space c_s \le 0.5 \\  c_b + (2 \times c_s - 1) \times (D(c_b) - c_b) &amp; \text{若} \space c_s \gt 0.5 \end{cases}\)</span><br/>
+                ​<strong>其中</strong><br/>
+                <span class="arithmatex">\(D(x) = \begin{cases}  ((16 \times x - 12) \times x + 4) \times x  &amp; \text{若} \space x \le 0.25 \\  \sqrt{x}  &amp; \text{若} \space x \gt 0.25 \end{cases}\)</span><br/><br/>
+                注13 根据源色值暗化或亮化颜色。效果类似漫射聚光灯照射背景。
+            </tr>
+        </tr>
+        <tr>
+            <td><strong>差值（Difference）</strong></td>
+            <td><span class="arithmatex">\(B(c_b,c_s) = |c_b - c_s|\)</span><br/><br/>
+                注14 用较亮颜色减去较暗颜色：<br/>
+                注15 白色叠加反转背景色；黑色叠加无变化。
+            </tr>
+        <tr>
+            <td><strong>排除（Exclusion）</strong></td>
+            <td><span class="arithmatex">\(B ( c_b , c_s ) = c_b + c_s - 2 \times c_b \times c_s\)</span><br/><br/>
+                注16 效果类似「差值」模式但对比度更低。白色叠加反转背景色；黑色叠加无变化。
+            </tr>
+    </tbody>
+</table></p>
+<p>表 137 列出了标准的不可分离混合模式。由于这些模式考虑所有颜色分量的组合，因此它们的计算取决于用于混合的颜色空间。在所有允许作为混合颜色空间的多分量颜色空间中，都可以应用这些模式（参见 <a href="./#1134-混合色彩空间">“混合色彩空间”</a>）。</p>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>所有这些混合模式在概念上都包含以下步骤：</p>
+<p>a) 将背景色和源色从混合颜色空间转换为中间的 HSL（色相-饱和度-亮度）表示。</p>
+<p>b) 从背景色和源色中选择色相、饱和度和亮度分量的某种组合来创建新颜色。</p>
+<p>c) 将结果转换回原始（混合）颜色空间。</p>
+<p>然而，以下给出的公式并未实际执行这些转换。相反，它们从提供结果色相的颜色（背景色或源色）开始；然后调整该颜色，使其具有适当的饱和度和亮度。</p>
+</div>
+<p>不可分离混合模式的公式使用了几个辅助函数。这些函数操作的颜色假定具有红色、绿色和蓝色分量。<em>CMYK</em> 颜色空间的混合需要特别处理，如本小节所述。</p>
+<p>这些函数应具有以下定义：</p>
+<p><span class="arithmatex">\(\text{Lum}(C) = 0.3 \times C_{red} + 0.59 \times C_{green} + 0.11 \times C_{blue}\)</span></p>
+<p><span class="arithmatex">\(\begin{align} 
+  \text{SetLum}&amp;(C, 1) \\
+  &amp; \text{let} \space d = 1 - \text{Lum}(C) \\
+  &amp; C_{\text{red} } = C_{\text{red} } + d \\
+  &amp; C_{\text{green} } = C_{\text{green} } + d \\
+  &amp; C_{\text{blue} } = C_{\text{blue} } + d \\
+  &amp; \text{returnClipColor}(C)  
+\end{align}\)</span></p>
+<p><span class="arithmatex">\(\begin{align} 
+  \text{ClipColor}&amp;(C) \\
+  &amp; \text{let} \space l = \text{Lum}(C) \\
+  &amp; \text{let} \space n = \text{min}(C_{\text{red} }, C_{\text{green} }, C_{\text{blue} }) \\
+  &amp; \text{let} \space x = \text{max}(C_{\text{red} }, C_{\text{green} }, C_{\text{blue} }) \\
+  &amp; if \space n \lt 0.0 \\
+  &amp; \qquad C_{\text{red} } = l + (((C_{\text{red} } -l) \times l)/(l-n))\\
+  &amp; \qquad C_{\text{green} } = l + (((C_{\text{green} } -l) \times l)/(l-n))\\
+  &amp; \qquad C_{\text{blue} } = l + (((C_{\text{blue} } -l) \times l)/(l-n))\\
+  &amp; if \space n \gt 1.0 \\
+  &amp; \qquad C_{\text{red} } = l + (((C_{\text{red} } -l) \times (1 – l))/(x – l))\\
+  &amp; \qquad C_{\text{green} } = l + (((C_{\text{green} } -l) \times (1 – l))/(x – l))\\
+  &amp; \qquad C_{\text{blue} } = l + (((C_{\text{blue} } -l) \times (1 – l))/(x – l))\\
+  &amp; \text{return} \space C
+\end{align}\)</span></p>
+<p><span class="arithmatex">\(\text{Sat}(C) = \text{max}(C_{\text{red}}, C_{\text{green}}, C_{\text{blue}}) - \text{min}(C_{\text{red}}, C_{\text{green}}, C_{\text{blue}})\)</span></p>
+<p>下标<em>min</em>、<em>mid</em> 和<em>max</em>（在下一个函数中）指的是进入函数时具有最小值、中间值和最大值的颜色分量。</p>
+<p><span class="arithmatex">\(\begin{align} 
+  \text{SetSat}&amp;(C, s) \\
+  &amp; \text{if} \space C_{\text{max}} \gt C_{\text{min}} \\
+  &amp; \qquad C_{\text{min}} = (((C_{\text{mid}} - C_{\text{min}}) \times s)/(C_{\text{max}} - C_{\text{min}})) \\
+  &amp; \qquad C_{\text{max}} = s \\
+  &amp; \text{else} \\
+  &amp; \qquad C_{\text{mid}} = C_{\text{max}} = 0.0 \\
+  &amp; C_{\text{min}} = 0.0 \\
+  &amp; \text{return} \space C  
+\end{align}\)</span></p>
+<p><table id="table137" markdown="span">
+    <caption><strong>表 137 – 标准不可分离混合模式</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>名称</strong></th>
+            <th><strong>结果</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>色调（Hue）</strong></td>
+            <td><span class="arithmatex">\(B( C_b , C_s ) = \text{SetLum}(\text{SetSat}(C_s, \text{Sat}(C_b)), \text{Lum}(C_b))\)</span><br/><br/>
+            注释 1&emsp; 使用源颜色的色调以及背景颜色的饱和度和亮度创建颜色。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>饱和度（Saturation）</strong></td>
+            <td><span class="arithmatex">\(B( C_b , C_s ) = \text{SetLum}(\text{SetSat}(C_b, \text{Sat}(C_s)), \text{Lum}(C_b))\)</span><br/><br/>
+            注 2&emsp; 创建一种饱和度与源颜色相同、色调和亮度与背景颜色相同的颜色。使用此模式在纯灰色（无饱和度）的背景区域进行绘画不会产生任何变化。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>颜色（Color）</strong></td>
+            <td><span class="arithmatex">\(B( C_b , C_s ) = \text{SetLum}(C_s, \text{Lum}(C_b))\)</span><br/><br/>
+            注 3 &emsp; 使用源颜色的色调和饱和度以及背景颜色的亮度创建颜色。这保留了背景的灰度，并且对于为单色图像着色或为彩色图像着色非常有用。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>亮度（Luminosity）</strong></td>
+            <td><span class="arithmatex">\(B( C_b , C_s ) = \text{SetLum}(C_b, \text{Lum}(C_s))\)</span><br/><br/>
+            注 4&emsp;创建一种具有源颜色亮度和背景颜色色调和饱和度的颜色。这会产生与<strong>颜色</strong>模式相反的效果。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>本子条款中的公式适用于 RGB 空间。<em>CMYK</em> 空间（包括 <strong>DeviceCMYK</strong> 和 <strong>ICCBased</strong> 校准的 <em>CMYK</em> 空间）中的混合应按以下方式处理：</p>
+<ul>
+<li><em>C</em>、<em>M</em> 和 <em>Y</em> 分量应按通常方式转换为其互补的 <em>R</em>、<em>G</em> 和 <em>B</em> 分量。上述公式应应用于 RGB 颜色值。结果应转换回 <em>C</em>、<em>M</em> 和 <em>Y</em>。</li>
+<li>对于 <em>K</em> 分量，结果应为 <strong>色调</strong>、<strong>饱和度</strong> 和 <strong>颜色</strong> 混合模式的 <span class="arithmatex">\(C_b\)</span> 的 <em>K</em> 分量；对于 <strong>亮度</strong> 混合模式，结果应为 <span class="arithmatex">\(C_s\)</span> 的 <em>K</em> 分量。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>In principle, any function of the backdrop and source colours that yields another colour, <span class="arithmatex">\(C_r\)</span>, for the result may be used as a blend function <span class="arithmatex">\(B(C_b , C_s)\)</span>, in the compositing formula to customize the blending operation. PDF defines a standard set of named blend functions, or <em>blend modes</em>, listed in Tables 136 and 137. Figures L.18 and L.19 in <a href="../../a12/">Annex L</a> illustrate the resulting visual effects for <em>RGB</em> and <em>CMYK</em> colours, respectively.</p>
+<p>A blend mode is termed <em>separable</em> if each component of the result colour is completely determined by the corresponding components of the constituent backdrop and source colours—that is, if the blend mode function B is applied separately to each set of corresponding components:</p>
+<p><span class="arithmatex">\(c_r = B(c_b, c_s)\)</span></p>
+<p>where the lowercase variables <span class="arithmatex">\(c_r\)</span>, <span class="arithmatex">\(c_b\)</span> , and <span class="arithmatex">\(c_s\)</span> denote corresponding components of the colours <span class="arithmatex">\(C_r\)</span> , <span class="arithmatex">\(C_b\)</span> , and <span class="arithmatex">\(C_s\)</span> , expressed in additive form. A separable blend mode may be used with any colour space, since it applies independently to any number of components. Only separable blend modes shall be used for blending spot colours.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Theoretically, a blend mode could have a different function for each colour component and still be separable; however, none of the standard PDF blend modes have this property.</p>
+</div>
+<p>Table 136 lists the standard separable blend modes available in PDF and the algorithms/formulas that shall be used in the calculation of blended colours.</p>
+<p><table id="table136" markdown="span">
+    <caption><strong>Table 136 – Standard separable blend modes</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Result</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Normal</strong></td>
+            <td><span class="arithmatex">\(B ( c_b , c_s ) = c_s\)</span><br/><br/>
+                NOTE &emsp; Selects the source colour, ignoring the backdrop.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Compatible</strong></td>
+            <td>Same as Normal. This mode exists only for compatibility and should not be used.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Multiply</strong></td>
+            <td><span class="arithmatex">\(B ( c_b , c_s ) = c_b \times c_s\)</span><br/><br/>
+                NOTE 1 &emsp; Multiplies the backdrop and source colour values.<br/>
+                NOTE 2 &emsp; The result colour is always at least as dark as either of the two constituent colours. Multiplying any colour with black produces black; multiplying with white leaves the original colour unchanged. Painting successive overlapping objects with a colour other than black or white produces progressively darker colours.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Screen</strong></td>
+            <td><span class="arithmatex">\(\begin{align} B(c_b,c_s) &amp;= 1-[(1-c_b)\times (1-c_s)]\\   &amp;= c_b + c_s -(c_b \times c_s) \end{align}\)</span><br/><br/>
+                NOTE 3 &emsp; Multiplies the complements of the backdrop and source colour values, then complements the result.<br/>
+                NOTE 4 &emsp; The result colour is always at least as light as either of the two constituent colours. Screening any colour with white produces white; screening with black leaves the original colour unchanged. The effect is similar to projecting multiple photographic slides simultaneously onto a single screen.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Overlay</strong></td>
+            <td><span class="arithmatex">\(B(c_b, c_s) = \text{HardLight}(c_s, c_b)\)</span><br/><br/>
+                NOTE 5 &emsp; Multiplies or screens the colours, depending on the backdrop colour value. Source colours overlay the backdrop while preserving its highlights and shadows. The backdrop colour is not replaced but is mixed with the source colour to reflect the lightness or darkness of the backdrop.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Darken</strong></td>
+            <td><span class="arithmatex">\(B ( c_b , c_s ) = \text{min}(c_b, c_s)\)</span><br/><br/>
+                NOTE 6 &emsp; Selects the darker of the backdrop and source colours. <br/>
+                NOTE 7 &emsp; The backdrop is replaced with the source where the source is darker; otherwise, it is left unchanged. 
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Lighten</strong></td>
+            <td><span class="arithmatex">\(B ( c_b , c_s ) = \text{max}(c_b, c_s)\)</span><br/><br/>
+                NOTE 8 &emsp; Selects the lighter of the backdrop and source colours.<br/>
+                NOTE 9 &emsp; The backdrop is replaced with the source where the source is lighter; otherwise, it is left unchanged.<br/>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ColorDodge</strong></td>
+            <td><span class="arithmatex">\(B(c_b, c_s) = \begin{cases}  \text{min}(1, c_b/(1-c_s))  &amp; \text{if} \space c_s \lt 1 \\  1 &amp; \text{if}  \space c_s = \end{cases}\)</span><br/><br/>
+                NOTE 10 &emsp; Brightens the backdrop colour to reflect the source colour. Painting with black produces no changes.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ColorBurn</strong></td>
+            <td><span class="arithmatex">\(B(c_b, c_s) = \begin{cases}  1 - \text{min}(1, (1-c_b)/c_s)  &amp; \text{if} \space c_s \gt 0 \\  0 &amp; \text{if}  \space c_s = \end{cases}\)</span><br/><br/>
+                NOTE 11 &emsp; Darkens the backdrop colour to reflect the source colour. Painting with white produces no change.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>HardLight</strong></td>
+            <td><span class="arithmatex">\(B(c_b, c_s) = \begin{cases}  \text{Multiply}(c_b, 2 \times c_s) &amp; \text{if} \space c_s \le 0.5 \\  \text{Screen}(c_b, 2\times c_s - 1) &amp; \text{if}  \space c_s \gt 0.5 \end{cases}\)</span><br/><br/>
+                NOTE 12 &emsp; Multiplies or screens the colours, depending on the source colour value. The effect is similar to shining a harsh spotlight on the backdrop.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SoftLight</strong></td>
+            <td><span class="arithmatex">\(B(c_b, c_s) = \begin{cases}  c_b - (1-2\times c_s) \times c_b \times (1-c_b)  &amp; \text{if} \space c_s \le 0.5 \\  c_b + (2 \times c_s - 1) \times (D(c_b) - c_b) &amp; \text{if}  \space c_s \gt 0.5 \end{cases}\)</span><br/>
+                <strong>where</strong><br/>
+                <span class="arithmatex">\(D(x) = \begin{cases}  ((16 \times x - 12) \times x + 4) \times x  &amp; \text{if} \space x \le 0.25 \\  \sqrt{x}  &amp; \text{if}  \space x \gt 0.25 \end{cases}\)</span><br/><br/>
+                NOTE 13&emsp; Darkens or lightens the colours, depending on the source colour value. The effect is similar to shining a diffused spotlight on the backdrop.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Difference</strong></td>
+            <td><span class="arithmatex">\(B(c_b,c_s) = |c_b - c_s|\)</span><br/><br/>
+                NOTE 14 &emsp; Subtracts the darker of the two constituent colours from the lighter colour: <br/>
+                NOTE 15 &emsp; Painting with white inverts the backdrop colour; painting with black produces no change.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Exclusion</strong></td>
+            <td><span class="arithmatex">\(B ( c_b , c_s ) = c_b + c_s - 2 \times c_b \times c_s\)</span><br/><br/>
+                NOTE 16 &emsp; Produces an effect similar to that of the <strong>Difference</strong> mode but lower in contrast. Painting with white inverts the backdrop colour; painting with black produces no change.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Table 137 lists the standard nonseparable blend modes. Since the nonseparable blend modes consider all colour components in combination, their computation depends on the blending colour space in which the components are interpreted. They may be applied to all multiple-component colour spaces that are allowed as blending colour spaces (see <a href="./#1134-混合色彩空间">“Blending Colour Space</a>”).</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>All of these blend modes conceptually entail the following steps:</p>
+<p>a) Convert the backdrop and source colours from the blending colour space to an intermediate HSL (hue-saturation-luminosity) representation.</p>
+<p>b) Create a new colour from some combination of hue, saturation, and luminosity components selected from the backdrop and source colours.</p>
+<p>c) Convert the result back to the original (blending) colour space.</p>
+<p>However, the following formulas given do not actually perform these conversions. Instead, they start with whichever colour (backdrop or source) is providing the hue for the result; then they adjust this colour to have the proper saturation and luminosity.</p>
+</div>
+<p>The nonseparable blend mode formulas make use of several auxiliary functions. These functions operate on colours that are assumed to have red, green, and blue components. Blending of <em>CMYK</em> colour spaces requires special treatment, as described in this sub-clause.</p>
+<p>These functions shall have the following definitions:</p>
+<p><span class="arithmatex">\(\text{Lum}(C) = 0.3 \times C_{red} + 0.59 \times C_{green} + 0.11 \times C_{blue}\)</span></p>
+<p><span class="arithmatex">\(\begin{align} 
+  \text{SetLum}&amp;(C, 1) \\
+  &amp; \text{let} \space d = 1 - \text{Lum}(C) \\
+  &amp; C_{\text{red} } = C_{\text{red} } + d \\
+  &amp; C_{\text{green} } = C_{\text{green} } + d \\
+  &amp; C_{\text{blue} } = C_{\text{blue} } + d \\
+  &amp; \text{returnClipColor}(C)  
+\end{align}\)</span></p>
+<p><span class="arithmatex">\(\begin{align} 
+  \text{ClipColor}&amp;(C) \\
+  &amp; \text{let} \space l = \text{Lum}(C) \\
+  &amp; \text{let} \space n = \text{min}(C_{\text{red} }, C_{\text{green} }, C_{\text{blue} }) \\
+  &amp; \text{let} \space x = \text{max}(C_{\text{red} }, C_{\text{green} }, C_{\text{blue} }) \\
+  &amp; if \space n \lt 0.0 \\
+  &amp; \qquad C_{\text{red} } = l + (((C_{\text{red} } -l) \times l)/(l-n))\\
+  &amp; \qquad C_{\text{green} } = l + (((C_{\text{green} } -l) \times l)/(l-n))\\
+  &amp; \qquad C_{\text{blue} } = l + (((C_{\text{blue} } -l) \times l)/(l-n))\\
+  &amp; if \space n \gt 1.0 \\
+  &amp; \qquad C_{\text{red} } = l + (((C_{\text{red} } -l) \times (1 – l))/(x – l))\\
+  &amp; \qquad C_{\text{green} } = l + (((C_{\text{green} } -l) \times (1 – l))/(x – l))\\
+  &amp; \qquad C_{\text{blue} } = l + (((C_{\text{blue} } -l) \times (1 – l))/(x – l))\\
+  &amp; \text{return} \space C
+\end{align}\)</span></p>
+<p><span class="arithmatex">\(\text{Sat}(C) = \text{max}(C_{\text{red}}, C_{\text{green}}, C_{\text{blue}}) - \text{min}(C_{\text{red}}, C_{\text{green}}, C_{\text{blue}})\)</span></p>
+<p>The subscripts <em>min</em>, <em>mid</em>, and <em>max</em> (in the next function) refer to the colour components having the minimum, middle, and maximum values upon entry to the function.</p>
+<p><span class="arithmatex">\(\begin{align} 
+  \text{SetSat}&amp;(C, s) \\
+  &amp; \text{if} \space C_{\text{max}} \gt C_{\text{min}} \\
+  &amp; \qquad C_{\text{min}} = (((C_{\text{mid}} - C_{\text{min}}) \times s)/(C_{\text{max}} - C_{\text{min}})) \\
+  &amp; \qquad C_{\text{max}} = s \\
+  &amp; \text{else} \\
+  &amp; \qquad C_{\text{mid}} = C_{\text{max}} = 0.0 \\
+  &amp; C_{\text{min}} = 0.0 \\
+  &amp; \text{return} \space C  
+\end{align}\)</span></p>
+<p><table id="table137" markdown="span">
+    <caption><strong>Table 137 – Standard nonseparable blend modes</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Result</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Hue</strong></td>
+            <td><span class="arithmatex">\(B( C_b , C_s ) = \text{SetLum}(\text{SetSat}(C_s, \text{Sat}(C_b)), \text{Lum}(C_b))\)</span><br/><br/>
+                NOTE 1&emsp; Creates a colour with the hue of the source colour and the saturation and luminosity of the backdrop colour.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Saturation</strong></td>
+            <td><span class="arithmatex">\(B( C_b , C_s ) = \text{SetLum}(\text{SetSat}(C_b, \text{Sat}(C_s)), \text{Lum}(C_b))\)</span><br/><br/>
+                NOTE 2&emsp; Creates a colour with the saturation of the source colour and the hue and luminosity of the backdrop colour. Painting with this mode in an area of the backdrop that is a pure gray (no saturation) produces no change.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Color</strong></td>
+            <td><span class="arithmatex">\(B( C_b , C_s ) = \text{SetLum}(C_s, \text{Lum}(C_b))\)</span><br/><br/>
+                NOTE 3&emsp; Creates a colour with the hue and saturation of the source colour and the luminosity of the backdrop colour. This preserves the gray levels of the backdrop and is useful for colouring monochrome images or tinting colour images.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Luminosity</strong></td>
+            <td><span class="arithmatex">\(B( C_b , C_s ) = \text{SetLum}(C_b, \text{Lum}(C_s))\)</span><br/><br/>
+                NOTE 4&emsp; Creates a colour with the luminosity of the source colour and the hue and saturation of the backdrop colour. This produces an inverse effect to that of the <strong>Color</strong> mode.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The formulas in this sub-clause apply to RGB spaces. Blending in <em>CMYK</em> spaces (including both <strong>DeviceCMYK</strong> and <strong>ICCBased</strong> calibrated <em>CMYK</em> spaces) shall be handled in the following way:</p>
+<ul>
+<li>The <em>C</em>, <em>M</em>, and <em>Y</em> components shall be converted to their complementary <em>R</em>, <em>G</em>, and <em>B</em> components in the usual way. The preceding formulas shall be applied to the RGB colour values. The results shall be converted back to <em>C</em>, <em>M</em>, and <em>Y</em>.</li>
+<li>For the <em>K</em> component, the result shall be the <em>K</em> component of <span class="arithmatex">\(C_b\)</span> for the <strong>Hue</strong>, <strong>Saturation</strong>, and <strong>Color</strong> blend modes; it shall be the <em>K</em> component of <span class="arithmatex">\(C_s\)</span> for the <strong>Luminosity</strong> blend mode.</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="1136-alpha-的解释">11.3.6 Alpha 的解释<a class="headerlink" href="#1136-alpha-的解释" title="Permanent link">&para;</a></h2>
+<p><strong>Interpretation of Alpha</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>颜色合成公式</p>
+<p><span class="arithmatex">\(C_r = \left ( 1- \frac{\alpha _s}{\alpha _r}  \right ) \times C_b + \frac{\alpha _s}{\alpha _r} \times [(1 - \alpha _b) \times C_s + \alpha_b \times B(C_b, C_s)]\)</span></p>
+<p>该公式生成的结果颜色是背景色、源色以及混合项 <span class="arithmatex">\(B(C_b, C_s)\)</span> 的加权平均值，权重由背景色和源色的透明度（<span class="arithmatex">\(\alpha_b\)</span> 和 <span class="arithmatex">\(\alpha_s\)</span>）决定。对于最简单的混合模式 <strong>正常模式（Normal）</strong>，其定义为：</p>
+<p><span class="arithmatex">\(B(c_b, c_s) = c_s\)</span></p>
+<p>此时，合成公式简化为背景色和源色的简单加权平均，由背景色和源色的透明度值控制。对于更复杂的混合函数，背景色和源色的透明度决定了混合模式的效果是完全实现，还是通过与背景色和源色混合而减弱。</p>
+<p>结果透明度 <span class="arithmatex">\(\alpha_r\)</span> 实际上是一个计算结果，具体描述见 <a href="#1137-形状和不透明度计算">11.3.7</a> 节「形状与不透明度计算」。结果颜色应根据结果透明度进行归一化处理，以确保在后续的合成操作中，该颜色和透明度的组合能够正确表示颜色的贡献。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>如果 <span class="arithmatex">\(\alpha_r\)</span> 为零，则结果颜色未定义。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>上述公式是对以下公式的简化形式，后者更直观地展示了背景色、源色和混合颜色的相对贡献：</p>
+<p><span class="arithmatex">\(\alpha_r \times C_r = [(1 - \alpha _s) \times \alpha _b \times C_b] + [(1 - \alpha _b) \times \alpha _s \times C_s] + [\alpha _b \times \alpha _s \times B(C_b, C_s)]\)</span></p>
+<p>（该简化基于透明度合成公式，具体内容见下一小节。）因此，从数学上讲，背景色和源色的透明度分别控制背景色和源色的影响，而它们的乘积控制混合函数的影响。当 <span class="arithmatex">\(\alpha_s = 0.0\)</span> 或 <span class="arithmatex">\(\alpha_b = 0.0\)</span> 时，混合模式不会产生任何效果；当 <span class="arithmatex">\(\alpha_s = 1.0\)</span> 且 <span class="arithmatex">\(\alpha_b = 1.0\)</span> 时，混合模式的效果达到最大。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The colour compositing formula</p>
+<p><span class="arithmatex">\(C_r = \left ( 1- \frac{\alpha _s}{\alpha _r}  \right ) \times C_b + \frac{\alpha _s}{\alpha _r} \times [(1 - \alpha _b) \times C_s + \alpha_b \times B(C_b, C_s)]\)</span></p>
+<p>produces a result colour that is a weighted average of the backdrop colour, the source colour, and the blended <span class="arithmatex">\(B (C_b , C_s )\)</span> term, with the weighting determined by the backdrop and source alphas <span class="arithmatex">\(α_β\)</span> and <span class="arithmatex">\(α_s\)</span> . For the simplest blend mode, <strong>Normal</strong>, defined by</p>
+<p><span class="arithmatex">\(B(c_b, c_s) = c_s\)</span></p>
+<p>the compositing formula collapses to a simple weighted average of the backdrop and source colours, controlled by the backdrop and source alpha values. For more interesting blend functions, the backdrop and source alphas control whether the effect of the blend mode is fully realized or is toned down by mixing the result with the backdrop and source colours.</p>
+<p>The result alpha, <span class="arithmatex">\(α_ρ\)</span> , actually represents a computed result, described in <a href="#1137-形状和不透明度计算">11.3.7</a>, "Shape and Opacity Computations." The result colour shall be normalized by the result alpha, ensuring that when this colour and alpha are subsequently used together in another compositing operation, the colour’s contribution is correctly represented.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>If <span class="arithmatex">\(α_ρ\)</span> is zero, the result colour is undefined.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The preceding formula represents a simplification of the following formula, which presents the relative contributions of backdrop, source, and blended colours in a more straightforward way:</p>
+<p><span class="arithmatex">\(\alpha_r \times C_r = [(1 - \alpha _s) \times \alpha _b \times C_b] + [(1 - \alpha _b) \times \alpha _s \times C_s] + [\alpha _b \times \alpha _s \times B(C_b, C_s)]\)</span></p>
+<p>(The simplification requires a substitution based on the alpha compositing formula, which is presented in the next sub-clause.) Thus, mathematically, the backdrop and source alphas control the influence of the backdrop and source colours, respectively, while their product controls the influence of the blend function. An alpha value of <span class="arithmatex">\(α_s = 0.0\)</span> or <span class="arithmatex">\(α_β = 0.0\)</span> results in no blend mode effect; setting <span class="arithmatex">\(α_s = 1.0\)</span> and <span class="arithmatex">\(α_β = 1.0\)</span> results in maximum blend mode effect.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1137-形状和不透明度计算">11.3.7 形状和不透明度计算<a class="headerlink" href="#1137-形状和不透明度计算" title="Permanent link">&para;</a></h2>
+<p><strong>Shape and Opacity Computations</strong></p>
+<h3 id="11371-概述">11.3.7.1 概述<a class="headerlink" href="#11371-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>如前所述，控制合成过程的透明度值应定义为形状和透明度的乘积：</p>
+<p><span class="arithmatex">\(\begin{align} 
+  &amp;\alpha _{_b} = f_{_b} \times q_{_b} \\
+  &amp;\alpha _{_r} = f_{_r} \times q_{_r} \\
+  &amp;\alpha _{_s} = f_{_s} \times q_{_s}
+\end{align}\)</span></p>
+<p>本小节分别讨论各种形状值和透明度值。再次提醒，从概念上讲，这些值是为页面上的每个点计算的。</p>
+</div>
+<div class="tabbed-block">
+<p>As stated earlier, the alpha values that control the compositing process shall be defined as the product of shape and opacity:</p>
+<p><span class="arithmatex">\(\begin{align} 
+  &amp;\alpha _{_b} = f_{_b} \times q_{_b} \\
+  &amp;\alpha _{_r} = f_{_r} \times q_{_r} \\
+  &amp;\alpha _{_s} = f_{_s} \times q_{_s}
+\end{align}\)</span></p>
+<p>This sub-clause examines the various shape and opacity values individually. Once again, keep in mind that conceptually these values are computed for every point on the page.</p>
+</div>
+</div>
+</div>
+<h3 id="11372-源形状和不透明度">11.3.7.2 源形状和不透明度<a class="headerlink" href="#11372-源形状和不透明度" title="Permanent link">&para;</a></h3>
+<p><strong>Source Shape and Opacity</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>形状和不透明度值可能来自多个来源。透明度模型为每种值提供了三个独立的来源。然而，PDF 表示法对独立指定所有这些来源的能力施加了一些限制（参见「<a href="../s6/#1164-指定形状和不透明度">指定形状和不透明度</a>」）。</p>
+<ul>
+<li><strong>对象形状</strong>  基本对象（如描边、填充和文本）具有固有形状，其值在对象内部为 1.0，在外部为 0.0。类似地，带有显式蒙版的图像（参见「<a href="../../c8/s9/#8963-显式掩蔽">显式蒙版</a>」）在未蒙版部分形状值为 1.0，在蒙版部分形状值为 0.0。组对象的形状是其包含对象形状的并集。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>从数学上讲，基本对象具有“硬”边缘，在每个点的形状值为 0.0 或 1.0。然而，当这些对象被光栅化为设备像素时，边界沿线的形状值可能会进行抗锯齿处理，取分数值表示这些像素的部分覆盖。执行此类抗锯齿时，重要的是将分数覆盖视为形状而非不透明度。</p>
+</div>
+<ul>
+<li><strong>蒙版形状</strong>  合成对象时，形状值可以从一个独立于对象本身的附加来源（或软蒙版）获取，如 <a href="../s5/">11.5</a> 节「软蒙版」所述。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>使用软蒙版修改对象或组的形状（称为软裁剪）可以产生效果，例如对象与其背景之间的渐变过渡，如暗角效果。</p>
+</div>
+<ul>
+<li><strong>恒定形状</strong>  源形状可以在每个点通过一个标量形状常数进行修改。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注 3</p>
+<p>这只是一种便利方式，因为可以通过一个值处处相同的形状蒙版实现相同的效果。</p>
+</div>
+<ul>
+<li>
+<p><strong>对象不透明度</strong>  基本对象在所有位置的不透明度均为 1.0。组对象的不透明度是其包含的所有对象不透明度计算结果的组合。</p>
+</li>
+<li>
+<p><strong>蒙版不透明度</strong>  不透明度值（类似于形状值）可以由一个独立于被合成对象的软蒙版提供。</p>
+</li>
+<li>
+<p><strong>恒定不透明度</strong>  源不透明度可以在每个点通过一个标量<em>不透明度常数</em>进行修改。</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注 4</p>
+<p>将此值视为“当前不透明度”是有用的，类似于绘制基本对象时使用的当前颜色。</p>
+</div>
+<p>所有形状和不透明度输入的值应在 0.0 到 1.0（含）范围内，默认值为 1.0。</p>
+<p>三个形状输入相乘，生成一个称为源形状的中间值：</p>
+<div class="arithmatex">\[
+f_{_s} = f_{_j} \times f_{_m} \times f_{_k}
+\]</div>
+<p>三个不透明度输入相乘，生成一个称为源不透明度的中间值：</p>
+<div class="arithmatex">\[
+q_{_s} = q_{_j} \times q_{_m} \times q_{_k}
+\]</div>
+<p>其中变量的含义如下表所示：</p>
+<p><table id="table138" markdown="span">
+    <caption><strong>表 138 – 源形状和不透明度公式中使用的变量</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>变量</strong></th>
+            <th><strong>含义</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="arithmatex">\(f_{_s}\)</span></td>
+            <td>源形状</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(f_{_j}\)</span></td>
+            <td>对象形状</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(f_{_m}\)</span></td>
+            <td>蒙版形状</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(f_{_k}\)</span></td>
+            <td>恒定形状</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_{_s}\)</span></td>
+            <td>源不透明度</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_{_j}\)</span></td>
+            <td>对象不透明度</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_{_m}\)</span></td>
+            <td>蒙版不透明度</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_{_k}\)</span></td>
+            <td>恒定不透明度</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注 5</p>
+<p>这些输入的效果是，随着输入值的减小，绘制操作变得更加透明。</p>
+</div>
+<p>当对象使用平铺图案绘制时，对象内部点的对象形状和对象不透明度由图案中对应点的形状和不透明度决定，而不是在所有位置均为 1.0（参见「<a href="../s6/#1167-图案和透明度">图案和不透明度</a>」）。</p>
+</div>
+<div class="tabbed-block">
+<p>Shape and opacity values may come from several sources. The transparency model provides for three independent sources for each. However, the PDF representation imposes some limitations on the ability to specify all of these sources independently (see “<a href="../s6/#1164-指定形状和不透明度">Specifying Shape and Opacity</a>”).</p>
+<ul>
+<li><em>Object shape</em>. Elementary objects such as strokes, fills, and text have an intrinsic shape, whose value shall be 1.0 for points inside the object and 0.0 outside. Similarly, an image with an explicit mask (see “<a href="../../c8/s9/#8963-显式掩蔽">Explicit Masking</a>”) has a shape that shall be 1.0 in the unmasked portions and 0.0 in the masked portions. The shape of a group object shall be the union of the shapes of the objects it contains.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Mathematically, elementary objects have “hard” edges, with a shape value of either 0.0 or 1.0 at every point. However, when such objects are rasterized to device pixels, the shape values along the boundaries may be anti-aliased, taking on fractional values representing fractional coverage of those pixels. When such anti- aliasing is performed, it is important to treat the fractional coverage as shape rather than opacity.</p>
+</div>
+<ul>
+<li>Mask shape. Shape values for compositing an object may be taken from an additional source, or soft mask, independent of the object itself, as described in <a href="../s5/">11.5</a>, "Soft Masks."</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The use of a soft mask to modify the shape of an object or group, called soft clipping, can produce effects such as a gradual transition between an object and its backdrop, as in a vignette.</p>
+</div>
+<ul>
+<li>Constant shape. The source shape may be modified at every point by a scalar shape constant.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>This is merely a convenience, since the same effect could be achieved with a shape mask whose value is the same everywhere.</p>
+</div>
+<ul>
+<li><em>Object opacity</em>. Elementary objects have an opacity of 1.0 everywhere. The opacity of a group object shall be the result of the opacity computations for all of the objects it contains.</li>
+<li><em>Mask opacity</em>. Opacity values, like shape values, may be provided by a soft mask independent of the object being composited.</li>
+<li><em>Constant opacity</em>. The source opacity may be modified at every point by a scalar <em>opacity constant</em>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>It is useful to think of this value as the “current opacity,” analogous to the current colour used when painting elementary objects.</p>
+</div>
+<p>All of the shape and opacity inputs shall have values in the range 0.0 to 1.0 (inclusive), with a default value of 1.0.</p>
+<p>The three shape inputs shall be multiplied together, producing an intermediate value called the source shape.</p>
+<p><span class="arithmatex">\(f_{_s} = f_{_j} \times f_{_m} \times f_{_k}\)</span></p>
+<p>The three opacity inputs shall be multiplied together, producing an intermediate value called the source opacity.</p>
+<p><span class="arithmatex">\(q_{_s} = q_{_j} \times q_{_m} \times q_{_k}\)</span></p>
+<p>Where the variables have the meanings shown in Table 138.</p>
+<p><table id="table138" markdown="span">
+    <caption><strong>Table 138 – Variables used in the source shape and opacity formulas</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Variable</strong></th>
+            <th><strong>Meaning</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="arithmatex">\(f_{_s}\)</span></td>
+            <td>Source shape</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(f_{_j}\)</span></td>
+            <td>Object shape</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(f_{_m}\)</span></td>
+            <td>Mask shape</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(f_{_k}\)</span></td>
+            <td>Constant shape</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_{_s}\)</span></td>
+            <td>Source opacity</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_{_j}\)</span></td>
+            <td>Object opacity</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_{_m}\)</span></td>
+            <td>Mask opacity</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_{_k}\)</span></td>
+            <td>Constant opacity</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 5</p>
+<p>The effect of each of these inputs is that the painting operation becomes more transparent as the input values decreases.</p>
+</div>
+<p>When an object is painted with a tiling pattern, the object shape and object opacity for points in the object’s interior are determined by those of corresponding points in the pattern, rather than being 1.0 everywhere (see <a href="../s6/#1167-图案和透明度">“Patterns and Transparency</a>”).</p>
+</div>
+</div>
+</div>
+<h3 id="11373-结果形状和不透明度">11.3.7.3 结果形状和不透明度<a class="headerlink" href="#11373-结果形状和不透明度" title="Permanent link">&para;</a></h3>
+<p><strong>Result Shape and Opacity</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>除了结果颜色外，绘制操作还需计算关联的<strong>结果形状</strong>和<strong>结果不透明度</strong>。这些计算基于<strong>联合函数</strong>（Union）：</p>
+<div class="arithmatex">\[
+\begin{align} 
+    \text{Union}(b, s) &amp;= 1 - [(1-b) \times (1-s)] \\
+    &amp;=b + s - (b \times s)
+\end{align}
+\]</div>
+<p>其中，<span class="arithmatex">\(b\)</span> 和 <span class="arithmatex">\(s\)</span> 分别为待合成的背景值与源值。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>这是对不透明形状的传统联合概念的推广，可视为“反转乘法”——输入和输出取补数后再相乘。结果趋向于 1.0：若任一输入为 1.0，结果必为 1.0。</p>
+</div>
+<p>结果形状与不透明度由以下公式给出：</p>
+<div class="arithmatex">\[
+\begin{align} 
+    &amp; f_r = \text{Union}(f_b, f_s) \\ \\
+    &amp; q_r = \frac{\text{Union}(f_b \times q_b, f_s \times q_s) }{f_r} 
+\end{align}
+\]</div>
+<p>其中变量定义如下表所示：</p>
+<p><table id="table139" markdown="span">
+    <caption><strong>表 139 – 结果形状与不透明度公式中的变量</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>变量</strong></th>
+            <th><strong>含义</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="arithmatex">\(f_r\)</span></td>
+            <td>结果形状</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(f_b\)</span></td>
+            <td>背景形状</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(f_s\)</span></td>
+            <td>源形状</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_r\)</span></td>
+            <td>结果不透明度</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_b\)</span></td>
+            <td>背景不透明度</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_s\)</span></td>
+            <td>源不透明度</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>公式解释：</p>
+<ol>
+<li><strong>结果形状</strong> <span class="arithmatex">\(f_r\)</span> 是背景形状 <span class="arithmatex">\(f_b\)</span> 与源形状 <span class="arithmatex">\(f_s\)</span> 的并集。</li>
+<li><strong>结果不透明度</strong> <span class="arithmatex">\(q_r\)</span> 是背景不透明度 <span class="arithmatex">\(q_b\)</span> 与源不透明度 <span class="arithmatex">\(q_s\)</span> 的加权并集（权重为各自形状），再通过结果形状 <span class="arithmatex">\(f_r\)</span> 归一化。</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>由于 <span class="arithmatex">\(\alpha\)</span>（透明度）等于形状与不透明度的乘积，可直接推导出：</p>
+<div class="arithmatex">\[
+\alpha _r = \text{Union}(\alpha _b, \alpha _s)
+\]</div>
+<p>此公式可在无需独立形状与不透明度时直接使用。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>In addition to a result colour, the painting operation also shall compute an associated result shape and <em>result opacity</em>. These computations shall be based on the <em>union function</em></p>
+<p><span class="arithmatex">\(\begin{align} 
+  \text{Union}(b, s) &amp;= 1 - [(1-b) \times (1-s)] \\
+  &amp;=b + s - (b \times s)
+\end{align}\)</span></p>
+<p>where <em>b</em> and <em>s</em> shall be the backdrop and source values to be composited.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>This is a generalization of the conventional concept of union for opaque shapes, and it can be thought of as an “inverted multiplication”—a multiplication with the inputs and outputs complemented. The result tends toward 1.0: if either input is 1.0, the result is 1.0.</p>
+</div>
+<p>The result shape and opacity shall be given by</p>
+<p><span class="arithmatex">\(\begin{align} 
+  &amp; f_r = \text{Union}(f_b, f_s) \\ \\
+  &amp; q_r = \frac{\text{Union}(f_b \times q_b, f_s \times q_s) }{f_r} 
+\end{align}\)</span></p>
+<p>where the variables have the meanings shown in Table 139.</p>
+<p><table id="table139" markdown="span">
+    <caption><strong>Table 139 – Variables used in the result shape and opacity formulas</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Variable</strong></th>
+            <th><strong>Meaning</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="arithmatex">\(f_r\)</span></td>
+            <td>Result shape</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(f_b\)</span></td>
+            <td>Backdrop shape</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(f_s\)</span></td>
+            <td>Source shape</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_r\)</span></td>
+            <td>Result opacity</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_b\)</span></td>
+            <td>Backdrop opacity</td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(q_s\)</span></td>
+            <td>Source opacity</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>These formulas shall be interpreted as follows:</p>
+<ul>
+<li>The result shape shall be the union of the backdrop and source shapes.</li>
+<li>The result opacity shall be the union of the backdrop and source opacities, weighted by their respective shapes. The result shall then be divided by (normalized by) the result shape.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Since alpha is just the product of shape and opacity, it can easily be shown that</p>
+<p><span class="arithmatex">\(\alpha _r = \text{Union}(\alpha _b, \alpha _s)\)</span></p>
+<p>This formula can be used whenever the independent shape and opacity are not needed.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1138-基本合成计算总结">11.3.8 基本合成计算总结<a class="headerlink" href="#1138-基本合成计算总结" title="Permanent link">&para;</a></h2>
+<p><strong>Summary of Basic Compositing Computations</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本子条款是对本节所述所有计算过程的总结。这些计算过程按变量先定义后使用的原则进行编排，部分公式经过重新排列以简化表达式。具体变量含义请参见表 <a href="#table135">135</a>、<a href="#table138">138</a> 和 <a href="#table139">139</a>。</p>
+<p><span class="arithmatex">\(\begin{align} 
+  \text{Union}(b,s) &amp;= 1 - [(1 - b) \times (1 - s)] \\ 
+  &amp; = b + s - (b \times s)
+\end{align}\)</span></p>
+<p><span class="arithmatex">\(\begin{align} 
+  &amp;f_s = f_j \times f_m \times f_k \\
+  &amp;q_s = q_j \times q_m \times q_k \\
+  &amp;f_r = \text{Union}(f_b, f_s) \\\\
+  &amp;\alpha_b = f_b \times q_b \\
+  &amp;\alpha_s = f_s \times q_s \\
+  &amp;\alpha_r = \text{Union}(\alpha_b, \alpha_s)\\\\
+  &amp;q_r = \frac{\alpha _r}{f_r} \\\\
+  &amp;C_r = \left ( 1 - \frac{\alpha _s}{\alpha _r} \right )  \times C_b + \frac{\alpha _s}{\alpha _r} \times [(1 - \alpha _b) \times C_s + \alpha _b \times B(C_b, C_s)]
+\end{align}\)</span></p>
+</div>
+<div class="tabbed-block">
+<p>This sub-clause is a summary of all the computations presented in this sub-clause. They are given in an order such that no variable is used before it is computed; also, some of the formulas have been rearranged to simplify them. See Tables <a href="#table135">135</a>, <a href="#table138">138</a>, and <a href="#table139">139</a> for the meanings of the variables used in these formulas.</p>
+<p><span class="arithmatex">\(\begin{align} 
+  \text{Union}(b,s) &amp;= 1 - [(1 - b) \times (1 - s)] \\ 
+  &amp; = b + s - (b \times s)
+\end{align}\)</span></p>
+<p><span class="arithmatex">\(\begin{align} 
+  &amp;f_s = f_j \times f_m \times f_k \\
+  &amp;q_s = q_j \times q_m \times q_k \\
+  &amp;f_r = \text{Union}(f_b, f_s) \\\\
+  &amp;\alpha_b = f_b \times q_b \\
+  &amp;\alpha_s = f_s \times q_s \\
+  &amp;\alpha_r = \text{Union}(\alpha_b, \alpha_s)\\\\
+  &amp;q_r = \frac{\alpha _r}{f_r} \\\\
+  &amp;C_r = \left ( 1 - \frac{\alpha _s}{\alpha _r} \right )  \times C_b + \frac{\alpha _s}{\alpha _r} \times [(1 - \alpha _b) \times C_s + \alpha _b \times B(C_b, C_s)]
+\end{align}\)</span></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月5日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

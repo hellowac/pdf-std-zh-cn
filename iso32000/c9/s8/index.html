@@ -1,0 +1,2693 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s7/">
+      
+      
+        <link rel="next" href="../s9/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>9.8 字体描述符 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#98-字体描述符" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9.8 字体描述符
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            9文本
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.2 字体的组织和使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.3 文本状态参数和操作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.4 文本对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.5 字体数据结构简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.6 简单字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.7 组合字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    9.8 字体描述符
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    9.8 字体描述符
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#981-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#982-字体描述符标志" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.2 字体描述符标志
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#983-cidfonts-的字体描述符" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.3 CIDFonts 的字体描述符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.8.3 CIDFonts 的字体描述符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9831-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9832-样式" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.3.2 样式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9833-fd" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.3.3 FD
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.9 嵌入式字体程序
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.10 文本内容提取
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#981-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#982-字体描述符标志" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.2 字体描述符标志
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#983-cidfonts-的字体描述符" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.3 CIDFonts 的字体描述符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.8.3 CIDFonts 的字体描述符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9831-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9832-样式" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.3.2 样式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9833-fd" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.8.3.3 FD
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="98-字体描述符">9.8 字体描述符<a class="headerlink" href="#98-字体描述符" title="Permanent link">&para;</a></h1>
+<p><strong>Font Descriptors</strong></p>
+<h2 id="981-概述">9.8.1 概述<a class="headerlink" href="#981-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>字体描述符</em>指定了简单字体或CIDFont作为整体的度量和其他属性，这与单个字形的度量是不同的。这些字体度量提供了信息，使得符合规范的阅读器能够在字体程序不可用时合成一个替代字体或选择一个相似的字体。字体描述符还可以用于将字体程序嵌入到PDF文件中。</p>
+<p>字体描述符不能与Type 0字体一起使用。从PDF 1.5开始，字体描述符可以与Type 3字体一起使用。</p>
+<p>字体描述符是一个字典，其条目指定了各种字体属性。所有字体描述符中共同的条目——无论是简单字体还是CIDFont——列在了表122中。CIDFont的字体描述符中的额外条目在<a href="./#983-cidfonts-的字体描述符">9.8.3</a>《CIDFont的字体描述符》中进行了描述。所有整数值应为字形空间中的单位。字形空间到文本空间的转换描述在<a href="../s2/#924-字形定位和规格">9.2.4</a>《字形定位和度量》中。</p>
+<p><table id="table122" markdown="span">
+    <caption><strong>表 122 – 所有字体描述符共同的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>必需</em>) 描述此字典的PDF对象类型；对于字体描述符，应为 <strong>FontDescriptor</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>FontName</strong></td>
+            <td>name</td>
+            <td>(<em>必需</em>) 字体的PostScript名称。该名称应与引用此字体描述符的字体或CIDFont字典中的 <strong>BaseFont</strong> 值相同。</td>
+        </tr>
+        <tr>
+            <td><strong>FontFamily</strong></td>
+            <td>字节串</td>
+            <td>(<em>可选；PDF 1.5；应在标记PDF文档中的Type 3字体中使用</em>) 指定首选字体家族名称的字节串。</p>
+<div class="admonition info">
+<p class="admonition-title">示例 1</p>
+<p>对于字体 Times Bold Italic，<strong>FontFamily</strong> 为 Times。</p>
+</div>
+<p></td>
+        </tr>
+        <tr>
+            <td><strong>FontStretch</strong></td>
+            <td>name</td>
+            <td>(<em>可选；PDF 1.5；应在标记PDF文档中的Type 3字体中使用</em>) 字体拉伸值。它应为以下名称之一（从最窄到最宽）：UltraCondensed、ExtraCondensed、Condensed、SemiCondensed、Normal、SemiExpanded、Expanded、ExtraExpanded 或 UltraExpanded。<br/>
+                这些值的具体解释因字体而异。<br/></p>
+<div class="admonition info">
+<p class="admonition-title">示例 2</p>
+<p>在一种字体中，<strong><em>Condensed</em></strong> 可能与另一种字体中的 <strong><em>Normal</em></strong> 最为相似。</p>
+</div>
+<p></td>
+        </tr>
+        <tr>
+            <td><strong>FontWeight</strong></td>
+            <td>数字</td>
+            <td>(<em>可选；PDF 1.5；应在标记PDF文档中的Type 3字体中使用</em>) 字体的重量（厚度）分量，表示完全限定字体名称或字体说明符。可能的值为100、200、300、400、500、600、700、800或900，每个数字表示一个比其前一个更深的重量。400表示正常粗细；700表示加粗。</p>
+<p>这些值的具体解释因字体而异。</p>
+<div class="admonition info">
+<p class="admonition-title">示例 3</p>
+<p>在一种字体中，300可能与另一种字体中的500最为相似。</p>
+</div>
+<p></td>
+        </tr>
+        <tr>
+            <td><strong>Flags</strong></td>
+            <td>整数</td>
+            <td>(<em>必需</em>) 一组定义字体各种特性的标志（参见<a href="./#982-字体描述符标志">9.8.2</a>《字体描述符标志》）。</td>
+        </tr>
+        <tr>
+            <td><strong>FontBBox</strong></td>
+            <td>矩形</td>
+            <td>(<em>必需，Type 3字体除外</em>) 一个矩形（参见<a href="../../c7/s9/#795-矩形">7.9.5</a>《矩形》），以字形坐标系表示，指定字体的边界框。这应该是最小的矩形，包含了将所有字形的原点对齐并填充后形成的形状。</td>
+        </tr>
+        <tr>
+            <td><strong>ItalicAngle</strong></td>
+            <td>数字</td>
+            <td>(<em>必需</em>) 以从竖直方向逆时针方向表示的度数，表示字体的主垂直笔画的角度。</p>
+<div class="admonition info">
+<p class="admonition-title">示例 4</p>
+<p>9点钟位置为90度，3点钟位置为-90度。</p>
+</div>
+<p>对于向右倾斜的字体（几乎所有斜体字体都是这样的），该值应为负数。
+</td>
+        </tr>
+        <tr>
+            <td><strong>Ascent</strong></td>
+            <td>数字</td>
+            <td>(<em>必需，Type 3字体除外</em>) 字形在该字体中超过基线的最大高度。带有重音符号的字符的高度应排除在外。</td>
+        </tr>
+        <tr>
+            <td><strong>Descent</strong></td>
+            <td>数字</td>
+            <td>(<em>必需，Type 3字体除外</em>) 字形在该字体中低于基线的最大深度。该值应为负数。</td>
+        </tr>
+        <tr>
+            <td><strong>Leading</strong></td>
+            <td>数字</td>
+            <td>(<em>可选</em>) 连续文本行基线之间的间距。默认值：0。</td>
+        </tr>
+        <tr>
+            <td><strong>CapHeight</strong></td>
+            <td>数字</td>
+            <td>(<em>必需，具有拉丁字母的字体，Type 3字体除外</em>) 扁平大写字母顶部的垂直坐标，从基线开始测量。</td>
+        </tr>
+        <tr>
+            <td><strong>XHeight</strong></td>
+            <td>数字</td>
+            <td>(<em>可选</em>) 字体的 x 高度：平坦的非上升小写字母（如字母x）顶部的垂直坐标，从基线开始测量，在具有拉丁字母的字体中。默认值：0。</td>
+        </tr>
+        <tr>
+            <td><strong>StemV</strong></td>
+            <td>数字</td>
+            <td>(<em>必需，Type 3字体除外</em>) 字形中主垂直笔画的水平厚度。</td>
+        </tr>
+        <tr>
+            <td><strong>StemH</strong></td>
+            <td>数字</td>
+            <td>(<em>可选</em>) 字形中主水平笔画的垂直厚度。默认值：0。</td>
+        </tr>
+        <tr>
+            <td><strong>AvgWidth</strong></td>
+            <td>数字</td>
+            <td>(<em>可选</em>) 字体中字形的平均宽度。默认值：0。</td>
+        </tr>
+        <tr>
+            <td><strong>MaxWidth</strong></td>
+            <td>数字</td>
+            <td>(<em>可选</em>) 字体中字形的最大宽度。默认值：0。</td>
+        </tr>
+        <tr>
+            <td><strong>MissingWidth</strong></td>
+            <td>数字</td>
+            <td>(<em>可选</em>) 对于字体字典的 <strong>Widths</strong> 数组中未指定宽度的字符代码使用的宽度。只有当所有这些字符代码映射到实际宽度与 <strong>MissingWidth</strong> 条目值相同的字形时，它才会产生可预测的效果。默认值：0。</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile</strong></td>
+            <td>流</td>
+            <td>(<em>可选</em>) 包含Type 1字体程序的流（参见<a href="../s9/">9.9</a>《嵌入字体程序》）。</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile2</strong></td>
+            <td>流</td>
+            <td>(<em>可选；PDF 1.1</em>) 包含TrueType字体程序的流（参见<a href="../s9/">9.9</a>《嵌入字体程序》）。</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile3</strong></td>
+            <td>流</td>
+            <td>(<em>可选；PDF 1.2</em>) 包含由流字典中的 <strong>Subtype</strong> 条目指定格式的字体程序的流（参见<a href="../s9/#table126">表126</a>）。</td>
+        </tr>
+        <tr>
+            <td><strong>ToUnicode</strong></td>
+            <td>ASCII 字符串或字节字符串</td>
+            <td>(<em>可选；仅在Type 1字体中有意义；PDF 1.1</em>) 列出字体子集中的字符名称的字符串。该字符串中的名称应采用PDF语法——即，每个名称前有斜杠（/）。这些名称可以以任何顺序出现。名称 .notdef 应被省略，但应在字体子集中存在。如果此条目不存在，字体子集的唯一指示应为 <strong>FontName</strong> 条目中的子集标签（参见<a href="../s6/#964-字体子集">9.6.4</a>《字体子集》）。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>最多只应存在FontFile、FontFile2和FontFile3中的一个条目。</p>
+</div>
+<div class="tabbed-block">
+<p>A <em>font descriptor</em> specifies metrics and other attributes of a simple font or a CIDFont as a whole, as distinct from the metrics of individual glyphs. These font metrics provide information that enables a conforming reader to synthesize a substitute font or select a similar font when the font program is unavailable. The font descriptor may also be used to embed the font program in the PDF file.</p>
+<p>Font descriptors shall not be used with Type 0 fonts. Beginning with PDF 1.5, font descriptors may be used with Type 3 fonts.</p>
+<p>A font descriptor is a dictionary whose entries specify various font attributes. The entries common to all font descriptors—for both simple fonts and CIDFonts—are listed in Table 122. Additional entries in the font descriptor for a CIDFont are described in <a href="./#983-cidfonts-的字体描述符">9.8.3</a>, "Font Descriptors for CIDFonts". All integer values shall be units in glyph space. The conversion from glyph space to text space is described in <a href="../s2/#924-字形定位和规格">9.2.4</a>, "Glyph Positioning and Metrics".</p>
+<p><table id="table122" markdown="span">
+    <caption><strong>Table 122 – Entries common to all font descriptors</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Required</em>) The type of PDF object that this dictionary describes; shall be <strong>FontDescriptor</strong> for a font descriptor.</td>
+        </tr>
+        <tr>
+            <td><strong>FontName</strong></td>
+            <td>name</td>
+            <td>(<em>Required</em>) The PostScript name of the font. This name shall be the same as the value of <strong>BaseFont</strong> in the font or CIDFont dictionary that refers to this font descriptor.</td>
+        </tr>
+        <tr>
+            <td><strong>FontFamily</strong></td>
+            <td>byte string</td>
+            <td>(<em>Optional; PDF 1.5; should be used for Type 3 fonts in Tagged PDF documents</em>) A byte string specifying the preferred font family name.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>For the font Times Bold Italic, the <strong>FontFamily</strong> is Times.</p>
+</div>
+<p></td>
+        </tr>
+        <tr>
+            <td><strong>FontStretch</strong></td>
+            <td>name</td>
+            <td>(<em>Optional; PDF 1.5; should be used for Type 3 fonts in Tagged PDF documents</em>) The font stretch value. It shall be one of these names (ordered from narrowest to widest): UltraCondensed, ExtraCondensed, Condensed, SemiCondensed, Normal, SemiExpanded, Expanded, ExtraExpanded or UltraExpanded.<br/>
+                The specific interpretation of these values varies from font to font.<br/></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p><strong><em>Condensed</em></strong> in one font may appear most similar to <strong><em>Normal</em></strong> in another.</p>
+</div>
+<p></td>
+        </tr>
+        <tr>
+            <td><strong>FontWeight</strong></td>
+            <td>number</td>
+            <td>(<em>Optional; PDF 1.5; should be used for Type 3 fonts in Tagged PDF documents</em>) The weight (thickness) component of the fully-qualified font name or font specifier. The possible values shall be 100, 200, 300, 400, 500, 600, 700, 800, or 900, where each number indicates a weight that is at least as dark as its predecessor. A value of 400 shall indicate a normal weight; 700 shall indicate bold.</p>
+<p>The specific interpretation of these values varies from font to font.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 3</p>
+<p>300 in one font may appear most similar to 500 in another.</p>
+</div>
+<p></td>
+        </tr>
+        <tr>
+            <td><strong>Flags</strong></td>
+            <td>integer</td>
+            <td>(<em>Required</em>) A collection of flags defining various characteristics of the font (see <a href="./#982-字体描述符标志">9.8.2</a>, "Font Descriptor Flags").</td>
+        </tr>
+        <tr>
+            <td><strong>FontBBox</strong></td>
+            <td>rectangle</td>
+            <td>(<em>Required, except for Type 3 fonts</em>) A rectangle (see <a href="../../c7/s9/#795-矩形">7.9.5</a>, "Rectangles"), expressed in the glyph coordinate system, that shall specify the font bounding box. This should be the smallest rectangle enclosing the shape that would result if all of the glyphs of the font were placed with their origins coincident and then filled.</td>
+        </tr>
+        <tr>
+            <td><strong>ItalicAngle</strong></td>
+            <td>number</td>
+            <td>(<em>Required</em>) The angle, expressed in degrees counterclockwise from the vertical, of the dominant vertical strokes of the font.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 4</p>
+<p>The 9-o’clock position is 90 degrees, and the 3-o’clock position is –90 degrees.</p>
+</div>
+<p>The value shall be negative for fonts that slope to the right, as almost all italic fonts do.
+</td>
+        </tr>
+        <tr>
+            <td><strong>Ascent</strong></td>
+            <td>number</td>
+            <td>(<em>Required, except for Type 3 fonts</em>) The maximum height above the baseline reached by glyphs in this font. The height of glyphs for accented characters shall be excluded.</td>
+        </tr>
+        <tr>
+            <td><strong>Descent</strong></td>
+            <td>number</td>
+            <td>(<em>Required, except for Type 3 fonts</em>) The maximum depth below the baseline reached by glyphs in this font. The value shall be a negative number.</td>
+        </tr>
+        <tr>
+            <td><strong>Leading</strong></td>
+            <td>number</td>
+            <td>(<em>Optional</em>) The spacing between baselines of consecutive lines of text. Default value: 0.</td>
+        </tr>
+        <tr>
+            <td><strong>CapHeight</strong></td>
+            <td>number</td>
+            <td>(<em>Required for fonts that have Latin characters, except for Type 3 fonts</em>) The vertical coordinate of the top of flat capital letters, measured from the baseline.</td>
+        </tr>
+        <tr>
+            <td><strong>XHeight</strong></td>
+            <td>number</td>
+            <td>(<em>Optional</em>) The font’s x height: the vertical coordinate of the top of flat nonascending lowercase letters (like the letter x), measured from the baseline, in fonts that have Latin characters. Default value: 0.</td>
+        </tr>
+        <tr>
+            <td><strong>StemV</strong></td>
+            <td>number</td>
+            <td>(<em>Required, except for Type 3 fonts</em>) The thickness, measured horizontally, of the dominant vertical stems of glyphs in the font.</td>
+        </tr>
+        <tr>
+            <td><strong>StemH</strong></td>
+            <td>number</td>
+            <td>(<em>Optional</em>) The thickness, measured vertically, of the dominant horizontal stems of glyphs in the font. Default value: 0.</td>
+        </tr>
+        <tr>
+            <td><strong>AvgWidth</strong></td>
+            <td>number</td>
+            <td>(<em>Optional</em>) The average width of glyphs in the font. Default value: 0.</td>
+        </tr>
+        <tr>
+            <td><strong>MaxWidth</strong></td>
+            <td>number</td>
+            <td>(<em>Optional</em>) The maximum width of glyphs in the font. Default value: 0.</td>
+        </tr>
+        <tr>
+            <td><strong>MissingWidth</strong></td>
+            <td>number</td>
+            <td>(<em>Optional</em>) The width to use for character codes whose widths are not specified in a font dictionary’s <strong>Widths</strong> array. This shall have a predictable effect only if all such codes map to glyphs whose actual widths are the same as the value of the <strong>MissingWidth</strong> entry. Default value: 0.</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile</strong></td>
+            <td>stream</td>
+            <td>(<em>Optional</em>) A stream containing a Type 1 font program (see <a href="../s9/">9.9</a>, "Embedded Font Programs").</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile2</strong></td>
+            <td>stream</td>
+            <td>(<em>Optional; PDF 1.1</em>) A stream containing a TrueType font program (see <a href="../s9/">9.9</a>, "Embedded Font Programs").</td>
+        </tr>
+        <tr>
+            <td><strong>FontFile3</strong></td>
+            <td>stream</td>
+            <td>(<em>Optional; PDF 1.2</em>) A stream containing a font program whose format is specified by the <strong>Subtype</strong> entry in the stream dictionary (see <a href="../s9/#table126">Table 126</a>).</td>
+        </tr>
+        <tr>
+            <td><strong>ToUnicode</strong></td>
+            <td>ASCII string or byte string</td>
+            <td>(<em>Optional; meaningful only in Type 1 fonts; PDF 1.1</em>) A string listing the character names defined in a font subset. The names in this string shall be in PDF syntax—that is, each name preceded by a slash (/). The names may appear in any order. The name . notdef shall be omitted; it shall exist in the font subset. If this entry is absent, the only indication of a font subset shall be the subset tag in the <strong>FontName</strong> entry (see <a href="../s6/#964-字体子集">9.6.4</a>, "Font Subsets").</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>At most, only one of the FontFile, FontFile2, and FontFile3 entries shall be present.</p>
+</div>
+</div>
+</div>
+<h2 id="982-字体描述符标志">9.8.2 字体描述符标志<a class="headerlink" href="#982-字体描述符标志" title="Permanent link">&para;</a></h2>
+<p><strong>Font Descriptor Flags</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>字体描述符中 <strong>Flags</strong> 条目的值应为一个无符号的32位整数，其中包含指定字体各种特性的标志。标志字中的位位置从1（低位）到32（高位）编号。表123展示了这些标志的含义；所有未定义的标志位为保留位，符合规范的写入者应将其设置为0。图48展示了具有这些特性的字体示例。</p>
+<p><table id="table123" markdown="span">
+    <caption><strong>表 123 – 字体标志</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>位位置</strong></th>
+            <th><strong>名称</strong></th>
+            <th><strong>含义</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>FixedPitch</td>
+            <td>所有字形具有相同的宽度（与比例或变宽字体不同，后者具有不同的宽度）。</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Serif</td>
+            <td>字形有衬线，即在字形笔画的顶部和底部绘制的短笔画（<em>无衬线</em>字体没有衬线）。</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Symbolic</td>
+            <td>字体包含超出Adobe标准拉丁字符集的字形。该标志和非符号标志不能同时设置或同时清除。</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Script</td>
+            <td>字形类似于草写字体。</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Nonsymbolic</td>
+            <td>字体使用Adobe标准拉丁字符集或其子集。</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Italic</td>
+            <td>字形具有倾斜的主要垂直笔画。</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>AllCap</td>
+            <td>字体不包含小写字母；通常用于显示目的，如标题或头条。</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>SmallCap</td>
+            <td>字体包含大写字母和小写字母。大写字母类似于该字体系列中的常规版本；小写字母的字形与相应的大写字母相同，但其大小和比例进行了调整，使其与该字体系列中的小写字形具有相同的大小和笔画粗细。</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>ForceBold</td>
+            <td>请参见本小节中的注释1。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><strong>Nonsymbolic</strong> 标志（<strong>Flags</strong> 条目中的第6位）指示字体的字符集是Adobe标准拉丁字符集（或其子集），并且使用这些字形的标准名称。此字符集在<a href="../../a4/#d2-拉丁字符集和编码">D.2</a>《拉丁字符集和编码》中列出。如果字体包含此字符集以外的字形，则应设置 <strong>Symbolic</strong> 标志，并清除 <strong>Nonsymbolic</strong> 标志。换句话说，任何字符集不是Adobe标准字符集子集的字体，应视为符号字体。这会影响字体的隐式基本编码，并可能影响符合规范的阅读器的字体替换策略。</p>
+<p><a class="glightbox" href="../imgs/f48.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f48.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">注释 1</p>
+<p>这种符号字体和非符号字体的分类是PDF特有的。一个字体可能包含一些用于拉丁书写系统的附加字符，但这些字符不在Adobe标准拉丁字符集中；PDF将此类字体视为符号字体。使用两个标志表示单一二进制选择是历史上的偶然。</p>
+</div>
+<p><strong>ForceBold</strong> 标志（第19位）应决定是否即使在非常小的文本尺寸下，符合规范的阅读器仍应使用额外像素来绘制加粗字形。如果设置了 <strong>ForceBold</strong> 标志，则加粗字形的特征在小文本尺寸下可能会加粗。</p>
+<div class="admonition note">
+<p class="admonition-title">注释 2</p>
+<p>通常，当字形在非常低分辨率的设备（如显示屏）上绘制时，加粗字形的特征可能只有1个像素宽。由于这是基于像素的设备上的最小特征宽度，普通（非加粗）字形的特征也会显示为1个像素宽，因此无法与加粗字形区分。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<p>这段代码示例演示了一个字体描述符，其中 <strong>Flags</strong> 条目设置了 <strong>Serif</strong>、<strong>Nonsymbolic</strong> 和 <strong>ForceBold</strong> 标志（第2、6和19位）。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>7 0 obj
+    &lt;&lt; /Type /FontDescriptor
+       /FontName /AGaramond-Semibold
+       /Flags 262178                        <span style="color: #3D7B7B; font-style: italic">% Bits 2, 6, and 19</span>
+       /FontBBox [ −177 −269 1123 866 ]
+       /MissingWidth 255
+       /StemV 105
+       /StemH 45
+       /CapHeight 660
+       /XHeight 394
+       /Ascent 720
+       /Descent −270
+       /Leading 83
+       /MaxWidth 1212
+       /AvgWidth 478
+       /ItalicAngle 0
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The value of the <strong>Flags</strong> entry in a font descriptor shall be an unsigned 32-bit integer containing flags specifying various characteristics of the font. Bit positions within the flag word are numbered from 1 (low-order) to 32 (high-order). Table 123 shows the meanings of the flags; all undefined flag bits are reserved and shall be set to 0 by conforming writers. Figure 48 shows examples of fonts with these characteristics.</p>
+<p><table id="table123" markdown="span">
+    <caption><strong>Table 123 – Font flags</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Bit position</strong></th>
+            <th><strong>Name</strong></th>
+            <th><strong>Meaning</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>FixedPitch</td>
+            <td>All glyphs have the same width (as opposed to proportional or variable-pitch fonts, which have different widths).</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Serif</td>
+            <td>Glyphs have serifs, which are short strokes drawn at an angle on the top and bottom of glyph stems. (<em>Sans serif</em> fonts do not have serifs.)</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Symbolic</td>
+            <td>Font contains glyphs outside the Adobe standard Latin character set. This flag and the Nonsymbolic flag shall not both be set or both be clear.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Script</td>
+            <td>Glyphs resemble cursive handwriting.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Nonsymbolic</td>
+            <td>Font uses the Adobe standard Latin character set or a subset of it.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Italic</td>
+            <td>Glyphs have dominant vertical strokes that are slanted.</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>AllCap</td>
+            <td>Font contains no lowercase letters; typically used for display purposes, such as for titles or headlines.</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>SmallCap</td>
+            <td>Font contains both uppercase and lowercase letters. The uppercase letters are similar to those in the regular version of the same typeface family. The glyphs for the lowercase letters have the same shapes as the corresponding uppercase letters, but they are sized and their proportions adjusted so that they have the same size and stroke weight as lowercase glyphs in the same typeface family.</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>ForceBold</td>
+            <td>See description after Note 1 in this sub-clause.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The Nonsymbolic flag (bit 6 in the <strong>Flags</strong> entry) indicates that the font’s character set is the Adobe standard Latin character set (or a subset of it) and that it uses the standard names for those glyphs. This character set is shown in <a href="../../a4/#d2-拉丁字符集和编码">D.2</a>, "Latin Character Set and Encodings". If the font contains any glyphs outside this set, the Symbolic flag shall be set and the Nonsymbolic flag shall be clear. In other words, any font whose character set is not a subset of the Adobe standard character set shall be considered to be symbolic. This influences the font’s implicit base encoding and may affect a conforming reader’s font substitution strategies.</p>
+<p><a class="glightbox" href="../imgs/f48.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f48.png" /></a></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>This classification of nonsymbolic and symbolic fonts is peculiar to PDF. A font may contain additional characters that are used in Latin writing systems but are outside the Adobe standard Latin character set; PDF considers such a font to be symbolic. The use of two flags to represent a single binary choice is a historical accident.</p>
+</div>
+<p>The ForceBold flag (bit 19) shall determine whether bold glyphs shall be painted with extra pixels even at very small text sizes by a conforming reader. If the ForceBold flag is set, features of bold glyphs may be thickened at small text sizes.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Typically, when glyphs are painted at small sizes on very low-resolution devices such as display screens, features of bold glyphs may appear only 1 pixel wide. Because this is the minimum feature width on a pixel- based device, ordinary (nonbold) glyphs also appear with 1-pixel-wide features and therefore cannot be distinguished from bold glyphs.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>This code sample illustrates a font descriptor whose Flags entry has the Serif, Nonsymbolic, and ForceBold flags (bits 2, 6, and 19) set.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>7 0 obj
+    &lt;&lt; /Type /FontDescriptor
+       /FontName /AGaramond-Semibold
+       /Flags 262178                        <span style="color: #3D7B7B; font-style: italic">% Bits 2, 6, and 19</span>
+       /FontBBox [ −177 −269 1123 866 ]
+       /MissingWidth 255
+       /StemV 105
+       /StemH 45
+       /CapHeight 660
+       /XHeight 394
+       /Ascent 720
+       /Descent −270
+       /Leading 83
+       /MaxWidth 1212
+       /AvgWidth 478
+       /ItalicAngle 0
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="983-cidfonts-的字体描述符">9.8.3 CIDFonts 的字体描述符<a class="headerlink" href="#983-cidfonts-的字体描述符" title="Permanent link">&para;</a></h2>
+<p><strong>Font Descriptors for CIDFonts</strong></p>
+<h3 id="9831-概述">9.8.3.1 概述<a class="headerlink" href="#9831-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>除了<a href="#table122">表122</a>中的条目外，CIDFonts的<strong>FontDescriptor</strong>字典还可以包含表124中列出的条目。</p>
+<p><table id="table124" markdown="span">
+    <caption><strong>表 124 – CIDFonts的附加字体描述符条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>位位置</strong></th>
+            <th><strong>名称</strong></th>
+            <th><strong>含义</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Style</strong></td>
+            <td>字典</td>
+            <td>（可选）一个字典，包含描述字体中字形样式的条目（见<a href="#9832-样式">9.8.3.2</a>，“样式”）。</td>
+        </tr>
+        <tr>
+            <td><strong>Lang</strong></td>
+            <td>名称</td>
+            <td>（可选；PDF 1.5）指定字体语言的名称，可能用于编码中语言未由编码本身暗示的情况。该值应为Internet RFC 3066定义的代码之一，<em>语言标识标签</em>，或（PDF 1.0）ISO 639定义的2个字符的语言代码（见参考书目）。如果此条目缺失，则应认为语言未知。</td>
+        </tr>
+        <tr>
+            <td><strong>FD</strong></td>
+            <td>字典</td>
+            <td>（可选）一个字典，其键标识CIDFont中的字形类别。每个值应为一个字典，包含条目，这些条目应覆盖该类别字形在主字体描述符字典中的对应值（见<a href="#9833-fd">9.8.3.3</a>，“FD”）。</td>
+        </tr>
+        <tr>
+            <td><strong>CIDSet</strong></td>
+            <td>流</td>
+            <td>（可选）一个流，标识CIDFont文件中存在的CID。如果此条目存在，则CIDFont应仅包含<strong>CIDSystemInfo</strong>字典定义的字符集合中的字形子集。如果此条目缺失，CIDFont子集的唯一标识应为<strong>FontName</strong>条目中的子集标签（见<a href="../s6/#964-字体子集">9.6.4</a>，“字体子集”）。<br/>流的数据应以CID为索引，按位组织为一个位表。位应存储在字节中，且高位在前。每个位应对应一个CID，第一个字节的最重要位应对应CID 0，接下来的位对应CID 1，以此类推。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>In addition to the entries in <a href="#table122">Table 122</a>, the <strong>FontDescriptor</strong> dictionaries of CIDFonts may contain the entries listed in Table 124.</p>
+<p><table id="table124" markdown="span">
+    <caption><strong>Table 124 – Additional font descriptor entries for CIDFonts</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Bit position</strong></th>
+            <th><strong>Name</strong></th>
+            <th><strong>Meaning</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Style</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) A dictionary containing entries that describe the style of the glyphs in the font (see <a href="#9832-样式">9.8.3.2</a>, "Style").</td>
+        </tr>
+        <tr>
+            <td><strong>Lang</strong></td>
+            <td>name</td>
+            <td>(Optional; PDF 1.5) A name specifying the language of the font, which may be used for encodings where the language is not implied by the encoding itself. The value shall be one of the codes defined by Internet RFC 3066, <em>Tags for the Identification of Languages or (PDF 1.0) 2</em>-character language codes defined by ISO 639 (see the Bibliography). If this entry is absent, the language shall be considered to be unknown.</td>
+        </tr>
+        <tr>
+            <td><strong>FD</strong></td>
+            <td>dictionary</td>
+            <td>(Optional) A dictionary whose keys identify a class of glyphs in a CIDFont. Each value shall be a dictionary containing entries that shall override the corresponding values in the main font descriptor dictionary for that class of glyphs (see <a href="#9833-fd">9.8.3.3</a>, "FD").</td>
+        </tr>
+        <tr>
+            <td><strong>CIDSet</strong></td>
+            <td>stream</td>
+            <td>(Optional) A stream identifying which CIDs are present in the CIDFont file. If this entry is present, the CIDFont shall contain only a subset of the glyphs in the character collection defined by the <strong>CIDSystemInfo</strong> dictionary. If it is absent, the only indication of a CIDFont subset shall be the subset tag in the <strong>FontName</strong> entry (see <a href="../s6/#964-字体子集">9.6.4</a>, "Font Subsets").<br/>
+                The stream’s data shall be organized as a table of bits indexed by CID. The bits shall be stored in bytes with the high-order bit first. Each bit shall correspond to a CID. The most significant bit of the first byte shall correspond to CID 0, the next bit to CID 1, and so on.</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="9832-样式">9.8.3.2 样式<a class="headerlink" href="#9832-样式" title="Permanent link">&para;</a></h3>
+<p><strong>Style</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Style</strong>字典包含定义CIDFont样式属性和值的条目。仅定义了<strong>Panose</strong>条目。<strong>Panose</strong>的值应为一个包含以下元素的12字节字符串：</p>
+<ul>
+<li>字体家族类别和子类别ID字节，这些字节在TrueType字体的“OS/2”表的sFamilyClass字段中给出。此字段在微软的<em>TrueType 1.0</em>字体文件技术规范中有文档说明。</li>
+<li>十个字节用于字体的PANOSE分类编号。PANOSE分类系统在惠普公司的<em>PANOSE分类指标指南</em>中有文档说明。</li>
+</ul>
+<p>有关这些文档的更多信息，请参阅参考书目。</p>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<p>这是字体描述符中<strong>Style</strong>条目的示例：</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>/Style &lt;&lt; /Panose &lt; 01 05 02 02 03 00 00 00 00 00 00 00 &gt; &gt;&gt;
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The <strong>Style</strong> dictionary contains entries that define style attributes and values for the CIDFont. Only the <strong>Panose</strong> entry is defined. The value of <strong>Panose</strong> shall be a 12-byte string consisting of these elements:</p>
+<ul>
+<li>The font family class and subclass ID bytes, given in the sFamilyClass field of the “OS/2” table in a TrueType font. This field is documented in Microsoft’s <em>TrueType 1.0</em> Font Files Technical Specification.</li>
+<li>Ten bytes for the PANOSE classification number for the font. The PANOSE classification system is documented in Hewlett-Packard Company’s <em>PANOSE Classification Metrics Guide</em>.</li>
+</ul>
+<p>See the Bibliography for more information about these documents.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>This is an example of a <strong>Style</strong> entry in the font descriptor:</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>/Style &lt;&lt; /Panose &lt; 01 05 02 02 03 00 00 00 00 00 00 00 &gt; &gt;&gt;
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="9833-fd">9.8.3.3 FD<a class="headerlink" href="#9833-fd" title="Permanent link">&para;</a></h3>
+<p><strong>FD</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>一个CIDFont可能由不同类别的字形组成，每个类别需要不同的字体全局属性，这些属性出现在字体描述符中。</p>
+<div class="admonition info">
+<p class="admonition-title">示例 1</p>
+<p>例如，拉丁字形可能需要与汉字字形不同的属性。</p>
+</div>
+<p>字体描述符应定义一组默认属性，适用于CIDFont中的所有字形。字体描述符中的<strong>FD</strong>条目应包含这些默认值的例外。</p>
+<p><strong>FD</strong>字典中每个条目的键应是字形类别的名称——即CIDFont字符集合中的一个特定子集。条目的值应为一个字体描述符，其内容应仅覆盖该类别的字体全局属性。该字体描述符应仅包含度量信息条目；它不应包含<strong>FontFile</strong>、<strong>FontFile2</strong>、<strong>FontFile3</strong>或<a href="#table122">表格122</a>中列出的任何条目。</p>
+<p><strong>FD</strong>字典应至少包含比例拉丁字形的度量信息。通过这些字形的信息，可以创建更精确的替代字体。</p>
+<p>字形类别的名称依赖于字符集合，该集合由<strong>CIDSystemInfo</strong>字典中的<strong>Registry</strong>、<strong>Ordering</strong>和<strong>Supplement</strong>条目标识。表125列出了Adobe-GB1、Adobe-CNS1、Adobe-Japan1、Adobe-Japan2和Adobe-Korea1字符集合的有效键。</p>
+<p><table id="table125" markdown="span">
+    <caption><strong>表格125 – CJK字体中的字形类别</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>字符集合</strong></th>
+            <th><strong>类别</strong></th>
+            <th><strong>类别中的字形</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Adobe-GB1</td>
+            <td>
+                <strong>字母</strong><br/>
+                <strong>符号</strong><br/>
+                <strong>通用</strong><br/>
+                <strong>汉字</strong><br/>
+                <strong>HRoman</strong><br/>
+                <strong>HRomanRot</strong><br/>
+                <strong>假名</strong><br/>
+                <strong>比例</strong><br/>
+                <strong>比例Rot</strong><br/>
+            </td>
+            <td>
+                全宽拉丁字母、希腊字母和西里尔字母字形<br/>
+                特殊符号<br/>
+                无字体依赖的字形，如线条绘制<br/>
+                全宽汉字（中文）字形<br/>
+                半宽拉丁字母字形<br/>
+                与HRoman相同，但旋转以便在竖排中使用<br/>
+                日本假名（片假名和平假名）字形<br/>
+                比例拉丁字形<br/>
+                与比例相同，但旋转以便在竖排中使用<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Adobe-CNS1</td>
+            <td>
+                <strong>字母</strong><br/>
+                <strong>符号</strong><br/>
+                <strong>通用</strong><br/>
+                <strong>汉字</strong><br/>
+                <strong>HRoman</strong><br/>
+                <strong>HRomanRot</strong><br/>
+                <strong>假名</strong><br/>
+                <strong>比例</strong><br/>
+                <strong>比例Rot</strong><br/>
+            </td>
+            <td>
+                全宽拉丁字母、希腊字母和西里尔字母字形<br/>
+                特殊符号<br/>
+                无字体依赖的字形，如线条绘制<br/>
+                全宽汉字（中文）字形<br/>
+                半宽拉丁字母字形<br/>
+                与<strong>HRoman</strong>相同，但旋转以便在竖排中使用<br/>
+                日本假名（片假名和平假名）字形<br/>
+                比例拉丁字形<br/>
+                与<strong>比例</strong>相同，但旋转以便在竖排中使用<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Adobe-Japan1</td>
+            <td>
+                <strong>字母</strong><br/>
+                <strong>数字字母</strong><br/>
+                <strong>符号</strong><br/>
+                <strong>符号Rot</strong><br/>
+                <strong>通用</strong><br/>
+                <strong>通用Rot</strong><br/>
+                <strong>假名（H）</strong><br/>
+                <strong>假名Rot（H）</strong><br/>
+                <strong>HRoman</strong><br/>
+                <strong>HRomanRot</strong><br/>
+                <strong>假名</strong><br/>
+                <strong>汉字</strong><br/>
+                <strong>比例</strong><br/>
+                <strong>比例Rot</strong><br/>
+                <strong>注音</strong><br/>
+            </td>
+            <td>
+                全宽拉丁字母、希腊字母和西里尔字母字形<br/>
+                数字字形<br/>
+                特殊符号<br/>
+                与Dingbats相同，但旋转以便在竖排中使用<br/>
+                无字体依赖的字形，如线条绘制<br/>
+                与通用相同，但旋转以便在竖排中使用<br/>
+                半宽假名（片假名和平假名）字形<br/>
+                与HKana相同，但旋转以便在竖排中使用<br/>
+                半宽拉丁字母字形<br/>
+                与HRoman相同，但旋转以便在竖排中使用<br/>
+                全宽假名（片假名和平假名）字形<br/>
+                全宽汉字（中文）字形<br/>
+                比例拉丁字形<br/>
+                与比例相同，但旋转以便在竖排中使用<br/>
+                用于设置注音的字形（小字形，用于标注其他字形的含义或读音）<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Adobe-Japan2</td>
+            <td>
+                <strong>字母</strong><br/>
+                <strong>符号</strong><br/>
+                <strong>保定汉字</strong><br/>
+            </td>
+            <td>
+                全宽拉丁字母、希腊字母和西里尔字母字形<br/>
+                特殊符号<br/>
+                全宽汉字字形<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Adobe-Korea1</td>
+            <td>
+                <strong>字母</strong><br/>
+                <strong>符号</strong><br/>
+                <strong>通用</strong><br/>
+                <strong>韩文</strong><br/>
+                <strong>汉字</strong><br/>
+                <strong>HRoman</strong><br/>
+                <strong>HRomanRot</strong><br/>
+                <strong>假名</strong><br/>
+                <strong>比例</strong><br/>
+                <strong>比例Rot</strong><br/>
+            </td>
+            <td>
+                全宽拉丁字母、希腊字母和西里尔字母字形<br/>
+                特殊符号<br/>
+                无字体依赖的字形，如线条绘制<br/>
+                韩文和字母字形<br/>
+                全宽汉字（中文）字形<br/>
+                半宽拉丁字母字形<br/>
+                与<strong>HRoman</strong>相同，但旋转以便在竖排中使用<br/>
+                日本假名（片假名和平假名）字形<br/>
+                比例拉丁字形<br/>
+                与<strong>比例</strong>相同，但旋转以便在竖排中使用<br/>
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">示例 2</p>
+<p>这个例子说明了一个包含两个条目的FD字典。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>/FD &lt;&lt; /Proportional 25 0 R
+       /HKana 26 0 R
+    &gt;&gt;
+
+25 0 obj
+    &lt;&lt; /Type /FontDescriptor
+       /FontName /HeiseiMin-W3-Proportional
+       /Flags 2
+       /AvgWidth 478
+       /MaxWidth 1212
+       /MissingWidth 250
+       /StemV 105
+       /StemH 45
+       /CapHeight 660
+       /XHeight 394
+       /Ascent 720
+       /Descent −270
+       /Leading 83
+    &gt;&gt;
+endobj
+
+26 0 obj
+    &lt;&lt; /Type /FontDescriptor
+       /FontName /HeiseiMin-W3-HKana
+       /Flags 3
+       /AvgWidth 500
+       /MaxWidth 500
+       /MissingWidth 500
+       /StemV 50
+       /StemH 75
+       /Ascent 720
+       /Descent 0
+       /Leading 83
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A CIDFont may be made up of different classes of glyphs, each class requiring different sets of the font-wide attributes that appear in font descriptors.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>Latin glyphs, for example, may require different attributes than kanji glyphs.</p>
+</div>
+<p>The font descriptor shall define a set of default attributes that apply to all glyphs in the CIDFont. The <strong>FD</strong> entry in the font descriptor shall contain exceptions to these defaults.</p>
+<p>The key for each entry in an <strong>FD</strong> dictionary shall be the name of a class of glyphs—that is, a particular subset of the CIDFont’s character collection. The entry’s value shall be a font descriptor whose contents shall override the font-wide attributes for that class only. This font descriptor shall contain entries for metric information only; it shall not include <strong>FontFile</strong>, <strong>FontFile2</strong>, <strong>FontFile3</strong>, or any of the entries listed in <a href="#table122">Table 122</a>.</p>
+<p>The <strong>FD</strong> dictionary should contain at least the metrics for the proportional Latin glyphs. With the information for these glyphs, a more accurate substitution font can be created.</p>
+<p>The names of the glyph classes depend on the character collection, as identified by the <strong>Registry</strong>, <strong>Ordering</strong>, and <strong>Supplement</strong> entries in the <strong>CIDSystemInfo</strong> dictionary. Table 125 lists the valid keys for the Adobe-GB1, Adobe-CNS1, Adobe-Japan1, Adobe-Japan2, and Adobe-Korea1 character collections.</p>
+<p><table id="table125" markdown="span">
+    <caption><strong>Table 125 – Glyph classes in CJK fonts</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Character Collection</strong></th>
+            <th><strong>Class</strong></th>
+            <th><strong>Glyphs in Class</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Adobe-GB1</td>
+            <td>
+                <strong>Alphabetic</strong><br/>
+                <strong>Dingbats</strong><br/>
+                <strong>Generic</strong><br/>
+                <strong>Hanzi</strong><br/>
+                <strong>HRoman</strong><br/>
+                <strong>HRomanRot</strong><br/>
+                <strong>Kana</strong><br/>
+                <strong>Proportional</strong><br/>
+                <strong>ProportionalRot</strong><br/>
+            </td>
+            <td>
+                Full-width Latin, Greek, and Cyrillic glyphs<br/>
+                Special symbols<br/>
+                Typeface-independent glyphs, such as line-drawing<br/>
+                Full-width hanzi (Chinese) glyphs<br/>
+                Half-width Latin glyphs<br/>
+                Same as HRoman but rotated for use in vertical writing<br/>
+                Japanese kana (katakana and hiragana) glyphs<br/>
+                Proportional Latin glyphs<br/>
+                Same as Proportional but rotated for use in vertical writing<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Adobe-CNS1</td>
+            <td>
+                <strong>Alphabetic</strong><br/>
+                <strong>Dingbats</strong><br/>
+                <strong>Generic</strong><br/>
+                <strong>Hanzi</strong><br/>
+                <strong>HRoman</strong><br/>
+                <strong>HRomanRot</strong><br/>
+                <strong>Kana</strong><br/>
+                <strong>Proportional</strong><br/>
+                <strong>ProportionalRot</strong><br/>
+            </td>
+            <td>
+                Full-width Latin, Greek, and Cyrillic glyphs<br/>
+                Special symbols<br/>
+                Typeface-independent glyphs, such as line-drawing<br/>
+                Full-width hanzi (Chinese) glyphs<br/>
+                Half-width Latin glyphs<br/>
+                Same as <strong>HRoman</strong> but rotated for use in vertical writing<br/>
+                Japanese kana (katakana and hiragana) glyphs<br/>
+                Proportional Latin glyphs<br/>
+                Same as <strong>Proportional</strong> but rotated for use in vertical writing<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Adobe-Japan1</td>
+            <td>
+                <strong>Alphabetic</strong><br/>
+                <strong>AlphaNum</strong><br/>
+                <strong>Dingbats</strong><br/>
+                <strong>DingbatsRot</strong><br/>
+                <strong>Generic</strong><br/>
+                <strong>GenericRot</strong><br/>
+                <strong>HKana</strong><br/>
+                <strong>HKanaRot</strong><br/>
+                <strong>HRoman</strong><br/>
+                <strong>HRomanRot</strong><br/>
+                <strong>Kana</strong><br/>
+                <strong>Kanji</strong><br/>
+                <strong>Proportional</strong><br/>
+                <strong>ProportionalRot</strong><br/>
+                <strong>Ruby</strong><br/>
+            </td>
+            <td>
+                Full-width Latin, Greek, and Cyrillic glyphs<br/>
+                Numeric glyphs<br/>
+                Special symbols<br/>
+                Same as Dingbats but rotated for use in vertical writing<br/>
+                Typeface-independent glyphs, such as line-drawing<br/>
+                Same as Generic but rotated for use in vertical writing<br/>
+                Half-width kana (katakana and hiragana) glyphs<br/>
+                Same as HKana but rotated for use in vertical writing<br/>
+                Half-width Latin glyphs<br/>
+                Same as HRoman but rotated for use in vertical writing<br/>
+                Full-width kana (katakana and hiragana) glyphs<br/>
+                Full-width kanji (Chinese) glyphs<br/>
+                Proportional Latin glyphs<br/>
+                Same as Proportional but rotated for use in vertical writing<br/>
+                Glyphs used for setting ruby (small glyphs that serve to<br/>
+                annotate other glyphs with meanings or readings)<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Adobe-Japan2</td>
+            <td>
+                <strong>Alphabetic</strong><br/>
+                <strong>Dingbats</strong><br/>
+                <strong>HojoKanji</strong><br/>
+            </td>
+            <td>
+                ull-width Latin, Greek, and Cyrillic glyphs<br/>
+                pecial symbols<br/>
+                ull-width kanji glyphs<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>Adobe-Korea1</td>
+            <td>
+                <strong>Alphabetic</strong><br/>
+                <strong>Dingbats</strong><br/>
+                <strong>Generic</strong><br/>
+                <strong>Hangul</strong><br/>
+                <strong>Hanja</strong><br/>
+                <strong>HRoman</strong><br/>
+                <strong>HRomanRot</strong><br/>
+                <strong>Kana</strong><br/>
+                <strong>Proportional</strong><br/>
+                <strong>ProportionalRot</strong><br/>
+            </td>
+            <td>
+            Full-width Latin, Greek, and Cyrillic glyphs<br/>
+            Special symbols<br/>
+            Typeface-independent glyphs, such as line-drawing<br/>
+            Hangul and jamo glyphs<br/>
+            Full-width hanja (Chinese) glyphs<br/>
+            Half-width Latin glyphs<br/>
+            Same as <strong>HRoman</strong> but rotated for use in vertical writing<br/>
+            Japanese kana (katakana and hiragana) glyphs<br/>
+            Proportional Latin glyphs<br/>
+            Same as <strong>Proportional</strong> but rotated for use in vertical writing<br/>
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>This example illustrates an FD dictionary containing two entries.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>/FD &lt;&lt; /Proportional 25 0 R
+       /HKana 26 0 R
+    &gt;&gt;
+
+25 0 obj
+    &lt;&lt; /Type /FontDescriptor
+       /FontName /HeiseiMin-W3-Proportional
+       /Flags 2
+       /AvgWidth 478
+       /MaxWidth 1212
+       /MissingWidth 250
+       /StemV 105
+       /StemH 45
+       /CapHeight 660
+       /XHeight 394
+       /Ascent 720
+       /Descent −270
+       /Leading 83
+    &gt;&gt;
+endobj
+
+26 0 obj
+    &lt;&lt; /Type /FontDescriptor
+       /FontName /HeiseiMin-W3-HKana
+       /Flags 3
+       /AvgWidth 500
+       /MaxWidth 500
+       /MissingWidth 500
+       /StemV 50
+       /StemH 75
+       /Ascent 720
+       /Descent 0
+       /Leading 83
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月5日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

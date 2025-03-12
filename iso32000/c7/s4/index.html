@@ -1,0 +1,3541 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s3/">
+      
+      
+        <link rel="next" href="../s5/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>7.4 过滤器 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#74-过滤器" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7.4 过滤器
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            7语法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.2 词汇惯例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.3 对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    7.4 过滤器
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    7.4 过滤器
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#741-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#742-asciihexdecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.2 ASCIIHexDecode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#743-ascii85decode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.3 ASCII85Decode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#744-lzwdecode-和-flatedecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4 LZWDecode 和 FlateDecode 过滤器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4.4 LZWDecode 和 FlateDecode 过滤器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7441-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7442-lzw编码细节" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4.2 LZW编码细节
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7443-lzwdecode-和-flatedecode-参数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4.3 LZWDecode 和 FlateDecode 参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7444-lzw-和-flate-预测函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4.4 LZW 和 Flate 预测函数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#745-runlengthdecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.5 RunLengthDecode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#746-ccittfaxdecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.6 CCITTFaxDecode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#747-jbig2decode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.7 JBIG2Decode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#748-dctdecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.8 DCTDecode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#749-jpxdecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.9 JPXDecode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7410-crypt-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.10 Crypt 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.5 文件结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.6 加密
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.7 文档结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.8 内容流和资源
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.9 公共数据结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.10 函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.11 文件规范
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.12 扩展字典
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#741-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#742-asciihexdecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.2 ASCIIHexDecode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#743-ascii85decode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.3 ASCII85Decode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#744-lzwdecode-和-flatedecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4 LZWDecode 和 FlateDecode 过滤器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4.4 LZWDecode 和 FlateDecode 过滤器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7441-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7442-lzw编码细节" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4.2 LZW编码细节
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7443-lzwdecode-和-flatedecode-参数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4.3 LZWDecode 和 FlateDecode 参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7444-lzw-和-flate-预测函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.4.4 LZW 和 Flate 预测函数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#745-runlengthdecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.5 RunLengthDecode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#746-ccittfaxdecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.6 CCITTFaxDecode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#747-jbig2decode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.7 JBIG2Decode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#748-dctdecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.8 DCTDecode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#749-jpxdecode-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.9 JPXDecode 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7410-crypt-过滤器" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4.10 Crypt 过滤器
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="74-过滤器">7.4 过滤器<a class="headerlink" href="#74-过滤器" title="Permanent link">&para;</a></h1>
+<p><strong>Filters</strong></p>
+<h2 id="741-概述">7.4.1 概述<a class="headerlink" href="#741-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>流过滤器在<a href="../s3/#738-流对象">7.3.8</a>，“流对象”中介绍。读取流数据时的一个选项是使用过滤器对其进行解码，以产生原始的非编码数据。是否这样做以及使用哪个解码过滤器或过滤器组合，可以在流字典中指定。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>如果流字典指定使用ASCIIHexDecode过滤器，读取该流中数据的应用应将该流中的ASCII十六进制编码数据转换为原始二进制数据。</p>
+</div>
+<p>符合规范的写入器可能会对流中的数据进行编码（例如，采样图像的数据）以压缩它或将其转换为可移植的ASCII表示（或两者兼有）。符合规范的阅读器应调用相应的解码过滤器或过滤器，将信息转换回其原始形式。</p>
+<p>流的过滤器或过滤器应由流字典中的<strong>Filter</strong>条目（如果流是外部的，则为<strong>FFilter</strong>条目）指定。过滤器可以级联形成管道，使流通过两个或更多连续的解码转换。例如，使用LZW和ASCII base-85编码（按该顺序）编码的数据应使用流字典中的以下条目进行解码：</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>/Filter [ /ASCII85Decode /LZWDecode ]
+</code></pre></div>
+</div>
+<p>一些过滤器可能需要参数来控制它们的操作方式。这些可选参数应由流字典中的<strong>DecodeParms</strong>条目（如果流是外部的，则为<strong>FDecodeParms</strong>条目）指定。</p>
+<p>PDF支持一组标准过滤器，它们分为两个主要类别：</p>
+<ul>
+<li><em>ASCII过滤器(ASCII filters)</em>允许解码已作为ASCII文本编码的任意二进制数据（见<a href="../s2/">7.2</a>，“词汇约定”，了解这种类型的编码可能有用的解释）。</li>
+<li><em>解压缩过滤器(Decompression filters)</em>允许解码已压缩的数据。压缩数据应为二进制格式，即使原始数据是ASCII文本。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>ASCII过滤器在加密的PDF文件中没有实际用途；见<a href="../s6/">7.6</a>，“加密”。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>压缩对于大型采样图像特别有价值，因为它减少了存储需求和传输时间。一些类型的压缩是有损的，意味着在编码过程中丢失了一些数据，导致数据解压缩时质量下降。不丢失数据的压缩称为无损压缩。虽然有些显而易见，但值得指出的是，有损压缩只能应用于采样图像数据（并且只有某些类型的有损压缩适用于某些类型的图像）。另一方面，无损压缩可以用于任何类型的流。</p>
+</div>
+<p>标准过滤器在表6中总结，这也表明它们是否接受任何可选参数。以下子条款更详细地描述了这些过滤器及其参数（如果有），包括一些过滤器的编码算法规范。</p>
+<p><table id="table6" markdown="span">
+    <caption>Table 6 – 标准过滤器</caption>
+    <thead>
+        <tr>
+            <th><strong>过滤器名称</strong></th>
+            <th><strong>参数</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>ASCIIHexDecode</strong></td>
+            <td>no</td>
+            <td>对使用ASCII十六进制表示编码的数据进行解码，还原原始二进制数据。</td>
+        </tr>
+        <tr>
+            <td><strong>ASCII85Decode</strong></td>
+            <td>no</td>
+            <td>对使用ASCII base-85表示编码的数据进行解码，还原原始二进制数据。</td>
+        </tr>
+        <tr>
+            <td><strong>LZWDecode</strong></td>
+            <td>yes</td>
+            <td>使用LZW（Lempel-Ziv-Welch）自适应压缩方法对编码的数据进行解压缩，还原原始文本或二进制数据。</td>
+        </tr>
+        <tr>
+            <td><strong>FlateDecode</strong></td>
+            <td>yes</td>
+            <td>(<em>PDF 1.2</em>) 使用zlib/deflate压缩方法对编码的数据进行解压缩，还原原始文本或二进制数据。</td>
+        </tr>
+        <tr>
+            <td><strong>RunLengthDecode</strong></td>
+            <td>no</td>
+            <td>使用面向字节的行程长度编码算法对编码的数据进行解压缩，还原原始文本或二进制数据（通常为单色图像数据，或包含单一字节值频繁长行程的任何数据）。</td>
+        </tr>
+        <tr>
+            <td><strong>CCITTFaxDecode</strong></td>
+            <td>yes</td>
+            <td>使用CCITT传真标准对编码的数据进行解压缩，还原原始数据（通常为每个像素1位的单色图像数据）。</td>
+        </tr>
+        <tr>
+            <td><strong>JBIG2Decode</strong></td>
+            <td>yes</td>
+            <td>(PDF 1.4) 使用JBIG2标准对编码的数据进行解压缩，还原原始单色（每个像素1位）图像数据（或该数据的近似值）。</td>
+        </tr>
+        <tr>
+            <td><strong>DCTDecode</strong></td>
+            <td>yes</td>
+            <td>使用基于JPEG标准的DCT（离散余弦变换）技术对编码的数据进行解压缩，还原近似原始数据的图像样本数据。</td>
+        </tr>
+        <tr>
+            <td><strong>JPXDecode</strong></td>
+            <td>no</td>
+            <td>(PDF 1.5) 使用基于小波的JPEG2000标准对编码的数据进行解压缩，还原原始图像数据。</td>
+        </tr>
+        <tr>
+            <td><strong>Crypt</strong></td>
+            <td>yes</td>
+            <td>(PDF 1.5) 由安全处理器加密的数据进行解密，还原为加密前的数据。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 3</p>
+<p>下面的示例展示了一个流，其中包含了页面的标记指令，该流首先使用LZW压缩方法进行压缩，然后使用ASCII base-85表示法进行编码。</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj
+    &lt;&lt; /Length 534
+       /Filter [ /ASCII85Decode /LZWDecode ]
+    &gt;&gt;
+stream
+J..)6T`?p&amp;&lt;!J9%_[umg&quot;B7/Z7KNXbN&#39;S+,*Q/&amp;&quot;OLT&#39;F
+LIDK#!n`$&quot;&lt;Atdi`\Vn%b%)&amp;&#39;cA*VnK\CJY(sF&gt;c!Jnl@
+RM]WM;jjH6Gnc75idkL5]+cPZKEBPWdR&gt;FF(kj1_R%W_d
+&amp;/jS!;iuad7h?[L-F$+]]0A3Ck*$I0KZ?;&lt;)CJtqi65Xb
+Vc3\n5ua:Q/=0$W&lt;#N3U;H,MQKqfg1?:lUpR;6oN[C2E4
+ZNr8Udn.&#39;p+?#X+1&gt;0Kuk$bCDF/(3fL5]Oq)^kJZ!C2H1
+&#39;TO]Rl?Q:&amp;&#39;&lt;5&amp;iP!$Rq;BXRecDN[IJB`,)o8XJOSJ9sD
+S]hQ;Rj@!ND)bD_q&amp;C\g:inYC%)&amp;u#:u,M6Bm%IY!Kb1+
+&quot;:aAa&#39;S`ViJglLb8&lt;W9k6Yl\\0McJQkDeLWdPN?9A&#39;jX*
+al&gt;iG1p&amp;i;eVoK&amp;juJHs9%;Xomop&quot;5KatWRT&quot;JQ#qYuL,
+JD?M$0QP)lKn06l1apKDC@\qJ4B!!(5m+j.7F790m(Vj8
+8l8Q:_CZ(Gm1%X\N1&amp;u!FKHMB~&gt;
+endstream
+endobj
+</code></pre></div>
+<p><strong>kimi示例</strong>:</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>12 0 obj
+&lt;&lt; /Filter [ /ASCII85Decode /LZWDecode ]
+   /DecodeParms [
+     &lt;&lt; /ASCII85Decode &lt;&lt; /DecodeParm1 ... &gt;&gt; 
+     /LZWDecode
+     &lt;&lt; /LZWDecode &lt;&lt;
+       /EarlyChange  true
+       /Predictor    12
+     &gt;&gt; ]
+   ]
+&gt;&gt;
+stream
+... ASCII base-85 编码的压缩数据 ...
+endstream
+</code></pre></div>
+<p>在这个例子中，流对象通过其字典中的 <code>/Filter</code> 条目指定了两种过滤器：<code>/ASCII85Decode</code> 和 <code>/LZWDecode</code>。<code>/DecodeParms</code> 条目包含了每个过滤器的参数字典。对于 LZW 解码，可能包括参数如 <code>EarlyChange</code> 和 <code>Predictor</code>，这些参数控制解码的行为。流数据本身是使用这两种方法编码的，并且存储在 <code>stream</code> 和 <code>endstream</code> 关键字之间。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 4</p>
+<p>以下是提供的示例展示了一个没有应用任何过滤器的流（流的内容在<a href="../s8/#782-内容流">7.8.2</a>，“内容流”中有解释，那里使用的运算符在<a href="../../c9/">第9条款</a>，“文本”中有更详细的描述）：</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj
+    &lt;&lt; /Length 568 &gt;&gt;
+stream
+2 J
+BT
+/F1 12 Tf
+0 Tc
+0 Tw
+72.5 712 TD
+[ ( 未过滤的流可以容易地被读取 ) 65 ( , ) ] TJ
+0 -14 TD
+[ ( b ) 20 ( ut 通常需要更多的空间 ) 10 ( e ) 20 ( 比压缩过的流 ) ] TJ
+T* ( . ) Tj
+0 -28 TD
+[ ( Se ) 25 ( v ) 15 ( eral encoding methods are a ) 20 ( v) 25 ( ailable in PDF ) 80 ( . ) ] TJ
+0 -14 TD
+( 有些用于压缩，其他的只是 ) Tj
+T* [ ( 用于以ASCII格式表示二进制数据。 ) ] TJ
+T* ( 有些压缩过滤器适用于数据和图像， ) Tj
+T* ( 而其他的仅适用于连续色调图像。 ) Tj
+ET
+endstream
+endobj
+</code></pre></div>
+<p><strong>译注</strong>:</p>
+<p>请注意，这个示例中的文本是一个直接的翻译，并且保留了原文中的PDF内容流语法和操作符。在实际的PDF文件中，这些操作符将控制文本的显示方式，例如字体大小、位置和格式。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Stream filters are introduced in <a href="../s3/#738-流对象">7.3.8</a>, "Stream Objects." An option when reading stream data is to decode it using a filter to produce the original non-encoded data. Whether to do so and which decoding filter or filters to use may be specified in the stream dictionary.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>If a stream dictionary specifies the use of an ASCIIHexDecode filter, an application reading the data in that stream should transform the ASCII hexadecimal-encoded data in that stream in order to obtain the original binary data.</p>
+</div>
+<p>A conforming writer may encode data in a stream (for example, data for sampled images) to compress it or to convert it to a portable ASCII representation (or both). A conforming reader shall invoke the corresponding decoding filter or filters to convert the information back to its original form.</p>
+<p>The filter or filters for a stream shall be specified by the <strong>Filter</strong> entry in the stream’s dictionary (or the <strong>FFilter</strong> entry if the stream is external). Filters may be cascaded to form a pipeline that passes the stream through two or more decoding transformations in sequence. For example, data encoded using LZW and ASCII base-85 encoding (in that order) shall be decoded using the following entry in the stream dictionary:</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>/Filter [ /ASCII85Decode /LZWDecode ]
+</code></pre></div>
+</div>
+<p>Some filters may take parameters to control how they operate. These optional parameters shall be specified by
+the <strong>DecodeParms</strong> entry in the stream’s dictionary (or the <strong>FDecodeParms</strong> entry if the stream is external).</p>
+<p>PDF supports a standard set of filters that fall into two main categories:</p>
+<ul>
+<li><em>ASCII filters</em> enable decoding of arbitrary binary data that has been encoded as ASCII text (see <a href="../s2/">7.2</a>, "Lexical Conventions," for an explanation of why this type of encoding might be useful).</li>
+<li><em>Decompression filters</em> enable decoding of data that has been compressed. The compressed data shall be in binary format, even if the original data is ASCII text.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>ASCII filters serve no useful purpose in a PDF file that is encrypted; see <a href="../s6/">7.6</a>, “Encryption”.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Compression is particularly valuable for large sampled images, since it reduces storage requirements and transmission time. Some types of compression are lossy, meaning that some data is lost during the encoding, resulting in a loss of quality when the data is decompressed. Compression in which no loss of data occurs is called lossless. Though somehow obvious it might be worth pointing out that lossy compression can only be applied to sampled image data (and only certain types of lossy compression for certain types of images). Lossless compression on the other hand can be used for any kind of stream.</p>
+</div>
+<p>The standard filters are summarized in Table 6, which also indicates whether they accept any optiona parameters. The following sub-clauses describe these filters and their parameters (if any) in greater detail including specifications of encoding algorithms for some filters.</p>
+<p><table id="table6" markdown="span">
+    <caption>Table 6 – Standard filters</caption>
+    <thead>
+        <tr>
+            <th><strong>FILTER name</strong></th>
+            <th><strong>Parameters</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>ASCIIHexDecode</strong></td>
+            <td>no</td>
+            <td>Decodes data encoded in an ASCII hexadecimal representation, reproducing the original binary data.</td>
+        </tr>
+        <tr>
+            <td><strong>ASCII85Decode</strong></td>
+            <td>no</td>
+            <td>Decodes data encoded in an ASCII base-85 representation, reproducing the original binary data.</td>
+        </tr>
+        <tr>
+            <td><strong>LZWDecode</strong></td>
+            <td>yes</td>
+            <td>Decompresses data encoded using the LZW (Lempel-Ziv-Welch) adaptive compression method, reproducing the original text or binary data.</td>
+        </tr>
+        <tr>
+            <td><strong>FlateDecode</strong></td>
+            <td>yes</td>
+            <td>(<em>PDF 1.2</em>) Decompresses data encoded using the zlib/deflate compression method, reproducing the original text or binary data.</td>
+        </tr>
+        <tr>
+            <td><strong>RunLengthDecode</strong></td>
+            <td>no</td>
+            <td>Decompresses data encoded using a byte-oriented run-length encoding algorithm, reproducing the original text or binary data (typically monochrome image data, or any data that contains frequent long runs of a single byte value).</td>
+        </tr>
+        <tr>
+            <td><strong>CCITTFaxDecode</strong></td>
+            <td>yes</td>
+            <td>Decompresses data encoded using the CCITT facsimile standard, reproducing the original data (typically monochrome image data at 1 bit per pixel).</td>
+        </tr>
+        <tr>
+            <td><strong>JBIG2Decode</strong></td>
+            <td>yes</td>
+            <td>(PDF 1.4) Decompresses data encoded using the JBIG2 standard, reproducing the original monochrome (1 bit per pixel) image data (or an approximation of that data).</td>
+        </tr>
+        <tr>
+            <td><strong>DCTDecode</strong></td>
+            <td>yes</td>
+            <td>Decompresses data encoded using a DCT (discrete cosine transform) technique based on the JPEG standard, reproducing image sample data that approximates the original data.</td>
+        </tr>
+        <tr>
+            <td><strong>JPXDecode</strong></td>
+            <td>no</td>
+            <td>(PDF 1.5) Decompresses data encoded using the wavelet-based JPEG2000 standard, reproducing the original image data.</td>
+        </tr>
+        <tr>
+            <td><strong>Crypt</strong></td>
+            <td>yes</td>
+            <td>(PDF 1.5) Decrypts data encrypted by a security handler, reproducing the data as it was before encryption.</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 3</p>
+<p>The following example shows a stream, containing the marking instructions for a page, that was compressed using the LZW compression method and then encoded in ASCII base-85 representation.</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj
+    &lt;&lt; /Length 534
+       /Filter [ /ASCII85Decode /LZWDecode ]
+    &gt;&gt;
+stream
+J..)6T`?p&amp;&lt;!J9%_[umg&quot;B7/Z7KNXbN&#39;S+,*Q/&amp;&quot;OLT&#39;F
+LIDK#!n`$&quot;&lt;Atdi`\Vn%b%)&amp;&#39;cA*VnK\CJY(sF&gt;c!Jnl@
+RM]WM;jjH6Gnc75idkL5]+cPZKEBPWdR&gt;FF(kj1_R%W_d
+&amp;/jS!;iuad7h?[L-F$+]]0A3Ck*$I0KZ?;&lt;)CJtqi65Xb
+Vc3\n5ua:Q/=0$W&lt;#N3U;H,MQKqfg1?:lUpR;6oN[C2E4
+ZNr8Udn.&#39;p+?#X+1&gt;0Kuk$bCDF/(3fL5]Oq)^kJZ!C2H1
+&#39;TO]Rl?Q:&amp;&#39;&lt;5&amp;iP!$Rq;BXRecDN[IJB`,)o8XJOSJ9sD
+S]hQ;Rj@!ND)bD_q&amp;C\g:inYC%)&amp;u#:u,M6Bm%IY!Kb1+
+&quot;:aAa&#39;S`ViJglLb8&lt;W9k6Yl\\0McJQkDeLWdPN?9A&#39;jX*
+al&gt;iG1p&amp;i;eVoK&amp;juJHs9%;Xomop&quot;5KatWRT&quot;JQ#qYuL,
+JD?M$0QP)lKn06l1apKDC@\qJ4B!!(5m+j.7F790m(Vj8
+8l8Q:_CZ(Gm1%X\N1&amp;u!FKHMB~&gt;
+endstream
+endobj
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 4</p>
+<p>The following shows the same stream without any filters applied to it. (The stream’s contents are explained in <a href="../s8/#782-内容流">7.8.2</a>, "Content Streams," and the operators used there are further described in <a href="../../c9/">clause 9</a>, "Text".)</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj
+    &lt;&lt; /Length 568 &gt;&gt;
+stream
+2 J
+BT
+/F1 12 Tf
+0 Tc
+0 Tw
+72.5 712 TD
+[ ( Unfiltered streams can be read easily ) 65 ( , ) ] TJ
+0 -14 TD
+[ ( b ) 20 ( ut generally tak ) 10 ( e more space than \311 ) ] TJ
+T* ( compressed streams . ) Tj
+0 -28 TD
+[ ( Se ) 25 ( v ) 15 ( eral encoding methods are a ) 20 ( v) 25 ( ailable in PDF ) 80 ( . ) ] TJ
+0 -14 TD
+( Some are used for compression and others simply ) Tj
+T* [ ( to represent binary data in an ) 55 ( ASCII format . ) ] TJ
+T* ( Some of the compression filters are \
+suitable ) Tj
+T* ( for both data and images , while others are \
+suitable only ) Tj
+T* ( for continuous-tone images . ) Tj
+ET
+endstream
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="742-asciihexdecode-过滤器">7.4.2 ASCIIHexDecode 过滤器<a class="headerlink" href="#742-asciihexdecode-过滤器" title="Permanent link">&para;</a></h2>
+<p><strong>ASCIIHexDecode Filter</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>ASCIIHexDecode</strong> 过滤器对已用 ASCII 十六进制形式编码的数据进行解码。ASCII 十六进制编码和 ASCII base-85 编码（见<a href="./#743-ascii85decode-过滤器">7.4.3</a>，“ASCII85Decode 过滤器”）将二进制数据（如图像数据或之前压缩过的数据）转换为 7 位 ASCII 字符。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>倾向于使用 ASCII base-85 编码而不是 ASCII 十六进制编码。之所以偏好 base-85 编码，是因为它更紧凑：它以 4:5 的比例扩展数据，而 ASCII 十六进制编码则为 1:2。</p>
+</div>
+<p><strong>ASCIIHexDecode</strong> 过滤器应对每对 ASCII 十六进制数字（0-9 和 A-F 或 a-f）生成一个字节的二进制数据。应忽略所有空白字符（见<a href="../s2/">7.2</a>，“词汇约定”）。大于号（3Eh）表示文件结束（EOD）。遇到任何其他字符都应导致错误。如果过滤器在读取奇数个十六进制数字后遇到 EOD 标记，它应表现得就像最后一个数字后面跟了一个 0（零）。</p>
+</div>
+<div class="tabbed-block">
+<p>The <strong>ASCIIHexDecode</strong> filter decodes data that has been encoded in ASCII hexadecimal form. ASCII hexadecimal encoding and ASCII base-85 encoding (<a href="./#743-ascii85decode-过滤器">7.4.3</a>, "ASCII85Decode Filter") convert binary data, such as image data or previously compressed data, to 7-bit ASCII characters.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>ASCII base-85 encoding is preferred to ASCII hexadecimal encoding. Base-85 encoding is preferred because it is more compact: it expands the data by a factor of 4 : 5, compared with 1 : 2 for ASCII hexadecimal encoding.</p>
+</div>
+<p>The <strong>ASCIIHexDecode</strong> filter shall produce one byte of binary data for each pair of ASCII hexadecimal digits (0–9 and A–F or a–f). All white-space characters (see <a href="../s2/">7.2</a>, "Lexical Conventions") shall be ignored. A GREATER-THAN SIGN (3Eh) indicates EOD. Any other characters shall cause an error. If the filter encounters the EOD marker after reading an odd number of hexadecimal digits, it shall behave as if a 0 (zero) followed the last digit.</p>
+</div>
+</div>
+</div>
+<h2 id="743-ascii85decode-过滤器">7.4.3 ASCII85Decode 过滤器<a class="headerlink" href="#743-ascii85decode-过滤器" title="Permanent link">&para;</a></h2>
+<p><strong>ASCII85Decode Filter</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>ASCII85Decode</strong> 过滤器对使用 ASCII base-85 编码编码的数据进行解码，并产生二进制数据。以下段落描述了用 ASCII base-85 对二进制数据进行编码的过程；<strong>ASCII85Decode</strong> 过滤器则逆转这一过程。</p>
+<p>ASCII base-85 编码应使用 ASCII 字符 ! 到 u (21h - 75h) 和字符 z (7Ah)，用两个字符序列 ~&gt; (7Eh)(3Eh) 作为其文件结束（EOD）标记。<strong>ASCII85Decode</strong> 过滤器应忽略所有空白字符（见<a href="../s2/">7.2</a>，“词汇约定”）。任何其他字符，以及在 ASCII base-85 编码中代表不可能组合的任何字符序列，都应导致错误。</p>
+<p>具体来说，ASCII base-85 编码应对每 4 个字节的二进制数据产生 5 个 ASCII 字符。每组 4 个字节的输入，(<span class="arithmatex">\(b_1\)</span> <span class="arithmatex">\(b_2\)</span> <span class="arithmatex">\(b_3\)</span> <span class="arithmatex">\(b_4\)</span> )，应使用以下关系转换为一组 5 个字节的输出，(<span class="arithmatex">\(c_1\)</span> <span class="arithmatex">\(c_2\)</span> <span class="arithmatex">\(c_3\)</span> <span class="arithmatex">\(c_4\)</span> <span class="arithmatex">\(c_5\)</span> )：</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\((b_1 \times 256^3)+(b_2 \times 256^2 ) +  (b_3 \times 256 ^ 1) = 
+\newline 
+(c_1 \times 85^4)+(c_2 \times 85^3) + (c_3 \times 85^2)+(c_4 \times 85^1)\)</span>\)</span></p>
+<p>换句话说，4 个字节的二进制数据应被解释为一个基于 256 的数字，然后转换为一个基于 85 的数字。基于 85 的数字的五个字节随后应通过每个数字加 33（字符 ! 的 ASCII 码）转换为 ASCII 字符。得到的编码数据应只包含可打印的 ASCII 字符，其代码范围在 33 (!) 到 117 (u) 之间。作为一个特殊情况，如果所有五个字节都是 0，它们应由代码 122 (z) 的字符代替五个感叹号 (!!!!!)。</p>
+<p>如果待编码数据的长度不是 4 个字节的倍数，最后的、部分的 4 字节组将被用来产生最后的部分的 5 个输出字符。给定 n (1, 2, 或 3) 个字节的二进制数据，编码器首先添加 4 - n 个零字节以构成一个完整的 4 字节组。它应按通常的方式对这组数据进行编码，但不应应用特殊的 z 情况。最后，它应只写出所得 5 字节组中的前 n + 1 个字符。这些字符应立即跟随 ~&gt; EOD 标记。</p>
+<p>以下条件在正确编码的字节序列中决不应出现：</p>
+<ul>
+<li>由 5 个字符组表示的值大于 <span class="arithmatex">\(2^32 - 1\)</span>。</li>
+<li>z 字符出现在组的中间。</li>
+<li>最后的局部组只包含一个字符。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>The <strong>ASCII85Decode</strong> filter decodes data that has been encoded in ASCII base-85 encoding and produces binary data. The following paragraphs describe the process for encoding binary data in ASCII base-85; the <strong>ASCII85Decode</strong> filter reverses this process.</p>
+<p>The ASCII base-85 encoding shall use the ASCII characters ! through u ((21h) - (75h)) and the character z (7Ah), with the 2-character sequence ~&gt; (7Eh)(3Eh) as its EOD marker. The <strong>ASCII85Decode</strong> filter shall ignore all white-space characters (see <a href="../s2/">7.2</a>, "Lexical Conventions"). Any other characters, and any character sequences that represent impossible combinations in the ASCII base-85 encoding shall cause an error.</p>
+<p>Specifically, ASCII base-85 encoding shall produce 5 ASCII characters for every 4 bytes of binary data. Each group of 4 binary input bytes, (<span class="arithmatex">\(b_1\)</span> <span class="arithmatex">\(b_2\)</span> <span class="arithmatex">\(b_3\)</span> <span class="arithmatex">\(b_4\)</span> ), shall be converted to a group of 5 output bytes, (<span class="arithmatex">\(c_1\)</span> <span class="arithmatex">\(c_2\)</span> <span class="arithmatex">\(c_3\)</span> <span class="arithmatex">\(c_4\)</span> <span class="arithmatex">\(c_5\)</span> ), using the relation</p>
+<div class="arithmatex">\[(b_1 \times 256^3)+(b_2 \times 256^2 ) +  (b_3 \times 256 ^ 1) = 
+\newline 
+(c_1 \times 85^4)+(c_2 \times 85^3) + (c_3 \times 85^2)+(c_4 \times 85^1)\]</div>
+<p>In other words, 4 bytes of binary data shall be interpreted as a base-256 number and then shall be converted to a base-85 number. The five bytes of the base-85 number shall then be converted to ASCII characters by adding 33 (the ASCII code for the character ! ) to each. The resulting encoded data shall contain only printable ASCII characters with codes in the range 33 (!) to 117 (u). As a special case, if all five bytes are 0, they shall be represented by the character with code 122 (z) instead of by five exclamation points ( ! ! ! ! ! ).</p>
+<p>If the length of the data to be encoded is not a multiple of 4 bytes, the last, partial group of 4 shall be used to produce a last, partial group of 5 output characters. Given n (1, 2, or 3) bytes of binary data, the encoder shall first append 4 - n zero bytes to make a complete group of 4. It shall encode this group in the usual way, but shall not apply the special z case. Finally, it shall write only the first n + 1 characters of the resulting group of 5. These characters shall be immediately followed by the ~&gt; EOD marker.</p>
+<p>The following conditions shall never occur in a correctly encoded byte sequence:</p>
+<ul>
+<li>The value represented by a group of 5 characters is greater than <span class="arithmatex">\(2^32 - 1\)</span>.</li>
+<li>A z character occurs in the middle of a group.</li>
+<li>A final partial group contains only one character.</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="744-lzwdecode-和-flatedecode-过滤器">7.4.4 LZWDecode 和 FlateDecode 过滤器<a class="headerlink" href="#744-lzwdecode-和-flatedecode-过滤器" title="Permanent link">&para;</a></h2>
+<p><strong>LZWDecode and FlateDecode Filters</strong></p>
+<h3 id="7441-概述">7.4.4.1 概述<a class="headerlink" href="#7441-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>LZWDecode</strong> 和 (PDF 1.2) <strong>FlateDecode</strong> 过滤器有很多共同点，在本子条款中一起讨论。它们分别对使用 LZW 或 Flate 数据压缩方法编码的数据进行解码：</p>
+<ul>
+<li>LZW（Lempel-Ziv-Welch）是一种可变长度的自适应压缩方法，已被采纳为 <em>标签图像文件格式</em>（TIFF）标准中的一种标准压缩方法。有关 LZW 编码的详细信息，见<a href="#7442-lzw编码细节">7.4.4.2</a>，“LZW 编码细节”。</li>
+<li>Flate 方法基于公共领域的 zlib/deflate 压缩方法，这是一种可变长度的 Lempel-Ziv 自适应压缩方法，与自适应 Huffman 编码级联。它在互联网 RFCs 1950, ZLIB 压缩数据格式规范，和 1951, DEFLATE 压缩数据格式规范中有完整定义（见参考文献）。</li>
+</ul>
+<p>这两种方法都可以压缩二进制数据或 ASCII 文本，但（像所有压缩方法一样）始终产生二进制数据，即使原始数据是文本。</p>
+<p>LZW 和 Flate 压缩方法可以发现并利用输入数据中的许多模式，无论是文本还是图像数据。如后文所述，两种过滤器都支持可选的预测函数转换，这提高了采样图像数据的压缩效果。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>由于其级联的自适应 Huffman 编码，Flate 编码的输出通常比相同输入的 LZW 编码的输出要紧凑得多。Flate 和 LZW 解码速度相当，但 Flate 编码比 LZW 编码慢得多。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>通常，Flate 和 LZW 编码都会大大压缩其输入。然而，在最坏的情况下（没有一对相邻的字节出现两次），Flate 编码将其输入扩大不超过 11 个字节或 1.003 倍（以较大者为准），加上 PNG 预测器添加的算法标签的影响。对于 LZW 编码，最佳情况（全部为零）为长文件提供了接近 1365:1 的压缩比，但最坏情况的扩展至少为 1.125 倍，这在某些实现中可能增加到近 1.5 倍，加上与 Flate 编码相同的 PNG 标签的影响。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The <strong>LZWDecode</strong> and (PDF 1.2) <strong>FlateDecode</strong> filters have much in common and are discussed together in this sub-clause. They decode data that has been encoded using the LZW or Flate data compression method, respectively:</p>
+<ul>
+<li>LZW (Lempel-Ziv-Welch) is a variable-length, adaptive compression method that has been adopted as one of the standard compression methods in the <em>Tag Image File Format</em> (TIFF) standard. For details on LZW encoding see <a href="#7442-lzw编码细节">7.4.4.2</a>, "Details of LZW Encoding."</li>
+<li>The Flate method is based on the public-domain zlib/deflate compression method, which is a variable-length Lempel-Ziv adaptive compression method cascaded with adaptive Huffman coding. It is fully defined in Internet RFCs 1950, ZLIB Compressed Data Format Specification, and 1951, DEFLATE Compressed Data Format Specification (see the Bibliography).</li>
+</ul>
+<p>Both of these methods compress either binary data or ASCII text but (like all compression methods) always produce binary data, even if the original data was text.</p>
+<p>The LZW and Flate compression methods can discover and exploit many patterns in the input data, whether the data is text or images. As described later, both filters support optional transformation by a predictor function, which improves the compression of sampled image data.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Because of its cascaded adaptive Huffman coding, Flate-encoded output is usually much more compact than LZW-encoded output for the same input. Flate and LZW decoding speeds are comparable, but Flate encoding is considerably slower than LZW encoding.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Usually, both Flate and LZW encodings compress their input substantially. However, in the worst case (in which no pair of adjacent bytes appears twice), Flate encoding expands its input by no more than 11 bytes or a factor of 1.003 (whichever is larger), plus the effects of algorithm tags added by PNG predictors. For LZW encoding, the best case (all zeros) provides a compression approaching 1365 : 1 for long files, but the worst- case expansion is at least a factor of 1.125, which can increase to nearly 1.5 in some implementations, plus the effects of PNG tags as with Flate encoding.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="7442-lzw编码细节">7.4.4.2 LZW编码细节<a class="headerlink" href="#7442-lzw编码细节" title="Permanent link">&para;</a></h3>
+<p><strong>Details of LZW Encoding</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>使用LZW压缩方法编码的数据应由一系列9到12位长的代码组成。每个代码应表示一个输入数据的单个字符（0-255）、清空表标记（256）、文件结束（EOD）标记（257），或者表示在输入中先前遇到的多字符序列的表条目（258或更大）。</p>
+<p>最初，代码长度为9位，LZW表仅包含用于258个固定代码的条目。随着编码的进行，将向表中添加条目，将新代码与越来越长的输入字符序列关联起来。编码器和解码器应维护这个表的相同副本。</p>
+<p>每当编码器和解码器独立地（但同步地）意识到当前代码长度不再足以表示表中的条目数时，它们应将每个代码的位数增加1。第一个输出代码为10位长的是创建表条目511之后的那个，类似地，对于11位（1023）和12位（2047）。代码永远不会超过12位长；因此，条目4095是LZW表的最后一个条目。</p>
+<p>编码器应执行以下步骤序列以生成每个输出代码：</p>
+<p><strong>a)</strong> 累积一个或多个已存在于表中的输入字符序列。为了获得最大压缩效果，编码器寻找最长的此类序列。</p>
+<p><strong>b)</strong> 发出与该序列对应的代码。</p>
+<p><strong>c)</strong> 为第一个未使用的代码创建一个新的表条目。它的值是步骤(a)中找到的序列，后面跟着下一个输入字符。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>假设输入由以下ASCII字符代码序列组成：</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>45 45 45 45 45 65 45 45 45 66
+</code></pre></div>
+<p>从空表开始，编码器的步骤如表7所示。        </p>
+<p><table id="table7" markdown="span">
+    <caption>Table 7 – 典型的LZW编码序列</caption>
+    <thead>
+        <tr>
+            <th><strong>输入序列</strong></th>
+            <th><strong>输出代码</strong></th>
+            <th><strong>添加到表中的代码</strong></th>
+            <th><strong>新代码表示的序列</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>--</td>
+            <td>256 (clear-table)</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>45</td>
+            <td>258</td>
+            <td>45 45</td>
+        </tr>
+        <tr>
+            <td>45 45</td>
+            <td>258</td>
+            <td>259</td>
+            <td>45 45 45</td>
+        </tr>
+        <tr>
+            <td>45 45</td>
+            <td>258</td>
+            <td>260</td>
+            <td>45 45 65</td>
+        </tr>
+        <tr>
+            <td>65</td>
+            <td>65</td>
+            <td>261</td>
+            <td>65 45</td>
+        </tr>
+        <tr>
+            <td>45 45 45</td>
+            <td>259</td>
+            <td>262</td>
+            <td>45 45 45 66</td>
+        </tr>
+        <tr>
+            <td>66</td>
+            <td>66</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>--</td>
+            <td>257 (EOD)</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<p>代码应被打包成一个连续的比特流，高位比特在前。然后这个流应被划分为字节，同样高位比特在前。因此，代码可以任意跨越字节边界。在EOD标记（代码值257）之后，最终字节中剩余的比特应设为0。</p>
+<p>在上述示例中，所有的输出代码都是9位长；它们将被打包为字节，如下所示（以十六进制表示）：</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>80 0B 60 50 22 0C 0C 85 01</p>
+</div>
+<p>为了适应变化的输入序列，编码器可以在任何时候发出清空表代码，这会导致编码器和解码器都重新使用初始表和9位代码长度开始。编码器应首先发出清空表代码。当表满时，它应发出清空表代码；它可能更早这样做。</p>
+</div>
+<div class="tabbed-block">
+<p>Data encoded using the LZW compression method shall consist of a sequence of codes that are 9 to 12 bits long. Each code shall represent a single character of input data (0–255), a clear-table marker (256), an EOD marker (257), or a table entry representing a multiple-character sequence that has been encountered previously in the input (258 or greater).</p>
+<p>Initially, the code length shall be 9 bits and the LZW table shall contain only entries for the 258 fixed codes. As encoding proceeds, entries shall be appended to the table, associating new codes with longer and longer sequences of input characters. The encoder and the decoder shall maintain identical copies of this table.</p>
+<p>Whenever both the encoder and the decoder independently (but synchronously) realize that the current code length is no longer sufficient to represent the number of entries in the table, they shall increase the number of bits per code by 1. The first output code that is 10 bits long shall be the one following the creation of table entry 511, and similarly for 11 (1023) and 12 (2047) bits. Codes shall never be longer than 12 bits; therefore, entry 4095 is the last entry of the LZW table.</p>
+<p>The encoder shall execute the following sequence of steps to generate each output code:</p>
+<p><strong>a)</strong> Accumulate a sequence of one or more input characters matching a sequence already present in the table. For maximum compression, the encoder looks for the longest such sequence.</p>
+<p><strong>b)</strong> Emit the code corresponding to that sequence.</p>
+<p><strong>c)</strong> Create a new table entry for the first unused code. Its value is the sequence found in step (a) followed by the next input character.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>Suppose the input consists of the following sequence of ASCII character codes:</p>
+<p>45 45 45 45 45 65 45 45 45 66</p>
+<p>Starting with an empty table, the encoder proceeds as shown in Table 7.</p>
+<p><table id="table7" markdown="span">
+    <caption>Table 7 – Typical LZW encoding sequence</caption>
+    <thead>
+        <tr>
+            <th><strong>Input sequence</strong></th>
+            <th><strong>Output code</strong></th>
+            <th><strong>Code added to table</strong></th>
+            <th><strong>Sequence represented by new code</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>--</td>
+            <td>256 (clear-table)</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td>45</td>
+            <td>258</td>
+            <td>45 45</td>
+        </tr>
+        <tr>
+            <td>45 45</td>
+            <td>258</td>
+            <td>259</td>
+            <td>45 45 45</td>
+        </tr>
+        <tr>
+            <td>45 45</td>
+            <td>258</td>
+            <td>260</td>
+            <td>45 45 65</td>
+        </tr>
+        <tr>
+            <td>65</td>
+            <td>65</td>
+            <td>261</td>
+            <td>65 45</td>
+        </tr>
+        <tr>
+            <td>45 45 45</td>
+            <td>259</td>
+            <td>262</td>
+            <td>45 45 45 66</td>
+        </tr>
+        <tr>
+            <td>66</td>
+            <td>66</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>--</td>
+            <td>257 (EOD)</td>
+            <td>--</td>
+            <td>--</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<p>Codes shall be packed into a continuous bit stream, high-order bit first. This stream shall then be divided into bytes, high-order bit first. Thus, codes may straddle byte boundaries arbitrarily. After the EOD marker (code value 257), any leftover bits in the final byte shall be set to 0.</p>
+<p>In the example above, all the output codes are 9 bits long; they would pack into bytes as follows (represented in hexadecimal): </p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>80 0B 60 50 22 0C 0C 85 01</p>
+</div>
+<p>To adapt to changing input sequences, the encoder may at any point issue a clear-table code, which causes both the encoder and the decoder to restart with initial tables and a 9-bit code length. The encoder shall begin by issuing a clear-table code. It shall issue a clear-table code when the table becomes full; it may do so sooner.</p>
+</div>
+</div>
+</div>
+<h3 id="7443-lzwdecode-和-flatedecode-参数">7.4.4.3 LZWDecode 和 FlateDecode 参数<a class="headerlink" href="#7443-lzwdecode-和-flatedecode-参数" title="Permanent link">&para;</a></h3>
+<p><strong>LZWDecode and FlateDecode Parameters</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>LZWDecode</strong> 和 <strong>FlateDecode</strong> 过滤器将接受可选参数以控制解码过程。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>这些参数大多与减少压缩采样图像大小的技术有关（矩形阵列的颜色值，见<a href="../../c9/s9/">8.9</a>，“图像”）。例如，图像数据通常从样本到样本变化很小。因此，对相邻样本的值进行减法（称为差分的过程），并编码差异而不是原始样本值，可以减少输出数据的大小。此外，当图像数据包含每个样本的几个颜色分量（红-绿-蓝或青-品红-黄-黑）时，取相邻样本中相应分量的差值，而不是同一样本中不同颜色分量的差值，通常可以减少输出数据的大小。</p>
+</div>
+<p>表8显示了可能为 <strong>LZWDecode</strong> 和 <strong>FlateDecode</strong> 过滤器指定的可选参数。除非另有说明，所有提供给解码过滤器的任何可选参数的值应与编码数据时使用的值相匹配。</p>
+<p><table id="table8" markdown="span">
+    <caption>Table 8 – LZWDecode 和 FlateDecode 过滤器的可选参数</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Predictor</strong></td>
+            <td>integer</td>
+            <td>选择预测算法的代码（如果有）。如果此条目的值为1，则过滤器应假定在编码数据时使用了正常算法，没有预测。如果该值大于1，则过滤器应假定数据在编码之前已差分，并由 <strong>Predictor</strong> 选择预测算法。有关 <strong>Predictor</strong> 值大于1的更多信息，见<a href="#7444-lzw-和-flate-预测函数">7.4.4.4</a>，“LZW 和 Flate 预测函数”。默认值：1。</td>
+        </tr>
+        <tr>
+            <td><strong>Colors</strong></td>
+            <td>integer</td>
+            <td>(<em>只能在 </em><em>Predictor</em><em> 大于1时使用</em>) 每个样本中交错的颜色分量的数量。有效值为1到4（PDF 1.0）和1或更大（PDF 1.3）。默认值：1。</td>
+        </tr>
+        <tr>
+            <td><strong>BitsPerComponent</strong></td>
+            <td>yes</td>
+            <td>(<em>只能在 </em><em>Predictor</em><em> 大于1时使用</em>) 每个颜色分量的位数。有效值是1, 2, 4, 8, 和 (PDF 1.5) 16。默认值：8。</td>
+        </tr>
+        <tr>
+            <td><strong>FlateDecode</strong></td>
+            <td>integer</td>
+            <td>(<em>只能在 </em><em>Predictor</em><em> 大于1时使用</em>) 每个样本中用于表示颜色分量的位数。有效值为 1、2、4、8，以及 (PDF 1.5) 16。默认值：8。</td>
+        </tr>
+        <tr>
+            <td><strong>Columns</strong></td>
+            <td>integer</td>
+            <td>(<em>只能在 </em><em>Predictor</em><em> 大于1时使用</em>) 每行的样本数。默认值：1。</td>
+        </tr>
+        <tr>
+            <td><strong>EarlyChange</strong></td>
+            <td>integer</td>
+            <td>(<em><strong>LZWDecode</strong> 专用</em>) 指示何时增加代码长度。如果此条目的值为0，则尽可能推迟代码长度增加。如果该值为1，则提前一个代码进行代码长度增加。这个参数被包括在内是因为一些供应商分发的LZW样本代码比必要时更早地增加了代码长度。默认值：1。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>The <strong>LZWDecode</strong> and <strong>FlateDecode</strong> filters shall accept optional parameters to control the decoding process.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Most of these parameters are related to techniques that reduce the size of compressed sampled images (rectangular arrays of colour values, described in <a href="../../c9/s9/">8.9</a>, "Images"). For example, image data typically changes very little from sample to sample. Therefore, subtracting the values of adjacent samples (a process called differencing), and encoding the differences rather than the raw sample values, can reduce the size of the output data. Furthermore, when the image data contains several colour components (red-green-blue or cyan- magenta-yellow-black) per sample, taking the difference between the values of corresponding components in adjacent samples, rather than between different colour components in the same sample, often reduces the output data size.</p>
+</div>
+<p>Table 8 shows the parameters that may optionally be specified for <strong>LZWDecode</strong> and <strong>FlateDecode</strong> filters. Except where otherwise noted, all values supplied to the decoding filter for any optional parameters shall match those used when the data was encoded.</p>
+<p><table id="table8" markdown="span">
+    <caption>Table 8 – Optional parameters for LZWDecode and FlateDecode filters</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Predictor</strong></td>
+            <td>integer</td>
+            <td>A code that selects the predictor algorithm, if any. If the value of this entry is 1, the filter shall assume that the normal algorithm was used to encode the data, without prediction. If the value is greater than 1, the filter shall assume that the data was differenced before being encoded, and <strong>Predictor</strong> selects the predictor algorithm. For more information regarding <strong>Predictor</strong> values greater than 1, see <a href="#7444-lzw-和-flate-预测函数">7.4.4.4</a>, "LZW and Flate Predictor Functions." Default value: 1.</td>
+        </tr>
+        <tr>
+            <td><strong>Colors</strong></td>
+            <td>integer</td>
+            <td>(<em>May be used only if </em><em>Predictor</em><em> is greater than 1</em>) The number of interleaved colour components per sample. Valid values are 1 to 4 (PDF 1.0) and 1 or greater (PDF 1.3). Default value: 1.</td>
+        </tr>
+        <tr>
+            <td><strong>BitsPerComponent</strong></td>
+            <td>yes</td>
+            <td>Decompresses data encoded using the LZW (Lempel-Ziv-Welch) adaptive compression method, reproducing the original text or binary data.</td>
+        </tr>
+        <tr>
+            <td><strong>FlateDecode</strong></td>
+            <td>integer</td>
+            <td>(<em>May be used only if </em><em>Predictor</em><em> is greater than 1</em>) The number of bits used to represent each colour component in a sample. Valid values are 1, 2, 4, 8, and (PDF 1.5) 16. Default value: 8.</td>
+        </tr>
+        <tr>
+            <td><strong>Columns</strong></td>
+            <td>integer</td>
+            <td>(<em>May be used only if </em><em>Predictor</em><em> is greater than 1</em>) The number of samples in each row. Default value: 1.</td>
+        </tr>
+        <tr>
+            <td><strong>EarlyChange</strong></td>
+            <td>integer</td>
+            <td>(<em><strong>LZWDecode</strong> only</em>) An indication of when to increase the code length. If the value of this entry is 0, code length increases shall be postponed as long as possible. If the value is 1, code length increases shall occur one code early. This parameter is included because LZW sample code distributed by some vendors increases the code length one code earlier than necessary. Default value: 1.</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="7444-lzw-和-flate-预测函数">7.4.4.4 LZW 和 Flate 预测函数<a class="headerlink" href="#7444-lzw-和-flate-预测函数" title="Permanent link">&para;</a></h3>
+<p><strong>LZW and Flate Predictor Functions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>LZW 和 Flate 编码如果输入数据具有高度可预测性，则可以更有效地压缩。提高许多连续色调采样图像可预测性的一个方法是将每个样本替换为该样本与应用于早期邻近样本的预测函数之间的差值。如果预测函数运作良好，预测后的数据会趋向于 0。</p>
+<p>PDF 支持两组预测函数。第一组，TIFF 组，只包含 TIFF 6.0 规范中的 Predictor 2 这一个函数。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>（在 TIFF 6.0 规范中，Predictor 2 仅适用于 LZW 压缩，但在这里它也适用于 Flate 压缩。）TIFF Predictor 2 预测每个样本的颜色分量与紧邻其左侧样本的相应颜色分量相同。</p>
+</div>
+<p>第二组支持的预测函数是 PNG 组，由万维网联盟的便携式网络图形推荐使用的过滤器组成，记录在互联网 RFC 2083，PNG（便携式网络图形）规范中（见参考文献）。</p>
+<p>为了避免混淆，这里使用“预测函数”一词而不是“过滤器”。</p>
+<p>有五种基本的 PNG 预测算法（还有一个选择每个行分别选择最优预测函数的第六种算法）。</p>
+<p><table id="table9" markdown="span">
+    <caption>Table 9 – PNG 预测算法</caption>
+    <thead>
+        <tr>
+            <th><strong>PNG 预测算法</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>None</td>
+            <td>无预测</td>
+        </tr>
+        <tr>
+            <td>Sub</td>
+            <td>预测与左侧样本相同</td>
+        </tr>
+        <tr>
+            <td>Up</td>
+            <td>预测与上方样本相同</td>
+        </tr>
+        <tr>
+            <td>Average</td>
+            <td>预测左上方样本和上方样本的平均值</td>
+        </tr>
+        <tr>
+            <td>Paeth</td>
+            <td>上方样本、左侧样本和左上角样本的非线性函数</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>要使用的预测算法（如果有）应由 <strong>Predictor</strong> 过滤器参数指示（见<a href="#table8">表8</a>），其值应为 <a href="#table10">表10</a> 中列出的值之一。</p>
+<p>对于 <strong>LZWDecode</strong> 和 <strong>FlateDecode</strong>，<strong>Predictor</strong> 值大于或等于 10 应表示正在使用 PNG 预测器；所使用的特定预测函数应明确编码在传入数据中。如果编码过滤器和解码过滤器提供的 <strong>Predictor</strong> 值都大于或等于 10，则它们不必匹配。</p>
+<p><table id="table10" markdown="span">
+    <caption>Table 10 – 预测函数值</caption>
+    <thead>
+        <tr>
+            <th><strong>值</strong></th>
+            <th><strong>意义</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>无预测（默认值）</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>TIFF 预测 2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>PNG 预测 (编码时，所有行使用 PNG None)</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>PNG 预测 (编码时，所有行使用 PNG Sub)</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>PNG 预测 (编码时，所有行使用 PNG Up)</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>PNG 预测 (编码时，所有行使用 PNG Average)</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>PNG 预测 (编码时，所有行使用 PNG Paeth)</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>PNG 预测 (编码时，PNG 最优选择)</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>这两组预测函数有一些共同点。两者都做出以下假设：</p>
+<ul>
+<li>数据应按顺序呈现，从顶行到底层行，并且在一行内，从左到右。</li>
+<li>一行应占用整数个字节，如果需要，向上取整。</li>
+<li>样本及其分量应从高阶到低阶比特打包成字节。</li>
+<li>图像外的所有颜色分量的样本（对于边界附近的预测是必要的）应为0。</li>
+</ul>
+<p>预测函数组在重要方面也有所不同：</p>
+<ul>
+<li>每行使用PNG预测的数据后的预测数据应以显式的算法标签开始；因此，不同的行可以使用不同的算法进行预测以提高压缩效果。TIFF Predictor 2没有这样的标识符；相同的算法适用于所有行。</li>
+<li>TIFF函数组应预测每个颜色分量，从前一个实例开始，考虑到每个分量的位数和每个样本的分量数。相比之下，PNG函数组应预测每个字节的数据，作为一个字节或多个先前图像样本的相应字节的函数，无论一个字节中是否有多个颜色分量，或者单个颜色分量是否跨越多个字节。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">NOTE 2</p>
+<p>这可以在牺牲一些压缩效果的情况下显著提高速度。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>LZW and Flate encoding compress more compactly if their input data is highly predictable. One way of increasing the predictability of many continuous-tone sampled images is to replace each sample with the difference between that sample and a predictor function applied to earlier neighboring samples. If the predictor function works well, the postprediction data clusters toward 0.</p>
+<p>PDF supports two groups of predictor functions. The first, the TIFF group, consists of the single function that is Predictor 2 in the TIFF 6.0 specification.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>(In the TIFF 6.0 specification, Predictor 2 applies only to LZW compression, but here it applies to Flate compression as well.) TIFF Predictor 2 predicts that each colour component of a sample is the same as the corresponding colour component of the sample immediately to its left.</p>
+</div>
+<p>The second supported group of predictor functions, the PNG group, consists of the filters of the World Wide Web Consortium’s Portable Network Graphics recommendation, documented in Internet RFC 2083, PNG (Portable Network Graphics) Specification (see the Bibliography).</p>
+<p>The term predictors is used here instead of filters to avoid confusion.</p>
+<p>There are five basic PNG predictor algorithms (and a sixth that chooses the optimum predictor function separately for each row).</p>
+<p><table id="table9" markdown="span">
+    <caption>Table 9 – PNG predictor algorithms</caption>
+    <thead>
+        <tr>
+            <th><strong>PNG Predictor Algorithms</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>None</td>
+            <td>No prediction</td>
+        </tr>
+        <tr>
+            <td>Sub</td>
+            <td>Predicts the same as the sample to the left</td>
+        </tr>
+        <tr>
+            <td>Up</td>
+            <td>Predicts the same as the sample above</td>
+        </tr>
+        <tr>
+            <td>Average</td>
+            <td>Predicts the average of the sample to the left and the sample above</td>
+        </tr>
+        <tr>
+            <td>Paeth</td>
+            <td>A nonlinear function of the sample above, the sample to the left, and the sample to the upper left</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The predictor algorithm to be used, if any, shall be indicated by the <strong>Predictor</strong> filter parameter (see [Table 8]#table8), whose value shall be one of those listed in <a href="#table10">Table 10</a>.</p>
+<p>For <strong>LZWDecode</strong> and <strong>FlateDecode</strong>, a <strong>Predictor</strong> value greater than or equal to 10 shall indicate that a PNG predictor is in use; the specific predictor function used shall be explicitly encoded in the incoming data. The value of <strong>Predictor</strong> supplied by the decoding filter need not match the value used when the data was encoded if they are both greater than or equal to 10.</p>
+<p><table id="table10" markdown="span">
+    <caption>Table 10 – Predictor values</caption>
+    <thead>
+        <tr>
+            <th><strong>Value</strong></th>
+            <th><strong>Meaning</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>No prediction (the default value)</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>TIFF Predictor 2</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>PNG prediction (on encoding, PNG None on all rows)</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>PNG prediction (on encoding, PNG Sub on all rows)</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>PNG prediction (on encoding, PNG Up on all rows)</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>PNG prediction (on encoding, PNG Average on all rows)</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>PNG prediction (on encoding, PNG Paeth on all rows)</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>PNG prediction (on encoding, PNG optimum)</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The two groups of predictor functions have some commonalities. Both make the following assumptions:</p>
+<ul>
+<li>Data shall be presented in order, from the top row to the bottom row and, within a row, from left to right.</li>
+<li>A row shall occupy a whole number of bytes, rounded up if necessary.</li>
+<li>Samples and their components shall be packed into bytes from high-order to low-order bits.</li>
+<li>All colour components of samples outside the image (which are necessary for predictions near the boundaries) shall be 0.</li>
+</ul>
+<p>The predictor function groups also differ in significant ways:</p>
+<ul>
+<li>The postprediction data for each PNG-predicted row shall begin with an explicit algorithm tag; therefore, different rows can be predicted with different algorithms to improve compression. TIFF Predictor 2 has no such identifier; the same algorithm applies to all rows.</li>
+<li>The TIFF function group shall predict each colour component from the prior instance of that component, taking into account the number of bits per component and components per sample. In contrast, the PNG function group shall predict each byte of data as a function of the corresponding byte of one or more previous image samples, regardless of whether there are multiple colour components in a byte or whether a single colour component spans multiple bytes.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">NOTE 2</p>
+<p>This can yield significantly better speed at the cost of somewhat worse compression.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="745-runlengthdecode-过滤器">7.4.5 RunLengthDecode 过滤器<a class="headerlink" href="#745-runlengthdecode-过滤器" title="Permanent link">&para;</a></h2>
+<p><strong>RunLengthDecode Filter</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>RunLengthDecode</strong> 过滤器对基于行程长度的简单字节导向格式编码的数据进行解码。编码数据应为一系列<em>行程</em>，其中每个行程应由一个字节长度字节后跟1到128字节的数据组成。如果<em>长度</em>字节在0到127的范围内，则在解压缩期间，随后的<em>长度</em> + 1（1到128）个字节将被直接复制。如果<em>长度</em>在129到255的范围内，则在解压缩期间，随后的单个字节将被复制257 - <em>长度</em>（2到128）次。<em>长度</em>值为128应表示文件结束（EOD）。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>行程长度编码实现的压缩效果取决于输入数据。在最佳情况下（全部为零），对于长文件，大约可以实现64:1的压缩率。最坏的情况（十六进制序列00与FF交替）会导致128:127的扩展。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The <strong>RunLengthDecode</strong> filter decodes data that has been encoded in a simple byte-oriented format based on run length. The encoded data shall be a sequence of <em>runs</em>, where each run shall consist of a length byte followed by 1 to 128 bytes of data. If the <em>length</em> byte is in the range 0 to 127, the following <em>length</em> + 1 (1 to 128) bytes shall be copied literally during decompression. If <em>length</em> is in the range 129 to 255, the following single byte shall be copied 257 - <em>length</em> (2 to 128) times during decompression. A <em>length</em> value of 128 shall denote EOD.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The compression achieved by run-length encoding depends on the input data. In the best case (all zeros), a compression of approximately 64 : 1 is achieved for long files. The worst case (the hexadecimal sequence 00 alternating with FF) results in an expansion of 127 : 128.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="746-ccittfaxdecode-过滤器">7.4.6 CCITTFaxDecode 过滤器<a class="headerlink" href="#746-ccittfaxdecode-过滤器" title="Permanent link">&para;</a></h2>
+<p><strong>CCITTFaxDecode Filter</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>CCITTFaxDecode</strong> 过滤器对使用 Group 3 或 Group 4 CCITT 传真编码的图像数据进行解码。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>CCITT 编码旨在实现低分辨率下单色（每个像素1位）图像数据的高效压缩，因此仅适用于位图图像数据，不适用于彩色图像、灰度图像或一般数据。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>CCITT 编码标准由国际电信联盟（ITU）定义，以前称为 Comité Consultatif International Téléphonique et Télégraphique（国际电话电报咨询委员会）。编码算法在本标准中没有详细描述，但可以在 ITU 建议书 T.4 和 T.6 中找到（见参考文献）。出于历史原因，我们称这些文档为 CCITT 标准。</p>
+</div>
+<p>CCITT 编码是面向比特的，而不是面向字节的。因此，原则上，编码或解码的数据不需要在字节边界结束。这个问题将通过以下方式处理：</p>
+<ul>
+<li>未编码的数据应被视为完整的扫描线，在每个扫描线的末尾插入未使用的比特以填满最后一个字节。这种方法与 PDF 对采样图像数据的约定兼容。</li>
+<li>编码数据通常被视为连续的、不间断的比特流。<strong>EncodedByteAlign</strong> 参数（在表11中描述）可用于使每个编码的扫描线填充到字节边界。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>尽管这不受 CCITT 标准的规范，传真机也从不这样做，但一些软件包发现以这种方式编码数据很方便。</p>
+</div>
+<ul>
+<li>当过滤器到达 EOD 时，它应始终跳转到编码数据之后的下一个字节边界。</li>
+</ul>
+<p>过滤器不应执行任何错误校正或重新同步，除非如表11中<strong>DamagedRowsBeforeError</strong>参数所注明的。</p>
+<p>表11列出了可用于控制解码的可选参数。除非另有说明，所有通过这些参数提供给解码过滤器的值应与编码数据时使用的值相匹配。</p>
+<p><table id="table11" markdown="span">
+    <caption>Table 11 – CCITTFaxDecode过滤器的可选参数</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>K</strong></td>
+            <td>integer</td>
+            <td>用于标识所使用的编码方案的代码：<br/> 
+                &lt;0 纯二维编码（Group 4）<br/> 
+                =0 纯一维编码（Group 3, 1-D）<br/> 
+                &gt;0 混合一维和二维编码（Group 3, 2-D），一维编码的行后面最多可以跟随 K - 1 行二维编码的行<br/> 
+                过滤器应区分 K 的负值、零值和正值以确定如何解释编码数据；但是，它不应区分不同的正 K 值。默认值：0。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>EndOfLine</strong></td>
+            <td>boolean</td>
+            <td>一个标志，指示编码中是否存在行结束位模式。CCITTFaxDecode 过滤器应始终接受行结束位模式。如果 EndOfLine 为 <strong>true</strong>，则编码中应存在行结束位模式。默认值：<strong>false</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>EncodedByteAlign</strong></td>
+            <td>boolean</td>
+            <td>一个标志，指示过滤器是否期望在每个编码行之前有额外的 0 位，以便该行以字节边界开始。如果为 <strong>true</strong>，则过滤器应跳过编码位，在字节边界处开始解码每行。如果为 <strong>false</strong>，则过滤器不应期望编码表示中有额外的位。默认值：<strong>false</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Columns</strong></td>
+            <td>integer</td>
+            <td>图像的像素宽度。如果该值不是 8 的倍数，过滤器应将未编码图像的宽度调整到下一个 8 的倍数，以便每行都从字节边界开始。默认值：1728。</td>
+        </tr>
+        <tr>
+            <td><strong>Rows</strong></td>
+            <td>integer</td>
+            <td>图像的扫描线高度。如果该值为 0 或不存在，则图像的高度不是预先确定的，编码数据将由一个块结束模式终止或由过滤器数据的结束终止。默认值：0。</td>
+        </tr>
+        <tr>
+            <td><strong>EndOfBlock</strong></td>
+            <td>integer</td>
+            <td>一个标志，指示过滤器是否期望编码数据由块结束模式终止，覆盖 <strong>Rows</strong> 参数。如果为 <strong>false</strong>，则过滤器将在解码了 <strong>Rows</strong> 指示的行数或其数据耗尽时停止，以先发生者为准。块结束模式应为适用于 <strong>K</strong> 参数的 CCITT 传真块结束 (EOFB) 或返回控制 (RTC)。默认值：<strong>true</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>BlackIs1</strong></td>
+            <td>boolean</td>
+            <td>一个标志，指示 1 位是否被解释为黑色像素，0 位为白色像素，这与 PDF 对图像数据的正常约定相反。默认值：<strong>false</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>DamagedRowsBeforeError</strong></td>
+            <td>integer</td>
+            <td>在发生错误之前可以容忍的数据损坏行数。此条目仅适用于 <strong>EndOfLine</strong> 为 <strong>true</strong> 且 <strong>K</strong> 非负时。容忍损坏的行意味着通过搜索 <strong>EndOfLine</strong> 模式在编码数据中找到其结尾，然后如果前一行未损坏，则用前一行的解码数据替换，或者如果前一行也损坏，则用白色扫描线替换。默认值：0。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>使用CCITT编码实现的压缩效果取决于数据本身，以及各种可选参数的值。对于Group 3一维编码，在最佳情况下（全为零），每行扫描线压缩到4个字节，压缩因子取决于扫描线的长度。如果扫描线长300字节，可以实现大约75:1的压缩比率。最坏的情况，即图像由交替的1和0组成，会导致2:9的扩展。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The <strong>CCITTFaxDecode</strong> filter decodes image data that has been encoded using either Group 3 or Group 4 CCITT facsimile (fax) encoding.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>CCITT encoding is designed to achieve efficient compression of monochrome (1 bit per pixel) image data at relatively low resolutions, and so is useful only for bitmap image data, not for colour images, grayscale images, or general data.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The CCITT encoding standard is defined by the International Telecommunications Union (ITU), formerly known as the Comité Consultatif International Téléphonique et Télégraphique (International Coordinating Committee for Telephony and Telegraphy). The encoding algorithm is not described in detail in this standard but can be found in ITU Recommendations T.4 and T.6 (see the Bibliography). For historical reasons, we refer to these documents as the CCITT standard.</p>
+</div>
+<p>CCITT encoding is bit-oriented, not byte-oriented. Therefore, in principle, encoded or decoded data need not
+end at a byte boundary. This problem shall be dealt with in the following ways:</p>
+<ul>
+<li>Unencoded data shall be treated as complete scan lines, with unused bits inserted at the end of each scan line to fill out the last byte. This approach is compatible with the PDF convention for sampled image data.</li>
+<li>
+<p>Encoded data shall ordinarily be treated as a continuous, unbroken bit stream. The <strong>EncodedByteAlign</strong> parameter (described in Table 11) may be used to cause each encoded scan line to be filled to a byte boundary.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>Although this is not prescribed by the CCITT standard and fax machines never do this, some software packages find it convenient to encode data this way.</p>
+</div>
+</li>
+<li>
+<p>When a filter reaches EOD, it shall always skip to the next byte boundary following the encoded data.</p>
+</li>
+</ul>
+<p>The filter shall not perform any error correction or resynchronization, except as noted for the <strong>DamagedRowsBeforeError</strong> parameter in Table 11.</p>
+<p>Table 11 lists the optional parameters that may be used to control the decoding. Except where noted otherwise, all values supplied to the decoding filter by any of these parameters shall match those used when the data was encoded.</p>
+<p><table id="table11" markdown="span">
+    <caption>Table 11 – Optional parameters for the CCITTFaxDecode filter</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>K</strong></td>
+            <td>integer</td>
+            <td>A code identifying the encoding scheme used:<br/>
+                &lt;0 Pure two-dimensional encoding (Group 4)<br/>
+                =0 Pure one-dimensional encoding (Group 3, 1-D)<br/>
+                &gt;0 Mixed one- and two-dimensional encoding (Group 3, 2-D), in which a line encoded one-dimensionally may be followed by at most K − 1 lines encoded two-dimensionally<br/>
+                The filter shall distinguish among negative, zero, and positive values of <strong>K</strong> to determine how to interpret the encoded data; however, it shall not distinguish between different positive <strong>K</strong> values. Default value: 0.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>EndOfLine</strong></td>
+            <td>boolean</td>
+            <td>A flag indicating whether end-of-line bit patterns shall be present in the encoding. The <strong>CCITTFaxDecode</strong> filter shall always accept end-of-line bit patterns. If EndOfLine is <strong>true</strong> end-of-line bit patterns shall be present.Default value: <strong>false</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>EncodedByteAlign</strong></td>
+            <td>boolean</td>
+            <td>A flag indicating whether the filter shall expect extra 0 bits before each encoded line so that the line begins on a byte boundary. If <strong>true</strong>, the filter shall skip over encoded bits to begin decoding each line at a byte boundary. If <strong>false</strong>, the filter shall not expect extra bits in the encoded representation. Default value: <strong>false</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>Columns</strong></td>
+            <td>integer</td>
+            <td>The width of the image in pixels. If the value is not a multiple of 8, the filter shall adjust the width of the unencoded image to the next multiple of 8 so that each line starts on a byte boundary. Default value: 1728.</td>
+        </tr>
+        <tr>
+            <td><strong>Rows</strong></td>
+            <td>integer</td>
+            <td>The height of the image in scan lines. If the value is 0 or absent, the image’s height is not predetermined, and the encoded data shall be terminated by an end-of-block bit pattern or by the end of the filter’s data. Default value: 0.</td>
+        </tr>
+        <tr>
+            <td><strong>EndOfBlock</strong></td>
+            <td>integer</td>
+            <td>A flag indicating whether the filter shall expect the encoded data to be terminated by an end-of-block pattern, overriding the <strong>Rows</strong> parameter. If <strong>false</strong>, the filter shall stop when it has decoded the number of lines indicated by <strong>Rows</strong> or when its data has been exhausted, whichever occurs first. The end-of- block pattern shall be the CCITT end-of-facsimile-block (EOFB) or return-to-control (RTC) appropriate for the <strong>K</strong> parameter. Default value: <strong>true</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>BlackIs1</strong></td>
+            <td>boolean</td>
+            <td>A flag indicating whether 1 bits shall be interpreted as black pixels and 0 bits as white pixels, the reverse of the normal PDF convention for image data. Default value: <strong>false</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>DamagedRowsBeforeError</strong></td>
+            <td>integer</td>
+            <td>The number of damaged rows of data that shall be tolerated before an error occurs. This entry shall apply only if <strong>EndOfLine</strong> is <strong>true</strong> and <strong>K</strong> is non-negative. Tolerating a damaged row shall mean locating its end in the encoded data by searching for an <strong>EndOfLine</strong> pattern and then substituting decoded data from the previous row if the previous row was not damaged, or a white scan line if the previous row was also damaged. Default value: 0.</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>The compression achieved using CCITT encoding depends on the data, as well as on the value of various optional parameters. For Group 3 one-dimensional encoding, in the best case (all zeros), each scan line compresses to 4 bytes, and the compression factor depends on the length of a scan line. If the scan line is 300 bytes long, a compression ratio of approximately 75 : 1 is achieved. The worst case, an image of alternating ones and zeros, produces an expansion of 2 : 9.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="747-jbig2decode-过滤器">7.4.7 JBIG2Decode 过滤器<a class="headerlink" href="#747-jbig2decode-过滤器" title="Permanent link">&para;</a></h2>
+<p><strong>JBIG2Decode Filter</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>JBIG2Decode</strong> 过滤器（<em>PDF 1.4</em>）对使用 JBIG2 编码编码的单色（每个像素1位）图像数据进行解码。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>JBIG 代表联合双色图像专家组，这是国际标准化组织（ISO）内的一个小组，他们开发了这种格式。JBIG2 是最初作为 JBIG1 发布的标准的第二版。</p>
+<p>JBIG2 编码提供了有损和无损压缩，仅适用于单色图像，不适用于彩色图像、灰度图像或一般数据。编码器使用的算法和格式的细节这里没有描述。请参阅 ISO/IEC 11544 发布的标准以获取当前的 JBIG2 规范。可以通过 JBIG 和 JPEG（联合图像专家组）委员会的网站 <a href="http://www.jpeg.org">http://www.jpeg.org</a> 获取更多信息。</p>
+<p>通常，JBIG2 提供的压缩比现有的 CCITT 标准（在 7.4.6，"CCITTFaxDecode 过滤器" 中讨论）要好得多。它实现的压缩效果强烈依赖于图像的性质。包含任何语言文本的页面图像压缩效果特别好，对于满页文本的页面，典型的压缩比率为 20:1 到 50:1。</p>
+</div>
+<p>JBIG2 编码器应建立一个在图像中找到的唯一符号位图的表，图像中后面找到的符号将与该表进行匹配。匹配的符号将被替换为指向表的索引，未能匹配的符号将被添加到表中。表本身应使用其他方式进行压缩。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>对于经常重复相同符号的文档，这种方法可以产生高压缩比率，这是通过扫描文本页面创建的图像的典型情况。它还实现了图像中空白区域的高压缩，因为空白区域不包含符号，所以不需要编码。</p>
+<p>虽然最佳压缩效果是针对文本图像实现的，但 JBIG2 标准也包括了用于压缩图像中包含点阵半色调图像（例如，照片）区域的算法。</p>
+</div>
+<p>JBIG2 压缩方法也可以用于将多个图像编码到单个 JBIG2 比特流中。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>通常，这些图像是多页文档的扫描页面。由于使用单个符号位图表在多个页面之间匹配符号，这种类型的编码可以实现比如果每页单独使用 JBIG2 编码更高的压缩比率。</p>
+</div>
+<p>通常，图像可以在 PDF 中指定为 <em>图像 XObject</em> 或内联图像（如 <a href="../../c8/s9/">8.9</a>，"图像" 中所述）；但是，<strong>JBIG2Decode</strong> 过滤器不应用于内联图像。</p>
+<p>该过滤器通过将每个 JBIG2 页面表示为 PDF 图像来处理单页和多页 JBIG2 比特流，如下所示：</p>
+<ul>
+<li>过滤器应使用 JBIG2 的嵌入式文件组织。（ISO 规范的附录中提供了有关此组织及其他类型文件组织的详细信息。）规范中提到的可选的2字节组合（标记）在 PDF 中不应使用。在随机访问组织中的 JBIG2 比特流应转换为嵌入式文件组织。顺序组织的比特流无需重新组织，除了下面描述的映射。</li>
+<li>PDF 中不应使用 JBIG2 文件头、页结束段和文件结束段。在创建下面描述的 PDF 对象之前，应删除这些内容。</li>
+<li>应用于 <strong>JBIG2Decode</strong> 过滤器的图像 XObject 应包含与该图像表示的 JBIG2 页面相关的所有段；即，所有段的页面关联字段包含图像表示的 JBIG2 页面的页码。但在图像 XObject 中，段的页码应始终为 1；即，当每个这样的段写入 XObject 时，其段页面关联字段的值应设置为 1。</li>
+<li>如果比特流包含全局段（段的页面关联字段包含 0），这些段应放置在单独的 PDF 流中，并且表 12 中列出的过滤器参数应引用该流。该流可以由多个使用相同全局段的 JBIG2 编码的图像 XObject 共享。</li>
+</ul>
+<p><table id="table12" markdown="span">
+    <caption>Table 12 – JBIG2Decode 过滤器的可选参数</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>JBIG2Globals</strong></td>
+            <td>stream</td>
+            <td>包含 JBIG2 全局（页码0）段的流。即使只有一个 JBIG2 图像 XObject 引用它，全局段也应放置在此流中。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>下面展示了一个使用 JBIG2 压缩方法压缩并用 ASCII 十六进制表示编码的图像。由于 JBIG2 比特流包含全局段，这些段被放置在单独的 PDF 流中，如 JBIG2Globals 过滤器参数所示。</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>5 0 obj
+    &lt;&lt; /Type /XObject
+       /Subtype /Image
+       /Width 52
+       /Height 66
+       /ColorSpace /DeviceGray
+       /BitsPerComponent 1
+       /Length 224
+       /Filter [ /ASCIIHexDecode /JBIG2Decode ]
+       /DecodeParms [ null &lt;&lt; /JBIG2Globals 6 0 R &gt;&gt; ]
+    &gt;&gt;
+stream
+000000013000010000001300000034000000420000000000
+00000040000000000002062000010000001e000000340000
+004200000000000000000200100000000231db51ce51ffac &gt;
+endstream
+endobj
+
+6 0 obj
+    &lt;&lt; /Length 126
+       /Filter /ASCIIHexDecode
+    &gt;&gt;
+stream
+0000000000010000000032000003fffdff02fefefe000000
+01000000012ae225aea9a5a538b4d9999c5c8e56ef0f872
+7f2b53d4e37ef795cc5506dffac &gt;
+endstream
+endobj
+</code></pre></div>
+</div>
+<p>这个例子的JBIG2比特流如下：</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>97 4A 42 32 0D 0A 1A 0A 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 32
+00 00 03 FF FD FF 02 FE FE FE 00 00 00 01 00 00 00 01 2A E2 25 AE A9 A5
+A5 38 B4 D9 99 9C 5C 8E 56 EF 0F 87 27 F2 B5 3D 4E 37 EF 79 5C C5 50 6D
+FF AC 00 00 00 01 30 00 01 00 00 00 13 00 00 00 34 00 00 00 42 00 00 00
+00 00 00 00 00 40 00 00 00 00 00 02 06 20 00 01 00 00 00 1E 00 00 00 34
+00 00 00 42 00 00 00 00 00 00 00 00 02 00 10 00 00 00 02 31 DB 51 CE 51
+FF AC 00 00 00 03 31 00 01 00 00 00 00 00 00 00 04 33 01 00 00 00 00
+</code></pre></div>
+</div>
+<p>这个比特流由以下部分组成（按列出的顺序）：</p>
+<ol>
+<li>
+<p>JBIG2文件头</p>
+<p>97 4A 42 32 0D 0A 1A 0A 01 00 00 00 01</p>
+<p>由于JBIG2文件头在PDF中不使用，因此这个头部没有放在JBIG2流对象中，被丢弃了。</p>
+</li>
+<li>
+<p>第一个JBIG2段（段0）—在这种情况下，是符号字典段</p>
+<p>00 00 00 00 00 01 00 00 00 00 32 00 00 03 FF FD FF 02 FE FE FE 00 00 00
+01 00 00 00 01 2A E2 25 AE A9 A5 A5 38 B4 D9 99 9C 5C 8E 56 EF 0F 87
+27 F2 B5 3D 4E 37 EF 79 5C C5 50 6D FF AC</p>
+<p>这是一个全局段（段页面关联=0），因此应该放在<strong>JBIG2Globals</strong>流中。</p>
+</li>
+<li>
+<p>页面信息段</p>
+<p>00 00 00 01 30 00 01 00 00 00 13 00 00 00 34 00 00 00 42 00 00 00 00
+00 00 00 00 40 00 00</p>
+<p>和立即文本区域段</p>
+<p>00 00 00 02 06 20 00 01 00 00 00 1E 00 00 00 34 00 00 00 42 00 00 00
+00 00 00 00 00 02 00 10 00 00 00 02 31 DB 51 CE 51 FF AC</p>
+<p>这两个段构成了JBIG2页面的内容，应该放在代表这张图片的PDF XObject中。</p>
+</li>
+<li>
+<p>页面结束段</p>
+<p>00 00 00 03 31 00 01 00 00 00 00</p>
+<p>和文件结束段</p>
+<p>00 00 00 04 33 01 00 00 00 00</p>
+<p>由于这些段在PDF中不使用，它们被丢弃了。</p>
+</li>
+</ol>
+<p>因此，生成的PDF图像对象包含了页面信息段和立即文本区域段，并引用了一个包含符号字典段的<strong>JBIG2Globals</strong>流。</p>
+</div>
+<div class="tabbed-block">
+<p>The <strong>JBIG2Decode</strong> filter (<em>PDF 1.4</em>) decodes monochrome (1 bit per pixel) image data that has been encoded using JBIG2 encoding.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>JBIG stands for the Joint Bi-Level Image Experts Group, a group within the International Organization for Standardization (ISO) that developed the format. JBIG2 is the second version of a standard originally released as JBIG1.</p>
+<p>JBIG2 encoding, which provides for both lossy and lossless compression, is useful only for monochrom images, not for colour images, grayscale images, or general data. The algorithms used by the encoder, and the details of the format, are not described here. See ISO/IEC 11544 published standard for the current JBIG2 specification. Additional information can be found through the Web site for the JBIG and JPEG (Joint Photographic Experts Group) committees at &lt;<a href="http://www.jpeg.org">http://www.jpeg.org</a>&gt;.</p>
+<p>In general, JBIG2 provides considerably better compression than the existing CCITT standard (discussed in 7.4.6, "CCITTFaxDecode Filter"). The compression it achieves depends strongly on the nature of the image. Images of pages containing text in any language compress particularly well, with typical compression ratios of 20:1 to 50:1 for a page full of text.</p>
+</div>
+<p>The JBIG2 encoder shall build a table of unique symbol bitmaps found in the image, and other symbols found later in the image shall be matched against the table. Matching symbols shall be replaced by an index into the table, and symbols that fail to match shall be added to the table. The table itself shall be compressed using other means.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>This method results in high compression ratios for documents in which the same symbol is repeated often, as is typical for images created by scanning text pages. It also results in high compression of white space in the image, which does not need to be encoded because it contains no symbols.</p>
+<p>While best compression is achieved for images of text, the JBIG2 standard also includes algorithms for compressing regions of an image that contain dithered halftone images (for example, photographs).</p>
+</div>
+<p>The JBIG2 compression method may also be used for encoding multiple images into a single JBIG2 bit stream.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>Typically, these images are scanned pages of a multiple-page document. Since a single table of symbol bitmaps is used to match symbols across multiple pages, this type of encoding can result in higher compression ratios than if each of the pages had been individually encoded using JBIG2.</p>
+</div>
+<p>In general, an image may be specified in PDF as either an <em>image XObject</em> or an inline image (as described in <a href="../../c8/s9/">8.9</a>, "Images"); however, the <strong>JBIG2Decode</strong> filter shall not be used with inline images.</p>
+<p>This filter addresses both single-page and multiple-page JBIG2 bit streams by representing each JBIG2 page as a PDF image, as follows:</p>
+<ul>
+<li>The filter shall use the embedded file organization of JBIG2. (The details of this and the other types of file organization are provided in an annex of the ISO specification.) The optional 2-byte combination (marker) mentioned in the specification shall not be used in PDF. JBIG2 bit streams in random-access organization should be converted to the embedded file organization. Bit streams in sequential organization need no reorganization, except for the mappings described below.</li>
+<li>The JBIG2 file header, end-of-page segments, and end-of-file segment shall not be used in PDF. These should be removed before the PDF objects described below are created.</li>
+<li>The image XObject to which the <strong>JBIG2Decode</strong> filter is applied shall contain all segments that are associated with the JBIG2 page represented by that image; that is, all segments whose segment page association field contains the page number of the JBIG2 page represented by the image. In the image XObject, however, the segment’s page number should always be 1; that is, when each such segment is written to the XObject, the value of its segment page association field should be set to 1.</li>
+<li>If the bit stream contains global segments (segments whose segment page association field contains 0), these segments shall be placed in a separate PDF stream, and the filter parameter listed in Table 12 should refer to that stream. The stream can be shared by multiple image XObjects whose JBIG2 encodings use the same global segments.</li>
+</ul>
+<p><table id="table12" markdown="span">
+    <caption>Table 12 – Optional parameter for the JBIG2Decode filter</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>JBIG2Globals</strong></td>
+            <td>stream</td>
+            <td>A stream containing the JBIG2 global (page 0) segments. Global segments shall be placed in this stream even if only a single JBIG2 image XObject refers to it.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>The following shows an image that was compressed using the JBIG2 compression method and then encoded in ASCII hexadecimal representation. Since the JBIG2 bit stream contains global segments, these segments are placed in a separate PDF stream, as indicated by the JBIG2Globals filter parameter.</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>5 0 obj
+    &lt;&lt; /Type /XObject
+       /Subtype /Image
+       /Width 52
+       /Height 66
+       /ColorSpace /DeviceGray
+       /BitsPerComponent 1
+       /Length 224
+       /Filter [ /ASCIIHexDecode /JBIG2Decode ]
+       /DecodeParms [ null &lt;&lt; /JBIG2Globals 6 0 R &gt;&gt; ]
+    &gt;&gt;
+stream
+000000013000010000001300000034000000420000000000
+00000040000000000002062000010000001e000000340000
+004200000000000000000200100000000231db51ce51ffac &gt;
+endstream
+endobj
+
+6 0 obj
+    &lt;&lt; /Length 126
+       /Filter /ASCIIHexDecode
+    &gt;&gt;
+stream
+0000000000010000000032000003fffdff02fefefe000000
+01000000012ae225aea9a5a538b4d9999c5c8e56ef0f872
+7f2b53d4e37ef795cc5506dffac &gt;
+endstream
+endobj
+</code></pre></div>
+</div>
+<p>The JBIG2 bit stream for this example is as follows:</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+</div>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>97 4A 42 32 0D 0A 1A 0A 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 32
+00 00 03 FF FD FF 02 FE FE FE 00 00 00 01 00 00 00 01 2A E2 25 AE A9 A5
+A5 38 B4 D9 99 9C 5C 8E 56 EF 0F 87 27 F2 B5 3D 4E 37 EF 79 5C C5 50 6D
+FF AC 00 00 00 01 30 00 01 00 00 00 13 00 00 00 34 00 00 00 42 00 00 00
+00 00 00 00 00 40 00 00 00 00 00 02 06 20 00 01 00 00 00 1E 00 00 00 34
+00 00 00 42 00 00 00 00 00 00 00 00 02 00 10 00 00 00 02 31 DB 51 CE 51
+FF AC 00 00 00 03 31 00 01 00 00 00 00 00 00 00 04 33 01 00 00 00 00
+</code></pre></div>
+<p>This bit stream is made up of the following parts (in the order listed):</p>
+<ol>
+<li>
+<p>The JBIG2 file header</p>
+<p>97 4A 42 32 0D 0A 1A 0A 01 00 00 00 01</p>
+<p>Since the JBIG2 file header shall not used in PDF, this header is not placed in the JBIG2 stream object and is discarded.</p>
+</li>
+<li>
+<p>The first JBIG2 segment (segment 0)—in this case, the symbol dictionary segment</p>
+<p>00 00 00 00 00 01 00 00 00 00 32 00 00 03 FF FD FF 02 FE FE FE 00 00 00
+01 00 00 00 01 2A E2 25 AE A9 A5 A5 38 B4 D9 99 9C 5C 8E 56 EF 0F 87
+27 F2 B5 3D 4E 37 EF 79 5C C5 50 6D FF AC</p>
+<p>This is a global segment (segment page association = 0) and so shall be placed in the <strong>JBIG2Globals</strong> stream.</p>
+</li>
+<li>
+<p>The page information segment</p>
+<p>00 00 00 01 30 00 01 00 00 00 13 00 00 00 34 00 00 00 42 00 00 00 00
+00 00 00 00 40 00 00</p>
+<p>and the immediate text region segment</p>
+<p>00 00 00 02 06 20 00 01 00 00 00 1E 00 00 00 34 00 00 00 42 00 00 00
+00 00 00 00 00 02 00 10 00 00 00 02 31 DB 51 CE 51 FF AC</p>
+<p>These two segments constitute the contents of the JBIG2 page and shall be placed in the PDF XObject representing this image.</p>
+</li>
+<li>
+<p>The end-of-page segment</p>
+<p>00 00 00 03 31 00 01 00 00 00 00</p>
+<p>and the end-of-file segment</p>
+<p>00 00 00 04 33 01 00 00 00 00</p>
+<p>Since these segments shall not be used in PDF, they are discarded.</p>
+</li>
+</ol>
+<p>The resulting PDF image object, then, contains the page information segment and the immediate text region segment and refers to a <strong>JBIG2Globals</strong> stream that contains the symbol dictionary segment.</p>
+</div>
+</div>
+</div>
+<h2 id="748-dctdecode-过滤器">7.4.8 DCTDecode 过滤器<a class="headerlink" href="#748-dctdecode-过滤器" title="Permanent link">&para;</a></h2>
+<p><strong>DCTDecode Filter</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">中文</label><label for="__tabbed_11_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>DCTDecode</strong> 过滤器解码以 JPEG 基线格式编码的灰度或彩色图像数据。有关 JPEG “标记” 使用的更多信息，请参见 Adobe 技术说明 #5116。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>JPEG 代表联合图像专家组，这是国际标准化组织内的一个小组，负责开发该格式；DCT 代表离散余弦变换，这是编码中使用的主要技术。</p>
+<p>JPEG 编码是一种有损压缩方法，专门设计用于压缩采样的连续色调图像，而不是用于通用数据压缩。</p>
+</div>
+<p>使用 JPEG 编码的数据应由图像样本流组成，每个样本包含一个、两个、三个或四个颜色分量。特定样本的颜色分量值应连续出现。每个分量值应占用一个字节。</p>
+<p>在编码过程中，几个参数将控制算法和信息损失。这些参数的值，包括图像的尺寸和每个样本的分量数，完全由编码器控制，并应存储在编码数据中。<strong>DCTDecode</strong> 可以直接从编码数据中获取它需要的参数值。然而，在一个实例中，参数不需要出现在编码数据中，而应在过滤器参数字典中指定；见表 13。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>这里没有介绍编码算法的细节，但它们在 ISO 标准和《JPEG：静态图像数据压缩标准》中有所描述，该书由 Pennebaker 和 Mitchell 编写（见参考文献）。简单来说，JPEG 算法将图像分解成 8 个样本宽和 8 个样本高的块。图像中的每个颜色分量分别处理。对每个块执行二维 DCT。这个操作产生 64 个系数，然后进行量化。每个系数可以使用不同的步长进行量化。正是这种量化导致了 JPEG 算法中的信息损失。量化后的系数随后被压缩。</p>
+</div>
+<p><table id="table13" markdown="span">
+    <caption>Table 13 – DCTDecode 过滤器的可选参数</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>ColorTransform</strong></td>
+            <td>integer</td>
+            <td>（<em>可选</em>）一个代码，指定应在样本值上执行的转换：<br/>
+            0 无转换。<br/>
+            1 如果图像有三个颜色分量，RGB值在编码前应转换为YUV，在解码后从YUV转换回RGB。如果图像有四个分量，CMYK值在编码前应转换为YUVK，在解码后从YUVK转换回CMYK。如果图像有一个或两个颜色分量，则应忽略此选项。<br/>
+            如果编码算法在编码数据中插入了Adobe定义的标记代码，指示ColorTransform值，则应在执行DCT解码后根据编码数据中提供的值进行颜色转换，或者不转换，此字典条目的值将被忽略。如果在编码数据中没有Adobe定义的标记代码指示ColorTransform值，则将使用此字典条目中指定的值。如果在编码数据中没有Adobe定义的标记代码指示ColorTransform值，并且此字典条目不在过滤器字典中，则默认的ColorTransform值将是1，如果图像有三个分量，否则为0。<br/>
+            a 控制解码过程的参数以及其他元数据是使用一种称为“标记”的符号嵌入到编码数据流中的。当Adobe系统公司定义了在PostScript数据流中使用JPEG图像时，它定义了一套特定的规则，涉及哪些标记应被识别，哪些应被忽略，哪些被视为错误。还引入了一个特定的Adobe定义的标记。在Adobe技术说明 #5116（参考）中提供了在PostScript中生成和使用DCT编码数据的确切规则。PDF DCT 编码应严格遵循Adobe为PostScript建立的规则。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>编码算法可以通过在量化过程中减小步长来减少信息损失，代价是减少算法实现的压缩量。JPEG算法实现的压缩取决于被压缩的图像以及可接受的信息损失量。一般来说，可以在不察觉信息损失的情况下实现15:1的压缩比，而30:1的压缩比会导致图像质量的轻微下降。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>通常，对于分别处理亮度和色度的颜色空间，可以实现比不分别处理的颜色空间更好的压缩。过滤器提供的RGB到YUV的转换是一次尝试分离亮度和色度的努力；它符合CCIR建议601-1。其他颜色空间，如CIE 1976 <code>L*a*b*</code>空间，也可能实现这一目标。然后可以通过使用较粗的采样或量化来更多地压缩色度分量而不是亮度分量，而不会降低质量。</p>
+</div>
+<p>除了基线JPEG格式，从PDF 1.3开始，DCTDecode过滤器将支持渐进式JPEG扩展。这个扩展不会向DCTDecode参数字典添加任何条目；基线和渐进式JPEG之间的区别将在编码数据中表示。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 5</p>
+<p>对于嵌入在PDF文件中的流数据，使用渐进式JPEG没有任何好处。解码渐进式JPEG比基线JPEG更慢，并且消耗更多的内存。这个功能的目的是为了使流能够引用一个数据已经是以渐进式JPEG编码的外部文件。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The <strong>DCTDecode</strong> filter decodes grayscale or colour image data that has been encoded in the JPEG baseline format. See Adobe Technical Note #5116 for additional information about the use of JPEG “markers.”</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>JPEG stands for the Joint Photographic Experts Group, a group within the International Organization for Standardization that developed the format; DCT stands for discrete cosine transform, the primary technique used in the encoding.</p>
+<p>JPEG encoding is a lossy compression method, designed specifically for compression of sampled continuous-tone images and not for general data compression.</p>
+</div>
+<p>Data to be encoded using JPEG shall consist of a stream of image samples, each consisting of one, two, three, or four colour components. The colour component values for a particular sample shall appear consecutively. Each component value shall occupy a byte.</p>
+<p>During encoding, several parameters shall control the algorithm and the information loss. The values of thes parameters, which include the dimensions of the image and the number of components per sample, are entirel under the control of the encoder and shall be stored in the encoded data. <strong>DCTDecode</strong> may obtain th parameter values it requires directly from the encoded data. However, in one instance, the parameter need no be present in the encoded data but shall be specified in the filter parameter dictionary; see Table 13.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+</div>
+<p>The details of the encoding algorithm are not presented here but are in the ISO standard and in JPEG: Still Image Data Compression Standard, by Pennebaker and Mitchell (see the Bibliography). Briefly, the JPEG algorithm breaks an image up into blocks that are 8 samples wide by 8 samples high. Each colour component in an image is treated separately. A two-dimensional DCT is performed on each block. This operation produces 64 coefficients, which are then quantized. Each coefficient may be quantized with a different step size. It is this quantization that results in the loss of information in the JPEG algorithm. The quantized coefficients are then compressed.</p>
+<p><table id="table13" markdown="span">
+    <caption>Table 13 – Optional parameter for the DCTDecode filter</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>ColorTransform</strong></td>
+            <td>integer</td>
+            <td>(<em>Optional</em>) A code specifying the transformation that shall be performed on the sample values:<br/>
+            0 No transformation.<br/>
+            1 If the image has three colour components, RGB values shall be transformed to YUV before encoding and from YUV to RGB after decoding. If the image has four components, CMYK values shall be transformed to YUVK before encoding and from YUVK to CMYK after decoding. This option shall be ignored if the image has one or two colour components.<br/>
+            If the encoding algorithm has inserted the Adobe-defined markera code in the encoded data indicating the ColorTransform value, then the colours shall be transformed, or not, after the DCT decoding has been performed according to the value provided in the encoded data and the value of this dictionary entry shall be ignored. If the Adobe- defined marker code in the encoded data indicating the ColorTransform value is not present then the value specified in this dictionary entry will be used. If the Adobe-defined marker code in the encoded data indicating the ColorTransform value is not present and this dictionary entry is not present in the filter dictionary then the default value of ColorTransform shall be 1 if the image has three components and 0 otherwise.<br/>
+            a Parameters that control the decoding process as well as other metadata is embedded within the encoded data stream using a notation referred to as “markers”. When it defined the use of JPEG images within PostScript data streams, Adobe System Incorporated defined a particular set of rules pertaining to which markers are to be recognized, which are to be ignored and which are considered errors. A specific Adobe-defined marker was also introduced. The exact rules for producing and consuming DCT encoded data within PostScript are provide in Adobe Technical Note #5116 (reference). PDF DCT Encoding shall exactly follow those rules established by Adobe for PostScript.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>The encoding algorithm can reduce the information loss by making the step size in the quantization smaller at the expense of reducing the amount of compression achieved by the algorithm. The compression achieved by the JPEG algorithm depends on the image being compressed and the amount of loss that is acceptable. In general, a compression of 15 : 1 can be achieved without perceptible loss of information, and 30 : 1 compression causes little impairment of the image.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>Better compression is often possible for colour spaces that treat luminance and chrominance separately than for those that do not. The RGB-to-YUV conversion provided by the filters is one attempt to separate luminance and chrominance; it conforms to CCIR recommendation 601-1. Other colour spaces, such as the CIE 1976 <code>L*a*b*</code> space, may also achieve this objective. The chrominance components can then be compressed more than the luminance by using coarser sampling or quantization, with no degradation in quality.</p>
+</div>
+<p>In addition to the baseline JPEG format, beginning with PDF 1.3, the DCTDecode filter shall support the progressive JPEG extension. This extension does not add any entries to the DCTDecode parameter dictionary; the distinction between baseline and progressive JPEG shall be represented in the encoded data.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 5</p>
+<p>There is no benefit to using progressive JPEG for stream data that is embedded in a PDF file. Decoding progressive JPEG is slower and consumes more memory than baseline JPEG. The purpose of this feature is to enable a stream to refer to an external file whose data happens to be already encoded in progressive JPEG.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="749-jpxdecode-过滤器">7.4.9 JPXDecode 过滤器<a class="headerlink" href="#749-jpxdecode-过滤器" title="Permanent link">&para;</a></h2>
+<p><strong>JPXDecode Filter</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">中文</label><label for="__tabbed_12_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>JPXDecode</strong> 过滤器（<em>PDF 1.5</em>）使用 JPEG2000 压缩方法解码数据，这是一种用于压缩和封装图像数据的 ISO 标准。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>JPEG2000 定义了一种基于小波的图像压缩方法，与其他方法（如常规 JPEG 或 CCITT）相比，它提供了更好的尺寸缩减。尽管过滤器可以再现无损压缩的样本。</p>
+<p>此过滤器仅应用于图像 XObjects，不适用于内联图像（见 <a href="../../c8/s9/">8.9</a>，"Images"）。它既适用于具有单一颜色分量的图像，也适用于具有多个颜色分量的图像。图像中的颜色分量可以有不同的样本位数。允许的值从 1 到 38。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>从单个 JPEG2000 数据流中，可以解码图像的多个版本。这些不同版本沿着四个自由度形成渐进：采样分辨率、颜色深度、波段和位置。例如，通过分辨率渐进，可以从数据中解码图像的缩略图版本，然后是图像的其他版本序列，每个版本大约有前一个版本的四倍样本（宽度的两倍乘以高度的两倍）。最后一个版本是全分辨率图像。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>查看和打印应用程序可以通过使用分辨率渐进来获得性能优势。如果全分辨率图像采样密集，应用程序可能能够选择并仅解码构成较低分辨率版本的数据，从而减少解码时间。需要处理的字节更少，特别是当通过 Web 查看文件时，这是一个特别的好处。如果只需要显示或打印图像的某些区域，图像的平铺结构也可能提供好处。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>关于这些渐进的信息被编码在数据中；不需要解码参数来描述它们。解码器处理它遇到的任何渐进，以提供正确的图像数据。不感兴趣的渐进可能只是有性能后果。</p>
+<p>JPEG2000 规范定义了两种广泛使用的格式，JP2 和 JPX，用于打包压缩的图像数据。JP2 是 JPX 的一个子集。这些封装包含了正确解释图像数据所需的所有必要信息，包括颜色空间、每个分量的位和图像尺寸。换句话说，它们是图像的完整描述（与需要外部参数才能正确解释的图像数据相对）。<strong>JPXDecode</strong> 过滤器期望读取完整的 JPX 文件结构——无论是在 PDF 文件内部还是作为外部文件。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 5</p>
+<p>为了促进互操作性，规范定义了一个称为 JPX 基线的 JPX 子集（JP2 也是其子集）。JPX 基线功能的完整细节包含在 ISO/IEC 15444-2 中，信息技术—JPEG 2000 图像编码系统：扩展（见参考文献）。有关更多信息，请参阅 &lt;<a href="http://www.jpeg.org/jpeg2000/">http://www.jpeg.org/jpeg2000/</a>&gt;。</p>
+</div>
+<p>PDF 图像 XObjects 使用的数据应限于 JPX 基线功能集，除了枚举颜色空间 19（CIEJab）。此外，枚举颜色空间 12（CMYK），它是 JPX 的一部分但不是 JP 基线的一部分，在 PDF 中也应得到支持。</p>
+<p>JPX 文件描述了图像数据中存在的通道集合。一个通道可能有三种类型之一：</p>
+<ul>
+<li>一个<em>普通(ordinary)</em>通道包含的值，在解码后，应成为指定颜色分量的样本。</li>
+<li>一个<em>透明度(opacity)</em>通道提供应被解释为原始透明度信息的样本。</li>
+<li>一个<em>预乘透明度(premultiplied opacity)</em>通道应提供已经被乘入与之关联的颜色通道的颜色样本的样本。</li>
+</ul>
+<p>透明度和预乘透明度通道应与特定的颜色通道关联。对于给定的颜色通道，不应有超过一个透明度通道（任何类型）与之关联。</p>
+<div class="admonition note">
+<p class="admonition-title">EXAMPLE</p>
+<p>一个透明度通道可能适用于红色样本，另一个透明度通道适用于 RGB 图像的绿色和蓝色颜色通道。</p>
+</div>
+<div class="admonition 注意">
+<p class="admonition-title">NOTE 6</p>
+<p>使用透明度信息的方法明确没有指定，尽管一种可能的方法显示了正常的混合模式。</p>
+</div>
+<p>除了使用透明度通道描述透明度外，JPX 文件还有能力指定色度键透明度。可以通过给出一个值数组来指定单一颜色，每个颜色通道一个值。任何与此颜色匹配的图像位置都应被视为完全透明。</p>
+<p>JPX 文件中的图像可能有以下颜色空间之一：</p>
+<ul>
+<li>从枚举颜色空间列表中选择的预定义颜色空间。（其中两个实际上是颜色空间家族，并包含了参数。）</li>
+<li>受限的 ICC 配置文件。这些是 JP2 文件中唯一允许的 ICC 配置文件类型。</li>
+<li>ICC-1 定义的任何类型的输入 ICC 配置文件。</li>
+<li>供应商定义的颜色空间。</li>
+</ul>
+<p>图像可以指定多个颜色空间，每个空间都标记有优先级和近似值，这表明它代表首选颜色空间的程度。此外，图像的颜色空间可以作为使用来自图像数据通道的样本选择的颜色调色板的基础：相当于 PDF 中的<strong>索引</strong>颜色空间。</p>
+<p>JPX 格式的其他功能超出了描述简单图像的范围。这些包括用于描述分层和提供组成指令、指定简单动画和包括通用 XML 元数据（以及 JPEG2000 特定模式的此类数据）的规定。相关的元数据应在图像字典的<strong>元数据</strong>流中以 XMP 格式复制（见 <a href="../../c14/s3/#1432-元数据流">14.3.2</a>，"元数据流"）。</p>
+<p>当使用 <strong>JPXDecode</strong> 过滤器与图像 XObjects 时，图像字典中的一些条目将适用以下更改和限制（有关这些条目的详细信息，见 <a href="../../c8/s9/#895-图片字典">8.9.5</a>，"Image Dictionaries"）：</p>
+<ul>
+<li><strong>Width</strong> 和 <strong>Height</strong> 应与 JPEG2000 数据中的相应宽度和高度值相匹配。</li>
+<li><strong>ColorSpace</strong> 是可选的，因为 JPEG2000 数据包含颜色空间规格。如果出现，它将决定图像样本的解释方式，JPEG2000 数据中的颜色空间规格将被忽略。JPEG2000 数据中的颜色通道数应与颜色空间中的组件数相匹配；合规的编写器应确保样本与使用的颜色空间一致。</li>
+<li>可以指定除 <strong>Pattern</strong> 之外的任何颜色空间。如果使用 <strong>Indexed</strong> 颜色空间，它应受 PDF 256 种颜色的限制。如果颜色空间与 JPX 的枚举颜色空间不匹配（例如，如果它有两个或更多的颜色组件），则应在 JPX 数据中作为供应商颜色空间指定。</li>
+<li>如果图像字典中没有 <strong>ColorSpace</strong>，则应使用 JPEG2000 数据中的颜色空间信息。PDF 中的 JPEG2000 图像应具有以下之一：基线 JPX 颜色空间；枚举颜色空间 19（CIEJab）或枚举颜色空间 12（CMYK）；或至少一个在 PDF 中有效的 ICC 配置文件。合规的 PDF 阅读器应支持 JPX 基线的枚举颜色空间集；它们还应负责处理颜色空间和样本位深度之间的交互。</li>
+<li>如果 JPEG2000 数据中给出了多个颜色空间规格，合规的阅读器应尝试使用优先级最高且近似值最好的那个。如果颜色空间由不支持的 ICC 配置文件给出，则应使用优先级和近似值较低的下一个颜色空间。如果找不到支持的颜色空间，则使用的颜色空间应为 DeviceGray、DeviceRGB 或 DeviceCMYK，具体取决于 JPEG2000 数据中的通道数是 1、3 还是 4。</li>
+<li><strong>SMaskInData</strong> 指定是否使用与图像样本打包在一起的软蒙版信息（见 <a href="../../c11/s6/#11653-软蒙版图像">11.6.5.3</a>，"Soft-Mask Images"）；如果是，<strong>SMask</strong> 条目不应出现。如果 <strong>SMaskInData</strong> 非零，则 JPEG2000 数据中应只有一个透明度通道，并且它应用于所有颜色通道。</li>
+<li><strong>Decode</strong> 将被忽略，除非图像被视为蒙版；也就是说，当 <strong>ImageMask</strong> 为 <strong>true</strong> 时。在这种情况下，JPEG2000 数据应提供一个单一颜色通道，样本为 1 位。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>The <strong>JPXDecode</strong> filter (<em>PDF 1.5</em>) decodes data that has been encoded using the JPEG2000 compression method, an ISO standard for the compression and packaging of image data.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>JPEG2000 defines a wavelet-based method for image compression that gives somewhat better size reduction than other methods such as regular JPEG or CCITT. Although the filter can reproduce samples that are losslessly compressed.</p>
+</div>
+<p>This filter shall only be applied to image XObjects, and not to inline images (see <a href="../../c8/s9/">8.9</a>, "Images"). It is suitable both for images that have a single colour component and for those that have multiple colour components. The colour components in an image may have different numbers of bits per sample. Any value from 1 to 38 shall be allowed.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>From a single JPEG2000 data stream, multiple versions of an image may be decoded. These different versions form progressions along four degrees of freedom: sampling resolution, colour depth, band, and location. For example, with a resolution progression, a thumbnail version of the image may be decoded from the data, followed by a sequence of other versions of the image, each with approximately four times as many samples (twice the width times twice the height) as the previous one. The last version is the full-resolution image.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>Viewing and printing applications may gain performance benefits by using the resolution progression. If the full-resolution image is densely sampled, the application may be able to select and decode only the data making up a lower-resolution version, thereby spending less time decoding. Fewer bytes need be processed, a particular benefit when viewing files over the Web. The tiling structure of the image may also provide benefits if only certain areas of an image need to be displayed or printed.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>Information on these progressions is encoded in the data; no decode parameters are needed to describe them. The decoder deals with any progressions it encounters to deliver the correct image data. Progressions that are of no interest may simply have performance consequences.</p>
+</div>
+<p>The JPEG2000 specifications define two widely used formats, JP2 and JPX, for packaging the compressed image data. JP2 is a subset of JPX. These packagings contain all the information needed to properly interpret the image data, including the colour space, bits per component, and image dimensions. In other words, they are complete descriptions of images (as opposed to image data that require outside parameters for correct interpretation). The <strong>JPXDecode</strong> filter shall expect to read a full JPX file structure—either internal to the PDF file or as an external file.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 5</p>
+<p>To promote interoperability, the specifications define a subset of JPX called JPX baseline (of which JP2 is also a subset). The complete details of the baseline set of JPX features are contained in ISO/IEC 15444-2, Information Technology—JPEG 2000 Image Coding System: Extensions (see the Bibliography). See also &lt;<a href="http://www.jpeg.org/jpeg2000/">http://www.jpeg.org/jpeg2000/</a>&gt;.</p>
+</div>
+<p>Data used in PDF image XObjects shall be limited to the JPX baseline set of features, except for enumerate colour space 19 (CIEJab). In addition, enumerated colour space 12 (CMYK), which is part of JPX but not JP baseline, shall be supported in a PDF.</p>
+<p>A JPX file describes a collection of channels that are present in the image data. A channel may have one of three types:</p>
+<ul>
+<li>An <em>ordinary</em> channel contains values that, when decoded, shall become samples for a specified colour component.</li>
+<li>An <em>opacity</em> channel provides samples that shall be interpreted as raw opacity information.</li>
+<li>A <em>premultiplied opacity</em> channel shall provide samples that have been multiplied into the colour samples of those channels with which it is associated.</li>
+</ul>
+<p>Opacity and premultiplied opacity channels shall be associated with specific colour channels. There shall not be more than one opacity channel (of either type) associated with a given colour channel.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>It is possible for one opacity channel to apply to the red samples and another to apply to the green and blue colour channels of an RGB image.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 6</p>
+<p>The method by which the opacity information is to be used is explicitly not specified, although one possible method shows a normal blending mode.</p>
+</div>
+<p>In addition to using opacity channels for describing transparency, JPX files also have the ability to specify chroma-key transparency. A single colour may be specified by giving an array of values, one value for each colour channel. Any image location that matches this colour shall be considered to be completely transparent.</p>
+<p>Images in JPX files may have one of the following colour spaces:</p>
+<ul>
+<li>A predefined colour space, chosen from a list of enumerated colour spaces. (Two of these are actually families of spaces and parameters are included.)</li>
+<li>A restricted ICC profile. These are the only sorts of ICC profiles that are allowed in JP2 files.</li>
+<li>An input ICC profile of any sort defined by ICC-1.</li>
+<li>A vendor-defined colour space.</li>
+</ul>
+<p>More than one colour space may be specified for an image, with each space being tagged with a precedence and an approximation value that indicates how well it represents the preferred colour space. In addition, the image’s colour space may serve as the foundation for a palette of colours that are selected using samples coming from the image’s data channels: the equivalent of an <strong>Indexed</strong> colour space in PDF.</p>
+<p>There are other features in the JPX format beyond describing a simple image. These include provisions for describing layering and giving instructions on composition, specifying simple animation, and including generic XML metadata (along with JPEG2000-specific schemas for such data). Relevant metadata should be replicated in the image dictionary’s <strong>Metadata</strong> stream in XMP format (see <a href="../../c14/s3/#1432-元数据流">14.3.2</a>, "Metadata Streams").</p>
+<p>When using the <strong>JPXDecode</strong>  filter with image XObjects, the following changes to and constraints on some entries in the image dictionary shall apply (see <a href="../../c8/s9/#895-图片字典">8.9.5</a>, "Image Dictionaries" for details on these entries):</p>
+<ul>
+<li><strong>Width</strong> and <strong>Height</strong> shall match the corresponding width and height values in the JPEG2000 data.</li>
+<li><strong>ColorSpace</strong> shall be optional since JPEG2000 data contain colour space specifications. If present, it shall determine how the image samples are interpreted, and the colour space specifications in the JPEG2000 data shall be ignored. The number of colour channels in the JPEG2000 data shall match the number of components in the colour space; a conforming writer shall ensure that the samples are consistent with the colour space used.</li>
+<li>Any colour space other than <strong>Pattern</strong> may be specified. If an <strong>Indexed</strong> colour space is used, it shall be subject to the PDF limit of 256 colours. If the colour space does not match one of JPX’s enumerated colour spaces (for example, if it has two colour components or more than four), it should be specified as a vendor colour space in the JPX data.</li>
+<li>If <strong>ColorSpace</strong> is not present in the image dictionary, the colour space information in the JPEG2000 data shall be used. A JPEG2000 image within a PDF shall have one of: the baseline JPX colorspaces; or enumerated colorspace 19 (CIEJab) or enumerated colorspace 12 (CMYK); or at least one ICC profile that is valid within PDF. Conforming PDF readers shall support the JPX baseline set of enumerated colour spaces; they shall also be responsible for dealing with the interaction between the colour spaces and the bit depth of samples.</li>
+<li>If multiple colour space specifications are given in the JPEG2000 data, a conforming reader should attempt to use the one with the highest precedence and best approximation value. If the colour space is given by an unsupported ICC profile, the next lower colour space, in terms of precedence and approximation value, shall be used. If no supported colour space is found, the colour space used shall be DeviceGray, DeviceRGB, or DeviceCMYK, depending on the whether the number of channels in the JPEG2000 data is 1,3, or 4.</li>
+<li><strong>SMaskInData</strong> specifies whether soft-mask information packaged with the image samples shall be used (see <a href="../../c11/s6/#11653-软蒙版图像">11.6.5.3</a>, "Soft-Mask Images"); if it is, the <strong>SMask</strong> entry shall not be present. If <strong>SMaskInData</strong> is nonzero, there shall be only one opacity channel in the JPEG2000 data and it shall apply to all colour channels.</li>
+<li><strong>Decode</strong> shall be ignored, except in the case where the image is treated as a mask; that is, when <strong>ImageMask</strong> is <strong>true</strong>. In this case, the JPEG2000 data shall provide a single colour channel with 1-bit samples.</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="7410-crypt-过滤器">7.4.10 Crypt 过滤器<a class="headerlink" href="#7410-crypt-过滤器" title="Permanent link">&para;</a></h2>
+<p><strong>Crypt Filter</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">中文</label><label for="__tabbed_13_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Crypt</strong> 过滤器（<em>PDF 1.5</em>）允许文档级安全处理器（见 <a href="../s6/">7.6</a>，"Encryption"）确定用于解密输入数据的算法。此过滤器的解码参数字典中的 <strong>Name</strong> 参数（见表 14）应指定要使用的命名加密过滤器。Crypt 过滤器应是 Filter 数组条目中的第一个过滤器。</p>
+<p><table id="table14" markdown="span">
+    <caption>表 14 – Crypt 过滤器的可选参数</caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>（可选）如果存在，对于 <strong>Crypt</strong> 过滤器解码参数字典应为 <strong>CryptFilterDecodeParms</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>name</td>
+            <td>（可选）要用于解密此流的加密过滤器的名称。名称应与加密字典的 <strong>CF</strong> 条目中的一个条目相对应（见 <a href="../s6/#table20">表 20</a>）或一个标准加密过滤器（见 <a href="../s6/#table20">表 26</a>）。
+            <br/>默认值：<strong>Identity</strong>。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>此外，解码参数字典可能包括对安全处理器私有的条目。安全处理器在使用信息解密数据或提供解密数据的密钥时，可能会使用来自加密过滤器解码参数字典和加密过滤器字典的信息（见 <a href="../s6/#table25">表 25</a>）。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>安全处理器在向解码参数字典添加私有数据时，应按照 PDF 名称注册表的规范命名这些条目（见 <a href="../../a5/">附录 E</a>）。</p>
+</div>
+<p>如果流指定了加密过滤器，那么安全处理器在解密流之前，不会将 <a href="../s6/#762-常规加密算法">7.6.2</a> 中的 "算法 1：使用 RC4 或 AES 算法加密数据" 应用于密钥。相反，安全处理器应直接使用密钥解密流。小节 <a href="./">7.4</a>，"Filters," 解释了流如何指定过滤器。</p>
+</div>
+<div class="tabbed-block">
+<p>The <strong>Crypt</strong> filter (<em>PDF 1.5</em>) allows the document-level security handler (see <a href="../s6/">7.6</a>, "Encryption") to determine which algorithms should be used to decrypt the input data. The <strong>Name</strong> parameter in the decode parameters dictionary for this filter (see Table 14) shall specify which of the named crypt filters in the document (see <a href="../s6/#765-加密过滤器">7.6.5</a>, "Crypt Filters") shall be used. The Crypt filter shall be the first filter in the Filter array entry.</p>
+<p><table id="table14" markdown="span">
+    <caption>Table 14 – Optional parameters for Crypt filters</caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(Optional) If present, shall be <strong>CryptFilterDecodeParms</strong> for a <strong>Crypt</strong> filter decode parameter dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>name</td>
+            <td>(Optional) The name of the crypt filter that shall be used to decrypt this stream. The name shall correspond to an entry in the <strong>CF</strong> entry of the encryption dictionary (see <a href="../s6/#table20">Table 20</a>) or one of the standard crypt filters (see <a href="../s6/#table20">Table 26</a>).<br/>
+            Default value: <strong>Identity</strong>.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>In addition, the decode parameters dictionary may include entries that are private to the security handler. Security handlers may use information from both the crypt filter decode parameters dictionary and the crypt filter dictionaries (see <a href="../s6/#table25">Table 25</a>) when decrypting data or providing a key to decrypt data.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+</div>
+<p>When adding private data to the decode parameters dictionary, security handlers should name these entries in conformance with the PDF name registry (see <a href="../../a5/">Annex E</a>).</p>
+<p>If a stream specifies a crypt filter, then the security handler does not apply "Algorithm 1: Encryption of data using the RC4 or AES algorithms" in <a href="../s6/#762-常规加密算法">7.6.2</a>, "General Encryption Algorithm," to the key prior to decrypting the stream. Instead, the security handler shall decrypt the stream using the key as is. Sub-clause <a href="./">7.4</a>, "Filters," explains how a stream specifies filters.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

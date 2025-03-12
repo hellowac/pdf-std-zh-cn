@@ -1,0 +1,3177 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s3/">
+      
+      
+        <link rel="next" href="../s5/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>8.4 图形状态 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#84-图形状态" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8.4 图形状态
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            8图形绘制
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.2 图形对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.3 坐标系统
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    8.4 图形状态
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    8.4 图形状态
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#841-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#842-图形状态栈" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.2 图形状态栈
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#843-图形状态参数详情" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3 图形状态参数详情
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4.3 图形状态参数详情">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8431-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8432-线宽" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.2 线宽
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8433-线帽样式" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.3 线帽样式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8434-线连接样式" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.4 线连接样式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8435-斜接限制" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.5 斜接限制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8436-虚线样式" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.6 虚线样式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#844-图形状态操作符" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.4 图形状态操作符
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#845-图形状态参数字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.5 图形状态参数字典
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.5 路径构建与绘制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.6 色彩空间
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.7 图案
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.8 外部对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.9 图片
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.10 表单 XObjects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8.11 可选内容
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#841-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#842-图形状态栈" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.2 图形状态栈
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#843-图形状态参数详情" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3 图形状态参数详情
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4.3 图形状态参数详情">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8431-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8432-线宽" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.2 线宽
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8433-线帽样式" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.3 线帽样式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8434-线连接样式" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.4 线连接样式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8435-斜接限制" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.5 斜接限制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8436-虚线样式" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.3.6 虚线样式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#844-图形状态操作符" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.4 图形状态操作符
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#845-图形状态参数字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4.5 图形状态参数字典
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="84-图形状态">8.4 图形状态<a class="headerlink" href="#84-图形状态" title="Permanent link">&para;</a></h1>
+<p><strong>Graphics State</strong></p>
+<h2 id="841-概述">8.4.1 概述<a class="headerlink" href="#841-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>一个符合标准的阅读器应该维护一个称为<em>图形状态</em>的内部数据结构，该结构保存当前的图形控制参数。这些参数定义了图形操作符执行的全局框架。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p><strong>f</strong>（填充）操作符隐式地使用当前的颜色参数，而<strong>S</strong>（描边）操作符还额外使用图形状态中的当前线宽参数。</p>
+</div>
+<p>一个符合标准的阅读器应该在每页开始时使用<a href="#table52">表52</a>和<a href="#table53">表53</a>中指定的值初始化图形状态。<a href="#table52">表52</a>列出了那些与设备无关且适合在页面描述中指定的图形状态参数。<a href="#table53">表53</a>中列出的参数控制渲染（扫描转换）过程的细节，这些是与设备相关的；一个旨在与设备无关的页面描述不应该被写入以修改这些参数。</p>
+<p><table id="table52" markdown="span">
+    <caption><strong>表52 – 设备无关图形状态参数</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>参数</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>CTM</td>
+            <td>array</td>
+            <td><em>当前变换矩阵</em>，用于将位置从用户坐标系映射到设备坐标系（参见<a href="../s3/">8.3</a>，“坐标系统”）。此矩阵通过每次应用坐标变换操作符<strong>cm</strong>进行修改。初始值：将默认用户坐标转换为设备坐标的矩阵。</td>
+        </tr>
+        <tr>
+            <td>clipping path</td>
+            <td>(internal)</td>
+            <td><em>当前剪裁路径</em>，定义所有输出将被裁剪的边界（参见<a href="../s5/#854-剪切路径操作符">8.5.4</a>，“剪裁路径操作符”）。初始值：输出页面的整个可成像部分的边界。</td>
+        </tr>
+        <tr>
+            <td>color space</td>
+            <td>name or array</td>
+            <td>当前用于解释颜色值的<em>颜色空间</em>（参见<a href="../s6/">8.6</a>，“颜色空间”）。有两个独立的颜色空间参数：一个用于描边，另一个用于所有其他绘画操作。初始值：<strong>DeviceGray</strong>。</td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>(various)</td>
+            <td>绘画操作中使用的<em>当前颜色</em>（参见<a href="../s6/">8.6</a>，“颜色空间”）。此参数的类型和解释取决于当前颜色空间；对于大多数颜色空间，颜色值由一到四个数字组成。有两个独立的颜色参数：一个用于描边，另一个用于所有其他绘画操作。初始值：黑色。</td>
+        </tr>
+        <tr>
+            <td>text state</td>
+            <td>(various)</td>
+            <td>仅与绘制文本相关的一组九个图形状态参数。这些参数包括选择字体、将字形缩放到适当大小以及实现其他效果的参数。文本状态参数在<a href="../../c9/s3/">9.3</a>，“文本状态参数和操作符”中描述。</td>
+        </tr>
+        <tr>
+            <td>line width</td>
+            <td>number</td>
+            <td>要描边的路径的厚度，以用户空间单位表示（参见<a href="#8432-线宽">8.4.3.2</a>，“线宽”）。初始值：1.0。</td>
+        </tr>
+        <tr>
+            <td>line cap</td>
+            <td>integer</td>
+            <td>指定任何被描边的开放路径的端点形状的代码（参见<a href="#8433-线帽样式">8.4.3.3</a>，“线帽样式”）。初始值：0，表示方形平端帽。</td>
+        </tr>
+        <tr>
+            <td>line join</td>
+            <td>integer</td>
+            <td>指定被描边路径的连接段之间的接合形状的代码（参见<a href="#8434-线连接样式">8.4.3.4</a>，“线接合样式”）。初始值：0，表示斜接合。</td>
+        </tr>
+        <tr>
+            <td>miter limit</td>
+            <td>number</td>
+            <td>描边路径的斜接线接合的最大长度（参见<a href="#8435-斜接限制">8.4.3.5</a>，“斜接限制”）。此参数限制了在锐角连接时产生的“尖峰”的长度。初始值：10.0，表示斜接角度小于约11.5度的截止值。</td>
+        </tr>
+        <tr>
+            <td>dash pattern</td>
+            <td>array and number</td>
+            <td>描边路径时使用的虚线图案的描述（参见<a href="#8436-虚线样式">8.4.3.6</a>，“线虚线图案”）。初始值：实线。</td>
+        </tr>
+        <tr>
+            <td>rendering intent</td>
+            <td>name</td>
+            <td>将CIE基础颜色转换为设备颜色时使用的渲染意图（参见<a href="../s6/#8658-渲染目标">8.6.5.8</a>，“渲染意图”）。初始值：<strong>RelativeColorimetric</strong>。</td>
+        </tr>
+        <tr>
+            <td>stroke adjustment</td>
+            <td>boolean</td>
+            <td>(<em>PDF 1.2</em>) 指定在使用相对于输出设备像素分辨率较小的线宽描边路径时是否补偿可能的栅格化效果的标志（参见<a href="../../c10/s6/#1065-自动描边调整">10.6.5</a>，“自动描边调整”）。<br></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>这是一个被认为是设备无关的参数，尽管其效果的细节依赖于设备。</p>
+</div>
+<p>初始值：<strong>false</strong>。</td>
+        </tr>
+        <tr>
+            <td>blend mode</td>
+            <td>name or array</td>
+            <td>(PDF 1.4) 用于透明成像模型的当前混合模式（参见<a href="../../c11/s3/#1135-混合模式">11.3.5</a>，“混合模式”和<a href="../../c11/s6/#1163-指定混合色彩空间和混合模式">11.6.3</a>，“指定混合颜色空间和混合模式”）。一个符合要求的阅读器应在执行透明组XObject（参见<a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>，“透明组XObject”）开始时隐式重置此参数为其初始值。<br/>
+            初始值：<strong>Normal</strong>。</td>
+        </tr>
+        <tr>
+            <td>soft mask</td>
+            <td>dictionary or name</td>
+            <td>(PDF 1.4) 软蒙版字典（参见<a href="../../c11/s6/#11652-软掩码词典">11.6.5.2</a>，“软蒙版字典”），指定透明成像模型中使用的蒙版形状或蒙版不透明度值（参见<a href="../../c11/s3/#11372-源形状和不透明度">11.3.7.2</a>，“源形状和不透明度”和<a href="../../c11/s6/#11643-蒙版形状和不透明度">11.6.4.3</a>，“蒙版形状和不透明度”），或名称<strong>None</strong>，如果没有指定蒙版。一个符合要求的阅读器应在执行透明组XObject（参见<a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>，“透明组XObject”）开始时隐式重置此参数为其初始值。初始值：<strong>None</strong>。</td>
+        </tr>
+        <tr>
+            <td>alpha constant</td>
+            <td>number</td>
+            <td>(PDF 1.4) 透明成像模型中使用的常数形状或常数不透明度值（参见<a href="../../c11/s3/#11372-源形状和不透明度">11.3.7.2</a>，“源形状和不透明度”和<a href="../../c11/s6/#11644-恒定形状和不透明度">11.6.4.4</a>，“常数形状和不透明度”）。有两个独立的alpha常数参数：一个用于描边，另一个用于所有其他绘画操作。一个符合要求的阅读器应在执行透明组XObject（参见<a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>，“透明组XObject”）开始时隐式重置此参数为其初始值。初始值：1.0。</td>
+        </tr>
+        <tr>
+            <td>alpha source</td>
+            <td>boolean</td>
+            <td>(PDF 1.4) 一个标志，指定当前软蒙版和alpha常数参数应解释为形状值（<strong>true</strong>）还是不透明度值（<strong>false</strong>）。此标志还控制图像字典中SMask条目的解释（如果有）（参见<a href="../s9/#895-图片字典">8.9.5</a>，“图像字典”）。初始值：<strong>false</strong>。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table53" markdown="span">
+    <caption><strong>表53 – 设备相关图形状态参数</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>参数</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>overprint</td>
+            <td>boolean</td>
+            <td>(PDF 1.2) 指定（在支持叠印控制功能的输出设备上）在一组颜色上绘制时，是否应该擦除其他颜色的相应区域（<strong>false</strong>）或保持不变（<strong>true</strong>）；参见<a href="../s6/#867-套印控制">8.6.7</a>，“叠印控制”。在PDF 1.3中，有两个独立的叠印参数：一个用于描边，另一个用于所有其他绘画操作。初始值：<strong>false</strong>。</td>
+        </tr>
+        <tr>
+            <td>overprint mode</td>
+            <td>number</td>
+            <td>(PDF 1.3) 指定在<strong>DeviceCMYK</strong>颜色空间中，颜色分量值为0时，是否应在叠印时擦除该分量（0）或保持不变（1）的代码（参见<a href="../s6/#867-套印控制">8.6.7</a>，“叠印控制”）。初始值：0。</td>
+        </tr>
+        <tr>
+            <td>black generation</td>
+            <td>function or name</td>
+            <td>(PDF 1.2) 转换<em>RGB</em>颜色为CMYK时计算黑色颜色分量水平的函数（参见<a href="../../c10/s3/#1034-从-devicergb-到-devicecmyk-的转换">10.3.4</a>，“从DeviceRGB到DeviceCMYK的转换”）。初始值：符合要求的阅读器应将其初始化为合适的设备相关值。</td>
+        </tr>
+        <tr>
+            <td>undercolor removal</td>
+            <td>function or name</td>
+            <td>(PDF 1.2) 计算减少青色、品红色和黄色颜色分量水平以补偿黑色生成所增加的黑色量的函数（参见<a href="../../c10/s3/#1034-从-devicergb-到-devicecmyk-的转换">10.3.4</a>，“从DeviceRGB到DeviceCMYK的转换”）。初始值：符合要求的阅读器应将其初始化为合适的设备相关值。</td>
+        </tr>
+        <tr>
+            <td>transfer</td>
+            <td>function, array, or name</td>
+            <td>(PDF 1.2) 调整设备灰色或颜色分量水平以补偿特定输出设备的非线性响应的函数（参见<a href="../../c10/s4/">10.4</a>，“传递函数”）。初始值：符合要求的阅读器应将其初始化为合适的设备相关值。</td>
+        </tr>
+        <tr>
+            <td>halftone</td>
+            <td>dictionary, stream, or name</td>
+            <td>(PDF 1.2) 灰色和颜色渲染的半色调屏幕，指定为半色调字典或流（参见<a href="../../c10/s5/">10.5</a>，“半色调”）。初始值：符合要求的阅读器应将其初始化为合适的设备相关值。</td>
+        </tr>
+        <tr>
+            <td>flatness</td>
+            <td>number</td>
+            <td>曲线在输出设备上呈现的精度（参见<a href="../../c10/s6/#1062-平整度公差">10.6.2</a>，“平坦度容差”）。此参数的值（正数）给出最大误差容差，以输出设备像素为单位；较小的值在计算和内存使用上消耗更多，但曲线更平滑。初始值：1.0。</td>
+        </tr>
+        <tr>
+            <td>smoothness</td>
+            <td>number</td>
+            <td>(PDF 1.3) 颜色渐变在输出设备上的呈现精度（参见<a href="../../c10/s6/#1063-平滑度公差">10.6.3</a>，“平滑度容差”）。此参数的值（0到1.0）给出最大误差容差，表示为每个颜色分量范围的一部分；较小的值在计算和内存使用上消耗更多，但颜色过渡更平滑。初始值：符合要求的阅读器应将其初始化为合适的设备相关值。</td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>一些图形状态参数是通过特定的PDF操作符设置的，有些是通过在图形状态参数字典中包含特定条目来设置的，还有一些可以通过任一方式指定。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>当前线宽既可以使用 <strong>w</strong> 操作符设置，也可以（在PDF 1.3中）使用图形状态参数字典中的 <strong>LW</strong> 条目设置，而当前颜色仅通过特定操作符设置，当前半色调仅通过图形状态参数字典设置。</p>
+</div>
+<p>通常，符合标准的阅读器在解释设置图形状态参数的操作符时，应简单地将它们不变地存储起来，以便以后在解释绘画操作符时使用。然而，一些参数具有特殊属性或需要的行为，符合标准的阅读器应处理：</p>
+<ul>
+<li>大多数参数应为正确类型或具有在某个范围内的值。</li>
+<li>参数为数值类型，如当前颜色、线宽和斜接限制，必要时应强制进入有效范围。但是，它们不应调整以反映光栅输出设备的能力，如分辨率或可区分颜色的数量。绘画操作符执行此类调整，但调整后的值不应存储回图形状态。</li>
+<li>路径应为内部对象，不应直接在PDF中表示。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>如表52和表53所示，一些参数——颜色空间、颜色和过印——有两个值，一个用于描边（路径和文本对象），一个用于所有其他绘画操作。两个参数值可以独立设置，允许使用不同颜色组合填充和描边相同的路径等操作。除非另有说明，诸如<em>当前颜色</em>之类的术语应解释为适用于正在执行的操作的颜色参数。在必要时，个别颜色参数明确区分为<em>描边颜色</em>和<em>非描边颜色</em>。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A conforming reader shall maintain an internal data structure called the <em>graphics state</em> that holds current graphics control parameters. These parameters define the global framework within which the graphics operators execute.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>The <strong>f</strong> (fill) operator implicitly uses the current colour parameter, and the <strong>S</strong> (stroke) operator additionally uses the current line width parameter from the graphics state.</p>
+</div>
+<p>A conforming reader shall initialize the graphic state at the beginning of each page with the values specified in <a href="#table52">Table 52</a> and <a href="#table53">Table 53</a>. <a href="#table52">Table 52</a> lists those graphics state parameters that are device-independent and are appropriate to specify in page descriptions. The parameters listed in <a href="#table53">Table 53</a> control details of the rendering (scan conversion) process and are device-dependent; a page description that is intended to be device-independent should not be written to modify these parameters.</p>
+<p><table id="table52" markdown="span">
+    <caption><strong>Table 52 – Device-Independent Graphics State Parameters</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Parameter</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>CTM</td>
+            <td>array</td>
+            <td>The <em>current transformation matrix</em>, which maps positions from user coordinates to device coordinates (see <a href="../s3/">8.3</a>, "Coordinate Systems"). This matrix is modified by each application of the coordinate transformation operator, <strong>cm</strong>. Initial value: a matrix that transforms default user coordinates to device coordinates.</td>
+        </tr>
+        <tr>
+            <td>clipping path</td>
+            <td>(internal)</td>
+            <td>The <em>current clipping path</em>, which defines the boundary against which all output shall be cropped (see <a href="../s5/#854-剪切路径操作符">8.5.4</a>, "Clipping Path Operators"). Initial value: the boundary of the entire imageable portion of the output page.</td>
+        </tr>
+        <tr>
+            <td>color space</td>
+            <td>name or array</td>
+            <td>The <em>current colour space</em> in which colour values shall be interpreted (see <a href="../s6/">8.6</a>, "Colour Spaces"). There are two separate colour space parameters: one for stroking and one for all other painting operations. Initial value: <strong>DeviceGray</strong>.</td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>(various)</td>
+            <td>The <em>current colour</em> to be used during painting operations (see <a href="../s6/">8.6</a>, "Colour Spaces"). The type and interpretation of this parameter depend on the current colour space; for most colour spaces, a colour value consists of one to four numbers. There are two separate colour parameters: one for stroking and one for all other painting operations. Initial value: black.</td>
+        </tr>
+        <tr>
+            <td>text state</td>
+            <td>(various)</td>
+            <td>A set of nine graphics state parameters that pertain only to the painting of text. These include parameters that select the font, scale the glyphs to an appropriate size, and accomplish other effects. The text state parameters are described in <a href="../../c9/s3/">9.3</a>, "Text State Parameters and Operators".</td>
+        </tr>
+        <tr>
+            <td>line width</td>
+            <td>number</td>
+            <td>The thickness, in user space units, of paths to be stroked (see <a href="#8432-线宽">8.4.3.2</a>, "Line Width"). Initial value: 1.0.</td>
+        </tr>
+        <tr>
+            <td>line cap</td>
+            <td>integer</td>
+            <td>A code specifying the shape of the endpoints for any open path that is stroked (see <a href="#8433-线帽样式">8.4.3.3</a>, "Line Cap Style"). Initial value: 0, for square butt caps.</td>
+        </tr>
+        <tr>
+            <td>line join</td>
+            <td>integer</td>
+            <td>A code specifying the shape of joints between connected segments of a stroked path (see <a href="#8434-线连接样式">8.4.3.4</a>, "Line Join Style"). Initial value: 0, for mitered joins.</td>
+        </tr>
+        <tr>
+            <td>miter limit</td>
+            <td>number</td>
+            <td>The maximum length of mitered line joins for stroked paths (see <a href="#8435-斜接限制">8.4.3.5</a>, "Miter Limit"). This parameter limits the length of “spikes” produced when line segments join at sharp angles. Initial value: 10.0, for a miter cutoff below approximately 11.5 degrees.</td>
+        </tr>
+        <tr>
+            <td>dash pattern</td>
+            <td>array and number</td>
+            <td>A description of the dash pattern to be used when paths are stroked (see <a href="#8436-虚线样式">8.4.3.6</a>, "Line Dash Pattern"). Initial value: a solid line.</td>
+        </tr>
+        <tr>
+            <td>rendering intent</td>
+            <td>name</td>
+            <td>The rendering intent to be used when converting CIE-based colours to device colours (see <a href="../s6/#8658-渲染目标">8.6.5.8</a>, "Rendering Intents"). Initial value: <strong>RelativeColorimetric</strong>.</td>
+        </tr>
+        <tr>
+            <td>stroke adjustment</td>
+            <td>boolean</td>
+            <td>(<em>PDF 1.2</em>) A flag specifying whether to compensate for possible rasterization effects when stroking a path with a line width that is small relative to the pixel resolution of the output device (see <a href="../../c10/s6/#1065-自动描边调整">10.6.5</a>, "Automatic Stroke Adjustment").</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>This is considered a device-independent parameter, even though the details of its effects are device-dependent.</p>
+</div>
+<p>Initial value: <strong>false</strong>.</td>
+        </tr>
+        <tr>
+            <td>blend mode</td>
+            <td>name or array</td>
+            <td>(PDF 1.4) The current blend mode to be used in the transparent imaging model (see <a href="../../c11/s3/#1135-混合模式">11.3.5</a>, "Blend Mode" and <a href="../../c11/s6/#1163-指定混合色彩空间和混合模式">11.6.3</a>, "Specifying Blending Colour Space and Blend Mode"). A conforming reader shall implicitly reset this parameter to its initial value at the beginning of execution of a transparency group XObject (see <a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>, "Transparency Group XObjects").<br/>
+            Initial value: <strong>Normal</strong>.</td>
+        </tr>
+        <tr>
+            <td>soft mask</td>
+            <td>dictionary or name</td>
+            <td>(PDF 1.4) A soft-mask dictionary (see <a href="../../c11/s6/#11652-软掩码词典">11.6.5.2</a>, "Soft-Mask Dictionaries") specifying the mask shape or mask opacity values to be used in the transparent imaging model (see <a href="../../c11/s3/#11372-源形状和不透明度">11.3.7.2</a>, "Source Shape and Opacity" and <a href="../../c11/s6/#11643-蒙版形状和不透明度">11.6.4.3</a>, "Mask Shape and Opacity"), or the name <strong>None</strong> if no such mask is specified. A conforming reader shall implicitly reset this parameter implicitly reset to its initial value at the beginning of execution of a transparency group XObject (see <a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>, "Transparency Group XObjects"). Initial value: <strong>None</strong>.</td>
+        </tr>
+        <tr>
+            <td>alpha constant</td>
+            <td>number</td>
+            <td>(PDF 1.4) The constant shape or constant opacity value to be used in the transparent imaging model (see <a href="../../c11/s3/#11372-源形状和不透明度">11.3.7.2</a>, "Source Shape and Opacity" and <a href="../../c11/s6/#11644-恒定形状和不透明度">11.6.4.4</a>, "Constant Shape and Opacity"). There are two separate alpha constant parameters: one for stroking and one for all other painting operations. A conforming reader shall implicitly reset this parameter to its initial value at the beginning of execution of a transparency group XObject (see <a href="../../c11/s6/#1166-透明度组-xobjects">11.6.6</a>, "Transparency Group XObjects"). Initial value: 1.0.</td>
+        </tr>
+        <tr>
+            <td>alpha source</td>
+            <td>boolean</td>
+            <td>(PDF 1.4) A flag specifying whether the current soft mask and alpha constant parameters shall be interpreted as shape values (<strong>true</strong>) or opacity values (<strong>false</strong>). This flag also governs the interpretation of the SMask entry, if any, in an image dictionary (see <a href="../s9/#895-图片字典">8.9.5</a>, "Image Dictionaries"). Initial value: <strong>false</strong>.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table53" markdown="span">
+    <caption><strong>Table 53 – Device-Dependent Graphics State Parameters</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Parameter</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>overprint</td>
+            <td>boolean</td>
+            <td>(PDF 1.2) A flag specifying (on output devices that support the overprint control feature) whether painting in one set of colorants should cause the corresponding areas of other colorants to be erased (<strong>false</strong>) or left unchanged (<strong>true</strong>); see <a href="../s6/#867-套印控制">8.6.7</a>, "Overprint Control". In PDF 1.3, there are two separate overprint parameters: one for stroking and one for all other painting operations. Initial value: <strong>false</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td>overprint mode</td>
+            <td>number</td>
+            <td>(PDF 1.3) A code specifying whether a colour component value of 0 in a <strong>DeviceCMYK</strong> colour space should erase that component (0) or leave it unchanged (1) when overprinting (see <a href="../s6/#867-套印控制">8.6.7</a>, "Overprint Control"). Initial value: 0.
+            </td>
+        </tr>
+        <tr>
+            <td>black generation</td>
+            <td>function or name</td>
+            <td>(PDF 1.2) A function that calculates the level of the black colour component to use when converting <em>RGB</em> colours to CMYK (see <a href="../../c10/s3/#1034-从-devicergb-到-devicecmyk-的转换">10.3.4</a>, "Conversion from DeviceRGB to DeviceCMYK"). Initial value: a conforming reader shall initialize this to a suitable device dependent value.
+            </td>
+        </tr>
+        <tr>
+            <td>undercolor removal</td>
+            <td>function or name</td>
+            <td>(PDF 1.2) A function that calculates the reduction in the levels of the cyan, magenta, and yellow colour components to compensate for the amount of black added by black generation (see <a href="../../c10/s3/#1034-从-devicergb-到-devicecmyk-的转换">10.3.4</a>, "Conversion from DeviceRGB to DeviceCMYK"). Initial value: a conforming reader shall initialize this to a suitable device dependent value.
+            </td>
+        </tr>
+        <tr>
+            <td>transfer</td>
+            <td>function, array, or name</td>
+            <td>(PDF 1.2) A function that adjusts device gray or colour component levels to compensate for nonlinear response in a particular output device (see <a href="../../c10/s4/">10.4</a>, “Transfer Functions“). Initial value: a conforming reader shall initialize this to a suitable device dependent value.
+            </td>
+        </tr>
+        <tr>
+            <td>halftone</td>
+            <td>dictionary, stream, or name</td>
+            <td>(PDF 1.2) A halftone screen for gray and colour rendering, specified as a halftone dictionary or stream (see <a href="../../c10/s5/">10.5</a>, "Halftones"). Initial value: a conforming reader shall initialize this to a suitable device dependent value.
+            </td>
+        </tr>
+        <tr>
+            <td>flatness</td>
+            <td>number</td>
+            <td>The precision with which curves shall be rendered on the output device (see <a href="../../c10/s6/#1062-平整度公差">10.6.2</a>, "Flatness Tolerance"). The value of this parameter (positive number) gives the maximum error tolerance, measured in output device pixels; smaller numbers give smoother curves at the expense of more computation and memory use. Initial value: 1.0.
+            </td>
+        </tr>
+        <tr>
+            <td>smoothness</td>
+            <td>number</td>
+            <td>(PDF 1.3) The precision with which colour gradients are to be rendered on the output device (see <a href="../../c10/s6/#1063-平滑度公差">10.6.3</a>, "Smoothness Tolerance"). The value of this parameter (0 to 1.0) gives the maximum error tolerance, expressed as a fraction of the range of each colour component; smaller numbers give smoother colour transitions at the expense of more computation and memory use. Initial value: a conforming reader shall initialize this to a suitable device dependent value.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Some graphics state parameters are set with specific PDF operators, some are set by including a particular entry in a graphics state parameter dictionary, and some can be specified either way.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>The current line width can be set either with the <strong>w</strong> operator or (in PDF 1.3) with the <strong>LW</strong> entry in a graphics state parameter dictionary, whereas the current colour is set only with specific operators, and the current halftone is set only with a graphics state parameter dictionary.</p>
+</div>
+<p>In general, a conforming reader, when interpreting the operators that set graphics state parameters, shall simply store them unchanged for later use when interpreting the painting operators.However, some parameters have special properties or call for behaviour that a conforming reader shall handle:</p>
+<ul>
+<li>Most parameters shall be of the correct type or have values that fall within a certain range.</li>
+<li>Parameters that are numeric values, such as the current colour, line width, and miter limit, shall be forced into valid range, if necessary. However, they shall not be adjusted to reflect capabilities of the raster output device, such as resolution or number of distinguishable colours. Painting operators perform such adjustments, but the adjusted values shall not be stored back into the graphics state.</li>
+<li>Paths shall be internal objects that shall not be directly represented in PDF.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>As indicated in Table 52 and Table 53, some of the parameters—color space, color, and overprint—have two values, one used for stroking (of paths and text objects) and one for all other painting operations. The two parameter values can be set independently, allowing for operations such as combined filling and stroking of the same path with different colours. Except where noted, a term such as <em>current colour</em> should be interpreted to refer to whichever colour parameter applies to the operation being performed. When necessary, the individual colour parameters are distinguished explicitly as the <em>stroking colour</em> and the <em>nonstroking colour</em>.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="842-图形状态栈">8.4.2 图形状态栈<a class="headerlink" href="#842-图形状态栈" title="Permanent link">&para;</a></h2>
+<p><strong>8.4.2 Graphics State Stack</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF文档通常包含许多彼此独立的图形元素，并且这些元素被嵌套到多个层级。<em>图形状态栈</em>允许这些元素对图形状态进行局部更改，而不会干扰周围环境的图形状态。该栈是一个后进先出（LIFO）数据结构，可以使用以下操作符保存和稍后恢复图形状态的内容：</p>
+<ul>
+<li><strong>q</strong> 操作符应将整个图形状态的副本推入栈中。</li>
+<li><strong>Q</strong> 操作符应通过从栈中弹出来恢复整个图形状态到其先前的值。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>这些操作符可以用来封装一个图形元素，使其可以修改图形状态的参数，然后再将它们恢复到先前的值。</p>
+</div>
+<p>在给定的内容流中（或在页面字典的<strong>Contents</strong>数组中指定的流序列中），<strong>q</strong>和<strong>Q</strong>操作符的出现次数应该保持平衡。</p>
+</div>
+<div class="tabbed-block">
+<p>A PDF document typically contains many graphical elements that are independent of each other and nested to multiple levels. The <em>graphics state stack</em> allows these elements to make local changes to the graphics state without disturbing the graphics state of the surrounding environment. The stack is a LIFO (last in, first out) data structure in which the contents of the graphics state may be saved and later restored using the following operators:</p>
+<ul>
+<li>The <strong>q</strong> operator shall push a copy of the entire graphics state onto the stack.</li>
+<li>The <strong>Q</strong> operator shall restore the entire graphics state to its former value by popping it from the stack.</li>
+</ul>
+<p>NOTE</p>
+<p>These operators can be used to encapsulate a graphical element so that it can modify parameters of the graphics state and later restore them to their previous values.</p>
+<p>Occurrences of the <strong>q</strong> and <strong>Q</strong> operators shall be balanced within a given content stream (or within the sequence of streams specified in a page dictionary’s <strong>Contents</strong> array).</p>
+</div>
+</div>
+</div>
+<h2 id="843-图形状态参数详情">8.4.3 图形状态参数详情<a class="headerlink" href="#843-图形状态参数详情" title="Permanent link">&para;</a></h2>
+<p><strong>8.4.3 Details of Graphics State Parameters</strong></p>
+<h3 id="8431-概述">8.4.3.1 概述<a class="headerlink" href="#8431-概述" title="Permanent link">&para;</a></h3>
+<p><strong>8.4.3.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本小节将详细介绍<a href="#table52">表52</a>中列出的一些与设备无关的图形状态参数的细节。    </p>
+</div>
+<div class="tabbed-block">
+<p>This sub-clause gives details of several of the device-independent graphics state parameters listed in <a href="#table52">Table 52</a>.</p>
+</div>
+</div>
+</div>
+<h3 id="8432-线宽">8.4.3.2 线宽<a class="headerlink" href="#8432-线宽" title="Permanent link">&para;</a></h3>
+<p><strong>8.4.3.2 Line Width</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>线宽参数指定用于描边路径的线条厚度。它应该是一个非负数，以用户空间单位表示；描边路径意味着绘制所有在用户空间中与路径垂直距离小于或等于线宽一半的点。在设备空间中产生的效果取决于描边路径时当前变换矩阵（CTM）。如果CTM指定在水平和垂直方向上按不同比例缩放，则设备空间中描边线条的厚度应根据其方向变化。实际达到的线宽可能与请求的宽度相差多达2个设备像素，这取决于线条相对于像素网格的位置。可以使用自动描边调整来确保统一的线宽；见<a href="../../c10/s6/#1065-自动描边调整">10.6.5</a>，“自动描边调整”。</p>
+<p>线宽为0应表示在设备分辨率下可以渲染的最细线条：1个设备像素宽。然而，一些设备无法重现1像素的线条，在高分辨率设备上，它们几乎不可见。由于渲染这种零宽度线条的结果与设备相关，因此不应使用。    </p>
+</div>
+<div class="tabbed-block">
+<p>The <em>line width</em> parameter specifies the thickness of the line used to stroke a path. It shall be a non-negative number expressed in user space units; stroking a path shall entail painting all points whose perpendicular distance from the path in user space is less than or equal to half the line width. The effect produced in device space depends on the current transformation matrix (CTM) in effect at the time the path is stroked. If the CTM specifies scaling by different factors in the horizontal and vertical dimensions, the thickness of stroked lines in device space shall vary according to their orientation. The actual line width achieved can differ from the requested width by as much as 2 device pixels, depending on the positions of lines with respect to the pixel grid. Automatic stroke adjustment may be used to ensure uniform line width; see <a href="../../c10/s6/#1065-自动描边调整">10.6.5</a>, "Automatic Stroke Adjustment".</p>
+<p>A line width of 0 shall denote the thinnest line that can be rendered at device resolution: 1 device pixel wide. However, some devices cannot reproduce 1-pixel lines, and on high-resolution devices, they are nearly invisible. Since the results of rendering such zero-width lines are device-dependent, they should not be used.</p>
+</div>
+</div>
+</div>
+<h3 id="8433-线帽样式">8.4.3.3 线帽样式<a class="headerlink" href="#8433-线帽样式" title="Permanent link">&para;</a></h3>
+<p><strong>8.4.3.3 Line Cap Style</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>线头样式参数指定在描边时用于开放子路径端点（以及虚线，如果有的话）的形状。<a href="#table54">表54</a>显示了可能的值。</p>
+<p><table id="table54" markdown="span">
+    <caption><strong>Table 54 – Line Cap Styles</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Style</strong></th>
+            <th><strong>Appearance</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td><a class="glightbox" href="../imgs/t54-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t54-1.png" /></a></td>
+            <td><em>平头</em>。描边应在路径端点处被截平。不应有超出路径末端的投影。
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a class="glightbox" href="../imgs/t54-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t54-2.png" /></a></td>
+            <td><em>圆头</em>。应绘制一个直径等于线宽的半圆形弧，并将其填充。
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a class="glightbox" href="../imgs/t54-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t54-3.png" /></a></td>
+            <td><em>延长平头</em>。描边应超过路径末端，延伸的距离等于线宽的一半，并被截平。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>The <em>line cap style</em> shall specify the shape that shall be used at the ends of open subpaths (and dashes, if any) when they are stroked. <a href="#table54">Table 54</a> shows the possible values.</p>
+<p><table id="table54" markdown="span">
+    <caption><strong>Table 54 – Line Cap Styles</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Style</strong></th>
+            <th><strong>Appearance</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td><a class="glightbox" href="../imgs/t54-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t54-1.png" /></a></td>
+            <td><em>Butt cap</em>. The stroke shall be squared off at the endpoint of the path. There shall be no projection beyond the end of the path.
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a class="glightbox" href="../imgs/t54-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t54-2.png" /></a></td>
+            <td><em>Round cap</em>. A semicircular arc with a diameter equal to the line width shall be drawn around the endpoint and shall be filled in.
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a class="glightbox" href="../imgs/t54-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t54-3.png" /></a></td>
+            <td><em>Projecting square cap</em>. The stroke shall continue beyond the endpoint of the path for a distance equal to half the line width and shall be squared off.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="8434-线连接样式">8.4.3.4 线连接样式<a class="headerlink" href="#8434-线连接样式" title="Permanent link">&para;</a></h3>
+<p><strong>8.4.3.4 Line Join Style</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>线接样式参数指定在描边路径的角上使用的形状。<a href="#table55">表55</a>显示了可能的值。线接样式仅在路径的连续段以角度连接的点上才有意义；偶然相遇或相交的段将不进行特殊处理。</p>
+<p><table id="table55" markdown="span">
+    <caption><strong>Table 55 – Line Join Styles</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Style</strong></th>
+            <th><strong>Appearance</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td><a class="glightbox" href="../imgs/t55-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t55-1.png" /></a></td>
+            <td><em>斜接</em>。两个段的描边的外边缘应延伸，直到它们以一个角度相遇，就像在画框中一样。如果段以过于尖锐的角度相遇（由斜接限制参数定义——见<a href="#8435-斜接限制">8.4.3.5</a>，"斜接限制"），则应使用斜面接代替。
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a class="glightbox" href="../imgs/t55-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t55-2.png" /></a></td>
+            <td><em>圆接</em>。应绘制一个直径等于线宽的圆弧，围绕两个段相遇的点，连接两个段的描边的外边缘。这个扇形图形将被填充，产生一个圆角。
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a class="glightbox" href="../imgs/t55-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t55-3.png" /></a></td>
+            <td><em>斜面接</em>。两个段应以平头（见<a href="#8433-线帽样式">8.4.3.3</a>，"线头样式"）结束，并且由段的末端产生的缺口应被一个三角形填充。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>The <em>line join style</em> shall specify the shape to be used at the corners of paths that are stroked. Table 55 shows the possible values. Join styles shall be significant only at points where consecutive segments of a path connect at an angle; segments that meet or intersect fortuitously shall receive no special treatment.</p>
+<p><table id="table55" markdown="span">
+    <caption><strong>Table 55 – Line Join Styles</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Style</strong></th>
+            <th><strong>Appearance</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td><a class="glightbox" href="../imgs/t55-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t55-1.png" /></a></td>
+            <td><em>Miter join</em>. The outer edges of the strokes for the two segments shall be extended until they meet at an angle, as in a picture frame. If the segments meet at too sharp an angle (as defined by the miter limit parameter—see <a href="#8435-斜接限制">8.4.3.5</a>, "Miter Limit"), a bevel join shall be used instead.
+            </td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a class="glightbox" href="../imgs/t55-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t55-2.png" /></a></td>
+            <td><em>Round join</em>. An arc of a circle with a diameter equal to the line width shall be drawn around the point where the two segments meet, connecting the outer edges of the strokes for the two segments. This pieslice-shaped figure shall be filled in, producing a rounded corner.
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a class="glightbox" href="../imgs/t55-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t55-3.png" /></a></td>
+            <td><em>Bevel join</em>. The two segments shall be finished with butt caps (see <a href="#8433-线帽样式">8.4.3.3</a>, "Line Cap Style") and the resulting notch beyond the ends of the segments shall be filled with a triangle.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="8435-斜接限制">8.4.3.5 斜接限制<a class="headerlink" href="#8435-斜接限制" title="Permanent link">&para;</a></h3>
+<p><strong>8.4.3.5 Miter Limit</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>当两条线段以锐角相交，并且指定了斜接连接作为线连接样式时，斜接可能会延伸到超过路径描边线宽的长度。斜接限制将对斜接长度与线宽的比率施加最大值（见<a href="../../a12/">附录 L</a>中的图15）。当超出限制时，连接将从斜接转换为斜切。</p>
+<p>斜接长度与线宽的比率与用户空间中线段之间的角度 <span class="arithmatex">\(\varphi\)</span> 直接相关，其公式如下：</p>
+<div class="arithmatex">\[\frac{miterLength}{lineWidth} = \frac{1}{\sin\left ( \frac{\varphi }{2} \right ) }\]</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>斜接限制为1.414时，对于 j 小于90度的角，会将斜接转换为斜切；限制为2.0时，对于 j 小于60度的角，会进行转换；限制为10.0时，对于 j 小于大约11.5度的角，会进行转换。</p>
+<p><a class="glightbox" href="../imgs/f15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f15.png" /></a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>When two line segments meet at a sharp angle and mitered joins have been specified as the line join style, it is possible for the miter to extend far beyond the thickness of the line stroking the path. The miter limit shall impose a maximum on the ratio of the miter length to the line width (see Figure 15 in <a href="../../a12/">Annex L</a>). When the limit is exceeded, the join is converted from a miter to a bevel.</p>
+<p>The ratio of miter length to line width is directly related to the angle j between the segments in user space by the following formula:</p>
+<div class="arithmatex">\[\frac{miterLength}{lineWidth} = \frac{1}{\sin\left ( \frac{\varphi }{2} \right ) }\]</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>A miter limit of 1.414 converts miters to bevels for j less than 90 degrees, a limit of 2.0 converts them for j less than 60 degrees, and a limit of 10.0 converts them for j less than approximately 11.5 degrees.</p>
+<p><a class="glightbox" href="../imgs/f15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f15.png" /></a></p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="8436-虚线样式">8.4.3.6 虚线样式<a class="headerlink" href="#8436-虚线样式" title="Permanent link">&para;</a></h3>
+<p><strong>8.4.3.6 Line Dash Pattern</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><em>虚线模式</em>应控制用于描边路径的虚线和间隙的模式。它应由一个<em>虚线数组</em>和一个<em>虚线相位</em>来指定。虚线数组的元素应为数字，这些数字指定交替虚线和间隙的长度；这些数字应非负且不全部为零。虚线相位应指定从虚线模式的哪个距离开始虚线。虚线数组和虚线相位的元素都应以用户空间单位表示。</p>
+<p>在开始描边路径之前，应循环遍历虚线数组，累加虚线和间隙的长度。当累积长度等于由虚线相位指定的值时，应开始描边路径，并从该点开始循环使用虚线数组。表56显示了虚线模式的示例。从表中可以看出，空的虚线数组和零相位可以用来将虚线模式恢复为实线。</p>
+<p><table id="table56" markdown="span">
+    <caption><strong>Table 56 – 虚线模式(图案)示例</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Dash Array and Phase</strong></th>
+            <th><strong>Appearance</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>[] 0</td>
+            <td><a class="glightbox" href="../imgs/t56-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-1.png" /></a></td>
+            <td>No dash; solid, unbroken lines
+            </td>
+        </tr>
+        <tr>
+            <td>[3] 0</td>
+            <td><a class="glightbox" href="../imgs/t56-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-2.png" /></a></td>
+            <td>3 units on, 3 units off, …
+            </td>
+        </tr>
+        <tr>
+            <td>[2] 1</td>
+            <td><a class="glightbox" href="../imgs/t56-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-3.png" /></a></td>
+            <td>1 on, 2 off, 2 on, 2 off, …
+            </td>
+        </tr>
+        <tr>
+            <td>[2 1] 0</td>
+            <td><a class="glightbox" href="../imgs/t56-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-4.png" /></a></td>
+            <td>2 on, 1 off, 2 on, 1 off, …
+            </td>
+        </tr>
+        <tr>
+            <td>[3 5] 6</td>
+            <td><a class="glightbox" href="../imgs/t56-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-5.png" /></a></td>
+            <td>2 off, 3 on, 5 off, 3 on, 5 off, …
+            </td>
+        </tr>
+        <tr>
+            <td>[2 3] 11</td>
+            <td><a class="glightbox" href="../imgs/t56-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-6.png" /></a></td>
+            <td>1 on, 3 off, 2 on, 3 off, 2 on, …
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>虚线应该像实线一样沿着曲线和角落包裹。每个虚线段的末端应按照当前的线帽样式处理，虚线内的角落应按照当前的线连接样式处理。描边操作不会采取措施将虚线模式与路径的特征协调起来；它只是简单地沿着路径按照虚线数组定义的模式分配虚线和间隙。</p>
+<p>当描边一个由多个子路径组成的路径时，每个子路径应独立处理——即，在每个子路径的开始处重新启动虚线模式，并重新应用虚线相位。</p>
+</div>
+<div class="tabbed-block">
+<p>The <em>line dash pattern</em> shall control the pattern of dashes and gaps used to stroke paths. It shall be specified by a <em>dash array</em> and a <em>dash phase</em>. The dash array’s elements shall be numbers that specify the lengths of alternating dashes and gaps; the numbers shall be nonnegative and not all zero. The dash phase shall specify the distance into the dash pattern at which to start the dash. The elements of both the dash array and the dash phase shall be expressed in user space units.</p>
+<p>Before beginning to stroke a path, the dash array shall be cycled through, adding up the lengths of dashes and gaps. When the accumulated length equals the value specified by the dash phase, stroking of the path shall begin, and the dash array shall be used cyclically from that point onward. Table 56 shows examples of line dash patterns. As can be seen from the table, an empty dash array and zero phase can be used to restore the dash pattern to a solid line.</p>
+<p><table id="table56" markdown="span">
+    <caption><strong>Table 56 – Examples of Line Dash Patterns</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Dash Array and Phase</strong></th>
+            <th><strong>Appearance</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>[] 0</td>
+            <td><a class="glightbox" href="../imgs/t56-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-1.png" /></a></td>
+            <td>No dash; solid, unbroken lines
+            </td>
+        </tr>
+        <tr>
+            <td>[3] 0</td>
+            <td><a class="glightbox" href="../imgs/t56-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-2.png" /></a></td>
+            <td>3 units on, 3 units off, …
+            </td>
+        </tr>
+        <tr>
+            <td>[2] 1</td>
+            <td><a class="glightbox" href="../imgs/t56-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-3.png" /></a></td>
+            <td>1 on, 2 off, 2 on, 2 off, …
+            </td>
+        </tr>
+        <tr>
+            <td>[2 1] 0</td>
+            <td><a class="glightbox" href="../imgs/t56-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-4.png" /></a></td>
+            <td>2 on, 1 off, 2 on, 1 off, …
+            </td>
+        </tr>
+        <tr>
+            <td>[3 5] 6</td>
+            <td><a class="glightbox" href="../imgs/t56-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-5.png" /></a></td>
+            <td>2 off, 3 on, 5 off, 3 on, 5 off, …
+            </td>
+        </tr>
+        <tr>
+            <td>[2 3] 11</td>
+            <td><a class="glightbox" href="../imgs/t56-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/t56-6.png" /></a></td>
+            <td>1 on, 3 off, 2 on, 3 off, 2 on, …
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Dashed lines shall wrap around curves and corners just as solid stroked lines do. The ends of each dash shall be treated with the current line cap style, and corners within dashes shall be treated with the current line join style. A stroking operation shall take no measures to coordinate the dash pattern with features of the path; it simply shall dispense dashes and gaps along the path in the pattern defined by the dash array.</p>
+<p>When a path consisting of several subpaths is stroked, each subpath shall be treated independently—that is, the dash pattern shall be restarted and the dash phase shall be reapplied to it at the beginning of each subpath.</p>
+</div>
+</div>
+</div>
+<h2 id="844-图形状态操作符">8.4.4 图形状态操作符<a class="headerlink" href="#844-图形状态操作符" title="Permanent link">&para;</a></h2>
+<p><strong>8.4.4 Graphics State Operators</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a href="#table57">表57</a> 显示了设置图形状态中参数值的操作符。（另见表74中列出的颜色操作符和<a href="../../c9/s3/#table105">表105</a>中的文本状态操作符。）</p>
+<p><table id="table57" markdown="span">
+    <caption><strong>Table 57 – 图形状态参数的操作符</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>—</td>
+            <td><strong>q</strong></td>
+            <td>将当前图形状态保存到图形状态栈上（见<a href="./#842-图形状态栈">8.4.2</a>，“图形状态栈”）。
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>Q</strong></td>
+            <td>通过从栈中移除最近保存的状态并使其成为当前状态来恢复图形状态（见<a href="./#842-图形状态栈">8.4.2</a>，“图形状态栈”）。
+            </td>
+        </tr>
+        <tr>
+            <td>a b c d e f</td>
+            <td><strong>cm</strong></td>
+            <td>通过串联指定的矩阵来修改当前变换矩阵（CTM）（见<a href="../s3/#832-坐标空间">8.3.2</a>，“坐标空间”）。尽管操作数指定了一个矩阵，但它们应作为六个独立的数字书写，而不是作为数组。
+            </td>
+        </tr>
+        <tr>
+            <td>lineWidth</td>
+            <td><strong>w</strong></td>
+            <td>在图形状态中设置线宽（见<a href="#8432-线宽">8.4.3.2</a>，“线宽”）。
+            </td>
+        </tr>
+        <tr>
+            <td>lineCap</td>
+            <td><strong>J</strong></td>
+            <td>在图形状态中设置线帽样式（见<a href="#8433-线帽样式">8.4.3.3</a>，“线帽样式”）。
+            </td>
+        </tr>
+        <tr>
+            <td>lineJoin</td>
+            <td><strong>j</strong></td>
+            <td>在图形状态中设置线连接样式（见<a href="#8434-线连接样式">8.4.3.4</a>，“线连接样式”）。
+            </td>
+        </tr>
+        <tr>
+            <td>miterLimit</td>
+            <td><strong>M</strong></td>
+            <td>在图形状态中设置斜接限制（见<a href="#8435-斜接限制">8.4.3.5</a>，“斜接限制”）。
+            </td>
+        </tr>
+        <tr>
+            <td>dashArray dashPhase</td>
+            <td><strong>d</strong></td>
+            <td>在图形状态中设置虚线模式（见<a href="#8436-虚线样式">8.4.3.6</a>，“虚线模式”）。
+            </td>
+        </tr>
+        <tr>
+            <td>intent</td>
+            <td><strong>ri</strong></td>
+            <td>(PDF 1.1) 在图形状态中设置颜色渲染意图（见<a href="../s6/#8658-渲染目标">8.6.5.8</a>，“渲染意图”）。
+            </td>
+        </tr>
+        <tr>
+            <td>flatness</td>
+            <td><strong>i</strong></td>
+            <td>设置图形状态中的平坦容差（见<a href="../../c10/s6/#1062-平整度公差">10.6.2</a>，“平坦容差”）。<em>flatness</em>是一个0到100范围内的数字；值为0应指定输出设备的默认平坦容差。
+            </td>
+        </tr>
+        <tr>
+            <td>dictName</td>
+            <td><strong>gs</strong></td>
+            <td>(PDF 1.2) 在图形状态中设置指定的参数。<em>dictName</em>应是当前资源字典中<strong>ExtGState</strong>子字典的图形状态参数字典的名称（见下一个子条款）。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p><a href="#table57">Table 57</a> shows the operators that set the values of parameters in the graphics state. (See also the colour operators listed in Table 74 and the text state operators in <a href="../../c9/s3/#table105">Table 105</a>.)</p>
+<p><table id="table57" markdown="span">
+    <caption><strong>Table 57 – Graphics State Operators</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>—</td>
+            <td><strong>q</strong></td>
+            <td>Save the current graphics state on the graphics state stack (see <a href="./#842-图形状态栈">8.4.2</a>, "Graphics State Stack").
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>Q</strong></td>
+            <td>Restore the graphics state by removing the most recently saved state from the stack and making it the current state (see <a href="./#842-图形状态栈">8.4.2</a>, "Graphics State Stack").
+            </td>
+        </tr>
+        <tr>
+            <td>a b c d e f</td>
+            <td><strong>cm</strong></td>
+            <td>Modify the current transformation matrix (CTM) by concatenating the specified matrix (see <a href="../s3/#832-坐标空间">8.3.2</a>, "Coordinate Spaces"). Although the operands specify a matrix, they shall be written as six separate numbers, not as an array.
+            </td>
+        </tr>
+        <tr>
+            <td>lineWidth</td>
+            <td><strong>w</strong></td>
+            <td>Set the line width in the graphics state (see <a href="#8432-线宽">8.4.3.2</a>, "Line Width").
+            </td>
+        </tr>
+        <tr>
+            <td>lineCap</td>
+            <td><strong>J</strong></td>
+            <td>Set the line cap style in the graphics state (see <a href="#8433-线帽样式">8.4.3.3</a>, "Line Cap Style").
+            </td>
+        </tr>
+        <tr>
+            <td>lineJoin</td>
+            <td><strong>j</strong></td>
+            <td>Set the line join style in the graphics state (see <a href="#8434-线连接样式">8.4.3.4</a>, "Line Join Style").
+            </td>
+        </tr>
+        <tr>
+            <td>miterLimit</td>
+            <td><strong>M</strong></td>
+            <td>Set the miter limit in the graphics state (see <a href="#8435-斜接限制">8.4.3.5</a>, "Miter Limit").
+            </td>
+        </tr>
+        <tr>
+            <td>dashArray dashPhase</td>
+            <td><strong>d</strong></td>
+            <td>Set the line dash pattern in the graphics state (see <a href="#8436-虚线样式">8.4.3.6</a>, "Line Dash Pattern").
+            </td>
+        </tr>
+        <tr>
+            <td>intent</td>
+            <td><strong>ri</strong></td>
+            <td>(PDF 1.1) Set the colour rendering intent in the graphics state (see <a href="../s6/#8658-渲染目标">8.6.5.8</a>, "Rendering Intents").
+            </td>
+        </tr>
+        <tr>
+            <td>flatness</td>
+            <td><strong>i</strong></td>
+            <td>Set the flatness tolerance in the graphics state (see <a href="../../c10/s6/#1062-平整度公差">10.6.2</a>, "Flatness Tolerance"). <em>flatness</em> is a number in the range 0 to 100; a value of 0 shall specify the output device’s default flatness tolerance.
+            </td>
+        </tr>
+        <tr>
+            <td>dictName</td>
+            <td><strong>gs</strong></td>
+            <td>(PDF 1.2) Set the specified parameters in the graphics state. <em>dictName</em> shall be the name of a graphics state parameter dictionary in the <strong>ExtGState</strong> subdictionary of the current resource dictionary (see the next sub-clause).
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h2 id="845-图形状态参数字典">8.4.5 图形状态参数字典<a class="headerlink" href="#845-图形状态参数字典" title="Permanent link">&para;</a></h2>
+<p><strong>8.4.5 Graphics State Parameter Dictionaries</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>虽然图形状态中的一些参数可以通过表57中显示的单独操作符设置，但其他一些参数则不能。后者只能通过通用图形状态操作符 <strong>gs</strong> (PDF 1.2) 来设置。提供给此操作符的操作数应是 <em>图形状态参数字典</em> 的名称，其内容指定了一个或多个图形状态参数的值。该名称应在当前资源字典的 <strong>ExtGState</strong> 子字典中查找。</p>
+<p>图形状态参数字典也由类型2图案使用，这些图案没有内容流，无法在其中调用图形状态操作符（见<a href="../s7/#874-底纹图案">8.7.4</a>，“着色图案”）。</p>
+<p>参数字典中的每个条目都应指定单个图形状态参数的值，如<a href="#table58">表58</a>所示。并非每次调用 <strong>gs</strong> 操作符时都需要所有条目；所提供的参数字典可以包括任何组合的参数条目。<strong>gs</strong> 的结果将是累积的；在之前的调用中建立的参数值将持续有效，直到被明确覆盖。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>请注意，一些参数同时出现在<a href="#table57">表57</a>和<a href="#table58">表58</a>中；这些参数既可以使用单独的图形状态操作符设置，也可以使用 <strong>gs</strong> 设置。预计对图形状态的任何未来扩展将通过向图形状态参数字典添加新条目来实现，而不是通过引入新的图形状态操作符。</p>
+</div>
+<p><table id="table58" markdown="span">
+    <caption><strong>Table 58 – 图形状态参数字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td> （可选）此字典描述的PDF对象的类型；对于图形状态参数字典，应为<strong>ExtGState</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>LW</strong></td>
+            <td>number</td>
+            <td>（可选；PDF 1.3）线宽（见<a href="#8432-线宽">8.4.3.2</a>，“线宽”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>LC</strong></td>
+            <td>integer</td>
+            <td>（可选；PDF 1.3）线帽样式（见<a href="#8433-线帽样式">8.4.3.3</a>，“线帽样式”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>LJ</strong></td>
+            <td>integer</td>
+            <td>（可选；PDF 1.3）线连接样式（见<a href="#8434-线连接样式">8.4.3.4</a>，“线连接样式”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ML</strong></td>
+            <td>number</td>
+            <td>（可选；PDF 1.3）斜接限制（见<a href="#8435-斜接限制">8.4.3.5</a>，“斜接限制”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>array</td>
+            <td>（可选；PDF 1.3）虚线模式，表示为形式为[<em>dashArray</em> <em>dashPhase</em>]的数组，其中<strong>dashArray</strong>本身应为数组，<em>dashPhase</em>应为整数（见<a href="#8436-虚线样式">8.4.3.6</a>，“虚线模式”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>RI</strong></td>
+            <td>name</td>
+            <td>（可选；PDF 1.3）渲染意图的名称（见<a href="../s6/#8658-渲染目标">8.6.5.8</a>，“渲染意图”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OP</strong></td>
+            <td>boolean</td>
+            <td>（可选）指定是否应用过印（见<a href="../s6/#867-套印控制">8.6.7</a>，“过印控制”）。在PDF 1.2及更早版本中，有一个单一的过印参数适用于所有绘画操作。从PDF 1.3开始，应有两个单独的过印参数：一个用于描边，另一个用于所有其他绘画操作。指定<strong>OP</strong>条目将设置这两个参数，除非在同一图形状态参数字典中也有一个<strong>op</strong>条目，在这种情况下，<strong>OP</strong>条目将只设置描边的过印参数。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>op</strong></td>
+            <td>boolean</td>
+            <td>（可选；PDF 1.3）指定是否对描边之外的其他绘画操作应用过印（见<a href="../s6/#867-套印控制">8.6.7</a>，“过印控制”）。如果此条目不存在，则<strong>OP</strong>条目（如果有）也将设置此参数。 
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OPM</strong></td>
+            <td>integer</td>
+            <td>（可选；PDF 1.3）过印模式（见<a href="../s6/#867-套印控制">8.6.7</a>，“过印控制”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Font</strong></td>
+            <td>array</td>
+            <td>（可选；PDF 1.3）形式为[<em>font</em> <em>size</em>]的数组，其中<em>font</em>应是对字体字典的间接引用，<em>size</em>应是以文本空间单位表示的数字。这两个对象对应于<strong>Tf</strong>操作符的操作数（见<a href="../../c9/s3/">9.3</a>，“文本状态参数和操作符”）；但是，第一个操作数应是间接对象引用，而不是资源名称。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>BG</strong></td>
+            <td>function</td>
+            <td>（可选）黑生成函数，将区间[0.0 1.0]映射到区间[0.0 1.0]（见<a href="../../c10/s3/#1034-从-devicergb-到-devicecmyk-的转换">10.3.4</a>，“从DeviceRGB转换到DeviceCMYK”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>BG2</strong></td>
+            <td>function or name</td>
+            <td>（可选；PDF 1.3）与<strong>BG</strong>相同，但值也可以是名称Default，表示页面开始时生效的黑生成函数。如果在同一图形状态参数字典中同时存在<strong>BG</strong>和<strong>BG2</strong>，则<strong>BG2</strong>优先。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>UCR</strong></td>
+            <td>function</td>
+            <td>（可选）底色去除函数，将区间[0.0 1.0]映射到区间[−1.0 1.0]（见<a href="../../c10/s3/#1034-从-devicergb-到-devicecmyk-的转换">10.3.4</a>，“从DeviceRGB转换到DeviceCMYK”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>UCR2</strong></td>
+            <td>function or name</td>
+            <td>（可选；PDF 1.3）与<strong>UCR</strong>相同，但值也可以是名称Default，表示页面开始时生效的底色去除函数。如果在同一图形状态参数字典中同时存在<strong>UCR</strong>和<strong>UCR2</strong>，则<strong>UCR2</strong>优先。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>TR</strong></td>
+            <td>function, array, or name</td>
+            <td>（可选）传递函数，将区间[0.0 1.0]映射到区间[0.0 1.0]（见[[10.4]]，“传递函数”）。值应是单个函数（适用于所有工艺色料）或四个函数的数组（分别适用于各个工艺色料）。名称<strong>Identity</strong>可用于表示恒等函数。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>TR2</strong></td>
+            <td>function, array, or name</td>
+            <td>（可选；PDF 1.3）与<strong>TR</strong>相同，但值也可以是名称Default，表示页面开始时生效的传递函数。如果在同一图形状态参数字典中同时存在<strong>TR</strong>和<strong>TR2</strong>，则<strong>TR2</strong>优先。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>HT</strong></td>
+            <td>dictionary, stream, or name</td>
+            <td>（可选）半色调字典或流（见<a href="../../c10/s5/">10.5</a>，“半色调”）或名称Default，表示页面开始时生效的半色调。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>FL</strong></td>
+            <td>number</td>
+            <td>（可选；PDF 1.3）平坦容差（见<a href="../../c10/s6/#1062-平整度公差">10.6.2</a>，“平坦容差”）。 
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SM</strong></td>
+            <td>number</td>
+            <td>（可选；PDF 1.3）平滑容差（见<a href="../../c10/s6/#1063-平滑度公差">10.6.3</a>，“平滑容差”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SA</strong></td>
+            <td>boolean</td>
+            <td>（可选）指定是否应用自动描边调整（见<a href="../../c10/s6/#1065-自动描边调整">10.6.5</a>，“自动描边调整”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>BM</strong></td>
+            <td>name or array</td>
+            <td>（可选；PDF 1.4）在透明成像模型中使用的当前混合模式（见<a href="../../c11/s3/#1135-混合模式">11.3.5</a>，“混合模式”和<a href="../../c11/s6/#1163-指定混合色彩空间和混合模式">11.6.3</a>，“指定混合颜色空间和混合模式”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SMask</strong></td>
+            <td>dictionary or name</td>
+            <td>（可选；PDF 1.4）当前软遮罩，指定在透明成像模型中使用的遮罩形状或遮罩不透明度值（见<a href="../../c11/s3/#11372-源形状和不透明度">11.3.7.2</a>，“源形状和不透明度”和<a href="../../c11/s6/#11643-蒙版形状和不透明度">11.6.4.3</a>，“遮罩形状和不透明度”）。<br/>尽管当前软遮罩有时被称为“软剪辑”，但使用<strong>gs</strong>操作符更改它将完全用新值替换旧值，而不是像当前剪辑路径参数那样将两个相交（见<a href="../s5/#854-剪切路径操作符">8.5.4</a>，“剪辑路径操作符”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>CA</strong></td>
+            <td>number</td>
+            <td>（可选；PDF 1.4）当前描边的alpha常数，指定在透明成像模型中用于描边操作的常数形状或常数不透明度值（见<a href="../../c11/s3/#11372-源形状和不透明度">11.3.7.2</a>，“源形状和不透明度”和<a href="../../c11/s6/#11644-恒定形状和不透明度">11.6.4.4</a>，“常数形状和不透明度”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ca</strong></td>
+            <td>number</td>
+            <td>（可选；PDF 1.4）与<strong>CA</strong>相同，但用于非描边操作。 
+            </td>
+        </tr>
+        <tr>
+            <td><strong>AIS</strong></td>
+            <td>boolean</td>
+            <td>（可选；PDF 1.4）alpha源标志（“alpha是形状”），指定当前软遮罩和alpha常数是否被解释为形状值（<strong>true</strong>）或不透明度值（<strong>false</strong>）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>TK</strong></td>
+            <td>boolean</td>
+            <td>（可选；PDF 1.4）文本击穿标志，将确定透明成像模型中文本对象内重叠字形的行为（见<a href="../../c9/s3/#938-文本镂空切割">9.3.8</a>，“文本击穿”）。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>以下是两个图形状态参数字典的示例。在第一个字典中，开启了自动描边调整，并包含了一个反转其值的传递函数，<span class="arithmatex">\(f(x) = 1 - x\)</span>。在第二个字典中，关闭了过印功能，并包含了一个抛物线传递函数，<span class="arithmatex">\(f(x) = (2x - 1)^2\)</span>，以及21个样本值。传递函数的定义域，[0.0 1.0]，被映射到[0 20]，样本值的范围，[0 255]，被映射到传递函数的范围，[0.0 1.0]。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>10 0 obj              <span style="color: #3D7B7B; font-style: italic">% Page object</span>
+    &lt;&lt; /Type /Page
+       /Parent 5 0 R
+       /Resources 20 0 R
+       /Contents 40 0 R
+    &gt;&gt;
+endobj 
+
+20 0 obj              <span style="color: #3D7B7B; font-style: italic">% Resource dictionary for page </span>
+    &lt;&lt; /ProcSet [ /PDF /Text ]
+       /Font &lt;&lt; /F1 25 0 R &gt;&gt;
+                /ExtGState &lt;&lt; /GS1 30 0 R
+                /GS2 35 0 R
+       &gt;&gt;
+    &gt;&gt;
+endobj
+
+30 0 obj            <span style="color: #3D7B7B; font-style: italic">% First graphics state parameter dictionary</span>
+    &lt;&lt; /Type /ExtGState
+       /SA true
+       /TR 31 0 R
+    &gt;&gt;
+endobj
+
+31 0 obj            <span style="color: #3D7B7B; font-style: italic">% First transfer function</span>
+    &lt;&lt; /FunctionType 0
+       /Domain [ 0.0 1.0 ]
+       /Range [ 0.0 1.0 ]
+       /Size 2
+       /BitsPerSample 8
+       /Length 7
+       /Filter /ASCIIHexDecode
+    &gt;&gt;
+
+stream
+01 00 &gt;
+endstream
+endobj
+
+35 0 obj            <span style="color: #3D7B7B; font-style: italic">% Second graphics state parameter dictionary</span>
+    &lt;&lt; /Type /ExtGState
+       /OP false
+       /TR 36 0 R
+    &gt;&gt;
+endobj
+
+36 0 obj            <span style="color: #3D7B7B; font-style: italic">% Second transfer function</span>
+    &lt;&lt; /FunctionType 0
+       /Domain [ 0.0 1.0 ]
+       /Range [ 0.0 1.0 ]
+       /Size 21
+       /BitsPerSample 8
+       /Length 63
+       /Filter /ASCIIHexDecode
+    &gt;&gt;
+stream
+FF CE A3 7C 5B 3F 28 16 0A 02 00 02 0A 16 28 3F 5B 7C A3 CE FF &gt;
+endstream
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>While some parameters in the graphics state may be set with individual operators, as shown in Table 57, others may not. The latter may only be set with the generic graphics state operator <strong>gs</strong> (PDF 1.2). The operand supplied to this operator shall be the name of a <em>graphics state parameter dictionary</em> whose contents specify the values of one or more graphics state parameters. This name shall be looked up in the <strong>ExtGState</strong> subdictionary of the current resource dictionary.</p>
+<p>The graphics state parameter dictionary is also used by type 2 patterns, which do not have a content stream in which the graphics state operators could be invoked (see <a href="../s7/#874-底纹图案">8.7.4</a>, "Shading Patterns").</p>
+<p>Each entry in the parameter dictionary shall specify the value of an individual graphics state parameter, as shown in <a href="#table58">Table 58</a>. All entries need not be present for every invocation of the <strong>gs</strong> operator; the supplied parameter dictionary may include any combination of parameter entries. The results of <strong>gs</strong> shall be cumulative; parameter values established in previous invocations persist until explicitly overridden.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Note that some parameters appear in both <a href="#table57">Table 57</a> and <a href="#table58">Table 58</a>; these parameters can be set either with individual graphics state operators or with <strong>gs</strong>. It is expected that any future extensions to the graphics state will be implemented by adding new entries to the graphics state parameter dictionary rather than by introducing new graphics state operators.</p>
+</div>
+<p><table id="table58" markdown="span">
+    <caption><strong>Table 58 – Entries in a Graphics State Parameter Dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(<em>Optional</em>) The type of PDF object that this dictionary describes; shall be <strong>ExtGState</strong> for a graphics state parameter dictionary.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>LW</strong></td>
+            <td>number</td>
+            <td>(Optional; PDF 1.3) The line width (see <a href="#8432-线宽">8.4.3.2</a>, "Line Width").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>LC</strong></td>
+            <td>integer</td>
+            <td>(Optional; PDF 1.3) The line cap style (see <a href="#8433-线帽样式">8.4.3.3</a>, "Line Cap Style").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>LJ</strong></td>
+            <td>integer</td>
+            <td>(Optional; PDF 1.3) The line join style (see <a href="#8434-线连接样式">8.4.3.4</a>, "Line Join Style").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ML</strong></td>
+            <td>number</td>
+            <td>(Optional; PDF 1.3) The miter limit (see <a href="#8435-斜接限制">8.4.3.5</a>, "Miter Limit").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>D</strong></td>
+            <td>array</td>
+            <td>(Optional; PDF 1.3) The line dash pattern, expressed as an array of the form [<em>dashArray</em> <em>dashPhase</em>], where <strong>dashArray shall</strong> be itself an array and dashPhase shall be an integer (see <a href="#8436-虚线样式">8.4.3.6</a>, "Line Dash Pattern").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>RI</strong></td>
+            <td>name</td>
+            <td>(Optional; PDF 1.3) The name of the rendering intent (see <a href="../s6/#8658-渲染目标">8.6.5.8</a>, "Rendering Intents").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OP</strong></td>
+            <td>boolean</td>
+            <td>(Optional) A flag specifying whether to apply overprint (see <a href="../s6/#867-套印控制">8.6.7</a>, "Overprint Control"). In PDF 1.2 and earlier, there is a single overprint parameter that applies to all painting operations. Beginning with PDF 1.3, there shall be two separate overprint parameters: one for stroking and one for all other painting operations. Specifying an <strong>OP</strong> entry shall set both parameters unless there is also an <strong>op</strong> entry in the same graphics state parameter dictionary, in which case the <strong>OP</strong> entry shall set only the overprint parameter for stroking.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>op</strong></td>
+            <td>boolean</td>
+            <td>(Optional; PDF 1.3) A flag specifying whether to apply overprint (see <a href="../s6/#867-套印控制">8.6.7</a>, "Overprint Control") for painting operations other than stroking. If this entry is absent, the OP entry, if any, shall also set this parameter.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>OPM</strong></td>
+            <td>integer</td>
+            <td>(Optional; PDF 1.3) The overprint mode (see <a href="../s6/#867-套印控制">8.6.7</a>, "Overprint Control").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Font</strong></td>
+            <td>array</td>
+            <td>(Optional; PDF 1.3) An array of the form [<em>font</em> <em>size</em>], where font shall be an indirect reference to a font dictionary and <em>size</em> shall be a number expressed in text space units. These two objects correspond to the operands of the <strong>Tf</strong> operator (see <a href="../../c9/s3/">9.3</a>, "Text State Parameters and Operators"); however, the first operand shall be an indirect object reference instead of a resource name.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>BG</strong></td>
+            <td>function</td>
+            <td>(<em>Optional</em>) The black-generation function, which maps the interval [0.0 1.0] to the interval [0.0 1.0] (see <a href="../../c10/s3/#1034-从-devicergb-到-devicecmyk-的转换">10.3.4</a>, "Conversion from DeviceRGB to DeviceCMYK").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>BG2</strong></td>
+            <td>function or name</td>
+            <td>(<em>Optional; PDF 1.3</em>) Same as <strong>BG</strong> except that the value may also be the name Default, denoting the black-generation function that was in effect at the start of the page. If both <strong>BG</strong> and <strong>BG2</strong> are present in the same graphics state parameter dictionary, <strong>BG2</strong> shall take precedence.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>UCR</strong></td>
+            <td>function</td>
+            <td>(Optional) The undercolor-removal function, which maps the interval [0.0 1.0] to the interval [−1.0 1.0] (see <a href="../../c10/s3/#1034-从-devicergb-到-devicecmyk-的转换">10.3.4</a>, "Conversion from DeviceRGB to DeviceCMYK").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>UCR2</strong></td>
+            <td>function or name</td>
+            <td>(<em>Optional; PDF 1.3</em>) Same as <strong>UCR</strong> except that the value may also be the name Default, denoting the undercolor-removal function that was in effect at the start of the page. If both <strong>UCR</strong> and <strong>UCR2</strong> are present in the same graphics state parameter dictionary, <strong>UCR2</strong> shall take precedence.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>TR</strong></td>
+            <td>function, array, or name</td>
+            <td>(<em>Optional</em>) The transfer function, which maps the interval [0.0 1.0 ] to the interval [0.0 1.0] (see [[10.4]], "Transfer Functions"). The value shall be either a single function (which applies to all process colorants) or an array of four functions (which apply to the process colorants individually). The name <strong>Identity</strong> may be used to represent the identity function.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>TR2</strong></td>
+            <td>function, array, or name</td>
+            <td>(<em>Optional; PDF 1.3</em>) Same as <strong>TR</strong> except that the value may also be the name Default, denoting the transfer function that was in effect at the start of the page. If both <strong>TR</strong> and <strong>TR2</strong> are present in the same graphics state parameter dictionary, <strong>TR2</strong> shall take precedence.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>HT</strong></td>
+            <td>dictionary, stream, or name</td>
+            <td>(<em>Optional</em>) The halftone dictionary or stream (see <a href="../../c10/s5/">10.5</a>, "Halftones") or the name Default, denoting the halftone that was in effect at the start of the page.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>FL</strong></td>
+            <td>number</td>
+            <td>(<em>Optional; PDF 1.3</em>) The flatness tolerance (see <a href="../../c10/s6/#1062-平整度公差">10.6.2</a>, "Flatness Tolerance").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SM</strong></td>
+            <td>number</td>
+            <td>(Optional; PDF 1.3) The smoothness tolerance (see <a href="../../c10/s6/#1063-平滑度公差">10.6.3</a>, "Smoothness Tolerance").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SA</strong></td>
+            <td>boolean</td>
+            <td>(Optional) A flag specifying whether to apply automatic stroke adjustment (see <a href="../../c10/s6/#1065-自动描边调整">10.6.5</a>, "Automatic Stroke Adjustment").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>BM</strong></td>
+            <td>name or array</td>
+            <td>(Optional; PDF 1.4) The current blend mode to be used in the transparent imaging model (see <a href="../../c11/s3/#1135-混合模式">11.3.5</a>, "Blend Mode" and <a href="../../c11/s6/#1163-指定混合色彩空间和混合模式">11.6.3</a>, "Specifying Blending Colour Space and Blend Mode").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>SMask</strong></td>
+            <td>dictionary or name</td>
+            <td>(Optional; PDF 1.4) The current soft mask, specifying the mask shape or mask opacity values that shall be used in the transparent imaging model (see <a href="../../c11/s3/#11372-源形状和不透明度">11.3.7.2</a>, "Source Shape and Opacity" and <a href="../../c11/s6/#11643-蒙版形状和不透明度">11.6.4.3</a>, "Mask Shape and Opacity").<br/>
+                Although the current soft mask is sometimes referred to as a “soft clip,” altering it with the <strong>gs</strong> operator completely replaces the old value with the new one, rather than intersecting the two as is done with the current clipping path parameter (see <a href="../s5/#854-剪切路径操作符">8.5.4</a>, "Clipping Path Operators").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>CA</strong></td>
+            <td>number</td>
+            <td>(Optional; PDF 1.4) The current stroking alpha constant, specifying the constant shape or constant opacity value that shall be used for stroking operations in the transparent imaging model (see <a href="../../c11/s3/#11372-源形状和不透明度">11.3.7.2</a>, "Source Shape and Opacity" and <a href="../../c11/s6/#11644-恒定形状和不透明度">11.6.4.4</a>, "Constant Shape and Opacity").
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ca</strong></td>
+            <td>number</td>
+            <td>(Optional; PDF 1.4) Same as <strong>CA</strong>, but for nonstroking operations.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>AIS</strong></td>
+            <td>boolean</td>
+            <td>(Optional; PDF 1.4) The alpha source flag (“alpha is shape”), specifying whether the current soft mask and alpha constant shall be interpreted as shape values (<strong>true</strong>) or opacity values (<strong>false</strong>).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>TK</strong></td>
+            <td>boolean</td>
+            <td>(Optional; PDF 1.4) The text knockout flag, shall determine the behaviour of overlapping glyphs within a text object in the transparent imaging model (see <a href="../../c9/s3/#938-文本镂空切割">9.3.8</a>, "Text Knockout").
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>The following shows two graphics state parameter dictionaries. In the first, automatic stroke adjustment is turned on, and the dictionary includes a transfer function that inverts its value, <span class="arithmatex">\(f(x) = 1 - x\)</span>. In the second, overprint is turned off, and the dictionary includes a parabolic transfer function, <span class="arithmatex">\(f(x) = (2x - 1)^2\)</span>, with a sample of 21 values. The domain of the transfer function, [0.0 1.0], is mapped to [0 20], and the range of the sample values, [0 255], is mapped to the range of the transfer function, [0.0 1.0].</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>10 0 obj              <span style="color: #3D7B7B; font-style: italic">% Page object</span>
+    &lt;&lt; /Type /Page
+       /Parent 5 0 R
+       /Resources 20 0 R
+       /Contents 40 0 R
+    &gt;&gt;
+endobj 
+
+20 0 obj              <span style="color: #3D7B7B; font-style: italic">% Resource dictionary for page </span>
+    &lt;&lt; /ProcSet [ /PDF /Text ]
+       /Font &lt;&lt; /F1 25 0 R &gt;&gt;
+                /ExtGState &lt;&lt; /GS1 30 0 R
+                /GS2 35 0 R
+       &gt;&gt;
+    &gt;&gt;
+endobj
+
+30 0 obj            <span style="color: #3D7B7B; font-style: italic">% First graphics state parameter dictionary</span>
+    &lt;&lt; /Type /ExtGState
+       /SA true
+       /TR 31 0 R
+    &gt;&gt;
+endobj
+
+31 0 obj            <span style="color: #3D7B7B; font-style: italic">% First transfer function</span>
+    &lt;&lt; /FunctionType 0
+       /Domain [ 0.0 1.0 ]
+       /Range [ 0.0 1.0 ]
+       /Size 2
+       /BitsPerSample 8
+       /Length 7
+       /Filter /ASCIIHexDecode
+    &gt;&gt;
+
+stream
+01 00 &gt;
+endstream
+endobj
+
+35 0 obj            <span style="color: #3D7B7B; font-style: italic">% Second graphics state parameter dictionary</span>
+    &lt;&lt; /Type /ExtGState
+       /OP false
+       /TR 36 0 R
+    &gt;&gt;
+endobj
+
+36 0 obj            <span style="color: #3D7B7B; font-style: italic">% Second transfer function</span>
+    &lt;&lt; /FunctionType 0
+       /Domain [ 0.0 1.0 ]
+       /Range [ 0.0 1.0 ]
+       /Size 21
+       /BitsPerSample 8
+       /Length 63
+       /Filter /ASCIIHexDecode
+    &gt;&gt;
+stream
+FF CE A3 7C 5B 3F 28 16 0A 02 00 02 0A 16 28 3F 5B 7C A3 CE FF &gt;
+endstream
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

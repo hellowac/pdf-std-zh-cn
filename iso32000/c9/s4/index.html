@@ -1,0 +1,2118 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s3/">
+      
+      
+        <link rel="next" href="../s5/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>9.4 文本对象 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#94-文本对象" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9.4 文本对象
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            9文本
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.2 字体的组织和使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.3 文本状态参数和操作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    9.4 文本对象
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    9.4 文本对象
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#941-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#942-文本位置操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4.2 文本位置操作
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#943-文本显示操作符" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4.3 文本显示操作符
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#944-文本空间与坐标变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4.4 文本空间与坐标变换
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.5 字体数据结构简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.6 简单字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.7 组合字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.8 字体描述符
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.9 嵌入式字体程序
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.10 文本内容提取
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#941-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#942-文本位置操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4.2 文本位置操作
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#943-文本显示操作符" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4.3 文本显示操作符
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#944-文本空间与坐标变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.4.4 文本空间与坐标变换
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="94-文本对象">9.4 文本对象<a class="headerlink" href="#94-文本对象" title="Permanent link">&para;</a></h1>
+<p><strong>Text Objects</strong></p>
+<h2 id="941-概述">9.4.1 概述<a class="headerlink" href="#941-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF <strong>文本对象</strong> (<em>text object</em>) 由一组操作符组成，这些操作符可用于<strong>显示文本字符串</strong>、<strong>移动文本位置</strong>，以及<strong>设置文本状态</strong>和<strong>某些其他参数</strong>。此外，有三个参数只能在文本对象内部指定，且不会在不同的文本对象之间<strong>持续</strong>生效：  </p>
+<ul>
+<li><span class="arithmatex">\( T_m \)</span> ：<strong>文本矩阵</strong> (<em>text matrix</em>)  </li>
+<li><span class="arithmatex">\( T_{lm} \)</span> ：<strong>文本行矩阵</strong> (<em>text line matrix</em>)  </li>
+<li><span class="arithmatex">\( T_{rm} \)</span> ：<strong>文本渲染矩阵</strong> (<em>text rendering matrix</em>)，它实际上只是一个<strong>中间计算结果</strong>，用于结合文本状态参数、文本矩阵 (<span class="arithmatex">\( T_m \)</span>) 以及当前变换矩阵的影响  </li>
+</ul>
+<p>文本对象由 <strong>BT</strong> 操作符开始，以 <strong>ET</strong> 操作符结束，如下示例所示，并在<a href="#table107">表 107</a>中进行了描述。  </p>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>BT  
+… *零个或多个文本操作符或其他允许的操作符* …  
+ET  
+</code></pre></div>
+</div>
+<p><table id="table107" markdown="span">
+    <caption><strong>表 107 – 文本对象操作符</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>操作数</strong></th>
+            <th><strong>操作符</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>—</td>
+            <td><strong>BT</strong></td>
+            <td>开始一个文本对象，将文本矩阵 <span class="arithmatex">\( T_m \)</span> 和文本行矩阵 <span class="arithmatex">\( T_{lm} \)</span> 初始化为<strong>单位矩阵</strong>。文本对象<strong>不允许嵌套</strong>；在 <strong>ET</strong> 之前不得出现第二个 <strong>BT</strong>。
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>ET</strong></td>
+            <td>结束文本对象，并<strong>丢弃</strong>文本矩阵。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><strong>文本对象中允许的操作符</strong>  </p>
+<p>文本对象中可以包含以下几类<strong>文本相关</strong>的操作符：  </p>
+<ul>
+<li><strong>文本状态操作符</strong> (<em>Text state operators</em>)，详见 <a href="../s3/">9.3</a> “文本状态参数和操作符”  </li>
+<li><strong>文本定位操作符</strong> (<em>Text-positioning operators</em>)，详见 <a href="./#942-文本位置操作">9.4.2</a> “文本定位操作符”  </li>
+<li><strong>文本显示操作符</strong> (<em>Text-showing operators</em>)，详见 <a href="./#943-文本显示操作符">9.4.3</a> “文本显示操作符”  </li>
+</ul>
+<p>上述 <strong><a href="./#942-文本位置操作">9.4.2</a></strong> 和 <strong><a href="./#943-文本显示操作符">9.4.3</a></strong> 章节还进一步提供了<strong>文本对象参数</strong>的详细信息。<br />
+此外，文本对象中还可包含<strong>一般图形状态、颜色、标记内容</strong>相关的操作符，具体内容可参考 <strong>图 9</strong>。  </p>
+<p>如果<strong>内容流</strong>不包含任何文本，则可以<strong>省略</strong> <strong><em>Text</em></strong> 过程集（参见 <a href="../../c14/s2/">14.2</a> “过程集”）。在这种情况下，内容流中不应包含任何文本操作符（包括仅用于设置文本状态的操作符），因为这些操作符都是在相同的过程集中定义的。  </p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>尽管文本对象<strong>不能静态嵌套</strong>，但仍然可以使用 <strong>Type 3 字体</strong> 来显示文本，而 <strong>Type 3 字体</strong> 的字形描述可能包含<strong>任何图形对象</strong>，包括<strong>另一个文本对象</strong>。同样，当前颜色也可能是一个<strong>平铺模式</strong>，而该模式单元格可能包含一个文本对象。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A PDF <em>text object</em> consists of operators that may show text strings, move the text position, and set text state and certain other parameters. In addition, three parameters may be specified only within a text object and shall not persist from one text object to the next:</p>
+<ul>
+<li><span class="arithmatex">\(T_{m}\)</span> , the <em>text matrix</em></li>
+<li><span class="arithmatex">\(T_{lm}\)</span> , the <em>text line matrix</em></li>
+<li><span class="arithmatex">\(T_{rm}\)</span> , the <em>text rendering matrix</em>, which is actually just an intermediate result that combines the effects of text state parameters, the text matrix (<span class="arithmatex">\(T_m\)</span> ), and the current transformation matrix</li>
+</ul>
+<p>A text object begins with the <strong>BT</strong> operator and ends with the <strong>ET</strong> operator, as shown in the Example, and
+described in <a href="#table107">Table 107</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p><strong>BT</strong>
+… <em>Zero or more text operators or other allowed operators</em> …
+<strong>ET</strong></p>
+</div>
+<p><table id="table107" markdown="span">
+    <caption><strong>Table 107 – Text object operators</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>—</td>
+            <td><strong>BT</strong></td>
+            <td>Begin a text object, initializing the text matrix, <span class="arithmatex">\(T_m\)</span> , and the text line matrix, <span class="arithmatex">\(T_{lm}\)</span> , to the identity matrix. Text objects shall not be nested; a second <strong>BT</strong> shall not appear before an <strong>ET</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>ET</strong></td>
+            <td>End a text object, discarding the text matrix.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>These specific categories of text-related operators may appear in a text object:</p>
+<ul>
+<li><em>Text state operators</em>, described in <a href="../s3/">9.3</a>, "Text State Parameters and Operators"</li>
+<li><em>Text-positioning operators</em>, described in <a href="./#942-文本位置操作">9.4.2</a>, "Text-Positioning Operators"</li>
+<li><em>Text-showing operators</em>, described in <a href="./#943-文本显示操作符">9.4.3</a>, "Text-Showing Operators"</li>
+</ul>
+<p>The latter two sub-clauses also provide further details about these text object parameters. The other operators that may appear in a text object are those related to the general graphics state, colour, and marked content, as shown in Figure 9.</p>
+<p>If a content stream does not contain any text, the <strong><em>Text</em></strong> procedure set may be omitted (see <a href="../../c14/s2/">14.2</a>, "Procedure Sets"). In those circumstances, no text operators (including operators that merely set the text state) shall be present in the content stream, since those operators are defined in the same procedure set.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Although text objects cannot be statically nested, text might be shown using a Type 3 font whose glyph descriptions include any graphics objects, including another text object. Likewise, the current colour might be a tiling pattern whose pattern cell includes a text object.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="942-文本位置操作">9.4.2 文本位置操作<a class="headerlink" href="#942-文本位置操作" title="Permanent link">&para;</a></h2>
+<p><strong>Text-Positioning Operators</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>文本空间（<em>text space</em>）是用于显示文本的坐标系统。它由<strong>文本矩阵</strong> <span class="arithmatex">\(T_m\)</span> 以及<strong>文本状态参数</strong> <span class="arithmatex">\(T_fs\)</span>、<span class="arithmatex">\(T_h\)</span> 和 <span class="arithmatex">\(T_{rise}\)</span> 共同定义，这些参数共同决定了从<strong>文本空间到用户空间</strong>的变换关系。</p>
+<p>具体来说，<strong>文本显示操作符</strong>绘制的第一个字形的<strong>原点</strong>将放置在<strong>文本空间</strong>的原点上。如果文本空间发生<strong>平移、缩放或旋转</strong>，则字形在<strong>用户空间</strong>中的<strong>位置、大小或方向</strong>将相应调整。</p>
+<p><strong>文本定位操作符</strong>只能在<strong>文本对象</strong>内部出现。</p>
+<hr />
+<p><table id="table108" markdown="span">
+    <caption><strong>表 108 – 文本定位操作符</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>操作数</strong></th>
+            <th><strong>操作符</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="arithmatex">\(t_x \space t_y\)</span></td>
+            <td><strong>Td</strong></td>
+            <td>
+                移动到<strong>下一行</strong>的起始位置，相对于当前行的起始点偏移 <span class="arithmatex">\((t_x , t_y)\)</span>。<span class="arithmatex">\(t_x\)</span> 和 <span class="arithmatex">\(t_y\)</span> 以<strong>未缩放的文本空间单位</strong>表示。更具体地，该操作符执行如下赋值：<br/>
+                $ T_m = T_{lm} = \begin{bmatrix}  1 &amp; 0 &amp; 0 \  0 &amp; 1 &amp; 0 \  t_x &amp; t_y &amp; 1 \end{bmatrix} \times T_{lm}$
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(t_x \space t_y\)</span></td>
+            <td><strong>TD</strong></td>
+            <td>
+                移动到<strong>下一行</strong>的起始位置，相对于当前行的起始点偏移 <span class="arithmatex">\((t_x , t_y)\)</span>。此外，该操作符<strong>同时设置</strong>文本状态中的<strong>行距参数</strong>。此操作等效于执行以下代码：<br/>
+                <span class="arithmatex">\(-t_y \qquad TL\)</span><br/>
+                <span class="arithmatex">\(t_x \qquad t_y \qquad Td\)</span>
+            </td>
+        </tr>
+        <tr>
+            <td><em>a b c d e f</em></td>
+            <td><strong>Tm</strong></td>
+            <td>
+                设置<strong>文本矩阵</strong> <span class="arithmatex">\(T_m\)</span> 以及<strong>文本行矩阵</strong> <span class="arithmatex">\(T_{lm}\)</span> ：<br/>
+                <span class="arithmatex">\(T_m = T_{lm} = \begin{bmatrix} a &amp; b &amp; 0\\ c &amp; d &amp; 0\\ e &amp; f &amp; 1\end{bmatrix}\)</span><br/>
+                其中，所有操作数均为<strong>数值</strong>。<span class="arithmatex">\(T_m\)</span> 和 <span class="arithmatex">\(T_{lm}\)</span> 的<strong>初始值</strong>为<strong>单位矩阵</strong> <span class="arithmatex">\([1 0 0 1 0 0]\)</span>。虽然操作数指定的是一个矩阵，但在调用 <strong>Tm</strong> 时，它们应作为<strong>六个独立数值</strong>传递，而<strong>非数组</strong>。<br/>
+                该矩阵<strong>不会与当前文本矩阵进行连接运算</strong>，而是<strong>直接替换</strong>当前文本矩阵。
+            </td>
+        </tr>
+        <tr>
+            <td>—</td>
+            <td><strong>T*</strong></td>
+            <td>
+                移动到<strong>下一行</strong>的起始位置。此操作等效于执行以下代码：<br/>
+                <span class="arithmatex">\(0 \qquad -T_l \qquad Td\)</span> <br/>
+                其中，<span class="arithmatex">\(T_l\)</span> 为<strong>文本状态</strong>中的当前<strong>行距参数</strong>。<br/>
+                <strong>注意</strong>：这里使用 <span class="arithmatex">\(-T_l\)</span> 是因为 <span class="arithmatex">\(T_l\)</span> 作为<strong>正数</strong>表示<strong>文本行距</strong>，而移动到<strong>下一行</strong>意味着<strong>减少 y 坐标值</strong>。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<hr />
+<p>文本矩阵的初始状态和变化</p>
+<p>在<strong>文本对象的起始</strong>，文本矩阵 <span class="arithmatex">\(T_m\)</span> 设为<strong>单位矩阵</strong>，因此<strong>文本空间的原点</strong>最初与<strong>用户空间的原点</strong>相同。</p>
+<p><strong>文本定位操作符</strong>（详见<a href="#table108">表 108</a>）会<strong>修改</strong> <span class="arithmatex">\(T_m\)</span> ，从而控制后续<strong>字形的放置</strong>。此外，<strong>文本显示操作符</strong>（详见<a href="#table109">表 109</a>）会更新 <span class="arithmatex">\(T_m\)</span>（<strong>修改其 <em>e</em> 和 <em>f</em> 平移分量</strong>），以反映：</p>
+<ul>
+<li>每个绘制的字形的<strong>水平或垂直位移</strong></li>
+<li>文本状态中的<strong>字符间距</strong>和<strong>单词间距</strong>参数</li>
+</ul>
+<hr />
+<p>文本行矩阵的作用</p>
+<p>此外，在<strong>文本对象</strong>内部，符合标准的解析器还应<strong>追踪</strong>一个<strong>文本行矩阵</strong> <span class="arithmatex">\(T_{lm}\)</span> ，它<strong>记录了文本行起始时的 <span class="arithmatex">\(T_m\)</span> 值</strong>。</p>
+<p><strong>文本定位操作符</strong>和<strong>文本显示操作符</strong>会在<strong>特定情况下</strong>读取和修改 <span class="arithmatex">\(T_{lm}\)</span>，具体见 <strong>表 108 和表 109</strong>。</p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>这种机制可以用于<strong>紧凑地表示等间距的文本行</strong>。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Text space is the coordinate system in which text is shown. It shall be defined by the text matrix, <span class="arithmatex">\(T_m\)</span> , and the text state parameters <span class="arithmatex">\(T_fs\)</span> , <span class="arithmatex">\(T_h\)</span> , and <span class="arithmatex">\(T_{rise}\)</span> , which together shall determine the transformation from text space to user space. Specifically, the origin of the first glyph shown by a text-showing operator shall be placed at the origin of text space. If text space has been translated, scaled, or rotated, then the position, size, or orientation of the glyph in user space shall be correspondingly altered.</p>
+<p>The text-positioning operators shall only appear within text objects.</p>
+<p><table id="table108" markdown="span">
+    <caption><strong>Table 108 – Text-positioning operators</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="arithmatex">\(t_x \space t_y\)</span></td>
+            <td><strong>Td</strong></td>
+            <td>Move to the start of the next line, offset from the start of the current line by <span class="arithmatex">\((t_x , t_y)\)</span>. <span class="arithmatex">\(t_x\)</span> and <span class="arithmatex">\(t_y\)</span> shall denote numbers expressed in unscaled text space units. More precisely, this operator shall perform these assignments:<br/>
+            $ T_m = T_{lm} = \begin{bmatrix}  1 &amp; 0 &amp; 0 \  0 &amp; 1 &amp; 0 \  t_x &amp; t_y &amp; 1 \end{bmatrix} \times T_{lm}$
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(t_x \space t_y\)</span></td>
+            <td><strong>TD</strong></td>
+            <td>Move to the start of the next line, offset from the start of the current line by <span class="arithmatex">\((t_x , t_y)\)</span>. As a side effect, this operator shall set the leading parameter in the text state. This operator shall have the same effect as this code: <br/>
+            <span class="arithmatex">\(-t_y \qquad TL\)</span><br/>
+            <span class="arithmatex">\(t_x \qquad t_y \qquad Td\)</span>
+            </td>
+        </tr>
+        <tr>
+            <td><em>a b c d e f</em></td>
+            <td><strong>Tm</strong></td>
+            <td>Set the text matrix, <span class="arithmatex">\(T_m\)</span> , and the text line matrix, <span class="arithmatex">\(T_{lm}\)</span> :<br/>
+            <span class="arithmatex">\(T_m = T_{lm} = \begin{bmatrix} a &amp; b &amp; 0\\ c &amp; d &amp; 0\\ e &amp; f &amp; 1\end{bmatrix}\)</span><br/>
+            The operands shall all be numbers, and the initial value for <span class="arithmatex">\(T_m\)</span> and <span class="arithmatex">\(T_{lm}\)</span> shall be the identity matrix, [1 0 0 1 0 0]. Although the operands specify a matrix, they shall be passed to <strong>Tm</strong> as six separate numbers, not as an array.<br/>
+            The matrix specified by the operands shall not be concatenated onto the current text matrix, but shall replace it.
+            </td>
+        </tr>
+        <tr>
+            <td>——</td>
+            <td><strong>T*</strong></td>
+            <td>Move to the start of the next line. This operator has the same effect as the code <br/>
+            <span class="arithmatex">\(0 \qquad -T_l \qquad Td\)</span> <br/>
+            where <span class="arithmatex">\(T_l\)</span> denotes the current leading parameter in the text state. The negative of <span class="arithmatex">\(T_l\)</span> is used here because <span class="arithmatex">\(T_l\)</span> is the text leading expressed as a positive number. Going to the next line entails decreasing the y coordinate.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>At the beginning of a text object, <span class="arithmatex">\(T_m\)</span> shall be the identity matrix; therefore, the origin of text space shall be initially the same as that of user space. The text-positioning operators, described in <a href="#table108">Table 108</a>, alter Tm and thereby control the placement of glyphs that are subsequently painted. Also, the text-showing operators, described in <a href="#table109">Table 109</a>, update <span class="arithmatex">\(T_m\)</span> (by altering its <em>e</em> and <em>f</em> translation components) to take into account the horizontal or vertical displacement of each glyph painted as well as any character or word-spacing parameters in the text state.</p>
+<p>Additionally, within a text object, a conforming reader shall keep track of a text line matrix, <em>T</em>lm , which captures the value of <span class="arithmatex">\(T_m\)</span> at the beginning of a line of text. The text-positioning and text-showing operators shall read and set Tlm on specific occasions mentioned in Tables 108 and 109.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>This can be used to compactly represent evenly spaced lines of text.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="943-文本显示操作符">9.4.3 文本显示操作符<a class="headerlink" href="#943-文本显示操作符" title="Permanent link">&para;</a></h2>
+<p><strong>Text-Showing Operators</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>文本显示操作符</strong>（见<a href="#table108">表 109</a>）用于在页面上显示文本，并在此过程中<strong>重新定位文本空间</strong>。所有文本显示操作符都会<strong>解析文本字符串</strong>，并按照<strong>表 109</strong> 的描述应用文本状态参数。</p>
+<p><strong>文本显示操作符</strong>只能在<strong>文本对象</strong>内部出现。</p>
+<p><table id="table109" markdown="span">
+    <caption><strong>表 109 – 文本显示操作符</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>操作数</strong></th>
+            <th><strong>操作符</strong></th>
+            <th><strong>描述</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><em>string</em></td>
+            <td><strong>Tj</strong></td>
+            <td>显示一个文本字符串。</td>
+        </tr>
+        <tr>
+            <td><em>string</em></td>
+            <td><strong>'</strong></td>
+            <td>移动到<strong>下一行</strong>并显示一个文本字符串。该操作等效于以下代码：<br/>
+                T<em><br/>
+                </em>string Tj<em>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(a_w\)</span> <span class="arithmatex">\(a_c\)</span> string</td>
+            <td></em><em>"</em><em></td>
+            <td>移动到</em><em>下一行</em><em>并显示文本字符串，同时使用 <span class="arithmatex">\(a_w\)</span> 作为</em><em>单词间距</em><em>，<span class="arithmatex">\(a_c\)</span> 作为</em><em>字符间距</em><em>（即设置文本状态中的相应参数）。<span class="arithmatex">\(a_w\)</span> 和 <span class="arithmatex">\(a_c\)</span> 以</em><em>未缩放的文本空间单位</em><em>表示。该操作等效于以下代码：<br/>
+                <span class="arithmatex">\(a_w Tw\)</span><br/>
+                <span class="arithmatex">\(a_c Tc\)</span><br/>
+                string, '
+            </td>
+        </tr>
+        <tr>
+            <td>array</td>
+            <td></em><em>TJ</em><em></td>
+            <td>显示一个或多个文本字符串，并允许</em><em>单独控制字形的位置</em><em>。</em>array<em> 的每个元素可以是</em><em>字符串</em><em>或</em><em>数值</em><em>：
+                - 若元素为</em><em>字符串</em><em>，则操作符直接显示该字符串。
+                - 若元素为</em><em>数值</em><em>，则操作符会</em><em>调整文本位置</em><em>，即</em><em>平移文本矩阵</em><em> <span class="arithmatex">\(T_m\)</span> 。该数值以</em><em>文本空间单位的千分之一</em><em>表示（详见 <a href="./#944-文本空间与坐标变换">9.4.4</a> “文本空间细节”）。<br/>
+                该数值会</em><em>从当前水平或垂直坐标中减去</em><em>，具体取决于</em><em>书写模式</em><em>。在默认坐标系统中，</em><em>正值</em><em>会使下一个绘制的字形向</em><em>左</em><em>或</em><em>向下</em><em>偏移相应的量。下图（图 46）展示了 </em><em>TJ</em>* 传递偏移量的效果：
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><a class="glightbox" href="../imgs/f46.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f46.png" /></a></p>
+<hr />
+<p>文本字符串的解释规则</p>
+<p><strong>文本显示操作符</strong>的<strong>字符串参数</strong>被解释为<strong>字符代码序列</strong>，用于标识要绘制的字形。</p>
+<ul>
+<li><strong>简单字体</strong>（<em>simple font</em>）：字符串的<strong>每个字节</strong>被视为<strong>独立的字符代码</strong>，然后在<strong>字体编码表</strong>（见 <a href="../s6/#966-字符编码">9.6.6</a> “字符编码”）中查找对应的字形。</li>
+<li><strong>复合字体</strong>（<em>composite font</em>，PDF 1.2）：支持<strong>多字节字符代码</strong>，即一个或多个连续字节组成一个字符代码。其代码长度及<strong>字符代码到字形的映射</strong>由数据结构 <strong>CMap</strong>（详见 <a href="../s7/">9.7</a> “复合字体”）定义。</li>
+</ul>
+<p>字符串对象必须符合<strong>字符串语法</strong>，即：</p>
+<ul>
+<li>当字符串以<strong>括号 ()</strong> 包裹时：</li>
+<li>若字节值等于 ASCII <strong>左括号 (28h)</strong>、<strong>右括号 (29h)</strong> 或 <strong>反斜杠 (5Ch, \)</strong>，则需要<strong>在前面添加反斜杠</strong>（\）。</li>
+<li>其他字节值（范围 0 ~ 255）可直接使用。</li>
+</ul>
+<p>这些规则适用于字符串对象中的<strong>每个独立字节</strong>，无论字符串被文本显示操作符解释为<strong>单字节</strong>还是<strong>多字节字符代码</strong>。</p>
+<hr />
+<p>文本字符串的组织方式</p>
+<p>文本显示操作符的字符串参数可以是<strong>任意长度</strong>，甚至可以是<strong>单个字符代码</strong>，并且它们可以<strong>按任意顺序放置在页面上</strong>。<br/>
+字形如何分组为字符串<strong>不会影响文本的显示</strong>。</p>
+<p>使用 <strong>Tj</strong> 操作符<strong>一次显示多个字形</strong>，与<strong>分别调用 </strong>Tj<strong> 显示每个字形</strong>的效果是<strong>相同的</strong>。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 6</p>
+<p><strong>文本搜索（以及其他文本提取操作）</strong>的性能在<strong>字符串尽可能长且按自然阅读顺序排列</strong>时会显著提高。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注意 7</p>
+<p>在某些情况下，提取的文本可能会<strong>因字形的分组方式不同而有所变化</strong>。例如，详见 <a href="../../c14/s8/#148233-逆序显示字符串">14.8.2.3.3</a> “反序显示字符串”。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The <em>text-showing operators</em> (Table 109) shall show text on the page, repositioning text space as they do so. All of the operators shall interpret the text string and apply the text state parameters as described in Table 109.</p>
+<p>The text-showing operators shall only appear within text objects.</p>
+<p><table id="table109" markdown="span">
+    <caption><strong>Table 108 – Text-positioning operators</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Operands</strong></th>
+            <th><strong>Operator</strong></th>
+            <th><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><em>string</em></td>
+            <td><strong>Tj</strong></td>
+            <td>Show a text string.
+            </td>
+        </tr>
+        <tr>
+            <td><em>string</em></td>
+            <td><strong>'</strong></td>
+            <td>Move to the next line and show a text string. This operator shall have the same effect as the code<br/>
+            T<em><br/>
+            </em>string Tj<em>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="arithmatex">\(a_w\)</span> <span class="arithmatex">\(a_c\)</span> string</td>
+            <td></em><em>"</em><em></td>
+            <td>Move to the next line and show a text string, using <span class="arithmatex">\(a_w\)</span> as the word spacing and <span class="arithmatex">\(a_c\)</span> as the character spacing (setting the corresponding parameters in the text state). <span class="arithmatex">\(a_w\)</span> and <span class="arithmatex">\(a_c\)</span> shall be numbers expressed in unscaled text space units. This operator shall have the same effect as this code:<br/>
+            <span class="arithmatex">\(a_w Tw\)</span><br/>
+            <span class="arithmatex">\(a_c Tc\)</span><br/>
+            string, '
+            </td>
+        </tr>
+        <tr>
+            <td>array</td>
+            <td></em><em>TJ</em><em></td>
+            <td>Show one or more text strings, allowing individual glyph positioning. Each element of </em>array<em> shall be either a string or a number. If the element is a string, this operator shall show the string. If it is a number, the operator shall adjust the text position by that amount; that is, it shall translate the text matrix, <span class="arithmatex">\(T_m\)</span> . The number shall be expressed in thousandths of a unit of text space (see <a href="./#944-文本空间与坐标变换">9.4.4</a>, "Text Space Details"). This amount shall be subtracted from the current horizontal or vertical coordinate, depending on the writing mode. In the default coordinate system, a positive adjustment has the effect of moving the next glyph painted either to the left or down by the given amount. Figure 46 shows an example of the effect of passing offsets to </em><em>TJ</em>*.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><a class="glightbox" href="../imgs/f46.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="123" src="../imgs/f46.png" /></a></p>
+<p>A string operand of a text-showing operator shall be interpreted as a sequence of character codes identifying the glyphs to be painted.</p>
+<p>With a simple font, each byte of the string shall be treated as a separate character code. The character code shall then be looked up in the font’s encoding to select the glyph, as described in <a href="../s6/#966-字符编码">9.6.6</a>, "Character Encoding".</p>
+<p>With a composite font (PDF 1.2), multiple-byte codes may be used to select glyphs. In this instance, one or more consecutive bytes of the string shall be treated as a single character code. The code lengths and the mappings from codes to glyphs are defined in a data structure called a <em>CMap</em>, described in <a href="../s7/">9.7</a>, "Composite Fonts".</p>
+<p>The strings shall conform to the syntax for string objects. When a string is written by enclosing the data in parentheses, bytes whose values are equal to those of the ASCII characters LEFT PARENTHESIS (28h), RIGHT PARENTHESIS (29h), and REVERSE SOLIDUS (5Ch) (backslash) shall be preceded by a REVERSE SOLIDUS) character. All other byte values between 0 and 255 may be used in a string object. These rules apply to each individual byte in a string object, whether the string is interpreted by the text-showing operators as single-byte or multiple-byte character codes.</p>
+<p>Strings presented to the text-showing operators may be of any length—even a single character code per string—and may be placed on the page in any order. The grouping of glyphs into strings has no significance for the display of text. Showing multiple glyphs with one invocation of a text-showing operator such as <strong>Tj</strong> shall produce the same results as showing them with a separate invocation for each glyph.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 6</p>
+<p>The performance of text searching (and other text extraction operations) is significantly better if the text strings are as long as possible and are shown in natural reading order.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 7</p>
+<p>In some cases, the text that is extracted can vary depending on the grouping of glyphs into strings. See, for example, <a href="../../c14/s8/#148233-逆序显示字符串">14.8.2.3.3</a>, "Reverse-Order Show Strings".</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="944-文本空间与坐标变换">9.4.4 文本空间与坐标变换<a class="headerlink" href="#944-文本空间与坐标变换" title="Permanent link">&para;</a></h2>
+<p><strong>Text Space Details</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>如 <a href="./#942-文本位置操作">9.4.2</a> “文本定位操作符” 所述，文本应显示在<strong>文本空间</strong>中，该空间由<strong>文本矩阵</strong> <span class="arithmatex">\(T_m\)</span> 及<strong>文本状态参数</strong> <span class="arithmatex">\(T_{fs}\)</span>、<span class="arithmatex">\(T_h\)</span> 和 <span class="arithmatex">\(T_{rise}\)</span> 共同定义。这些参数决定了<strong>文本坐标如何转换为用户空间</strong>。<br/>
+字形的<strong>形状</strong>和<strong>位移</strong>（水平或垂直）均在文本空间中进行解释。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 1</p>
+<p>字形实际定义在<strong>字形空间</strong>中，其具体定义取决于<strong>字体类型</strong>（详见 [9.2.4] “字形定位与度量”）。在应用<strong>注意 2</strong> 中描述的变换之前，字形坐标首先从<strong>字形空间转换到文本空间</strong>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注意 2</p>
+<p>在概念上，<strong>整个从文本空间到设备空间的变换</strong>可以表示为<strong>文本渲染矩阵</strong>（<span class="arithmatex">\(T_{rm}\)</span>）：</p>
+<div class="arithmatex">\[
+T_{rm} = \begin{bmatrix}
+    T_{fs} \times T_h &amp; 0 &amp; 0\\
+    0 &amp; T_{fs} &amp; 0\\
+    0 &amp; T_{rise} &amp; 1
+\end{bmatrix} \times T_m \times CTM
+\]</div>
+<p><strong><span class="arithmatex">\(T_{rm}\)</span> 是一个临时矩阵</strong>，在<strong>文本显示操作符绘制每个字形之前</strong>都会重新计算该矩阵。</p>
+</div>
+<hr />
+<p>文本矩阵的更新</p>
+<p>在绘制完<strong>字形</strong>后，<strong>文本矩阵</strong> <span class="arithmatex">\(T_m\)</span> 需要根据<strong>字形位移</strong>及适用的<strong>间距参数</strong>进行更新。首先，计算合并位移 <span class="arithmatex">\(t_x\)</span>（适用于<strong>水平书写模式</strong>）或 <span class="arithmatex">\(t_y\)</span>（适用于<strong>垂直书写模式</strong>）。对于非当前书写模式的变量，应设为 0：</p>
+<div class="arithmatex">\[
+\begin{align} 
+    t_x &amp;= \left( \left(w0 - \frac{T_j}{1000} \right) \times T_{fs} + T_c + T_w \right ) \times T_h \\
+    t_y &amp;= \left( w1 - \frac{t_j}{1000} \right) \times T_{fs} + T_c + T_w
+\end{align}
+\]</div>
+<p>其中：</p>
+<ul>
+<li><strong><span class="arithmatex">\(w0\)</span> 和 <span class="arithmatex">\(w1\)</span></strong>：字形的<strong>水平</strong>和<strong>垂直位移</strong></li>
+<li><strong><span class="arithmatex">\(T_j\)</span></strong>：若 <strong>TJ</strong> 数组中存在该数值，则用于指定<strong>位置调整</strong></li>
+<li><strong><span class="arithmatex">\(T_{fs}\)</span> 和 <span class="arithmatex">\(T_h\)</span></strong>：当前<strong>字体大小</strong>和<strong>水平缩放比例</strong>（由图形状态控制）</li>
+<li><strong><span class="arithmatex">\(T_c\)</span> 和 <span class="arithmatex">\(T_w\)</span></strong>：当前的<strong>字符间距</strong>和<strong>单词间距</strong>（若适用）</li>
+</ul>
+<p>然后，更新<strong>文本矩阵</strong>如下：</p>
+<p>$$
+T_m = \begin{bmatrix}
+    1 &amp; 0 &amp; 0\
+    0 &amp; 1 &amp; 0\
+    t_x &amp; t_y &amp; 1
+\end{bmatrix} \times T_m
+$$
+```</p>
+</div>
+<div class="tabbed-block">
+<p>As stated in <a href="./#942-文本位置操作">9.4.2</a>, "Text-Positioning Operators", text shall be shown in text space, defined by the combination of the text matrix, <span class="arithmatex">\(T_m\)</span> , and the text state parameters <span class="arithmatex">\(T_{fs}\)</span> , <span class="arithmatex">\(T_h\)</span> , and <span class="arithmatex">\(T_{rise}\)</span> . This determines how text coordinates are transformed into user space. Both the glyph’s shape and its displacement (horizontal or vertical) shall be interpreted in text space.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Glyphs are actually defined in glyph space, whose definition varies according to the font type as discussed in [9.2.4], "Glyph Positioning and Metrics". Glyph coordinates are first transformed from glyph space to text space before being subjected to the transformations described in Note 2.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Conceptually, the entire transformation from text space to device space may be represented by a <em>text rendering matrix, Trm</em> :</p>
+<div class="arithmatex">\[
+T_{rm} = \begin{bmatrix}
+ T_{fs} \times T_h &amp; 0 &amp; 0\\
+ 0 &amp; T_{fs} &amp; 0\\
+ 0 &amp; T_{rise} &amp; 1
+\end{bmatrix} \times T_m \times CTM
+\]</div>
+<p><em>Trm</em> is a temporary matrix; conceptually, it is recomputed before each glyph is painted during a text-showing operation.</p>
+</div>
+<p>After the glyph is painted, the text matrix shall be updated according to the glyph displacement and any spacing parameters that apply. First, a combined displacement shall be computed, denoted by <span class="arithmatex">\(t_x\)</span> in horizontal writing mode or <span class="arithmatex">\(t_y\)</span> in vertical writing mode (the variable corresponding to the other writing mode shall be set to 0):</p>
+<div class="arithmatex">\[
+\begin{align} 
+  t_x &amp;= \left( \left(w0 - \frac{T_j}{1000} \right) \times T_{fs} + T_c + T_w \right ) \times T_h \\
+  t_y &amp;= \left( w1 - \frac{t_j}{1000} \right) \times T_{fs} + T_c + T_w
+\end{align}
+\]</div>
+<p>where</p>
+<ul>
+<li><span class="arithmatex">\(w0\)</span> and <span class="arithmatex">\(w1\)</span> denote the glyph’s horizontal and vertical displacements</li>
+<li><span class="arithmatex">\(T_j\)</span> denotes a number in a <strong>TJ</strong> array, if any, which specifies a position adjustment</li>
+<li><span class="arithmatex">\(T_{fs}\)</span> and <span class="arithmatex">\(T_h\)</span> denote the current text font size and horizontal scaling parameters in the graphics state</li>
+<li><span class="arithmatex">\(T_c\)</span> and <span class="arithmatex">\(T_w\)</span> denote the current character- and word-spacing parameters in the graphics state, if applicable</li>
+</ul>
+<p>The text matrix shall then be then updated as follows:</p>
+<div class="arithmatex">\[
+T_m = \begin{bmatrix}
+ 1 &amp; 0 &amp; 0\\
+ 0 &amp; 1 &amp; 0\\
+ t_x &amp; t_y &amp; 1
+\end{bmatrix} \times T_m
+\]</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月5日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

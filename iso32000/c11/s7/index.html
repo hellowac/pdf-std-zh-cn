@@ -1,0 +1,2517 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s6/">
+      
+      
+        <link rel="next" href="../../c12/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>11.7 色彩空间和渲染问题 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#117-色彩空间和渲染问题" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              11.7 色彩空间和渲染问题
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            11透明度
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.2 透明度概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.3 基本合成计算
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.4 透明度组
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.5 软面罩
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.6 指定 PDF 中的透明度
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    11.7 色彩空间和渲染问题
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    11.7 色彩空间和渲染问题
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1171-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1172-透明度组的色彩空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.2 透明度组的色彩空间
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1173-专色和透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.3 专色和透明度
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1174-套印和透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4 套印和透明度
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.7.4 套印和透明度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11741-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11742-混合模式和叠印" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4.2 混合模式和叠印
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11743-与不透明套印的兼容性" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4.3 与不透明套印的兼容性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11744-特殊路径绘制注意事项" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4.4 特殊路径绘制注意事项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11745-套印行为总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4.5 套印行为总结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1175-渲染参数和透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.5 渲染参数和透明度
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.7.5 渲染参数和透明度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11751-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.5.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11752-半色调和传递函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.5.2 半色调和传递函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11753-渲染意图和颜色转换" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.5.3 渲染意图和颜色转换
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1171-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1172-透明度组的色彩空间" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.2 透明度组的色彩空间
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1173-专色和透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.3 专色和透明度
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1174-套印和透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4 套印和透明度
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.7.4 套印和透明度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11741-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11742-混合模式和叠印" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4.2 混合模式和叠印
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11743-与不透明套印的兼容性" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4.3 与不透明套印的兼容性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11744-特殊路径绘制注意事项" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4.4 特殊路径绘制注意事项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11745-套印行为总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.4.5 套印行为总结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1175-渲染参数和透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.5 渲染参数和透明度
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.7.5 渲染参数和透明度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11751-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.5.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11752-半色调和传递函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.5.2 半色调和传递函数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11753-渲染意图和颜色转换" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.7.5.3 渲染意图和颜色转换
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="117-色彩空间和渲染问题">11.7 色彩空间和渲染问题<a class="headerlink" href="#117-色彩空间和渲染问题" title="Permanent link">&para;</a></h1>
+<p><strong>11.7 Colour Space and Rendering Issues</strong></p>
+<h2 id="1171-概述">11.7.1 概述<a class="headerlink" href="#1171-概述" title="Permanent link">&para;</a></h2>
+<p><strong>11.7.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本子条款描述了透明度与 PDF 成像模型中颜色规范和渲染的其他方面之间的相互作用。</p>
+</div>
+<div class="tabbed-block">
+<p>This sub-clause describes the interactions between transparency and other aspects of colour specification and rendering in the PDF imaging model.</p>
+</div>
+</div>
+</div>
+<h2 id="1172-透明度组的色彩空间">11.7.2 透明度组的色彩空间<a class="headerlink" href="#1172-透明度组的色彩空间" title="Permanent link">&para;</a></h2>
+<p><strong>11.7.2 Colour Spaces for Transparency Groups</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>如<a href="../s6/#1166-透明度组-xobjects">11.6.6</a>“<a href="../s6/#1166-透明度组-xobjects">透明度组 XObjects</a>”中所讨论的，透明度组要么拥有自己明确声明的颜色空间，要么继承其父组的颜色空间。无论哪种情况，组内源对象的颜色都应根据需要进行转换，使其符合组的颜色空间，并且所有的混合和合成计算都应在该空间中进行（见“<a href="../s3/#1134-混合色彩空间">混合颜色空间</a>”）。随后，当该组与其背景进行合成时，得到的颜色将在该颜色空间中进行解释。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>在这种安排下，设想给定的艺术作品全部或大部分将在单一颜色空间中创建——最有可能是生成它的应用程序的工作颜色空间。通常，只有在将独立创作的艺术作品组合到页面上时，才会使用多个颜色空间。在将所有艺术作品放置在页面上之后，将组的颜色空间转换为页面的设备颜色空间将作为最后一步进行，且不再进行任何进一步的透明合成。然而，透明成像模型并不要求遵循这一约定；采用这一约定的原因是为了避免因不必要的颜色空间转换而导致颜色信息丢失和引入错误。</p>
+</div>
+<p>只有隔离组可以拥有自己明确声明的颜色空间。非隔离组应从其父组继承颜色空间（有关页面组的特殊处理，请参见“<a href="../s4/#1147-page组">页面组</a>”）。</p>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>这是因为在非隔离组中使用明确的颜色空间需要在执行合成计算时，将背景的颜色空间的颜色转换为该组的颜色空间。这种转换可能无法实现（因为某些颜色转换只能单向进行），即使可以实现，也会导致过多的颜色转换。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注 3</p>
+<p>选择组的颜色空间会对产生的结果产生重大影响：如<a href="../s3/#1134-混合色彩空间">11.3.4</a>“<a href="../s3/#1134-混合色彩空间">混合颜色空间</a>”中所述，在设备颜色空间中进行合成的结果依赖于设备。为了使合成计算以设备无关的方式进行，组的颜色空间应该是基于 CIE 的。</p>
+<p>选择基于 CIE 的组颜色空间的一个后果是，只能使用基于 CIE 的颜色空间来指定组内对象的颜色。这是因为通常无法将设备颜色转换为基于 CIE 的颜色；定义的转换只能反向进行。后续将进一步讨论。</p>
+<p>合成计算和混合函数通常计算颜色分量值的线性组合，假设这些分量值本身是线性的。因此，通常最好选择一个具有线性伽马函数的组的颜色空间。如果选择了非线性颜色空间，结果仍然是明确定义的，但外观可能与用户的预期不符。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注 4</p>
+<p>基于 CIE 的 <em>sRGB</em> 颜色空间（见“<a href="../../c8/s6/#865-基于-cie-的色彩空间">基于 CIE 的颜色空间</a>”）是非线性的，因此可能不适合作为组的颜色空间。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注 5</p>
+<p>透明成像模型的实现应在合成计算期间以及在累积的组结果中表示颜色时使用尽可能高的精度。为了尽量减少舍入误差的积累，并避免因使用线性组颜色空间而引入额外错误，中间结果需要比通常用于表示原始源数据或最终光栅化结果的精度更高。</p>
+</div>
+<p>如果组的颜色空间——无论是明确指定的还是从父组继承的——是基于 CIE 的，那么用于绘制对象的任何设备颜色空间的使用都应受到特殊处理。设备颜色不能直接绘制到这样的组中，因为没有通用的方法将它们转换为基于 CIE 的颜色空间。以下情况会出现此问题：</p>
+<ul>
+<li><strong>DeviceGray</strong>、<strong>DeviceRGB</strong> 和 <strong>DeviceCMYK</strong> 颜色空间，除非重新映射到默认的基于 CIE 的颜色空间（见“<a href="../../c8/s6/#8656-默认颜色空间">默认颜色空间</a>”）</li>
+<li>隐式指定设备颜色空间的操作符（如 <strong>rg</strong>），除非该空间被重新映射</li>
+<li>基础或底层空间为设备颜色空间的特殊颜色空间，除非该空间被重新映射</li>
+</ul>
+<p>当定义一个基于 CIE 的颜色空间的透明度组时，应始终使用默认的颜色空间重新映射机制。如果指定了设备颜色且未重新映射，则应根据实现方式将其转换为基于 CIE 的颜色空间，从而产生不可预测的结果。</p>
+<div class="admonition note">
+<p class="admonition-title">注 6</p>
+<p>如果组的颜色空间隐式转换为 <strong>DeviceCMYK</strong>，则上述限制不适用，如“<a href="../../c8/s6/#8657-基于-cie-的颜色空间的隐式转换">基于 CIE 的颜色空间的隐式转换</a>”中所讨论的 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>As discussed in <a href="../s6/#1166-透明度组-xobjects">11.6.6</a>, "<a href="../s6/#1166-透明度组-xobjects">Transparency Group XObjects</a>," a transparency group shall either have an explicitly declared colour space of its own or inherit that of its parent group. In either case, the colours of source objects within the group shall be converted to the group’s colour space, if necessary, and all blending and compositing computations shall be done in that space (see “<a href="../s3/#1134-混合色彩空间">Blending Colour Space</a>”). The resulting colours shall then be interpreted in that colour space when the group is subsequently composited with its backdrop.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Under this arrangement, it is envisioned that all or most of a given piece of artwork will be created in a single colour space—most likely, the working colour space of the application generating it. The use of multiple colour spaces typically will arise only when assembling independently produced artwork onto a page. After all the artwork has been placed on the page, the conversion from the group’s colour space to the page’s device colour space will be done as the last step, without any further transparency compositing. The transparent imaging model does not require that this convention be followed, however; the reason for adopting it is to avoid the loss of colour information and the introduction of errors resulting from unnecessary colour space conversions.</p>
+</div>
+<p>Only an isolated group may have an explicitly declared colour space of its own. Non-isolated groups shall inherit their colour space from the parent group (subject to special treatment for the page group, as described in “<a href="../s4/#1147-page组">Page Group</a>”).</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>This is because the use of an explicit colour space in a non-isolated group would require converting colours from the backdrop’s colour space to that of the group in order to perform the compositing computations. Such conversion may not be possible (since some colour conversions can be performed only in one direction), and even if possible, it would entail an excessive number of colour conversions.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>The choice of a group colour space has significant effects on the results that are produced: As noted in <a href="../s3/#1134-混合色彩空间">11.3.4</a>, "<a href="../s3/#1134-混合色彩空间">Blending Colour Space</a>," the results of compositing in a device colour space is device- dependent. For the compositing computations to work in a device-independent way, the group’s colour space should be CIE-based.</p>
+<p>A consequence of choosing a CIE-based group colour space is that only CIE-based spaces can be used to specify the colours of objects within the group. This is because conversion from device to CIE-based colours is not possible in general; the defined conversions work only in the opposite direction. See further discussion subsequently.</p>
+<p>The compositing computations and blend functions generally compute linear combinations of colour component values, on the assumption that the component values themselves are linear. For this reason, it is usually best to choose a group colour space that has a linear gamma function. If a nonlinear colour space is chosen, the results are still well-defined, but the appearance may not match the user’s expectations.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>The CIE-based <em>sRGB</em> colour space (see “<a href="../../c8/s6/#865-基于-cie-的色彩空间">CIE-Based Colour Spaces</a>”) is nonlinear and hence may be unsuitable for use as a group colour space.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 5</p>
+<p>Implementations of the transparent imaging model should use as much precision as possible in representing colours during compositing computations and in the accumulated group results. To minimize the accumulation of roundoff errors and avoid additional errors arising from the use of linear group colour spaces, more precision is needed for intermediate results than is typically used to represent either the original source data or the final rasterized results.</p>
+</div>
+<p>If a group’s colour space—whether specified explicitly or inherited from the parent group—is CIE-based, any use of device colour spaces for painting objects shall be subject to special treatment. Device colours cannot be painted directly into such a group, since there is no generally defined method for converting them to the CIE-based colour space. This problem arises in the following cases:</p>
+<ul>
+<li><strong>DeviceGray</strong>, <strong>DeviceRGB</strong>, and <strong>DeviceCMYK</strong> colour spaces, unless remapped to default CIE-based colour spaces (see “<a href="../../c8/s6/#8656-默认颜色空间">Default Colour Spaces</a>”)</li>
+<li>Operators (such as <strong>rg</strong>) that specify a device colour space implicitly, unless that space is remapped</li>
+<li>Special colour spaces whose base or underlying space is a device colour space, unless that space is remapped</li>
+</ul>
+<p>The default colour space remapping mechanism should always be employed when defining a transparency group whose colour space is CIE-based. If a device colour is specified and is not remapped, it shall be converted to the CIE-based colour space in an implementation-dependent fashion, producing unpredictable results.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 6</p>
+<p>The foregoing restrictions do not apply if the group’s colour space is implicitly converted to <strong>DeviceCMYK</strong>, as discussed in “<a href="../../c8/s6/#8657-基于-cie-的颜色空间的隐式转换">Implicit Conversion of CIE-Based Colour Spaces</a>”.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1173-专色和透明度">11.7.3 专色和透明度<a class="headerlink" href="#1173-专色和透明度" title="Permanent link">&para;</a></h2>
+<p><strong>11.7.3 Spot Colours and Transparency</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>前面关于颜色空间的讨论主要涉及印刷色——由输出设备的印刷油墨组合产生的颜色。印刷色可以直接在设备的本机颜色空间（如 <strong>DeviceCMYK</strong>）中指定，也可以通过从其他颜色空间（如基于 CIE 的 <strong>CalRGB</strong> 或 <strong>ICCBased</strong> 空间）转换得到。无论采用何种方式指定印刷色，都应进行从组的颜色空间到印刷色以及反向的转换。</p>
+<p>专色是独立于用于产生印刷色的颜色之外的另一种颜色成分。它可以表示要产生的额外分色，也可以表示要施加到合成页面上的额外油墨（见“<a href="../../c8/s6/#8664-分离色彩空间">分离颜色空间</a>”和“<a href="../../c8/s6/#8665-devicen-色彩空间">DeviceN 颜色空间</a>”）。专色的颜色成分值或色调值指定了相应专色油墨的浓度。色调值通常以减法方式而非加法方式表示。</p>
+<p>专色本质上依赖于设备，并非总是可用。在不透明成像模型中，在 <strong>Separation</strong> 或 <strong>DeviceN</strong> 颜色空间中使用专色成分时，会伴随一个<em>替代颜色空间和色调变换函数</em>，用于将色调值映射到该空间。这样，当设备上没有相应的专色油墨时，可以用印刷色近似替代该颜色。</p>
+<p>在透明成像模型中可以较为直接地处理专色（与套印相关的问题除外，见“<a href="./#1174-套印和透明度">套印和透明度</a>”）。当一个对象使用输出设备中可用的专色成分透明地绘制时，该颜色将与背景的相应专色成分合成，这种合成独立于对印刷色执行的合成操作。专色保留其自身的特性；它不应转换为或从包含它的透明度组或页面的颜色空间转换而来。如果该对象是透明度组的一个元素，将发生以下两种情况之一：</p>
+<ul>
+<li>组将为每个专色成分保持一个独立的颜色值，独立于组的颜色空间。实际上，专色直接穿过组层次结构到达设备，不进行任何颜色转换。然而，它仍需与其他使用相同专色的对象进行混合和合成。</li>
+<li>专色将转换为其替代颜色空间。然后，得到的颜色将遵循印刷色的常规合成规则。特别是，在用于定义软蒙版的透明度组 XObject 中，专色不可用；在这种情况下，应始终使用替代颜色空间。</li>
+</ul>
+<p>在计算得到的组结果中的每个点上，应仅保留一个形状值和一个不透明度值；它们适用于印刷色和专色成分。实际上，每个对象都被视为绘制了所有现有的颜色成分，包括印刷色和专色。如果在给定对象中没有为某个成分明确指定值，则假定印刷色成分的加法值为 1.0（或减法色调值为 0.0）。例如，当使用在 <strong>DeviceCMYK</strong> 或 <strong>ICCBased</strong> 颜色空间中指定的颜色绘制对象时，印刷色成分将按指定绘制，专色成分将以加法值 1.0 绘制。同样，当使用在 <strong>Separation</strong> 颜色空间中指定的颜色绘制对象时，指定的专色将按指定绘制，所有其他成分（包括印刷色和其他专色）将以加法值 1.0 绘制。这种情况的后果见<a href="#1174-套印和透明度">11.7.4</a>“<a href="./#1174-套印和透明度">套印和透明度</a>”。</p>
+<p>在不透明成像模型下，<strong>Separation</strong> 或 DeviceN 颜色空间可以指定输出设备的各个印刷色成分，就好像它们是专色一样。然而，在透明度组内，只有当组继承输出设备的本机颜色空间（或如 <a href="../../c8/s6/#8657-基于-cie-的颜色空间的隐式转换">8.6.5.7</a>“<a href="../../c8/s6/#8657-基于-cie-的颜色空间的隐式转换">基于 CIE 的颜色空间的隐式转换</a>”中所讨论的隐式转换为 <strong>DeviceCMYK</strong>）时，才应这样做。如果为组指定了其他颜色空间，则 <strong>Separation</strong> 或 <strong>DeviceN</strong> 颜色空间应转换为其替代颜色空间。</p>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>一般来说，在包含明确指定颜色空间的透明度组内，组的印刷色成分与设备的印刷色成分不同。只有在完成组的所有颜色合成计算之后，才会转换到设备的印刷色成分。因此，在组内无法访问设备的印刷色成分。</p>
+<p>例如，在任何透明度组之外，本机颜色空间为 <strong>DeviceCMYK</strong> 的设备有一个可以在 <strong>Separation</strong> 或 <strong>DeviceN</strong> 颜色空间中指定的 <strong>Cyan</strong>（青色）成分。另一方面，在颜色空间为 <strong>ICCBased</strong> 的透明度组内，该组没有可绘制的 <strong>Cyan</strong> 成分 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The foregoing discussion of colour spaces has been concerned with process colours—those produced by combinations of an output device’s process colorants. Process colours may be specified directly in the device’s native colour space (such as <strong>DeviceCMYK</strong>), or they may be produced by conversion from some other colour space, such as a CIE-based (<strong>CalRGB</strong> or <strong>ICCBased</strong>) space. Whatever means is used to specify them, process colours shall be subject to conversion to and from the group’s colour space.</p>
+<p>A spot colour is an additional colour component, independent of those used to produce process colours. It may represent either an additional separation to be produced or an additional colorant to be applied to the composite page (see “<a href="../../c8/s6/#8664-分离色彩空间">Separation Colour Spaces</a>” and “<a href="../../c8/s6/#8665-devicen-色彩空间">DeviceN Colour Spaces</a>”). The colour component value, or tint, for a spot colour specifies the concentration of the corresponding spot colorant. Tints are conventionally represented as subtractive, rather than additive, values.</p>
+<p>Spot colours are inherently device-dependent and are not always available. In the opaque imaging model, each use of a spot colour component in a <strong>Separation</strong> or <strong>DeviceN</strong> colour space is accompanied by an <em>alternate colour space and a tint transformation function</em> for mapping tint values into that space. This enables the colour to be approximated with process colorants when the corresponding spot colorant is not available on the device.</p>
+<p>Spot colours can be accommodated straightforwardly in the transparent imaging model (except for issues relating to overprinting, discussed in “<a href="./#1174-套印和透明度">Overprinting and Transparency</a>”). When an object is painted transparently with a spot colour component that is available in the output device, that colour shall be composited with the corresponding spot colour component of the backdrop, independently of the compositing that is performed for process colours. A spot colour retains its own identity; it shall not be subject to conversion to or from the colour space of the enclosing transparency group or page. If the object is an element of a transparency group, one of two things shall happen:</p>
+<ul>
+<li>The group shall maintain a separate colour value for each spot colour component, independently of the group’s colour space. In effect, the spot colour passes directly through the group hierarchy to the device, with no colour conversions performed. However, it shall still be subject to blending and compositing with other objects that use the same spot colour.</li>
+<li>The spot colour shall be converted to its alternate colour space. The resulting colour shall then be subject to the usual compositing rules for process colours. In particular, spot colours shall not be available in a transparency group XObject that is used to define a soft mask; the alternate colour space shall always be substituted in that case.</li>
+</ul>
+<p>Only a single shape value and opacity value shall be maintained at each point in the computed group results; they shall apply to both process and spot colour components. In effect, every object shall be considered to paint every existing colour component, both process and spot. Where no value has been explicitly specified for a given component in a given object, an additive value of 1.0 (or a subtractive tint value of 0.0) shall be assumed. For instance, when painting an object with a colour specified in a <strong>DeviceCMYK</strong> or <strong>ICCBased</strong> colour space, the process colour components shall be painted as specified and the spot colour components shall be painted with an additive value of 1.0. Likewise, when painting an object with a colour specified in a <strong>Separation</strong> colour space, the named spot colour shall be painted as specified and all other components (both process colours and other spot colours) shall be painted with an additive value of 1.0. The consequences of this are discussed in <a href="#1174-套印和透明度">11.7.4</a>, "<a href="./#1174-套印和透明度">Overprinting and Transparency</a>."</p>
+<p>Under the opaque imaging model, a <strong>Separation</strong> or DeviceN colour space may specify the individual process colour components of the output device, as if they were spot colours. However, within a transparency group, this should be done only if the group inherits the native colour space of the output device (or is implicitly converted to <strong>DeviceCMYK</strong>, as discussed in <a href="../../c8/s6/#8657-基于-cie-的颜色空间的隐式转换">8.6.5.7</a>, "<a href="../../c8/s6/#8657-基于-cie-的颜色空间的隐式转换">Implicit Conversion of CIE-Based Colour Spaces</a>"). If any other colour space has been specified for the group, the Separation or <strong>DeviceN</strong> colour space shall be converted to its alternate colour space.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>In general, within a transparency group containing an explicitly-specified colour space, the group's process colour components are different from the device's process colour components. Conversion to the device's process colour components occurs only after all colour compositing computations for the group have been completed. Consequently, the device's process colour components are not accessible within the group.</p>
+<p>For instance, outside of any transparency group, a device whose native colour space is <strong>DeviceCMYK</strong> has a <strong>Cyan</strong> component that may be specified in a <strong>Separation</strong> or <strong>DeviceN</strong> colour space. On the other hand, within a transparency group whose colour space is <strong>ICCBased</strong>, the group has no <strong>Cyan</strong> component available to be painted.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1174-套印和透明度">11.7.4 套印和透明度<a class="headerlink" href="#1174-套印和透明度" title="Permanent link">&para;</a></h2>
+<p><strong>11.7.4 Overprinting and Transparency</strong></p>
+<h3 id="11741-概述">11.7.4.1 概述<a class="headerlink" href="#11741-概述" title="Permanent link">&para;</a></h3>
+<p><strong>11.7.4.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在不透明成像模型中，套印由图形状态的两个参数控制：套印参数和<em>套印模式</em>（见“<a href="../../c8/s6/#867-套印控制">套印控制</a>”）。绘制对象会导致根据当前颜色空间和图形状态中的当前颜色标记特定的设备油墨集。其余油墨将根据套印参数是<strong>false</strong>还是<strong>true</strong>被擦除或保持不变。当当前颜色空间为<strong>DeviceCMYK</strong>时，套印模式参数还能根据颜色分量值是否为零或非零，将这种有选择性的油墨标记应用到单个颜色分量上。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>由于这种套印模型直接处理设备油墨的绘制，而不依赖于源颜色指定的颜色空间，因此它高度依赖设备，并且主要满足生产需求而非设计意图。套印通常用于不透明油墨或非常深的颜色，如黑色。在诸如陷印（见“<a href="../../c14/s11/#14116-陷印支持">陷印支持</a>”）等后期生产操作中，当实际的设备油墨集已经确定时，也会调用套印。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>因此，最好将透明度视为在外观空间中发生，而设备油墨的套印在设备空间中进行。这意味着应在输出时根据任何透明合成操作的实际结果油墨来做出油墨套印决策。另一方面，如下一小节所述，可以通过利用混合模式以设备无关的方式实现类似套印的效果 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>In the opaque imaging model, overprinting is controlled by two parameters of the graphics state: the overprint parameter and the <em>overprint mode</em> (see “<a href="../../c8/s6/#867-套印控制">Overprint Control</a>”). Painting an object causes some specific set of device colorants to be marked, as determined by the current colour space and current colour in the graphics state. The remaining colorants shall be either erased or left unchanged, depending on whether the overprint parameter is <strong>false</strong> or <strong>true</strong>. When the current colour space is <strong>DeviceCMYK</strong>, the overprint mode parameter additionally enables this selective marking of colorants to be applied to individual colour components according to whether the component value is zero or nonzero.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Because this model of overprinting deals directly with the painting of device colorants, independently of the colour space in which source colours have been specified, it is highly device-dependent and primarily addresses production needs rather than design intent. Overprinting is usually reserved for opaque colorants or for very dark colours, such as black. It is also invoked during late-stage production operations such as trapping (see “<a href="../../c14/s11/#14116-陷印支持">Trapping Support</a>”), when the actual set of device colorants has already been determined.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Consequently, it is best to think of transparency as taking place in appearance space, but overprinting of device colorants in device space. This means that colorant overprint decisions should be made at output time, based on the actual resultant colorants of any transparency compositing operation. On the other hand, effects similar to overprinting can be achieved in a device-independent manner by taking advantage of blend modes, as described in the next sub-clause.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="11742-混合模式和叠印">11.7.4.2 混合模式和叠印<a class="headerlink" href="#11742-混合模式和叠印" title="Permanent link">&para;</a></h3>
+<p><strong>11.7.4.2 Blend Modes and Overprinting</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>如<a href="#1173-专色和透明度">11.7.3</a>“<a href="./#1173-专色和透明度">专色和透明度</a>”所述，每个被绘制的图形对象都会影响所有现有的颜色成分：透明度组颜色空间中的所有印刷色成分以及任何可用的专色成分。对于未指定值的颜色成分，应假定源颜色值为 1.0；当对象完全不透明且使用 <strong>Normal</strong> 混合模式时，这将产生擦除这些成分的效果。这种处理方式与不透明成像模型中套印参数设置为 <strong>false</strong> 时的行为一致。</p>
+<p>透明成像模型定义了一些混合模式，例如 <strong>Darken</strong>（变暗），可用于实现类似套印的效果。<strong>Darken</strong> 的混合函数为：</p>
+<div class="arithmatex">\[B(c_b,c_s) = min(c_b,c_s)\]</div>
+<p>在这种混合模式下，当源颜色为 1.0 时（对于所有未指定的颜色成分都是如此），合成的结果始终与背景颜色相同。当背景完全不透明时，这将使结果颜色与背景颜色保持不变。这与不透明成像模型中套印参数设置为 <strong>true</strong> 时的行为一致。</p>
+<p>如果对象或背景不是完全不透明的，上述操作将相应改变。也就是说，擦除效果会减弱，并且用颜色值为 1.0 的对象进行套印可能会影响结果颜色。虽然这些结果可能有也可能没有实际用途，但它们超出了不透明成像模型中定义的套印和擦除行为的范畴。</p>
+<p>当印刷色被套印或擦除（因为正在绘制专色）时，之前描述的混合计算应在组的颜色空间中针对每个成分独立进行。如果该空间与输出设备的本机颜色空间不同，其成分并非设备的实际印刷色；只有在将组的结果转换为设备颜色空间之后，混合计算才会影响印刷色。因此，其效果不同于直接对设备的印刷色进行套印或擦除。另一方面，这是一种完全通用的操作，无论对象类型如何，也无论产生源颜色的计算方式如何，都能统一适用。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>到目前为止的讨论主要集中于那些未指定值且要被擦除或保持不变的颜色成分。然而，用于这些目的的 <strong>Normal</strong> 或 <strong>Darken</strong> 混合模式可能并不适用于那些已指定颜色值的成分。特别是，对这些成分使用 <strong>Darken</strong> 混合模式将无法实现用浅色覆盖深色的套印效果。此外，对于这些成分，可能特别需要使用其他某种混合模式。</p>
+</div>
+<p>PDF 图形状态仅指定一个当前混合模式参数，该参数始终适用于印刷色成分，有时也适用于专色成分。具体而言，对于专色，只能使用可分离且保白的混合模式。如果指定的混合模式不可分离或不保白，则应仅将其应用于印刷色成分，并且对于专色应使用 <strong>Normal</strong> 混合模式。</p>
+<p>如果混合模式的混合函数 B 具有 <span class="arithmatex">\(B(1.0, 1.0) = 1.0\)</span> 的特性，则该混合模式是<em>保白</em>的。</p>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>在<a href="../s3/#1135-混合模式">11.3.5</a>“<a href="../s3/#1135-混合模式">混合模式</a>”中<a href="../s3/#table136">表 136</a>所列的标准可分离混合模式中，除了 <strong>Difference</strong>（差值）和 <strong>Exclusion</strong>（排除）模式外，其他模式都是保白的。这确保了当对象在一个隔离的透明度组中累积时，只要仅使用保白混合模式，未指定成分的累积值将始终保持为 1.0。然后可以使用 <strong>Darken</strong>（或其他有用的模式）对该组的结果进行套印，同时避免与组内从未指定值的成分发生不必要的交互 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>As stated in <a href="#1173-专色和透明度">11.7.3</a>, "<a href="./#1173-专色和透明度">Spot Colours and Transparency</a>," each graphics object that is painted shall affect all
+existing colour components: all process colorants in the transparency group’s colour space as well as any
+available spot colorants. For colour components whose value has not been specified, a source colour value of
+1.0 shall be assumed; when objects are fully opaque and the <strong>Normal</strong> blend mode is used, this shall have the
+effect of erasing those components. This treatment is consistent with the behaviour of the opaque imaging
+model with the overprint parameter set to <strong>false</strong>.</p>
+<p>The transparent imaging model defines some blend modes, such as <strong>Darken</strong>, that can be used to achieve
+effects similar to overprinting. The blend function for <strong>Darken</strong> is</p>
+<div class="arithmatex">\[B(c_b,c_s) = min(c_b,c_s)\]</div>
+<p>In this blend mode, the result of compositing shall always be the same as the backdrop colour when the source
+colour is 1.0, as it is for all unspecified colour components. When the backdrop is fully opaque, this shall leave
+the result colour unchanged from that of the backdrop. This is consistent with the behaviour of the opaque
+imaging model with the overprint parameter set to <strong>true</strong>.</p>
+<p>If the object or backdrop is not fully opaque, the actions described previously are altered accordingly. That is,
+the erasing effect shall be reduced, and overprinting an object with a colour value of 1.0 may affect the result
+colour. While these results may or may not be useful, they lie outside the realm of the overprinting and erasing
+behaviour defined in the opaque imaging model.</p>
+<p>When process colours are overprinted or erased (because a spot colour is being painted), the blending
+computations described previously shall be done independently for each component in the group’s colour
+space. If that space is different from the native colour space of the output device, its components are not the
+device’s actual process colorants; the blending computations shall affect the process colorants only after the
+group’s results have been converted to the device colour space. Thus the effect is different from that of
+overprinting or erasing the device’s process colorants directly. On the other hand, this is a fully general
+operation that works uniformly, regardless of the type of object or of the computations that produced the source
+colour.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>The discussion so far has focused on those colour components whose values are not specified and that are to be either erased or left unchanged. However, the <strong>Normal</strong> or <strong>Darken</strong> blend modes used for these purposes may not be suitable for use on those components whose colour values are specified. In particular, using the Darken blend mode for such components would preclude overprinting a dark colour with a lighter one. Moreover, some other blend mode may be specifically desired for those components.</p>
+</div>
+<p>The PDF graphics state specifies only one current blend mode parameter, which shall always apply to process colorants and sometimes to spot colorants as well. Specifically, only separable, white-preserving blend modes shall be used for spot colours. If the specified blend mode is not separable and white-preserving, it shall apply only to process colour components, and the <strong>Normal</strong> blend mode shall be substituted for spot colours.</p>
+<p>A blend mode is <em>white-preserving</em> if its blend function B has the property that <span class="arithmatex">\(B(1.0, 1.0) = 1.0\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Of the standard separable blend modes listed in <a href="../s3/#table136">Table 136</a> in <a href="../s3/#1135-混合模式">11.3.5</a>, "<a href="../s3/#1135-混合模式">Blend Mode</a>," all except Difference and <strong>Exclusion</strong> are white-preserving. This ensures that when objects accumulate in an isolated transparency group, the accumulated values for unspecified components remain 1.0 as long as only white-preserving blend modes are used. The group’s results can then be overprinted using <strong>Darken</strong> (or other useful modes) while avoiding unwanted interactions with components whose values were never specified within the group.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="11743-与不透明套印的兼容性">11.7.4.3 与不透明套印的兼容性<a class="headerlink" href="#11743-与不透明套印的兼容性" title="Permanent link">&para;</a></h3>
+<p><strong>11.7.4.3 Compatibility with Opaque Overprinting</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>由于使用混合模式来实现类似套印的效果并不直接使用图形状态中的套印控制参数，因此这些方法仅能被支持透明度的应用程序使用。为了与不透明成像模型中使用的套印控制方法兼容，提供了一种特殊的混合模式 <strong>CompatibleOverprint</strong>，该模式会参考与套印相关的图形状态参数来计算结果。此模式仅在绘制基本图形对象（填充、描边、文本、图像和渐变）时适用。它不会被显式调用，也不会由任何 PDF 名称对象标识；相反，只要启用了套印（即图形状态中的套印参数为 <strong>true</strong>），在绘制基本图形对象时就会隐式调用该模式。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>早期透明成像模型的设计包含一个名为 <strong>Compatible</strong> 的额外混合模式，它会显式调用此处描述的 <strong>CompatibleOverprint</strong> 混合模式。由于现在只要合适就会隐式调用 <strong>CompatibleOverprint</strong>，因此在合成时永远不需要指定 <strong>Compatible</strong> 混合模式。</p>
+</div>
+<p><strong>Compatible</strong> 混合模式应视为等同于 <strong>Normal</strong>。</p>
+<p>在 <strong>CompatibleOverprint</strong> 模式下，混合函数 <span class="arithmatex">\(B(c_b, c_s)\)</span> 的值要么是 <span class="arithmatex">\(c_b\)</span>，要么是 <span class="arithmatex">\(c_s\)</span>，具体取决于套印模式参数、当前颜色空间和组颜色空间的设置以及源颜色值 <span class="arithmatex">\(c_s\)</span>：</p>
+<ul>
+<li>如果套印模式为 1（非零套印模式），并且当前颜色空间和组颜色空间均为 <strong>DeviceCMYK</strong>，那么非零值的印刷色成分将替换背景的相应成分值；零值的成分将保留现有背景值不变。也就是说，对于任何印刷色（<strong>DeviceCMYK</strong>）成分，如果其（减法）颜色值非零，混合函数 <span class="arithmatex">\(B(c_b, c_s)\)</span> 的值应为源成分 <span class="arithmatex">\(c_s\)</span>；否则应为背景成分 <span class="arithmatex">\(c_b\)</span>。对于专色成分，该值始终为 <span class="arithmatex">\(c_b\)</span>。</li>
+<li>在所有其他情况下，对于当前颜色空间中指定的所有颜色成分，<span class="arithmatex">\(B(c_b, c_s)\)</span> 的值应为 <span class="arithmatex">\(c_s\)</span>；否则为 <span class="arithmatex">\(c_b\)</span>。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">示例 1</p>
+<p>如果当前颜色空间为 <strong>DeviceCMYK</strong> 或 <strong>CalRGB</strong>，对于印刷色成分，混合函数的值为 <span class="arithmatex">\(c_s\)</span>；对于专色成分，混合函数的值为 <span class="arithmatex">\(c_b\)</span>。另一方面，如果当前颜色空间是一个表示专色成分的 <strong>Separation</strong> 空间，那么对于该专色成分，混合函数的值为 <span class="arithmatex">\(c_s\)</span>；对于所有印刷色成分和所有其他专色成分，混合函数的值为 <span class="arithmatex">\(c_b\)</span>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>在上述描述中，“当前颜色空间”指的是用于绘制操作的颜色空间。它可以通过图形状态中的当前颜色空间参数指定（见“颜色值”），也可以通过诸如 <strong>rg</strong> 这样的颜色操作符隐式指定（见“<a href="../../c8/s6/#868-颜色操作">颜色操作符</a>”），或者由图像 XObject 的 <strong>ColorSpace</strong> 条目指定（见“<a href="../../c8/s9/#895-图片字典">图像字典</a>”）。对于 <strong>Indexed</strong> 空间，它指的是基础颜色空间（见“<a href="../../c8/s6/#8663-索引颜色空间">索引颜色空间</a>”）；对于 <strong>Separation</strong> 和 <strong>DeviceN</strong> 空间，如果它们恢复到其替代颜色空间，情况也是如此，如“<a href="../../c8/s6/#8664-分离色彩空间">分离颜色空间</a>”和“<a href="../../c8/s6/#8665-devicen-色彩空间">DeviceN 颜色空间</a>”所述。</p>
+</div>
+<p>如果在调用 <strong>CompatibleOverprint</strong> 时当前混合模式不是 <strong>Normal</strong>，则正在绘制的对象将被隐式视为定义在一个非隔离、非挖空的透明度组中，并使用 <strong>CompatibleOverprint</strong> 混合模式进行绘制。然后，将使用图形状态中的当前混合模式绘制该组的结果。</p>
+<div class="admonition note">
+<p class="admonition-title">注 3</p>
+<p>如果当前混合模式为 <strong>Normal</strong>，则无需创建这样的隐式透明度组；在绘制对象时简单地替换为 <strong>CompatibleOverprint</strong> 混合模式即可产生相同的结果。还有一些其他情况可以优化掉这个隐式透明度组。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">示例 2</p>
+<p>附件 L 中的图 L.20 展示了在 <strong>DeviceCMYK</strong> 颜色空间中使用 <strong>Screen</strong> 混合模式时，所有四种混合与套印组合的效果。标签“启用套印”表示图形状态中的套印参数为真且套印模式为 1。在图的上半部分，一个浅绿色椭圆以不透明（不透明度 = 1.0）的方式绘制在从纯黄色渐变到纯品红色的背景上。在下半部分，相同的对象以半透明（不透明度 = 0.5）的方式绘制 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Because the use of blend modes to achieve effects similar to overprinting does not make direct use of the overprint control parameters in the graphics state, such methods are usable only by transparency-aware applications. For compatibility with the methods of overprint control used in the opaque imaging model, a special blend mode, CompatibleOverprint, is provided that consults the overprint-related graphics state parameters to compute its result. This mode shall apply only when painting elementary graphics objects (fills, strokes, text, images, and shadings). It shall not be invoked explicitly and shall not be identified by any PDF name object; rather, it shall be implicitly invoked whenever an elementary graphics object is painted while overprinting is enabled (that is, when the overprint parameter in the graphics state is <strong>true</strong>).</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Earlier designs of the transparent imaging model included an additional blend mode named <strong>Compatible</strong>, which explicitly invoked the CompatibleOverprint blend mode described here. Because CompatibleOverprint is now invoked implicitly whenever appropriate, it is never necessary to specify the <strong>Compatible</strong> blend mode for use in compositing.</p>
+</div>
+<p>The Compatible blend mode shall be treated as equivalent to <strong>Normal</strong>.</p>
+<p>The value of the blend function <span class="arithmatex">\(B(c_b, c_s)\)</span> in the CompatibleOverprint mode shall be either <span class="arithmatex">\(c_b\)</span> or <span class="arithmatex">\(c_s\)</span> , depending on the setting of the overprint mode parameter, the current and group colour spaces, and the source colour value <span class="arithmatex">\(c_s\)</span> :</p>
+<ul>
+<li>If the overprint mode is 1 (nonzero overprint mode) and the current colour space and group colour space are both <strong>DeviceCMYK</strong>, then process colour components with nonzero values shall replace the corresponding component values of the backdrop; components with zero values leave the existing backdrop value unchanged. That is, the value of the blend function <span class="arithmatex">\(B(c_b , c_s)\)</span> shall be the source component <span class="arithmatex">\(c_s\)</span> for any process (<strong>DeviceCMYK</strong>) colour component whose (subtractive) colour value is nonzero; otherwise it shall be the backdrop component <span class="arithmatex">\(c_b\)</span> . For spot colour components, the value shall always be <span class="arithmatex">\(c_b\)</span> .</li>
+<li>In all other cases, the value of <span class="arithmatex">\(B(c_b, c_s)\)</span> shall be <span class="arithmatex">\(c_s\)</span> for all colour components specified in the current colour space, otherwise <span class="arithmatex">\(c_b\)</span> .</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>If the current colour space is <strong>DeviceCMYK</strong> or <strong>CalRGB</strong>, the value of the blend function is <span class="arithmatex">\(c_s\)</span> for process colour components and <span class="arithmatex">\(c_b\)</span> for spot components. On the other hand, if the current colour space is a <strong>Separation</strong> space representing a spot colour component, the value is <span class="arithmatex">\(c_s\)</span> for that spot component and <span class="arithmatex">\(c_b\)</span> for all process components and all other spot components.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>In the previous descriptions, the term current colour space refers to the colour space used for a painting operation. This may be specified by the current colour space parameter in the graphics state (see “Colour Values”), implicitly by colour operators such as <strong>rg</strong> (“<a href="../../c8/s6/#868-颜色操作">Colour Operators</a>”), or by the <strong>ColorSpace</strong> entry of an image XObject (“<a href="../../c8/s9/#895-图片字典">Image Dictionaries</a>”). In the case of an <strong>Indexed</strong> space, it refers to the base colour space (see “<a href="../../c8/s6/#8663-索引颜色空间">Indexed Colour Spaces</a>”); likewise for <strong>Separation</strong> and <strong>DeviceN</strong> spaces that revert to their alternate colour space, as described under “<a href="../../c8/s6/#8664-分离色彩空间">Separation Colour Spaces</a>” and “<a href="../../c8/s6/#8665-devicen-色彩空间">DeviceN Colour Spaces</a>”.</p>
+</div>
+<p>If the current blend mode when CompatibleOverprint is invoked is any mode other than <strong>Normal</strong>, the object being painted shall be implicitly treated as if it were defined in a non-isolated, non-knockout transparency group and painted using the CompatibleOverprint blend mode. The group’s results shall then be painted using the current blend mode in the graphics state.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>It is not necessary to create such an implicit transparency group if the current blend mode is <strong>Normal</strong>; simply substituting the CompatibleOverprint blend mode while painting the object produces equivalent results. There are some additional cases in which the implicit transparency group can be optimized out.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>Figure L.20 in Annex L shows the effects of all four possible combinations of blending and overprinting, using the <strong>Screen</strong> blend mode in the <strong>DeviceCMYK</strong> colour space. The label “overprint enabled” means that the overprint parameter in the graphics state is true and the overprint mode is 1. In the upper half of the figure, a light green oval is painted opaquely (opacity = 1.0) over a backdrop shading from pure yellow to pure magenta. In the lower half, the same object is painted with transparency (opacity = 0.5).</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="11744-特殊路径绘制注意事项">11.7.4.4 特殊路径绘制注意事项<a class="headerlink" href="#11744-特殊路径绘制注意事项" title="Permanent link">&para;</a></h3>
+<p><strong>11.7.4.4 Special Path-Painting Considerations</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在[11.7.4.3]“<a href="#11743-与不透明套印的兼容性">与不透明套印的兼容性</a>”中讨论的套印相关考虑因素，也会影响那些在单个操作中同时进行路径填充和描边的路径绘制操作。这些操作包括 <strong>B</strong>、<strong>B*</strong>、<strong>b</strong> 和 <strong>b*</strong> 操作符（见“<a href="../../c8/s5/#853-路径绘制运算符">路径绘制操作符</a>”），以及使用文本渲染模式 2 或 6 绘制字形（见“<a href="../../c9/s3/#936-文本渲染模式">文本渲染模式</a>”）。出于透明度合成的目的，组合的填充和描边应被视为一个单一的图形对象，就好像它们被包含在一个透明度组中一样。这个隐式组的建立和使用方式如下：</p>
+<ul>
+<li>如果启用了套印（图形状态中的套印参数为 <strong>true</strong>）且当前的描边和非描边 alpha 常量相等，则会建立一个非隔离、非挖空的透明度组。在该组内，填充和描边将以 1.0 的 alpha 值执行，但使用 <strong>CompatibleOverprint</strong> 混合模式。然后，将使用最初指定的 alpha 值和混合模式将该组的结果与背景进行合成。</li>
+<li>在所有其他情况下，会建立一个非隔离的挖空组。在该组内，填充和描边将分别以其各自的当前 alpha 常量和当前混合模式执行。然后，将使用 1.0 的 alpha 值和 <strong>Normal</strong> 混合模式将该组的结果与背景进行合成。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>在使用组合的填充和描边文本渲染模式显示文本的情况下，此行为与图形状态中的文本挖空参数无关（见“<a href="../../c9/s3/#938-文本镂空切割">文本挖空</a>”）。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>这些规则的目的是避免在重叠区域出现不透明的描边与填充结果合成的情况，因为这会产生通常不需要的双重边框效果。当套印参数为 <strong>true</strong> 时适用的这种特殊情况是为了与不透明成像模型的套印行为保持向后兼容。如果无法通过组合的填充和描边操作符或文本渲染模式实现所需的效果，可以通过使用单独的路径对象和一个显式的透明度组分别指定填充和描边来实现。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注 3</p>
+<p>在前面描述的第二种情况下，描边不会覆盖填充（尽管填充或描边仍可覆盖背景）。此外，如果套印图形状态参数为 <strong>true</strong>，当描边和非描边 alpha 常量的值从相等变为不相等时，结果会出现不连续的情况。因此，如果在独立变化描边和非描边 alpha 常量的情况下进行组合的填充和描边操作，最好不要使用套印 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The overprinting considerations discussed in [11.7.4.3], "<a href="#11743-与不透明套印的兼容性">Compatibility with Opaque Overprinting</a>," also affect those path-painting operations that combine filling and stroking a path in a single operation. These include the <strong>B</strong>, <strong>B*</strong>, <strong>b</strong>, and <strong>b*</strong> operators (see “<a href="../../c8/s5/#853-路径绘制运算符">Path-Painting Operators</a>”) and the painting of glyphs with text rendering mode 2 or 6 (“<a href="../../c9/s3/#936-文本渲染模式">Text Rendering Mode</a>”). For transparency compositing purposes, the combined fill and stroke shall be treated as a single graphics object, as if they were enclosed in a transparency group. This implicit group is established and used as follows:</p>
+<ul>
+<li>If overprinting is enabled (the overprint parameter in the graphics state is <strong>true</strong>) and the current stroking and nonstroking alpha constants are equal, a non-isolated, non-knockout transparency group shall be established. Within the group, the fill and stroke shall be performed with an alpha value of 1.0 but with the CompatibleOverprint blend mode. The group results shall then be composited with the backdrop, using the originally specified alpha and blend mode.</li>
+<li>In all other cases, a non-isolated knockout group shall be established. Within the group, the fill and stroke shall be performed with their respective prevailing alpha constants and the prevailing blend mode. The group results shall then be composited with the backdrop, using an alpha value of 1.0 and the <strong>Normal</strong> blend mode.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>In the case of showing text with the combined filling and stroking text rendering modes, this behaviour is independent of the text knockout parameter in the graphics state (see “<a href="../../c9/s3/#938-文本镂空切割">Text Knockout</a>”).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The purpose of these rules is to avoid having a non-opaque stroke composite with the result of the fill in the region of overlap, which would produce a double border effect that is usually undesirable. The special case that applies when the overprint parameter is <strong>true</strong> is for backward compatibility with the overprinting behavior of the opaque imaging model. If a desired effect cannot be achieved with a combined filling and stroking operator or text rendering mode, it can be achieved by specifying the fill and stroke with separate path objects and an explicit transparency group.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>Overprinting of the stroke over the fill does not work in the second case described previously (although either the fill or the stroke can still overprint the backdrop). Furthermore, if the overprint graphics state parameter is <strong>true</strong>, the results are discontinuous at the transition between equal and unequal values of the stroking and nonstroking alpha constants. For this reason, it is best not to use overprinting for combined filling and stroking operations if the stroking and nonstroking alpha constants are being varied independently.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="11745-套印行为总结">11.7.4.5 套印行为总结<a class="headerlink" href="#11745-套印行为总结" title="Permanent link">&para;</a></h3>
+<p><strong>11.7.4.5 Summary of Overprinting Behaviour</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>表 148 和表 149 分别总结了不透明成像模型和透明成像模型中的套印和擦除行为。表 148 展示了不透明模型中使用的套印规则，如“套印控制”所述。表 149 展示了透明模型中通过 <strong>CompatibleOverprint</strong> 混合模式实现的等效规则。表中的 <strong>OP</strong> 和 <strong>OPM</strong> 分别指代图形状态中的套印参数和套印模式参数。</p>
+<p><table id="table148" markdown="span">
+    <caption><strong>表 148 – 不透明成像模型中的套印行为</strong></caption>
+    <thead>
+        <tr>
+            <th rowspan=2><strong>源颜色空间</strong></th>
+            <th rowspan=2><strong>受影响的颜色成分</strong></th>
+            <th colspan=3 style="text-align: center"><strong>对颜色成分的影响</strong></th>
+        </tr>
+        <tr>
+            <th ><strong>OP 为 false</strong></th>
+            <th ><strong>OP 为 true，OPM 为 0</strong></th>
+            <th ><strong>OP 为 true，OPM 为 1</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=3 style="vertical-align: middle;"><strong>DeviceCMYK</strong>， <br/>直接指定， <br/>不在采样图像中</td>
+            <td>C、M、Y 或 K</td>
+            <td>绘制源颜色</td>
+            <td>绘制源颜色</td>
+            <td>如果源颜色值 ≠ 0.0 则绘制源颜色；如果 = 0.0 则不绘制</td>
+        </tr>
+        <tr>
+            <td>除 CMYK 之外的印刷色成分</td>
+            <td>绘制源颜色</td>
+            <td>绘制源颜色</td>
+            <td>绘制源颜色</td>
+        </tr>
+        <tr>
+            <td>专色成分</td>
+            <td>绘制颜色值 0.0</td>
+            <td>不绘制</td>
+            <td>不绘制</td>
+        </tr>
+        <tr>
+            <td rowspan=2 style="vertical-align: middle;">任何印刷色空间（包括其他 <strong>DeviceCMYK</strong> 情况）</td>
+            <td>印刷色成分</td>
+            <td>绘制源颜色</td>
+            <td>绘制源颜色</td>
+            <td>绘制源颜色</td>
+        </tr>
+        <tr>
+            <td>专色成分</td>
+            <td>绘制颜色值 0.0</td>
+            <td>不绘制</td>
+            <td>不绘制</td>
+        </tr>
+        <tr>
+            <td rowspan=3 style="vertical-align: middle;"><strong>Separation</strong> 或 <strong>DeviceN</strong></td>
+            <td>专色成分</td>
+            <td>绘制颜色值 0.0</td>
+            <td>不绘制</td>
+            <td>不绘制</td>
+        </tr>
+        <tr>
+            <td>源空间中命名的专色成分</td>
+            <td>绘制源颜色</td>
+            <td>绘制源颜色</td>
+            <td>绘制源颜色</td>
+        </tr>
+        <tr>
+            <td>源空间中未命名的专色成分</td>
+            <td>绘制颜色值 0.0</td>
+            <td>不绘制</td>
+            <td>不绘制</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table149" markdown="span">
+    <caption><strong>表 149 – 透明成像模型中的套印行为</strong></caption>
+    <thead>
+        <tr>
+            <th rowspan=2><strong>源颜色空间</strong></th>
+            <th rowspan=2><strong>组颜色空间中受影响的颜色成分</strong></th>
+            <th colspan=3 style="text-align: center"><strong>混合函数 <span class="arithmatex">\(B(c_b,c_s)\)</span> 的值（以色调值表示）</strong></th>
+        </tr>
+        <tr>
+            <th ><strong>OP 为 false</strong></th>
+            <th ><strong>OP 为 true，OPM 为 0</strong></th>
+            <th ><strong>OP 为 true，OPM 为 1</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=3 style="vertical-align: middle;"><strong>DeviceCMYK</strong>， <br/>直接指定， <br/>不在采样图像中</td>
+            <td>C、M、Y 或 K</td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td>如果 <span class="arithmatex">\(c_s\)</span> ≠ 0.0 则为 <span class="arithmatex">\(c_s\)</span>；如果 <span class="arithmatex">\(c_s\)</span> = 0.0 则为 <span class="arithmatex">\(c_b\)</span></td>
+        </tr>
+        <tr>
+            <td>除 CMYK 之外的印刷色成分</td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+        </tr>
+        <tr>
+            <td>专色成分</td>
+            <td><span class="arithmatex">\(c_s(=0.0)\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+        </tr>
+        <tr>
+            <td rowspan=2 style="vertical-align: middle;">任何印刷色空间 <br/>（包括其他 <strong>DeviceCMYK</strong> 情况）</td>
+            <td>印刷色成分</td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+        </tr>
+        <tr>
+            <td>专色成分</td>
+            <td><span class="arithmatex">\(c_s(=0.0)\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+        </tr>
+        <tr>
+            <td rowspan=3 style="vertical-align: middle;"><strong>Separation</strong> 或 <br/> <strong>DeviceN</strong></td>
+            <td>印刷色成分</td>
+            <td><span class="arithmatex">\(c_s(=0.0)\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+        </tr>
+        <tr>
+            <td>源空间中命名的专色成分</td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+        </tr>
+        <tr>
+            <td>源空间中未命名的专色成分</td>
+            <td><span class="arithmatex">\(c_s(=0.0)\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+        </tr>
+        <tr>
+            <td>一个组（非基本对象）</td>
+            <td>所有颜色成分</td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+        </tr>
+    </tbody>
+</table></p>
+<p>在这些表格中，颜色成分值以减法色调值表示，因为套印通常应用于减法色料（如油墨），而非加法色料（如显示屏上的荧光粉）。因此，<strong>CompatibleOverprint</strong> 混合模式被描述为接受减法参数并返回减法结果。然而，实际上，<strong>CompatibleOverprint</strong>（如同所有混合模式）应将颜色成分视为加法值；在应用混合函数之前和之后，减法成分应进行补色处理。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>此注描述了<a href="#table148">表 148</a>和<a href="#table149">表 149</a>之间的一个重要区别。在表 148 中，所讨论的印刷色成分是实际的设备色料——输出设备本机颜色空间（<strong>DeviceGray</strong>、<strong>DeviceRGB</strong> 或 <strong>DeviceCMYK</strong>）的颜色成分。在表 149 中，印刷色成分是组的颜色空间的成分，该颜色空间不一定与输出设备的颜色空间相同（甚至可能是像 <strong>CalRGB</strong> 或 <strong>ICCBased</strong> 这样的）。因此，组的颜色空间的印刷色成分不能像在 <strong>Separation</strong> 或 <strong>DeviceN</strong> 颜色空间中的专色那样处理（见“<a href="#1173-专色和透明度">专色和透明度</a>”）。这种不透明和透明套印及擦除规则之间的区别仅在透明度组（包括页面组，如果其颜色空间与输出设备的本机颜色空间不同）内存在。对于专色成分的处理没有差异。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>表 149 在底部有一行额外的内容。当绘制一个对象，该对象是一个透明度组而非基本对象（填充、描边、文本、图像或渐变）时适用。如<a href="#1173-专色和透明度">11.7.3</a>“<a href="#1173-专色和透明度">专色和透明度</a>”中所述，一个组被认为会绘制所有颜色成分，包括印刷色和专色。组中任何对象都未明确绘制的颜色成分具有加法颜色值 1.0（减法色调值 0.0）。由于在组内实际绘制了哪些成分没有保留相关信息，因此在这种情况下无法进行兼容套印；<strong>CompatibleOverprint</strong> 混合模式将恢复为 <strong>Normal</strong>，且不考虑套印参数和套印模式参数。支持透明度的符合标准的写入程序可以选择更合适的混合模式，如 <strong>Darken</strong>，以实现类似套印的效果 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Tables 148 and 149 summarize the overprinting and erasing behaviour in the opaque and transparent imaging models, respectively. Table 148 shows the overprinting rules used in the opaque model, as described in “Overprint Control”. Table 149 shows the equivalent rules as implemented by the CompatibleOverprint blend mode in the transparent model. The names <strong>OP</strong> and <strong>OPM</strong> in the tables refer to the overprint and overprint mode parameters of the graphics state.</p>
+<p><table id="table148" markdown="span">
+    <caption><strong>Table 148 – Overprinting behavior in the opaque imaging model</strong></caption>
+    <thead>
+        <tr>
+            <th rowspan=2><strong>Source colour space</strong></th>
+            <th rowspan=2><strong>Affected colour component</strong></th>
+            <th colspan=3 style="text-align: center"><strong>Effect on colour component</strong></th>
+        </tr>
+        <tr>
+            <th ><strong>OP false</strong></th>
+            <th ><strong>OP true, OPM 0</strong></th>
+            <th ><strong>OP true, OPM 1</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=3 style="vertical-align: middle;"><strong>DeviceCMYK,</strong> <br/>specified directly, <br/>not in a sampled image</td>
+            <td>C, M, Y, or K</td>
+            <td>Paint source</td>
+            <td>Paint source</td>
+            <td>Paint source<br/>if ≠ 0.0 <br/>Do not paint if = 0.0</td>
+        </tr>
+        <tr>
+            <td>Process colorant <br/>other than CMYK</td>
+            <td>Paint source</td>
+            <td>Paint source</td>
+            <td>Paint source</td>
+        </tr>
+        <tr>
+            <td>Spot colorant</td>
+            <td>Paint 0.0</td>
+            <td>Do not paint</td>
+            <td>Do not paint</td>
+        </tr>
+        <tr>
+            <td rowspan=2 style="vertical-align: middle;">Any process colour space (including other cases of <strong>DeviceCMYK</strong>)</td>
+            <td>Process colorant</td>
+            <td>Paint source</td>
+            <td>Paint source</td>
+            <td>Paint source</td>
+        </tr>
+        <tr>
+            <td>Spot colorant</td>
+            <td>Paint 0.0</td>
+            <td>Do not paint</td>
+            <td>Do not paint</td>
+        </tr>
+        <tr>
+            <td rowspan=3 style="vertical-align: middle;"><strong>Separation</strong> or <strong>DeviceN</strong></td>
+            <td>Spot colorant</td>
+            <td>Paint 0.0</td>
+            <td>Do not paint</td>
+            <td>Do not paint</td>
+        </tr>
+        <tr>
+            <td>Spot colorant named in source space</td>
+            <td>Paint source</td>
+            <td>Paint source</td>
+            <td>Paint source</td>
+        </tr>
+        <tr>
+            <td>Spot colorant not named in source space</td>
+            <td>Paint 0.0</td>
+            <td>Do not paint</td>
+            <td>Do not paint</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table149" markdown="span">
+    <caption><strong>Table 149 – Overprinting behavior in the transparent imaging model</strong></caption>
+    <thead>
+        <tr>
+            <th rowspan=2><strong>Source colour space</strong></th>
+            <th rowspan=2><strong>Affected colour component of group colour space</strong></th>
+            <th colspan=3 style="text-align: center"><strong>Value of blend function <span class="arithmatex">\(B(c_b,c_s)\)</span> expressed as tint</strong></th>
+        </tr>
+        <tr>
+            <th ><strong>OP false</strong></th>
+            <th ><strong>OP true, OPM 0</strong></th>
+            <th ><strong>OP true, OPM 1</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=3 style="vertical-align: middle;"><strong>DeviceCMYK,</strong> <br/>specified directly, <br/>not in a sampled image</td>
+            <td>C, M, Y, or K</td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span> if <span class="arithmatex">\(c_s\)</span> ≠ 0.0 <br/> <span class="arithmatex">\(c_b\)</span> if <span class="arithmatex">\(c_s\)</span> = 0.0</td>
+        </tr>
+        <tr>
+            <td>Process colour component other than CMYK</td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+        </tr>
+        <tr>
+            <td>Spot colorant</td>
+            <td><span class="arithmatex">\(c_s(=0.0)\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+        </tr>
+        <tr>
+            <td rowspan=2 style="vertical-align: middle;">Any process colour space<br/> (including other cases of <strong>DeviceCMYK</strong>)</td>
+            <td>Process colour component</td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+        </tr>
+        <tr>
+            <td>Spot colorant</td>
+            <td><span class="arithmatex">\(c_s(=0.0)\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+        </tr>
+        <tr>
+            <td rowspan=3 style="vertical-align: middle;"><strong>Separation</strong> or <br/> <strong>DeviceN</strong></td>
+            <td>Process colour component</td>
+            <td><span class="arithmatex">\(c_s(=0.0)\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+        </tr>
+        <tr>
+            <td>Spot colorant named in source space</td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+        </tr>
+        <tr>
+            <td>Spot colorant not named in source space</td>
+            <td><span class="arithmatex">\(c_s(=0.0)\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+            <td><span class="arithmatex">\(c_b\)</span></td>
+        </tr>
+        <tr>
+            <td>A group (not an elementary object)</td>
+            <td>All colour components</td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+            <td><span class="arithmatex">\(c_s\)</span></td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Colour component values are represented in these tables as subtractive tint values because overprinting is typically applied to subtractive colorants such as inks rather than to additive ones such as phosphors on a display screen. The CompatibleOverprint blend mode is therefore described as if it took subtractive arguments and returned subtractive results. In reality, however, CompatibleOverprint (like all blend modes) shall treat colour components as additive values; subtractive components shall be complemented before and after application of the blend function.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>This note describes an important difference between <a href="#table148">Table 148</a> and <a href="#table149">Table 149</a>. In Table 148, the process colour components being discussed are the actual device colorants—the colour components of the output device’s native colour space (<strong>DeviceGray</strong>, <strong>DeviceRGB</strong>, or <strong>DeviceCMYK</strong>). In Table 149, the process colour components are those of the group’s colour space, which is not necessarily the same as that of the output device (and can even be something like <strong>CalRGB</strong> or <strong>ICCBased</strong>). For this reason, the process colour components of the group colour space cannot be treated as if they were spot colours in a <strong>Separation</strong> or <strong>DeviceN</strong> colour space (see “<a href="#1173-专色和透明度">Spot Colours and Transparency</a>”). This difference between opaque and transparent overprinting and erasing rules arises only within a transparency group (including the page group, if its colour space is different from the native colour space of the output device). There is no difference in the treatment of spot colour components.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Table 149 has one additional row at the bottom. It applies when painting an object that is a transparency group rather than an elementary object (fill, stroke, text, image, or shading). As stated in <a href="#1173-专色和透明度">11.7.3</a>, "<a href="#1173-专色和透明度">Spot Colours and Transparency</a>," a group is considered to paint all colour components, both process and spot. Colour components that were not explicitly painted by any object in the group have an additive colour value of 1.0 (subtractive tint 0.0). Since no information is retained about which components were actually painted within the group, compatible overprinting is not possible in this case; the CompatibleOverprint blend mode reverts to <strong>Normal</strong>, with no consideration of the overprint and overprint mode parameters. A transparency-aware conforming writer can choose a more suitable blend mode, such as <strong>Darken</strong>, to produce an effect similar to overprinting.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1175-渲染参数和透明度">11.7.5 渲染参数和透明度<a class="headerlink" href="#1175-渲染参数和透明度" title="Permanent link">&para;</a></h2>
+<p><strong>11.7.5 Rendering Parameters and Transparency</strong></p>
+<h3 id="11751-概述">11.7.5.1 概述<a class="headerlink" href="#11751-概述" title="Permanent link">&para;</a></h3>
+<p><strong>11.7.5.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>不透明成像模型有几个用于处理颜色渲染的图形状态参数：当前半色调（见“<a href="../../c10/s5/#1055-半色调词典">半色调词典</a>”）、传递函数（“<a href="../../c10/s4/">传递函数</a>”）、渲染目标（“<a href="../../c8/s6/#8658-渲染目标">渲染目标</a>”）以及黑版生成和底色去除函数（“<a href="../../c10/s3/#1034-从-devicergb-到-devicecmyk-的转换">从 DeviceRGB 到 DeviceCMYK 的转换</a>”）。所有这些渲染参数都可以针对每个对象单独指定；它们控制着特定对象的渲染方式。当所有对象都是不透明时，很容易定义这意味着什么。但当存在透明对象时，在给定位置可能会有多个对象对颜色产生贡献；在透明对象重叠的区域中，应该应用哪些渲染参数就不明确了。同时，当只绘制不透明对象时，透明成像模型应与不透明模型保持一致。</p>
+<p>在存在透明度的情况下，有两类渲染参数的处理方式有所不同。第一类是半色调和传递函数，它们仅在已知页面上某个点的最终颜色时才会应用。第二类是渲染目标、黑版生成和底色去除，它们在颜色从一个颜色空间转换到另一个颜色空间时就会应用 。</p>
+</div>
+<div class="tabbed-block">
+<p>The opaque imaging model has several graphics state parameters dealing with the rendering of colour: the current halftone (see “<a href="../../c10/s5/#1055-半色调词典">Halftone Dictionaries</a>”), transfer functions (“<a href="../../c10/s4/">Transfer Functions</a>”), rendering intent (“<a href="../../c8/s6/#8658-渲染目标">Rendering Intents</a>”), and black-generation and undercolor-removal functions (“<a href="../../c10/s3/#1034-从-devicergb-到-devicecmyk-的转换">Conversion from DeviceRGB to DeviceCMYK</a>”). All of these rendering parameters may be specified on a per-object basis; they control how a particular object is rendered. When all objects are opaque, it is easy to define what this means. But when they are transparent, more than one object may contribute to the colour at a given point; it is unclear which rendering parameters to apply in an area where transparent objects overlap. At the same time, the transparent imaging model should be consistent with the opaque model when only opaque objects are painted.</p>
+<p>There are two categories of rendering parameters that are treated somewhat differently in the presence of transparency. In the first category are halftone and transfer functions, which are applied only when the final colour at a given point on the page is known. In the second category are rendering intent, black generation, and undercolor removal, which are applied whenever colours are converted from one colour space to another.</p>
+</div>
+</div>
+</div>
+<h3 id="11752-半色调和传递函数">11.7.5.2 半色调和传递函数<a class="headerlink" href="#11752-半色调和传递函数" title="Permanent link">&para;</a></h3>
+<p><strong>11.7.5.2 Halftone and Transfer Function</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>当对象是透明的时，对象的渲染并非在指定对象时立即发生，而是在稍后的某个时间进行。因此，实现应跟踪页面上每个点的半色调和传递函数参数，从这些参数被指定的时间开始，一直到实际进行渲染的时间。这意味着这些渲染参数应与页面的区域相关联，而不是与单个对象相关联。</p>
+<p>页面上任何给定点要使用的半色调和传递函数应该是绘制该点所在的最上层（最顶部）基本图形对象时有效的那些参数，但前提是该对象完全不透明。只有基本对象才相关；与组对象关联的渲染参数将被忽略。任何点上的<em>最上层对象</em>应定义为在整个页面堆栈中，在该点处具有非零对象形状值（<span class="arithmatex">\(f_j\)</span>）（即该点位于对象内部）的最上层基本对象。如果在绘制对象时满足以下所有条件，则认为该对象是<em>完全不透明</em>的：</p>
+<ul>
+<li>图形状态中的当前 alpha 常量（根据绘制操作是描边还是非描边）为 1.0。</li>
+<li>图形状态中的当前混合模式为 <strong>Normal</strong>（或 <strong>Compatible</strong>，它被视为等同于 <strong>Normal</strong>）。</li>
+<li>图形状态中的当前软蒙版为 <strong>None</strong>。如果该对象是一个图像 XObject，并且其图像字典中没有 <strong>SMask</strong> 条目。</li>
+<li>在调用包含该对象的组的 <strong>Do</strong> 操作符时，以及对于任何直接祖先组，在当时上述三个条件也为真。</li>
+<li>如果当前颜色是一个平铺图案，则其图案单元定义中的所有对象也满足上述条件。</li>
+</ul>
+<p>综合这些条件可确保只有对象本身会对给定点的颜色产生贡献，从而完全遮挡背景。对于最上层对象不完全不透明或根本未绘制的页面部分，应使用页面的默认半色调和传递函数。</p>
+<p>如果绘制图形对象时启用了套印——也就是说，如果图形状态中适用的（描边或非描边）套印参数为 <strong>true</strong>——则在给定点使用的半色调和传递函数应针对每个颜色成分分别确定。套印会隐式调用 <strong>CompatibleOverprint</strong> 混合模式（见“<a href="#11743-与不透明套印的兼容性">与不透明套印的兼容性</a>”）。仅当 <strong>CompatibleOverprint</strong> 为某个成分产生源颜色（而非背景颜色）时，才认为对象对于该成分是不透明的 。</p>
+</div>
+<div class="tabbed-block">
+<p>When objects are transparent, rendering of an object does not occur when the object is specified but at some later time. Hence, the implementation shall keep track of the halftone and transfer function parameters at each point on the page from the time they are specified until the time rendering actually occurs. This means that these rendering parameters shall be associated with regions of the page rather than with individual objects.</p>
+<p>The halftone and transfer function to be used at any given point on the page shall be those in effect at the time of painting the last (topmost) elementary graphics object enclosing that point, but only if the object is fully opaque. Only elementary objects shall be relevant; the rendering parameters associated with a group object are ignored. The <em>topmost object</em> at any point shall be defined to be the topmost elementary object in the entire page stack that has a nonzero object shape value (<span class="arithmatex">\(f_j\)</span> ) at that point (that is, for which the point is inside the object). An object shall be considered to be <em>fully opaque</em> if all of the following conditions hold at the time the object is painted:</p>
+<ul>
+<li>The current alpha constant in the graphics state (stroking or nonstroking, depending on the painting operation) is 1.0.</li>
+<li>The current blend mode in the graphics state is <strong>Normal</strong> (or <strong>Compatible</strong>, which is treated as equivalent to <strong>Normal</strong>).</li>
+<li>The current soft mask in the graphics state is <strong>None</strong>. If the object is an image XObject, there is not an <strong>SMask</strong> entry in its image dictionary.</li>
+<li>The foregoing three conditions were also true at the time the <strong>Do</strong> operator was invoked for the group containing the object, as well as for any direct ancestor groups.</li>
+<li>If the current colour is a tiling pattern, all objects in the definition of its pattern cell also satisfy the foregoing conditions.</li>
+</ul>
+<p>Together, these conditions ensure that only the object itself shall contribute to the colour at the given point, completely obscuring the backdrop. For portions of the page whose topmost object is not fully opaque or that are never painted at all, the default halftone and transfer function for the page shall be used.</p>
+<p>If a graphics object is painted with overprinting enabled—that is, if the applicable (stroking or nonstroking) overprint parameter in the graphics state is <strong>true</strong>—the halftone and transfer function to use at a given point shall be determined independently for each colour component. Overprinting implicitly invokes the CompatibleOverprint blend mode (see “<a href="#11743-与不透明套印的兼容性">Compatibility with Opaque Overprinting</a>”). An object shall be considered opaque for a given component only if CompatibleOverprint yields the source colour (not the backdrop colour) for that component.</p>
+</div>
+</div>
+</div>
+<h3 id="11753-渲染意图和颜色转换">11.7.5.3 渲染意图和颜色转换<a class="headerlink" href="#11753-渲染意图和颜色转换" title="Permanent link">&para;</a></h3>
+<p><strong>11.7.5.3 Rendering Intent and Colour Conversions</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">中文</label><label for="__tabbed_11_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>渲染目标、黑版生成和底色去除参数控制某些颜色转换。在存在透明度的情况下，这些参数可能需要在实际将颜色渲染到页面上之前就应用。</p>
+<p>渲染目标会影响从基于 CIE 的颜色空间到目标颜色空间的转换，同时会考虑目标空间的色域（即它能够重现的颜色范围）。在不透明成像模型中，目标空间始终是输出设备的本机颜色空间；而在透明模型中，目标空间可能是正在绘制对象的透明度组的组颜色空间。</p>
+<p>当执行此类转换时——也就是将指定为基于 CIE 的颜色空间的基本对象或组对象绘制到具有不同颜色空间的父组中时，就需要使用渲染目标。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>这与当前的半色调和传递函数不同，后者的值仅在所有颜色合成完成且正在进行光栅化时才使用。</p>
+</div>
+<p>在所有情况下，用于转换对象颜色（无论是基本对象还是透明度组的颜色）的渲染目标应由与该对象关联的渲染目标参数确定。具体而言：</p>
+<ul>
+<li>当将具有基于 CIE 颜色空间的颜色的基本对象绘制到具有不同颜色空间的透明度组中时，使用的渲染目标应为执行绘制操作时图形状态中有效的当前渲染目标。</li>
+<li>当将具有基于 CIE 颜色空间的透明度组绘制到具有不同颜色空间的父组中时，使用的渲染目标应为对该组应用 <strong>Do</strong> 操作符时有效的渲染目标。</li>
+<li>当页面组的颜色空间为基于 CIE 时，用于将颜色转换为输出设备本机颜色空间的渲染目标应为页面的默认渲染目标。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>由于可能存在一个或多个嵌套的透明度组，且它们具有不同的基于 CIE 的颜色空间，因此基本源对象的颜色可能会分多个阶段转换为设备颜色空间，每个阶段由当时有效的渲染目标控制。在每个阶段正确选择渲染目标取决于源颜色空间和目标颜色空间的相对色域。这由文档创建者明确指定，而非由 PDF 规范规定，因为没有一种适用于所有情况的管理渲染目标的单一策略。</p>
+</div>
+<p>对于黑版生成和底色去除函数，采用类似的方法，这些函数仅在从 <strong>DeviceRGB</strong> 转换为 <strong>DeviceCMYK</strong> 颜色空间期间应用：</p>
+<ul>
+<li>当将具有 <strong>DeviceRGB</strong> 颜色的基本对象直接绘制到颜色空间为 <strong>DeviceCMYK</strong> 的透明度组中时，使用的函数应为执行绘制操作时图形状态中有效的当前黑版生成和底色去除函数。</li>
+<li>当将颜色空间为 <strong>DeviceRGB</strong> 的透明度组绘制到颜色空间为 <strong>DeviceCMYK</strong> 的父组中时，使用的函数应为对该组应用 <strong>Do</strong> 操作符时有效的函数。</li>
+<li>当页面组的颜色空间为 <strong>DeviceRGB</strong> 且输出设备的本机颜色空间为 <strong>DeviceCMYK</strong> 时，用于将颜色转换为设备颜色空间的函数应为页面的默认函数 。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>The rendering intent, black-generation, and undercolor-removal parameters control certain colour conversions. In the presence of transparency, they may need to be applied earlier than the actual rendering of colour onto the page.</p>
+<p>The rendering intent influences the conversion from a CIE-based colour space to a target colour space, taking into account the target space’s colour gamut (the range of colours it can reproduce). Whereas in the opaque imaging model the target space shall always be the native colour space of the output device, in the transparent model it may instead be the group colour space of a transparency group into which an object is being painted.</p>
+<p>The rendering intent is needed at the moment such a conversion is performed—that is, when painting an elementary or group object specified in a CIE-based colour space into a parent group having a different colour space.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>This differs from the current halftone and transfer function, whose values are used only when all colour compositing has been completed and rasterization is being performed.</p>
+</div>
+<p>In all cases, the rendering intent to use for converting an object’s colour (whether that of an elementary object or of a transparency group) shall be determined by the rendering intent parameter associated with the object. In particular:</p>
+<ul>
+<li>When painting an elementary object with a CIE-based colour into a transparency group having a different colour space, the rendering intent used shall be the current rendering intent in effect in the graphics state at the time of the painting operation.</li>
+<li>When painting a transparency group whose colour space is CIE-based into a parent group having a different colour space, the rendering intent used shall be the current rendering intent in effect at the time the <strong>Do</strong> operator is applied to the group.</li>
+<li>When the colour space of the page group is CIE-based, the rendering intent used to convert colours to the native colour space of the output device shall be the default rendering intent for the page.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Since there may be one or more nested transparency groups having different CIE-based colour spaces, the colour of an elementary source object may be converted to the device colour space in multiple stages, controlled by the rendering intent in effect at each stage. The proper choice of rendering intent at each stage depends on the relative gamuts of the source and target colour spaces. It is specified explicitly by the document producer, not prescribed by the PDF specification, since no single policy for managing rendering intents is appropriate for all situations.</p>
+</div>
+<p>A similar approach works for the black-generation and undercolor-removal functions, which shall be applied
+only during conversion from <strong>DeviceRGB</strong> to <strong>DeviceCMYK</strong> colour spaces:</p>
+<ul>
+<li>When painting an elementary object with a <strong>DeviceRGB</strong> colour directly into a transparency group whose colour space is <strong>DeviceCMYK</strong>, the functions used shall be the current black-generation and undercolor-removal functions in effect in the graphics state at the time of the painting operation.</li>
+<li>When painting a transparency group whose colour space is <strong>DeviceRGB</strong> into a parent group whose colour space is <strong>DeviceCMYK</strong>, the functions used shall be the ones in effect at the time the Do operator is applied to the group.</li>
+<li>When the colour space of the page group is <strong>DeviceRGB</strong> and the native colour space of the output device is <strong>DeviceCMYK</strong>, the functions used to convert colours to the device’s colour space shall be the default functions for the page.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月6日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

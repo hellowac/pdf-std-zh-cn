@@ -1,0 +1,4131 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s6/">
+      
+      
+        <link rel="next" href="../s8/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>14.7 逻辑结构 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#147-逻辑结构" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              14.7 逻辑结构
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_9" id="__nav_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            14文档交换
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.2 程序集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.3 元数据
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.4 文件标识符
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.5 页面-片段字典
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.6 标记内容
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    14.7 逻辑结构
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    14.7 逻辑结构
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1471-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1472-结构层次" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.2 结构层次
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1473-结构类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.3 结构类型
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1474-结构内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4 结构内容
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.7.4 结构内容">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#14741-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14742-标记内容序列作为内容项" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4.2 标记内容序列作为内容项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14743-pdf对象作为内容项" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4.3 PDF对象作为内容项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14744-从内容项中查找结构元素" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4.4 从内容项中查找结构元素
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1475-结构属性" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5 结构属性
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.7.5 结构属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#14751-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14752-属性类别" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5.2 属性类别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14753-属性修订号" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5.3 属性修订号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#属性对象的修订号" class="md-nav__link">
+    <span class="md-ellipsis">
+      属性对象的修订号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14754-用户属性" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5.4 用户属性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#用户属性对象字典的附加条目" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户属性对象字典的附加条目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#用户属性字典的条目" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户属性字典的条目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1476-逻辑结构示例" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.6 逻辑结构示例
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.8 标签化 PDF
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.9 无障碍支持
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.10 网页捕获
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14.11 印前支持
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1471-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1472-结构层次" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.2 结构层次
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1473-结构类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.3 结构类型
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1474-结构内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4 结构内容
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.7.4 结构内容">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#14741-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14742-标记内容序列作为内容项" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4.2 标记内容序列作为内容项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14743-pdf对象作为内容项" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4.3 PDF对象作为内容项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14744-从内容项中查找结构元素" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.4.4 从内容项中查找结构元素
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1475-结构属性" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5 结构属性
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.7.5 结构属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#14751-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14752-属性类别" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5.2 属性类别
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14753-属性修订号" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5.3 属性修订号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#属性对象的修订号" class="md-nav__link">
+    <span class="md-ellipsis">
+      属性对象的修订号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14754-用户属性" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.5.4 用户属性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#用户属性对象字典的附加条目" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户属性对象字典的附加条目
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#用户属性字典的条目" class="md-nav__link">
+    <span class="md-ellipsis">
+      用户属性字典的条目
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1476-逻辑结构示例" class="md-nav__link">
+    <span class="md-ellipsis">
+      14.7.6 逻辑结构示例
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="147-逻辑结构">14.7 逻辑结构<a class="headerlink" href="#147-逻辑结构" title="Permanent link">&para;</a></h1>
+<p><strong>14.7 Logical Structure</strong></p>
+<h2 id="1471-概述">14.7.1 概述<a class="headerlink" href="#1471-概述" title="Permanent link">&para;</a></h2>
+<p><strong>14.7.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PDF 的<em>逻辑结构</em>功能（PDF 1.3）应提供一种机制，将文档内容的结构信息合并到 PDF 文件中。这些信息可能包括文档的章节和部分组织，或标识特殊元素（如图像、表格和脚注）。逻辑结构功能应具有可扩展性，使符合标准的编写器可以自由选择包含哪些结构信息以及如何表示它们，同时允许符合标准的阅读器无需了解生成器的结构约定即可导航文件。</p>
+<p>PDF 逻辑结构与标准文档标记语言（如 HTML、SGML 和 XML）具有基本的共同特性。文档的逻辑结构应表示为结构元素的层次结构，每个元素由一个字典对象表示。与其他标记语言中的对应元素类似，PDF 结构元素可以包含内容和属性。在 PDF 中，呈现的文档内容承担了 HTML、SGML 和 XML 中文本所占据的角色。</p>
+<p>PDF 文档的逻辑结构应与其可见内容分开存储，二者之间存在指针相互关联。这种分离使得逻辑元素的排序和嵌套可以完全独立于图形对象在文档页面上的顺序和位置。</p>
+<p>文档目录（见 <a href="../../c7/s7/#772-文档目录">7.7.2</a>，“Document Catalog”）中的 <strong>Markings</strong> 条目应指定一个<em>标记信息</em>字典，其中的条目见 <a href="#table321">表 321</a>。该字典提供了与结构化 PDF 文档的特定用途相关的附加信息。</p>
+<p><table id="table321" markdown="span">
+    <caption><strong>表 321 – 标记信息字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键（Key）</strong></th>
+            <th><strong>类型（Type）</strong></th>
+            <th><strong>值（Value）</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Marked</strong></td> 
+            <td>boolean</td>
+            <td>
+                （可选）一个标志，指示文档是否符合 Tagged PDF 规范（见 <a href="../s8/">14.8</a>，“Tagged PDF”）。默认值：<strong>false</strong>。<br/>
+                如果 <strong>Suspects</strong> 为 <strong>true</strong>，则该文档可能不完全符合 Tagged PDF 规范。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>UserProperties</strong></td> 
+            <td>boolean</td>
+            <td>
+                （可选，PDF 1.6）一个标志，指示结构元素是否包含用户属性（见 <a href="./#14754-用户属性">14.7.5.4</a>，“User Properties”）。<br/>
+                默认值：<strong>false</strong>。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Suspects</strong></td> 
+            <td>boolean</td>
+            <td>
+                （可选，PDF 1.6）一个标志，指示是否存在标记可疑内容（见 <a href="../s8/#14823-页面内容顺序">14.8.2.3</a>，“Page Content Order”）。默认值：<strong>false</strong>。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>PDF’s <em>logical structure</em> facilities (PDF 1.3) shall provide a mechanism for incorporating structural information about a document’s content into a PDF file. Such information may include the organization of the document into chapters and sections or the identification of special elements such as figures, tables, and footnotes. The logical structure facilities shall be extensible, allowing conforming writers to choose what structural information to include and how to represent it, while enabling conforming readers to navigate a file without knowing the producer’s structural conventions.</p>
+<p>PDF logical structure shares basic features with standard document markup languages such as HTML, SGML, and XML. A document’s logical structure shall be expressed as a hierarchy of structure elements, each represented by a dictionary object. Like their counterparts in other markup languages, PDF structure elements may have content and attributes. In PDF, rendered document content takes over the role occupied by text in HTML, SGML, and XML.</p>
+<p>A PDF document’s logical structure shall be stored separately from its visible content, with pointers from each to the other. This separation allows the ordering and nesting of logical elements to be entirely independent of the order and location of graphics objects on the document’s pages.</p>
+<p>The <strong>Markings</strong> entry in the document catalogue (see <a href="../../c7/s7/#772-文档目录">7.7.2</a>, “Document Catalog”) shall specify a <em>mark information</em> dictionary, whose entries are shown in <a href="#table321">Table 321</a>. It provides additional information relevant to specialized uses of structured PDF documents.</p>
+<p><table id="table321" markdown="span">
+    <caption><strong>Table 321 – Entries in the mark information dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Marked</strong></td> 
+            <td>boolean</td>
+            <td>
+                (Optional) A flag indicating whether the document conforms to Tagged PDF conventions (see <a href="../s8/">14.8</a>, “Tagged PDF”). Default value: <strong>false</strong>. <br/>
+                If <strong>Suspects</strong> is <strong>true</strong>, the document may not completely conform to Tagged PDF conventions.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>UserProperties</strong></td> 
+            <td>boolean</td>
+            <td>(Optional; PDF 1.6) A flag indicating the presence of structure elements that contain user properties attributes (see <a href="./#14754-用户属性">14.7.5.4</a>, “User Properties”). <br/>
+                Default value: <strong>false</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>Suspects</strong></td> 
+            <td>boolean</td>
+            <td>(Optional; PDF 1.6) A flag indicating the presence of tag suspects (see <a href="../s8/#14823-页面内容顺序">14.8.2.3</a>, “Page Content Order”). Default value: <strong>false</strong>.</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h2 id="1472-结构层次">14.7.2 结构层次<a class="headerlink" href="#1472-结构层次" title="Permanent link">&para;</a></h2>
+<p><strong>14.7.2 Structure Hierarchy</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>文档的逻辑结构应通过一组对象的层次结构来描述，称为<em>结构层次</em>或<em>结构树</em>。该层次的根节点应是一个字典对象，称为结构树根节点，通过文档目录中的 <strong>StructTreeRoot</strong> 条目来定位（见 <a href="../../c7/s7/#772-文档目录">7.7.2</a>，“Document Catalog”）。<a href="#table322">表 322</a> 显示了结构树根字典中的条目。<strong>K</strong> 条目应指定结构树根的直接子元素，这些子元素应为结构元素。</p>
+<p>结构元素应由一个字典表示，其条目见 <a href="#table323">表 323</a>。<strong>K</strong> 条目应指定结构元素的子元素，这些子元素可以是以下类型中的零个或多个项：</p>
+<ul>
+<li>其他结构元素</li>
+<li>内容项的引用，这些内容项可以是标记内容序列（见 <a href="../s6/">14.6</a>，“Marked Content”）或完整的 PDF 对象，如 XObjects 和注释。这些内容项表示与结构元素相关联的图形内容（如果有的话）。内容项的详细讨论见 <a href="./#1474-结构内容">14.7.4</a>，“Structure Content”。</li>
+</ul>
+<p><table id="table322" markdown="span">
+    <caption><strong>表 322 – 结构树根字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键（Key）</strong></th>
+            <th><strong>类型（Type）</strong></th>
+            <th><strong>值（Value）</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td> 
+            <td>name</td>
+            <td>
+                （必需）指示此字典所描述的 PDF 对象的类型；结构树根节点应为 <strong>StructTreeRoot</strong>。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>K</strong></td> 
+            <td>dictionary 或 array</td>
+            <td>
+            （可选）结构树根节点在结构层次中的直接子元素。该值可以是表示单个结构元素的字典，也可以是包含这些字典的数组。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>IDTree</strong></td> 
+            <td>name tree</td>
+            <td>
+            （如果任何结构元素有元素标识符时必需）一个名称树，将元素标识符（见 <a href="#table323">表 323</a>）映射到它们所表示的结构元素。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ParentTree</strong></td> 
+            <td>number tree</td>
+            <td>
+            （如果任何结构元素包含内容项时必需）一个数字树（见 <a href="../../c7/s9/#797-number树">7.9.7</a>，“Number Trees”），用于查找内容项所属的结构元素。数字树中的每个整数键应对应于文档的单个页面或作为内容项存在的单独对象（如注释或 XObject）。该整数键应为该对象中的 <strong>StructParent</strong> 或 <strong>StructParents</strong> 条目的值（见 <a href="./#14744-从内容项中查找结构元素">14.7.4.4</a>，“Finding Structure Elements from Content Items”）。与该键关联的值的形式应取决于对象的性质：<br/>
+            对于作为内容项的独立对象，值应为该对象的父元素（作为内容项包含它的结构元素）的间接引用。<br/>
+            对于包含标记内容序列的页面对象或内容流，值应为指向这些标记内容序列的父元素的引用数组。<br/>
+            参见 <a href="./#14744-从内容项中查找结构元素">14.7.4.4</a>，“Finding Structure Elements from Content Items” 以获取更多讨论。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ParentTreeNext Key</strong></td> 
+            <td>integer</td>
+            <td>
+            （可选）一个大于父树中任何键的整数，应作为下一条目添加到树中的键。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>RoleMap</strong></td> 
+            <td>dictionary</td>
+            <td>
+            （可选）一个字典，将文档中使用的结构类型名称映射到其在标准结构类型集合中的大致等价物（见 <a href="../s8/#1484-标准结构类型">14.8.4</a>，“Standard Structure Types”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ClassMap</strong></td> 
+            <td>dictionary</td>
+            <td>
+            （可选）一个字典，将指定属性类的名称对象映射到相应的属性对象或属性对象数组（见 [14.7.5.2]，“Attribute Classes”）。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table323" markdown="span">
+    <caption><strong>表 323 – 结构元素字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键（Key）</strong></th>
+            <th><strong>类型（Type）</strong></th>
+            <th><strong>值（Value）</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td> 
+            <td>name</td>
+            <td>
+            （可选）此字典所描述的 PDF 对象的类型；如果存在，应为 <strong>StructElem</strong>，表示一个结构元素。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td> 
+            <td>name</td>
+            <td>
+            （必需）结构类型，一个名称对象，标识该结构元素的性质及其在文档中的角色，例如章节、段落或脚注（见 <a href="./#1473-结构类型">14.7.3</a>，“Structure Types”）。结构类型的名称应符合 <a href="../../a5/">附录 E</a> 中描述的规范。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td> 
+            <td>dictionary</td>
+            <td>
+            （必需；应为间接引用）该结构元素在结构层次中的直接父元素。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ID</strong></td> 
+            <td>byte string</td>
+            <td>
+            （可选）元素标识符，一个字节字符串，用于指定此结构元素。该字符串在文档的结构层次中应是唯一的。结构树根中的 <strong>IDTree</strong> 条目（见 <a href="#table322">表 322</a>）定义元素标识符与所表示的结构元素之间的对应关系。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Pg</strong></td> 
+            <td>dictionary</td>
+            <td>
+            （可选；应为间接引用）表示一个页面对象，表示某些或所有由 <strong>K</strong> 条目指定的内容项将在该页面上呈现。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>K</strong></td> 
+            <td>（各种）</td>
+            <td>
+            （可选）此结构元素的子元素。此条目的值可以是以下对象之一，或是由一个或多个以下对象组成的数组：<br/><br/>
+            • 表示另一个结构元素的结构元素字典<br/>
+            • 表示标记内容序列的整数标记内容标识符<br/>
+            • 表示标记内容序列的标记内容引用字典<br/>
+            • 表示 PDF 对象的对象引用字典<br/><br/>
+            除了第一个（结构元素字典）之外的每个对象都应被视为内容项；有关每种表示形式的进一步讨论，参见 <a href="./#1474-结构内容">14.7.4</a>，“Structure Content”。<br/>
+            如果 <strong>K</strong> 的值是一个不包含 <strong>Type</strong> 条目的字典，则应假定它是一个结构元素字典。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>A</strong></td> 
+            <td>（各种）</td>
+            <td>
+                （可选）与此结构元素相关联的单个属性对象或属性对象数组。每个属性对象应是一个字典或流。如果此条目的值是数组，则数组中的每个属性对象后面可以跟一个表示其修订号的整数（参见 <a href="./#1475-结构属性">14.7.5</a>，“Structure Attributes”，和 <a href="./#14753-属性修订号">14.7.5.3</a>，“Attribute Revision Numbers”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>C</strong></td> 
+            <td>name 或 array</td>
+            <td>
+                （可选）与此结构元素相关联的属性类名称或类名称数组。如果此条目的值是数组，则数组中的每个类名称后面可以跟一个表示其修订号的整数（参见 [14.7.5.2]，“Attribute Classes”，和 <a href="./#14753-属性修订号">14.7.5.3</a>，“Attribute Revision Numbers”）。<br/>
+                如果同时存在 <strong>A</strong> 和 <strong>C</strong> 条目，并且给定的属性由两者指定，则 <strong>A</strong> 条目指定的属性优先。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>R</strong></td> 
+            <td>integer</td>
+            <td>
+            （可选）此结构元素的当前修订号（参见 <a href="./#14753-属性修订号">14.7.5.3</a>，“Attribute Revision Numbers”）。值应为非负整数。默认值：0。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td> 
+            <td>text string</td>
+            <td>
+                （可选）结构元素的标题，一个文本字符串，以人类可读的形式表示该元素。标题应描述特定的结构元素，如“第 1 章”，而非仅仅描述一个通用的元素类型，如“章节”。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Lang</strong></td> 
+            <td>text string</td>
+            <td>
+                （可选；PDF 1.4）一个语言标识符，指定结构元素中所有文本的自然语言，除非通过嵌套结构元素或标记内容的语言规范覆盖（参见 <a href="../s9/#1492-自然语言规范">14.9.2</a>，“Natural Language Specification”）。如果此条目不存在，则适用文档目录中指定的语言（如果有）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Alt</strong></td> 
+            <td>text string</td>
+            <td>
+                （可选）结构元素及其子元素的替代描述，以人类可读的形式表示，在支持无障碍功能的内容提取中有用，尤其是为了帮助有障碍的用户或其他目的（参见 <a href="../s9/#1493-替代描述">14.9.3</a>，“Alternate Descriptions”）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>E</strong></td> 
+            <td>text string</td>
+            <td>
+                （可选；PDF 1.5）缩写的扩展形式。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ActualText</strong></td> 
+            <td>text string</td>
+            <td>
+                （可选；PDF 1.4）替代文本，用于替代结构元素及其子元素。这些替代文本（应尽可能小范围的内容）在支持无障碍功能的内容提取中有用，尤其是为了帮助有障碍的用户或其他目的（参见 <a href="../s9/#1494-替换文本">14.9.4</a>，“Replacement Text”）。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>The logical structure of a document shall be described by a hierarchy of objects called the <em>structure hierarchy</em> or <em>structure tree</em>. At the root of the hierarchy shall be a dictionary object called the structure tree root, located by means of the <strong>StructTreeRoot</strong> entry in the document catalogue (see <a href="../../c7/s7/#772-文档目录">7.7.2</a>, “Document Catalog”). <a href="#table322">Table 322</a> shows the entries in the structure tree root dictionary. The <strong>K</strong> entry shall specify the immediate children of the structure tree root, which shall be structure elements.</p>
+<p>Structure elements shall be represented by a dictionary, whose entries are shown in <a href="#table323">Table 323</a>. The <strong>K</strong> entry shall specify the children of the structure element, which may be zero or more items of the following kinds:</p>
+<ul>
+<li>Other structure elements</li>
+<li>References to content items, which are either marked-content sequences (see <a href="../s6/">14.6</a>, “Marked Content”) or complete PDF objects such as XObjects and annotations. These content items represent the graphical content, if any, associated with a structure element. Content items are discussed in detail in <a href="./#1474-结构内容">14.7.4</a>, “Structure Content.”</li>
+</ul>
+<p><table id="table322" markdown="span">
+    <caption><strong>Table 322 – Entries in the structure tree root</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td> 
+            <td>name</td>
+            <td>
+                (Required) The type of PDF object that this dictionary describes; shall be <strong>StructTreeRoot</strong> for a structure tree root.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>K</strong></td> 
+            <td>dictionary or array</td>
+            <td>
+            (Optional) The immediate child or children of the structure tree root in the structure hierarchy. The value may be either a dictionary representing a single structure element or an array of such dictionaries.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>IDTree</strong></td> 
+            <td>name tree</td>
+            <td>
+            (Required if any structure elements have element identifiers) A name tree that maps element identifiers (see <a href="#table323">Table 323</a>) to the structure elements they denote.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ParentTree</strong></td> 
+            <td>number tree</td>
+            <td>
+            (Required if any structure element contains content items) A number tree (see <a href="../../c7/s9/#797-number树">7.9.7</a>, “Number Trees”) used in finding the structure elements to which content items belong. Each integer key in the number tree shall correspond to a single page of the document or to an individual object (such as an annotation or an XObject) that is a content item in its own right. The integer key shall be the value of the <strong>StructParent</strong> or <strong>StructParents</strong> entry in that object (see <a href="./#14744-从内容项中查找结构元素">14.7.4.4</a>, “Finding Structure Elements from Content Items”). The form of the associated value shall depend on the nature of the object: <br/>
+            For an object that is a content item in its own right, the value shall be an indirect reference to the object’s parent element (the structure element that contains it as a content item).<br/>
+            For a page object or content stream containing marked-content sequences that are content items, the value shall be an array of references to the parent elements of those marked-content sequences. <br/>
+            See <a href="./#14744-从内容项中查找结构元素">14.7.4.4</a>, “Finding Structure Elements from Content Items” for further discussion.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ParentTreeNext Key</strong></td> 
+            <td>integer</td>
+            <td>
+            (Optional) An integer greater than any key in the parent tree, shall be used as a key for the next entry added to the tree.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>RoleMap</strong></td> 
+            <td>dictionary</td>
+            <td>
+            (Optional) A dictionary that shall map the names of structure types used in the document to their approximate equivalents in the set of standard structure types (see <a href="../s8/#1484-标准结构类型">14.8.4</a>, “Standard Structure Types”).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ClassMap</strong></td> 
+            <td>dictionary</td>
+            <td>
+            (Optional) A dictionary that shall map name objects designating attribute classes to the corresponding attribute objects or arrays of attribute objects (see [14.7.5.2], “Attribute Classes”).
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table322" markdown="span">
+    <caption><strong>Table 322 – Entries in the structure tree root</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td> 
+            <td>name</td>
+            <td>
+            (Optional) The type of PDF object that this dictionary describes; if present, shall be <strong>StructElem</strong> for a structure element.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td> 
+            <td>name</td>
+            <td>
+            (Required) The structure type, a name object identifying the nature of the structure element and its role within the document, such as a chapter, paragraph, or footnote (see <a href="./#1473-结构类型">14.7.3</a>, “Structure Types”). Names of structure types shall conform to the guidelines described in <a href="../../a5/">Annex E</a>.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td> 
+            <td>dictionary</td>
+            <td>
+            (Required; shall be an indirect reference) The structure element that is the immediate parent of this one in the structure hierarchy.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ID</strong></td> 
+            <td>byte string</td>
+            <td>
+            (Optional) The element identifier, a byte string designating this structure element. The string shall be unique among all elements in the document’s structure hierarchy. The <strong>IDTree</strong> entry in the structure tree root (see <a href="#table322">Table 322</a>) defines the correspondence between element identifiers and the structure elements they denote.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Pg</strong></td> 
+            <td>dictionary</td>
+            <td>
+            (Optional; shall be an indirect reference) A page object representing a page on which some or all of the content items designated by the <strong>K</strong> entry shall be rendered.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>K</strong></td> 
+            <td>(various)</td>
+            <td>
+            (Optional) The children of this structure element. The value of this entry may be one of the following objects or an array consisting of one or more of the following objects: <br/><br/>
+            • A structure element dictionary denoting another structure element <br/>
+            • An integer marked-content identifier denoting a marked-content sequence <br/>
+            • A marked-content reference dictionary denoting a marked-content sequence <br/>
+            • An object reference dictionary denoting a PDF object <br/><br/>
+            Each of these objects other than the first (structure element dictionary) shall be considered to be a content item; see <a href="./#1474-结构内容">14.7.4</a>, “Structure Content” for further discussion of each of these forms of representation. <br/>
+            If the value of <strong>K</strong> is a dictionary containing no <strong>Type</strong> entry, it shall be assumed to be a structure element dictionary.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>A</strong></td> 
+            <td>(various)</td>
+            <td>
+                (Optional) A single attribute object or array of attribute objects associated with this structure element. Each attribute object shall be either a dictionary or a stream. If the value of this entry is an array, each attribute object in the array may be followed by an integer representing its revision number (see <a href="./#1475-结构属性">14.7.5</a>, “Structure Attributes,” and <a href="./#14753-属性修订号">14.7.5.3</a>, “Attribute Revision Numbers”).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>C</strong></td> 
+            <td>name or array</td>
+            <td>
+                (Optional) An attribute class name or array of class names associated with this structure element. If the value of this entry is an array, each class name in the array may be followed by an integer representing its revision number (see 14.7.5.2, “Attribute Classes,” and <a href="./#14753-属性修订号">14.7.5.3</a>, “Attribute Revision Numbers”). <br/>
+                If both the <strong>A</strong> and <strong>C</strong> entries are present and a given attribute is specified by both, the one specified by the <strong>A</strong> entry shall take precedence.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>R</strong></td> 
+            <td>integer</td>
+            <td>
+            (Optional) The current revision number of this structure element (see <a href="./#14753-属性修订号">14.7.5.3</a>, “Attribute Revision Numbers”). The value shall be a non-negative integer. Default value: 0.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>T</strong></td> 
+            <td>text string</td>
+            <td>
+               (Optional) The title of the structure element, a text string representing it in human-readable form. The title should characterize the specific structure element, such as Chapter 1, rather than merely a generic element type, such as Chapter.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Lang</strong></td> 
+            <td>text string</td>
+            <td>
+               (Optional; PDF 1.4) A language identifier specifying the natural language for all text in the structure element except where overridden by language specifications for nested structure elements or marked content (see <a href="../s9/#1492-自然语言规范">14.9.2</a>, “Natural Language Specification”). If this entry is absent, the language (if any) specified in the document catalogue applies.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Alt</strong></td> 
+            <td>text string</td>
+            <td>
+               (Optional) An alternate description of the structure element and its children in human-readable form, which is useful when extracting the document’s contents in support of accessibility to users with disabilities or for other purposes (see <a href="../s9/#1493-替代描述">14.9.3</a>, “Alternate Descriptions”).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>E</strong></td> 
+            <td>text string</td>
+            <td>
+               (Optional; PDF 1.5) The expanded form of an abbreviation.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>ActualText</strong></td> 
+            <td>text string</td>
+            <td>
+               (Optional; PDF 1.4) Text that is an exact replacement for the structure element and its children. This replacement text (which should apply to as small a piece of content as possible) is useful when extracting the document’s contents in support of accessibility to users with disabilities or for other purposes (see <a href="../s9/#1494-替换文本">14.9.4</a>, “Replacement Text”).
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h2 id="1473-结构类型">14.7.3 结构类型<a class="headerlink" href="#1473-结构类型" title="Permanent link">&para;</a></h2>
+<p><strong>14.7.3 Structure Types</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>每个结构元素应具有一个结构类型，这是一个名称对象，用于标识该结构元素的性质及其在文档中的角色（如章节、段落或脚注）。为了促进符合规范的产品之间的内容交换，PDF 定义了一组标准的结构类型；见 <a href="../s8/#1484-标准结构类型">14.8.4</a>，“标准结构类型”。然而，符合规范的产品并不要求采用这些标准类型，可以使用任何名称来表示它们的结构类型。</p>
+<p>当使用标准名称以外的名称时，可以在结构树根中提供一个 <em>角色映射（role map）</em>，将文档中使用的结构类型映射到标准集合中最接近的等效项。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 1</p>
+<p>文档中使用的名为 Section 的结构类型可能会被映射到标准类型 Sect。映射不必完全精确；角色映射仅指示类型之间的大致类比，从而使符合规范的产品能够以合理的方式共享非标准的结构元素。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注意 2</p>
+<p>相同的结构类型可以同时作为角色映射中的键和值，并且明确允许存在循环链条。因此，单个角色映射可以定义双向映射。符合规范的阅读器使用角色映射时，应遵循关联链，直到找到一个其能识别的结构类型，或返回到已遇到的结构类型。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注意 3</p>
+<p>在 PDF 1.5 版本之前，标准元素类型从未进行过重新映射。从 PDF 1.5 开始，即使元素名称是标准类型之一，元素名称也应始终映射到角色映射中的相应名称（如果存在映射）。这样做的目的是使该元素能够表示具有与标准角色相同名称的标签，尽管它的使用方式与标准角色不同。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Every structure element shall have a structure type, a name object that identifies the nature of the structure element and its role within the document (such as a chapter, paragraph, or footnote). To facilitate the interchange of content among conforming products, PDF defines a set of standard structure types; see <a href="../s8/#1484-标准结构类型">14.8.4</a>, “Standard Structure Types.” Conforming products are not required to adopt them, however, and may use any names for their structure types.</p>
+<p>Where names other than the standard ones are used, a <em>role map</em> may be provided in the structure tree root,
+mapping the structure types used in the document to their nearest equivalents in the standard set.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>A structure type named Section used in the document might be mapped to the standard type Sect. The equivalence need not be exact; the role map merely indicates an approximate analogy between types, allowing conforming products to share nonstandard structure elements in a reasonable way.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The same structure type may occur as both a key and a value in the role map, and circular chains of association are explicitly permitted. Therefore, a single role map may define a bidirectional mapping. A conforming reader using the role map should follow the chain of associations until it either finds a structure type it recognizes or returns to one it has already encountered.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>In PDF versions earlier than 1.5, standard element types were never remapped. Beginning with PDF 1.5, an element name shall always be mapped to its corresponding name in the role map, if there is one, even if the original name is one of the standard types. This shall be done to allow the element, for example, to represent a tag with the same name as a standard role, even though its use differs from the standard role.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1474-结构内容">14.7.4 结构内容<a class="headerlink" href="#1474-结构内容" title="Permanent link">&para;</a></h2>
+<p><strong>14.7.4 Structure Content</strong></p>
+<h3 id="14741-概述">14.7.4.1 概述<a class="headerlink" href="#14741-概述" title="Permanent link">&para;</a></h3>
+<p><strong>14.7.4.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>任何结构元素都可以具有与之关联的图形内容，图形内容由一个或多个内容项组成。内容项是图形对象，它们在文档中独立于结构树存在，但如以下小节所述，它们与结构元素相关联。内容项有两种类型：</p>
+<ul>
+<li>内容流中的标记内容序列（见 <a href="./#14742-标记内容序列作为内容项">14.7.4.2</a>，“标记内容序列作为内容项”）</li>
+<li>完整的 PDF 对象，如注释和 XObjects（见 <a href="./#14743-pdf对象作为内容项">14.7.4.3</a>，“PDF 对象作为内容项”）</li>
+</ul>
+<p>结构元素字典中的 <strong>K</strong> 项（见 <a href="#table323">表 323</a>）应指定结构元素的子项，这些子项可以包括任何数量的内容项，以及可能包含自己内容项的子结构元素。</p>
+<p>内容项应为结构树的叶子节点；也就是说，它们不能为了逻辑结构而在其中嵌套其他内容项。结构元素之间的层级关系应完全通过结构元素字典中的 <strong>K</strong> 项来表示，而不是通过关联的内容项的嵌套。因此，以下限制应适用：</p>
+<ul>
+<li>限定结构内容项的标记内容序列不能在其中嵌套另一个标记内容序列作为内容项，尽管允许存在非结构性的标记内容。</li>
+<li>结构内容项不得调用（使用 <strong>Do</strong> 操作符）作为结构内容项的 XObject。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Any structure element may have associated graphical content, consisting of one or more content items. Content items shall be graphical objects that exist in the document independently of the structure tree but are associated with structure elements as described in the following sub-clauses. Content items are of two kinds:</p>
+<ul>
+<li>Marked-content sequences within content streams (see <a href="./#14742-标记内容序列作为内容项">14.7.4.2</a>, “Marked-Content Sequences as Content Items”)</li>
+<li>Complete PDF objects such as annotations and XObjects (see <a href="./#14743-pdf对象作为内容项">14.7.4.3</a>, “PDF Objects as Content Items”)</li>
+</ul>
+<p>The <strong>K</strong> entry in a structure element dictionary (see <a href="#table323">Table 323</a>) shall specify the children of the structure element, which may include any number of content items, as well as child structure elements that may in turn have content items of their own.</p>
+<p>Content items shall be leaf nodes of the structure tree; that is, they may not have other content items nested within them for purposes of logical structure. The hierarchical relationship among structure elements shall be represented entirely by the <strong>K</strong> entries of the structure element dictionaries, not by nesting of the associated content items. Therefore, the following restrictions shall apply:</p>
+<ul>
+<li>A marked-content sequence delimiting a structure content item may not have another marked-content sequence for a content item nested within it though non-structural marked content shall be allowed.</li>
+<li>A structure content item shall not invoke (with the <strong>Do</strong> operator) an XObject that is itself a structure content item.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="14742-标记内容序列作为内容项">14.7.4.2 标记内容序列作为内容项<a class="headerlink" href="#14742-标记内容序列作为内容项" title="Permanent link">&para;</a></h3>
+<p><strong>14.7.4.2 Marked-Content Sequences as Content Items</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>一组图形操作符可以通过以下方式指定为结构元素的内容项：</p>
+<ul>
+<li>操作符应通过 <strong>BDC</strong> 和 <strong>EMC</strong> 操作符之间的标记内容序列括起来（见 <a href="../s6/">14.6</a>，“标记内容”）。尽管与标记内容序列相关联的标签与文档的逻辑结构没有直接关系，但它应与关联的结构元素的结构类型相同。</li>
+<li>标记内容序列应包含一个属性列表（见 <a href="../s6/#1462-属性列表">14.6.2</a>，“属性列表”），该列表中应有 <strong>MCID</strong> 项，值为一个整数 <em>标记内容标识符</em>，用于唯一标识其内容流中的标记内容序列，如以下示例所示：</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">示例 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>2 0 obj                    % 页面对象
+    &lt;&lt; /Type /Page
+        /Contents 3 0 R    % 内容流
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj
+    &lt;&lt; /Length … &gt;&gt;            % 页面内容流
+stream
+    …
+    /P &lt;&lt; /MCID 0 &gt;&gt;            % 标记内容序列的开始
+        BDC
+            …
+            (这是一些文本) Tj
+            …
+        EMC                    % 标记内容序列的结束
+    …
+endstream
+endobj
+</code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>此示例及以下示例省略了用于内容项的对象中必须包含的 <strong>StructParents</strong> 项（见 <a href="./#14744-从内容项中查找结构元素">14.7.4.4</a>，“从内容项查找结构元素”）。</p>
+</div>
+<p>结构元素字典可以通过在其 <strong>K</strong> 项中引用一个或多个标记内容序列作为内容项（见 <a href="#table323">表 323</a>）。此引用可以有两种形式：</p>
+<ul>
+<li>一个字典对象，称为标记内容引用。<a href="#table324">表 324</a> 显示了这种字典的内容，它应指定标记内容标识符，以及标识序列所在内容流的其他信息。示例 2 演示了如何使用标记内容引用引用示例 3 中显示的标记内容序列。</li>
+<li>一个整数，指定标记内容标识符。这通常用于标记内容序列位于结构元素字典的 <strong>Pg</strong> 项指定的页面内容流中的常见情况。示例 3 显示了一个结构元素，它有三个子项：一个由标记内容标识符指定的标记内容序列，以及另外两个结构元素。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                        % 结构元素
+    &lt;&lt; /Type /StructElem
+        /S /P                  % 结构类型
+        /P …                   % 结构层次中的父级
+        /K &lt;&lt; /Type /MCR
+            /Pg 2 0 R          % 包含标记内容序列的页面
+            /MCID 0            % 标记内容标识符
+        &gt;&gt;
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+<p><table id="table324" markdown="span">
+    <caption><strong>表 324 – 标记内容引用字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td> 
+            <td>name</td>
+            <td>
+                （必需）该字典描述的 PDF 对象的类型；对于标记内容引用，应为 <strong>MCR</strong>。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Pg</strong></td> 
+            <td>dictionary</td>
+            <td>
+                （可选；应为间接引用）表示图形对象所在页面的页面对象。此条目会覆盖包含标记内容引用的结构元素中的任何 <strong>Pg</strong> 条目；如果结构元素没有此类条目，则此条目是必需的。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Stm</strong></td> 
+            <td>stream</td>
+            <td>
+                （可选；应为间接引用）包含标记内容序列的内容流。此条目仅应在标记内容序列位于其他内容流而非页面的内容流时出现（参见 <a href="../../c8/s10/">8.10</a>，“表单 XObjects” 和 <a href="../../c12/s5/#1255-外观流">12.5.5</a>，“外观流”）。<br/>
+                如果此条目缺失，则标记内容序列应包含在由 <strong>Pg</strong> 标识的页面的内容流中（无论是标记内容引用字典中的还是父结构元素中的）。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>StmOwn</strong></td> 
+            <td>(any)</td>
+            <td>
+                （可选；应为间接引用）拥有通过 <strong>Stm</strong> 标识的流的 PDF 对象。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>MCID</strong></td> 
+            <td>integer</td>
+            <td>
+                （必需）标记内容序列在其内容流中的标记内容标识符。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 3</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                    % 包含结构元素
+    &lt;&lt; /Type /StructElem
+        /S /MixedContainer    % 结构类型
+        /P …                  % 结构层次结构中的父级
+        /Pg 2 0 R             % 包含标记内容序列的页面
+        /K [ 4 0 R            % 三个子级：一个结构元素
+            0                 % 一个标记内容标识符
+            50R               % 另一个结构元素
+        ]
+    &gt;&gt;
+endobj
+
+2 0 obj                        % Page 对象
+    &lt;&lt; /Type /Page
+        /Contents 3 0 R        % Content 流
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj                        % Page&#39;s content stream
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    …
+    /P &lt;&lt; /MCID 0 &gt;&gt;            % 标记内容序列的开始
+        BDC
+            ( Here is some text ) Tj
+            …
+        EMC                    % 标记内容序列结束
+    …
+endstream
+endobj
+</code></pre></div>
+</div>
+<p>除页面内容外，其他内容流也可以包含作为结构元素内容项的标记内容序列。表单 XObject 的内容可通过以下方式之一并入结构元素：</p>
+<ul>
+<li>绘制表单 XObject 的 <strong>Do</strong> 操作符可以作为标记内容序列的一部分，并应与某个结构元素关联（参见示例 4）。在此情况下，应将整个表单 XObject 视为结构元素内容的一部分，就好像它被插入到 <strong>Do</strong> 操作符所在的标记内容序列中一样。该表单 XObject 本身不得包含与该结构元素或其他结构元素关联的标记内容序列。</li>
+<li>表单 XObject 的内容流可以包含一个或多个标记内容序列，并应与结构元素关联（参见示例 5）。表单 XObject 可以具有任意的子结构，包含任意数量的与逻辑结构元素关联的标记内容序列。然而，任何使用 <strong>Do</strong> 操作符绘制该表单 XObject 的操作都不应属于逻辑结构内容项的一部分。</li>
+</ul>
+<p>如果一个表单 XObject 通过多次调用 <strong>Do</strong> 操作符进行绘制，则它只能通过第一种方法并入文档的逻辑结构，即每次调用 <strong>Do</strong> 都应单独与某个结构元素关联。</p>
+<div class="admonition info">
+<p class="admonition-title">示例 4</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                    % 结构元素
+    &lt;&lt; /Type /StructElem
+        /S /P                % 结构类型
+        /P …                 % 结构层次中的父元素
+        /Pg 2 0 R            % 包含标记内容序列的页面
+        /K 0                 % 标记内容标识符
+    &gt;&gt;
+endobj
+
+2 0 obj                         % 页面对象
+    &lt;&lt; /Type /Page
+        /Resources &lt;&lt; /XObject &lt;&lt; /Fm4 4 0 R &gt;&gt;    % 资源字典
+                    &gt;&gt;                              % 包含表单 XObject
+        /Contents 3 0 R                            % 内容流
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj                        % 页面内容流
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    …
+    /P &lt;&lt; /MCID 0 &gt;&gt;                % 标记内容序列的开始
+        BDC
+            /Fm4 Do                 % 绘制表单 XObject
+        EMC                         % 标记内容序列的结束
+    …
+endstream
+endobj
+
+4 0 obj                            % 表单 XObject
+    &lt;&lt; /Type /XObject
+        /Subtype /Form
+        /Length …
+    &gt;&gt;
+stream
+    …
+    ( 这里是一些文本 ) Tj
+    …
+endstream
+endobj
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">示例 5</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                        % 结构元素
+    &lt;&lt; /Type /StructElem
+        /S /P                    % 结构类型
+        /P …                     % 结构层次中的父元素
+        /K &lt;&lt; /Type /MCR
+            /Pg 2 0 R               % 包含标记内容序列的页面
+            /Stm 4 0 R              % 包含标记内容序列的流
+            /MCID 0                 % 标记内容标识符
+        &gt;&gt;
+    &gt;&gt;
+endobj
+
+2 0 obj                            % 页面对象
+    &lt;&lt; /Type /Page
+        /Resources &lt;&lt; /XObject &lt;&lt; /Fm4 4 0 R &gt;&gt;  % 资源字典
+                    &gt;&gt;                            % 包含表单 XObject
+        /Contents 3 0 R                          % 内容流
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj                            % 页面内容流
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    …
+    /Fm4 Do                        % 绘制表单 XObject
+    …
+endstream
+endobj
+
+4 0 obj                            % 表单 XObject
+    &lt;&lt; /Type /XObject
+        /Subtype /Form
+        /Length …
+    &gt;&gt;
+stream
+    …
+    /P &lt;&lt; /MCID 0 &gt;&gt;                % 标记内容序列的开始
+        BDC
+        …
+        ( 这里是一些文本 ) Tj
+        …
+    EMC                            % 标记内容序列的结束
+    …
+endstream
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>A sequence of graphics operators in a content stream may be specified as a content item of a structure element in the following way:</p>
+<ul>
+<li>The operators shall be bracketed as a marked-content sequence between <strong>BDC</strong> and <strong>EMC</strong> operators (see <a href="../s6/">14.6</a>, “Marked Content”). Although the tag associated with a marked-content sequence is not directly related to the document’s logical structure, it should be the same as the structure type of the associated structure element.</li>
+<li>The marked-content sequence shall have a property list (see <a href="../s6/#1462-属性列表">14.6.2</a>, “Property Lists”) containing an <strong>MCID</strong> entry, which i shall be an integer <em>marked-content identifier</em> that uniquely identifies the marked-content sequence within its content stream, as shown in the following example:</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>2 0 obj                    % Page object
+    &lt;&lt; /Type /Page
+        /Contents 3 0 R    % Content stream
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj
+    &lt;&lt; /Length … &gt;&gt;            % Page&#39;s content stream
+stream
+    …
+    /P &lt;&lt; /MCID 0 &gt;&gt;            % Start of marked-content sequence
+        BDC
+            …
+            ( Here is some text ) Tj
+            …
+        EMC                    % End of marked-content sequence
+    …
+endstream
+endobj
+</code></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>This example and the following examples omit required <strong>StructParents</strong> entries in the objects used as content items (see <a href="./#14744-从内容项中查找结构元素">14.7.4.4</a>, “Finding Structure Elements from Content Items”).</p>
+</div>
+<p>A structure element dictionary may include one or more marked-content sequences as content items by referring to them in its <strong>K</strong> entry (see <a href="#table323">Table 323</a>). This reference may have two forms:</p>
+<ul>
+<li>A dictionary object called a marked-content reference. <a href="#table324">Table 324</a> shows the contents of this type of dictionary, which shall specify the marked-content identifier, as well other information identifying the stream in which the sequence is contained. Example 2 illustrates the use of a marked-content reference to the marked-content sequence shown in Example 3.</li>
+<li>An integer that specifies the marked-content identifier. This may be done in the common case where the marked-content sequence is contained in the content stream of the page that is specified in the <strong>Pg</strong> entry of the structure element dictionary. Example 3 shows a structure element that has three children: a marked- content sequence specified by a marked-content identifier, as well as two other structure elements.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+</div>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                        % Structure element
+    &lt;&lt; /Type /StructElem
+        /S /P                  % Structure type
+        /P …                   % Parent in structure hierarchy
+        /K &lt;&lt; /Type /MCR
+            /Pg 2 0 R          % Page containing marked-content sequence
+            /MCID 0            % Marked-content identifier
+        &gt;&gt;
+    &gt;&gt;
+endobj
+</code></pre></div>
+<p><table id="table324" markdown="span">
+    <caption><strong>Table 324 – Entries in a marked-content reference dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td> 
+            <td>name</td>
+            <td>
+                (Required) The type of PDF object that this dictionary describes; shall be <strong>MCR</strong> for a marked-content reference.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Pg</strong></td> 
+            <td>dictionary</td>
+            <td>
+            (Optional; shall be an indirect reference) The page object representing the page on which the graphics objects in the marked-content sequence shall be rendered. This entry overrides any <strong>Pg</strong> entry in the structure element containing the marked-content reference; it shall be required if the structure element has no such entry.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Stm</strong></td> 
+            <td>stream</td>
+            <td>
+            (Optional; shall be an indirect reference) The content stream containing the marked-content sequence. This entry should be present only if the marked-content sequence resides in a content stream other than the content stream for the page (see <a href="../../c8/s10/">8.10</a>, “Form XObjects” and <a href="../../c12/s5/#1255-外观流">12.5.5</a>, “Appearance Streams”). <br/>
+            If this entry is absent, the marked-content sequence shall be contained in the content stream of the page identified by Pg (either in the marked-content reference dictionary or in the parent structure element).
+            </td>
+        </tr>
+        <tr>
+            <td><strong>StmOwn</strong></td> 
+            <td>(any)</td>
+            <td>
+            (Optional; shall be an indirect reference) The PDF object owning the stream identified by <strong>Stems</strong> annotation to which an appearance stream belongs.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>MCID</strong></td> 
+            <td>integer</td>
+            <td>
+            (Required) The marked-content identifier of the marked-content sequence within its content stream.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 3</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                    % Containing structure element
+    &lt;&lt; /Type /StructElem
+        /S /MixedContainer    % Structure type
+        /P …                  % Parent in structure hierarchy
+        /Pg 2 0 R             % Page containing marked-content sequence
+        /K [ 4 0 R            % Three children: a structure element
+            0                 % a marked-content identifier
+            50R               % another structure element
+        ]
+    &gt;&gt;
+endobj
+
+2 0 obj                        % Page object
+    &lt;&lt; /Type /Page
+        /Contents 3 0 R        % Content stream
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj                        % Page&#39;s content stream
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    …
+    /P &lt;&lt; /MCID 0 &gt;&gt;            % Start of marked-content sequence
+        BDC
+            ( Here is some text ) Tj
+            …
+        EMC                    % End of marked-content sequence
+    …
+endstream
+endobj
+</code></pre></div>
+</div>
+<p>Content streams other than page contents may also contain marked content sequences that are content items of structure elements. The content of form XObjects may be incorporated into structure elements in one of the following ways:</p>
+<ul>
+<li>A <strong>Do</strong> operator that paints a form XObject may be part of a marked-content sequence that shall be associated with a structure element (see Example 4). In this case, the entire form XObject shall be considered to be part of the structure element’s content, as if it were inserted into the marked-content sequence at the point of the <strong>Do</strong> operator. The form XObject shall not in turn contain any marked-content sequences associated with this or other structure elements.</li>
+<li>The content stream of a form XObject may contain one or more marked-content sequences that shall be associated with structure elements (see Example 5). The form XObject may have arbitrary substructure, containing any number of marked-content sequences associated with logical structure elements. However, any <strong>Do</strong> operator that paints the form XObject should not be part of a logical structure content item.</li>
+</ul>
+<p>A form XObject that is painted with multiple invocations of the <strong>Do</strong> operator may be incorporated into the document’s logical structure only by the first method, with each invocation of <strong>Do</strong> individually associated with a structure element.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 4</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                    % Structure element
+    &lt;&lt; /Type /StructElem
+        /S /P                % Structure type
+        /P …                 % Parent in structure hierarchy
+        /Pg 2 0 R            % Page containing marked-content sequence
+        /K 0                 % Marked-content identifier
+    &gt;&gt;
+endobj
+
+2 0 obj                         % Page object
+    &lt;&lt; /Type /Page
+        /Resources &lt;&lt; /XObject &lt;&lt; /Fm4 4 0 R &gt;&gt;    % Resource dictionary
+                   &gt;&gt;                              % containing form XObject
+        /Contents 3 0 R                            % Content stream
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj                        % Page&#39;s content stream
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    …
+    /P &lt;&lt; /MCID 0 &gt;&gt;                % Start of marked-content sequence
+        BDC
+            /Fm4 Do                 % Paint form XObject
+        EMC                         % End of marked-content sequence
+    …
+endstream
+endobj
+
+4 0 obj                            % Form XObject
+    &lt;&lt; /Type /XObject
+        /Subtype /Form
+        /Length …
+    &gt;&gt;
+stream
+    …
+    ( Here is some text ) Tj
+    …
+endstream
+endobj
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 5</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                        % Structure element
+    &lt;&lt; /Type /StructElem
+        /S /P                    % Structure type
+        /P …                     % Parent in structure hierarchy
+        /K &lt;&lt; /Type /MCR
+            /Pg 2 0 R               % Page containing marked-content sequence
+            /Stm 4 0 R              % Stream containing marked-content sequence
+            /MCID 0                 % Marked-content identifier
+        &gt;&gt;
+    &gt;&gt;
+endobj
+
+2 0 obj                            % Page object
+    &lt;&lt; /Type /Page
+        /Resources &lt;&lt; /XObject &lt;&lt; /Fm4 4 0 R &gt;&gt;  % Resource dictionary
+                   &gt;&gt;                            % containing form XObject
+        /Contents 3 0 R                          % Content stream
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj                            % Page&#39;s content stream
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    …
+    /Fm4 Do                        % Paint form XObject
+    …
+endstream
+endobj
+
+4 0 obj                            % Form XObject
+    &lt;&lt; /Type /XObject
+        /Subtype /Form
+        /Length …
+    &gt;&gt;
+stream
+    …
+    /P &lt;&lt; /MCID 0 &gt;&gt;                % Start of marked-content sequence
+        BDC
+        …
+        ( Here is some text ) Tj
+        …
+    EMC                            % End of marked-content sequence
+    …
+endstream
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h3 id="14743-pdf对象作为内容项">14.7.4.3 PDF对象作为内容项<a class="headerlink" href="#14743-pdf对象作为内容项" title="Permanent link">&para;</a></h3>
+<p><strong>14.7.4.3 PDF Objects as Content Items</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>当结构元素的内容包含整个 PDF 对象（例如 XObject 或注释）时，该对象与某个页面相关联，但不会直接包含在该页面的内容流中。在这种情况下，该对象应通过 <em>对象引用字典</em> 在结构元素的 <strong>K</strong> 条目中标识（参见 <a href="#table325">表 325</a>）。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 1</p>
+<p>这种引用形式仅用于整个对象。如果被引用的内容仅构成对象内容流的一部分，则应按照前述小节的描述，将其作为标记内容序列处理。</p>
+</div>
+<p><table id="table325" markdown="span">
+    <caption><strong>表 325 – 对象引用字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td> 
+            <td>name</td>
+            <td>
+                （必需）该字典所描述的 PDF 对象的类型；对于对象引用，应为 <strong>OBJR</strong>。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Pg</strong></td> 
+            <td>dictionary</td>
+            <td>
+            （可选；应为间接引用）该对象应被渲染的页面对象。此条目会覆盖包含对象引用的结构元素中的 <strong>Pg</strong> 条目；如果结构元素没有此类条目，则应使用此条目。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Obj</strong></td> 
+            <td>(any)</td>
+            <td>
+            （必需；应为间接引用）被引用的对象。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">注意 2</p>
+<p>如果被引用的对象呈现在多个页面上，则每次渲染都需要单独的对象引用。然而，如果它在同一页面上被多次渲染，则仅需单个对象引用即可标识所有实例。（如果需要区分同一 XObject 在同一页面上的多个呈现，则应使用包围特定 <strong>Do</strong> 操作符调用的标记内容序列，而不是对象引用。）</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>When a structure element’s content includes an entire PDF object, such as an XObject or an annotation, that is associated with a page but not directly included in the page’s content stream, the object shall be identified in the structure element’s <strong>K</strong> entry by an <em>object reference dictionary</em> (see <a href="#table325">Table 325</a>).</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>This form of reference is used only for entire objects. If the referenced content forms only part of the object’s content stream, it is instead handled as a marked-content sequence, as described in the preceding sub-clause.</p>
+</div>
+<p><table id="table325" markdown="span">
+    <caption><strong>Table 325 – Entries in an object reference dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td> 
+            <td>name</td>
+            <td>
+                (Required) The type of PDF object that this dictionary describes; shall be <strong>OBJR</strong> for an object reference.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Pg</strong></td> 
+            <td>dictionary</td>
+            <td>
+            (Optional; shall be an indirect reference) The page object of the page on which the object shall be rendered. This entry overrides any <strong>Pg</strong> entry in the structure element containing the object reference; it shall be used if the structure element has no such entry.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Obj</strong></td> 
+            <td>(any)</td>
+            <td>
+            (Required; shall be an indirect reference) The referenced object.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>If the referenced object is rendered on multiple pages, each rendering requires a separate object reference. However, if it is rendered multiple times on the same page, just a single object reference suffices to identify all of them. (If it is important to distinguish between multiple renditions of the same XObject on the same page, they should be accessed by means of marked-content sequences enclosing particular invocations of the <strong>Do</strong> operator rather than through object references.)</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="14744-从内容项中查找结构元素">14.7.4.4 从内容项中查找结构元素<a class="headerlink" href="#14744-从内容项中查找结构元素" title="Permanent link">&para;</a></h3>
+<p><strong>14.7.4.4 Finding Structure Elements from Content Items</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>由于流不能包含对象引用，因此标记内容序列作为内容项时，无法直接引用其父结构元素（即作为内容项所属的结构元素）。为了实现这一功能，需要使用另一种机制，即 <em>结构父树</em>。为了保持一致性，作为整个 PDF 对象的内容项（如 XObject）也应使用父树来引用其父结构元素。</p>
+<p>父树是一种数字树（参见 <a href="../../c7/s9/#797-number树">7.9.7</a>，“数字树”），可通过文档结构树根中的 <strong>ParentTree</strong> 条目访问（参见 <a href="#table322">表 322</a>）。该树应包含以下条目的键值对：</p>
+<ul>
+<li>作为至少一个结构元素的内容项的对象。</li>
+<li>包含至少一个作为内容项的标记内容序列的内容流。</li>
+</ul>
+<p>每个条目的键是对象的 <strong>StructParent</strong> 或 <strong>StructParents</strong> 条目的整数值（参见 <a href="#table326">表 326</a>）。这些条目的值如下：</p>
+<ul>
+<li>如果对象通过对象引用标识为内容项（参见 <a href="./#14743-pdf对象作为内容项">14.7.4.3</a>，“作为内容项的 PDF 对象”），则其值应为指向父结构元素的间接引用。</li>
+<li>如果内容流包含作为内容项的标记内容序列，则其值应为指向这些序列的父结构元素的间接引用数组。数组中的每个元素可通过标记内容标识符作为从零开始的索引来找到相应的父结构元素。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>由于标记内容标识符在结构父树中作为数组索引使用，因此其赋值应尽可能小，以节省数组空间。</p>
+</div>
+<p>结构树根中的 <strong>ParentTreeNextKey</strong> 条目应保存一个整数值，该值大于当前在结构父树中使用的任何键值。每当向父树添加新条目时，应使用 <strong>ParentTreeNextKey</strong> 的当前值作为新条目的键，然后递增该值，以准备添加下一个新条目。</p>
+<p>为了定位相关的父树条目，每个在树中表示的对象或内容流应包含一个特殊的字典条目 <strong>StructParent</strong> 或 <strong>StructParents</strong>（参见 <a href="#table326">表 326</a>）。根据内容项的类型，该条目可能出现在包含标记内容序列的页面对象中，或者出现在表单 XObject、图像 XObject 的流字典中，亦或是出现在注释字典或任何其他作为内容项包含在结构元素中的对象字典中。其值应为该对象在结构父树中的整数键。</p>
+<p><table id="table326" markdown="span">
+    <caption><strong>表 326 – 访问结构元素的附加字典条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>StructParent</strong></td> 
+            <td>integer</td>
+            <td>
+                （对于所有作为结构内容项的对象是必需的；PDF 1.3）该对象在结构父树中的整数键。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>StructParents</strong></td> 
+            <td>integer</td>
+            <td>
+                （对于包含作为结构内容项的标记内容序列的所有内容流是必需的；PDF 1.3）该对象在结构父树中的整数键。<br/>
+                在同一个对象中最多只能出现 <strong>StructParent</strong> 或 <strong>StructParents</strong> 之一。对象可以是完整的内容项，也可以是包含作为内容项的标记内容序列的容器，但不能同时具有两者。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>对于通过对象引用标识的内容项，可以通过其对象字典中的 <strong>StructParent</strong> 条目值，在结构父树（位于结构树根的 <strong>ParentTree</strong> 条目中）中查找相应的父结构元素。父树中的对应值应为指向父结构元素的引用（参见示例 1）。</p>
+<div class="admonition info">
+<p class="admonition-title">示例 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                    % 父结构元素
+    &lt;&lt; /Type /StructElem
+        …
+        /K &lt;&lt; /Type /OBJR          % 对象引用
+                /Pg 2 0 R            % 包含表单 XObject 的页面
+                /Obj 4 0 R           % 对表单 XObject 的引用
+        &gt;&gt;
+    &gt;&gt;
+endobj
+
+2 0 obj                            % 页面对象
+    &lt;&lt; /Type /Page
+        /Resources &lt;&lt; /XObject &lt;&lt; /Fm4 4 0 R &gt;&gt;    % 资源字典
+                    &gt;&gt;                              % 包含表单 XObject
+        /Contents 3 0 R                            % 内容流
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj                            % 页面内容流
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    …
+    /Fm4 Do                        % 绘制表单 XObject
+    …
+endstream
+endobj
+
+4 0 obj                        % 表单 XObject
+    &lt;&lt; /Type /XObject
+        /Subtype /Form
+        /Length …
+        /StructParent 6        % 父树键值
+    &gt;&gt;
+stream
+    …
+endstream
+endobj
+
+100 0 obj                        % 结构父树（从结构树根访问）
+    &lt;&lt; /Nums [ 0 101 0 R
+                1 102 0 R
+                …
+                6 10R            % 页面对象 2 的条目，指向
+                …                % 父结构元素
+                ]
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+<p>对于作为标记内容序列的内容项，检索方法类似但稍微复杂一些。由于标记内容序列本身不是一个独立的对象，其父树键值应从包含该序列的页面对象或其他内容流的 <strong>StructParents</strong> 条目中获取。从父树检索到的值不是直接指向父结构元素的引用，而是一个数组，其中包含该内容流内所有标记内容序列对应的父结构元素的引用。要找到特定序列的父结构元素，需要使用该序列的标记内容标识符作为索引，在此数组中进行查找（参见示例 2）。</p>
+<div class="admonition info">
+<p class="admonition-title">示例 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                    % 父结构元素
+    &lt;&lt; /Type /StructElem
+        …
+        /Pg 2 0 R                   % 包含标记内容序列的页面
+        /K 0                        % 标记内容标识符
+    &gt;&gt;
+endobj
+
+2 0 obj                    % 页面对象
+    &lt;&lt; /Type /Page
+        /Contents 3 0 R            % 内容流
+        /StructParents 6            % 父树键值
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj                    % 页面内容流
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    …
+    /P &lt;&lt; /MCID 0 &gt;&gt;            % 标记内容序列起始
+        BDC
+            ( Here is some text ) TJ
+            …
+        EMC                         % 标记内容序列结束
+    …
+endstream
+endobj
+
+100 0 obj                    % 结构父树（从结构树根访问）
+    &lt;&lt; /Nums [ 0 101 0 R
+                1 102 0 R
+                …
+                6 [1 0 R]   % 页面对象 2 的条目，索引 0 处的数组元素
+                …           % 指向父结构元素
+            ]
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Because a stream may not contain object references, there is no way for content items that are marked-content sequences to refer directly back to their parent structure elements (the ones to which they belong as content items). Instead, a different mechanism, the <em>structural parent tree</em>, shall be provided for this purpose. For consistency, content items that are entire PDF objects, such as XObjects, also shall use the parent tree to refer to their parent structure elements.</p>
+<p>The parent tree is a number tree (see <a href="../../c7/s9/#797-number树">7.9.7</a>, “Number Trees”), accessed from the <strong>ParentTree</strong> entry in a document’s structure tree root (<a href="#table322">Table 322</a>). The tree shall contain an entry for each object that is a content item of at least one structure element and for each content stream containing at least one marked-content sequence that is a content item. The key for each entry shall be an integer given as the value of the <strong>StructParent</strong> or <strong>StructParents</strong> entry in the object (see <a href="#table326">Table 326</a>). The values of these entries shall be as follows:</p>
+<ul>
+<li>For an object identified as a content item by means of an object reference (see <a href="./#14743-pdf对象作为内容项">14.7.4.3</a>, “PDF Objects as Content Items”), the value shall be an indirect reference to the parent structure element.</li>
+<li>For a content stream containing marked-content sequences that are content items, the value shall be an array of indirect references to the sequences’ parent structure elements. The array element corresponding to each sequence shall be found by using the sequence’s marked-content identifier as a zero-based index into the array.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Because marked-content identifiers serve as indices into an array in the structural parent tree, their assigned values should be as small as possible to conserve space in the array.</p>
+</div>
+<p>The <strong>ParentTreeNextKey</strong> entry in the structure tree root shall hold an integer value greater than any that is currently in use as a key in the structural parent tree. Whenever a new entry is added to the parent tree, the current value of <strong>ParentTreeNextKey</strong> shall be used as its key. The value shall be then incremented to prepare for the next new entry to be added.</p>
+<p>To locate the relevant parent tree entry, each object or content stream that is represented in the tree shall contain a special dictionary entry, <strong>StructParent</strong> or <strong>StructParents</strong> (see <a href="#table326">Table 326</a>). Depending on the type of content item, this entry may appear in the page object of a page containing marked-content sequences, in the stream dictionary of a form or image XObject, in an annotation dictionary, or in any other type of object dictionary that is included as a content item in a structure element. Its value shall be the integer key under which the entry corresponding to the object shall be found in the structural parent tree.</p>
+<p><table id="table326" markdown="span">
+    <caption><strong>Table 326 – Additional dictionary entries for structure element access</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>StructParent</strong></td> 
+            <td>integer</td>
+            <td>
+                (Required for all objects that are structural content items; PDF 1.3) The integer key of this object’s entry in the structural parent tree.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>StructParents</strong></td> 
+            <td>integer</td>
+            <td>
+                (Required for all content streams containing marked-content sequences that are structural content items; PDF 1.3) The integer key of this object’s entry in the structural parent tree. <br/>
+                At most one of these two entries shall be present in a given object. An object may be either a content item in its entirety or a container for marked-content sequences that are content items, but not both.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>For a content item identified by an object reference, the parent structure element may be found by using the value of the <strong>StructParent</strong> entry in the item’s object dictionary as a retrieval key in the structural parent tree (found in the <strong>ParentTree</strong> entry of the structure tree root). The corresponding value in the parent tree shall be a reference to the parent structure element (see Example 1).</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                    % Parent structure element
+    &lt;&lt; /Type /StructElem
+        …
+        /K &lt;&lt; /Type /OBJR          % Object reference
+              /Pg 2 0 R            % Page containing form XObject
+              /Obj 4 0 R           % Reference to form XObject
+        &gt;&gt;
+    &gt;&gt;
+endobj
+
+2 0 obj                            % Page object
+    &lt;&lt; /Type /Page
+        /Resources &lt;&lt; /XObject &lt;&lt; /Fm4 4 0 R &gt;&gt;    % Resource dictionary
+                   &gt;&gt;                              % containing form XObject
+        /Contents 3 0 R                            % Content stream
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj                            % Page&#39;s content stream
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    …
+    /Fm4 Do                        % Paint form XObject
+    …
+endstream
+endobj
+
+4 0 obj                        % Form XObject
+    &lt;&lt; /Type /XObject
+        /Subtype /Form
+        /Length …
+        /StructParent 6        % Parent tree key
+    &gt;&gt;
+stream
+    …
+endstream
+endobj
+
+100 0 obj                        % Parent tree (accessed from structure tree root)
+    &lt;&lt; /Nums [ 0 101 0 R
+                1 102 0 R
+                …
+                6 10R            % Entry for page object 2; points back
+                …                % to parent structure element
+             ]
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+<p>For a content item that is a marked-content sequence, the retrieval method is similar but slightly more complicated. Because a marked-content sequence is not an object in its own right, its parent tree key shall be found in the <strong>StructParents</strong> entry of the page object or other content stream in which the sequence resides. The value retrieved from the parent tree shall not be a reference to the parent structure element itself but to an array of such references—one for each marked-content sequence contained within that content stream. The parent structure element for the given sequence shall be found by using the sequence’s marked-content identifier as an index into this array (see Example 2).</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                    % Parent structure element
+    &lt;&lt; /Type /StructElem
+        …
+        /Pg 2 0 R                   % Page containing marked-content sequence
+        /K 0                        % Marked-content identifier
+    &gt;&gt;
+endobj
+
+2 0 obj                    % Page object
+    &lt;&lt; /Type /Page
+        /Contents 3 0 R            % Content stream
+        /StructParents 6            % Parent tree key
+        …
+    &gt;&gt;
+endobj
+
+3 0 obj                    % Page&#39;s content stream
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    …
+    /P &lt;&lt; /MCID 0 &gt;&gt;            % Start of marked-content sequence
+        BDC
+            ( Here is some text ) TJ
+            …
+        EMC                         % End of marked-content sequence
+    …
+endstream
+endobj
+
+100 0 obj                    % Parent tree (accessed from structure tree root)
+    &lt;&lt; /Nums [ 0 101 0 R
+                1 102 0 R
+                …
+                6 [1 0 R]   % Entry for page object 2; array element at index 0
+                …           % points back to parent structure element
+            ]
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1475-结构属性">14.7.5 结构属性<a class="headerlink" href="#1475-结构属性" title="Permanent link">&para;</a></h2>
+<p><strong>14.7.5 Structure Attributes</strong></p>
+<h3 id="14751-概述">14.7.5.1 概述<a class="headerlink" href="#14751-概述" title="Permanent link">&para;</a></h3>
+<p><strong>14.7.5.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>符合标准的产品在处理逻辑结构时，可以向任何结构元素附加额外的信息，称为<strong>属性</strong>。这些属性信息应存储在与结构元素关联的一个或多个<strong>属性对象</strong>中。属性对象应为<strong>字典</strong>或<strong>流</strong>，其中包含一个 <strong>O</strong> 条目（参见 <a href="#table327">表 327</a>），用于标识拥有该属性信息的符合标准的产品。其他条目表示具体属性：键为<strong>属性名称</strong>，值为<strong>相应的属性值</strong>。为了便于符合标准的产品之间交换内容，PDF 定义了一组由特定标准所有者标识的<strong>标准结构属性</strong>（参见 <a href="../s8/#1485-标准结构属性">14.8.5</a>，"标准结构属性"）。此外，（PDF 1.6）属性还可用于表示用户属性（参见 <a href="./#14754-用户属性">14.7.5.4</a>，"用户属性"）。</p>
+<p><table id="table327" markdown="span">
+    <caption><strong>表 327 – 适用于所有属性对象字典的公共条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>O</strong></td> 
+            <td>名称</td>
+            <td>
+                （必需）拥有属性数据的符合标准的产品名称。该名称应符合 <a href="../../a5/">附录 E</a> 中的命名指南。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>任何符合标准的产品都可以向任何结构元素附加属性，即使该结构元素是由另一个符合标准的产品创建的。多个符合标准的产品可以向同一结构元素附加属性。结构元素字典中的 <strong>A</strong> 条目（参见 <a href="#table323">表 323</a>）应包含一个单独的属性对象，或者一个<strong>属性对象数组</strong>，同时包含<strong>修订号</strong>以协调不同符合标准的产品创建的属性（参见 <a href="./#14753-属性修订号">14.7.5.3</a>，"属性修订号"）。当符合标准的产品为某个结构元素创建或删除第二个属性对象时，应负责将 <strong>A</strong> 条目的值从单个对象转换为数组或从数组转换回单个对象，并维护修订号的完整性。<strong>A</strong> 数组中的属性对象没有固有的顺序定义，但<strong>新对象应追加到数组末尾</strong>，以便<strong>数组的第一个元素属于最初创建该结构元素的符合标准的产品</strong>。</p>
+</div>
+<div class="tabbed-block">
+<p>A conforming product that processes logical structure may attach additional information, called attributes, to any structure element. The attribute information shall be held in one or more attribute objects associated with the structure element. An attribute object shall be a dictionary or stream that includes an <strong>O</strong> entry (see <a href="#table327">Table 327</a>) identifying the conforming product that owns the attribute information. Other entries shall represent the attributes: the keys shall be attribute names, and values shall be the corresponding attribute values. To facilitate the interchange of content among conforming products, PDF defines a set of standard structure attributes identified by specific standard owners; see <a href="../s8/#1485-标准结构属性">14.8.5</a>, “Standard Structure Attributes.” In addition, (PDF 1.6) attributes may be used to represent user properties (see <a href="./#14754-用户属性">14.7.5.4</a>, “User Properties”).</p>
+<p><table id="table327" markdown="span">
+    <caption><strong>Table 327 – Entry common to all attribute object dictionaries</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>O</strong></td> 
+            <td>name</td>
+            <td>
+                (Required) The name of the conforming product owning the attribute data. The name shall conform to the guidelines described in <a href="../../a5/">Annex E</a>.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>Any conforming product may attach attributes to any structure element, even one created by another conforming product. Multiple conforming products may attach attributes to the same structure element. The <strong>A</strong> entry in the structure element dictionary (see <a href="#table323">Table 323</a>) shall hold either a single attribute object or an array of such objects, together with revision numbers for coordinating attributes created by different conforming products (see <a href="./#14753-属性修订号">14.7.5.3</a>, “Attribute Revision Numbers”). A conforming product creating or destroying the second attribute object for a structure element shall be responsible for converting the value of the <strong>A</strong> entry from a single object to an array or vice versa, as well as for maintaining the integrity of the revision numbers. No inherent order shall be defined for the attribute objects in an <strong>A</strong> array, but new objects should be added at the end of the array so that the first array element is the one belonging to the conforming product that originally created the structure element.</p>
+</div>
+</div>
+</div>
+<h3 id="14752-属性类别">14.7.5.2 属性类别<a class="headerlink" href="#14752-属性类别" title="Permanent link">&para;</a></h3>
+<p><strong>14.7.5.2 Attribute Classes</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>如果多个结构元素共享相同的属性值集合，则可以将它们定义为<strong>属性类</strong>，并共享相同的属性对象。结构元素应通过<strong>名称</strong>引用该类。类名与属性对象之间的关联应由<strong>类映射（class map）</strong>定义，该映射存储在结构树根的 <strong>ClassMap</strong> 条目中（参见 <a href="#table322">表 322</a>）。类映射中的每个键应为<strong>名称对象</strong>，表示类的名称；相应的值应为<strong>属性对象</strong>或<strong>属性对象数组</strong>。</p>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>PDF 的<strong>属性类</strong>与 Java 和 C++ 等面向对象编程语言中的<strong>类（class）</strong>概念无关。属性类仅仅是一种更紧凑存储属性信息的机制；它<strong>不具备</strong>面向对象类的<strong>继承</strong>特性。</p>
+</div>
+<p>结构元素字典中的 <strong>C</strong> 条目（参见 <a href="#table323">表 323</a>）应包含<strong>一个类名或一个类名数组</strong>（通常还附带<strong>修订号</strong>，参见 <a href="./#14753-属性修订号">14.7.5.3</a>，“属性修订号”）。对于 <strong>C</strong> 条目中列出的每个类，<strong>相应的属性对象</strong>应被视为<strong>附加到该结构元素</strong>，并与该元素的 <strong>A</strong> 条目中指定的属性对象一同生效。如果同时存在 <strong>A</strong> 和 <strong>C</strong> 条目，并且某个属性在两者中都被定义，则<strong>以 </strong>A<strong> 条目指定的属性为准</strong>。</p>
+</div>
+<div class="tabbed-block">
+<p>If many structure elements share the same set of attribute values, they may be defined as an attribute class sharing the identical attribute object. Structure elements shall refer to the class by name. The association between class names and attribute objects shall be defined by a dictionary called the class map, that shall be kept in the <strong>ClassMap</strong> entry of the structure tree root (see <a href="#table322">Table 322</a>). Each key in the class map shall be a name object denoting the name of a class. The corresponding value shall be an attribute object or an array of such objects.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>PDF attribute classes are unrelated to the concept of a class in object-oriented programming languages such as Java and C++. Attribute classes are strictly a mechanism for storing attribute information in a more compact form; they have no inheritance properties like those of true object-oriented classes.</p>
+</div>
+<p>The <strong>C</strong> entry in a structure element dictionary (see <a href="#table323">Table 323</a>) shall contain a class name or an array of class names (typically accompanied by revision numbers as well; see <a href="./#14753-属性修订号">14.7.5.3</a>, “Attribute Revision Numbers”). For each class named in the C entry, the corresponding attribute object or objects shall be considered to be attached to the given structure element, along with those identified in the element’s <strong>A</strong> entry. If both the <strong>A</strong> and <strong>C</strong> entries are present and a given attribute is specified by both, the one specified by the <strong>A</strong> entry shall take precedence.</p>
+</div>
+</div>
+</div>
+<h3 id="14753-属性修订号">14.7.5.3 属性修订号<a class="headerlink" href="#14753-属性修订号" title="Permanent link">&para;</a></h3>
+<p><strong>14.7.5.3 Attribute Revision Numbers</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>当符合标准的产品修改<strong>结构元素</strong>或其<strong>内容</strong>时，此更改可能会影响<strong>其他符合标准的产品</strong>附加到该结构元素的<strong>属性信息的有效性</strong>。为了解决这个问题，PDF 采用了一套<strong>修订号（revision numbers）</strong>系统，使符合标准的产品能够检测这些更改，并相应地更新其<strong>属性信息</strong>。本节将对此进行描述。</p>
+<p><strong>结构元素的修订号</strong></p>
+<p><strong>结构元素</strong>应具有一个<strong>修订号</strong>，该修订号存储在结构元素字典的 <strong>R</strong> 条目中（参见 <a href="#table323">表 323</a>）。如果 <strong>R</strong> 条目不存在，则默认值为 <code>0</code>。最初，修订号应为 <code>0</code>。当符合标准的产品<strong>修改</strong>结构元素或其任何内容项时，可以通过<strong>递增修订号</strong>来指示此更改。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 1</p>
+<p>修订号与<strong>间接对象</strong>的<strong>版本号（generation number）</strong>无关（参见 <a href="../../c7/s3/#7310-间接对象">7.3.10</a>，“间接对象”）。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注意 2</p>
+<p>如果 <strong>R</strong> 条目不存在，并且修订号要从默认值 <code>0</code> 递增到 <code>1</code>，则必须在<strong>结构元素字典</strong>中创建 <strong>R</strong> 条目，以记录修订号 <code>1</code>。</p>
+</div>
+<h3 id="属性对象的修订号">属性对象的修订号<a class="headerlink" href="#属性对象的修订号" title="Permanent link">&para;</a></h3>
+<p>每个附加到结构元素的<strong>属性对象</strong>都应有一个<strong>关联的修订号</strong>。该修订号存储在<strong>属性对象与结构元素的关联数组</strong>中。如果该修订号未存储在数组中，则默认值为 <code>0</code>。</p>
+<ul>
+<li>结构元素 <strong>A</strong> 数组中的每个属性对象应由<strong>单个</strong>或<strong>一对</strong>数组元素表示：</li>
+<li><strong>第一个</strong>（或唯一的）元素应包含<strong>属性对象本身</strong>。</li>
+<li>
+<p><strong>第二个</strong>（如果存在）应包含<strong>与该结构元素关联的整数修订号</strong>。</p>
+</li>
+<li>
+<p>结构元素 <strong>C</strong> 数组中的每个<strong>属性类</strong>应包含<strong>单个</strong>或<strong>一对</strong>元素：</p>
+</li>
+<li><strong>第一个</strong>（或唯一的）元素应包含<strong>类名</strong>。</li>
+<li><strong>第二个</strong>（如果存在）应包含<strong>关联的修订号</strong>。</li>
+</ul>
+<p>在 <strong>A</strong> 和 <strong>C</strong> 数组中，<strong>修订号是可选的</strong>。如果<strong>属性对象或类名后面没有整数数组元素</strong>，则其修订号默认为 <code>0</code>，并且仅用<strong>一个条目</strong>表示。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 3</p>
+<p>修订号不会<strong>直接存储</strong>在<strong>属性对象</strong>内部，因为<strong>同一个属性对象</strong>可能被多个<strong>结构元素</strong>引用，而这些结构元素的<strong>修订号可能不同</strong>。由于<strong>属性对象引用</strong>与<strong>整数值</strong>不同，因此可以通过<strong>数组中是否有一对条目</strong>来区分<strong>该属性对象是否附带修订号</strong>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注意 4</p>
+<p>当<strong>创建或修改</strong>属性对象时，其<strong>修订号</strong>应设置为结构元素当前的 <strong>R</strong> 条目值。应用程序可以通过<strong>比较</strong>属性对象的修订号与结构元素的 <strong>R</strong> 值，来判断<strong>属性对象的内容是否仍然有效</strong>，或者它们是否已因<strong>最近的结构元素更改</strong>而过时。</p>
+</div>
+<p><strong>修订号的更新规则</strong></p>
+<ul>
+<li>
+<p><strong>修改属性对象</strong>不会更改结构元素的修订号。<strong>结构元素的修订号仅在结构元素本身或其内容项被修改时才会更改</strong>。</p>
+</li>
+<li>
+<p>在某些情况下，符合标准的产品可能会对结构元素进行<strong>大规模更改</strong>，这些更改可能会使<strong>所有先前的属性信息失效</strong>。在这种情况下，产品可以选择：</p>
+</li>
+<li><strong>递增结构元素的修订号</strong>，或者</li>
+<li><strong>从 A 和 C 数组中删除所有未知的属性对象</strong>。</li>
+</ul>
+<p><strong>这两个操作是互斥的</strong>：产品<strong>应选择其中之一</strong>，<strong>但不能同时执行两者</strong>。</p>
+<div class="admonition note">
+<p class="admonition-title">注意 5</p>
+<p>任何创建<strong>属性对象</strong>的符合标准的产品都应做好准备，因为这些对象<strong>可能随时被另一个符合标准的产品删除</strong>。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>When a conforming product modifies a structure element or its contents, the change may affect the validity of attribute information attached to that structure element by other conforming products. A system of <em>revision numbers</em> shall allow conforming products to detect such changes and update their own attribute information accordingly, as described in this sub-clause.</p>
+<p>A structure element shall have a revision number, that shall be stored in the <strong>R</strong> entry in the structure element dictionary (see <a href="#table323">Table 323</a>) or default to 0 if no <strong>R</strong> entry is present. Initially, the revision number shall be 0. When a conforming product modifies the structure element or any of its content items, it may signal the change by incrementing the revision number.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>The revision number is unrelated to the generation number associated with an indirect object (see <a href="../../c7/s3/#7310-间接对象">7.3.10</a>, “Indirect Objects”).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>If their is no R entry and the revision number is to be incremented from the default value of 0 to 1, an R entry must be created in the structure element dictionary in order to record the 1.</p>
+</div>
+<p>Each attribute object attached to a structure element shall have an associated revision number. The revision number shall be stored in the array that associates the attribute object with the structure element or if not stored in the array that associates the attribute object with the structure element shall default to 0.</p>
+<ul>
+<li>Each attribute object in a structure element’s <strong>A</strong> array shall be represented by a single or a pair of array elements, the first or only element shall contain the attribute object itself and the second (when present) shall contain the integer revision number associated with it in this structure element.</li>
+<li>The structure element’s <strong>C</strong> array shall contain a single or a pair of elements for each attribute class, the first or only shall contain the class name and the second (when present) shall contain the associated revision number.</li>
+</ul>
+<p>The revision numbers are optional in both the <strong>A</strong> and <strong>C</strong> arrays. An attribute object or class name that is not followed by an integer array element shall have a revision number of 0 and is represented by a single entry in the array.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 3</p>
+<p>The revision number is not stored directly in the attribute object because a single attribute object may be associated with more than one structure element (whose revision numbers may differ). Since an attribute object reference is distinct from an integer, that distinction is used to determine whether the attribute object is represented in the array by a single or a pair of entries.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 4</p>
+<p>When an attribute object is created or modified, its revision number is set to the current value of the structure element’s <strong>R</strong> entry. By comparing the attribute object’s revision number with that of the structure element, an application can determine whether the contents of the attribute object are still current or whether they have been outdated by more recent changes in the underlying structure element.</p>
+</div>
+<p>Changes in an attribute object shall not change the revision number of the associated structure element, which shall change only when the structure element itself or any of its content items is modified.</p>
+<p>Occasionally, a conforming product may make extensive changes to a structure element that are likely to invalidate all previous attribute information associated with it. In this case, instead of incrementing the structure element’s revision number, the conforming product may choose to delete all unknown attribute objects from its <strong>A</strong> and <strong>C</strong> arrays. These two actions shall be mutually exclusive: the conforming product should either increment the structure element’s revision number or remove its attribute objects, but not both.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 5</p>
+<p>Any conforming product creating attribute objects needs to be prepared for the possibility that they can be deleted at any time by another conforming product.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="14754-用户属性">14.7.5.4 用户属性<a class="headerlink" href="#14754-用户属性" title="Permanent link">&para;</a></h3>
+<p><strong>14.7.5.4 User Properties</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">中文</label><label for="__tabbed_11_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>大多数<strong>结构属性</strong>（参见 <a href="../s8/#1485-标准结构属性">14.8.5</a>，“标准结构属性”）用于<strong>指定影响元素外观的信息</strong>，例如 <code>BackgroundColor</code>（背景颜色）或 <code>BorderStyle</code>（边框样式）。</p>
+<p>某些符合标准的写入器（例如 CAD 应用程序）可能会使用<strong>具有标准化外观的对象</strong>，其中每个对象包含<strong>区分它们的非图形信息</strong>。例如，多个<strong>晶体管</strong>可能<strong>外观相同</strong>，但具有<strong>不同的属性</strong>，如<strong>类型</strong>和<strong>零件编号</strong>。</p>
+<p><strong>用户属性（User Properties）</strong>（PDF 1.6）可用于存储此类信息。任何与<strong>结构元素</strong>对应的<strong>图形对象</strong>都可以具有<strong>用户属性</strong>，这些属性由<strong>属性对象字典</strong>指定，该字典的 <strong>O</strong> 条目值应为 <code>UserProperties</code>（参见 <a href="#table328">表 328</a>）。</p>
+<h3 id="用户属性对象字典的附加条目">用户属性对象字典的附加条目<a class="headerlink" href="#用户属性对象字典的附加条目" title="Permanent link">&para;</a></h3>
+<p><table id="table328" markdown="span">
+    <caption><strong>表 328 – 用户属性对象字典的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键（Key）</strong></th>
+            <th><strong>类型（Type）</strong></th>
+            <th><strong>值（Value）</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>O</strong></td> 
+            <td>name</td>
+            <td>
+                （必需）属性所有者。其值应为 <strong>UserProperties</strong>。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td> 
+            <td>array</td>
+            <td>
+                （必需）一个字典数组，每个字典表示一个<strong>用户属性</strong>（参见 <a href="#table329">表 329</a>）。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p><strong>P</strong> 条目应为<strong>数组</strong>，用于指定<strong>用户属性</strong>。数组中的每个元素都应为<strong>用户属性字典</strong>，表示一个<strong>单独的属性</strong>（参见 <a href="#table329">表 329</a>）。<strong>数组元素的顺序</strong>应按<strong>重要性排序</strong>。</p>
+<h3 id="用户属性字典的条目">用户属性字典的条目<a class="headerlink" href="#用户属性字典的条目" title="Permanent link">&para;</a></h3>
+<p><table id="table329" markdown="span">
+    <caption><strong>表 329 – 用户属性字典的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键（Key）</strong></th>
+            <th><strong>类型（Type）</strong></th>
+            <th><strong>值（Value）</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>N</strong></td> 
+            <td>text</td>
+            <td>
+                （必需）用户属性的名称。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>V</strong></td> 
+            <td>array</td>
+            <td>
+                （必需）用户属性的值。<br/>
+                该条目的值可以是<strong>任何类型的 PDF 对象</strong>，但符合标准的写入器应<strong>仅使用文本字符串、数字和布尔值</strong>。符合标准的读取器应向用户显示<strong>文本、数字和布尔值</strong>，但不必显示其他类型的值；然而，读取器不应将<strong>其他值视为错误</strong>。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td> 
+            <td>text string</td>
+            <td>
+                （可选）<code>V</code> 值的格式化表示，<strong>用于特殊格式显示</strong>；例如，数字 <code>-123.45</code> 可表示为 <code>($123.45)</code>。如果此条目不存在，符合标准的读取器应<strong>使用默认格式</strong>。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>H</strong></td> 
+            <td>boolean</td>
+            <td>
+                （可选）如果为 <strong>true</strong>，则该属性应<strong>隐藏</strong>，即不应在<strong>任何显示对象属性的用户界面元素</strong>中呈现。默认值：<strong>false</strong>。
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>如果 PDF 文档包含<strong>用户属性</strong>，则应在<strong>标记信息字典</strong>（Mark Information Dictionary）的 <strong>UserProperties</strong> 条目中提供 <code>true</code> 值（参见 <a href="#table321">表 321</a>）。此条目允许符合标准的读取器<strong>快速确定</strong>是否<strong>需要搜索结构树</strong>，以查找包含用户属性的元素。</p>
+<div class="admonition info">
+<p class="admonition-title">示例</p>
+<p>以下示例展示了一个包含用户属性的<strong>结构元素</strong>，该属性包括 <strong>Part Name</strong>（零件名称）、<strong>Part Number</strong>（零件编号）、<strong>Supplier</strong>（供应商）和 <strong>Price</strong>（价格）。</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>100 0 obj
+    &lt;&lt; /Type /StructElem
+        /S /Figure                                    % 结构类型
+        /P 50 0 R                                     % 结构树中的父元素
+        /A &lt;&lt; /O /UserProperties                      % 属性对象
+                /P [                     % 用户属性数组
+                    &lt;&lt; /N (Part Name) /V (Framostat) &gt;&gt;
+                    &lt;&lt; /N (Part Number) /V 11603 &gt;&gt;                     % 隐藏属性
+                    &lt;&lt; /N (Supplier) /V (Just Framostats) /H true &gt;&gt;    % 格式化值
+                    &lt;&lt; /N (Price) /V -37.99 /F ($37.99) &gt;&gt;
+                    ]
+            &gt;&gt;
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Most structure attributes (see <a href="../s8/#1485-标准结构属性">14.8.5</a>, “Standard Structure Attributes”) specify information that is reflected in the element’s appearance; for example, BackgroundColor or BorderStyle.</p>
+<p>Some conforming writers, such as CAD applications, may use objects that have a standardized appearance, each of which contains non-graphical information that distinguishes the objects from one another. For example, several transistors might have the same appearance but different attributes such as type and part number.</p>
+<p><em>User properties</em> (PDF 1.6) may be used to contain such information. Any graphical object that corresponds to a
+structure element may have associated user properties, specified by means of an attribute object dictionary
+that shall have a value of <strong>UserProperties</strong> for the <strong>O</strong> entry (see <a href="#table328">Table 328</a>).</p>
+<p><table id="table328" markdown="span">
+    <caption><strong>Table 328 – Additional entries in an attribute object dictionary for user properties</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>O</strong></td> 
+            <td>name</td>
+            <td>
+                (Required) The attribute owner. Shall be <strong>UserProperties</strong>.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>P</strong></td> 
+            <td>array</td>
+            <td>
+                (Required) An array of dictionaries, each of which represents a user property (see <a href="#table329">Table 329</a>).
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The <strong>P</strong> entry shall be an array specifying the user properties. Each element in the array shall be a <em>user property dictionary</em> representing an individual property (see <a href="#table329">Table 329</a>). The order of the array elements shall specify attributes in order of importance.</p>
+<p><table id="table329" markdown="span">
+    <caption><strong>Table 329 – Entries in a user property dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>N</strong></td> 
+            <td>text</td>
+            <td>
+                (Required) The name of the user property.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>V</strong></td> 
+            <td>array</td>
+            <td>
+                (Required) The value of the user property. <br/>
+                While the value of this entry shall be any type of PDF object, conforming writers should use only text string, number, and boolean values. Conforming readers should display text, number and boolean values to users but need not display values of other types; however, they should not treat other values as errors.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>F</strong></td> 
+            <td>text string</td>
+            <td>
+                (Optional) A formatted representation of the value of V, that shall be used for special formatting; for example “($123.45)” for the number -123.45. If this entry is absent, conforming readers should use a default format.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>H</strong></td> 
+            <td>boolean</td>
+            <td>
+                (Optional) If <strong>true</strong>, the attribute shall be hidden; that is, it shall not be shown in any user interface element that presents the attributes of an object. Default value: <strong>false</strong>.
+            </td>
+        </tr>
+    </tbody>
+</table></p>
+<p>PDF documents that contain user properties shall provide a <strong>UserProperties</strong> entry with a value of <strong>true</strong> in the document’s mark information dictionary (see <a href="#table321">Table 321</a>). This entry allows conforming readers to quickly determine whether it is necessary to search the structure tree for elements containing user properties.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<p>The following example shows a structure element containing user properties called Part Name, Part Number, Supplier, and Price.</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>100 0 obj
+    &lt;&lt; /Type /StructElem
+        /S /Figure                                    % Structure type
+        /P 50 0 R                                     % Parent in structure tree
+        /A &lt;&lt; /O /UserProperties                      % Attribute object
+              /P [                     % Array of user properties
+                   &lt;&lt; /N (Part Name) /V (Framostat) &gt;&gt;
+                   &lt;&lt; /N (Part Number) /V 11603 &gt;&gt;                     % Hidden attribute
+                   &lt;&lt; /N (Supplier) /V (Just Framostats) /H true &gt;&gt;    % Formatted value
+                   &lt;&lt; /N (Price) /V -37.99 /F ($37.99) &gt;&gt;
+                 ]
+           &gt;&gt;
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1476-逻辑结构示例">14.7.6 逻辑结构示例<a class="headerlink" href="#1476-逻辑结构示例" title="Permanent link">&para;</a></h2>
+<p><strong>14.7.6 Example of Logical Structure</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">中文</label><label for="__tabbed_12_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>下一个示例展示了一个 PDF 文件的部分内容，该文件具有简单的文档结构。结构树根（对象 300）包含结构类型为 <strong>Chap</strong>（对象 301）和 <strong>Para</strong>（对象 304） 的元素。<strong>Chap</strong> 元素（标题为“Chapter 1”）包含类型为 <strong>Head1</strong>（对象 302）和 <strong>Para</strong>（对象 303） 的元素。</p>
+<p>这些元素通过结构树根中指定的角色映射（Role Map）映射到 <strong>标记 PDF（Tagged PDF）</strong> 规范中定义的标准结构类型（参见 <a href="../s8/#1484-标准结构类型">14.8.4</a>，“标准结构类型”）。对象 302 至 304 还附加了属性（参见 <a href="./#1475-结构属性">14.7.5</a>，“结构属性” 和 <a href="../s8/#1485-标准结构属性">14.8.5</a>，“标准结构属性”）。</p>
+<p>该示例还展示了父树（对象 400）的结构，该树将内容项映射回其父结构元素，以及 ID 树（对象 403）的结构，该树将元素标识符映射到它们所表示的结构元素。</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                              % 文档目录
+    &lt;&lt; /Type /Catalog
+        /Pages 100 0 R                % 页面树
+        /StructTreeRoot 300 0 R       % 结构树根
+    &gt;&gt;
+endobj
+
+100 0 obj                            % 页面树
+    &lt;&lt; /Type /Pages
+        /Kids [ 101 1 R              % 第一个页面对象
+                102 0 R              % 第二个页面对象
+                ]
+        /Count 2                     % 页面计数
+    &gt;&gt;
+endobj
+
+101 1 obj                            % 第一个页面对象
+    &lt;&lt; /Type /Page
+        /Parent 100 0 R                      % 父级为页面树
+        /Resources &lt;&lt; /Font &lt;&lt; /F1 6 0 R     % 字体资源
+                                /F12 7 0 R
+                            &gt;&gt;
+                        /ProcSet [ /PDF /Text ]              % 程序集
+                    &gt;&gt;
+        /MediaBox [ 0 0 612 792 ]            % 媒体框
+        /Contents 201 0 R                    % 内容流
+        /StructParents 0                     % 父树键
+    &gt;&gt;
+endobj
+
+201 0 obj                             % 第一个页面的内容流
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    1 1 1 rg
+    0 0 612 792 re f
+    BT                                   % 文本对象开始
+
+    /Head1 &lt;&lt; /MCID 0 &gt;&gt;                 % 标记内容序列 0 开始
+        BDC
+            0 0 0 rg
+            /F1 1 Tf
+            30 0 0 30 18 732 Tm
+            ( 这是一个一级标题。你好，世界：) Tj
+            1.1333 TL
+            T*
+            ( 再见，宇宙。) Tj
+        EMC                                % 标记内容序列 0 结束
+
+    /Para &lt;&lt; /MCID 1 &gt;&gt;                    % 标记内容序列 1 开始
+        BDC
+            /F12 1 Tf
+            14 0 0 14 18 660.8 Tm
+            ( 这是第一段，跨越多页。它有四个简洁的句子。这是倒数第二个。) Tj
+        EMC                                % 标记内容序列 1 结束
+    ET
+endstream
+endobj
+
+202 0 obj                                 % 第二页的内容流
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    1 1 1 rg
+    0 0 612 792 re f
+    BT                                    % 文本对象开始
+
+        /Para &lt;&lt; /MCID 0 &gt;&gt;               % 标记内容序列 0 开始
+            BDC
+                0 0 0 rg
+                /F12 1 Tf
+                14 0 0 14 18 732 Tm
+                ( 句子。这是第一段的最后一句。) Tj
+            EMC                           % 标记内容序列 0 结束
+
+    /Para &lt;&lt; /MCID 1 &gt;&gt;                   % 标记内容序列 1 开始
+        BDC
+            /F12 1 Tf
+            14 0 0 14 18 570.8 Tm
+            ( 这是第二段。它有四个简洁的句子。 \ 这是倒数第二个。) Tj
+        EMC                                % 标记内容序列 1 结束
+
+    /Para &lt;&lt; /MCID 2 &gt;&gt;                    % 标记内容序列 2 开始
+        BDC
+            1.1429 TL
+            T*
+            ( 句子。这是第二段的最后一句。) Tj
+        EMC                                % 标记内容序列 2 结束
+
+    ET                                     % 文本对象结束
+endstream
+endobj
+
+300 0 obj                                    % 结构树根
+    &lt;&lt; /Type /StructTreeRoot
+        /K [ 301 0 R                             % 两个子元素：一个章节
+            304 0 R                             % 和一个段落
+            ]
+        /RoleMap  &lt;&lt; /Chap /Sect                % 映射到标准结构类型
+                    /Head1 /H
+                    /Para /P
+                    &gt;&gt;
+        /ClassMap   &lt;&lt; /Normal 305 0 R &gt;&gt;        % 包含一个属性类的类映射
+
+        /ParentTree 400 0 R                      % 父元素树
+        /ParentTreeNextKey 2                     % 下一个要使用的键
+        /IDTree 403 0 R                          % 元素标识符树
+    &gt;&gt;
+endobj
+
+301 0 obj                                    % 章节的结构元素
+    &lt;&lt; /Type /StructElem
+        /S /Chap
+        /ID ( Chap1 )                          % 元素标识符
+        /T ( 第1章 )                       % 人类可读标题
+        /P 300 0 R                             % 父元素是结构树根
+        /K [ 302 0 R                           % 两个子元素：一个节头
+            303 0 R                           % 和一个段落
+            ]
+    &gt;&gt;
+endobj
+
+302 0 obj                                    % 节头的结构元素
+    &lt;&lt; /Type /StructElem
+        /S /Head1
+        /ID ( Sec1.1 )                         % 元素标识符
+        /T ( 第1.1节 )                     % 人类可读标题
+        /P 301 0 R                             % 父元素是章节
+        /Pg 101 1 R                            % 包含内容项的页面
+        /A &lt;&lt; /O /Layout                       % 布局拥有的属性
+                /SpaceAfter 25
+                /SpaceBefore 0
+                /TextIndent 12.5
+            &gt;&gt;
+        /K 0                                   % 标记内容序列 0
+    &gt;&gt;
+endobj
+
+303 0 obj                                    % 段落的结构元素
+    &lt;&lt; /Type /StructElem
+        /S /Para
+        /ID ( Para1 )                         % 元素标识符
+        /P 301 0 R                            % 父元素是章节
+        /Pg 101 1 R                           % 包含第一个内容项的页面
+        /C /Normal                            % 包含此元素属性的类
+        /K [ 1                                % 标记内容序列 1
+                &lt;&lt; /Type /MCR                 % 对第二个项的标记内容引用
+                    /Pg 102 0 R                % 包含第二个项的页面
+                    /MCID 0                    % 标记内容序列 0
+                &gt;&gt;                         
+            ]                         
+    &gt;&gt;
+endobj
+
+304 0 obj                                    % 另一个段落的结构元素
+    &lt;&lt; /Type /StructElem
+        /S /Para
+        /ID ( Para2 )                         % 元素标识符
+        /P 300 0 R                            % 父元素是结构树根
+        /Pg 102 0 R                           % 包含内容项的页面
+        /C /Normal                            % 包含此元素属性的类
+        /A &lt;&lt; /O /Layout
+                /TextAlign /Justify             % 覆盖由类映射提供的属性
+            &gt;&gt;
+        /K [ 1 2 ]                            % 标记内容序列 1 和 2
+    &gt;&gt;
+endobj
+
+305 0 obj                                 % 属性类
+    &lt;&lt; /O /Layout                            % 布局拥有的属性
+        /EndIndent 0
+        /StartIndent 0
+        /WritingMode /LrTb
+        /TextAlign /Start
+    &gt;&gt;
+endobj
+
+400 0 obj                            % 父元素树
+    &lt;&lt; /Nums [
+                0 401 0 R               % 第一个页面的父元素
+                1 402 0 R               % 第二个页面的父元素
+                ]
+    &gt;&gt;
+endobj
+
+401 0 obj                          % 第一个页面的父元素数组
+    [ 302 0 R                         % 标记内容序列 0 的父元素
+        303 0 R                         % 标记内容序列 1 的父元素
+    ]
+endobj
+
+402 0 obj                          % 第二个页面的父元素数组
+    [ 303 0 R                        % 标记内容序列 0 的父元素
+        304 0 R                        % 标记内容序列 1 的父元素
+        304 0 R                        % 标记内容序列 2 的父元素
+    ]
+endobj
+
+403 0 obj                            % ID树根节点
+    &lt;&lt; /Kids [ 404 0 R ] &gt;&gt;             % 引用到叶节点
+endobj
+
+404 0 obj                            % ID树叶节点
+    &lt;&lt; /Limits [ ( Chap1 ) ( Sec1.3 ) ]       % 树中最小和最大键
+        /Names  [ ( Chap1 ) 301 0 R             % 从元素标识符到结构元素的映射
+                    ( Sec1.1 ) 302 0 R                        
+                    ( Sec1.2 ) 303 0 R
+                    ( Sec1.3 ) 304 0 R
+                ]
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The next Example shows portions of a PDF file with a simple document structure. The structure tree root (object 300) contains elements with structure types <strong>Chap</strong> (object 301) and <strong>Para</strong> (object 304). The <strong>Chap</strong> element, titled Chapter 1, contains elements with types <strong>Head1</strong> (object 302) and <strong>Para</strong> (object 303).</p>
+<p>These elements are mapped to the standard structure types specified in Tagged PDF (see <a href="../s8/#1484-标准结构类型">14.8.4</a>, “Standard Structure Types”) by means of the role map specified in the structure tree root. Objects 302 through 304 have attached attributes (see <a href="./#1475-结构属性">14.7.5</a>, “Structure Attributes,” and <a href="../s8/#1485-标准结构属性">14.8.5</a>, “Standard Structure Attributes”).</p>
+<p>The example also illustrates the structure of a parent tree (object 400) that maps content items back to their parent structure elements and an ID tree (object 403) that maps element identifiers to the structure elements they denote.</p>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE</p>
+<div class="language-text highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>1 0 obj                              % Document catalog
+    &lt;&lt; /Type /Catalog
+        /Pages 100 0 R                % Page tree
+        /StructTreeRoot 300 0 R       % Structure tree root
+    &gt;&gt;
+endobj
+
+100 0 obj                            % Page tree
+    &lt;&lt; /Type /Pages
+        /Kids [ 101 1 R              % First page object
+                102 0 R              % Second page object
+                ]
+        /Count 2                     % Page count
+    &gt;&gt;
+endobj
+
+101 1 obj                            % First page object
+    &lt;&lt; /Type /Page
+        /Parent 100 0 R                      % Parent is the page tree
+        /Resources &lt;&lt; /Font &lt;&lt; /F1 6 0 R     % Font resources
+                                /F12 7 0 R
+                            &gt;&gt;
+                        /ProcSet [ /PDF /Text ]              % Procedure sets
+                    &gt;&gt;
+        /MediaBox [ 0 0 612 792 ]            % Media box
+        /Contents 201 0 R                    % Content stream
+        /StructParents 0                     % Parent tree key
+    &gt;&gt;
+endobj
+
+201 0 obj                             % Content stream for first page
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    1 1 1 rg
+    0 0 612 792 re f
+    BT                                   % Start of text object
+
+    /Head1 &lt;&lt; /MCID 0 &gt;&gt;                 % Start of marked-content sequence 0
+        BDC
+            0 0 0 rg
+            /F1 1 Tf
+            30 0 0 30 18 732 Tm
+            ( This is a first level heading . Hello world : ) Tj
+            1.1333 TL
+            T*
+            ( goodbye universe . ) Tj
+        EMC                                % End of marked-content sequence 0
+
+    /Para &lt;&lt; /MCID 1 &gt;&gt;                    % Start of marked-content sequence 1
+        BDC
+            /F12 1 Tf
+            14 0 0 14 18 660.8 Tm
+            ( This is the first paragraph, which spans pages . It has four fairly short and \
+concise sentences . This is the next to last ) Tj
+        EMC                                % End of marked-content sequence 1
+    ET
+endstream
+endobj
+
+202 0 obj                                 % Content stream for second page
+    &lt;&lt; /Length … &gt;&gt;
+stream
+    1 1 1 rg
+    0 0 612 792 re f
+    BT                                    % Start of text object
+
+        /Para &lt;&lt; /MCID 0 &gt;&gt;               % Start of marked-content sequence 0
+            BDC
+                0 0 0 rg
+                /F12 1 Tf
+                14 0 0 14 18 732 Tm
+                ( sentence . This is the very last sentence of the first paragraph . ) Tj
+            EMC                           % End of marked-content sequence 0
+
+    /Para &lt;&lt; /MCID 1 &gt;&gt;                   % Start of marked-content sequence 1
+        BDC
+            /F12 1 Tf
+            14 0 0 14 18 570.8 Tm
+            ( This is the second paragraph . It has four fairly short and concise sentences . \ This is the next
+to last ) Tj
+        EMC                                % End of marked-content sequence 1
+
+    /Para &lt;&lt; /MCID 2 &gt;&gt;                    % Start of marked-content sequence 2
+        BDC
+            1.1429 TL
+            T*
+            ( sentence . This is the very last sentence of the second paragraph . ) Tj
+        EMC                                % End of marked-content sequence 2
+
+    ET                                     % End of text object
+endstream
+endobj
+
+300 0 obj                                    % Structure tree root
+    &lt;&lt; /Type /StructTreeRoot
+        /K [ 301 0 R                             % Two children: a chapter
+            304 0 R                             % and a paragraph
+            ]
+        /RoleMap  &lt;&lt; /Chap /Sect                % Mapping to standard structure types
+                    /Head1 /H
+                    /Para /P
+                    &gt;&gt;
+        /ClassMap   &lt;&lt; /Normal 305 0 R &gt;&gt;        % Class map containing one attribute class
+
+        /ParentTree 400 0 R                      % Number tree for parent elements
+        /ParentTreeNextKey 2                     % Next key to use in parent tree
+        /IDTree 403 0 R                          % Name tree for element identifiers
+    &gt;&gt;
+endobj
+
+301 0 obj                                    % Structure element for a chapter
+    &lt;&lt; /Type /StructElem
+        /S /Chap
+        /ID ( Chap1 )                          % Element identifier
+        /T ( Chapter 1 )                       % Human-readable title
+        /P 300 0 R                             % Parent is the structure tree root
+        /K [ 302 0 R                           % Two children: a section head
+            303 0 R                           % and a paragraph
+            ]
+    &gt;&gt;
+endobj
+
+302 0 obj                                    % Structure element for a section head
+    &lt;&lt; /Type /StructElem
+        /S /Head1
+        /ID ( Sec1.1 )                         % Element identifier
+        /T ( Section 1.1 )                     % Human-readable title
+        /P 301 0 R                             % Parent is the chapter
+        /Pg 101 1 R                            % Page containing content items
+        /A &lt;&lt; /O /Layout                       % Attribute owned by Layout
+                /SpaceAfter 25
+                /SpaceBefore 0
+                /TextIndent 12.5
+            &gt;&gt;
+        /K 0                                   % Marked-content sequence 0
+    &gt;&gt;
+endobj
+
+303 0 obj                                    % Structure element for a paragraph
+    &lt;&lt; /Type /StructElem
+        /S /Para
+        /ID ( Para1 )                         % Element identifier
+        /P 301 0 R                            % Parent is the chapter
+        /Pg 101 1 R                           % Page containing first content item
+        /C /Normal                            % Class containing this element’s attributes
+        /K [ 1                                % Marked-content sequence 1
+                &lt;&lt; /Type /MCR                 % Marked-content reference to 2nd item
+                    /Pg 102 0 R                % Page containing second item
+                    /MCID 0                    % Marked-content sequence 0
+                &gt;&gt;                         
+            ]                         
+    &gt;&gt;
+endobj
+
+304 0 obj                                    % Structure element for another paragraph
+    &lt;&lt; /Type /StructElem
+        /S /Para
+        /ID ( Para2 )                         % Element identifier
+        /P 300 0 R                            % Parent is the structure tree root
+        /Pg 102 0 R                           % Page containing content items
+        /C /Normal                            % Class containing this element’s attributes
+        /A &lt;&lt; /O /Layout
+                /TextAlign /Justify             % Overrides attribute provided by classmap
+            &gt;&gt;
+        /K [ 1 2 ]                            % Marked-content sequences 1 and 2
+    &gt;&gt;
+endobj
+
+305 0 obj                                 % Attribute class
+    &lt;&lt; /O /Layout                            % Owned by Layout
+        /EndIndent 0
+        /StartIndent 0
+        /WritingMode /LrTb
+        /TextAlign /Start
+    &gt;&gt;
+endobj
+
+400 0 obj                            % Parent tree
+    &lt;&lt; /Nums [
+                0 401 0 R               % Parent elements for first page
+                1 402 0 R               % Parent elements for second page
+                ]
+    &gt;&gt;
+endobj
+
+401 0 obj                          % Array of parent elements for first page
+    [ 302 0 R                         % Parent of marked-content sequence 0
+        303 0 R                         % Parent of marked-content sequence 1
+    ]
+endobj
+
+402 0 obj                          % Array of parent elements for second page
+    [ 303 0 R                        % Parent of marked-content sequence 0
+        304 0 R                        % Parent of marked-content sequence 1
+        304 0 R                        % Parent of marked-content sequence 2
+    ]
+endobj
+
+403 0 obj                            % ID tree root node
+    &lt;&lt; /Kids [ 404 0 R ] &gt;&gt;             % Reference to leaf node
+endobj
+
+404 0 obj                            % ID tree leaf node
+    &lt;&lt; /Limits [ ( Chap1 ) ( Sec1.3 ) ]       % Least and greatest keys in tree
+        /Names  [ ( Chap1 ) 301 0 R             % Mapping from element identifiers
+                    ( Sec1.1 ) 302 0 R                        % to structure elements
+                    ( Sec1.2 ) 303 0 R
+                    ( Sec1.3 ) 304 0 R
+                ]
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月12日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

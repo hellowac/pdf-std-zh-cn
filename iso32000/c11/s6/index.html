@@ -1,0 +1,2501 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s5/">
+      
+      
+        <link rel="next" href="../s7/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>11.6 指定 PDF 中的透明度 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#116-指定-pdf-中的透明度" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              11.6 指定 PDF 中的透明度
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            11透明度
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.2 透明度概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.3 基本合成计算
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.4 透明度组
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.5 软面罩
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    11.6 指定 PDF 中的透明度
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    11.6 指定 PDF 中的透明度
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1161-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1162-指定源颜色和背景颜色" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.2 指定源颜色和背景颜色
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1163-指定混合色彩空间和混合模式" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.3 指定混合色彩空间和混合模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1164-指定形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.4 指定形状和不透明度
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.6.4 指定形状和不透明度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11641-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11642-物体形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.4.2 物体形状和不透明度
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11643-蒙版形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.4.3 蒙版形状和不透明度
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11644-恒定形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.4.4 恒定形状和不透明度
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1165-指定软蒙版" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.5 指定软蒙版
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.6.5 指定软蒙版">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11651-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.5.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11652-软掩码词典" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.5.2 软掩码词典
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11653-软蒙版图像" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.5.3 软蒙版图像
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1166-透明度组-xobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.6 透明度组 XObjects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1167-图案和透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.7 图案和透明度
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.7 色彩空间和渲染问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1161-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1162-指定源颜色和背景颜色" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.2 指定源颜色和背景颜色
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1163-指定混合色彩空间和混合模式" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.3 指定混合色彩空间和混合模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1164-指定形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.4 指定形状和不透明度
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.6.4 指定形状和不透明度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11641-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.4.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11642-物体形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.4.2 物体形状和不透明度
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11643-蒙版形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.4.3 蒙版形状和不透明度
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11644-恒定形状和不透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.4.4 恒定形状和不透明度
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1165-指定软蒙版" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.5 指定软蒙版
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.6.5 指定软蒙版">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11651-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.5.1 概述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11652-软掩码词典" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.5.2 软掩码词典
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11653-软蒙版图像" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.5.3 软蒙版图像
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1166-透明度组-xobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.6 透明度组 XObjects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1167-图案和透明度" class="md-nav__link">
+    <span class="md-ellipsis">
+      11.6.7 图案和透明度
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="116-指定-pdf-中的透明度">11.6 指定 PDF 中的透明度<a class="headerlink" href="#116-指定-pdf-中的透明度" title="Permanent link">&para;</a></h1>
+<p><strong>Specifying Transparency in PDF</strong></p>
+<h2 id="1161-概述">11.6.1 概述<a class="headerlink" href="#1161-概述" title="Permanent link">&para;</a></h2>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>前面的子条款从抽象层面介绍了透明成像模型，很少提及其在 PDF 中的表示。本子条款描述了可用于在 PDF 中指定透明度的功能。</p>
+</div>
+<div class="tabbed-block">
+<p>The preceding sub-clauses have presented the transparent imaging model at an abstract level, with little mention of its representation in PDF. This sub-clause describes the facilities available for specifying transparency in PDF.</p>
+</div>
+</div>
+</div>
+<h2 id="1162-指定源颜色和背景颜色">11.6.2 指定源颜色和背景颜色<a class="headerlink" href="#1162-指定源颜色和背景颜色" title="Permanent link">&para;</a></h2>
+<p><strong>Specifying Source and Backdrop Colours</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>单个图形对象（定义在“<a href="../../c8/s2/">图形对象</a>”中）应作为透明合成的基本对象处理（对文本对象需进行特殊处理，定义在“<a href="../../c9/s3/#938-文本镂空切割">文本镂空</a>”中）。也就是说，给定对象的整个部分应被视为透明堆栈的一个元素。对象的各个部分不得相互合成，即使它们的描述方式似乎会导致重叠（例如自相交路径、路径的组合填充和描边，或包含重叠或折叠的阴影图案）。颜色合成公式中使用的对象源颜色 <span class="arithmatex">\(C_s\)</span> 应以与不透明成像模型中相同的方式指定：通过图形状态中的当前颜色或图像中的源样本。背景颜色 <span class="arithmatex">\(C_b\)</span> 应为先前绘制操作的结果。</p>
+</div>
+<div class="tabbed-block">
+<p>Single graphics objects, as defined in “<a href="../../c8/s2/">Graphics Objects</a>”, shall be treated as elementary objects for transparency compositing purposes (subject to special treatment for text objects, as described in “<a href="../../c9/s3/#938-文本镂空切割">Text Knockout</a>”). That is, all of a given object shall be considered to be one element of a transparency stack. Portions of an object shall not be composited with one another, even if they are described in a way that would seem to cause overlaps (such as a self-intersecting path, combined fill and stroke of a path, or a shading pattern containing an overlap or fold-over). An object’s source colour <span class="arithmatex">\(C_s\)</span> , used in the colour compositing formula, shall be specified in the same way as in the opaque imaging model: by means of the current colour in the graphics state or the source samples in an image. The backdrop colour <span class="arithmatex">\(C_b\)</span> shall be the result of previous painting operations.</p>
+</div>
+</div>
+</div>
+<h2 id="1163-指定混合色彩空间和混合模式">11.6.3 指定混合色彩空间和混合模式<a class="headerlink" href="#1163-指定混合色彩空间和混合模式" title="Permanent link">&para;</a></h2>
+<p><strong>Specifying Blending Colour Space and Blend Mode</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>混合色彩空间应为在其中绘制对象的透明度组的属性；其规范在 <a href="./#1166-透明度组-xobjects">11.6.6</a>“透明度组 XObjects”中描述。整个页面也应被视为一个组，即 <em>页面组</em>（请参阅“<a href="../s4/#1147-page组">页面组</a>”），具有自己的色彩空间属性。如果没有另行指定，页面组的色彩空间应从输出设备的原生色彩空间继承。</p>
+<p>混合模式 <span class="arithmatex">\(B (C_b , C_s )\)</span> 应由图形状态中的当前混合模式参数确定（参见“<a href="../../c8/s4/#841-概述">图形状态</a>”），该参数由图形状态参数字典（“<a href="../../c8/s4/#845-图形状态参数字典">图形状态参数字典</a>”）中的 <strong>BM</strong> 条目指定。其值应为名称对象，指定 <a href="../s3/#1135-混合模式">11.3.5</a> “混合模式”中表 <a href="../s3/#table136">136</a> 和 <a href="../s3/#table137">137</a> 中列出的标准混合模式之一，或此类名称的数组。在后一种情况下，应用程序应使用它识别的数组中的第一个混合模式（如果它无法识别任何混合模式，则使用 <strong>Normal</strong>）。</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>将来可能会引入新的混合模式，并且无法识别这些模式的符合要求的读者应该有合理的回退行为。</p>
+</div>
+<p>当前混合模式应始终适用于印刷色成分；但有时可能适用于专色，详情请参阅 <a href="../s7/#11742-混合模式和叠印">11.7.4.2</a>“混合模式和套印”。</p>
+</div>
+<div class="tabbed-block">
+<p>The blending colour space shall be an attribute of the transparency group within which an object is painted; its specification is described in <a href="./#1166-透明度组-xobjects">11.6.6</a>, "Transparency Group XObjects." The page as a whole shall also be treated as a group, the <em>page group</em> (see “<a href="../s4/#1147-page组">Page Group</a>”), with a colour space attribute of its own. If not otherwise specified, the page group’s colour space shall be inherited from the native colour space of the output device.</p>
+<p>The blend mode <span class="arithmatex">\(B (C_b , C_s )\)</span> shall be determined by the <em>current blend mode</em> parameter in the graphics state (see “<a href="../../c8/s4/#841-概述">Graphics State</a>”), which is specified by the <strong>BM</strong> entry in a graphics state parameter dictionary ( “<a href="../../c8/s4/#845-图形状态参数字典">Graphics State Parameter Dictionaries</a>”). Its value shall be either a name object, designating one of the standard blend modes listed in Tables <a href="../s3/#table136">136</a> and <a href="../s3/#table137">137</a> in <a href="../s3/#1135-混合模式">11.3.5</a>, "Blend Mode," or an array of such names. In the latter case, the application shall use the first blend mode in the array that it recognizes (or <strong>Normal</strong> if it recognizes none of them).</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>New blend modes may be introduced in the future, and conforming readers that do not recognize them should have reasonable fallback behavior.</p>
+</div>
+<p>The current blend mode shall always apply to process colour components; but only sometimes may apply to spot colorants, see <a href="../s7/#11742-混合模式和叠印">11.7.4.2</a>, "Blend Modes and Overprinting," for details.</p>
+</div>
+</div>
+</div>
+<h2 id="1164-指定形状和不透明度">11.6.4 指定形状和不透明度<a class="headerlink" href="#1164-指定形状和不透明度" title="Permanent link">&para;</a></h2>
+<p><strong>Specifying Shape and Opacity</strong></p>
+<h3 id="11641-概述">11.6.4.1 概述<a class="headerlink" href="#11641-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>如在<a href="../s3/#11372-源形状和不透明度">11.3.7.2</a>“源形状和不透明度”中所讨论的，在合成计算中使用的形状<em>(f)</em>和不透明度<em>(q)</em>值应来自以下一个或多个来源：</p>
+<ul>
+<li>正在被合成的对象的固有形状<span class="arithmatex">\((f_j )\)</span>和不透明度<span class="arithmatex">\((q_j )\)</span></li>
+<li>独立于对象本身的单独形状<span class="arithmatex">\((f_m )\)</span>或不透明度<span class="arithmatex">\((q_m )\)</span>蒙版</li>
+<li>在每个点都要添加的标量形状<span class="arithmatex">\((f_k )\)</span>或不透明度<span class="arithmatex">\((q_k )\)</span>常量</li>
+</ul>
+<p>以下小节描述了在 PDF 中应如何指定这些形状和不透明度来源 。</p>
+</div>
+<div class="tabbed-block">
+<p>As discussed under <a href="../s3/#11372-源形状和不透明度">11.3.7.2</a>, "Source Shape and Opacity," the shape <em>(f)</em> and opacity <em>(q)</em> values used in the compositing computation shall come from one or more of the following sources:</p>
+<ul>
+<li>The intrinsic shape <span class="arithmatex">\((f_j )\)</span> and opacity <span class="arithmatex">\((q_j )\)</span> of the object being composited</li>
+<li>A separate shape <span class="arithmatex">\((f_m )\)</span> or opacity <span class="arithmatex">\((q_m )\)</span> mask independent of the object itself</li>
+<li>A scalar shape <span class="arithmatex">\((f_k )\)</span> or opacity <span class="arithmatex">\((q_k )\)</span> constant to be added at every point</li>
+</ul>
+<p>The following sub-clauses describe how each of these shape and opacity sources shall be specified in PDF.</p>
+</div>
+</div>
+</div>
+<h3 id="11642-物体形状和不透明度">11.6.4.2 物体形状和不透明度<a class="headerlink" href="#11642-物体形状和不透明度" title="Permanent link">&para;</a></h3>
+<p><strong>Object Shape and Opacity</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>使用 PDF 绘图操作符绘制的对象的形状值 <span class="arithmatex">\(f_j\)</span> 应按以下方式定义：</p>
+<ul>
+<li>对于由路径或字形定义，并使用路径绘制操作符或文本显示操作符以单一颜色绘制的对象（“<a href="../../c8/s5/#853-路径绘制运算符">路径绘制操作符</a>”和“<a href="../../c9/s4/#943-文本显示操作符">文本显示操作符</a>”），形状在路径内部始终为 1.0，在路径外部始终为 0.0。</li>
+<li>对于图像（“<a href="../../c8/s9/">图像</a>”），形状在图像矩形内部为 1.0，在其外部为 0.0。这可能会通过显式蒙版或色彩键蒙版进一步修改（“<a href="../../c8/s9/#8963-显式掩蔽">显式蒙蔽</a>”和“<a href="../../c8/s9/#8964-色彩键遮罩">色彩键遮罩</a>”）。</li>
+<li>对于图像蒙版（“<a href="../../c8/s9/#8962-模板蒙板">模板蒙板</a>”），形状在绘制区域为 1.0，在被遮罩的区域为 0.0。</li>
+<li>对于使用平铺图案（“<a href="../../c8/s7/#873-平铺图案">平铺图案</a>”）或底纹图案（“<a href="../../c8/s7/#874-底纹图案">底纹图案</a>”）绘制的对象，形状将进一步受到定义图案的对象的限制（见“<a href="#1167-图案和透明度">图案和透明度</a>”）。</li>
+<li>对于使用 <strong>sh</strong> 操作符绘制的对象（“<a href="../../c8/s7/#8742-底纹操作">底纹操作符</a>”），形状在底纹绘制几何形状的边界内为 1.0，在边界外为 0.0，忽略底纹字典中的 <strong>Background</strong> 条目（见“<a href="../../c8/s7/#8743-底纹字典">底纹字典</a>”）。</li>
+</ul>
+<p>所有基本对象在任何地方都具有固有不透明度 <span class="arithmatex">\(q_j\)</span> 为 1.0。任何期望的小于 1.0 的不透明度应通过不透明蒙版或常量来应用，如下一小节所述 。</p>
+</div>
+<div class="tabbed-block">
+<p>The shape value <span class="arithmatex">\(f_j\)</span> of an object painted with PDF painting operators shall be defined as follows:</p>
+<ul>
+<li>For objects defined by a path or a glyph and painted in a uniform colour with a path-painting or text-showing operator (“<a href="../../c8/s5/#853-路径绘制运算符">Path-Painting Operators</a>”, and “<a href="../../c9/s4/#943-文本显示操作符">Text-Showing Operators</a>”), the shape shall always be 1.0 inside and 0.0 outside the path.</li>
+<li>For images (“<a href="../../c8/s9/">Images</a>”), the shape shall be 1.0 inside the image rectangle and 0.0 outside it. This may be further modified by an explicit or colour key mask (“<a href="../../c8/s9/#8963-显式掩蔽">Explicit Masking</a>” and “<a href="../../c8/s9/#8964-色彩键遮罩">Colour Key Masking</a>”).</li>
+<li>For image masks (“<a href="../../c8/s9/#8962-模板蒙板">Stencil Masking</a>”), the shape shall be 1.0 for painted areas and 0.0 for masked areas.</li>
+<li>For objects painted with a tiling pattern (“<a href="../../c8/s7/#873-平铺图案">Tiling Patterns</a>”) or a shading pattern (“<a href="../../c8/s7/#874-底纹图案">Shading Patterns</a>”), the shape shall be further constrained by the objects that define the pattern (see “<a href="#1167-图案和透明度">Patterns and Transparency</a>”).</li>
+<li>For objects painted with the <strong>sh</strong> operator (“<a href="../../c8/s7/#8742-底纹操作">Shading Operator</a>”), the shape shall be 1.0 inside and 0.0 outside the bounds of the shading’s painting geometry, disregarding the <strong>Background</strong> entry in the shading dictionary (see “<a href="../../c8/s7/#8743-底纹字典">Shading Dictionaries</a>”).</li>
+</ul>
+<p>All elementary objects shall have an intrinsic opacity <span class="arithmatex">\(q_j\)</span> of 1.0 everywhere. Any desired opacity less than 1.0 shall be applied by means of an opacity mask or constant, as described in the following sub-clauses.</p>
+</div>
+</div>
+</div>
+<h3 id="11643-蒙版形状和不透明度">11.6.4.3 蒙版形状和不透明度<a class="headerlink" href="#11643-蒙版形状和不透明度" title="Permanent link">&para;</a></h3>
+<p><strong>Mask Shape and Opacity</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在任何 PDF 合成操作中，最多只能提供一个蒙版输入——称为<em>软蒙版</em>或<em>alpha 蒙版</em>。蒙版可作为形状（<span class="arithmatex">\(f_m\)</span>）或不透明度（<span class="arithmatex">\(q_m\)</span>）值的源，具体取决于图形状态中<em>alpha 源</em>参数的设置（见“<a href="../../c8/s4/">图形状态</a>”）。这是一个布尔标志，通过图形状态参数字典中的 <strong>AIS</strong>（“alpha is shape”，即“alpha 表示形状”）条目来设置（见“<a href="../../c8/s5/">图形状态参数字典</a>”）：如果软蒙版包含形状值，则为<strong>true</strong>；如果不透明度，则为<strong>false</strong>。</p>
+<p>软蒙版应按以下方式之一指定：</p>
+<ul>
+<li>图形状态中的<em>当前软蒙版</em>参数，通过图形状态参数字典中的 <strong>SMask</strong> 条目设置，包含一个软蒙版字典（见“<a href="#11652-软掩码词典">软蒙版字典</a>”，该字典定义了蒙版的内容。在软蒙版字典的位置可以使用名称 <strong>None</strong> ，表示不存在软蒙版。在这种情况下，蒙版的形状或不透明度应隐式地在任何地方都为 1.0。</li>
+<li>图像 XObject 可能在其图像字典的 <strong>SMask</strong> 条目中包含自己的软蒙版图像，以子图像 XObject 的形式存在（见“<a href="../../c8/s9/#895-图片字典">图像字典</a>”）。如果存在此蒙版，则应覆盖图像字典的 <strong>Mask</strong> 条目指定的任何显式蒙版或色彩键蒙版。图像字典中的任何一种形式的蒙版都将覆盖图形状态中的当前软蒙版。</li>
+<li>其数据源为 <strong>JPXDecode</strong> 过滤器的图像 XObject 可以指定一个 <strong>SMaskInData</strong> 条目，表明软蒙版嵌入在数据流中（见“<a href="../../c7/s4/#749-jpxdecode-过滤器">JPXDecode 过滤器</a>”）。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注</p>
+<p>图形状态中的当前软蒙版旨在一次仅用于裁剪单个对象（基本对象或透明度组）。如果在绘制两个或更多重叠对象时应用软蒙版，在重叠区域蒙版的效果会自身相乘（挖空组除外），产生的结果形状或不透明度很可能并非预期。若要将软蒙版应用于多个对象，通常最好将这些对象定义为一个透明度组，并将蒙版应用于整个组。这些考虑因素同样适用于当前的 alpha 常量（见下一小节）。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>At most one mask input—called a <em>soft mask</em>, or <em>alpha mask</em>—shall be provided to any PDF compositing operation. The mask may serve as a source of either shape (<span class="arithmatex">\(f_m\)</span> ) or opacity (<span class="arithmatex">\(q_m\)</span> ) values, depending on the setting of the <em>alpha source</em> parameter in the graphics state (see “<a href="../../c8/s4/">Graphics State</a>”). This is a boolean flag, set with the <strong>AIS</strong> (“alpha is shape”) entry in a graphics state parameter dictionary (“<a href="../../c8/s5/">Graphics State Parameter Dictionaries</a>”): <strong>true</strong> if the soft mask contains shape values, <strong>false</strong> for opacity.</p>
+<p>The soft mask shall be specified in one of the following ways:</p>
+<ul>
+<li>The <em>current soft mask</em> parameter in the graphics state, set with the <strong>SMask</strong> entry in a graphics state parameter dictionary, contains a soft-mask dictionary (see “<a href="#11652-软掩码词典">Soft-Mask Dictionaries</a>”) defining the contents of the mask. The name <strong>None</strong> may be specified in place of a soft-mask dictionary, denoting the absence of a soft mask. In this case, the mask shape or opacity shall be implicitly 1.0 everywhere.</li>
+<li>An image XObject may contain its own soft-mask image in the form of a subsidiary image XObject in the <strong>SMask</strong> entry of the image dictionary (see “<a href="../../c8/s9/#895-图片字典">Image Dictionaries</a>”). This mask, if present, shall override any explicit or colour key mask specified by the image dictionary’s <strong>Mask</strong> entry. Either form of mask in the image dictionary shall override the current soft mask in the graphics state.</li>
+<li>An image XObject that has a <strong>JPXDecode</strong> filter as its data source may specify an <strong>SMaskInData</strong> entry, indicating that the soft mask is embedded in the data stream (see “<a href="../../c7/s4/#749-jpxdecode-过滤器">JPXDecode Filter</a>”).</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>The current soft mask in the graphics state is intended to be used to clip only a single object at a time (either an elementary object or a transparency group). If a soft mask is applied when painting two or more overlapping objects, the effect of the mask multiplies with itself in the area of overlap (except in a knockout group), producing a result shape or opacity that is probably not what is intended. To apply a soft mask to multiple objects, it is usually best to define the objects as a transparency group and apply the mask to the group as a whole. These considerations also apply to the current alpha constant (see the next sub-clause).</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="11644-恒定形状和不透明度">11.6.4.4 恒定形状和不透明度<a class="headerlink" href="#11644-恒定形状和不透明度" title="Permanent link">&para;</a></h3>
+<p><strong>Constant Shape and Opacity</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>图形状态中的<em>当前 alpha 常量</em>参数（见“<a href="../../c8/s4/">图形状态</a>”）应是两个标量值——一个用于描边，另一个用于所有其他绘制操作——在颜色合成公式中用作恒定形状（<span class="arithmatex">\(f_k\)</span>）或恒定不透明度（<span class="arithmatex">\(q_k\)</span>）分量。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>此参数类似于绘制基本对象时使用的当前颜色。</p>
+</div>
+<p>在将透明度组的结果绘制到其背景上时，也应应用非描边 alpha 常量。</p>
+<p>描边和非描边 alpha 常量分别由图形状态参数字典中的 <strong>CA</strong> 和 <strong>ca</strong> 条目设置（见“<a href="../../c8/s4/#845-图形状态参数字典">图形状态参数字典</a>”）。如前文对软蒙版所述，图形状态中的 alpha 源标志应决定 alpha 常量是被解释为形状值（<strong>true</strong>）还是不透明度值（<strong>false</strong>）。</p>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>在 11.6.4.3 节“<a href="#11643-蒙版形状和不透明度">蒙版形状和不透明度</a>”末尾的注释同样适用于当前 alpha 常量参数以及当前软蒙版 。</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>The <em>current alpha constant</em> parameter in the graphics state (see “<a href="../../c8/s4/">Graphics State</a>”) shall be two scalar values—one for strokes and one for all other painting operations—to be used for the constant shape (<span class="arithmatex">\(f_k\)</span>) or constant opacity (<span class="arithmatex">\(q_k\)</span>) component in the colour compositing formulas.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>This parameter is analogous to the current colour used when painting elementary objects.</p>
+</div>
+<p>The nonstroking alpha constant shall also be applied when painting a transparency group’s results onto its backdrop.</p>
+<p>The stroking and nonstroking alpha constants shall be set, respectively, by the <strong>CA</strong> and <strong>ca</strong> entries in a graphics state parameter dictionary (see “<a href="../../c8/s4/#845-图形状态参数字典">Graphics State Parameter Dictionaries</a>”). As described previously for the soft mask, the alpha source flag in the graphics state shall determine whether the alpha constants are interpreted as shape values (<strong>true</strong>) or opacity values (<strong>false</strong>).</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>The note at the end of 11.6.4.3, "<a href="#11643-蒙版形状和不透明度">Mask Shape and Opacity</a>," applies to the current alpha constant parameter as well as the current soft mask.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="1165-指定软蒙版">11.6.5 指定软蒙版<a class="headerlink" href="#1165-指定软蒙版" title="Permanent link">&para;</a></h2>
+<p><strong>Specifying Soft Masks</strong></p>
+<h3 id="11651-概述">11.6.5.1 概述<a class="headerlink" href="#11651-概述" title="Permanent link">&para;</a></h3>
+<p><strong>General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">中文</label><label for="__tabbed_8_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>如 11.6.4.3 节“<a href="#11643-蒙版形状和不透明度">蒙版形状和不透明度</a>”所述，用于合成计算的软蒙版可以通过以下几种方式指定：</p>
+<ul>
+<li>作为图形状态中当前软蒙版参数的软蒙版字典；有关更多详细信息，请参阅 11.6.5.2 节“<a href="#11652-软掩码词典">软蒙版字典</a>”。</li>
+<li>作为与采样图像关联的软蒙版图像；有关更多详细信息，请参阅 11.6.5.3 节“<a href="#11653-软蒙版图像">软蒙版图像</a>”。</li>
+<li>（PDF 1.5）作为嵌入在 JPEG2000 编码数据中的蒙版通道；有关更多详细信息，请参阅“<a href="../../c7/s4/#749-jpxdecode-过滤器">JPXDecode 过滤器</a>”以及表 89 中的 <strong>SMaskInData</strong> 条目 。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>As noted under 11.6.4.3, "<a href="#11643-蒙版形状和不透明度">Mask Shape and Opacity</a>," soft masks for use in compositing computations may be specified in one of the following ways:</p>
+<ul>
+<li>As a soft-mask dictionary in the current soft mask parameter of the graphics state; see 11.6.5.2, "<a href="#11652-软掩码词典">Soft-Mask Dictionaries</a>," for more details.</li>
+<li>As a soft-mask image associated with a sampled image; see 11.6.5.3, "<a href="#11653-软蒙版图像">Soft-Mask Images</a>," for more details.</li>
+<li>(PDF 1.5) as a mask channel embedded in JPEG2000 encoded data; see “<a href="../../c7/s4/#749-jpxdecode-过滤器">JPXDecode Filter</a>”, and the <strong>SMaskInData</strong> entry of Table 89 for more details.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="11652-软掩码词典">11.6.5.2 软掩码词典<a class="headerlink" href="#11652-软掩码词典" title="Permanent link">&para;</a></h3>
+<p><strong>Soft-Mask Dictionaries</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">中文</label><label for="__tabbed_9_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>定义软蒙版最常见的方法是使用<em>软蒙版字典</em>，将其指定为图形状态中的当前软蒙版（见“<a href="../../c8/s4/">图形状态</a>”）。表 144 展示了此类字典的内容。</p>
+<p>蒙版值应根据 11.5.2 节“<a href="../s5/#1152-从-group-alpha-导出-soft-mask">从组 alpha 导出软蒙版</a>”和 11.5.3 节“<a href="../s5/#1153-根据组光度导出软蒙版">根据组光度导出软蒙版</a>”中描述的两种方法之一，从透明度组的值派生而来。该组应由软蒙版字典中的 <strong>G</strong> 条目指定的透明度组 XObject（见“<a href="#1166-透明度组-xobjects">透明度组 XObject</a>”）定义。<strong>S</strong>（子类型）条目应指定使用这两种派生方法中的哪一种：</p>
+<ul>
+<li>如果子类型为 <strong>Alpha</strong>，应评估透明度组 XObject <strong>G</strong> 以仅计算组 alpha。应忽略组成对象的颜色，并且不执行颜色合成计算。然后将传递函数 <strong>TR</strong> 应用于计算出的组 alpha 以生成蒙版值。在透明度组的边界框之外，蒙版值是将传递函数应用于输入值 0.0 的结果。</li>
+<li>如果子类型为 <strong>Luminosity</strong>，应将透明度组 XObject <strong>G</strong> 与完全不透明的背景合成，该背景的颜色由软蒙版字典的 <strong>BC</strong> 条目在所有位置定义。然后应将计算出的结果颜色转换为单分量光度值，并将传递函数 <strong>TR</strong> 应用于此光度以生成蒙版值。在透明度组的边界框之外，蒙版值应通过将 <strong>BC</strong> 颜色转换为光度并将传递函数应用于结果来派生。</li>
+</ul>
+<p>蒙版的坐标系统应通过连接透明度组的表单字典（见“<a href="../../c8/s10/#8102-表单字典">表单字典</a>”）中 <strong>Matrix</strong> 条目指定的变换矩阵与在图形状态中使用 <strong>gs</strong> 操作符建立软蒙版时当前的变换矩阵来定义。</p>
+<p>在定义软蒙版的透明度组 XObject 中，即使在使用软蒙版的组或页面上可用，专色分量也永远不可用。如果组 XObject 的内容流指定了使用专色分量的 <strong>Separation</strong> 或 <strong>DeviceN</strong> 颜色空间，则应替换备用颜色空间（见“<a href="../../c8/s6/#8664-分离色彩空间">分离颜色空间</a>”和“<a href="../../c8/s6/#8665-devicen-色彩空间">DeviceN 颜色空间</a>”）。</p>
+<p><table id="table143" markdown="span">
+    <caption><strong>表 143 – 软蒙版字典中的条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>名称</td>
+            <td>（可选）此字典描述的 PDF 对象的类型；如果存在，对于软蒙版字典应为 <strong>Mask</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）一个子类型，指定用于从 <strong>G</strong> 条目指定的透明度组派生蒙版值的方法：<br/>
+            <strong>Alpha</strong> &emsp; 使用组的计算 alpha，忽略其颜色（见“从组 alpha 导出软蒙版”）。<br/>
+            <strong>Luminosity</strong> &emsp; 将组的计算颜色转换为单分量光度值（见“根据组光度导出软蒙版”）。</td>
+        </tr>
+        <tr>
+            <td><strong>G</strong></td>
+            <td>流</td>
+            <td>（必需）一个透明度组 XObject（见“<a href="./#1166-透明度组-xobjects">透明度组 XObject</a>”），用作派生蒙版的 alpha 或颜色值的源。如果子类型 <strong>S</strong> 为 <strong>Luminosity</strong>，组属性字典应包含一个 <strong>CS</strong> 条目，定义执行合成计算的 color space。</td>
+        </tr>
+        <tr>
+            <td><strong>BC</strong></td>
+            <td>数组</td>
+            <td>（可选）一个分量值数组，指定用作与透明度组 XObject <strong>G</strong> 合成的背景的颜色。仅在子类型 <strong>S</strong> 为 <strong>Luminosity</strong> 时才参考此条目。该数组应由 <em>n</em> 个数字组成，其中 n 是组属性字典中 <strong>CS</strong> 条目指定的 color space 中的分量数（见“<a href="#1166-透明度组-xobjects">透明度组 XObject</a>”）。默认值：color space 的初始值，表示黑色。</td>
+        </tr>
+        <tr>
+            <td><strong>TR</strong></td>
+            <td>函数或名称</td>
+            <td>（可选）一个函数对象（见“<a href="../../c7/s10/#710-函数">函数</a>”），指定用于派生蒙版值的传递函数。该函数应接受一个输入，即计算出的组 alpha 或光度（取决于子类型 <strong>S</strong> 的值），并应返回一个输出，即结果蒙版值。输入应在 0.0 到 1.0 的范围内。计算出的输出应在 0.0 到 1.0 的范围内；如果超出此范围，则应强制转换为最接近的有效值。可以用名称 <strong>Identity</strong> 代替函数对象来指定恒等函数。默认值：<strong>Identity</strong>。</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+<div class="tabbed-block">
+<p>The most common way of defining a soft mask is with a <em>soft-mask dictionary</em> specified as the current soft mask
+in the graphics state (see “<a href="../../c8/s4/">Graphics State</a>”). Table 144 shows the contents of this type of dictionary.</p>
+<p>The mask values shall be derived from those of a transparency group, using one of the two methods described in 11.5.2, "<a href="../s5/#1152-从-group-alpha-导出-soft-mask">Deriving a Soft Mask from Group Alpha</a>," and 11.5.3, "<a href="../s5/#1153-根据组光度导出软蒙版">Deriving a Soft Mask from Group Luminosity</a>." The group shall be defined by a transparency group XObject (see “<a href="#1166-透明度组-xobjects">Transparency Group XObjects</a>”) designated by the <strong>G</strong> entry in the soft-mask dictionary. The <strong>S</strong> (subtype) entry shall specify which of the two derivation methods to use:</p>
+<ul>
+<li>If the subtype is <strong>Alpha</strong>, the transparency group XObject <strong>G</strong> shall be evaluated to compute a group alpha only. The colours of the constituent objects shall be ignored and the colour compositing computations shall not be performed. The transfer function <strong>TR</strong> shall then be applied to the computed group alpha to produce the mask values. Outside the bounding box of the transparency group, the mask value shall be the result of applying the transfer function to the input value 0.0.</li>
+<li>If the subtype is <strong>Luminosity</strong>, the transparency group XObject <strong>G</strong> shall be composited with a fully opaque backdrop whose colour is everywhere defined by the soft-mask dictionary’s <strong>BC</strong> entry. The computed result colour shall then be converted to a single-component luminosity value, and the transfer function <strong>TR</strong> shall be applied to this luminosity to produce the mask values. Outside the transparency group’s bounding box, the mask value shall be derived by transforming the <strong>BC</strong> colour to luminosity and applying the transfer function to the result.</li>
+</ul>
+<p>The mask’s coordinate system shall be defined by concatenating the transformation matrix specified by the <strong>Matrix</strong> entry in the transparency group’s form dictionary (see “<a href="../../c8/s10/#8102-表单字典">Form Dictionaries</a>”) with the current transformation matrix at the moment the soft mask is established in the graphics state with the <strong>gs</strong> operator.</p>
+<p>In a transparency group XObject that defines a soft mask, spot colour components shall never be available,
+even if they are available in the group or page on which the soft mask is used. If the group XObject’s content
+stream specifies a <strong>Separation</strong> or <strong>DeviceN</strong> colour space that uses spot colour components, the alternate colour
+space shall be substituted (see “<a href="../../c8/s6/#8664-分离色彩空间">Separation Colour Spaces</a>” and “<a href="../../c8/s6/#8665-devicen-色彩空间">DeviceN Colour Spaces</a>”).</p>
+<p><table id="table144" markdown="span">
+    <caption><strong>Table 144 – Entries in a soft-mask dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>name</td>
+            <td>(Optional) The type of PDF object that this dictionary describes; if present, shall be <strong>Mask</strong> for a soft-mask dictionary.</td>
+        </tr>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) A subtype specifying the method to be used in deriving the mask values from the transparency group specified by the <strong>G</strong> entry: <br/>
+            <strong>Alpha</strong> &emsp; The group’s computed alpha shall be used, disregarding its colour (see “Deriving a Soft Mask from Group Alpha”).
+            <strong>Luminosity</strong> &emsp; The group’s computed colour shall be converted to a single-component luminosity value (see “Deriving a Soft Mask from Group Luminosity”).</td>
+        </tr>
+        <tr>
+            <td><strong>G</strong></td>
+            <td>stream</td>
+            <td>(Required) A transparency group XObject (see “<a href="./#1166-透明度组-xobjects">Transparency Group XObjects</a>”) to be used as the source of alpha or colour values for deriving the mask. If the subtype <strong>S</strong> is <strong>Luminosity</strong>, the group attributes dictionary shall contain a <strong>CS</strong> entry defining the colour space in which the compositing computation is to be performed.</td>
+        </tr>
+        <tr>
+            <td><strong>BC</strong></td>
+            <td>array</td>
+            <td>(Optional) An array of component values specifying the colour to be used as the backdrop against which to composite the transparency group XObject <strong>G</strong>. This entry shall be consulted only if the subtype <strong>S</strong> is <strong>Luminosity</strong>. The array shall consist of <em>n</em> numbers, where n is the number of components in the colour space specified by the <strong>CS</strong> entry in the group attributes dictionary (see “<a href="#1166-透明度组-xobjects">Transparency Group XObjects</a>”). Default value: the colour space’s initial value, representing black.</td>
+        </tr>
+        <tr>
+            <td><strong>TR</strong></td>
+            <td>function or name</td>
+            <td>(Optional) A function object (see “<a href="../../c7/s10/#710-函数">Functions</a>”) specifying the transfer function to be used in deriving the mask values. The function shall accept one input, the computed group alpha or luminosity (depending on the value of the subtype <strong>S</strong>), and shall return one output, the resulting mask value. The input shall be in the range 0.0 to 1.0. The computed output shall be in the range 0.0 to 1.0; if it falls outside this range, it shall be forced to the nearest valid value. The name <strong>Identity</strong> may be specified in place of a function object to designate the identity function. Default value: <strong>Identity</strong>.</td>
+        </tr>
+    </tbody>
+</table></p>
+</div>
+</div>
+</div>
+<h3 id="11653-软蒙版图像">11.6.5.3 软蒙版图像<a class="headerlink" href="#11653-软蒙版图像" title="Permanent link">&para;</a></h3>
+<p><strong>Soft-Mask Images</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">中文</label><label for="__tabbed_10_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>定义软蒙版的第二种方法是将<em>软蒙版图像</em>与图像 XObject 关联起来。这是在父 XObject 的图像字典的 <strong>SMask</strong> 条目中指定的子图像 XObject（见“<a href="../../c8/s9/#895-图片字典">图像字典</a>”）。此类软蒙版图像的子图像字典中的条目应具有与普通图像 XObject（如“<a href="../../c8/s9/#895-图片字典">图像字典</a>”中的<a href="../../c8/s9/#table89">表 89</a>所述）相同的格式和含义，但需遵循<a href="#table145">表 145</a>中列出的限制。这种类型的图像字典可能包含一个额外的条目，<strong>Matte</strong>。</p>
+<p>当图像与软蒙版图像一起使用时，有时将图像数据与某种称为<em>蒙版颜色</em>的背景颜色<em>预混合</em>是有利的。每个图像样本表示原始源颜色和蒙版颜色的加权平均值，使用相应的蒙版样本作为加权因子。（这是通常称为<em>预乘 alpha</em>的技术的推广。）</p>
+<p>如果图像数据是预混合的，则蒙版颜色应由软蒙版图像字典中的 <strong>Matte</strong> 条目指定（见表 145）。预混合计算针对每个分量独立执行，计算公式为：</p>
+<div class="arithmatex">\[c' = m + α \times (c - m)\]</div>
+<p>其中：</p>
+<p><span class="arithmatex">\(c'\)</span> 是图像源数据中要提供的值</p>
+<p><span class="arithmatex">\(c\)</span> 是原始图像分量值</p>
+<p><span class="arithmatex">\(m\)</span> 是蒙版颜色分量值</p>
+<p><span class="arithmatex">\(α\)</span> 是相应的蒙版样本</p>
+<p>此计算应使用实际的图像分量值，<strong>Filter</strong> 和 <strong>Decode</strong> 变换的效果已经应用。无论颜色空间是加法还是减法，计算方式都相同。</p>
+<p><table id="table145" markdown="span">
+    <caption><strong>表 145 – 软蒙版图像字典中条目的限制</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>限制</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>如果存在，应为 <strong>XObject</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Subtype</strong></td>
+            <td>应为 <strong>Image</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>Width</strong></td>
+            <td>如果存在 <strong>Matte</strong> 条目（见<a href="#table146">表 146</a>），应与父图像的 <strong>Width</strong> 值相同；否则独立于父图像。无论样本是否逐个重合，两个图像都应映射到用户空间中的单位正方形（与所有图像一样）。</td>
+        </tr>
+        <tr>
+            <td><strong>Height</strong></td>
+            <td>与 <strong>Width</strong> 的考虑因素相同。</td>
+        </tr>
+        <tr>
+            <td><strong>ColorSpace</strong></td>
+            <td>必需；应为 <strong>DeviceGray</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>BitsPerComponent</strong></td>
+            <td>必需。</td>
+        </tr>
+        <tr>
+            <td><strong>Intent</strong></td>
+            <td>忽略。</td>
+        </tr>
+        <tr>
+            <td><strong>ImageMask</strong></td>
+            <td>应为 <strong>false</strong> 或不存在。</td>
+        </tr>
+        <tr>
+            <td><strong>Mask</strong></td>
+            <td>应不存在。</td>
+        </tr>
+        <tr>
+            <td><strong>SMask</strong></td>
+            <td>应不存在。</td>
+        </tr>
+        <tr>
+            <td><strong>Decode</strong></td>
+            <td>默认值：[ 0 1 ]。</td>
+        </tr>
+        <tr>
+            <td><strong>Interpolate</strong></td>
+            <td>可选。</td>
+        </tr>
+        <tr>
+            <td><strong>Alternates</strong></td>
+            <td>忽略。</td>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>忽略。</td>
+        </tr>
+        <tr>
+            <td><strong>StructParent</strong></td>
+            <td>忽略。</td>
+        </tr>
+        <tr>
+            <td><strong>ID</strong></td>
+            <td>忽略。</td>
+        </tr>
+        <tr>
+            <td><strong>OPI</strong></td>
+            <td>忽略。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table146" markdown="span">
+    <caption><strong>表 146 – 软蒙版图像字典中的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Matte</strong></td>
+            <td>数组</td>
+            <td>（可选；PDF 1.4）一个分量值数组，指定父图像中的图像数据应预混合的蒙版颜色。该数组应由 n 个数字组成，其中 n 是父图像的图像字典中 <strong>ColorSpace</strong> 条目指定的颜色空间中的分量数；这些数字应是该颜色空间中的有效颜色分量。如果此条目不存在，则不应预混合图像数据。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>在透明度混合和合成计算中使用预混合图像数据时，结果应与使用原始未混合图像数据且未指定蒙版颜色的情况相同。特别是，混合函数的输入应为原始颜色值。要从 <span class="arithmatex">\(c'\)</span> 导出 <span class="arithmatex">\(c\)</span>，符合标准的阅读器有时可能需要反转之前显示的公式。得到的 <span class="arithmatex">\(c\)</span> 值应在图像颜色空间的颜色分量值范围内。</p>
+<p>预混合计算应在父图像的 <strong>ColorSpace</strong> 条目指定的颜色空间中进行。这与图像可能绘制的组颜色空间无关。如果需要颜色转换，预混合的反转应在颜色转换之前进行。如果图像颜色空间是 <strong>Indexed</strong> 空间（见“<a href="../../c8/s6/#8663-索引颜色空间">索引颜色空间</a>”），则应预混合颜色表中的颜色值（而不是索引值本身）。</p>
+</div>
+<div class="tabbed-block">
+<p>The second way to define a soft mask is by associating a <em>soft-mask image</em> with an image XObject. This is a subsidiary image XObject specified in the <strong>SMask</strong> entry of the parent XObject’s image dictionary (see “<a href="../../c8/s9/#895-图片字典">Image Dictionaries</a>”). Entries in the subsidiary image dictionary for such a soft-mask image shall have the same format and meaning as in that of an ordinary image XObject (as described in <a href="../../c8/s9/#table89">Table 89</a> in “<a href="../../c8/s9/#895-图片字典">Image Dictionaries</a>”), subject to the restrictions listed in <a href="#table145">Table 145</a>. This type of image dictionary may contain an additional entry, <strong>Matte</strong>.</p>
+<p>When an image is accompanied by a soft-mask image, it is sometimes advantageous for the image data to be <em>preblended</em> with some background colour, called the <em>matte colour</em>. Each image sample represents a weighted average of the original source colour and the matte colour, using the corresponding mask sample as the weighting factor. (This is a generalization of a technique commonly called <em>premultiplied alpha</em>.)</p>
+<p>If the image data is preblended, the matte colour shall be specified by a <strong>Matte</strong> entry in the soft-mask image
+dictionary (see Table 145). The preblending computation, performed independently for each component, shall
+be</p>
+<div class="arithmatex">\[c' = m + α \times (c - m)\]</div>
+<p>where</p>
+<p><span class="arithmatex">\(c'\)</span> is the value to be provided in the image source data</p>
+<p><span class="arithmatex">\(c\)</span> is the original image component value</p>
+<p><span class="arithmatex">\(m\)</span> is the matte colour component value</p>
+<p><span class="arithmatex">\(α\)</span> is the corresponding mask sample</p>
+<p>This computation shall use actual colour component values, with the effects of the <strong>Filter</strong> and <strong>Decode</strong> transformations already performed. The computation shall be the same whether the colour space is additive or subtractive.</p>
+<p><table id="table145" markdown="span">
+    <caption><strong>Table 145 – Restrictions on the entries in a soft-mask image dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Restriction</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>If present, shall be <strong>XObject</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>Subtype</strong></td>
+            <td>Shall be <strong>Image</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>Width</strong></td>
+            <td>If a <strong>Matte</strong> entry (see <a href="#table146">Table 146</a>) is present, shall be the same as the <strong>Width</strong> value of the parent image; otherwise independent of it. Both images shall be mapped to the unit square in user space (as are all images), regardless of whether the samples coincide individually.</td>
+        </tr>
+        <tr>
+            <td><strong>Height</strong></td>
+            <td>Same considerations as for <strong>Width</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>ColorSpace</strong></td>
+            <td>Required; shall be <strong>DeviceGray</strong>.</td>
+        </tr>
+        <tr>
+            <td><strong>BitsPerComponent</strong></td>
+            <td>Required.</td>
+        </tr>
+        <tr>
+            <td><strong>Intent</strong></td>
+            <td>Ignored.</td>
+        </tr>
+        <tr>
+            <td><strong>ImageMask</strong></td>
+            <td>Shall be <strong>false</strong> or absent.</td>
+        </tr>
+        <tr>
+            <td><strong>Mask</strong></td>
+            <td>Shall be absent.</td>
+        </tr>
+        <tr>
+            <td><strong>SMask</strong></td>
+            <td>Shall be absent.</td>
+        </tr>
+        <tr>
+            <td><strong>Decode</strong></td>
+            <td>Default value: [ 0 1 ].</td>
+        </tr>
+        <tr>
+            <td><strong>Interpolate</strong></td>
+            <td>Optional.</td>
+        </tr>
+        <tr>
+            <td><strong>Alternates</strong></td>
+            <td>Ignored.</td>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>Ignored.</td>
+        </tr>
+        <tr>
+            <td><strong>StructParent</strong></td>
+            <td>Ignored.</td>
+        </tr>
+        <tr>
+            <td><strong>ID</strong></td>
+            <td>Ignored.</td>
+        </tr>
+        <tr>
+            <td><strong>OPI</strong></td>
+            <td>Ignored.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p><table id="table146" markdown="span">
+    <caption><strong>Table 146 – Additional entry in a soft-mask image dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Matte</strong></td>
+            <td>array</td>
+            <td>(Optional; PDF 1.4) An array of component values specifying the matte colour with which the image data in the parent image shall have been preblended. The array shall consist of n numbers, where n is the number of components in the colour space specified by the <strong>ColorSpace</strong> entry in the parent image’s image dictionary; the numbers shall be valid colour components in that colour space. If this entry is absent, the image data shall not be preblended.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>When preblended image data is used in transparency blending and compositing computations, the results shall be the same as if the original, unblended image data were used and no matte colour were specified. In particular, the inputs to the blend function shall be the original colour values. To derive c from c′, the conforming reader may sometimes need to invert the formula shown previously. The resulting c value shall lie within the range of colour component values for the image colour space.</p>
+<p>The preblending computation shall be done in the colour space specified by the parent image’s <strong>ColorSpace</strong> entry. This is independent of the group colour space into which the image may be painted. If a colour conversion is required, inversion of the preblending shall precede the colour conversion. If the image colour space is an <strong>Indexed</strong> space (see “<a href="../../c8/s6/#8663-索引颜色空间">Indexed Colour Spaces</a>”), the colour values in the colour table (not the index values themselves) shall be preblended.</p>
+</div>
+</div>
+</div>
+<h2 id="1166-透明度组-xobjects">11.6.6 透明度组 XObjects<a class="headerlink" href="#1166-透明度组-xobjects" title="Permanent link">&para;</a></h2>
+<p><strong>Transparency Group XObjects</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">中文</label><label for="__tabbed_11_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在 PDF 中，透明度组表示为一种特殊类型的组 XObject（见“<a href="../../c8/s10/#8103-xobject-组合">组 XObject</a>”），称为<em>透明度组 XObject</em>。组 XObject 又是一种表单 XObject，由其表单字典中存在 <strong>Group</strong> 条目来区分（见“<a href="../../c8/s10/#8102-表单字典">表单字典</a>”）。该条目的值是一个子组属性字典，用于定义组的属性。字典内容的格式和含义由其组子类型决定，该子类型由字典的 S 条目指定。透明度组（子类型 <strong>Transparency</strong>）的条目显示在<a href="#table147">表 147</a>中。</p>
+<p>页面对象（见“<a href="../../c7/s7/#7733-page对象">页面对象</a>”）也可能有一个 <strong>Group</strong> 条目，其值是一个组属性字典，用于指定页面组的属性（见“<a href="../s4/#1147-page组">页面组</a>”）。对于页面组，字典中某些条目的解释与透明度组 XObject 略有不同；详见表中的描述。</p>
+<p><table id="table147" markdown="span">
+    <caption><strong>表 147 – 透明度组属性字典特有的附加条目</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>键</strong></th>
+            <th><strong>类型</strong></th>
+            <th><strong>值</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>名称</td>
+            <td>（必需）组的子类型，用于标识此字典描述的组的类型；对于透明度组，应为 <strong>Transparency</strong>。</td>
+        </tr>
+        <tr>
+            <td><strong>CS</strong></td>
+            <td>名称或数组</td>
+            <td>
+                （有时必需）组的颜色空间，用于以下目的：
+                <ul>
+                    <li>作为将颜色转换到的颜色空间，当颜色被绘制到组中时</li>
+                    <li>作为对象在组内合成的混合颜色空间（见“<a href="../s3/#1134-混合色彩空间">混合颜色空间</a>”）</li>
+                    <li>当组本身作为一个对象绘制到其背景上时，作为组整体的颜色空间</li>
+                </ul>
+                组的颜色空间应是任何设备或基于 CIE 的颜色空间，其分量在 0.0 到 1.0 范围内被视为独立的加法或减法值，受<a href="../s3/#1134-混合色彩空间">11.3.4</a>“<a href="../s3/#1134-混合色彩空间">混合颜色空间</a>”中描述的限制约束。这些限制排除了 <strong>Lab</strong> 和亮度 - 色度 <strong>ICCBased</strong> 颜色空间，以及特殊的颜色空间 <strong>Pattern</strong>、<strong>Indexed</strong>、<strong>Separation</strong> 和 <strong>DeviceN</strong>。设备颜色空间应根据当前资源字典的 <strong>ColorSpace</strong> 子字典中的 <strong>DefaultGray</strong>、<strong>DefaultRGB</strong> 和 <strong>DefaultCMYK</strong> 条目进行重新映射（见“<a href="../../c8/s6/#8656-默认颜色空间">默认颜色空间</a>”）。
+                <br/>
+                通常，<strong>CS</strong> 条目仅适用于隔离透明度组（即 <strong>I</strong> 为 <strong>true</strong> 的组），即便如此，它也是可选的。然而，对于没有任何父组或页面可从中继承的透明度组 XObject（特别是作为子类型为 <strong>Luminosity</strong> 的软蒙版字典中 <strong>G</strong> 条目的值的情况），此条目必须存在于组属性字典中（见“<a href="#11652-软掩码词典">软蒙版字典</a>”）。
+                <br/>
+                此外，即使 <strong>I</strong> 为 <strong>false</strong> 或不存在，<strong>CS</strong> 条目也可能存在于与页面对象关联的组属性字典中。在正常情况下，页面直接输出到介质上时，无论 <strong>I</strong> 值如何，页面组实际上都是隔离的，因此应遵循指定的 <strong>CS</strong> 值。但如果页面又被用作其他页面的一个元素，并且该组是非隔离的，<strong>CS</strong> 应被忽略，颜色空间应从与页面合成的实际背景继承（见“<a href="../s4/#1147-page组">页面组</a>”）。
+                <br/>
+                默认值：绘制此透明度组的父组或页面的颜色空间。（父组的颜色空间本身可能是显式指定的，也可能是继承的。）
+                <br/>
+                对于用作注释外观的透明度组 XObject（见“<a href="../../c12/s5/#1255-外观流">外观流</a>”），默认颜色空间应从注释所在的页面继承。
+            </td>
+        </tr>
+        <tr>
+            <td><strong>I</strong></td>
+            <td>布尔值</td>
+            <td>（可选）一个标志，用于指定透明度组是否为隔离的（见“<a href="../s4/#1145-孤立团体">隔离组</a>”）。如果此标志为 <strong>true</strong>，组内的对象将相对于完全透明的初始背景进行合成；如果为 <strong>false</strong>，则相对于组的背景进行合成。默认值：<strong>false</strong>。
+            <br/>
+            在页面的组属性字典中，此条目的解释略有不同。在正常情况下，页面直接输出到介质上时，页面组实际上是隔离的，指定的 <strong>I</strong> 值应被忽略。但如果页面又被用作其他页面的一个元素，它将被视为透明度组 XObject；<strong>I</strong> 值应按正常方式解释，以确定页面组是否为隔离的。</td>
+        </tr>
+        <tr>
+            <td><strong>K</strong></td>
+            <td>布尔值</td>
+            <td>（可选）一个标志，用于指定透明度组是否为挖空组（见“<a href="../s4/#1146-knockout-组">挖空组</a>”）。如果此标志为 <strong>false</strong>，组内后面的对象将与与其重叠的前面对象合成；如果为 <strong>true</strong>，它们将与组的初始背景合成，并覆盖（“挖空”）任何前面重叠的对象。默认值：<strong>false</strong>。</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>透明度组 XObject 的内容流应定义属于该组的图形对象。当对透明度组 XObject 应用 <strong>Do</strong> 操作符时，它将执行其内容流，并将生成的组颜色、形状和不透明度合成为其父组或页面的一部分，就好像它们来自一个基本图形对象一样。<strong>Do</strong> 在执行表单 XObject 的正常操作（如“<a href="../../c8/s10/">表单 XObject</a>”中所述）之外，还应执行以下操作：</p>
+<ul>
+<li>如果透明度组是非隔离的（其组属性字典中 <strong>I</strong> 条目的值为 <strong>false</strong>），其初始背景（由 XObject 的 <strong>BBox</strong> 条目指定的边界框内）应定义为父组或页面的累积颜色和 alpha 值——即到目前为止父组中所绘制的所有内容的结果。然而，如果父组是挖空组，初始背景应与父组相同。如果组是隔离的（<strong>I</strong> 为 <strong>true</strong>），其初始背景应定义为透明。</li>
+<li>在执行透明度组 XObject 的内容流之前，图形状态中的当前混合模式应初始化为 <strong>Normal</strong>，当前的描边和非描边 alpha 常量应初始化为 1.0，当前的软蒙版应设置为 <strong>None</strong>。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>在执行开始时初始化这些图形状态参数的目的是确保它们不会被应用两次：一次是在成员对象绘制到组中时，另一次是在组绘制到父组或页面时。</p>
+</div>
+<ul>
+<li>透明度组 XObject 内容流中的操作符绘制的对象应根据<a href="../s3/#1133-基本合成公式">11.3.3</a>“<a href="../s3/#1133-基本合成公式">基本合成公式</a>”中描述的规则合成为组的一部分。在此计算过程中，应遵循组属性字典中的挖空标志（<strong>K</strong>）和图形状态的透明度相关参数。</li>
+<li>如果在组属性字典中指定了组颜色空间（<strong>CS</strong>），所有绘制操作符在将对象合成为组之前都应将源颜色转换为该颜色空间，并且每个点的结果颜色应在该颜色空间中进行解释。如果未指定组颜色空间，则当前颜色空间应从父组或页面动态继承。（如果未另行指定，页面组的颜色空间应从输出设备的本机颜色空间继承。）</li>
+<li>执行透明度组 XObject 的内容流后，图形状态应恢复到调用 <strong>Do</strong> 操作符之前的状态（就像对任何表单 XObject 一样）。然后，组的形状（组内所有绘制对象的并集，由组 XObject 的边界框裁剪）应使用组在每个点的累积颜色和不透明度绘制到父组或页面中。</li>
+</ul>
+<p>如果对给定的透明度组 XObject 多次调用 <strong>Do</strong> 操作符，每次调用都将被视为一个独立的透明度组。也就是说，结果就好像该组在每次调用时都与背景独立合成一样。</p>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>执行表单 XObject 缓存的应用程序应考虑此要求。</p>
+</div>
+<p>前面描述的操作仅适用于透明度组 XObject——即具有 <strong>Group</strong> 条目且该条目指定一个组属性子字典，其组子类型（<strong>S</strong>）为 <strong>Transparency</strong> 的表单 XObject。没有 <strong>Group</strong> 条目的普通表单 XObject 不会因透明度目的而应用任何分组行为。也就是说，它包含的图形对象将单独合成，就好像它们直接绘制到父组或页面中一样 。</p>
+</div>
+<div class="tabbed-block">
+<p>A transparency group is represented in PDF as a special type of group XObject (see “<a href="../../c8/s10/#8103-xobject-组合">Group XObjects</a>”) called a <em>transparency group XObject</em>. A group XObject is in turn a type of form XObject, distinguished by the presence of a <strong>Group</strong> entry in its form dictionary (see “<a href="../../c8/s10/#8102-表单字典">Form Dictionaries</a>”). The value of this entry is a subsidiary group attributes dictionary defining the properties of the group. The format and meaning of the dictionary’s contents shall be determined by its group subtype, which is specified by the dictionary’s S entry. The entries for a transparency group (subtype <strong>Transparency</strong>) are shown in <a href="#table147">Table 147</a>.</p>
+<p>A page object (see “<a href="../../c7/s7/#7733-page对象">Page Objects</a>”) may also have a <strong>Group</strong> entry, whose value is a group attributes dictionary specifying the attributes of the page group (see “<a href="../s4/#1147-page组">Page Group</a>”). Some of the dictionary entries are interpreted slightly differently for a page group than for a transparency group XObject; see their descriptions in the table for details.</p>
+<p><table id="table147" markdown="span">
+    <caption><strong>Table 147 – Additional entries specific to a transparency group attributes dictionary</strong></caption>
+    <thead>
+        <tr>
+            <th><strong>Key</strong></th>
+            <th><strong>Type</strong></th>
+            <th><strong>Value</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>S</strong></td>
+            <td>name</td>
+            <td>(Required) The group subtype, which identifies the type of group whose attributes this dictionary describes; shall be <strong>Transparency</strong> for a transparency group.</td>
+        </tr>
+        <tr>
+            <td><strong>CS</strong></td>
+            <td>name or array</td>
+            <td>
+                (Sometimes required) The group colour space, which is used for the following purposes:
+                <ul><li>
+                As the colour space into which colours shall be converted when painted into the group</li><li>
+                As the blending colour space in which objects shall be composited within the group (see “<a href="../s3/#1134-混合色彩空间">Blending Colour Space</a>”)</li><li>
+                As the colour space of the group as a whole when it in turn is painted as an object onto its backdrop</li></ul>
+                The group colour space shall be any device or CIE-based colour space that treats its components as independent additive or subtractive values in the range 0.0 to 1.0, subject to the restrictions described in <a href="../s3/#1134-混合色彩空间">11.3.4</a>, "<a href="../s3/#1134-混合色彩空间">Blending Colour Space</a>." These restrictions exclude <strong>Lab</strong> and lightness- chromaticity <strong>ICCBased</strong> colour spaces, as well as the special colour spaces <strong>Pattern</strong>, <strong>Indexed</strong>, <strong>Separation</strong>, and <strong>DeviceN</strong>. Device colour spaces shall be subject to remapping according to the <strong>DefaultGray</strong>, <strong>DefaultRGB</strong>, and <strong>DefaultCMYK</strong> entries in the <strong>ColorSpace</strong> subdictionary of the current resource dictionary (see “<a href="../../c8/s6/#8656-默认颜色空间">Default Colour Spaces</a>”).<br/>
+                Ordinarily, the <strong>CS</strong> entry may be present only for isolated transparency groups (those for which <strong>I</strong> is <strong>true</strong>), and even then it is optional. However, this entry shall be present in the group attributes dictionary for any transparency group XObject that has no parent group or page from which to inherit—in particular, one that is the value of the <strong>G</strong> entry in a soft-mask dictionary of subtype <strong>Luminosity</strong> (see “<a href="#11652-软掩码词典">Soft-Mask Dictionaries</a>”).<br/>
+                Additionally, the <strong>CS</strong> entry may be present in the group attributes dictionary associated with a page object, even if <strong>I</strong> is <strong>false</strong> or absent. In the normal case in which the page is imposed directly on the output medium, the page group is effectively isolated regardless of the I value, and the specified <strong>CS</strong> value shall therefore be honoured. But if the page is in turn used as an element of some other page and if the group is non- isolated, <strong>CS</strong> shall be ignored and the colour space shall be inherited from the actual backdrop with which the page is composited (see “<a href="../s4/#1147-page组">Page Group</a>”).<br/>
+                Default value: the colour space of the parent group or page into which this transparency group is painted. (The parent’s colour space in turn may be either explicitly specified or inherited.)<br/>
+                For a transparency group XObject used as an annotation appearance (see “<a href="../../c12/s5/#1255-外观流">Appearance Streams</a>”), the default colour space shall be inherited from the page on which the annotation appears.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>I</strong></td>
+            <td>boolean</td>
+            <td>(Optional) A flag specifying whether the transparency group is isolated (see “<a href="../s4/#1145-孤立团体">Isolated Groups</a>”). If this flag is <strong>true</strong>, objects within the group shall be composited against a fully transparent initial backdrop; if <strong>false</strong>, they shall be composited against the group’s backdrop. Default value: <strong>false</strong>.<br/>
+            In the group attributes dictionary for a page, the interpretation of this entry shall be slightly altered. In the normal case in which the page is imposed directly on the output medium, the page group is effectively isolated and the specified <strong>I</strong> value shall be ignored. But if the page is in turn used as an element of some other page, it shall be treated as if it were a transparency group XObject; the <strong>I</strong> value shall be interpreted in the normal way to determine whether the page group is isolated.</td>
+        </tr>
+        <tr>
+            <td><strong>K</strong></td>
+            <td>boolean</td>
+            <td>(Optional) A flag specifying whether the transparency group is a knockout group (see “<a href="../s4/#1146-knockout-组">Knockout Groups</a>”). If this flag is <strong>false</strong>, later objects within the group shall be composited with earlier ones with which they overlap; if <strong>true</strong>, they shall be composited with the group’s initial backdrop and shall overwrite (“knock out”) any earlier overlapping objects. Default value: <strong>false</strong>.</td>
+        </tr>
+    </tbody>
+</table></p>
+<p>The transparency group XObject’s content stream shall define the graphics objects belonging to the group. When applied to a transparency group XObject, the <strong>Do</strong> operator shall execute its content stream and shall composite the resulting group colour, shape, and opacity into the group’s parent group or page as if they had come from an elementary graphics object. <strong>Do</strong> shall perform the following actions in addition to the normal ones for a form XObject (as described in “<a href="../../c8/s10/">Form XObjects</a>”):</p>
+<ul>
+<li>If the transparency group is non-isolated (the value of the <strong>I</strong> entry in its group attributes dictionary is <strong>false</strong>), its initial backdrop, within the bounding box specified by the XObject’s <strong>BBox</strong> entry, shall be defined to be the accumulated colour and alpha of the parent group or page—that is, the result of everything that has been painted in the parent up to that point. However, if the parent is a knockout group, the initial backdrop shall be the same as that of the parent. If the group is isolated (<strong>I</strong> is <strong>true</strong>), its initial backdrop shall be defined to be transparent.</li>
+<li>Before execution of the transparency group XObject’s content stream, the current blend mode in the graphics state shall be initialized to <strong>Normal</strong>, the current stroking and nonstroking alpha constants to 1.0, and the current soft mask to <strong>None</strong>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>The purpose of initializing these graphics state parameters at the beginning of execution is to ensure that they are not applied twice: once when member objects are painted into the group and again when the group is painted into the parent group or page.</p>
+</div>
+<ul>
+<li>Objects painted by operators in the transparency group XObject’s content stream shall be composited into the group according to the rules described in <a href="../s3/#1133-基本合成公式">11.3.3</a>, "<a href="../s3/#1133-基本合成公式">Basic Compositing Formula</a>." The knockout flag (<strong>K</strong>) in the group attributes dictionary and the transparency-related parameters of the graphics state shall be honoured during this computation.</li>
+<li>If a group colour space (<strong>CS</strong>) is specified in the group attributes dictionary, all painting operators shall convert source colours to that colour space before compositing objects into the group, and the resulting colour at each point shall be interpreted in that colour space. If no group colour space is specified, the prevailing colour space shall be dynamically inherited from the parent group or page. (If not otherwise specified, the page group’s colour space shall be inherited from the native colour space of the output device.)</li>
+<li>After execution of the transparency group XObject’s content stream, the graphics state shall revert to its former state before the invocation of the <strong>Do</strong> operator (as it does for any form XObject). The group’s shape—the union of all objects painted into the group, clipped by the group XObject’s bounding box— shall then be painted into the parent group or page, using the group’s accumulated colour and opacity at each point.</li>
+</ul>
+<p>If the <strong>Do</strong> operator is invoked more than once for a given transparency group XObject, each invocation shall be treated as a separate transparency group. That is, the result shall be as if the group were independently composited with the backdrop on each invocation.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>Applications that perform caching of rendered form XObjects shall take this requirement into account.</p>
+</div>
+<p>The actions described previously shall occur only for a transparency group XObject—a form XObject having a <strong>Group</strong> entry that designates a group attributes subdictionary whose group subtype (<strong>S</strong>) is <strong>Transparency</strong>. An ordinary form XObject—one having no <strong>Group</strong> entry—shall not be subject to any grouping behaviour for transparency purposes. That is, the graphics objects it contains shall be composited individually, just as if they were painted directly into the parent group or page.</p>
+</div>
+</div>
+</div>
+<h2 id="1167-图案和透明度">11.6.7 图案和透明度<a class="headerlink" href="#1167-图案和透明度" title="Permanent link">&para;</a></h2>
+<p><strong>Patterns and Transparency</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">中文</label><label for="__tabbed_12_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在透明成像模型中，构成平铺图案（见“<a href="../../c8/s7/#873-平铺图案">平铺图案</a>”）图案单元的图形对象可能包括透明对象和透明度组。无论在何处绘制图案，在图案单元内部以及图案单元与其背景之间都可能发生透明合成。同样，底纹图案（“<a href="../../c8/s7/#874-底纹图案">底纹图案</a>”）与其背景的合成就好像使用 <strong>sh</strong> 操作符应用了底纹字典一样。</p>
+<p>在这两种情况下，图案定义应视为隐式地包含在一个非隔离的透明度组中：对于平铺图案是非挖空组，对于底纹图案是挖空组。定义在求值时不应继承图形状态参数的当前值；这些参数仅在随后使用生成的图案绘制对象时才生效。相反，图形状态参数应按以下方式初始化：</p>
+<ul>
+<li>对于透明度组，与透明度相关的参数（混合模式、软蒙版和 alpha 常量）应初始化为其标准默认值（这一点对于透明度组始终如此）。</li>
+<li>所有其他参数应初始化为图案被定义为资源的内容流（如页面或表单 XObject）开始时的值。（这是所有图案在不透明和透明成像模型中的正常行为。）</li>
+<li>对于底纹图案，参数值可以通过图案字典中的 <strong>ExtGState</strong> 条目内容进行补充（见“<a href="../../c8/s7/#874-底纹图案">底纹图案</a>”）。仅使用影响 <strong>sh</strong> 操作符的参数，例如当前变换矩阵和渲染意图。不应使用影响路径绘制操作符的参数，因为执行 <strong>sh</strong> 并不涉及绘制路径。</li>
+<li>如果底纹字典有一个 <strong>Background</strong> 条目，则在调用 <strong>sh</strong> 操作符之前，图案的隐式透明度组应使用指定的背景颜色填充。</li>
+</ul>
+<p>当图案稍后用于绘制图形对象时，从图案定义求值得到的颜色、形状和不透明度值将用作透明度合成公式中对象的源颜色（<span class="arithmatex">\(C_s\)</span>）、对象形状（<span class="arithmatex">\(f_j\)</span>）和对象不透明度（<span class="arithmatex">\(q_j\)</span>）。这种绘制操作受当时有效的图形状态参数值的影响，就像使用恒定颜色绘制对象一样。</p>
+<div class="admonition note">
+<p class="admonition-title">注 1</p>
+<p>与不透明成像模型不同，在不透明成像模型中，平铺图案的图案单元可以评估一次，然后无限复制以填充绘制区域，在一般的透明情况下，效果就好像对于每个图块都独立重新执行图案定义一样，同时考虑到每个点处的背景颜色。然而，在常见的情况下，如果图案完全由使用 <strong>Normal</strong> 混合模式绘制的对象组成，则可以通过将图案单元视为隔离组来优化这种行为。因为在这种情况下，结果仅取决于图案单元的颜色、形状和不透明度，而不取决于背景的颜色、形状和不透明度，所以可以像在不透明绘画中一样评估一次图案单元，然后进行复制。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注 2</p>
+<p>在基于光栅的平铺实现中，所有图块应视为一个单一的透明度组。这样可以避免由于在相邻图块之间的边界处多次标记像素而产生的伪影。</p>
+</div>
+<p>上述讨论适用于有色（<strong>PaintType</strong> 1）和无色（<strong>PaintType</strong> 2）平铺图案。在后一种情况下，无色图案的定义不得指定颜色的限制同样适用于定义中可能包含的任何透明度组。然而，对于在图形状态中指定与透明度相关的参数没有相应的限制 。</p>
+</div>
+<div class="tabbed-block">
+<p>In the transparent imaging model, the graphics objects making up the pattern cell of a tiling pattern (see “<a href="../../c8/s7/#873-平铺图案">Tiling Patterns</a>”) may include transparent objects and transparency groups. Transparent compositing may occur both within the pattern cell and between it and the backdrop wherever the pattern is painted. Similarly, a shading pattern (“<a href="../../c8/s7/#874-底纹图案">Shading Patterns</a>”) composites with its backdrop as if the shading dictionary were applied with the <strong>sh</strong> operator.</p>
+<p>In both cases, the pattern definition shall be treated as if it were implicitly enclosed in a non-isolated transparency group: a non-knockout group for tiling patterns, a knockout group for shading patterns. The definition shall not inherit the current values of the graphics state parameters at the time it is evaluated; those parameters shall take effect only when the resulting pattern is later used to paint an object. Instead, the graphics state parameters shall be initialized as follows:</p>
+<ul>
+<li>As always for transparency groups, those parameters related to transparency (blend mode, soft mask, and alpha constant) shall be initialized to their standard default values.</li>
+<li>All other parameters shall be initialized to their values at the beginning of the content stream (such as a page or a form XObject) in which the pattern shall be defined as a resource. (This is the normal behaviour for all patterns, in both the opaque and transparent imaging models.)</li>
+<li>In the case of a shading pattern, the parameter values may be augmented by the contents of the <strong>ExtGState</strong> entry in the pattern dictionary (see “<a href="../../c8/s7/#874-底纹图案">Shading Patterns</a>”). Only those parameters that affect the <strong>sh</strong> operator, such as the current transformation matrix and rendering intent, shall be used. Parameters that affect path-painting operators shall not be used, since the execution of <strong>sh</strong> does not entail painting a path.</li>
+<li>If the shading dictionary has a <strong>Background</strong> entry, the pattern’s implicit transparency group shall be filled with the specified background colour before the <strong>sh</strong> operator is invoked.</li>
+</ul>
+<p>When the pattern is later used to paint a graphics object, the colour, shape, and opacity values resulting from the evaluation of the pattern definition shall be used as the object’s source colour (<span class="arithmatex">\(C_s\)</span> ), object shape (<span class="arithmatex">\(f_j\)</span> ), and object opacity (<span class="arithmatex">\(q_j\)</span> ) in the transparency compositing formulas. This painting operation is subject to the values of he graphics state parameters in effect at the time, just as in painting an object with a constant colour.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE 1</p>
+<p>Unlike the opaque imaging model, in which the pattern cell of a tiling pattern may be evaluated once and then replicated indefinitely to fill the painted area, the effect in the general transparent case is as if the pattern definition were reexecuted independently for each tile, taking into account the colour of the backdrop at each point. However, in the common case in which the pattern consists entirely of objects painted with the <strong>Normal</strong> blend mode, this behaviour can be optimized by treating the pattern cell as if it were an isolated group. Since in this case the results depend only on the colour, shape, and opacity of the pattern cell and not on those of the backdrop, the pattern cell can be evaluated once and then replicated, just as in opaque painting.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">NOTE 2</p>
+<p>In a raster-based implementation of tiling, all tiles should be treated as a single transparency group. This avoids artifacts due to multiple marking of pixels along the boundaries between adjacent tiles.</p>
+</div>
+<p>The foregoing discussion applies to both coloured (<strong>PaintType</strong> 1) and uncoloured (<strong>PaintType</strong> 2) tiling patterns. In the latter case, the restriction that an uncoloured pattern’s definition shall not specify colours extends as well to any transparency group that the definition may include. There are no corresponding restrictions, however, on specifying transparency-related parameters in the graphics state.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月12日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

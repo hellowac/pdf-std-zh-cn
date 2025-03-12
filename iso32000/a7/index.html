@@ -1,0 +1,1883 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../a6/">
+      
+      
+        <link rel="next" href="../a8/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>附录 G（资料性）线性化 PDF 访问策略 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#附录-g资料性线性化-pdf-访问策略" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              附录 G（资料性）线性化 PDF 访问策略
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c9/" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c9/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            附录
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 A（资料性）操作员摘要
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 B（规范性）Type 4 函数中的操作符
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 C（规范性）实现限制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 D（规范性）字符集和编码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 E（规范性）PDF 名称注册表
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 F（规范性）线性化 PDF
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    附录 G（资料性）线性化 PDF 访问策略
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    附录 G（资料性）线性化 PDF 访问策略
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#g1-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g2-打开第一页" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.2 打开第一页
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g3-打开任意页面" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.3 打开任意页面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g4-访问打开文档的其他页面" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.4 访问打开文档的其他页面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g5-逐步绘制页面" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.5 逐步绘制页面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g6-跟随文章线索" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.6 跟随文章线索
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g7-访问更新后的文件" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.7 访问更新后的文件
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 H（资料性）示例 PDF 文件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 I（规范性）PDF 版本和兼容性
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 J（资料性）FDF 重命名标志实现示例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 K（资料性）PostScript 兼容性 - 透明成像模型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../a12/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    附录 L（资料性）彩色图版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#g1-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g2-打开第一页" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.2 打开第一页
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g3-打开任意页面" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.3 打开任意页面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g4-访问打开文档的其他页面" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.4 访问打开文档的其他页面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g5-逐步绘制页面" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.5 逐步绘制页面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g6-跟随文章线索" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.6 跟随文章线索
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g7-访问更新后的文件" class="md-nav__link">
+    <span class="md-ellipsis">
+      G.7 访问更新后的文件
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="附录-g资料性线性化-pdf-访问策略">附录 G（资料性）线性化 PDF 访问策略<a class="headerlink" href="#附录-g资料性线性化-pdf-访问策略" title="Permanent link">&para;</a></h1>
+<p><strong>Annex G (informative) Linearized PDF Access Strategies</strong></p>
+<h2 id="g1-概述">G.1 概述<a class="headerlink" href="#g1-概述" title="Permanent link">&para;</a></h2>
+<p><strong>G.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本节概述了符合规范的阅读器如何利用线性化 PDF 文件的结构来高效地检索和显示该文件。此材料可能有助于解释该组织的基本原理。</p>
+</div>
+<div class="tabbed-block">
+<p>This section outlines how the conforming reader can take advantage of the structure of a Linearized PDF file to retrieve and display it efficiently. This material may help explain the rationale for the organization.</p>
+</div>
+</div>
+</div>
+<h2 id="g2-打开第一页">G.2 打开第一页<a class="headerlink" href="#g2-打开第一页" title="Permanent link">&para;</a></h2>
+<p><strong>G.2 Opening at the First Page</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>如前所述，首次访问文档时，会发出请求以从头开始检索整个文件。因此，线性化 PDF 的组织方式是，显示第一页所需的所有数据都位于文件的开头。这包括从第一页引用的所有资源，无论它们是否也从其他页面引用。</p>
+<p>第一页通常但不一定是第 0 页。如果文档目录包含一个 <strong>OpenAction</strong> 条目，该条目指定从第 0 页以外的某个页面打开，则该页面是物理上位于文档开头的页面。因此，在默认位置（而不是特定目标）打开文档只需等待第一页数据到达即可；无需其他事务。</p>
+<p>在普通的符合要求的阅读器中，打开文档需要先定位到末尾以获取</p>
+<p><strong>startxref</strong> 行。由于线性化 PDF 文件的开头有第一页的交叉引用表，因此无需读取 <strong>startxref</strong> 行。只需验证文件开头的线性化参数字典中给出的文件长度是否与文件的实际长度相匹配，这表明 PDF 文件未附加任何更新。</p>
+<p>主提示流位于第一页部分之前或之后，这意味着它也是作为文件初始顺序读取的一部分进行检索的。符合要求的阅读器应解释并保留提示表中的所有信息。这些表相当紧凑，并非设计为从文件中随机获取。</p>
+<p>符合要求的阅读器现在必须决定是继续按顺序读取文档的其余部分，还是中止初始事务并使用请求字节范围的单独事务访问后续页面。此决定取决于文件的大小、通道的数据速率和事务的开销成本。</p>
+</div>
+<div class="tabbed-block">
+<p>As described earlier, when a document is initially accessed, a request is issued to retrieve the entire file, starting at the beginning. Consequently, Linearized PDF is organized so that all the data required to display the first page is at the beginning of the file. This includes all resources that are referenced from the first page, regardless of whether they are also referenced from other pages.</p>
+<p>The first page is usually but not necessarily page 0. If the document catalogue contains an <strong>OpenAction</strong> entry that specifies opening at some page other than page 0, that page is the one physically located at the beginning of the document. Thus, opening a document at the default place (rather than a specific destination) requires simply waiting for the first-page data to arrive; no additional transactions are required.</p>
+<p>In an ordinary conforming reader, opening a document requires first positioning to the end to obtain the
+<strong>startxref</strong> line. Since a Linearized PDF file has the first page’s cross-reference table at the beginning, reading the <strong>startxref</strong> line is not necessary. All that is required is to verify that the file length given in the linearization parameter dictionary at the beginning of the file matches the actual length of the file, indicating that no updates have been appended to the PDF file.</p>
+<p>The primary hint stream is located either before or after the first-page section, which means that it is also retrieved as part of the initial sequential read of the file. The conforming reader is expected to interpret and retain all the information in the hint tables. The tables are reasonably compact and are not designed to be obtained from the file in random pieces.</p>
+<p>The conforming reader must now decide whether to continue reading the remainder of the document sequentially or to abort the initial transaction and access subsequent pages by using separate transactions requesting byte ranges. This decision is a function of the size of the file, the data rate of the channel, and the overhead cost of a transaction.</p>
+</div>
+</div>
+</div>
+<h2 id="g3-打开任意页面">G.3 打开任意页面<a class="headerlink" href="#g3-打开任意页面" title="Permanent link">&para;</a></h2>
+<p><strong>G.3 Opening at an Arbitrary Page</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>可以请求符合要求的阅读器打开 PDF 文件的任意页面。页面可以通过以下三种方式之一指定：</p>
+<ul>
+<li>按页码（远程转到操作、整数页面说明符）</li>
+<li>按命名目标（远程转到操作、名称或字符串页面说明符）</li>
+<li>按文章线程（线程操作）</li>
+</ul>
+<p>此外，索引搜索会按页码打开文档。有效处理这种情况尤为重要。</p>
+<p>如上所述，当文档首次打开时，会从开头开始按顺序检索。一旦收到提示表，符合要求的阅读器就有足够的信息来请求检索给定页码的文档的任何页面。因此，符合要求的阅读器可以中止初始事务并为目标页面发出新事务，如 G.4“转到打开文档的另一页”中所述。</p>
+<p>主提示流（F.3.1“常规”中的第 5 部分）相对于首页部分（F.3.1“常规”中的第 6 部分）的位置决定了完成此操作的速度。如果主提示流位于首页部分之前，则可以非常快速地中止初始事务；但是，这会增加打开第一页文档时的延迟。另一方面，如果主提示流位于首页部分之后，则显示第一页会更快（因为不需要提示表），但在任意页面上打开会延迟接收第一页所需的时间。在线性化 PDF 文件时，必须决定是倾向于在第一页打开还是在任意页面上打开。</p>
+<p>如果存在溢出提示流，则获取它需要发出额外的事务。因此，尽管允许在线性化 PDF 中包含溢出提示流，但不建议这样做。该功能允许线性化器在写入 PDF 文件时为估计大小的主提示流保留空间，然后返回并填充提示表。如果估计值太小，线性化器可以附加包含剩余提示表数据的溢出流。因此，PDF 文件可以一次性写入，如果认为写入 PDF 的性能很重要，这可能是一个优势。</p>
+<p>在命名目标处打开需要符合要求的阅读器首先读取整个 <strong>Dests</strong> 或 <strong>Names</strong> 字典，其中存在提示。使用此信息，可以确定包含名称标识的特定目标的页面。</p>
+<p>打开文章需要符合要求的阅读器首先读取整个 <strong>Threads</strong> 数组，该数组与文档开头的文档目录一起位于一起。使用此信息，可以确定包含任何线程的第一个珠子的页面。在线程的第一个珠子以外的位置打开需要链接所有珠子，直到到达所需的珠子；没有提示可以加速此过程。</p>
+</div>
+<div class="tabbed-block">
+<p>The conforming reader may be requested to open a PDF file at an arbitrary page. The page can be specified in one of three ways:</p>
+<ul>
+<li>By page number (remote go-to action, integer page specifier)</li>
+<li>By named destination (remote go-to action, name or string page specifier)</li>
+<li>By article thread (thread action)</li>
+</ul>
+<p>Additionally, an indexed search results in opening a document by page number. Handling this case efficiently is especially important.</p>
+<p>As indicated above, when the document is initially opened, it is retrieved sequentially starting at the beginning. As soon as the hint tables have been received, the conforming reader has sufficient information to request retrieval of any page of the document given its page number. Therefore, the conforming reader can abort the initial transaction and issue a new transaction for the target page, as described in G.4, "Going to Another Page of an Open Document".</p>
+<p>The position of the primary hint stream (part 5 in F.3.1, "General") with respect to the first-page section (part 6 in F.3.1, "General") determines how quickly this can be done. If the primary hint stream precedes the first-page section, the initial transaction can be aborted very quickly; however, this is at the cost of increased delay when opening the document at the first page. On the other hand, if the primary hint stream follows the first-page section, displaying the first page is quicker (since the hint tables are not needed for that), but opening at an arbitrary page is delayed by the time required to receive the first page. The decision whether to favour opening at the first page or opening at an arbitrary page must be made at the time a PDF file is linearized.</p>
+<p>If an overflow hint stream exists, obtaining it requires issuing an additional transaction. For this reason, inclusion of an overflow hint stream in Linearized PDF, although permitted, is not recommended. The feature exists to allow the linearizer to write the PDF file with space reserved for a primary hint stream of an estimated size and then go back and fill in the hint tables. If the estimate is too small, the linearizer can append an overflow stream containing the remaining hint table data. Thus, the PDF file can be written in one pass, which may be an advantage if the performance of writing PDF is considered important.</p>
+<p>Opening at a named destination requires the conforming reader first to read the entire <strong>Dests</strong> or <strong>Names</strong> dictionary, for which a hint is present. Using this information, it is possible to determine the page containing the specific destination identified by the name.</p>
+<p>Opening to an article requires the conforming reader first to read the entire <strong>Threads</strong> array, which is located with the document catalogue at the beginning of the document. Using this information, it is possible to determine the page containing the first bead of any thread. Opening at other than the first bead of a thread requires chaining through all the beads until the desired one is reached; there are no hints to accelerate this.</p>
+</div>
+</div>
+</div>
+<h2 id="g4-访问打开文档的其他页面">G.4 访问打开文档的其他页面<a class="headerlink" href="#g4-访问打开文档的其他页面" title="Permanent link">&para;</a></h2>
+<p><strong>G.4 Going to Another Page of an Open Document</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">中文</label><label for="__tabbed_4_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>给定页码和提示表中的信息，符合规范的阅读器现在可以直接构造单个请求来检索文档的任意页面。请求应包括以下项目：</p>
+<ul>
+<li>页面本身的对象，其字节范围可以从页面偏移提示表中的条目确定。</li>
+<li>主交叉引用表中引用这些对象的部分。这可以从主交叉引用表位置（线性化参数字典中的 T 条目）和页面偏移提示表中的累积对象号计算得出。</li>
+<li>从页面引用的共享对象，其字节范围可以从共享对象提示表中的信息确定。</li>
+<li>主交叉引用表中引用这些对象的部分或多个部分，如上所述。</li>
+</ul>
+<p>页面偏移提示表中分数的目的是使符合规范的阅读器能够以允许在数据到达时增量显示的方式安排页面的检索。它通过构造一个请求来实现这一点，该请求将页面内容的片段与内容引用的共享资源交错。这与对第一页进行的物理交错的目的大致相同。</p>
+</div>
+<div class="tabbed-block">
+<p>Given a page number and the information in the hint tables, it is now straightforward for the conforming reader to construct a single request to retrieve any arbitrary page of the document. The request should include the following items:</p>
+<ul>
+<li>The objects of the page itself, whose byte range can be determined from the entry in the page offset hint table.</li>
+<li>The portion of the main cross-reference table referring to those objects. This can be computed from main cross-reference table location (the T entry in the linearization parameter dictionary) and the cumulative object number in the page offset hint table.</li>
+<li>The shared objects referenced from the page, whose byte ranges can be determined from information in the shared object hint table.</li>
+<li>The portion or portions of the main cross-reference table referring to those objects, as described above.</li>
+</ul>
+<p>The purpose of the fractions in the page offset hint table is to enable the conforming reader to schedule retrieval of the page in a way that allows incremental display of the data as it arrives. It accomplishes this by constructing a request that interleaves pieces of the page contents with the shared resources that the contents refer to. This serves much the same purpose as the physical interleaving that is done for the first page.</p>
+</div>
+</div>
+</div>
+<h2 id="g5-逐步绘制页面">G.5 逐步绘制页面<a class="headerlink" href="#g5-逐步绘制页面" title="Permanent link">&para;</a></h2>
+<p><strong>G.5 Drawing a Page Incrementally</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">中文</label><label for="__tabbed_5_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>页面中对象的排序和提示表的组织旨在允许逐步更新显示，并在数据到达缓慢时尽早为用户提供交互机会。符合要求的阅读器必须识别间接对象引用的目标尚未到达的情况，并在可能的情况下重新排列其对页面中对象的作用顺序。</p>
+<p>建议采取以下操作顺序：</p>
+<p>a)激活注释，但不要绘制它们。还要激活页面中任何文章线程的光标反馈。
+b)开始绘制内容。每当有对尚未到达的图像 XObject 的引用时，跳过它。每当有对字体的引用（其定义是尚未到达的嵌入字体文件）时，使用替代字体绘制文本（如果可能）。
+c)绘制注释。
+d)在图像到达时绘制它们，以及与它们重叠的任何内容。
+e)一旦嵌入字体定义到达，使用正确的字体重新绘制文本，以及与文本重叠的任何内容。</p>
+<p>如果可能，最后两个步骤应使用屏幕外缓冲区完成，以避免在重绘过程​​中出现令人反感的闪烁。</p>
+<p>遇到引用 XObject（请参阅 <a href="../c8/s10/#8104-xobjects-引用">8.10.4</a>，“引用 XObject”）时，符合要求的阅读器可以选择最初将该对象显示为代理，并推迟对导入内容的检索和渲染。请注意，由于线性化 PDF 文件中的所有 XObject 都遵循它们出现的页面的内容流，因此它们的检索已被推迟；使用引用 XObject 会导致额外的延迟级别。</p>
+</div>
+<div class="tabbed-block">
+<p>The ordering of objects in pages and the organization of the hint tables are intended to allow progressive update of the display and early opportunities for user interaction when the data is arriving slowly. The conforming reader must recognize instances in which the targets of indirect object references have not yet arrived and, where possible, rearrange the order in which it acts on the objects in the page.</p>
+<p>The following sequence of actions is recommended:</p>
+<p>a)Activate the annotations, but do not draw them yet. Also activate the cursor feedback for any article threads in the page.
+b)Begin drawing the contents. Whenever there is a reference to an image XObject that has not yet arrived, skip over it. Whenever there is a reference to a font whose definition is an embedded font file that has not yet arrived, draw the text using a substitute font (if that is possible).
+c)Draw the annotations.
+d)Draw the images as they arrive, together with anything that overlaps them.
+e)Once the embedded font definitions have arrived, redraw the text using the correct fonts, together with anything that overlaps the text.</p>
+<p>The last two steps should be done using an off-screen buffer, if possible, to avoid objectionable flashing during the redraw process.</p>
+<p>On encountering a reference XObject (see <a href="../c8/s10/#8104-xobjects-引用">8.10.4</a>, "Reference XObjects"), the conforming reader may choose to initially display the object as a proxy and defer the retrieval and rendering of the imported content. Note that, since all XObjects in a Linearized PDF file follow the content stream of the page on which they appear, their retrieval is already deferred; the use of a reference XObject results in an additional level of deferral.</p>
+</div>
+</div>
+</div>
+<h2 id="g6-跟随文章线索">G.6 跟随文章线索<a class="headerlink" href="#g6-跟随文章线索" title="Permanent link">&para;</a></h2>
+<p><strong>G.6 Following an Article Thread</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">中文</label><label for="__tabbed_6_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>如前所述，访问给定页面的任何文章线索的珠子词典都与该页面一起定位。这样就可以激活珠子矩形并显示正确的光标反馈。</p>
+<p>如果用户关注某个线索，则符合要求的阅读器可以从珠子词典的 <strong>N</strong> 或 <strong>P</strong> 条目中获取对象编号。这标识了一个目标珠子，它与它所属的页面一起定位。给定此对象编号，符合要求的阅读器可以转到该页面，如 G.4“转到打开文档的另一页”中所述。    </p>
+</div>
+<div class="tabbed-block">
+<p>As indicated earlier, the bead dictionaries for any article thread that visits a given page are located with that page. This enables the bead rectangles to be activated and proper cursor feedback to be shown.</p>
+<p>If the user follows a thread, the conforming reader can obtain the object number from the <strong>N</strong> or <strong>P</strong> entry of the bead dictionary. This identifies a target bead, which is located with the page to which it belongs. Given this object number, the conforming reader can go to that page, as discussed in G.4, "Going to Another Page of an Open Document."</p>
+</div>
+</div>
+</div>
+<h2 id="g7-访问更新后的文件">G.7 访问更新后的文件<a class="headerlink" href="#g7-访问更新后的文件" title="Permanent link">&para;</a></h2>
+<p><strong>G.7 Accessing an Updated File</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">中文</label><label for="__tabbed_7_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>如前所述，如果线性化 PDF 文件随后附加了增量更新，则线性化和提示不再有效。实际上，这不一定是真的，但符合要求的阅读器必须做一些额外的工作来验证信息。</p>
+<p>当符合要求的阅读器看到文件长度超过线性化参数字典中给出的长度时，它必须发出额外的事务来读取附加的所有内容。然后，它必须分析该更新中的对象，以查看其中是否有任何对象修改了第一页中的对​​象或提示的目标。如果是这样，它必须根据需要扩充其内部数据结构以考虑更新。</p>
+<p>对于仅收到少量更新的 PDF 文件，这种方法可能是值得的。以这种方式访问​​文件比在没有提示的情况下访问文件或在显示任何内容之前检索整个文件更快。</p>
+</div>
+<div class="tabbed-block">
+<p>As stated earlier, if a Linearized PDF file subsequently has an incremental update appended to it, the linearization and hints are no longer valid. Actually, this is not necessarily true, but the conforming reader must do some additional work to validate the information.</p>
+<p>When the conforming reader sees that the file is longer than the length given in the linearization parameter dictionary, it must issue an additional transaction to read everything that was appended. It must then analyse the objects in that update to see whether any of them modify objects that are in the first page or that are the targets of hints. If so, it must augment its internal data structures as necessary to take the updates into account.</p>
+<p>For a PDF file that has received only a small update, this approach may be worthwhile. Accessing the file this way is quicker than accessing it without hints or retrieving the entire file before displaying any of it.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月12日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

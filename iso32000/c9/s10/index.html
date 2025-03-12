@@ -1,0 +1,1888 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../s9/">
+      
+      
+        <link rel="next" href="../../c10/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>9.10 文本内容提取 - PDF STD</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#910-文本内容提取" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+你当前浏览的版本已不是最新版本，
+<a href="../../../..">
+    <strong>点击这里</strong>
+</a>查看最新版本的文档
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="PDF STD" class="md-header__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PDF STD
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9.10 文本内容提取
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  首页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c7/" class="md-tabs__link">
+          
+  
+    
+  
+  7语法
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c8/" class="md-tabs__link">
+          
+  
+    
+  
+  8图形绘制
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  9文本
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c10/" class="md-tabs__link">
+          
+  
+    
+  
+  10渲染
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c11/" class="md-tabs__link">
+          
+  
+    
+  
+  11透明度
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c12/" class="md-tabs__link">
+          
+  
+    
+  
+  12互动功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c13/" class="md-tabs__link">
+          
+  
+    
+  
+  13多媒体功能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../c14/" class="md-tabs__link">
+          
+  
+    
+  
+  14文档交换
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../a1/" class="md-tabs__link">
+          
+  
+    
+  
+  附录
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../bibliography/" class="md-tabs__link">
+        
+  
+    
+  
+  参考文献
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PDF STD" class="md-nav__button md-logo" aria-label="PDF STD" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    PDF STD
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c7/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7语法
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c8/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8图形绘制
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    9文本
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            9文本
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.1 概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.2 字体的组织和使用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.3 文本状态参数和操作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.4 文本对象
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.5 字体数据结构简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.6 简单字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.7 组合字体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.8 字体描述符
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../s9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9.9 嵌入式字体程序
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    9.10 文本内容提取
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    9.10 文本内容提取
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#9101-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.10.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9102-将字符代码映射到-unicode-值" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.10.2 将字符代码映射到 Unicode 值
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9103-tounicode-cmaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.10.3 ToUnicode CMaps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c10/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10渲染
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c11/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11透明度
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c12/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12互动功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c13/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13多媒体功能
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../c14/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14文档交换
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../a1/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    附录
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bibliography/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    参考文献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#9101-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.10.1 概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9102-将字符代码映射到-unicode-值" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.10.2 将字符代码映射到 Unicode 值
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9103-tounicode-cmaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.10.3 ToUnicode CMaps
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="910-文本内容提取">9.10 文本内容提取<a class="headerlink" href="#910-文本内容提取" title="Permanent link">&para;</a></h1>
+<p><strong>9.10 Extraction of Text Content</strong></p>
+<h2 id="9101-概述">9.10.1 概述<a class="headerlink" href="#9101-概述" title="Permanent link">&para;</a></h2>
+<p><strong>9.10.1 General</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">中文</label><label for="__tabbed_1_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>前面的子条款描述了所有在页面上显示文本和绘制字形的功能。除了显示文本，符合规范的读取器有时需要确定文本的信息内容——即，根据某种标准字符识别，它的含义，而不是其渲染外观。这种需求在进行搜索、索引和将文本导出到其他文件格式等操作时出现。</p>
+<p>Unicode标准定义了一个为大量语言中常见字符编号的系统。它是表示文本信息内容的合适方案，但不是表示其外观的方案，因为Unicode值标识的是字符，而不是字形。有关Unicode的信息，请参见Unicode联盟的Unicode标准（见参考书目）。</p>
+<p>在提取字符内容时，如果字体的字符是根据符合规范的读取器已知的标准字符集进行识别的，符合规范的读取器可以轻松地将文本转换为Unicode值。如果字体使用标准命名编码，或者字体中的字符通过标准字符名称或CID在一个著名集合中进行识别，那么字符识别就可以发生。<a href="#9102-将字符代码映射到-unicode-值">9.10.2</a>，“字符代码到Unicode值的映射”，详细描述了将字符代码映射到Unicode值的总体算法。</p>
+<p>如果字体没有以这些方式定义，字形仍然可以显示，但字符不能在没有额外信息的情况下转换为Unicode值：</p>
+<ul>
+<li>这些信息可以通过字体字典中的一个可选<strong>ToUnicode</strong>条目提供（PDF 1.2；参见<a href="#9103-tounicode-cmaps">9.10.3</a>，“ToUnicode CMaps”），其值应为一个流对象，包含一种特殊的CMap文件，用于将字符代码映射到Unicode值。</li>
+<li>结构元素或标记内容序列的<strong>ActualText</strong>条目（参见<a href="../../c14/s9/#1494-替换文本">14.9.4</a>，“替换文本”）可用于直接指定文本内容。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>The preceding sub-clauses describe all the facilities for showing text and causing glyphs to be painted on the page. In addition to displaying text, conforming readers sometimes need to determine the information content of text—that is, its meaning according to some standard character identification as opposed to its rendered appearance. This need arises during operations such as searching, indexing, and exporting of text to other file formats.</p>
+<p>The Unicode standard defines a system for numbering all of the common characters used in a large number of languages. It is a suitable scheme for representing the information content of text, but not its appearance, since Unicode values identify characters, not glyphs. For information about Unicode, see the Unicode Standard by the Unicode Consortium (see the Bibliography).</p>
+<p>When extracting character content, a conforming reader can easily convert text to Unicode values if a font’s characters are identified according to a standard character set that is known to the conforming reader. This character identification can occur if either the font uses a standard named encoding or the characters in the font are identified by standard character names or CIDs in a well-known collection. <a href="#9102-将字符代码映射到-unicode-值">9.10.2</a>, "Mapping Character Codes to Unicode Values", describes in detail the overall algorithm for mapping character codes to Unicode values.</p>
+<p>If a font is not defined in one of these ways, the glyphs can still be shown, but the characters cannot be converted to Unicode values without additional information:</p>
+<ul>
+<li>This information can be provided as an optional <strong>ToUnicode</strong> entry in the font dictionary (PDF 1.2; see <a href="#9103-tounicode-cmaps">9.10.3</a>, "ToUnicode CMaps"), whose value shall be a stream object containing a special kind of CMap file that maps character codes to Unicode values.</li>
+<li>An <strong>ActualText</strong> entry for a structure element or marked-content sequence (see <a href="../../c14/s9/#1494-替换文本">14.9.4</a>, "Replacement Text") may be used to specify the text content directly.</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="9102-将字符代码映射到-unicode-值">9.10.2 将字符代码映射到 Unicode 值<a class="headerlink" href="#9102-将字符代码映射到-unicode-值" title="Permanent link">&para;</a></h2>
+<p><strong>9.10.2 Mapping Character Codes to Unicode Values</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">中文</label><label for="__tabbed_2_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>符合规范的读取器可以按照优先顺序使用以下方法将字符代码映射到Unicode值。特别是，标签化PDF文档必须提供至少一种这些方法（参见<a href="../../c14/s8/#148242-标签化-pdf-中的-unicode-映射">14.8.2.4.2</a>，“标签化PDF中的Unicode映射”）：</p>
+<ul>
+<li>如果字体字典包含一个<strong>ToUnicode</strong> CMap（参见<a href="#9103-tounicode-cmaps">9.10.3</a>，“ToUnicode CMaps”），则使用该CMap将字符代码转换为Unicode。</li>
+<li>
+<p>如果字体是一个简单字体，且使用预定义编码之一<strong>MacRomanEncoding</strong>、<strong>MacExpertEncoding</strong>或<strong>WinAnsiEncoding</strong>，或者它的编码的<strong>Differences</strong>数组仅包含来自Adobe标准拉丁字符集和符号字体中命名字符集的字符名称（参见[附录D]）：</p>
+<p>a) 根据表D.1和字体的<strong>Differences</strong>数组将字符代码映射到字符名称。</p>
+<p>b) 在Adobe字形列表中查找字符名称（参见<a href="../../bibliography/">参考书目</a>）以获取相应的Unicode值。</p>
+</li>
+<li>
+<p>如果字体是一个复合字体，且使用<a href="../s7/#table118">表118</a>中列出的预定义CMaps之一（除了Identity–H和Identity–V）或其后代CIDFont使用Adobe-GB1、Adobe-CNS1、Adobe-Japan1或Adobe-Korea1字符集：</p>
+<p>a) 根据字体的CMap将字符代码映射到字符标识符（CID）。</p>
+<p>b) 从字体的CIDSystemInfo字典中获取字体CMap使用的字符集的注册表和排序（例如，Adobe和Japan1）。</p>
+<p>c) 通过将步骤(b)中获得的注册表和排序连接起来，构造第二个CMap名称，格式为注册表–排序–UCS2（例如，Adobe–Japan1–UCS2）。</p>
+<p>d) 获取步骤&copy;中构造的CMap名称（可从ASN网站获得；参见<a href="../../bibliography/">参考书目</a>）。</p>
+<p>e) 根据步骤(d)中获取的CMap映射步骤(a)中获得的CID，生成Unicode值。</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>Type 0 字体的后代CIDFont使用Adobe-GB1、Adobe-CNS1、Adobe-Japan1或Adobe-Korea1字符集（如<strong>CIDSystemInfo</strong>字典中所指定）时，应具有与符合规范的读取器支持的PDF版本对应的补充号。参见<a href="../s7/#table119">表3</a>以查看与给定PDF版本对应的字符集列表。（这些字符集的其他补充可以使用，但如果补充号高于与所支持PDF版本对应的补充号，则只有后者补充中的CID才被视为标准CID。）</p>
+</div>
+<p>如果这些方法未能生成Unicode值，则无法确定字符代码所表示的内容，在这种情况下，符合规范的读取器可以选择自己选择的字符代码。</p>
+</div>
+<div class="tabbed-block">
+<p>A conforming reader can use these methods, in the priority given, to map a character code to a Unicode value. Tagged PDF documents, in particular, shall provide at least one of these methods (see <a href="../../c14/s8/#148242-标签化-pdf-中的-unicode-映射">14.8.2.4.2</a>, "Unicode Mapping in Tagged PDF"):</p>
+<ul>
+<li>If the font dictionary contains a <strong>ToUnicode</strong> CMap (see <a href="#9103-tounicode-cmaps">9.10.3</a>, "ToUnicode CMaps"), use that CMap to convert the character code to Unicode.</li>
+<li>
+<p>If the font is a simple font that uses one of the predefined encodings <strong>MacRomanEncoding</strong>,
+<strong>MacExpertEncoding</strong>, or <strong>WinAnsiEncoding</strong>, or that has an encoding whose <strong>Differences</strong> array includes only character names taken from the Adobe standard Latin character set and the set of named characters in the Symbol font (see <a href="../../a4/">Annex D</a>):</p>
+<p>a) Map the character code to a character name according to Table D.1 and the font’s <strong>Differences</strong> array.</p>
+<p>b) Look up the character name in the Adobe Glyph List (see the <a href="../../bibliography/">Bibliography</a>) to obtain the corresponding Unicode value.</p>
+</li>
+<li>
+<p>If the font is a composite font that uses one of the predefined CMaps listed in <a href="../s7/#table118">Table 118</a> (except Identity–H and Identity–V) or whose descendant CIDFont uses the Adobe-GB1, Adobe-CNS1, Adobe-Japan1, or Adobe-Korea1 character collection:</p>
+</li>
+</ul>
+<p>a) Map the character code to a character identifier (CID) according to the font’s CMap.</p>
+<p>b) Obtain the registry and ordering of the character collection used by the font’s CMap (for example, Adobe and Japan1) from its CIDSystemInfo dictionary.</p>
+<p>c) Construct a second CMap name by concatenating the registry and ordering obtained in step (b) in the format registry–ordering–UCS2 (for example, Adobe–Japan1–UCS2).</p>
+<p>d) Obtain the CMap with the name constructed in step &copy; (available from the ASN Web site; see the <a href="../../bibliography/">Bibliography</a>).</p>
+<p>e) Map the CID obtained in step (a) according to the CMap obtained in step (d), producing a Unicode value.</p>
+<div class="admonition note">
+<p class="admonition-title">NOTE</p>
+<p>Type 0 fonts whose descendant CIDFonts use the Adobe-GB1, Adobe-CNS1, Adobe-Japan1, or Adobe-Korea1 character collection (as specified in the <strong>CIDSystemInfo</strong> dictionary) shall have a supplement number corresponding to the version of PDF supported by the conforming reader. See <a href="../s7/#table119">Table 3</a> for a list of the character collections corresponding to a given PDF version. (Other supplements of these character collections can be used, but if the supplement is higher-numbered than the one corresponding to the supported PDF version, only the CIDs in the latter supplement are considered to be standard CIDs.)</p>
+</div>
+<p>If these methods fail to produce a Unicode value, there is no way to determine what the character code represents in which case a conforming reader may choose a character code of their choosing.</p>
+</div>
+</div>
+</div>
+<h2 id="9103-tounicode-cmaps">9.10.3 ToUnicode CMaps<a class="headerlink" href="#9103-tounicode-cmaps" title="Permanent link">&para;</a></h2>
+<p><strong>9.10.3 ToUnicode CMaps</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">中文</label><label for="__tabbed_3_2">英文</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>在字体字典的<strong>ToUnicode</strong>条目中定义的CMap应遵循<a href="../s7/#975-cmaps">9.7.5</a>中介绍的CMap语法，并在Adobe技术笔记#5014《Adobe CMap和CIDFont文件规范》中有详细记录。有关此条目中定义的CMap的附加指导，请参阅Adobe技术笔记#5411，<em>ToUnicode映射文件教程</em>。该CMap与普通CMap的不同之处如下：</p>
+<ul>
+<li>CMap流字典中唯一相关的条目（参见<a href="../s7/#table120">表120</a>）是<strong>UseCMap</strong>，如果CMap是基于另一个<strong>ToUnicode</strong> CMap，则可以使用此条目。</li>
+<li>CMap文件应包含<strong>begincodespacerange</strong>和<strong>endcodespacerange</strong>运算符，这些运算符与字体使用的编码一致。特别地，对于简单字体，代码空间应为一个字节长。</li>
+<li>它应使用<strong>beginbfchar</strong>、<strong>endbfchar</strong>、<strong>beginbfrange</strong>和<strong>endbfrange</strong>运算符来定义字符代码到Unicode字符序列（以UTF-16BE编码表示）的映射。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">示例 1</p>
+<p>该示例演示了一个使用Identity-H CMap将字符代码映射到CID的Type 0字体，并且其后代CIDFont使用从CID到TrueType字形索引的Identity映射。使用该字体显示的文本仅使用每个字形的2字节字形索引。如果没有ToUnicode条目，则无法得知字形的含义。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>14 0 obj
+    &lt;&lt;  /Type /Font
+        /Subtype /Type0
+        /BaseFont /Ryumin−Light
+        /Encoding /Identity−H
+        /DescendantFonts [ 15 0 R ]
+        /ToUnicode 16 0 R
+    &gt;&gt;
+endobj
+
+15 0 obj
+    &lt;&lt;  /Type /Font
+        /Subtype /CIDFontType2
+        /BaseFont /Ryumin−Light
+        /CIDSystemInfo 17 0 R
+        /FontDescriptor 18 0 R
+        /CIDToGIDMap /Identity
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">示例 2</p>
+<p>在这个示例中，ToUnicode条目的值是一个流对象，其中包含CMap的定义。</p>
+<p><strong>begincodespacerange</strong>和<strong>endcodespacerange</strong>运算符定义源字符代码范围为从&lt;00 00&gt;到<FF FF>的2字节字符代码。几个字符代码的具体映射如下所示。</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>16 0 obj
+    &lt;&lt; /Length 433 &gt;&gt;
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+&lt;&lt; /Registry ( Adobe )
+/Ordering ( UCS )
+/Supplement 0
+&gt;&gt; def
+/CMapName /Adobe−Identity−UCS def
+/CMapType 2 def
+1 begincodespacerange
+&lt;0000&gt;     &lt;FFFF&gt;
+endcodespacerange
+2 beginbfrange
+&lt;0000&gt;     &lt;005E&gt;    &lt;0020&gt;
+&lt;005F&gt;     &lt;0061&gt;    [ &lt;00660066&gt; &lt;00660069&gt; &lt;00660066006C&gt; ]
+endbfrange
+1 beginbfchar
+&lt;3A51&gt;     &lt;D840DC3E&gt;
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+endstream
+endobj
+</code></pre></div>
+<p>&lt;00 00&gt; 到 &lt;00 5E&gt; 被映射为Unicode值U+0020到U+007E，接下来是定义的映射，其中每个字符代码表示多个Unicode值：</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt;005F&gt; &lt;0061&gt; [ &lt;00660066&gt; &lt;00660069&gt; &lt;00660066006C&gt; ]
+</code></pre></div>
+<p>在这种情况下，原始字符代码是字形联接符ff、fi和ffi的字形索引。该条目定义了从字符代码&lt;00 5F&gt;、&lt;00 60&gt;和&lt;00 61&gt;到Unicode值序列的映射，其中每个字形的Unicode标量值为该联接符中的每个字符：U+0066 U+0066是字符序列ff的Unicode值，U+0066 U+0069是fi的Unicode值，U+0066 U+0066 U+006C是ffi的Unicode值。</p>
+<p>最后，字符代码&lt;3A 51&gt;被映射到Unicode值U+2003E，该值在UTF-16BE编码中由字节序列<D840DC3E>表示。</p>
+</div>
+<p>示例2在本子条款中说明了几种目标值定义方式的扩展。为了支持从源代码到目标代码串的映射，这一扩展已应用于<strong>beginbfchar</strong>运算符之后定义的范围：</p>
+<p>n <strong>beginbfchar</strong><br/>
+srcCode dstString<br/>
+<strong>endbfchar</strong><br/></p>
+<p>其中<em>dstString</em>可以是最多512字节的字符串。同样，<strong>beginbfrange</strong>运算符之后的映射可以定义为：</p>
+<p>n <strong>beginbfrange</strong><br/>
+srcCode<sub>1</sub> srcCode<sub>2</sub> dstString<br/>
+<strong>endbfrange</strong><br/></p>
+<p>在这种情况下，字符串中的最后一个字节应针对源代码范围内的每个连续代码递增。</p>
+<p>在定义这种类型的范围时，字符串中的最后一个字节的值应小于或等于255 − (<em>srcCode2</em> − <em>srcCode1</em>)。这样可以确保字符串的最后一个字节不会超过255；否则，映射结果是未定义的。</p>
+<p>为了支持从源字符代码范围到不连续的目标代码范围的更紧凑的映射表示，<strong>ToUnicode</strong>条目使用的CMap可以使用以下语法进行映射，定义在<strong>beginbfrange</strong>定义之后。</p>
+<p>n <strong>beginbfrange</strong><br/>
+srcCode<sub>1</sub> srcCode<sub>2</sub> [ dstString<sub>1</sub> dstString<sub>2</sub> … dstString<sub>m</sub> ]<br/>
+<strong>endbfrange</strong><br/></p>
+<p>从<em>srcCode1</em>开始并以<em>srcCode2</em>结束的连续代码将被映射到从<em>dstString1</em>到<em>dstStringm</em>的目标字符串数组中。<em>dstString</em>的值可以是最多512字节的字符串。m的值表示源字符代码范围中的连续字符代码数量。</p>
+<p><span class="arithmatex">\(\text{m} = \text{srcCode}_2 - \text{srcCode}_1 + 1\)</span></p>
+</div>
+<div class="tabbed-block">
+<p>The CMap defined in the <strong>ToUnicode</strong> entry of the font dictionary shall follow the syntax for CMaps introduced in <a href="../s7/#975-cmaps">9.7.5</a>, "CMaps" and fully documented in Adobe Technical Note #5014, Adobe CMap and CIDFont Files Specification. Additional guidance regarding the CMap defined in this entry is provided in Adobe Technical Note #5411, <em>ToUnicode Mapping File Tutorial</em>. This CMap differs from an ordinary one in these ways:</p>
+<ul>
+<li>The only pertinent entry in the CMap stream dictionary (see <a href="../s7/#table120">Table 120</a>) is <strong>UseCMap</strong>, which may be used if the CMap is based on another <strong>ToUnicode</strong> CMap.</li>
+<li>The CMap file shall contain <strong>begincodespacerange</strong> and <strong>endcodespacerange</strong> operators that are consistent with the encoding that the font uses. In particular, for a simple font, the codespace shall be one byte long.</li>
+<li>It shall use the <strong>beginbfchar</strong>, <strong>endbfchar</strong>, <strong>beginbfrange</strong>, and <strong>endbfrange</strong> operators to define the mapping from character codes to Unicode character sequences expressed in UTF-16BE encoding.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 1</p>
+<p>This example illustrates a Type 0 font that uses the Identity-H CMap to map from character codes to CIDs and whose descendant CIDFont uses the Identity mapping from CIDs to TrueType glyph indices. Text strings shown using this font simply use a 2-byte glyph index for each glyph. In the absence of a ToUnicode entry, no information would be available about what the glyphs mean.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>14 0 obj
+    &lt;&lt;  /Type /Font
+        /Subtype /Type0
+        /BaseFont /Ryumin−Light
+        /Encoding /Identity−H
+        /DescendantFonts [ 15 0 R ]
+        /ToUnicode 16 0 R
+    &gt;&gt;
+endobj
+
+15 0 obj
+    &lt;&lt;  /Type /Font
+        /Subtype /CIDFontType2
+        /BaseFont /Ryumin−Light
+        /CIDSystemInfo 17 0 R
+        /FontDescriptor 18 0 R
+        /CIDToGIDMap /Identity
+    &gt;&gt;
+endobj
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">EXAMPLE 2</p>
+<p>In this example, the value of the ToUnicode entry is a stream object that contains the definition of the CMap.</p>
+<p>The <strong>begincodespacerange</strong> and <strong>endcodespacerange</strong> operators define the source character code range to be the 2-byte character codes from &lt;00 00&gt; to &lt;FF FF&gt;. The specific mappings for several of the character codes are shown.</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>16 0 obj
+    &lt;&lt; /Length 433 &gt;&gt;
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+&lt;&lt; /Registry ( Adobe )
+/Ordering ( UCS )
+/Supplement 0
+&gt;&gt; def
+/CMapName /Adobe−Identity−UCS def
+/CMapType 2 def
+1 begincodespacerange
+&lt;0000&gt;     &lt;FFFF&gt;
+endcodespacerange
+2 beginbfrange
+&lt;0000&gt;     &lt;005E&gt;    &lt;0020&gt;
+&lt;005F&gt;     &lt;0061&gt;    [ &lt;00660066&gt; &lt;00660069&gt; &lt;00660066006C&gt; ]
+endbfrange
+1 beginbfchar
+&lt;3A51&gt;     &lt;D840DC3E&gt;
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+endstream
+endobj
+</code></pre></div>
+<p>&lt;00 00&gt; to &lt;00 5E&gt; are mapped to the Unicode values U+0020 to U+007E This is followed by the definition of a mapping where each character code represents more than one Unicode value:</p>
+<div class="language-tex highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>&lt;005F&gt; &lt;0061&gt; [ &lt;00660066&gt; &lt;00660069&gt; &lt;00660066006C&gt; ]
+</code></pre></div>
+<p>In this case, the original character codes are the glyph indices for the ligatures ff, fi, and ffl. The entry defines the mapping from the character codes &lt;00 5F&gt;, &lt;00 60&gt;, and &lt;00 61&gt; to the strings of Unicode values with a Unicode scalar value for each character in the ligature: U+0066 U+0066 are the Unicode values for the character sequence f f, U+0066 U+0069 for f i, and U+0066 U+0066 U+006c for f f l.</p>
+<p>Finally, the character code &lt;3A 51&gt; is mapped to the Unicode value U+2003E, which is expressed by the byte sequence &lt;D840DC3E&gt; in UTF-16BE encoding.</p>
+</div>
+<p>EXAMPLE 2 in this sub-clause illustrates several extensions to the way destination values may be defined. To support mappings from a source code to a string of destination codes, this extension has been made to the ranges defined after a <strong>beginbfchar</strong> operator:</p>
+<p>n <strong>beginbfchar</strong><br/>
+srcCode dstString<br/>
+<strong>endbfchar</strong><br/></p>
+<p>where <em>dstString</em> may be a string of up to 512 bytes. Likewise, mappings after the <strong>beginbfrange</strong> operator may be defined as:</p>
+<p>n <strong>beginbfrange</strong><br/>
+srcCode<sub>1</sub> srcCode<sub>2</sub> dstString<br/>
+<strong>endbfrange</strong><br/></p>
+<p>In this case, the last byte of the string shall be incremented for each consecutive code in the source code range.</p>
+<p>When defining ranges of this type, the value of the last byte in the string shall be less than or equal to 255 − (<em>srcCode2</em> − <em>srcCode1</em>). This ensures that the last byte of the string shall not be incremented past 255; otherwise, the result of mapping is undefined.</p>
+<p>To support more compact representations of mappings from a range of source character codes to a discontiguous range of destination codes, the CMaps used for the <strong>ToUnicode</strong> entry may use this syntax for the mappings following a <strong>beginbfrange</strong> definition.</p>
+<p>n <strong>beginbfrange</strong><br/>
+srcCode<sub>1</sub> srcCode<sub>2</sub> [ dstString<sub>1</sub> dstString<sub>2</sub> … dstString<sub>m</sub> ]<br/>
+<strong>endbfrange</strong><br/></p>
+<p>Consecutive codes starting with <em>srcCode1</em> and ending with <em>srcCode2</em> shall be mapped to the destination strings in the array starting with <em>dstString1</em> and ending with dstStringm . The value of dstString can be a string of up to 512 bytes. The value of m represents the number of continuous character codes in the source character code range.</p>
+<p><span class="arithmatex">\(\text{m} = \text{srcCode}_2 - \text{srcCode}_1 + 1\)</span></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年3月5日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2025年1月21日</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "content.tabs.link", "content.code.copy", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
