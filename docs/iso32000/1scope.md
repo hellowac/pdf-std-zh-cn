@@ -1,3 +1,5 @@
+# 1 范围
+
 Document management — Portable document format —
 
 Part 1:
@@ -5,8 +7,6 @@ Part 1:
 PDF 1.7
 
 IMPORTANT — The electronic file of this document contains colours which are considered to be useful for the correct understanding of the document. Users should therefore consider printing this document using a colour printer.
-
-# 1 范围
 
 === "中文"
 
